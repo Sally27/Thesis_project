@@ -1,0 +1,238 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Multivariate methods used in the $\mathbold{\Lbpi}$ analysis}
+\label{chap:bdt}
+This chapter will outline the multivariate analysis (MVA) methods used in the \Lbpi analysis to reduce background. The MVA methods used in this analysis are in the form of BDTs, which are trained and implemented using a dedicated MVA software package \cite{TMVA}. A brief overview of MVA methods using BDTs can be found in Appendix \ref{app:bdt}. There are two BDTs used in this analysis. The first BDT, referred to as the isolation BDT, is designed to determine how isolated the final state tracks of the signal channel are, and is discussed in detail in \autoref{sec:iso}. The isolation BDT output is then taken as an input for the BDT used to reduce combinatorial background, discussed in \autoref{Sec:BDT}. The optimisation process for the cut placed on the combinatorial BDT output is discussed in \autoref{sec:opt}.
+
+\section{Isolation of the final state tracks}
+\label{sec:iso}
+The isolation BDT used in this analysis was originally trained for the analysis in Ref\cite{LHCB-ANA-2014-048}. The algorithm used iterates over every track in an event which is not a candidate signal track, as illustrated in \autoref{Fig:iso}, where the non-signal candidate track is denoted $i$. The BDT algorithm then computes how signal-like each track is, depending on the variables given in \autoref{tab:iso}. In \autoref{tab:iso}, the ghost probability (ghost prob.) is an estimate of the probability that a track is a so-called \gls{ghost} track. Such a track has less than 70\% of its hits originating from a single particle, where the number of hits is evaluated only from simulation. %of a track is the probability that at track is a so-called ghost track, where a ghost track is defined as being a track which has less than 70\% of the hits making up the track originating from the same track. 
+
+ %The algorithm iterates over every track in an event which is not a candidate signal track, as illustrated in \autoref{Fig:iso}, and computes how signal-like each track is, depending on the variables given in \autoref{tab:iso}. 
+\begin{figure}[ht!]
+    \centering
+  \includegraphics[scale = 0.3, trim = 0.5cm 0cm 0cm 0cm, clip]{figs/isolation1.png}
+  \caption{A schematic of a non-signal track, $i$, and a \Lbpi candidate.}
+    \label{Fig:iso}
+\end{figure}
+
+
+\begin{table}[h!]
+  %\hline
+  
+  \centering
+  \begin{tabular}{c}
+
+    \hline
+    Variables used in the isolation BDT\\
+    \hline
+    $\pt_{\mathrm{track}}$\\
+    $\vec{p}_{\mathrm{track}}.\vec{p}_{\proton\pi\mu\mu}$\\ %%_{track},\p_{})\\
+    $\mathrm{ghost}$ $\mathrm{prob.}_{\mathrm{track}}$\\
+    $\chi^{2}_{\mathrm{track}}$ \\
+    $IP{\chi^{2}}_{\mathrm{track}}$ ($\proton\pi\mu\mu$ vertex)\\
+    \hline
+  \end{tabular}
+  \caption{The variables used in the isolation BDT.}
+  \label{tab:iso}
+\end{table}
+
+%\subsection{Signal and background training samples}
+In Ref\cite{LHCB-ANA-2014-048}, the isolation BDT was trained using $\Lb\to\proton\mun\nu$ simulation as the signal proxy and $\Lb\to(\Lc\to \proton X\mun\nu)\mun\nu$ as the background proxy. The resulting BDT weights, which were not obtained by myself but simply taken the analysis in \cite{LHCB-ANA-2014-048}, were then applied to this analysis. Although the training samples differ in many aspects from \Lbpi, the variables used in the training, as shown in \autoref{tab:iso}, are generic enough such that the resulting BDT can be applied to a range of channels. The BDT weights for the isolation BDT are computed prior to any selection.%The response, as shown in \autoref{Fig:isow}, is still very discriminating, \autoref{Fig:isow} shows the isolation BDT response for \LbKjpsi data, representing the signal proxy, and the response for the upper mass side band of \Lbpi data, representing the background.
+\subsection{Isolation BDT response}
+The isolation BDT output of the non-candidate track which is most signal-like is used as the nominal isolation BDT output value. The output of the isolation BDT applied to sWeighted \LbKjpsi data (signal) and \Lbpi candidates with a mass above 6000\mevcc (background), is shown in \autoref{Fig:isow}.
+\begin{figure}[ht!]
+    \centering
+  \includegraphics[height = 5.5cm, trim = 0cm 0cm 0cm 0cm, clip]{figs/isolationoutput}
+  \caption{The isolation BDT response for \LbKjpsi data, representing the signal proxy, and the response for the upper mass side band of \Lbpi data, representing the background.}
+    \label{Fig:isow}
+\end{figure}
+The peak in the signal output at -2 corresponds to cases where no non-signal track in the event passes the preselection applied, so the signal candidates are completely isolated. %The output for this isolation BDT in used as an input variable for the combinatorial BDT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The combinatorial Boosted Decision Tree}
+\label{Sec:BDT}
+In order to reduce combinatorial and reflection background, a further BDT is trained using \Lbpi data above 6000\mevcc as a proxy for the combinatorial background and sWeighted \LbKjpsi data as a proxy for the signal events.
+%% The training options can be seen in \autoref{tab:bdtchoice}.
+%% \begin{table}
+%%   \centering
+%%   \begin{tabular}{ c }
+%%     \hline
+%%     Variable & Choice \\
+%%     \hline
+%%     NTrees&200\\
+%%     nCuts&-1\\
+%%     MinNodeSize&3\\
+%%     MaxDepth&3\\
+%%     SeparationType&Gini Index\\
+%%     PruneMethod& No pruning\\
+%%     \hline
+%%   \end{tabular}
+%%   \caption{Training options used in the BDT. These variables are defined in Ref\cite{cmsada}.}
+%%   \label{tab:bdtchoice}
+%% \end{table}
+To choose which variables were used as inputs to the BDT, a large range of variables were initially selected and those that were deemed least discriminating, based on how often the variables were used to split a tree and the size of the separation resulting from such a split, were disregarded. The final selection of variables, ordered by separation power, is shown in \autoref{tab:bdtvars}. The $N^{*}$ in \autoref{tab:bdtvars} refers to the combination of the $\proton\pi$ as if they came from a $N^{*}$ decay, $\Lb\to N^{*}(\to\proton\pim)\mup\mun$. Variables that assume that the $\proton\pi$  come from an $N^{*}$ are used because much of the signal will genuinely decay via this resonance, whereas this is not the case in combinatorial background. The $\mup$ \dllmupi refers to whichever muon has the same sign as the proton, so in the conjugate case this would be $\mun$. The difference in separation power amongst the weakest eight BDT variables is minimal. The $\mup$ \dllmupi is slightly more discriminating than the equivalent $\mun$ \dllmupi variable, and therefore only the former was included as an input variable. This is thought to be due to the mis-identification of pions as muons in the combinatorial background coming from $\Lc$ decays. The DecayTreeFitter (\gls{DTF}) $\chi^{2}$ refers to the $\chi^{2}$ per degree of freedom of the simultaneous fit to the complete decay chain. The PID variables are used in the BDT in order to exploit the varying PID performance with kinematics and thus help further reduce contributions from reflection backgrounds. %This means that there are two possible proxies, resampled simulation or a suitable channel selected from the data.
+
+The distribution of the input variables for the signal and background training samples are shown in Figures \ref{Fig:bdtvar1}, \ref{Fig:bdtvar2} and \ref{Fig:bdtvar3}.
+%An intial list of variables can be seen below in Figures~\ref{Fig:bdt1},~\ref{Fig:bdt2},~\ref{Fig:bdt3} with signal simulation in red and data falling above \Lb $>$ 6000\mevcc in black.
+%\vspace*{-5cm}
+\begin{table}[!ht]
+
+  \centering
+  \hspace*{-0.5cm}
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    Rank& Variable& Seperation / 0.1 &Rank& Variable& Seperation / 0.1 \\\hline
+    1&\Lb vertex \gls{bm}         &9.0     & 10&      $\pim$ \gls{ipchi2}    &0.7     \\
+    2&$\Lambda_{b}$  \Gls{DIRA}   &3.4            & 11&  $\mup$ \dllmupi                  &0.6                  \\
+    3&Isolation BDT output        &2.9                      & 12&                     $\proton$ \gls{ipchi2}&0.6\\
+    4&$\Lambda_{b}$ $\tau$        &2.8          & 13&          $\proton$ IP                        &0.5 \\
+    5&$\Lambda_{b}$ $\pt$         &2.4          & 14& $\proton$ \dllppi                            &0.4          \\
+    6&$\Lambda_{b}$ DecayTreeFitter $\chi^{2}$ &1.8& 15& $\Lambda_{b}$ \gls{ipchi2}        & 0.3\\
+    7&$N^{*}$ \gls{ipchi2}              &1.8 & 16&   $\proton$ \dllpk                       &0.1            \\
+    8&$N^{*}$ $\pt$                     &1.6    & 17&     $\proton$ $|\vec{p}|$             &0.1              \\
+    9&$\Lambda_{b}$ $|\vec{p}|$         &0.9    & & &\\
+    \hline
+  \end{tabular}
+
+  \caption{List of BDT input variables. The variables are listed in order of their separation power. The seperation values are also listed.}
+      \label{tab:bdtvars}
+\end{table}
+%\FloatBarrier
+
+    \begin{figure}[!ht]\def\nh{0.6\textwidth}
+  \centering
+\hspace*{-2cm}
+  \includegraphics[height=\nh]{figs/canvas1_var_edited.pdf}
+
+  \caption{The first six variables used in the combinatorial BDT for signal and background proxies. The red stripped histograms are background and the solid blue histograms are signal. All distributions shown are normalised. The variable \Lb $\mathrm{EV}_{\chisq}$ refers to \Lb \gls{bm} in \autoref{tab:bdtvars}.}
+  \label{Fig:bdtvar1}
+    \end{figure}
+   
+    \begin{figure}[!ht]\def\nh{0.6\textwidth}
+  \centering
+  \hspace*{-2cm}
+  \includegraphics[height=\nh]{figs/canvas2_var_edited.pdf}
+
+  \caption{The second six variables used in the combinatorial BDT for signal and background proxies. The red stripped histograms are background and the solid blue histograms are signal. All distributions shown are normalised.}
+  \label{Fig:bdtvar2}
+    \end{figure}
+    \FloatBarrier
+    \begin{figure}[!ht]\def\nh{0.65\textwidth}
+  \centering
+  \hspace*{-1cm}
+  \includegraphics[scale = 0.9]{figs/canvas3_var_edited.pdf}
+
+  \caption{The final five variables used in the combinatorial BDT for signal and background proxies. The red stripped histograms are background and the solid blue histograms are signal.  All distributions shown are normalised. The variable \Lb DTF \chisq refers to $\Lambda_{b}$ DecayTreeFitter $\chi^{2}$ in \autoref{tab:bdtvars}. }
+  
+  \label{Fig:bdtvar3}
+    \end{figure}
+    \FloatBarrier
+   
+    The BDT is trained using the K-Folding technique \cite{kfold}: each event is randomly assigned an integer, $i$, between 0 and the number of K-Folds, $n$, (in this case $n$ = 5) and $n$ BDTs are trained with the $i^{th}$ BDT being tested on the $i^{th}$ data set and trained on the remaining data. Employing this technique allows ($n$-1)/$n$ of the data set to be used to train the BDT. 
+
+
+%% As discussed in \autoref{Sec:backgrounds}, for the normalisation (signal) channels, the largest reflection background comes from \BdToJPsiKst (\BdToKstmm) decays. These are distinguished from \Lbpijpsi (\Lbpi) decays through the PID variable $\dllpk$, meaning it is important to have this variable in the BDT. However, as discussed in \autoref{Sec:Selection}, this PID variable is poorly modelled in resampled simulation. For this reason, sWeighted \LbKjpsi data is used a signal proxy rather than simulation.
+
+
+
+\section{The BDT performance and optimisation}
+\label{sec:opt}
+The BDT response for each K-Fold, as well as the signal efficiency against background rejection, integrated over all K-Fold's, is shown in \autoref{Fig:kfoldBDT}. The red line in \autoref{Fig:kfoldBDT}\protect\subref{q2:6} indicates the BDTs optimal working point. The choice of working point is discussed later in this section.
+
+
+%% 
+\begin{figure}[!t]\def\nh{0.3\textwidth}
+  \centering
+
+
+
+  \subfloat[]{\includegraphics[height=\nh]{figs/RE_bdt1}\label{q2:1}} \hskip 0.04\textwidth
+  \subfloat[]{\includegraphics[height=\nh]{figs/RE_bdt2}\label{q2:2}} \\
+  \subfloat[]{\includegraphics[height=\nh]{figs/RE_bdt3}\label{q2:3}}\hskip 0.04\textwidth
+    \subfloat[]{\includegraphics[height=\nh]{figs/RE_bdt4}\label{q2:4}} \\
+  \subfloat[]{\includegraphics[height=\nh]{figs/RE_bdt5}\label{q2:5}} \hskip 0.04\textwidth
+  \subfloat[]{\includegraphics[height=\nh]{figs/roc}\label{q2:6}}\\
+
+
+ \caption{The BDT response for all 5 K-Folds and the signal efficiency against background rejection curve, integrated over all K-Folds. The red line on the signal efficiency against background rejection curve indicates the optimal working point.}
+  \label{Fig:kfoldBDT}
+
+\end{figure}
+
+
+As there is no branching fraction prediction, the BDT is optimised using the Punzi \gls{FOM} \cite{Punzi:2003bu} defined as
+
+\begin{equation}
+  \mathrm{FOM}_{\mathrm{PUNZI}} = \frac{\epsilon_{\mathrm{selection}}}{\sigma/2  + \sqrt{B}},
+  \label{eq:punz}
+\end{equation}
+where $\epsilon_{\mathrm{selection}}$ refers to the efficiency of the selection and $B$ refers to the number of background events.
+The Punzi FOM is also a function of the target significance, $\sigma$. The target significance is 3$\sigma$. There is no change in the chosen working point if this is varied by $\pm0.5\sigma$. %varied between 2.5 $\sigma$ and 3.5$\sigma$ and there is found to be no change to the optimal working point due to this variation.
+
+In order to deduce $B$, a fit is performed to the blinded mass spectrum of \Lbpi data. The blinded region in mass is taken as 5530$<m_{p\pi\mu\mu}<$5710 \mevcc, which removes all signal events according to simulation. The data is fitted either side of the blinded region and the number of background events is taken by extrapolating the background probability density function (PDF) across the blinded region. The details of the fit model used are discussed in \autoref{chap:mass}.
+
+As the number of background events across the signal window\
+is very low ($\sim$ 5 or less for BDT cuts greater than $\sim$ 0.3), the FOM is calculated many times, each time randomly choosing a yield of background events within one standard deviation of the true value. This is done with the aim of reducing the sensitivity to the large uncertainty on the shape of the combinatorial background.
+
+To obtain the value of $\epsilon_{\mathrm{selection}}$ in \autoref{eq:punz}, the BDT efficiency is calculated using \LbKjpsi data, and is also compared to the efficiency derived from \LbK data. This BDT efficiency is then multiplied by the rest of the selection efficiency (see \autoref{chap:mass}).
+The BDT efficiency calculated with both \LbK and \LbKjpsi data as a function of BDT output value is shown in \autoref{Fig:BDTeff}. To deduce the BDT efficiency, the yield extracted from the fit to \LbKjpsi data is compared to that extracted from a subsequent fit to \LbKjpsi data with the relevant BDT cut applied. In the case of \LbK data, the same method is used but a BDT cut of 0 is initially placed on the \LbK data, as without this cut the background to signal ratio is too large and the fit becomes difficult to perform.
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[height = 5.5cm]{figs/BDT_eff_jpsi_mumu_pk}
+  \caption{The efficiency of the BDT as a function of BDT cut value using \LbK and \LbKjpsi sWeighted data. The dashed line shows the efficiency at the working point of 0.25.}
+  \label{Fig:BDTeff}
+\end{figure}
+
+The values of the Punzi FOM as a function of the BDT cut value are shown in \autoref{Fig:PUNZI}. Each line represents a different assumption for the background yield.
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[height = 5.5cm]{figs/punzitoys}
+  \caption{The Punzi FOM for background values that are varied randomly within their error.}
+  \label{Fig:PUNZI}
+\end{figure}
+The  optimal working point is chosen to be at a BDT cut of 0.25. This point is chosen because it has the consistently highest FOM. The blinded \Lbpi data at this optimal cut point, along side \Lbpijpsi at the same cut point, are shown in \autoref{Fig:optpointfits}. The points above the fit line around 5700\mevcc in \autoref{Fig:optpointfits}\protect\subref{optfit:2} could be due to a statistical fluctuation, most likely caused by a downward fluctuation just below the mass range around 5700\mevc. Alternatively the discrepancy between the fit and data could be caused by a mis-modelling of the CB tails in simulation.
+
+There are $\Nyield$ \Lbpijpsi signal events observed. Again, the fit models are discussed in \autoref{chap:mass}.
+
+%The number of \LbK events observed is not given as the \LbK analysis is still blind.
+
+%As discussed in \autoref{Sec:backgrounds}, for the case of \LbK, exactly the same selection is applied as in the case of \Lbpi, except that the cut on the \dllkpi variable is changed from $\dllkpi<-5$ to $\dllkpi>5$, and there is no mass-dependent \LbK veto. In the 
+
+\begin{figure}[!ht]\def\nh{0.3\textwidth}
+  \centering
+%  \hspace*{-2cm}
+  \subfloat[]{\includegraphics[height = 5.6cm]{figs/realblind.png}\label{optfit:1}}
+  \subfloat[]{\includegraphics[height = 5.5cm]{figs/jpsippiprism.png}\label{optfit:2}}\\
+  %\subfloat[]{\includegraphics[height=\nh, scale = 0.6]{figs/pk_5100_7000_fit_blinded_edit.png}\label{optfit:3}}
+
+  \caption{Fitted data for blinded \Lbpi events \protect\subref{optfit:1} (same as \autoref{Fig:partreco}), and \Lbpijpsi events \protect\subref{optfit:2}. }
+  %and \LbK \protect\subref{optfit:3}
+  \label{Fig:optpointfits}
+\end{figure}
+
+
+%% %%  LocalWords:  PID simulation BDT kaon reco mis ided ed LMS hh dref Lcpeaks
+%% %%  LocalWords:  mumufits Lcpeak pipkvalidation
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%  LocalWords:  reweighted reweighting simulation PYTHIA EVTGEN GEANT4 PHSP
+%%  LocalWords:  Stripping20 VLL VSS BTOSLLBALL Resampling PID BDT ed
+%%  LocalWords:  resampled vars DLLp DLLpK DLLK resampling PIDCalib
+%%  LocalWords:  q2 resample phasespace phasespaceLc MagUp MagDown
+%%  LocalWords:  B2XMuMu DLL isMuon kaon Preselection preselection
+%%  LocalWords:  DIRA OWNPV LambdabL0MuonDecisionTOS
+%%  LocalWords:  LambdabHlt1TrackAllL0DecisionTOS
+%%  LocalWords:  LambdabHlt1TrackMuonDecisionTOS
+%%  LocalWords:  LambdabHlt2TopoMu2BodyBBDTDecisionTOS
+%%  LocalWords:  LambdabHlt2TopoMu3BodyBBDTDecisionTOS
+%%  LocalWords:  LambdabHlt2Topo2BodyBBDTDecisionTOS
+%%  LocalWords:  LambdabHlt2DiMuonDetachedDecisionTOS
+%%  LocalWords:  LambdabHlt2DiMuonDetachedHeavyDecisionTOS
+ 
+ 

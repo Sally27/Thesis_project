@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Main.aux
+The style file: LHCb.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Main.bib
+Database file #2: LHCb-PAPER.bib
+Database file #3: LHCb-CONF.bib
+Database file #4: LHCb-DP.bib
+Database file #5: LHCb-TDR.bib
+You've used 3 entries,
+            2909 wiz_defined-function locations,
+            686 strings with 5875 characters,
+and the built_in function-call counts, 14945 in all, are:
+= -- 1633
+> -- 29
+< -- 0
++ -- 103
+- -- 7
+* -- 1516
+:= -- 1864
+add.period$ -- 3
+call.type$ -- 3
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 262
+empty$ -- 1559
+format.name$ -- 7
+if$ -- 3254
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 18
+newline$ -- 29
+num.names$ -- 3
+pop$ -- 59
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 31
+stack$ -- 0
+substring$ -- 4385
+swap$ -- 0
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 95
+width$ -- 4
+write$ -- 65

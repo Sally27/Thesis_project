@@ -1,0 +1,48 @@
+\ifx\mcitethebibliography\mciteundefinedmacro
+\PackageError{LHCb.bst}{mciteplus.sty has not been loaded}
+{This bibstyle requires the use of the mciteplus package.}\fi
+\providecommand{\href}[2]{#2}
+\begin{mcitethebibliography}{1}
+\mciteSetBstSublistMode{n}
+\mciteSetBstMaxWidthForm{subitem}{\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd{\mcitemaxwidthsubitemform\space}
+{\relax}{\relax}
+
+\bibitem{pythia8}
+T.~Sjostrand, S.~Mrenna, and P.~Z. Skands,
+  \ifthenelse{\boolean{articletitles}}{\emph{{A Brief Introduction to PYTHIA
+  8.1}}, }{}\href{http://dx.doi.org/10.1016/j.cpc.2008.01.036}{Comput.\ Phys.\
+  Commun.\  \textbf{178} (2008) 852},
+  \href{http://arxiv.org/abs/0710.3820}{{\normalfont\ttfamily
+  arXiv:0710.3820}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCb-PAPER-2010-002}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Measurement of
+  $\sigma(pp\to\bbbar X)$ at $\sqrt{s}=7$ TeV in the forward region}},
+  }{}\href{http://dx.doi.org/10.1016/j.physletb.2010.10.010}{Phys.\ Lett.\
+  \textbf{B694} (2010) 209},
+  \href{http://arxiv.org/abs/1009.2731}{{\normalfont\ttfamily
+  arXiv:1009.2731}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCb-PAPER-2016-031}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Measurement of the
+  $\bquark$-quark production cross-section in 7 and 13\,TeV $\proton\proton$
+  collisions}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.118.052002}{Phys.\ Rev.\
+  Lett.\  \textbf{118} (2017) 052002}, Erratum
+  \href{http://dx.doi.org/10.1103/PhysRevLett.119.169901}{ibid.\   \textbf{119}
+  (2017) 169901}, \href{http://arxiv.org/abs/1612.05140}{{\normalfont\ttfamily
+  arXiv:1612.05140}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

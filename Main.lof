@@ -1,0 +1,9 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Accelerator complex at CERN\relax }}{12}{figure.caption.12}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Angular production and acceptance of LHCb's $b\mathaccentV {bar}016{b}$ pair (in red) as well as General Purpose Detector (in yellow). LHCb covers region with highest production cross-section at 8 \ensuremath {\mathrm {\tmspace +\thinmuskip {.1667em}Te\kern -0.1em V}}\xspace . These plots were produced using PYTHIA8 \mciteCiteA {\@auxout }{main}{\relax }{\relax }{\cite }{pythia8} simulation.\relax }}{13}{figure.caption.13}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The schematic slice of LHCb detector in $y,z$ plane where $z$ is defined to be the direction parallel to beamline, and $x,y$ define the plane perpendicular to the beamline. $\theta $, the opening angle in y-z plane with $\theta $ = 0 along $z-axis$.\relax }}{14}{figure.caption.14}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Integrated luminosity collected in different years of data-taking. As compared to ATLAS and CMS the integrated luminosity is much lower, due to pile-up conditions.\relax }}{15}{figure.caption.16}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces An example decision tree. The S and B stand for `Signal-like' and `Background-like'. The $\beta _{i}$ variables refer to the cut values chosen by the machine learning algorithm after the tree has been trained on signal and background samples. The blue ovals represent final nodes called leafs, which each leaf having an associated purity, i.e. the fraction of the weight of a leaf due to signal events.\relax }}{19}{figure.caption.18}
+\addvspace {10\p@ }

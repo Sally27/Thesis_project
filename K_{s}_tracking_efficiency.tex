@@ -1,0 +1,869 @@
+\chapter{Measuring the efficiency of long-lived particles}
+\label{chap:ks}
+In this chapter, the reconstruction efficiency of the long-lived particle, $\KS$, decaying via the mode, $\KS\to\pip\pim$, is studied as a function of the position of the \KS decays along the $z$-axis. As previously outlined in \autoref{chap:dec}, the $z$-axis is defined as pointing along the beam pipe away from the interaction point. This study is of interest because the reconstruction efficiency of long-lived particles at LHCb is still poorly measured when compared to the equivalent measurement for shorter-lived particles.
+
+%, as previously outlined in \autoref{chap:dec}. 
+
+The reconstruction efficiency is defined as the likelihood of the decay, $\KS\to\pip\pim$, being successfully reconstructed, given that both pion tracks are in the detector acceptance. The measurement of the reconstruction efficiency for any decay in the LHCb detector is less precise for \glspl{downstreamtracks}, and for \glspl{longtracks} with secondary vertexes occurring past $z \sim$ 140\mm. There are numerous examples of published LHCb papers which include long-lived particles \cite{LHCb-PAPER-2010-001,LHCb-PAPER-2011-005,LHCb-PAPER-2011-041,LHCb-PAPER-2012-011,LHCb-PAPER-2012-016,LHCb-PAPER-2012-023,LHCb-PAPER-2012-027,LHCb-PAPER-2012-035,LHCb-PAPER-2012-052,LHCb-PAPER-2012-057,LHCb-PAPER-2013-015,LHCb-PAPER-2013-025,LHCb-PAPER-2013-034,LHCb-PAPER-2013-042} and as such, it would be desirable to have a better understanding of the downstream track reconstruction efficiency in both simulation and data. This is the first study to look in detail at the reconstruction efficiency as a function of the decay position in $z$ for both downstream and long tracks, allowing for the calculation of the long track reconstruction efficiency for tracks originating along the entire length of the \gls{VELO}.
+
+The aim of the work presented in this chapter is to use the well-understood measurement of the tracking efficiency of long tracks from the decay $\jpsi\to\mumu$, to deduce the efficiency of downstream tracks in the decay $\KS\to\pip\pim$. This provides a complementary measurement to that given in Ref~\cite{DDpat} of the downstream reconstruction efficiency. %The method used in Ref~\cite{DDpat} to deduce the downstream reconstruction efficiency is outlined in full in \autoref{sec:patDD}.
+
+
+
+%The method used in this chapter also gives the efficiency as a function of $z$, which allows for the calculation of track reconstruction efficiency for tracks originating from the entire length of the VELO, and not just those decays the occur with $z<140$\mm. %in the region of the VELO below $z$ $\sim$ 140\mm.
+
+
+ 
+
+
+%% Thus the reconstruction efficiency of the decay $\KS\to\pip\pim$ as a function of $z$ can be used to measure both the downstream tracking efficiency for $\KS\to\pip\pim$ and the efficiency of long tracks for the entire length of the VELO.
+
+
+In \autoref{sec:recolhcb}, the method with which the efficiency for the reconstruction of long tracks is calculated is outlined. This is followed by an overview of a previous study on the $\KS$ reconstruction efficiency for downstream tracks, referred to as the $D^{*+}$ study. There is then an overview of the method used to calculate the downstream tracking efficiency in the analysis presented in this chapter. In \autoref{sec:datasamples}, there is an overview of the data samples used in the analysis. There is further detail on the analysis method and a discussion on the reduction of backgrounds in sections \ref{sec:methodoutline} and \ref{sec:background}. The agreement between simulation and data is discussed in \autoref{sec:simcal} and the verification of the calculations used is outlined in \autoref{sec:extra}. There is a presentation of the systematic uncertainties and results in \autoref{sec:sys} and \autoref{sec:results}. Finally, there is a comparison between the results obtained with the study presented in this chapter and those from the $D^{*+}$ study, outlined in \autoref{sec:comp}. %Details of the propagation of statistical errors through all calculations carried out in this chapter can be found in Appendix \ref{app:error}.
+
+\section{Current reconstruction efficiency studies carried out at LHCb}
+\label{sec:recolhcb}
+This section will outline two previous LHCb efficiency studies and the study presented in this chapter. The first study involves the measurement of long track efficiencies and the results of this study are used in the analysis presented in this chapter.  The second study outlined in this chapter is the so-called $D^{*+}$ study, the results from which will be compared to the results obtained from the analysis in this chapter as a cross check. %Neither of the above mention studies investigate the efficiency dependence on $z$. %, which this study shows is particular marked for the case of tracks decaying towards the end of the VELO.
+
+%Nor do they offer values for the absolute reconstruction efficiency, that is, given that both daughters are in the acceptance, what proportion of tracks are reconstructed.
+
+\subsection{Long track efficiency measurements}
+\label{sec:long}
+The current measurement of the long track reconstruction efficiency is carried out in Ref~\cite{LHCB-DP-2013-002} using \jpsi \to \mumu decays, where the \jpsi comes from a $b$-hadron. In the study in Ref~\cite{LHCB-DP-2013-002}, a tag-and-probe technique is used to deduce the tracking efficiency of long tracks. The long track efficiency is initially calculated in bins of $p$, $\eta$ and track multiplicity %, where the tracking efficiency is defined as the fraction of probe tracks that can be matched to a long track.
+
+
+
+%As the study in Ref~\cite{LHCB-DP-2013-002}  deals with long tracks, the probe track used to measure the long track efficiency carries enough momentum information to allow the invariant mass of the parent particle to be reconstructed with a sufficiently high resolution. For example, in Ref~\cite{LHCB-DP-2013-002}, the \jpsi invariant mass, when reconstructed with a tag-and-probe track combination, has a resolution of 24\mevcc. The standard long track reconstruction gives a resolution of 16\mevcc.
+
+%In Ref~\cite{LHCB-DP-2013-002}, the long track efficiencies  .
+
+In order to be classed as a long track, hits are required in the T stations and in the VELO. Hits in the TT stations are optional. The efficiencies for long tracks are deduced via two methods in Ref~\cite{LHCB-DP-2013-002}, the results of which are then averaged. The first method is referred to as the combined method. This method combines the efficiency of the VELO stations to reconstruct tracks with the efficiency of the T stations to reconstruct tracks. In the VELO case, downstream tracks are used as probes, as shown in \autoref{fig:tracks}(a). In the T station case, VELO and muon tracks are used as probes, as shown in \autoref{fig:tracks}(b). The  product of the efficiency of the VELO stations and T stations then gives the total long track reconstruction efficiency. The second method, referred to as the long method, uses tracks that have hits in the TT stations and muon stations, as shown in \autoref{fig:tracks}(c), to  deduce directly the efficiency of the T stations and the VELO stations simultaneously.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{figs/longtrackeffmethod.png}
+\caption{Different probe tracks used to measure the efficiencies of different subdetectors, showing the probe track used to measure the VELO efficiency (a), the probe track used to measure the T station efficiency (b), and the probe track used to measure the VELO and T station efficiencies simultaneously (c).}
+\label{fig:tracks}
+\end{figure}
+
+There are small differences between the combined and long methods used to calculate the long track efficiency\footnote{For example, in the long method, the efficiency is calculated for tracks passing through the TT stations. In the combined method, this is only true for the calculation of the VELO efficiencies}. As the effects causing the discrepancies between the two efficiency methods are common to both simulation and data, the efficiency is quoted as the ratio between simulation and data, thereby cancelling these discrepancies.
+
+%The track reconstruction efficiency for simulated events is defined as the fraction of simulated charged particles with sufficient hits in the VELO and T stations that can be associated to a track that shares at least 70\% of the hits in each sub-detector.
+
+As the simulation and data tracking efficiencies as a function of track multiplicity are within 2$\sigma$ of one another (see \autoref{fig:nteff}), the ratio of the long track efficiencies between simulation and data is quoted as a function of just $p$ and $\eta$. The worsening efficiency with increasing track multiplicity in \autoref{fig:nteff} is due to the increasing likelihood of \gls{ghost} tracks with a higher number of tracks.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{figs/longtrackeffNt_crop.png}
+\caption{The efficiency for data and simulation as a function of track multiplicity, $N_{track}$.}
+\label{fig:nteff}
+\end{figure}
+The ratios between simulation and data for different $p$ and $\eta$ bins are shown in \autoref{fig:ratio}.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{ratio2012}
+\caption{Ratio of absolute efficiencies between data and simulated events for long tracks. Ratios are for 2012 conditions\cite{LHCB-DP-2013-002}.}% and are taken from the LHCb Twiki page, \url{https://twiki.cern.ch/twiki/bin/view/LHCb/TrackingEffStatus2012S20}. They 
+\label{fig:ratio}
+\end{figure}
+Given that the $\jpsi$ used in the long track reconstruction efficiency measurements comes from a $b$-hadron decay, the values of $z$ over which these efficiencies from Ref~\cite{LHCB-DP-2013-002} are deemed to be valid is taken to be roughly equal to the primary vertex distribution of the $b$-hadrons, giving a region of validity of roughly $-$140$<z<$140\:mm. The region is referred to as the long track efficiency validity region, or \gls{zval}, hereafter.% for the decay vertex of the $K^{0}_{s}$
+
+\subsection{Downstream tracking efficiency measurements}
+\label{sec:patDD}
+In order for a track to be classed as a downstream track, hits are required in the T and TT stations and there must be no VELO track segment which matches the downstream track segment. Thus, given that there can be no hits in the VELO and that there are no suitable downstream muonic decays, it is not possible to form a downstream probe track. Therefore, the tag-and-probe technique used in  Ref~\cite{LHCB-DP-2013-002} cannot be used to measure the reconstruction efficiency of downstream tracks. %, as there are no redundant subdetectors used in the downstream track reconstruction. % only the T stations and TT stations will have hits, meaning a probe track could only contain hits in one sub-detector. 
+
+% Where possible, tracks reconstructed in LHCb are always upgraded to the track types most relevant to physics analysis. As a consequence, it is preferable for downstream tracks to be upgraded to long tracks, if a suitable matching VELO segment can be found.
+As a consequence, different approaches must be used to measure the downstream track reconstruction efficiency. The difficulty of calibrating the downstream tracking efficiency means that the efficiency is less precisely known than for long tracks. This lack of knowledge means that analyses involving long-lived particles, such as $K_{s}^{0}$ or \Lz particles, tend to have a larger associated systematic uncertainty than those analyses involving only shorter-lived particles. 
+
+
+The study in Ref~\cite{DDpat} measures the reconstruction efficiency of downstream \KS mesons using $D^{*+}\to(D^{0} \to \phi K^{0}_{s}$(\to \pip\pim))\pip decays. The tracking efficiency in this study is deduced by comparing the yields of partially and fully reconstructed decays. The partially reconstructed decay does not reconstruct one of the pions from the $\KS$. Instead, the missing four momentum is calculated using the reconstructed decay products and the flight direction of the $D^{0}$.
+
+%% pion that is reconstructed from the $\KS$, the $\phi$ and the slow pion, with additional constraints from the \KS mass and the direction of the $\phi$ and reconstructed pion with respect to the $D^{0}$ flight direction. By solving for the missing four momenta using these constraints, an unbiased estimate of the $D^{*+}$ and $D^{0}$ masses can be made. The difference, $\Delta m$, between the calculated $D^{*+}$ and the $D^{0}$ masses is used to fit the signal and reject background. 
+
+
+%% The ratio between the number of events under the $\Delta m$ signal peak in the fully reconstructed fit and the number of events under the $\Delta m$  signal peak in the partially reconstructed fit is used to calculate the tracking efficiency, in bins of the missing four momenta of the unreconstructed pion.
+
+The vertex efficiency, defined as the efficiency to vertex the two downstream pion tracks and pass the requirements on the vertex fit of the two downstream pions, is also calculated in Ref~\cite{DDpat}. The vertex requirements are shown in \autoref{tab:vertex}, where post-fit and pre-fit refer to the value of the mass window before and after the vertex fit has been applied. % and the track \Gls{DOCA} $\chi^{2}2$ refers to the $\chi^{2}$ of the Distance Of Closest Approach (DOCA) between the pairs of pions.
+
+\begin{table}
+  \centering
+  \begin{tabular}{c|c}
+    \hline
+    Quantity & Selection\\
+    \hline
+    vertex fit convergence & True\\
+    mass window (pre-fit) & $\pm$ 80 \mevcc\\
+    mass window (post-fit) & $\pm$ 64 \mevcc\\
+    vertex \chisq /ndf & $<$25 \\
+    track \gls{DOCA} \chisq & $<$25 \\
+    \hline
+  \end{tabular}
+  \caption{ Criteria applied to the vertexing procedure used to make a standard LHCb $\KS$ candidate from two downstream pions. The track \Gls{DOCA} is the distance of closest approach between the two daughter tracks and the mass windows are either side of the known $\KS$ mass of 497.6\mevcc \cite{DDpat}.}
+  \label{tab:vertex}
+\end{table}
+
+
+The results of the study, showing the ratio between data and simulation for the tracking efficiency and vertex efficiency as a function of missing track momentum and the \KS momentum respectively, are shown in \autoref{fig:patver}. In \autoref{fig:patver}, the term unfolding refers to the unfolding of the efficiency in bins of momentum, correcting for cases where the momentum inferred from the partially reconstructed case lies in bin $i$, but it is know from fully reconstructed data that the correct momentum actually lies in bin $j$. The nominal result is when both the simulation and data have been unfolded.
+\begin{figure}[h]
+  \centering
+  \subfloat[]{\includegraphics[scale=0.2]{figs/trackeffPAT_nounfold.png}\label{1}}
+\subfloat[]{\includegraphics[scale=0.2]{figs/trackeffPAT_dataunfold.png}\label{2}}\\
+\subfloat[]{\includegraphics[scale=0.3]{figs/patrick_vertex.png}\label{3}}
+\caption{The downstream tracking efficiency as a function of momentum, \protect\subref{1}, \protect\subref{2}. The vertex efficiency ratio of the $\KS$ for data over simulation (where simulation is indicated by the initials MC in the figure) for the cases where both pions are downstream track types (\Gls{DD}) and both pions are long track types (\Gls{LL}), \protect\subref{3}. Figures are taken from Ref~\cite{DDpat}.}
+\label{fig:patver}
+\end{figure}
+The reconstruction efficiency for the decay $\KS$\to\pip\pim can be written as
+\begin{equation}
+  \epsilon_{\mathrm{reconstruction}} = \epsilon_{\mathrm{\KS vertexing}}\times\epsilon_{\pi\mathrm{ tracking}}\times\epsilon_{\pi\mathrm{ tracking}},
+  \label{eq:pat}
+\end{equation}  
+where $\epsilon$ denotes the relative efficiency between data and simulation.% and tracking refers to the tracking efficiency for each pion.
+
+The results from Ref~\cite{DDpat}, averaged using a similar momentum binning scheme as used in Ref~\cite{LHCB-DP-2013-002}, are shown in \autoref{tab:pat}. Averaging the vertexing efficiency over all \KS momentum gives an average of 0.82$\pm$0.03. The average relative tracking efficiency between data and simulation, disregarding the higher momentum bin where the statistics are limiting, is 0.95$\pm$0.04. Using \autoref{eq:pat} gives an average relative reconstruction efficiency between data and simulation of 0.74$\pm$0.05. 
+
+The dependence of the tracking efficiency on the momentum of the missing track is not overly strong, although the large errors on the highest momentum bin make it difficult to reach any definite conclusion. For example, assuming the case where both the pions and the \KS have a momentum greater than 40\gevc gives a total efficiency of 0.55$\pm$0.14, which differs from the nominal value of 0.74$\pm$0.05 by 25\% but still agrees with the nominal value at 1.4$\sigma$. In addition, one weakness of the study in Ref~\cite{DDpat} is that the value of the missing track momentum, calculated from other kinematic parameters in the decay, has a very poor resolution which means that the momentum dependence is difficult to quantify. %, is not exact, as it does not take into account the finite resolution on the kinematic parameters used in the calculation. % and hence the calculation of the momentum distribution of the missing track momentum is a weakness in the analysis.
+
+
+
+\begin{table}
+  \centering
+  \hspace*{-0.6cm}
+  \begin{tabular}{c|c|c|c}
+    \hline
+    \KS momentum bin/\gevc & Vertex &missing track momentum bin/\gevc& Tracking\\\hline% & Total\\ \hline
+    10$<p<$20& 0.84 $\pm$0.05   &  0$<p<$20   & 0.97$\pm$0.03 \\%   0.76$\pm$0.06\\
+    20$<p<$40& 0.83 $\pm$0.04   & 20$<p<$40   & 0.92$\pm$0.07 \\% 0.70$\pm$0.08\\
+    40$<p<$100& 0.78 $\pm$0.03  & 40$<p<$100  & 0.83$\pm$0.15 \\\hline% 0.55$\pm$0.14\\\hline
+    
+    \end{tabular}
+  \caption{Results from the study in Ref~\cite{DDpat} for the ratio between data and simulation of the downstream tracking and vertexing efficiency as a function of the missing track momentum and the \KS momentum, respectively.}
+  \label{tab:pat}
+\end{table}
+
+
+%% Thus, the relative efficiency between data and simulation found by this study, ignoring the momentum dependence, is 0.74$\pm$0.06. In other words, the data is reconstructed with 74\% of the efficiency seen in the simulation.
+
+
+
+\subsection[{Measuring the reconstruction efficiency of $\KS\to\pi^{+}\pi^{-}$ as a function of $z$}]{Measuring the reconstruction efficiency of $\mathbold{\KS\to\pi^{+}\pi^{-}}$ as a function of $\mathbold{z}$}
+\label{sec:methodintro}
+%% The aim of the work presented in this chapter is to use the well-understood measurement of the tracking efficiency of long tracks from the decay $\jpsi\to\mumu$, to deduce the efficiency of downstream tracks in the decay $\KS\to\pip\pim$. This provides a complementary measurement to that given in Ref~\cite{DDpat} of the downstream reconstruction efficiency. The method used in this chapter also gives the efficiency as a function of $z$, which allows for the calculation of track reconstruction efficiency for the entire length of the VELO, and not just in the region of the VELO below $z$ $\sim$ 140\mm.
+
+%% In  addition the current measurement of long track reconstruction efficiency is only valid at low $z$, (see \autoref{sec:longtrackeff}), where $z$ is defined as pointing along the beam pipe away from the interaction point, as previously outlined in \autoref{chap:dec}. Thus the method used in this analysis will also allow the calculation of the tracking efficiency of long tracks occurring in all regions of the VELO for which there is currently no measurement of the tracking efficiency.
+
+In the analysis in this chapter, the well-understood ratio between the long track reconstruction efficiency for data and simulated events at low $z$ is used to correct the absolute data reconstruction efficiency in low $z$ bins. This gives the efficiency-corrected number of $\KS$ particles in this bin, denoted \gls{n}. The $z$ bins within which the efficiencies are applied to calculate $N_{0}$ are referred to as the \gls{zref} bins. The width of $z_{\textrm{ref}}$ is chosen to be 10\mm. This width is deemed to be narrow enough such that the change in $N(z)$ across the 10mm bin width is of the same order as the statistical error on that bin. The number of $\KS$ decays within the \gls{zref} bin, combined with the momentum, lifetime and mass of the $\KS$, can be used to calculate the predicted number of \KS particles in a $z$ bin further downstream through the relation
+
+\begin{equation}
+  N(z,p) = N_{0} e ^{\frac{-zm}{p\tau }},
+  \label{eq:extra}
+\end{equation}
+where $m$ is the mass of the \KS, $p$ is the momentum of the $\KS$, $\tau$ is the true lifetime of the $\KS$ and $N_{0}$ is as previously defined. This calculation of $N(z,p)$ is further illustrated in \autoref{fig:sketch}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.25]{figs/zsketch.png}
+\caption{A sketch of the extrapolation in $z$ of the number of expected $\KS$ candidates for a given momentum, $p$, and a mass, $m$. The line at $z = 140\mm$ indicates the end of the $z_{\mathrm{valid}}$ region.}
+\label{fig:sketch}
+\end{figure}
+
+The reconstruction efficiency is calculated for data by comparing the number of expected $\KS$ decays, using the calculation in \autoref{eq:extra}, with the number of observed $\KS$ decays, for different bins in $z$. This method of calculating the reconstructed efficiency is referred to as the extrapolation method. The final downstream efficiency values obtained using this extrapolation method are quoted both as a function of $z$ and averaged over $z$. The results are given in bins of the $p$ and $\eta$ of the \KS, with momentum bins of $10<p<20$\gevc, $20<p<40$\gevc and $40<p<100$\gevc and $\eta$ bins of $2.0<\eta<3.2$ and $3.2<\eta<5.0$.
+
+%This extrapolation method relies on the assumption that the $\KS$ decays parralel to the $z$-axis, as discussed in \autoref{sec:ver}. 
+
+
+
+%The ratios between the simulation and data efficiencies are also computed in this study.
+
+%% \emph{Mitesh: slight panic thought here - the probability of the KS decaying as a function of z is taking into account the specific final state of 2 pions? I mean seeing that the KL ,whereby  KL is long by definition because of CP odd meaning it goes to three pions has a much longer lifetime, i assuming that this is the case but ive never checked this) }
+
+%%%%%as a cross check although the result yielded could equally have been obtained by simply looking at the number of reconstruction simulated events for downstream tracks and comparing with the original number in the generator-level simulated events.                
+
+%The layout of this chapter is as follows. Firstly the method used to obtain the long track efficiencies is outlined followed by a discussion on the data samples used and how background in the data samples is dealt with. This is followed by a detailed description of the method used to calculated the genuine number of \KS decays as a function of $z$. Finally there is a discussion on systematic checks and the presentation of the results. 
+
+
+\newpage
+%In order to extract the absolute efficiency of the data it is necessary to deduce the absolute efficiency of the simualtion. This 
+
+
+
+%The final long-track tracking-efficiency is determined using the simulation and that obtained from the tag and probe method using the data
+\section{Data samples}
+\label{sec:datasamples}
+This section outlines both the simulation and data samples used for this analysis.
+\subsection[{Selecting $K^{0}_{s}$ particles from data}]{Selecting $\mathbold{\KS}$ particles from data}
+
+After the data output by the HLT2 trigger has been stored, an initial selection is placed on the data, referred to as the stripping selection. This selection is applied in order to reduce the amount of data written to disk where it is readily accessible for further analysis. %The reason for this stripping selection is that LHCb data is initially stored on tape, and to avoid having large amounts of data stored to disk, initial selections are placed on the data when it is transferred from tape to disk. When on disk, it can be accessed by LHCb users.
+
+Different initial selection criteria are used to write out a set of so-called stripping lines. The stripping lines used through out this thesis are all predefined selections already implemented within the LHCb software. Normally, the stripping selection is designed to enhance the signal fraction in the dataset. However, given that $\KS \to \pip\pim$ decays are abundant, even when the $\KS$ candidate has not been used in the trigger line or the stripping selection decision processes, there is roughly one $\KS\to\pip\pim$ candidate per event.
+
+As such, a stripping line which is not specifically designed to select $\KS$ candidates is used in this analysis. Selection criteria are then applied to $\KS$ candidates in the stripped dataset, as summarised in \autoref{tab:selection}. Here, \Gls{DIRA} refers to the cosine of the angle between the reconstructed \KS momentum and the displacement vector between the primary vertex and the \KS decay vertex. All other variables in \autoref{tab:selection} have already been defined previously in \autoref{chap:dec}.
+
+\begin{table}[ht]
+  \centering
+    \begin{tabular}{l c c}
+      \hline
+      Quantity & DD selection & LL selection \\
+      \hline
+        \KS mass window (pre-fit) & $\pm 80$\mevcc & $\pm 50$\mevcc \\ 
+        \KS mass window (post-fit) & $\pm 64$\mevcc & $\pm 35$\mevcc \\ 
+	\KS vertex \chisq/ndf & $< 9$ & $< 9$ \\
+	\KS track DOCA \chisq & $< 25$ & $< 25$ \\
+	\KS DIRA & $> 0.999995$ & $> 0.999995$ \\
+	pion momenta & $> 5000\mevc$ & $> 5000\mevc$ \\
+	pion IP \chisq & $>$ 9 & $>$ 9 \\
+	pion \pt & $>0$ & $> 250 \mevc$ \\
+      \hline
+    \end{tabular}
+  \caption{Criteria to select $\KS$ candidates for the analysis.}
+  \label{tab:selection}
+  \end{table}
+
+The analysis in Ref~\cite{LHCB-DP-2013-002} required the momenta of the daughter muons to be greater than 5000\mevc. In order to use the efficiency from this analysis correctly, the same cut is applied in the present analysis. %x A cut above 5000\:MeV was placed on the momenta of the daughter muons in Ref~\cite{LHCB-DP-2013-002}, thus to be able to apply the long track efficiency corrections to this analysis the same cut is placed on the daughter pions here.
+  
+\subsection{Simulation}
+
+ Multiple samples of simulated events are used, with each featuring a different $b$-hadron decay. The \KS that is studied is required not to come from the $b$-hadron but from elsewhere in the event. In total, around 85M events are used from which $\sim$ 3M \KS candidates are reconstructed and selected. 
+
+\section[{Calculating the genuine number of $K^{0}_{s}$ decays as a function of $z$}]{Calculating the genuine number of $\mathbold{\KS}$ decays as a function of $\mathbold{z}$}
+\label{sec:methodoutline}
+%\subsection{Extrapolating from a bin in $z$}o
+In order to calculate the reconstruction  efficiency using the extrapolation method, the long track efficiencies must first be unfolded in the so-called reference $z$ bin, \gls{zref}.  This $z_{ref}$ bin is taken from the $z_{\mathrm{valid}}$ region of the detector, defined as $-$140 $<z<$ 140\:mm, as previously detailed in \autoref{sec:long}.
+
+%The width of $z_{\textrm{ref}}$ is chosen to be 10\mm wide. This width is deemed to be narrow enough such that change in $N(z)$ across the 10mm bin width is of the same order as the statistical error on that bin.
+%% As an example, taking the lowest momentum, $\eta$ and $z_{ref}$ bin of $10<p<20\gevc$, $2.0<\eta<3.2$ and $90<z<100\mm$, the statistical error is of order a percent. In \autoref{fig:extra1050}, two binning widths are shown, one with 10\mm wide bins in $z$ and the other with 50$\mm$ wide bins in $z$. For each bin width, the extrapolation of $N(z)$ from the extremities of the $z_{ref}$ bin are shown. For the case of $p = 20\gevc$, the difference in $N(z)$ for a given $z$ due to the extrapolations being taken from either the upper or lower boundaries of the $z_{ref}$ bin, is roughly equal to 10\% of the bin width in millimetres. As such, a bin width of 10mm corresponds to a variation of 1\% in $N(z)$ and a bin width of 50mm corresponds to a variation of 5\% in $N(z)$.  Given that a $z_{ref}$ bin of width 10\mm has a statistical error of order 1\%, a wider bin would give a smaller statistical uncertainty but a larger uncertainty due to the bin width, hence the motivation for a bin width of 10\mm. There are however five different bins of 10\mm used, thus giving five different values of $N_{0}$ in \autoref{eq:extra}. The final efficiency is taken as the average of the five different efficiencies, calculated using these five different values of $N_{0}$. The effect of the $z$ bin width on the final efficiency is later evaluated as a systematic uncertainty in \autoref{sec:sys}.
+%% \begin{figure}
+%% \begin{center}
+%%      \hspace*{-1cm}
+%%  \subfloat[]{\includegraphics[scale = 0.4]{figs/delta10}\label{L1}}  
+%%  \subfloat[]{\includegraphics[scale = 0.4]{figs/delta25}\label{L2}}  \\
+%% \end{center}
+%% \caption{Extrapolations across $z$, assuming a momentum of 20\gevc, and using values of $N_{0}$ from the upper and lower bin boundaries, as indicated in the legends.  A bin width of 10\mm is shown in \protect\subref{L1}, and a bin width of 50\mm is shown in \protect\subref{L2}.
+%%   \label{fig:extra1050}}
+%% \end{figure}
+
+The value of $z$ for a given $\KS$ candidate is defined as the position of the vertex in $z$ of the dipion system (referred to as the end vertex of the $\KS$ candidate), where the value of $z$ shown in \autoref{eq:extra} is equal to the difference in $z$ between the end vertex of the $\KS$ candidate and the centre of the $z_{ref}$ bin. 
+
+%% Although the extrapolation method is independent of the $z_{ref}$ bin used, the efficiency distributions as a function of $z$ are calculated using five different $z_{ref}$ reference bins as a cross-check, in case of statistical fluctuations within each $z_{ref}$ bin causing the bin selected to contain more or less events than the average in a particular region of $z$. Five different bins are used ranging from $90-140$\:mm with widths of $10$\:mm. The corresponding efficiencies are calculated independently for each $z_{ref}$ reference bin and the final efficiency distribution is the average across all reference bins weighted according to the uncertainty on each reference bin.
+
+In order to use $N(z_{\textrm{ref}},p)$ to calculate $N(z,p)$ for all $z$, it is necessary that no new $K^{0}_{s}$ particles are created at a position beyond $z_{ref}$, otherwise it would not be a simple decaying exponential. It is also necessary to select a  $z_{ref}$ bin within the $z_{\mathrm{valid}}$ region, i.e. below $z \sim$ $140$\:mm. Given that the point in $z$ past which no new \KS particles are created, referred to as \gls{zks}, is generally greater than 140\mm, steps must be taken to reduce the value of $z_{\KS}$. This reduction is achieved by cutting on the primary vertex (\Gls{PV}) distribution of the $K^{0}_{s}$. This PV cut forces the maximum PV position in $z$ of the \KS to be lower, thus also shifting $z_{\KS}$ downwards in $z$. This is illustrated in Figure \ref{fig:pvcut} which shows the effect that a cut on the PV position has on the number of \KS decays as a function of $z$. As the PV of a \KS meson is dependent on both its $p$ and $\eta$ value, the cut applied depends on the $p$ and $\eta$ bin, as outlined in \autoref{tab:pvcut}.  
+
+\begin{table}
+\begin{center}
+  
+\begin{tabular}{c|c|c|c}
+  \hline
+  momentum range&{10$<p<$20\:GeV} & {20$<p<$40\:GeV} & {40$<p<$100\:GeV} \\\hline
+        $\eta$ range & & & \\
+\hline 
+2.0$< \eta<$3.2 & 55 & 20 & 20  \\
+\hline
+3.2$<\eta<$5.0 & 20 & $-$10 & $-$30  \\
+\hline 
+\end{tabular}
+\end{center}
+
+\caption{The value of $z$ where the cut is applied to the primary vertex of the \KS. Results are shown in mm for each bin.
+  \label{tab:pvcut}}
+
+
+\end{table}
+
+
+
+\begin{figure}
+\centering
+  \hspace*{-1cm}
+  \subfloat[]{\includegraphics[scale = 0.2]{figs/edit_z_with_without_pv_cut_mom_bin_10_20_GeV_eta_bin_2_3_2.png}\label{1}} 
+   \subfloat[]{\includegraphics[scale = 0.2]{figs/edit_z_with_without_pv_cut_mom_bin_10_20_GeV_eta_bin_3_2_5.png}\label{2}}  \\
+   \caption{The number of decays as a function of $z$ for long tracks with (black) and without (red) the cuts on the primary vertex of the \KS applied, for data  events with 10$<p<$20\:GeV, 2.0$<\eta<$3.2 \protect\subref{1}, 2.0$<\eta<$3.2 \protect\subref{2}.
+  \label{fig:pvcut}}
+\end{figure}
+
+
+\autoref{fig:LL_DD_raw} shows the $z$ distributions for both data and reconstructed simulated events with the PV cuts applied. The red line indicates the lower edge of the lowest reference bin used. The agreement and comparative disagreement in \autoref{fig:LL_DD_raw} between data and reconstructed simulated events for long tracks and downstream tracks respectively has a direct effect on the final tracking efficiency values obtained. %A scale factor is applied to simulated events such that the number of LL tracks in simulation and data are the same. This scale factor is discussed in more detail in \autoref{sec:simcal}. 
+
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.25]{figs/90_100_LL_DD_raw90_100_mom_bin_10_20_GeV_eta_bin_2_3_2.png}
+\caption{The number of decays for downstream and long tracks as a function of $z$ for both reconstructed simulated events (blue) and data (green), for events with 10$<p<$20\:\gevc, 2.0$<\eta<$3.2. The line at 90\mm indicates the lower edge of the lowest $z_{ref}$ bin. The long tracks are those which peak around the red line at 90\:mm and the downstream tracks are those which peak at higher $z$.}
+\label{fig:LL_DD_raw}
+\end{figure}
+
+
+%% A bin of width 10\:mm is taken from within this region and in the following is referred to as the reference bin, $z_{\textrm{ref}}$.
+
+
+%% Usingto reconstruct downstream tracks, it is necessary to compare the number of \KS reconstructed to the number of $\KS$ that passed within the detector acceptance.
+
+
+
+%% In order to compute the number of \KS passing through the detector acceptance, a narrow bin in $z$ is taken from the region of the detector where the reconstruction efficiency is well understood in the simulation, namely events with a decay vertex within -140 $z<$ 140\:mm, as detailed in section \ref{sec:longtrackeff}. A bin of width 10\:mm is taken from within this region and in the following is referred to as the reference bin, $z_{\textrm{ref}}$. Using the efficiency measurements for long tracks, the number of events in data observed in $z_{\textrm{ref}}$ can be corrected, to give the number of events expected to be observed in the tracking efficiency were 100\% efficient. Using the number of events observed in the $z_{\textrm{ref}}$ bin after the efficiencies corrections have been applied, the number of expected events as a function of $z$ can be deduced through the relation
+%% \begin{equation}
+%%   N(z,p) = N_{0} ^{\frac{z\times m c }{p \times \tau }},
+%%   \label{eq:extra}
+%% \end{equation}
+%% where $m$ is the mass of the \KS, $p$ is the momentum of the $\KS$, $\tau$ is the true lifetime of the $\KS$ and $N_{0}$ is the number of events in the $z_{ref}$ bin once the efficiency corrections have been applied. This extrapolation of event number in $z$ is illustrated in \autoref{fig:sketch}.
+
+%% \begin{figure}[h]
+%% \centering
+%% \includegraphics[scale=0.25]{figs/zsketch.png}
+%% \caption{A sketch of the extrapolation in $z$ of the number of expected $\KS$ candidates for a given momentum, $p$, and a mass, $m$.}
+%% \label{fig:sketch}
+%% \end{figure}
+ 
+%% The width of $z_{\textrm{ref}}$ was chosen to be narrow enough such that range in $N_{z}$ across the 10mm bin width was negligibly small, whilst being wide enough to accommodate enough statistics in the bin. The choice of bin width is later evaluated as a systematic. The value of $z$ for a given $\KS$ candidate is defined as the position of the vertex in $z$ of the dipion system (referred to as the end vertex of the $\KS$ candidate) and in practice the value of $z$ shown in \autoref{eq:extra} would be equal to the difference in $z$ between the end vertex of the $\KS$ candidate and the center of the $z_{ref}$ bin. 
+
+
+
+
+
+
+%% the averaging over the number of events  change in gradient that would occur over $z_{\textrm{ref}}$ if the distribution were continuous is negligible when compared to the gradient change between $z_{\textrm{ref}}$  itself and a bin further downstream. If this is the case then one can take the approximation that all decays that occur in $z_{\textrm{ref}}$ come from a single point, taken as the centre of the bin, when considered from a point in $z$ far enough downstream. 
+
+%% %% A narrow width in $z$ is defined as that which is small enough for all \KS mesons within that $z$ bin to appear to have decayed at a single point. The validity of the assumption that all \KS have decayed a single point is dependent on the change in $N(z)$, the number of \KS decays as a function of $z$, for a given value of $p$, from the upper to lower $z$ bin edge, in relation to how much $N(z)$ will have changed at a point at higher $z$. This change in $N(z)$ from the upper to lower bin edge, $\Delta N$, is dictated by the gradient of $N(z)$ and the $z$ bin width. In turn the gradient of $N(z)$ will depend on the value of $p$, with lower momentum values giving rise to higher values for the gradient of $N(z)$. The size of $\Delta N$ in comparison with the total change from $N(z_{\textrm{ref}})$ to $N(z)$ is dependent on n$\Delta z = z - z_{\textrm{ref}}$, as well as the gradient of $N(z)$. %The  lower the momentum the higher the value of $N(z)$. %and how far away from the reference bin the new bin in $z$ is taken. 
+
+%% For example, taking a momentum of $15$\:GeV and a value for $z$ at $z = $ 500\:mm , yields a gradient, given as $\frac{m}{\tau \times c}$, of  $\sim 0.0012\textrm{mm}^{-1}$. This gradient corresponds to a change of $\sim $1 \% in $N(z)$ over $z_{\textrm{ref}}$ from its upper to its lower edge. The change in $N(z)$ from $z_{\textrm{ref}}$ to $z = $ 500\:mm is $\sim$ 60 \%. Thus the largest feasible uncertainty due to the $z$ bin width being finite is of the order of $<$2\%. 
+\section{The removal of background}
+\label{sec:background}
+
+Background in the data sample is dealt with by fitting to the \KS mass distribution in 10mm wide bins in $z$ from $z = 0$ to $z = 2000$ mm.  These fits are used to compute the number of signal events in the fit signal region, where the signal region is defined as being within 4 $\sigma$ of the mean of a double Crystal Ball (\Gls{CB}) function \cite{Skwarnicki:1986xj}, fitted to the data. The CB function is a Gaussian function with a power-law tail below a certain threshold. It is defined as
+\begin{equation}
+  f(x; \alpha,n,\overline{x},\sigma) = N.
+  \begin{dcases}
+    e^{-\frac{(x-\overline{x})^{2}}{2\sigma^{2}}},& \text{if } \frac{(x-\overline{x})}{2\sigma}  >-\alpha\\
+    A.(B - \frac{(x-\overline{x})}{2\sigma})^{-n}, & \text{otherwise}
+  \end{dcases}
+  %% $$where$$
+  %% \mathcal{C} = e^{-\frac{1}{2}(\frac{\alpha-\overline{x}}{k})^{2}}e^{-\beta \alpha};  \beta = \frac{\overline{x} - \alpha}{k^{2}}.
+  \label{Eq:CB}
+\end{equation}
+where $A, B$ and $N$ are all constants that depend on ${\alpha,n,\overline{x},\sigma}$. Thus, if $\alpha$ is positive, the tail, $A.(B - \frac{(x-\overline{x})}{2\sigma})^{-n}$, will start below the mean (giving a so-called left tail) and vice versa for the case where $\alpha$ is negative. The background is fitted using a first-order polynomial. %Examples of the background and signal distributions for the lowest $z_{ref}$ bin, 90$<z<$100\mm, as a function of $p$ and $\eta$, are shown in \autoref{fig:mass}.  The threshold below or above which the Gaussian function because a power-law tail is dependent on $n$. 
+
+In order to form a background-subtracted distribution of some quantity X, e.g. momentum, the background distribution for this quantity is taken from the mass side bands, where the mass side bands are defined as being from 440\mevcc to 540\mevcc and excluding the signal region. The mass side band distribution is then scaled by the ratio of the proportion of background in the signal window over the proportion of background in the mass side band. As shown in \autoref{fig:mass}, the widths of the signal mass distributions for long tracks are narrower than those of downstream tracks ($\sim$ 25-35\:MeV$/c^{2}$ for long tracks, $\sim$ 55-65\:MeV$/c^{2}$ for downstream tracks, depending on the $z$ bin) indicating the better long track reconstruction resolution. The background distribution under the signal window tends to be fairly flat. %\autoref{tab:bcktab} shows some examples of the ratio of the number of signal events (S) to the number of background (B) events in the signal window for mass fits for both long and downstream tracks.
+
+The levels of background present vary with $z$. Mass fits are performed only in bins of $z$ as there are insufficient statistics to also bin in $p$ and $\eta$. However the background shape is fairly similar for all momentum and $\eta$ bins so it is assumed that the proportion of background under the signal window is independent of $p$ and $\eta$ and thus it suffices to bin only in $z$. There is further discussion of the validity of this assumption in \autoref{sec:sys}.
+
+In summary, during the background-subtraction process the proportion of background events present in the signal window is calculated integrated over all $p$ and $\eta$ and then this same proportion is used to multiply the mass side bands of distribution $X$ for each individual $p$ and $\eta$ bin, for a given $z$ bin.
+
+%As an example Figure \ref{fig:massmometa} shows the variation in shape and size of the background within a wider $z$ bin (50mm) but sub-binned into $p$ and $\eta$ regions over a region in $z$ where the background has one of the larger variations from a flat distribution.
+%% \begin{figure}
+%% \begin{center}
+%% %\label{fig:petacomp}
+%% \begin{tabular}{ c c }
+%% \hspace*{-1.6cm}
+%%   \includegraphics[scale = 0.5, clip = true, trim  = 0cm   9cm 14cm 0]{figs/edit_p_eta_bck_sub_90_100_mom_bin_10_20_GeV_eta_bin_2_3_2}  &
+%%     \includegraphics[scale = 0.5, clip = true, trim  = 0cm 9cm 14cm 0]{figs/edit_p_eta_bck_90_100_mom_bin_10_20_GeV_eta_bin_2_3_2}  \\
+%%   \end{tabular}
+%% \end{center}
+%% \caption{The signal (left) and background distributions in $p, \eta$ for data for events with 10$<p<$20\:GeV, 2.0$<\eta<$3.2, 90$<z<$100\:mm.
+%%   \label{fig:bcksub}}
+%% \end{figure}
+ 
+
+%gnal window. This value is then used to scale the mass side band didtributions in background subtraction.
+
+\begin{figure}
+\begin{center}
+%\label{fig:petacomp}
+%\begin{tabular}{ c c }
+ 
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/doublegaussmodel_z_bin_1200_1210_mm.png}\label{1}}  
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/doublegaussmodel_z_bin_850_860_mm}\label{2}}  \\
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/doublegaussmodel_z_bin_90_100_mm}\label{3}}  
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/doublegaussmodel_z_bin_300_310_mm.png}\label{4}}  \\
+  
+%\end{tabular}
+\end{center}
+\caption{The fit to the $m_{\pi\pi}$ mass distributions for downstream (\protect\subref{1}, \protect\subref{2}) and long (\protect\subref{3}, \protect\subref{4}) tracks for events with 1200$<z<$1210\:mm \protect\subref{1}, 850$<z<$860\:mm \protect\subref{2}, 90$<z<$100\:mm \protect\subref{3}, 300$<z<$310\:mm \protect\subref{4}. %The $y$ axis shows the number of events per 1\:MeV. 
+  \label{fig:mass}}
+\end{figure}
+
+%% \begin{table}
+%% \begin{center}
+  
+%% \begin{tabular}{|ccccc|}
+%%  \hline
+%% & (1000$<z<$1010)/mm & (1200$<z<$1210)/mm & (90$<z<$100)/mm & (300$<z<$310)/mm \\
+%% \hline
+%% %{  signal} & 0.689 & 20 & 0.598 &0.726332 \\
+%% {  S/B} & 3.97 & 3.80 & 3.12 & 3.04 \\
+%% \hline
+%% \end{tabular}
+
+%% \end{center}
+%% \caption{The ratio of the number of signal events (S) by the number of background events (B) in the signal window.
+%%   \label{tab:bcktab}}
+%% \end{table}
+\FloatBarrier
+
+
+%UNCOMMENT%
+
+
+
+
+\subsection[Unfolding the reconstruction efficiency in the $z_{ref}$ bins]{Unfolding the reconstruction efficiency in the $\mathbold{z_{ref}}$ bins}
+For each $z_{ref}$ bin, the long track efficiency from Ref~\cite{LHCB-DP-2013-002}, which is cited as the ratio between data and simulation, is used to extract the absolute efficiency from the data. The results of the analysis carried out in this chapter are quoted in the same $p$ and $\eta$ bins as used in Ref~\cite{LHCB-DP-2013-002}, as discussed previously in \autoref{sec:methodintro}. In addition, in order to compare the results from this study to those from Ref~\cite{DDpat}, no reweighting of the track multiplicity in simulation is applied.
+
+%% With the $z_{ref}$ bins chosen and the background subtracted the next step is to use the results for the long track efficiency reconstruction from Ref~\cite{LHCB-DP-2013-002}, which are quoted as the ratio between simulation and data, to extract the absolute reconstruction efficiency for the data.
+
+%% The reconstruction efficiency, $\epsilon$, refers to the fraction of times a track is reconstructed given that it has passed through the detector acceptance. It is assumed in this analysis that the number of \KS as a function of $z$ is indepedent of the track multipicity, and that, as in the case of the long track efficiency study, that the behaviour of efficiency as a function of track multiplicity is the same in data and simulation. The reconstruction efficiency is therefore taken as a function of $p$ and $\eta$ only.
+
+%% It is assumed in this analysis that this definition of reconstruction efficiency is equivalent to the definition given in the long track efficiency measurement of Ref ~\cite{LHCB-DP-2013-002}, where the efficiency is defined to be the number of times a tagged track matches a long track.
+%% It is also assumed, as in the case of the long track efficiency study, that the behaviour of efficiency as a function of track multiplicity is the same in data and simulation. The reconstruction efficiency is therefore taken as a function of $p$ and $\eta$ only.
+
+As previously discussed in \autoref{chap:dec}, there are two categories of LHCb simulated events. Reconstructed simulated events are those whose simulation includes the presence of the fully simulated LHCb detector, whereas so-called generator-level simulated events are those whose simulation does not include the LHCb detector. %, although material interactions of the \KS with the detector do feature in the generator-level simulation.
+To extract the absolute reconstruction efficiency in data from the ratio of reconstruction efficiencies between data and simulation, the number of reconstructed simulated events, $\textrm{n}_{reco}$,  for a given region in $p$ and $\eta$, is compared to $\textrm{N}_{gen}$, the number of generator-level simulated events present in the same region of $p$ and $\eta$. By combining these numbers and applying the corrections given in Ref~\cite{LHCB-DP-2013-002} (and shown in \autoref{fig:ratio}) the efficiency for data, $\epsilon_{p,\eta}$, for a given $p$, $\eta$ (of the \KS) is computed using
+
+\begin{equation}
+  \epsilon_{p,\eta} = \frac{\textrm{n}_{reco, p, \eta}\times \omega_{(\pip\pim)p_{\pi^{\pm}},\eta_{\pi^{\pm}}}}{\textrm{N}_{gen, p, \eta}},
+  \label{eq:dataeff} 
+\end{equation}
+where $\omega_{(\pip\pim)p_{\pi^{\pm}},\eta_{\pi^{\pm}}}$ refers to the correction weights applied to both pions taken from the \jpsi tag-and-probe method, valid for long tracks, which are dependent on the $p$ and $\eta$ value of the pion, not the \KS. 
+
+ 
+By multiplying the number of data events, $\textrm{n}_{data, p, \eta}$, by $1/\epsilon_{p,\eta}$, within a chosen $z_{\mathrm{ref}}$ bin (and subtracting the background as discussed in \autoref{sec:background}), the value for $N_{0}$, as defined in \autoref{eq:extra}, can be calculated for a given value of $p$ and $\eta$. The reconstruction efficiency in the $z_{ref}$ bin is computed in bins of width 1\gevc in $p$ and bins of 0.1 in $\eta$.  These finer bins are combined into coarser ones for the results. %Once the efficiency given in \autoref{eq:dataeff} has been applied to data using this finer binning scheme in $p$ and $\eta$ in the relevant $z_{ref}$ bin, the $\eta$ bins are integrated over to give the nominal or coarser binning scheme as in Ref~\cite{LHCB-DP-2013-002}. However, 1\gevc  bins of momentum are retained until after the extrapolation of $N(z,p)$, as discussed in \autoref{sec:extra}.
+
+The quantities $\epsilon_{p,\eta}$, $\textrm{n}_{reco, p, \eta}$, $\textrm{n}_{reco, p, \eta}\times \omega_{(\pip\pim)p_{\pi^{\pm}},\eta_{\pi^{\pm}}}$ and $\textrm{N}_{gen, p, \eta}$ from \autoref{eq:dataeff} along with $\textrm{n}_{data, p, \eta}$ and $\textrm{n}_{data, p, \eta}/\epsilon_{p,\eta}$, are shown in \autoref{fig:recoeff}.
+
+
+%The number of events as a function of $p$ and $\eta$ for a given $z_{ref}$ bin and coarse $p$ and $\eta$ bin, after the efficiency in \autoref{eq:dataeff} have been applied, can be seen in \autoref{fig:recoeff}, alongside the reconstruction efficiencies themselves.
+
+ 
+\begin{figure}[h!]
+  \begin{center}
+   \vspace*{-1.5cm}
+    \subfloat[]{\includegraphics[scale = 0.42]{figs/MCORIG90_100_mom_bin_10_20_GeV_eta_bin_2_3_2.pdf}\label{ks:1}}
+    \subfloat[]{\includegraphics[scale = 0.42]{figs/MCp_eta_w_sq90_100_10_20_2_3_2.pdf}\label{ks:2}}\\
+    \subfloat[]{\includegraphics[scale = 0.42]{figs/GENORIG.pdf}\label{ks:3}}
+    \subfloat[]{\includegraphics[scale = 0.42]{figs/DATAreconstruction_eff90_100_mom_bin_10_20_GeV_eta_bin_2_3_2.pdf}\label{ks:4}}\\
+    \subfloat[]{\includegraphics[scale = 0.42]{figs/DATAORIG}\label{ks:5}}
+    \subfloat[]{\includegraphics[scale = 0.42]{figs/DATAp_eta_EFF_CORR90_100_mom_bin_10_20_GeV_eta_bin_2_3_2.pdf}\label{ks:6}}\\
+        
+\end{center}
+  \caption{The distributions in $p,\eta$ for the bin $10<p<20 \gevc$, $2.0<\eta<3.2$ for the quantities $\textrm{n}_{reco, p, \eta}$, \protect\subref{ks:1}, $\textrm{n}_{reco, p, \eta}\times \omega_{(\mumu)p_{\mu^{\pm}},\eta_{\mu^{\pm}}}$, \protect\subref{ks:2}, $\textrm{N}_{gen, p, \eta}$, \protect\subref{ks:3}, and $\epsilon_{p,\eta}$, \protect\subref{ks:4} from \autoref{eq:dataeff} along with $\textrm{n}_{data, p, \eta}$, \protect\subref{ks:5}, and $\textrm{n}_{data, p, \eta}/\epsilon_{p,\eta}$, \protect\subref{ks:6}.
+    \label{fig:recoeff}}
+\end{figure}
+
+%This nonmial binning scheme, as shown in \autoref{fig:ratio} is $10<p<20$, $20<p<40$, $40<p<100$ and  $2<\eta <3.2.0$, $3.2<\eta <5$.
+ 
+ %% When applying the PV cuts as described in \autoref{sec:methodoutline},  the same cut is applied to all three data sets used to compute the efficiencies; data, reconstructed simulated events and generator-level simulated events. It is necessary to apply the exact same PV cut to reconstructed and generator-level simulated events, otherwise the ratio between $\textrm{n}_{reco}$ and $\textrm{N}_{gen}$ will be incorrect, as the selection applied to the reconstructed and generator-level simulation will differ. 
+
+\FloatBarrier
+ %RECENT%
+%% \subsubsection{Choice of binning scheme in $\bf{p}$ and $\bf{\eta}$}
+%% The reconstruction efficiency in the $z_{ref}$ bin is computed in bins of width 1\:GeV in $p$ although the final result is averaged over the bins to produce the same binning scheme as shown in Figure \ref{fig:ratio}. The choice of 1\:GeV sub-bins in momentum is driven by the need to calculate the distribution of $N(z,p)$ whereby a binning scheme which is close to continuous in $p$ is preferred. This is due to the systematic uncertainty arising from averaging over the gradient of $N(z,p)$ (which is a function of $p$) within each bin of $z$. Therefore the smaller the bins the better. However any smaller than 1\:GeV and statistics are limiting, see discussion in section \ref{sec:extra}. %The choice of width 0.1 in $\eta$ allows a sufficiently accurate description of the variance of reconstruction efficiency across all $\eta$ regions of the detector. 
+
+
+ %RECENT%
+%% \subsection{Calculation of the number of $\bf{\KS}$ decays over all $\bf{z}$ in data}
+%% Once the number of observed events in the data has been corrected by the reconstruction efficiency it is presumed that one has the true distribution of $N(p,\eta)$ within the $z$ reference bin. This is then integrated over $\eta$ to obtain $N(p)$. Therefore knowing this distribution and the mass and lifetime of the \KS, $N(z_{\textrm{ref}},p)$ can be used to calculated $N(z,p)$ as outlined in more detail in equation \ref{eq:extra} in section \ref{sec:extra}. %Again the narrower the momentum bin the better. %Here bins of 1\:GeV are used, as further outlined in section \ref{sec:extra}.
+
+%% Once the true distribution is known for each individual sub-momentum bin a weighted average is taken according to the uncertainty on each sub-momentum bin, see equation \ref{eq:weightav} in Appendix \ref{app:error}. 
+
+\section{Comparison of simulated events and data distributions}
+%\subsection{Calculation of the genuine distribution for simulation for all $\bf{z}$}
+\label{sec:simcal}
+The extrapolation method is also applied to reconstructed simulated events in order to validate the extrapolation method. The distribution of the number of reconstructed events in $p$ and $\eta$ is not exactly matched between simulated events and data even after the corrections for differences between long track efficiencies from Ref~\cite{LHCB-DP-2013-002} are applied, although they are highly similar, as shown in \autoref{fig:recoeff}\protect\subref{ks:2} and \autoref{fig:recoeff}\protect\subref{ks:5}.  This slight difference is maybe due to the physics modelling of \KS mesons in Pythia. % with the detector in simulation. The effect of material interactions will be greatly reduced in the case of the \jpsi\to\mumu decays used to calculate the long track efficiencies in Ref~\cite{LHCB-DP-2013-002}. The uncertainty due to this mismodelling of hadronic material interactions in simulation is discussed in \autoref{sec:mismod}.
+
+As the reconstructed simulated events do not have exactly the same distribution of $N(z_{\textrm{ref}},p,\eta)$ as in the data, the distribution of $N(p, \eta)$ for reconstructed simulated events is weighted over all $z$, for all sub-bins of $p$ and $\eta$, using weights calculated from the $N(z_{\textrm{ref}},p,\eta)$ distributions in background-subtracted data. These are referred to as simulation correction weights and they are given as 
+\begin{equation}
+\label{eq:recow}
+\omega_{p,\eta, z_{\textrm{ref}}} = \frac{\textrm{n}_{reco, p, \eta, z_{\textrm{ref}}}}{\textrm{n}_{data, p, \eta, z_{\textrm{ref}}}}.
+\end{equation}
+The effect of weighting the reconstructed simulated events is shown in \autoref{fig:RECOW}. In \autoref{fig:RECOW}, a scale factor has also been applied to simulation in order to normalise the number of simulation events in each $z_{ref}$ bin to the number of data events. This scale factor is applied to all simulation events. 
+\begin{figure}[h!]
+  \centering
+  \hspace*{-1cm}
+  \subfloat[]{\includegraphics[scale = 0.42]{figs/MC_2DCORR}\label{1}}  
+  \subfloat[]{\includegraphics[scale = 0.42]{figs/DATAORIG}\label{2}}
+\caption{The $(p, \eta)$  distribution for data, \protect\subref{1} and the $(p, \eta)$  distribution for reconstructed simulated events after weights are applied, \protect\subref{2}, for events with 90$<z<$100\mm,  10$<p<$20\:GeV and 2.0$<\eta<$3.2.}
+  \label{fig:RECOW}
+\end{figure}
+
+
+%% DO NOT DELETE%%%%
+%%%%%%%%
+%% \subsubsection{Weighted averages}
+%% For the case of both data and simulation, the efficiencies for each 1\gevc submomentum bin are averaged over to yield the total efficiency for the nonmial coaser momentum binning (as per the binning used in Figure \ref{fig:ratio}). The total average is calculated as a weighted average, where the uncertainty that the submomentum bin efficiency carries dictates the weight (referred to as the uncertainty weight) that the submomentum efficiency value is given when added to the average. 
+
+%% The values of the uncertainty on each submomentum efficiency values for simulated events and data will be different due to the additional simulation correction weights applied to the simulated events to force the distribution of $N(z_{\textrm{ref}},p,\eta)$ in simulation to be the same as that for data, as mentioned above in equation \ref{eq:recow}. The presence of these simulation correction weights affect the final efficiency value for reconstructed simulated events in a way which yields it different from data over a wider momentum binning. This is because of the different weights each subbin momentum efficiency value receives when taking the weighted average due to a difference in the distribution of uncertainties across the momentum subbins in data and simulated events.
+
+
+
+%% To avoid this happening the uncertainty weights used in the weighted average are forced to be the same in simulation as in data, despite the uncertainties themselves being different. %It should be noted that t
+
+
+
+%\clearpage
+
+\FloatBarrier
+
+
+%% The distribution of the number of reconstructed events in $p$ and $\eta$ is not exactly matched between simulated events and data even after the corrections for differences between long track efficiencies are applied, as shown in \autoref{fig:petacomp}. In order to compensate for the remaining differences in the $(p,\eta)$ distribution between simulated events and data, the simulated events are reweighted over all $z$ using the simulation correction weights as per equation \ref{eq:recow}. It is however assumed that the detector response in simulation, that is, the relative efficiency between reconstructed simulated events and generator-level simulated events a function of $p$ and $\eta$ is correctly modelled in simulation.
+
+%% \begin{figure}
+%% \begin{center}
+
+%% \begin{tabular}{ c c }
+%%  \hspace*{-0.7cm}
+%%   \includegraphics[width=0.49\textwidth]{figs/p_eta_data_90_100_mom_bin_10_20_GeV_eta_bin_2_3_2.png}  &
+  
+%%    \includegraphics[width=0.49\textwidth]{figs/90_100_p_eta_mc_LLw_90_100_mom_bin_10_20_GeV_eta_bin_2_3_2.png} \\ 
+
+%% \end{tabular}
+%% \end{center}
+%% \caption{The $(p, \eta)$ distributions for background subtracted data (left) and reconstructed simulated events  with the long track efficiency corrections from Ref~\cite{LHCB-DP-2013-002}. Both plots show events with 10$<p<$20\:GeV, 2.0$<\eta<$3.2, 90$<z<$100\:mm.
+%%   \label{fig:petacomp}}
+%% \end{figure}
+
+ 
+
+
+
+%% \subsection{Reconstruction efficiency}
+%% The reconstruction efficiency within each $z$ bin is calculated using the reconstructed and generator-level simulated events. Figure ~\ref{fig:recoeff} shows the reconstruction efficiency and the momentum and distribution after corrections.
+
+
+%% \begin{figure}[h!]
+%%   \begin{center}
+%%         \hspace*{-1cm}
+%% \begin{tabular}{ c c }
+%%   \includegraphics[scale = 0.3]{figs/90_100_recoeffdata_90_100_mom_bin_10_20_GeV_eta_bin_2_3_2.png}  &
+
+%%   \includegraphics[width=0.49\textwidth]{figs/90_100_p_eta_data_EFF_CORR_90_100_mom_bin_10_20_GeV_eta_bin_2_3_2.png}  \\
+%% \end{tabular}
+ 
+%% \end{center}
+%% \caption{Showing the reconstruction efficiency for data (left) and the $(p,\eta)$ distribution after being corrected by the reconstruction efficiency (right) for events with 10$<p<$20\:GeV, 2.0$<\eta<$3.2.
+%%   \label{fig:recoeff}}
+%% \end{figure}
+\FloatBarrier
+  
+%\clearpage
+\section[Calculation of $N(z,p)$]{Calculation of $\mathbold{N(z,p)}$}
+\label{sec:extra}
+The extrapolation method works on the basis that the $p$ distribution within the $z$ reference bin, along with the number of \KS decays in the $z_{ref}$ bin, $N_{0}$, can be used to calculate the distribution of the number of decays as a function of $z$ and $p$ further down the detector. This is done using \autoref{eq:extra}. The extrapolation is  repeated for every $z$ reference bin.%, which is binned further into sub-bins of 1\:GeV the value of $\lambda$ is calculated and then extrapolated down the detector such that the number of events, $N$, in the $ ith$ $z$ bin is given as
+%% \begin{equation}
+%% \label{eq:extra}
+%% N_{i} = \sum_{j = p_{\textrm{min}}}^{j=p_{\textrm{max}}} N_{0j}e^{-(z_{i}-z_{0})\lambda}
+%% \end{equation}
+%% %
+%% where
+%% \begin{equation}
+%% \lambda = \frac{\tau \times c}{m}
+%% \end{equation}
+%% %
+%% where $p_{\textrm{min}}$ and  $p_{\textrm{max}}$ indicate the centre of the minimum and maximum $p$ bin.
+
+% and this repetition of the extrapolation is used to check the calculation is independent of the starting point chosen in $z$.
+
+When calculating $N(z,p)$, the finer the momentum bin used the better. However, bins smaller than 1\gevc result in too low statistics. The systematic uncertainty arising from the binning choice of $p$ is investigated in \autoref{sec:sys}.
+
+
+%% Too low statistics means that the statistical uncertainty on each sub-bin momentum bin, when the uncertainty is propagated through, yields too large an uncertainty (taken as higher than 50\%) on the final efficiency values.
+
+%To compensate however the centre of the momentum bin is taken as the mean momentum value across sub bins of 0.1\:GeV as opposed to assuming the mean value is in the middle of the bin. 
+
+
+\subsection{Verifying the calculation using generator-level simulated events}
+\label{sec:ver}
+The calculation in \autoref{eq:extra} is verified by taking $N(z_{\textrm{ref}},p)$ in generator-level reconstructed events and using this to calculate $N(z,p)$. One can then check that the calculated distribution matches the distribution of the generator-level simulated events exactly in the reference bin used, shown in \autoref{fig:genextra}\protect\subref{1}. The comparison of the calculated distribution with generator-level simulation across all $z$ is shown in \autoref{fig:genextra}\protect\subref{2}. % takes $N_{0}$ from the $z_{ref}$ bin $90<z<100$\mm. As shown in \autoref{fig:genextra}\protect\subref{1}, the agreement is good. %, even in the lower $\eta$ bin, showing that the assumption that the $\KS$ travels only in the $z$ direction holds.
+
+\begin{figure}
+\begin{center}
+%\label{fig:petacomp}
+%\begin{tabular}{ c c }
+  %\includegraphics[width=0.49\textwidth]{figs/90_100gen_extra/90_100_mom_bin_10_20_GeV_eta_bin_3_2_5}  &
+  %  \includegraphics[width=0.49\textwidth]{figs/90_100gen_extra/zoomed_90_100_mom_bin_10_20_GeV_eta_bin_3_2_5}  \\
+
+%\vspace*{0.5cm}
+  \subfloat[]{\includegraphics[scale = 0.174]{figs/90_100gen_extra_zoomed_90_100_mom_bin_10_20_GeV_eta_bin_2_3_2.png}\label{2}}
+  \subfloat[]{\includegraphics[scale = 0.175, trim = 0 0 0 0.25cm, clip = true]{figs/90_100gen_extra_90_100_mom_bin_10_20_GeV_eta_bin_2_3_2.png}\label{1}}
+
+\end{center}
+\caption{The value of $N_{0}$ used in the calculation for the $z_{ref}$ bin $90<z<100$\mm, \protect\subref{1}, which shows the $N_{0}$ in the $z_{ref}$ bin, $90<z<100$\mm, and the calculated value, match exactly. The calculated (solid distribution) and the distribution for generator-level simulated events in $z$ for bin 10$<p<$20\:GeV, 2.0$<\eta<$3.2, 90$<z<$100\:mm \protect\subref{2}.
+  \label{fig:genextra}}
+\end{figure}
+
+Despite the good agreement in slope between the calculated distribution and the simulated generator-level events, there are slight differences between them due to the occasional upward fluctuation in the simulation. These fluctuations are attributed to material interactions simulated in the generator-level simulated distribution which will not be modelled in the calculation \footnote{If a true generator-level simulation were used then there would be no material interactions modelled. However, here the generator-level simulation has been obtained by truth-matching the simulation, as in LHCb software Geant4 is required to decay long-lived particles}. The material interactions are further discussed in \autoref{sec:mismod}. %However the true definition of efficiency is without material interactions, i.e. the number of events present with no detector effect whatsoever. Thus the calculation, not the generator-level simulated events is taken as correct.
+
+%The zoomed-in plot in Figure \ref{sec:sys} shows that the number of generator-level simulated events and the calculated number match exactly in the reference bin used.
+
+%% \subsection[Calculating $N(z,p)$ in data and simulation]{Calculating $\mathbold{N(z,p)}$ in data and simulation}
+
+%% The distributions calculated using the $z_{ref}$ bin $90<z<100$\mm in both data and simulation for given momentum bins are shown in \autoref{fig:dataextra}.
+
+%% \begin{figure}
+%% \begin{center}
+%% %\label{fig:petacomp}
+
+
+%%     \subfloat[]{\includegraphics[scale  = 0.175]{figs/90_100_mom_bin_10_20_GeV_eta_bin_2_3_2new_both_mom_sub_bin_10_GeV90_100_mom_bin_10_20_GeV_eta_bin_2_3_2_edit.png}\label{1}}  
+%%         \subfloat[]{\includegraphics[scale  = 0.17]{figs/90_100_mom_bin_10_20_GeV_eta_bin_2_3_2new_both_mom_sub_bin_15_GeV90_100_mom_bin_10_20_GeV_eta_bin_2_3_2_edit.png}\label{2}}  \\
+    
+  
+
+%% \end{center}
+%%  \caption{The calculated distributions in $z$ for data and reconstructed simulated events for events with 10$<p<$11\:GeV, \protect\subref{1}, and 15$<p<$16\:GeV, \protect\subref{2}, both with 2.0$<\eta<$3.2, 90$<z<$100\:mm. The width of the bands indicates the error.}% For details of the uncertainty calculations see Appendix \ref{app:error}. 
+%%   \label{fig:dataextra}
+%% \end{figure}
+
+%% The calculated distributions in $z$ are exactly the same for the reconstructed simulation and data distributions. The only difference between simulation and data in \autoref{fig:dataextra} is induced by the simulation correction weights applied to the simulated events, which cause the errors for simulation to be larger
+
+. %as there are more statistics in the reconstructed simulated events. 
+%Details on the uncertainty propagation are given in Appendix \ref{app:error}. 
+%%  \begin{figure}
+%% \centering   
+%% \includegraphics[scale = 0.3]{figs/90_100P_RAW_comp_mcdata_90_100_mom_bin_10_20_GeV_eta_bin_2_3_2.png}
+%% \caption{The original (red) and corrected (black) momentum distribution for reconstructed simulated events superimposed with the distribution of the data (green) for events with 10$<p<$20\gevc, 2.0$<\eta<$3.2 and 90$<z<$100\:mm. 
+%%   \label{fig:praw}} 
+
+
+%% \end{figure}
+\clearpage
+ 
+\section{Systematic checks}
+\label{sec:sys}
+
+The main sources of potential systematic uncertainties are from certain presumptions made in the method applied and mismodelling in the simulation, as well as from the finite binning used in $z$ and $p$. These sources of potential systematic uncertainty are outlined below.
+
+\subsection[{Finite binning of $p$ and $z$}]{Finite binning of $\mathbold{p}$ and $\mathbold{z}$}
+In order to quantify the effect of having finite bin widths, the central value of the bin used in both $p$ and $z$ is varied randomly, the result recalculated, and then compared with the original results. As shown in \autoref{fig:sysz} and \ref{fig:sysp} the difference is consistent with zero. The variation in the size of the error bars is due to the changing statistics as a function of~$z$.
+
+%Error bar shape is due to changing statistics in $z$.  
+
+\begin{figure}
+\begin{center}
+%\label{fig:petacomp}
+%\begin{tabular}{ c c }
+
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/comp_systematicRAND_P_mc_LL_DD_mom_bin_10_20_GeV_eta_bin_2_3_2.png}\label{1}}  
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/comp_systematicRAND_Pmc_LL_DD_mom_bin_10_20_GeV_eta_bin_3_2_5}\label{2}}       \\
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/comp_systematicRAND_Pdata_LL_DD_mom_bin_10_20_GeV_eta_bin_2_3_2.png}\label{3}} 
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/comp_systematicRAND_Pdata_LL_DD_mom_bin_10_20_GeV_eta_bin_3_2_5.png}\label{4}} \\
+  
+%\end{tabular}
+\end{center}
+\caption{The difference between the final efficiencies with and without randomly varying the value taken as the central value in momentum $p$ for simulation, top, and data, bottom. For events with 10$<p<$20\gevc, 2.0$<\eta<$3.2, left, 3.2$<\eta<$5.0, right. The $y$ axis shows the difference in efficiencies. The downstream tracks are shown with green errors and the long tracks are shown with blue errors.
+  \label{fig:sysz}}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+%\label{fig:petacomp}
+\begin{tabular}{ c c }
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/comp_systematicRANDLL_Zmc_LL_DD_mom_bin_10_20_GeV_eta_bin_2_3_2.png}\label{1}}  
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/comp_systematicRANDLL_Zmc_LL_DD_mom_bin_10_20_GeV_eta_bin_3_2_5}\label{2}}       \\
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/comp_systematicRANDLL_Zdata_LL_DD_mom_bin_10_20_GeV_eta_bin_2_3_2.png}\label{3}} 
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/comp_systematicRANDLL_Zdata_LL_DD_mom_bin_10_20_GeV_eta_bin_3_2_5.png}\label{4}} \\
+
+  
+\end{tabular}
+\end{center}
+\caption{The difference between the final efficiencies with and without randomly varying the value taken as the central value in $z$ for simulation, top, and data, bottom. For events with 10$<p<$20, 2.0$<\eta<$3.2, left, 3.2$<\eta<$5, right. The $y$ axis shows the difference in efficiencies. 
+  \label{fig:sysp}}
+\end{figure}
+
+
+
+\subsection[Assuming that the background shape is the same across all $p$ and $\eta$]{Assuming that the background shape is the same across all $\mathbold{p}$ and $\mathbold{\eta}$}
+As outlined in \autoref{sec:background}, in order for the mass fits of the \KS mass distributions, which are integrated over all $p$ and $\eta$, to be used to subtract the right amount of background in each $p$ and $\eta$ bin, it is necessary for the background distribution to have a similar shape over all $p$ and $\eta$ bins. Only the ratio between the amount of background in the mass side bands and in the signal window is important and the level of background can vary across these bins. To check the effect of this assumption, mass fits are performed in bins of $p$ and $\eta$ within each $z$ bin and the background shapes within each $p$ and $\eta$ sub-bin are compared, as shown in \autoref{fig:massmometa}.
+\begin{figure}
+\begin{center}
+%\label{fig:petacomp}
+
+ 
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/doublegaussmodel__mom_bin_10_20_GeV_eta_bin_2_3_2_z_bin_1070_1080_mm.png}\label{1}}  
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/doublegaussmodel__mom_bin_10_20_GeV_eta_bin_3_2_5_z_bin_1070_1080_mm.png}\label{2}}  \\
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/doublegaussmodel__mom_bin_20_40_GeV_eta_bin_2_3_2_z_bin_1070_1080_mm.png}\label{3}}  
+  \subfloat[]{\includegraphics[width=0.49\textwidth]{figs/doublegaussmodel__mom_bin_20_40_GeV_eta_bin_3_2_5_z_bin_1070_1080_mm.png}\label{4}}  \\
+ 
+
+\end{center}
+\caption{The signal and mass distributions for the same $z$ bin but different $p$ and $\eta$ bins for downstream tracks. For events with 10$<p<$20\gevc, 2.0$<\eta<$3.2, \protect\subref{1}, 10$<p<$20\gevc, 3.2$<\eta<$5.0, \protect\subref{2}, 20$<p<$40\gevc, 2.0$<\eta<$3.2, \protect\subref{3}, 20$<p<$40\gevc, 3.2$<\eta<$5.0, \protect\subref{4}, and with a decay vertex between 1070$<z<$1080\:mm.           
+  \label{fig:massmometa}}
+\end{figure}
+Across all $p,\eta$ bins the background is flat. The same process was checked with a range of $z$ bins and yielded similar results. Therefore no systematic uncertainty is attributed to this assumption. 
+
+\subsection{The modelling of material interactions in simulation}
+\label{sec:mismod}
+As the long track reconstruction efficiencies are calculated using leptonic final states, the simulation will better model $\jpsi\to\mumu$ decays than $\KS\to\pip\pim$ decays, due to material interactions in the hadronic case. The analysis of Ref~\cite{LHCB-DP-2013-002} recommends adding an additional 1.4\% error to account for the poor modelling of material interactions for hadronic final states. %This 1.4\% error is not added in the calculation of the simulation absolute efficiency, but is added in the case of the absolute data efficiency and in the ratio of data and simulation. %This is the only systematic error added. 
+
+%% As discussed in section \ref{sec:extra} the presence of material interaction in the generator-level simulated events which occur in or before the reference bin in $z$ would make the distribution of $N(z_{\textrm{ref}},p)$ artificially low. To attempt to quantify this effect, events are simulated with no detector information whatsoever and therefore no material interactions are modelled. This is then compared with the generator-level reconstructed events used in the actual efficiency calculation. The distributions in $z$ are compared integrated over all $p$ and $\eta$, see Figure \ref{fig:sysmat}.
+%% \begin{figure}
+%% \begin{center}
+%%   \includegraphics[width=0.49\textwidth, trim = 0 0 1cm 0, clip = true]{figs/gen_matieral_integratedz.png} 
+%%   \end{center}
+ 
+
+%% \caption{Comparing the $z$ distributions, drawn normalised, for generator-levely simulated events with (red) and without (black) material interaction modelling.
+%%   \label{fig:sysmat}}
+%% \end{figure}
+
+%% By comparing the two distribution it is clear, despite the low statistics, that there is no  resulting from material interactions.
+
+
+\section{Results}
+\label{sec:results}
+%\subsection{Efficiencies per sub-momentum bin}
+
+
+
+%% Figure \ref{fig:effsubmom} shows some examples of the original distribution in $z$ along with the tracking efficiency as a function of $z$ in sub-momentum bins. 
+
+%% \begin{figure}
+%% \begin{center}
+%% %\label{fig:petacomp}
+%% \begin{tabular}{ c c }
+  
+%%     \includegraphics[width=0.49\textwidth]{figs/old_both_mom_sub_bin_10_GeV90_100_mom_bin_10_20_GeV_eta_bin_2_3_2.png}  &
+%%     \includegraphics[width=0.49\textwidth]{figs/old_both_mom_sub_bin_15_GeV90_100_mom_bin_10_20_GeV_eta_bin_2_3_2.png}  \\
+%%     \includegraphics[width=0.49\textwidth]{figs/eff_both_mom_sub_bin_10_GeV90_100_mom_bin_10_20_GeV_eta_bin_2_3_2}  &
+%%     \includegraphics[width=0.48\textwidth]{figs/eff_both_mom_sub_bin_15_GeV90_100_mom_bin_10_20_GeV_eta_bin_2_3_2}  \\
+    
+%% \end{tabular}
+%% \end{center}
+%%  \caption{Showing the original distributions (above) and efficiency (below) in $z$ for data and reconstructed simulation; bin 10$<p<$11\:GeV (left) and 15$<p<$16\:GeV (right) 2$<\eta<$3.2, 90$<z<$100\:mm.
+%%   \label{fig:effsubmom}}
+%% \end{figure}
+
+The tracking efficiencies are first calculated for each 1\gevc sub-momentum bin. The efficiency is then taken as a weighted average, according to the error on the efficiency in each sub-momentum and $z_{ref}$ bin. The final result is shown in \autoref{fig:efftot}. There are no results for the bin $40<p<100$\gevc, $2.0<p<3.2$ due to the limited statistics. Finally, the ratio between simulation and data is taken, as shown in \autoref{fig:effrat}.
+
+
+\begin{figure}
+\begin{center}
+  %\label{fig:petacomp}
+  \vspace{-1.5cm}
+\begin{tabular}{ c c }
+
+ 
+\subfloat[]{\includegraphics[width=0.49\textwidth]{_mom_bin_10_20_GeV_eta_bin_2_3_2.png}\label{1}}
+\subfloat[]{\includegraphics[width=0.49\textwidth]{_mom_bin_10_20_GeV_eta_bin_3_2_5.png}\label{2}}\\
+\subfloat[]{\includegraphics[width=0.49\textwidth]{_mom_bin_20_40_GeV_eta_bin_2_3_2.png}\label{3}}
+\subfloat[]{\includegraphics[width=0.49\textwidth]{_mom_bin_20_40_GeV_eta_bin_3_2_5.png}\label{4}}\\
+\subfloat[]{\includegraphics[width=0.49\textwidth]{_mom_bin_40_100_GeV_eta_bin_3_2_5.png}\label{5}}
+
+\end{tabular}
+\end{center}
+\caption{The efficiency distributions for data and reconstructed simulation. For events with 10$<p<$20\gevc, 2.0$<\eta<$3.2 \protect\subref{1} and 3.2$<\eta<$5.0 \protect\subref{2}, 20$<p<$40\gevc, 2.0$<\eta<$3.2 \protect\subref{3} and 3.2$<\eta<$5.0 \protect\subref{4} and 40$<p<$100\gevc, 3.2$<\eta<$5.0\gevc, \protect\subref{5}.
+  \label{fig:efftot}}
+\end{figure}
+
+
+
+Due to the nature of the calculation of $N(z,p)$ the uncertainties are correlated, which is why the fluctuations in the points in \autoref{fig:efftot} do not reflect the size of the error bars.
+Much of the  shape in $z$ of the efficiency distributions in \autoref{fig:efftot} can be explained by the position of the sensors in the VELO, as shown in \autoref{fig:VELO}. The drop off at low $\eta$ of the long track efficiency at $\sim$200mm is due to the sensors in the VELO being more spaced apart after this point.  At lower $\eta$ values, and thus larger track angle with respect to the beam pipe, no tracks make the VELO-track requirement of passing through at least three VELO sensors past $\sim$200mm. At higher $\eta$, this wider spacing at $\sim$200mm again causes the efficiency to drop off, but some tracks still pass through three sensors. The difference in shape between the distribution in the $3.2<\eta<5.0$ bin within the highest momentum bin and the $3.2<\eta<5.0$ bin within the lower momentum bins is not due directly to the change in momentum but because the $\eta$ bins are very broad, and very high momentum tracks will tend to have higher $\eta$ values. The higher the $\eta$ value the less sensitive the tracking efficiency will be to the spacing between the VELO sensors.
+
+The efficiency of the downstream tracks is fairly flat in $z$. The gradual increase in tracking efficiency at higher $z$ is most likely due to two factors. Firstly, it is more difficult to vertex tracks which originate at a distance from the TT stations, particularly for tracks with lower $\eta$ values. Lower $\eta$ tracks at lower $z$ are also more likely to pass through the Outer Tracker, as opposed to the Inner Tracker in the T stations, where the Outer Tracker provides a worse resolution. A worse resolution means that \KS mesons are less likely to pass the vertex requirements. Secondly, higher $z$ values imply a higher momentum within a given momentum bin, which is associated with a higher efficiency. The difference in shape at low $z$ in the downstream tracking between lower and higher $\eta$ bins is just a reflection of the ability to upgrade a track to a long track, which is dependent on $\eta$ due to the reasons already outlined.
+
+
+
+%% The large fluctuations in efficiency at very high $z$ ($z>$2300\:mm) in data are due to there not be
+%%ing enough statistics here to perform sensible mass fits making it impossible to perform a reliable background subtraction. This can be seen in the mass fits shown in \autoref{fig:crapmass}.
+
+
+%% \begin{figure}
+%% \begin{center}
+%% %\label{fig:petacomp}
+
+%% \subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_10/ratio_mom_bin_10_20_GeV_eta_bin_2_3_2.png}}
+%% \subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_10/ratio_mom_bin_10_20_GeV_eta_bin_3_2_5.png}}\\
+%% \subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_10/ratio_mom_bin_20_40_GeV_eta_bin_2_3_2.png}}
+%% \subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_10/ratio_mom_bin_20_40_GeV_eta_bin_3_2_5.png}}\\
+%% \subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_10/ratio_mom_bin_40_100_GeV_eta_bin_3_2_5.png}}\\
+  
+
+%% \end{center}
+ 
+%% \caption{The efficiency ratios for data and reconstructed simulation. For events with 10$<p<$20\:GeV and 2.0$<\eta<$3.2 (left) and 20$<p<$40\:GeV and 3.2$<\eta<$5 (right).}
+%%   \label{fig:effrat}
+%% \end{figure}
+
+\begin{figure}
+\begin{center}
+%\label{fig:petacomp}
+\vspace*{-1.5cm}
+\subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_mom_bin_10_20_GeV_eta_bin_2_3_2.png}}
+\subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_mom_bin_10_20_GeV_eta_bin_3_2_5.png}}\\
+\subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_mom_bin_20_40_GeV_eta_bin_2_3_2.png}}
+\subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_mom_bin_20_40_GeV_eta_bin_3_2_5.png}}\\
+\subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_mom_bin_40_100_GeV_eta_bin_3_2_5.png}}\\
+  
+
+\end{center}
+ 
+\caption{The ratio of efficiency distributions for data and reconstructed simulation. For events with 10$<p<$20\gevc, 2.0$<\eta<$3.2 \protect\subref{1} and 3.2$<\eta<$5.0 \protect\subref{2}, 20$<p<$40\gevc, 2.0$<\eta<$3.2 \protect\subref{3} and 3.2$<\eta<$5.0 \protect\subref{4} and 40$<p<$100\gevc, 3.2$<\eta<$5.0\gevc, \protect\subref{5}. The results of a zero-order fit to the downstream tracking efficiency as a function of $z$ are shown.}
+  \label{fig:effrat}
+\end{figure}
+%% \begin{figure}
+%%   \centering
+%%     \includegraphics[scale = 0.2]{figs/VELO.png} 
+%%   \caption{Above: the VELO stations as placed along the $z$ direction, below: the VELO stations shown in the $x$-$y$ plane in both the open (for injection) and closed (for stable beams) configuration \cite{det_paper}.    }
+%%   \label{fig:VELO2}
+%% \end{figure}
+
+%\begin{figure}
+%% \begin{center}
+%% %\label{fig:petacomp}
+
+%% \subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_LLfit/ratio_mom_bin_10_20_GeV_eta_bin_2_3_2.png}}
+%% \subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_LLfit/ratio_mom_bin_10_20_GeV_eta_bin_3_2_5.png}}\\
+%% \subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_LLfit/ratio_mom_bin_20_40_GeV_eta_bin_2_3_2.png}}
+%% \subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_LLfit/ratio_mom_bin_20_40_GeV_eta_bin_3_2_5.png}}\\
+%% \subfloat[]{\includegraphics[width=0.49\textwidth]{ratio_LLfit/ratio_mom_bin_40_100_GeV_eta_bin_3_2_5.png}}\\
+  
+
+%% \end{center}
+ 
+%% \caption{The ratio of efficiency distributions for data and reconstructed simulation. For events with 10$<p<$20\gevc, 2.0$<\eta<$3.2 \protect\subref{1} and 3.2$<\eta<$5.0 \protect\subref{2}, 20$<p<$40\gevc, 2.0$<\eta<$3.2 \protect\subref{3} and 3.2$<\eta<$5.0 \protect\subref{4} and 40$<p<$100\gevc, 3.2$<\eta<$5.0\gevc, \protect\subref{5}. The results of a first-order fit to the long track efficiency as a function of $z$ are shown.}
+%%   \label{fig:effratfit}
+%% \end{figure}
+
+
+\section{Comparison between the results from this analysis  and previous studies}
+\label{sec:comp}
+The ratio between both the long and downstream absolute efficiencies is as expected, i.e. the absolute efficiency of long tracks is higher than for downstream tracks. The ratio between simulation and data is equal to unity over approximately the region expected, i.e. at low $z$ below $\sim 140\textrm{mm}$, where the long track efficiencies are well modelled in simulation. The same ratio between data and simulation for downstream tracks is always less than unity, suggesting that the efficiency of reconstructing downstream tracks is higher in simulation than data. 
+
+To compare this result to that of Ref~\cite{DDpat}, the downstream efficiency as a function of $z$ is fitted with a zero-order polynomial, to give an average over $z$ for the region $z>1000$mm, as shown in \autoref{fig:effrat}. These averages are shown in \autoref{tab:eluned}.%This exercise is repeated with a f%%  The errors on the average values in \autoref{tab:eluned} combine the statistical error, i.e. the error on the $z$ bin in question, the correlated error due to the error on the $z_{ref}$ bin and the 10\% error due to the systematic uncertainty, due to matieral hadronic interactions.
+
+
+%This gives the results as shown in \autoref{fig:avfit}. % \emph{This still need 10\% error addeed and editing}
+
+\begin{table}
+  \centering
+  \begin{tabular}{c|c|c}
+    \hline
+    & 2.0$<\eta<$3.2 & 3.2$<\eta<$5.0 \\\hline
+    10$<p<$20\gevc& 0.73$\pm$0.03$\pm$0.01 & 0.72$\pm$0.03$\pm$0.01 \\
+    20$<p<$40\gevc& 0.70$\pm$0.05$\pm$0.01& 0.66$\pm$0.02$\pm$0.01\\
+    40$<p<$100\gevc& --- & 0.90$\pm$0.09$\pm$0.01 \\\hline
+    
+    \end{tabular}
+  \caption{The ratio between data and simulation downstream tracking efficiency averaged over $z$, from $z>1000$\mm. The first error quoted is statistical and the second error is due to the mismodelling of hadronic material interactions in simulation.}
+  \label{tab:eluned}
+\end{table}
+
+
+
+
+%% \begin{table}
+%%   \begin{}
+%%   \end{table} 
+%% \begin{figure}
+%%   \centering
+%%   \includegraphics[scale = 0.6]{figs/ksavfit}
+%%    \caption{The downstream efficiencies values averaged over $z$ for different $p$ and $\eta$ bins
+%%   \label{fig:avfit}}
+%% \end{figure}
+All bins agree with the results from Ref~\cite{DDpat} within 2$\sigma$, with the majority of bins agreeing within 1$\sigma$. The results also follow a similar trend with momentum, with higher momentum bins having generally lower efficiency ratios. The exception to this is the highest momentum bin where the statistics are limited.
+
+The results from this study have already been used in a number of LHCb analyses and there is a need for the study to be repeated for Run-2 data. In addition, the technique developed in this analysis could be applied to other common long-lived particles such as \Lz baryons. The average efficiency values of the value from \autoref{tab:eluned}, excluding the highest momentum bin, is 0.70$\pm$0.02.
+
+%% \subsection{Improvements and outlook}
+%% This study has measured the efficiency of \KS\to\pip\pim decays as a function of their decay position in $z$. 
+
+
+
+%These results are compatible with the 0.72$\pm$0.06 found in Ref~\cite{DDpat}. The follow a similar trend with momentum as well, which higher momentum bins having worse data over simulation efficiency ratios, with the exception of the highest momentum bin, where the statistics are very poor.
+

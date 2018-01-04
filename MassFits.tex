@@ -1,0 +1,461 @@
+\chapter{Mass fits and efficiency calculations for the $\mathbold{\Lbpi}$ analysis}
+In this chapter there will be a discussion of the fit templates used to model the mass distributions for the signal channel \Lbpi, and the normalisation channel, \Lbpijpsi, in \autoref{Sec:MassFit}. This is followed by a summary of the relative efficiency of the selections applied to the signal channel and the normalisation channel in \autoref{sec:eff}.
+\label{chap:mass}
+\section{Mass fits}
+\label{Sec:MassFit}
+In this section, the signal fit models used for the \Lbpi and \Lbpijpsi channels are discussed in \autoref{subsec:sig}. In \autoref{sec:fitjpsi} and \autoref{sec:fitppi} there is an examination of the background models used in the \Lbpijpsi and \Lbpi channels respectively, as well as a study of the effect that the choice of fit model used has on the expected signal significance. Finally, in \autoref{subsec:exp} the expected signal significance is detailed.
+\subsection{Signal fits}
+\label{subsec:sig}
+The \Lbpijpsi signal shape is modelled by a double Crystal Ball (\Gls{CB}) function \cite{Skwarnicki:1986xj}, as previously defined in \autoref{Eq:CB}. The mean and Gaussian widths of the CB functions (denoted as $\overline{x}$ and $\sigma$ in \autoref{Eq:CB} respectively) are allowed to float and the tail parameters ($\alpha, n$ in \autoref{Eq:CB}) are fixed from  a fit to \Lbpijpsi simulation, as shown in \autoref{Fig:jpsisimulation}. %There is a true ID requirement placed on all daughters in the simulation. %and a requirement of less than 25 for the background category of the decay.
+\begin{figure}[!ht]\def\nh{0.3\textwidth}
+  \centering
+  %\hspace*{-2cm}
+  \subfloat[]{\includegraphics[scale = 0.5, trim  = 0 2.5cm 0 0 , clip = true]{figs/jpsimcfit_th.pdf}\label{optfit:1}}\\
+  \subfloat[]{\includegraphics[scale = 0.5]{figs/jpsimcfitlog_th.pdf}\label{optfit:2}}
+    \caption{The fit of a double CB to \Lbpijpsi simulation with a linear scale, \protect\subref{optfit:1}, and a log scale, along with the number of standard deviations the data points lie from the fit function, \protect\subref{optfit:2}.}
+    \label{Fig:jpsisimulation}
+\end{figure}
+
+
+In the case of the signal fit to \Lbpi data, the parameters are all fixed from the fit to \Lbpijpsi data. However, the width of the CB functions in the \Lbpi fit are adjusted, prior to the fit, based on the variation of the widths with $q^{2}$ seen in the simulation.
+
+%The relative size between the two CB functions is also fixed in the \Lbpi fit from the \Lbpijpsi fit.
+
+As the CB widths will depend on $q^{2}$, the width is taken from \Lbpi simulation, where, in the absence of any form factor predictions, the $q^{2}$ distribution of the simulation has been reweighted using the \LbL differential branching fraction predictions. To check the validity of using \LbL differential branching fraction predictions as a proxy for the \Lbpi $q^{2}$ distribution, the same reweighting in $q^{2}$ applied to \Lbpi simulation is applied to \LbK simulation. The reweighted \LbK simulation is then compared to \LbK data, where any background contamination has been removed using the sPlot technique. This comparison is shown in \autoref{Fig:pkcheck}. The differences between the $q^{2}$ distributions in \LbK data and the \LbL differential branching fraction predictions are covered by a systematic uncertainty as discussed in \autoref{Sec:Systematics}.
+\begin{figure}[!ht]\def\nh{0.3\textwidth}
+  \centering
+  %\hspace*{-2cm}
+  \includegraphics[scale = 0.5]{figs/pkmumuforthesis.pdf}
+    \caption{The $q^{2}$ distribution for \LbK data against \LbK simulation, where the \LbK simulation has been reweighted in $q^{2}$ using the \LbL differential branching fraction predictions.}
+    \label{Fig:pkcheck}
+\end{figure}
+
+Due to the lack of statistics at high $q^{2}$ in \Lbpi phase space simulation, events with a $q^{2}$ value higher than 15$\gev^{2}/c^{4}$ are sensitive to single event fluctuations, as shown in \autoref{Fig:widthst}\protect\subref{optfit:1}. Given that these events will receive the largest weight, the lack of statistics in these high $q^{2}$ bins has a sizeable effect on the resulting mass distribution. As such, only events with a $q^{2}$ value less than 15$\gev^{2}/c^{4}$ are used in the fit to the $q^{2}$-reweighted \Lbpi mass distribution. The corresponding fit is shown in \autoref{Fig:widthst}\protect\subref{optfit:2}. When the double CB function is fitted to \Lbpi data, using the widths deduced with simulation and \Lbpijpsi data, the full $q^{2}$ range is fitted. 
+
+\begin{figure}[!ht]\def\nh{0.3\textwidth}
+  \centering
+  \hspace*{-1.2cm}
+  \subfloat[]{\includegraphics[width = 10cm]{figs/weightedq2simdistro}\label{optfit:1}}\\
+    \subfloat[]{\includegraphics[width = 10cm]{figs/MC15weightedmumuppifit.pdf}\label{optfit:2}}
+    \caption{The $q^{2}$ distribution of \Lbpi simulation after reweighting in $q^{2}$, \protect\subref{optfit:1}. The fit of a double CB function to \Lbpi simulation with $q^{2}$-reweighting applied, \protect\subref{optfit:2}. The red curve in \protect\subref{optfit:2} indicates the right CB function and the green curve the left CB function. The number of standard deviations the data points lie from the fit function are shown below the fit in \protect\subref{optfit:2}.}
+    \label{Fig:widthst}
+\end{figure}
+The widths for both left and right CB functions for the reweighted \Lbpi simulated events, relative to those of the equivalent CB functions from the fit to \Lbpijpsi simulation, are shown in \autoref{tab:wid}. The absolute widths for the CB functions taken from \Lbpijpsi simulation are also shown. %Here, the terms left or right refer to the direction of the tail of the CB function. 
+\begin{table}[!h]
+  \centering
+\hspace*{-0.8cm}
+  \begin{tabular}{l c c }
+  \hline
+  Function & \Lbpi relative width &  \Lbpijpsi width/\mevcc\\ \hline
+   CB right&   0.97 &  12.7\\
+      CB left&   1.12 &  22.2\\\hline      
+\end{tabular}
+\caption{The widths of the CB functions from the fit to \Lbpi simulation, expressed relative to the width from the fit to \Lbpijpsi simulation. The terms left or right refer to the direction of the tail of the CB function.}
+\label{tab:wid}
+\end{table}   
+
+
+\FloatBarrier
+        \subsection[Complete fit to the $\Lbpijpsi$ channel]{Complete fit to the $\mathbold{\Lbpijpsi}$ channel}
+\label{sec:fitjpsi}
+The background in the fit to \Lbpijpsi data is modelled using an exponential function for the combinatorial background and an additional component for the Cabibbo-favoured mode, \LbKjpsi, which can be misidentified as \Lbpijpsi. %, as shown in \autoref{fig:jpsifit}.
+
+ % and is shown again in \autoref{fig:jpsifit}.
+%% \begin{figure}
+%% \centering
+%%         \includegraphics[width = 8cm]{figs/jpsifit_tails.png}\\
+%%   \caption{Fit to \Lbpijpsi data.}
+%%   \label{fig:jpsifit}
+%% \end{figure}                   
+
+
+
+The fit to \Lbpijpsi data was shown previously in \autoref{Fig:optpointfits} in \autoref{chap:bdt}. The shape for the \LbKjpsi component is taken from \LbKjpsi simulation, plotted under the \Lbpijpsi mass hypothesis. The \LbKjpsi simulation is fitted with a Gaussian which becomes an exponential at a certain point in mass, denoted $\alpha$. The complete expression for the fit function is given in Equation 7.1:
+
+\begin{equation}
+  \label{Eq:gexp2}
+  gXexp(x)=
+  \begin{dcases}
+   \mathcal{C} e^{-\beta x},& \text{if } x\leq \alpha\\
+    e^{-\frac{1}{2}(\frac{x-\overline{x}}{k})^{2}}, & \text{otherwise}
+  \end{dcases}
+  $$where$$
+  \mathcal{C} = e^{-\frac{1}{2}(\frac{\alpha-\overline{x}}{k})^{2}}e^{-\beta \alpha};  \beta = \frac{\overline{x} - \alpha}{k^{2}},
+  \end{equation}
+and is referred to as a RooExpAndGauss hereafter.
+The \LbKjpsi yield is Gaussian constrained to the expected yield of 84 $\pm$ 10, derived in \autoref{Sec:backgrounds} in \autoref{chap:sel}. A summary of all the \Lbpijpsi fit parameters is shown in \autoref{tab:jpsipar}.
+
+
+
+
+
+\begin{table}[!h]
+  \centering
+\hspace*{-0.8cm}
+  \begin{tabular}{l c c c c}
+    \hline
+    Fit Parameters& Constrained, free or fixed\\
+    \hline
+    Number of signal events& Free\\
+    Number of background events & Free\\    
+       Exponential para. for combinatorial background  & Free\\
+      \hline
+            $ \alpha$ (Equation 7.1) & Fixed from \LbKjpsi simulation\\
+    $\overline{x}$  (Equation 7.1)& Fixed from \LbKjpsi simulation\\
+    $k$  (Equation 7.1) & Fixed from \LbKjpsi simulation\\
+    Number of \LbKjpsi events & Gaussian-constrained to expected yield\\ 
+    \hline
+    Signal peak: mean & Free\\
+    Signal peak: CB tails ($\alpha_{CB}$,$\alpha^{\prime}_{CB}$,$n_{CB}$,$n^{\prime}_{CB}$)& Fixed from \Lbpijpsi simulation\\
+    Signal peak: fraction between CB's & Free\\
+    Signal peak: width of CB's ($\sigma_{CB}$, $\sigma^{\prime}_{CB}$)& Free \\
+                         
+\hline
+\hline
+Total no. of parameters in fit& 15\\
+Total no. of free parameters in fit& 8\\
+
+\hline
+
+  \end{tabular}
+  \caption{The fit parameters for the \Lbpijpsi fit showing how these parameters are handled in the fit.}
+  \label{tab:jpsipar}
+  %showing how these parameters were handled in the fit.}% background mo fits where the fit parameters ($\beta, k$ and $\overline{x}$ in Eq.~\ref{Eq:gexp}) have either been constrained or left free.}
+  \label{tab:para}
+\end{table}
+%When no Gaussian constraint is added to the \LbKjpsi yield in the \Lbpijpsi fit, the \LbKjpsi component is set to zero by the fit. When the Gaussian constraint is added, the fit still minimises the yield as much as possible, within the constraints given.
+
+
+\subsubsection{Reflection components from $\mathbold{\BdToJPsiKst}$}% and $\mathbold{\LbKjpsi}$}
+As discussed in \autoref{chap:sel}, the only $B$ reflection component to remain after the selection is \Bd\to\jpsi\Kp\pim. The yield in the \Lbpijpsi channel is expected to be 69 $\pm$ 9 events. 
+
+To investigate the effect that the remaining \Bd\to\jpsi\Kp\pim events could have on the total normalisation yield derived from the \Lbpijpsi mass fit, a \Bd\to\jpsi\Kp\pim component was added to the \Lbpijpsi mass fit, with the \Bd\to\jpsi\Kp\pim yield Gaussian constrained to the expected yield of 69$\pm$9.
+
+This \Bd\to\jpsi\Kp\pim component shape was modelled using \Bd\to\jpsi\Kstarz(\to\Kp\pim) simulation. This assumes that the shape of non-resonant decays, that is \Bd\to\jpsi\Kp\pim decays that do not decay via \Kstarz, is similar to that of the resonant decays \Bd\to\jpsi\Kstarz(\to\Kp\pim). This is a reasonable assumption as, under the \jpsi\proton\pim mass hypothesis, the large difference between the mass of the proton and the kaon causes much of the original peaking structure of the decay to be lost. Thus, any sensitivity to the difference in the widths between the resonant and non-resonant case under the \jpsi\Kp\pim mass difference will be greatly reduced under the \jpsi\proton\pim hypothesis.
+
+The mass-dependent PID cuts complicate the fit to the \BdToJPsiKst mass component considerably. Therefore, in order to test the effect that adding the \BdToJPsiKst component to the \Lbpijpsi mass fit has on the normalisation yield, simulation was used without the mass-dependent PID cuts applied. The mass shape can then be modelled by a much simpler function, as shown in \autoref{Fig:jpsibd}\protect\subref{shape}.
+
+%% To test the size of the effect that adding the \BdToJPsiKst component will have, resampled simulation, without the mass-dependent PID cuts as outlined in \autoref{tab:refl} applied, was initially used. This is due to the mass-dependence of the PID cuts complicating the fit considerably. Without the mass-dependent PID cuts applied, the \BdToJPsiKst can be modelled with a much simpler fit function, as shown in \autoref{Fig:jpsibd}\protect\subref{shape}. 
+
+The presence of the mass-dependent PID cuts however causes the \BdToJPsiKst to flatten out and dip to the left of the \Lbpijpsi signal peak. This is demonstrated in Figures \ref{Fig:jpsibd}\protect\subref{shapeall} and \protect\subref{fuck}, which show the \BdToJPsiKst component under the \Lbpijpsi mass hypothesis, with and without the mass-dependent PID cuts applied. Both the \Lbpijpsi and \BdToJPsiKst components in Figures \ref{Fig:jpsibd}\protect\subref{shapeall} and \protect\subref{fuck} are taken from simulation and both components have been normalised to their expected yields.
+
+
+Figures~\ref{Fig:jpsibd}\protect\subref{kstb} and \ref{Fig:jpsibd}\protect\subref{kstbzoom} show a fit to the \Lbpijpsi mass with the \BdToJPsiKst component included, where the component shape used is that shown in \autoref{Fig:jpsibd}\protect\subref{shape}. The effect of adding this \BdToJPsiKst component on the \Lbpijpsi signal yield derived from the fit is 0.2\%. Given the negligible size of this effect\footnote{The expected number of \Lbpi signal events is of order 10 and thus a statistical error of $\sim$ 30\%  on the branching fraction is expected}, no further study is carried out and the \BdToJPsiKst component is not included in the final fit to the normalisation channel. No \BdToKstmm component is included in the signal fit, as the yield of expected \BdToKstmm events in the \Lbpi channel, calculated using the expected \BdToJPsiKst yield and the relevant branching fractions, is consistent with zero. 
+
+%% the relative simalirty between the \BdToJPsiKst component shape with and without the mass-dependent PID cuts applied, and the negible effect that
+
+%% Figures \ref{Fig:jpsibd}\protect\subref{shapeall} and \protect\subref{fuck} show the \BdToJPsiKst component under the \Lbpijpsi mass hypothesis, for the case where both the initial PID cuts and the mass-dependent PID cuts are applied to simulation, and with just the initial PID cuts applied. As shown in \autoref{Fig:jpsibd}\protect\subref{shapeall}, the size of the \BdToJPsiKst component is negligible compared to the observed number of \Lbpijpsi events. Without the mass-dependent PID cuts applied, the \BdToJPsiKst can be modelled with a much simpler fit function, as shown in \autoref{Fig:jpsibd}\protect\subref{shape}. 
+
+
+
+%% To determine the effect that the addition of the \BdToJPsiKst component to the fit has on the \Lbpijpsi yield. a fit is initially performed to the \BdToJPsiKst component without the mass-dependent PID cuts applied, as it can be modelled with a much simpler fit function, as shown in \autoref{Fig:jpsibd}\protect\subref{shape}. 
+
+%% The component in \autoref{Fig:jpsibd}\protect\subref{shape} is then added to the complete fit and the yield allowed to float. The yield is set to zero by the fit, but even when the number of \BdToJPsiKst events is locked to the nominal expected yield of 69, as seen in \autoref{Fig:jpsibd}\protect\subref{kstb}, the effect on the \Lbpijpsi yield of the addition of the \BdToJPsiKst component to the total fit is negligibly small at 0.3\%. The effect of adding the \BdToJPsiKst component with the mass-dependent PID applied will therefore be similarly negligibly small, given that the \BdToJPsiKst component has an even flatter shape when the mass-dependent PID cuts are applied. As such, the \BdToJPsiKst reflection component is not included in the final fit.
+
+ 
+\begin{figure}[!h]
+  \centering
+  \vspace*{-2cm}
+    \hspace*{-1.2cm}
+    \subfloat[]{\includegraphics[width = 9cm]{figs/kstshapeall}\label{shapeall}}
+    \subfloat[]{\includegraphics[width = 9cm]{figs/kstshapeallzoom} \label{fuck}}\\
+    \hspace*{-1.2cm}
+    \subfloat[]{\includegraphics[width = 9cm]{figs/jpsikstredone.png} \label{kstb}
+    }
+        \subfloat[]{\includegraphics[width = 9cm]{figs/kstjpsifit_th.png} \label{kstbzoom}
+        }\\
+            \hspace*{-1.2cm}
+      \subfloat[]{\includegraphics[width = 9cm]{figs/kstjpsishapenewrange}\label{shape}}
+  \caption{The \Lbpijpsi channel in simulation, normalised to the expected yield of $\Nyield$ events, along with the \BdToJPsiKst component under the \Lbpijpsi mass hypothesis, normalised to the expected yield of 69$\pm$9 events, for the cases where the mass-dependent PID cuts are applied and not applied, \protect\subref{shapeall}. A zoom-in of \protect\subref{shapeall} is shown in \protect\subref{fuck}. Here, the normalisation value of 69$\pm$9 for the \BdToJPsiKst component is only correct for the red curve but both blue and red curves are normalised to the same value to allow a meaningful comparison of their shapes. A fit to \Lbpijpsi data with the yield of the \BdToJPsiKst component Gaussian constrained to 69$\pm$9 events is shown on a linear scale in \protect\subref{kstb} and on a log scale in \protect\subref{kstbzoom}. The shape of \BdToJPsiKst simulation, with only initial PID cuts applied, under the \Lbpijpsi mass hypothesis is shown in \protect\subref{shape}.}
+  \label{Fig:jpsibd}
+\end{figure}
+\FloatBarrier
+
+\subsection[Complete fit to the $\Lbpi$ channel]{Complete fit to the $\mathbold{\Lbpi}$ channel}
+\label{sec:fitppi}
+
+The background for the \Lbpi channel is made up of a combinatorial component and a part-reco component. %There is no part-reco component in the \Lbpijpsi channel, as discussed in \autoref{Sec:partreco}.
+
+%For both fits, the combinatorial component is modelled with a single exponential.
+
+%\subsubsection{The fit to the $\mathbold{\Lbpi}$ channel}
+
+\begin{figure}[!ht]\def\nh{0.3\textwidth}
+  \centering
+%  \hspace*{-2cm}
+  \subfloat[]{\includegraphics[height = 5.5cm]{figs/realblind.png}\label{optfit:1}}
+  \subfloat[]{\includegraphics[height = 5.5cm]{figs/pkfit_0_25_5100_7000_edit_aspect.png}\label{optfit:3}} %pk_5100_7000_fit_blinded_edit.png
+    \caption{Fitted data for blinded \Lbpi \protect\subref{optfit:1} and \LbK \protect\subref{optfit:3}.}
+  \label{Fig:optpointfits2}
+\end{figure}
+
+
+The shape for the part-reco background for \Lbpi, shown in \autoref{Fig:optpointfits2}\protect\subref{optfit:1}, is a RooExpAndGauss, as defined in Equation 7.1. The value of the parameters for the RooExpAndGauss are taken from the fit to the part-reco component of \LbK data, shown in \autoref{Fig:optpointfits2}\protect\subref{optfit:3}, with the errors on the parameters of the \LbK fit used as Gaussian-constraints on the RooExpAndGauss used to model the part-reco component in the \Lbpi fit. %The complete fit to the blinded mass distributions for \Lbpi data is shown in \autoref{Fig:optpointfits2}\protect\subref{optfit:1}.
+
+The combinatorial background is modelled by a single exponential. The exponential parameter for the combinatorial component is allowed to float, as is the relative size between the RooExpAndGauss and exponential components. A summary of which parameters in the complete fit to \Lbpi candidates are either fixed, free, or constrained is shown in \autoref{tab:para}. %The behaviour of the signal fit is discussed in \autoref{sec:pull}.
+
+\begin{table}[!h]
+  \centering
+\hspace*{-0.8cm}
+  \begin{tabular}{l c c c c}
+    \hline
+    Fit Parameters& Constrained, free or fixed\\
+    \hline
+    Number of signal events& Free\\
+    Number of background events & Free\\    
+    Frac. between background components & Free\\
+    Exponential parameter for combinatorial background& Free\\
+    \hline
+    $ \alpha$ (Equation 7.1) & Constrained from \LbK\\
+    $\overline{x}$  (Equation 7.1)& Constrained from \LbK\\
+    $k$  (Equation 7.1) & Constrained from \LbK\\
+    \hline
+    Signal peak: mean & Fixed from \Lbpijpsi\\
+    Signal peak: CB tails ($\alpha_{CB}$,$\alpha^{\prime}_{CB}$,$n_{CB}$,$n^{\prime}_{CB}$)& Fixed from \Lbpijpsi\\
+    Signal peak: fraction between CB's & Fixed from \Lbpijpsi\\
+    Signal peak: width of CB's ($\sigma_{CB}$, $\sigma^{\prime}_{CB}$)& Fixed from \Lbpijpsi\\
+                   &  and adjusted using \Lbpi sim.\\        
+\hline
+\hline
+Total no. of parameters in fit& 15\\
+Total no. of free parameters in fit& 7\\
+\hline
+
+\hline
+No. of degrees of freedom in signal plus background fit& 7\\
+No. of degrees of freedom in background-only fit& 6\\
+%% \hline
+%% \hline
+%% No. of degrees of freedom in total fit& 7\\
+\hline
+
+  \end{tabular}
+  \caption{The fit parameters for the \Lbpi fit showing how these parameters were handled in the fit.}% background mo fits where the fit parameters ($\beta, k$ and $\overline{x}$ in Eq.~\ref{Eq:gexp}) have either been constrained or left free.}
+  \label{tab:para}
+\end{table}
+The expected \LbK yield in the \Lbpi channel is 1 $\pm$ 1 event. No \LbK component is therefore added to the nominal fit but the inclusion of a \LbK component is considered as a source of systematic uncertainty in \autoref{Sec:Results}.
+
+%As such, no \LbK component is added to the \Lbpi fit. The difference between the \Lbpijpsi yield obtained from the \Lbpijpsi fit, when the \LbKjpsi yield is either zero or non-zero, is 1.6\%. This difference is taken into account as a systematic in \autoref{Sec:Results}. The expected yield of \Bd\to\Kp\pim\mumu events in the \Lbpi channel is consistent with zero.
+
+
+%% The correlations between the combinatorial and partially reconstruction background components for the \Lbpi fit can seen in \autoref{tab:correl}, where the exponential parameter for the combinatorial component is denoted $\lambda$.
+
+%% \begin{table}[!h]
+%%   \centering
+%%     \hspace*{-0.8cm}
+%%         \begin{tabular}{|c| c c c c c|}
+%%                 \hline
+%%                        & Global   &     $\lambda$  &    $k$ &       $\overline{x}$ &      $ \alpha$\\
+%%                        \hline
+%%                            $\lambda$ & 0.77022  &  1.000 & 0.020&  0.064 &  0.2  \\
+%%                                $k$  & 0.44588  &  0.020 & 1.000& -0.410 & -0.393\\
+%%                                     $\overline{x}$ & 0.77025  &  0.064 &-0.410&  1.000 &  0.751\\
+%%                                      $ \alpha$ & 0.78857  &  0.253 &-0.393&  0.751 &  1.000\\
+%%                                  \hline
+%%                                      \end{tabular}
+%%                                        \caption{The correlations between the partially reconstruction background ($\alpha, k, \overline{x}$) and the exponential background ($\lambda$).}% background mo fits where the fit parameters ($\beta, k$ and $\overline{x}$ in Eq.~\ref{Eq:gexp}) have either been constrained or left free.}
+%%   \label{tab:correl}
+%%                                          \end{table}
+
+
+
+\subsubsection{Effect of the choice of background proxy on the signal significance}
+\label{subsec:backfit}
+The RooExpAndGauss fit shape is the nominal model used for the part-reco background but due to the low background statistics, regardless of the shape used to describe the distribution of the background present, there is little effect on the final fit significance.
+
+To study the effect of the choice of background proxy on the signal significance, pseudo experiments are generated from a different background shape taken from a fit to the blinded \Lbpi dataset, and from a signal shape deduced using simulation, as detailed in \autoref{subsec:sig}.% and \autoref{tab:para}.
+%% To study the effect of the choice of background proxy on the signal significance, pseudo experiments are generated by fitting the \Lbpi background with a single generic exponential component and taking the \Lbpi signal shape outlined in \autoref{subsec:sig}.
+
+For the purpose of this study, a single generic exponential component is used to fit the entire background component in the \Lbpi dataset, instead of the nominal RooExpAndGauss shape plus exponential component, and pseudo experiments are then generated from this fit. 
+%taken from the \Lbpi signal shape outlined in \autoref{subsec:sig}
+This is so as not to bias the shape of the distribution of data points in the pseudo experiments generated from this fit to be too like that of the nominal fit model used. Note that a generic polynomial PDF fitted to the small \Lbpi dataset gives unphysical behaviour in the mass distribution for high mass values. 
+
+%% Ideally, the pseudo experiments would have been generated from a generic polynomial, but the low statistics in the \Lbpi dataset means that obtaining a generic polynomial fit which gives a realistic shape for the background (i.e. where the value of the polynomial PDF doesn't start to increase with mass in the large mass region above the signal peak) proved to be difficult. %The signal shape used is as detailed in \autoref{subsec:sig}.
+
+%and then generating experiments using this exponential background shape and the \Lbpi signal shape outlined in \autoref{subsec:sig}.
+
+The number of expected signal events is deduced by taking the number of signal events from the \LbK signal fit, adjusting for the relative efficiencies between \Lbpi and \LbK, taking the value for $|\Vts/\Vtd|^{2}$ from Ref.\cite{vtdvts}, and assuming that the ratio of form factors (and phase space differences) between the two channels cancel. The relative efficiency adjustment is straightforward, as both channels have the same selection, with the exception of the different cuts on the \dllkpi variable. The expected number of signal events in the \Lbpi channel is estimated as $\sim$ 9. This differs from the estimated values given in \autoref{chap:theory} as in this case the \LbK channel is used to estimate the number of \Lbpi instead of the \Lbpijpsi channel. The \LbK channel was used here because at the time of doing this study the relevant efficiencies between \Lbpi and \Lbpijpsi had not yet been calculated.
+
+
+
+
+The number of background events is deduced by integrating over the entire background fit performed on blinded \Lbpi data in \autoref{Fig:optpointfits2}\protect\subref{optfit:1}.
+
+
+The pseudo experiments were fitted using a background shape that was either a RooExpAndGauss and an exponential combined, or a single exponential. The RooExpAndGauss parameters are Gaussian constrained from the \LbK background shape and there is no constraint on the exponential parameter or on the relative size between the RooExpAndGauss and exponential components, as summarised in \autoref{tab:para}. %The exponential parameter for the background model consists of a single exponential, as previously discussed,  and is also unconstrained. 
+     
+
+The significance for each fit to the pseudo  data is calculated using Wilk's theorem, applied across the entire fit range. Wilk's theorem states that the likelihood ratio between two hypotheses, $\Theta$ and $\Theta_{0}$ , when $\Theta_{0}$ is a special case of $\Theta$, will be distributed as a $\chi^{2}$ distribution with degrees of freedom equal to the difference in dimensionality of $\Theta$ and $\Theta_{0}$. In this case, the difference in the number of degrees of freedom between the signal and background and background-only hypotheses is one.  
+
+Example pseudo experiment fits can be seen in \autoref{Fig:dref}. The significance for the fits to these example pseudo experiments are 4.0$\sigma$ for the single exponential fit, \autoref{Fig:dref}\protect\subref{drefX:1}, and 4.1$\sigma$ for the constrained RooExpAndGauss fit, \autoref{Fig:dref}\protect\subref{drefX:2}.
+
+
+\begin{figure}[h!]
+  \def\nh{0.7\textwidth}
+  \centering
+  \subfloat[]{\includegraphics[scale = 0.2]{figs/freeexp_toy_edit_2.png}\label{drefX:1}} \\
+  \subfloat[]{\includegraphics[scale = 0.2]{figs/expgauss_constr_toy_edit.png}\label{drefX:2}}\hskip 0.04\textwidth
+  
+  \caption{Example pseudo experiments for signal and background hypotheses, (left) and background only fits, (right), with an exponential background with all fit parameters allowed to float  \protect\subref{drefX:1}, and the RooExpAndGauss fit parameters constrained from the \LbK background fit \protect\subref{drefX:2}. The no. S and no. B in the legends refer to the number of signal events and background events respectively.}
+\label{Fig:dref}
+\end{figure}
+
+The outputs of the significance for fits to 1000 pseudo experiments, for each fit case, are shown in \autoref{Fig:pseudo experiment1}. The two significance distributions are fitted with a Gaussian and these Gaussian fit parameters are shown in \autoref{tab:fitpseudo experiment1}. The results in \autoref{tab:fitpseudo experiment1} demonstrate that, due to the low statistics of the data set, the effect of the choice of the background model on the final significance is small. The effect of the background shape on the signal yield is discussed as a source of systematic uncertainty in \autoref{Sec:Results}.
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[height = 5.5cm]{figs/toy_fit_comp}
+  \caption{The significance distributions from fits to pseudo experiments where the fits in question use a background model which is either a free exponential or a RooExpAndGauss and exponential combined, where the RooExpAndGauss function is constrained.}
+  \label{Fig:pseudo experiment1}
+\end{figure}
+
+\begin{table}[!h]
+  \centering
+
+  \begin{tabular}{l c c c c}
+    \hline
+    Fit& Mean& Standard Dev.\\
+    \hline
+    RooExpAndGauss and exponential & 2.8&1.2\\
+    exponential only  & 2.5&1.2\\
+    \hline
+  \end{tabular}
+  \caption{The fit parameters for a Gaussian function fitted to the distributions in \autoref{Fig:pseudo experiment1}.}% background mo fits where the fit parameters ($\beta, k$ and $\overline{x}$ in Eq.~\ref{Eq:gexp}) have either been constrained or left free.}
+  \label{tab:fitpseudo experiment1}
+\end{table}
+%% Due to the low statistics in the \Lbpi data, choosing to constrain the RooExpAndGauss fit parameters to those obtained from the fit to \LbK data does not have a large effect on the significance. The effect that the choice of fit model has on the number of signal events given by the fit is considered as a source of systematic uncertainty in \autoref{sec:sysfit}.
+
+
+\subsection[Expected significance for the $\Lbpi$ channel]{Expected significance for the $\mathbold{\Lbpi}$ channel}
+\label{subsec:exp}
+The expected significance is calculated using the same pseudo  experiment-based method as outlined in \autoref{subsec:backfit}, again with the expected signal yield taken as 9, but this time the pseudo experiments are initially generated by fitting the background with the nominal constrained  RooExpAndGauss model and then fitting back with this same model. This gives a very similar average significance as in the case where the pseudo experiments were generated from an exponential-only background model. The average significance for pseudo experiments generated using the nominal RooExpAndGauss model can be seen in \autoref{Fig:sig}, which shows the Gaussian fit to the output of 1000 pseudo experiments,  along with the parameters of the fitted Gaussian. Based on these pseudo experiment studies, a signal significance of at least 3$\sigma$ will be seen 44\% of the time. %, and at least a 5$\sigma$ observation will be observed 8.6\% of the time. %A fluctuation of 3$\sigma$ away from the expected significance value corresponds to a signal peak with an observed significance of either zero $\sigma$ or 6.3$\sigma$ for a downwards or upwards fluctuation, respectively. % there is a reasonable chance of finding evidence for the decay.
+%(1-0.987) sig 5, (1-0.7) 3 sig 
+
+ \begin{figure}[h!]
+  \def\nh{0.7\textwidth}
+  \centering
+  \includegraphics[height = 5.5cm]{figs/nsig_9_nbkg_78_constrained.pdf}
+  \caption{Significance of pseudo experiments fits, using pseudo experiments generated from a constrained RooExpAndGauss and fitted back with the same model.}
+  \label{Fig:sig}
+ \end{figure}
+
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+ 
+\section{Selection efficiency}\label{Sec:Eff}
+\label{sec:eff}
+The relative selection and reconstruction efficiency between the \Lbpi and \Lbpijpsi channels is necessary to deduce the \Lbpi branching fraction. The branching fraction is calculated from the expression
+\begin{equation}
+  \BF(\Lbpi) = \frac{N_{\Lbpi}}{N_{\Lbpijpsi}}\times\frac{\epsilon_{\Lbpijpsi}}{\epsilon_{\Lbpi}}\times \BF(\Lbpijpsi)\BF(\jpsi\to\mumu). 
+  \label{eq:norm2}
+  \end{equation}
+
+In this section the methods used to quantify $\epsilon_{\Lbpi}/\epsilon_{\Lbpijpsi}$ will be outlined. This quantity is referred to hereafter as the relative efficiency. All efficiencies are calculated as a function of $q^{2}$ and by definition the relative efficiencies between the \Lbpi and \Lbpijpsi channels should be equal to unity in the dimuon mass bin (9~$<~q^{2}<$~10~$\gev^{2}/c^{4})$, which corresponds to the square of the  mass of the \jpsi.
+
+In this section, the relative efficiency is calculated for the detector acceptance and track reconstruction and the entire selection, including the trigger requirements, and the BDT. The total efficiency integrated over $q^{2}$ will depend on the final $q^{2}$ distribution that is assumed. 
+
+
+The simulation and data have different $q^{2}$ distributions due to the simulation being generated with a phase space model. In particular, no form factors are taken into account and, given the distribution seen in both \LbL data and theory predictions, these are thought to cause a rise in the $q^{2}$ distribution at higher $q^{2}$. This is illustrated in \autoref{Fig:phsp}\footnote{The \LbL theory predictions used in the analysis are taken from Ref. \cite{Meinel}. The theory predictions have since been updated in February 2016 in Ref.\cite{Detmold:2016pkz} as shown in \autoref{fig:bfq2}. Although the previous predictions are still used, any effect that a variation in the \qsq distribution will have on the relative efficiency is already well covered by an assigned systematic uncertainty, as discussed in \autoref{Sec:Systematics}}. The efficiency, therefore, is calculated in bins of $q^{2}$ and the distribution of $q^{2}$ events is taken from \LbL differential branching fraction predictions, taken from Ref.~\cite{Meinel}. A comparison between the $q^{2}$ distributions taken from phase space simulation and those from the \LbL branching fraction predictions is shown in \autoref{Fig:phsp}.
+
+\begin{figure}[h!]
+  \def\nh{0.7\textwidth}
+  \centering
+  \includegraphics[height = 5.5cm]{figs/phsp_lbllmumu_comp.pdf}
+  \caption{A comparison between the $q^{2}$ distribution taken from phase space simulation and from the \LbL branching fraction predictions of Ref.\cite{Meinel}.}
+  \label{Fig:phsp}
+\end{figure}
+%
+
+The efficiency is not weighted in terms of the $\proton \pi$ mass or the angle of the leptons. However, the effect of not reweighting in the $\proton \pi$ mass on the final relative efficiency is considered as a systematic uncertainty in \autoref{Sec:Results}. It is not necessary to obtain a highly accurate model of the selection and reconstruction efficiencies, as, due to the low statistics in the signal channel, the systematic uncertainty applied to account for the limited knowledge of the efficiency variation with $\proton \pi$,  adds little to the total uncertainty. %large systematic uncertainties to account for failures in the efficiency model used can be added with little effect on the total error of the branching fraction, due to the dominating statistical error.
+
+\subsection{Detector acceptance cuts}
+The detector acceptance criteria requires that the daughters lie within the range $10~<~\theta~<~400$ mrad of the beam axis and only events within this range are simulated.  The effect of the detector level acceptance cuts are calculated by taking the $q^{2}$ distribution of generator-level simulation with and without the detector acceptance criteria applied to the decay daughters. 
+
+%% The relative efficiency as a function of $q^{2}$ for the detector acceptance can be seen in \autoref{Fig:GENNO}. The red line indicates unity.
+%% %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \begin{figure}[h]
+%%   \centering
+%%   \includegraphics[height = 5.5cm]{figs/genneff_asp}
+%%   \caption{The relative efficiency for the detector acceptance as a function of $q^{2}$.}
+%%   \label{Fig:GENNO}
+%% \end{figure}
+
+
+\subsection{Stripping and reconstruction efficiency}\label{Sec:stripeff}
+The total efficiency of the stripping selection and reconstruction is calculated using \Lbpi simulation, by comparing the distribution of simulated events as a function of $q^{2}$ before and after the application of both the stripping line and reconstruction. \autoref{Fig:strip} shows the resulting relative efficiency between the \Lbpi and \Lbpijpsi channels as a function of $q^{2}$ for the stripping selection and the reconstruction.
+\begin{figure}[h]
+  \centering
+  \includegraphics[height = 5.5cm]{figs/stripeff_th}%q2effhistfullrelativeplot_strippingeff.pdf}
+  \caption{Relative combined stripping and reconstruction efficiencies between $\Lbpi$ and $\Lbpijpsi$ simulation as a function of $q^{2}$.}
+  \label{Fig:strip}
+\end{figure}
+
+
+\subsection{Trigger efficiency, preselection and PID cuts}
+The trigger efficiency is calculated using simulation, by applying the relevant TOS requirements, as discussed in \autoref{Sec:Selection}. The preselection efficiency is calculated using resampled simulation, as is the effect of the mass-dependent PID cuts. However, any selection involving the \dllpk variable is not calculated using resampled simulation, due to the simulation's poor replication of the \dllpk variable (see \autoref{sec:resample}). Instead, the efficiency values for a given PID cut are calculated directly from the calibration samples shown in \autoref{tab:ur}.
+
+%The resampled simulation gives an underestimation of the efficiency of the selection criteria,  $\dllpk>8$ and $\dllpk>17$.
+
+ %, for the relevant cuts, $\dllpk>8$ and $\dllpk>17$.
+
+The absolute efficiency distribution for the \Lbpi channel for the trigger, preselection and PID selection can be seen in \autoref{Fig:trigpidint}. The dashed lines indicate the efficiency of the ($9<q^{2}<10 \gev^{2}/\mathrm{c}^{4})$ bin of the relevant distribution. The trigger varies with $q^{2}$ as expected, with the trigger being more efficient for harder muons. The slight drop off at high $q^{2}$ for the PID reflection cuts is due to this region of $q^{2}$ corresponding to softer hadrons, which will have poorer separation in the RICH. %The preselection and the PID reflection efficiency are correlated as they both contain cuts on the PID variables \dllppi and \dllkpi.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[height = 5.5cm]{figs/eff_jpsi_abs.pdf}
+  \caption{Absolute efficiencies for the preselection, trigger and PID selection,  as a function of $q^{2}$ for \Lbpi simulation. The dashed lines indicate the efficiency of the $(9<q^{2}<10\gev^{2}/\mathrm{c}^{4})$ bin for the efficiency distribution of the same colour. There is no efficiency value for the last bin due to a lack of data in this bin.}
+  \label{Fig:trigpidint}
+\end{figure}
+
+
+\subsection{BDT efficiency}
+The value of the BDT efficiency is assumed to be flat in $q^{2}$, and therefore to have no effect on the relative efficiency. The difference to the total relative efficiency between the case where the efficiency is  assumed to be flat and the case where the BDT efficiency is taken as a function of $q^{2}$ from \LbK data is taken as a systematic uncertainty (see \autoref{Sec:Results}).  %This is compared against the efficiency taken from sWeighted \LbK data and the difference is taken as a systematic uncertainty, discussed in detail in \autoref{Sec:Results}.
+% from sWeighted \LbKjpsi data and applies to all $q^{2}$. The BDT efficiency therefore has 
+%% , shown in \autoref{Fig:q2dataandmc},
+%% The BDT efficiency is taken from \LbKjpsi data, because the BDT efficiency is poorly modelled in the simulation do the the mismodelling of the correlations in the resampled simulation.
+
+
+%% \begin{figure}[h]
+%%   \centering
+%%               \subfloat[]{\includegraphics[height = 5.5cm]{figs/bdteff_q2}\label{eff:1}}\\
+%%             \subfloat[]{\includegraphics[height = 5.5cm]{figs/bdteff_zoom}\label{eff:2}}\\
+
+
+%%     \caption{Absolute efficiency for a BDT cut at 0.25 as a function of $q^{2}$ calculated using \LbK sWeighted data, showing all bins, \protect\subref{eff:1} and with the last bin removed, \protect\subref{eff:2}. The blue line indicates the efficiency given by \LbKjpsi data.}
+%%   \label{Fig:q2dataandmc}
+%% \end{figure}
+ 
+\subsection{Total relative efficiency}
+\label{sec:toteff}
+\begin{figure}[!t]\def\nh{0.3\textwidth}
+  \centering
+  \includegraphics[height = 5.5cm]{figs/jpsiefftot_jpsiveto.pdf}
+    \caption{The total relative efficiency assuming a flat BDT efficiency in $q^{2}$. The shaded areas indicate the vetoed regions in $q^{2}$.}
+\label{Fig:toteff}
+
+\end{figure}
+%\subsubsection{Total efficiency and $q^{2}$ distributions}
+The total integrated relative efficiency, assuming a given $q^{2}$ distribution, is given by the sum $\sum_{i} (\epsilon_{i}\times N_{q^{2}_{i}}/N)$, where the $i$ refers to the $i^{th}$ bin in $q^{2}$, $\epsilon_{i}$ refers to the relative efficiency between the \Lbpi and \Lbpijpsi channels for the $i^{th}$ bin, and the distribution of $N_{q^{2}_{i}}/N$ is taken from \LbL branching fraction predictions. The total error is taken by combining the errors on the $q^{2}$ efficiency distribution, which is dependent on the simulation statistics, and the errors on the \LbL branching fraction theory predictions. Due to there being only a handful of events in the last $q^{2}$ bin (19$<q^{2}<20) \gev^{2}/c^{4}$ in phase space simulation before any selections have been applied, and the large weight this bin gets from the \LbL branching fraction predictions, this bin can not be included in the integration over $q^{2}$. According to \LbL theory predictions for the differential branching fraction, this last bin in $q^{2}$ contains 2.5\% of all events. Instead, the integration is done only up to $19 \gev^{2}/c^{4}$, with a scaling factor applied to renormalise the \LbL branching fraction predictions, and the difference between the efficiency achieved by integrating either up to $19 \gev^{2}/c^{4}$ or up to $20 \gev^{2}/c^{4}$ is taken as a systematic, as discussed in \autoref{Sec:Results}. 
+
+
+Integrating up to $19 \gev^{2}/c^{4}$, not including the areas of $q^{2}$ that are vetoed, gives a total integrated relative efficiency of $\tw$. The effect of simulation reweighting  on the total relative efficiency, as well as the choice of the $q^{2}$ distribution used to give $N_{q^{2}_{i}}/N$, are both evaluated as systematic uncertainties, as outlined in \autoref{Sec:Results}. 
+\subsection[Efficiency as a function of $m_{p\pi}$]{Efficiency as a function of $\mathbold{m_{p\pi}}$}
+
+It is also of interest to study the efficiency as a function of the dihadron mass spectrum, $m_{p\pi}$. The efficiency as a function of $m_{p\pi}$ will be highly correlated with the efficiency as a function of $q^{2}$, as events with a high value for $m_{p\pi}$ must correspond exclusively to low $q^{2}$ events, and vice versa. As such, given that there is a rising efficiency with low $q^{2}$ events, a falling efficiency is expected for high $m_{p\pi}$ events.
+This expected behaviour is shown in \autoref{Fig:ppieff}\protect\subref{eff:1}, which shows the efficiency for the preselection and PID selections as a function of $m_{p\pi}$. The same preselection and PID efficiency can be seen as a function of both $q^{2}$ and $m_{p\pi}$ in \autoref{Fig:ppieff}\protect\subref{eff:2}. As shown in \autoref{Fig:ppieff}\protect\subref{eff:2}, the efficiency in $m_{p\pi}$, for a given value of $q^{2}$, is fairly flat. This is relevant, as the $m_{p\pi}$ spectrum is poorly replicated in phase space simulation, due to the presence of $N^{*}$ resonances, which are ignored in the phase space model. The effect of the use of the phase space model for the dihadron mass spectrum on the total efficiency is considered as a source of systematic uncertainty in \autoref{Sec:Results}.
+\begin{figure}[!t]\def\nh{0.3\textwidth}
+  \centering
+  \subfloat[]{\includegraphics[height = 5.5cm]{figs/selectioneff}\label{eff:1}}\\
+  \hspace*{1cm}
+  \subfloat[]{\includegraphics[height = 5.5cm]{figs/2deffselection}\label{eff:2}}\\
+
+  \caption{ The absolute efficiency for the preselection and PID selections as a function of $m_{p\pi}$, \protect\subref{eff:1}, and both $m_{p\pi}$ and $q^{2}$, \protect\subref{eff:2}.}
+\label{Fig:ppieff}
+
+\end{figure}
+
+
+%%$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ 

@@ -1,0 +1,151 @@
+\def\optNNcut{\ensuremath{0.552}\xspace}
+\def\lowermass{\ensuremath{5470}\xspace}
+\def\uppermass{\ensuremath{5770}\xspace}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\BFSystAcc{\ensuremath{1.059\pm0.007}\xspace} % 0.0067
+\def\BFSystPol{\ensuremath{1\pm0}\xspace}
+\def\BFSystMC{\ensuremath{0.913\pm0.040}\xspace} % 0.913
+\def\BFSystTrigger{\ensuremath{1.000\pm0.010}\xspace} % 
+\def\BFSystNN{\ensuremath{}\xspace}
+\def\BFSystLifetime{\ensuremath{1.000\pm0.001}\xspace}
+% sqrt((1-(2058/2102.))**2+(1-22292/22358.)**2)
+% 0.021139568452317823
+\def\BFSystFit{\ensuremath{1.000\pm0.021}\xspace} 
+% Phase space: 91.0095/% and Weighted: 89.2076/%
+%\def\BFSystVetoes{\ensuremath{1.002\pm0.0006}\xspace}
+\def\BFSystPID{\ensuremath{0.960\pm0.010}\xspace} % 0.9600630282194528
+% from math import sqrt
+% c=0.913*0.9600630282194528  # MC times PID correction
+% c
+% 0.8765375447643604
+% e=sqrt((0.04/0.913)**2+(0.01/0.96)**2+0.01**2+0.001**2+0.021**2)*c  # (0.04/0.91)**2+
+% 0.04443590741078741
+% rr=0.0940
+% re=0.0029
+% print rr*c, re*c, rr*e
+% 0.0823945292078 0.00254195887982 0.00417697529661
+\def\BFSystTot{\ensuremath{0.876\pm0.045}\xspace}
+% \def\BFCorrected{\ensuremath{0.0824\pm0.0025\text{\:(stat.)}\pm0.0042\text{\:(kin.)}\pm0.0021\text{\:(syst.)}}\xspace} % 
+\newcommand{\IF}[4]{\ifthenelse{\equal{#1}{#2}}{#3}{#4}}%
+\newcommand{\STAT}[1][E]{\IF{#1}{E}{\text{\:(stat.)}}{}}
+\newcommand{\SYST}[1][E]{\IF{#1}{E}{\text{\:(syst.)}}{}}
+\newcommand{\BFCorrected}[1][E]{\ensuremath{0.0824\pm0.0025\STAT[#1]\pm0.0042\SYST[#1]}\xspace} % 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\RawRatio{\ensuremath{0.0940 \pm 0.0029}\xspace}
+\def\RawDeltaACP{\ensuremath{(+6.8 \pm 2.3)\%}\xspace}
+\def\RawLbpiCP{\ensuremath{(+7.9 \pm 2.2)\%}\xspace}
+\def\RawLbKCP{\ensuremath{(+1.1 \pm 0.9)\%}\xspace}
+\def\DeltaACP{\ensuremath{(+5.7\pm 2.3)\%}\xspace}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\ACPSymb{\ensuremath{{\cal A}_\CP}\xspace}
+\def\ArawSymb{\ensuremath{{\cal A}_\text{raw}}\xspace}
+\def\Acppi{\ensuremath{{\cal A}_{\CP}(\Lbpi)}\xspace}
+\def\AcpK{\ensuremath{{\cal A}_{\CP}(\LbK)}\xspace}
+\def\Acph{\ensuremath{{\cal A}_{\CP}(\Lbh)}\xspace}
+\def\Arawpi{\ensuremath{\ArawSymb(\Lbpi)}\xspace}
+\def\ArawK{\ensuremath{\ArawSymb(\LbK)}\xspace}
+\def\Arawh{\ensuremath{\ArawSymb(\Lbh)}\xspace}
+\def\myKstar{{\ensuremath{\Kbar^{*}(892)^{0}}}\xspace}%
+\def\BdjKs{\mbox{\ensuremath{\Bdb\to\jpsi\myKstar}}\xspace}%
+\def\AcpB{\ensuremath{{\cal A}_{\CP}(\BdjKs)}\xspace}
+\def\ArawB{\ensuremath{\ArawSymb(\BdjKs)}\xspace}
+\def\DeltaACPSymb{\ensuremath{\Delta \ACPSymb}\xspace}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\ACPBdSyst{\ensuremath{-1.1\pm0.3\%}\xspace} %% 0.32+0.06
+\def\ACPDetSyst{\ensuremath{0.0\pm0.8\%}\xspace}
+\def\ACPFitSyst{\ensuremath{0.0\pm0.7\%}\xspace}
+\def\ACPPIDSyst{\ensuremath{0.0\pm0.4\%}\xspace} %% 0.38\pm0.15
+% sqrt(0.32**2+0.8**2+0.72**2+0.38**2+0.15**2)
+\def\ACPCorrTot{\ensuremath{-1.1}\xspace}
+\def\ACPSystTot{\ensuremath{\pm1.2}\xspace}
+\newcommand{\DeltaACPTot}[1][E]{\ensuremath{(+5.7\pm 2.4\STAT[#1]\ACPSystTot\SYST[#1])\%}\xspace}
+% 5.7/sqrt(1.1948640**2+2.3**2)
+\def\DeltaACPSignif{\ensuremath{2.2\sigma}\xspace}
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\aerr}[2]{\ensuremath{{\:}^{+{\:}#1}_{-{\:}#2}}\xspace}%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\newsamples{Blue dots (red squares) are
+  data in the \pion (\kaon) stream. Green (brown) triangles
+  are \Lbpi (\LbK) MC.
+  All distributions are normalised to unit area. \xspace}
+\def\weightSamples{Blue dots (red squares) are
+  \sWeight-ed signal (background) data in the \kaon stream. 
+  Green (brown) triangles are unweighted \Lbpi (\LbK) MC.
+  Grey circles are weighted \LbK MC.
+  All distributions are normalised to unit area. \xspace}
+\def\samples{Blue dots are \Lb\to\jpsi{}\proton{}\pion MC;
+  Green triangles are \Lb\to\jpsi{}\proton{}\kaon MC;
+  Brown upside-down triangles are inclusive \jpsi MC;
+  Red squares are data. In all samples
+  the meson is required to be identified as a pion,
+  except for the \Lb\to\jpsi{}\proton{}\kaon MC.
+  All distributions are normalised to unit area. \xspace}
+\def\unblindedSamples{Blue dots are data weighted by \Lbpi signal \sWeights;
+  Green triangles are weighted \Lbpi signal MC;
+  Red squares are data weighed by \LbK signal \sWeights;
+  Brown upside-down triangles are weighted \LbK signal MC;
+  All samples have NN$>\optNNcut$ applied.
+  All distributions are normalised to unit area. \xspace}
+\def\dataPiK{Blue dots are \pion stream data, red squares are \kaon stream data.\xspace}
+\def\hadron{\ensuremath{h^-}\xspace}
+\def\hadronp{\ensuremath{h^+}\xspace}
+\def\meson{\ensuremath{M}\xspace}
+\def\Psippi{{\ensuremath{\jpsi\proton\pim}}\xspace}
+\def\mumuppi{{\ensuremath{\proton\pim\mumu}}\xspace}
+\def\mumupK{{\ensuremath{\proton\Km\mumu}}\xspace}            
+\def\PsipK{{\ensuremath{\jpsi\proton\Km}}\xspace}
+\def\PsipM{{\ensuremath{\jpsi\proton\meson}}\xspace}
+\def\Psippim{{\ensuremath{\jpsi\proton\pim}}\xspace}
+\def\PsipKm{{\ensuremath{\jpsi\proton\Km}}\xspace}
+\def\PsipMm{{\ensuremath{\jpsi\proton\meson^-}}\xspace}
+\def\Psippip{{\ensuremath{\jpsi\antiproton\pip}}\xspace}
+\def\PsipKp{{\ensuremath{\jpsi\antiproton\Kp}}\xspace}
+\def\PsipMp{{\ensuremath{\jpsi\proton\meson^+}}\xspace}
+\def\Lbpijpsi{\decay{\Lb}{\Psippi}}
+\def\LbKjpsi{\decay{\Lb}{\PsipKm}}
+\def\Lbpi{\decay{\Lb}{\mumuppi}}
+\def\LbK{\decay{\Lb}{\mumupK}}
+\def\LbM{\decay{\Lb}{\PsipM}}
+\def\Lbh{\decay{\Lb}{\jpsi\proton\hadron}}
+\def\Lbpim{\decay{\Lb}{\Psippim}}
+\def\LbKm{\decay{\Lb}{\PsipKm}}
+\def\LbMm{\decay{\Lb}{\PsipMm}}
+\def\Lbbpip{\decay{\Lbbar}{\Psippip}}
+\def\LbbKp{\decay{\Lbbar}{\PsipKp}}
+\def\LbbMp{\decay{\Lbbar}{\PsipMp}}
+\def\LbL{\decay{\Lb}{\Lz\mumu}}
+ \def\LbM{\Lbh}
+ 
+%Sally
+\def\Bmumumu{\decay{\Bp}{\mumumu\nu}}
+ 
+ %  \def\chi2{\chi^{2}}
+ \def\tw{0.487\pm0.022}
+ \def\tnw{0.492\pm0.023}
+ \def\twPK{0.484\pm0.023}
+ \def\twq2{0.528\pm0.042}
+  \def\twbdt{0.514\pm0.048}
+  \def\Nyield{1017\pm41}
+            \def\Syield{22\pm6}
+                     \def\SIG{5.5}
+                                 \def\DSIG{2}
+                                       \def\BFV{(6.9 \pm 1.9 \pm 1.1^{+1.3}_{-1.0})\times 10^{-8}}
+                                       %%  \def\Nyield{990\pm39}
+         %%  \def\Syield{18\pm5}
+         %% \def\SIG{5.5}
+         %% \def\BFV{(5.8 \pm 1.5 \pm 0.9^{+1.1}_{-0.9})\times 10^{-8}}
+ \def\q{\ensuremath{$q^{2}$}\xspace}   
+\def\sWeight{\ensuremath{\hbox{$_s$}{\cal W}eight}\xspace}
+\def\sWeights{\ensuremath{\hbox{$_s$}{\cal W}eights}\xspace}
+\def\NN{\ensuremath{\text{NN}}\xspace}
+\newcommand{\skipit}[1]{}%
+\def\Blind{\begin{minipage}[t]{\nw}\centering Blind\end{minipage}}%
+\def\nw{0.23\textwidth}\def\hw{\hskip 0.02\textwidth}%
+\newcommand{\twoplots}{\def\nw{0.47\textwidth}\def\hw{\hskip 0.05\textwidth}\centering}%
+\newcommand{\threeplots}{\def\nw{0.315\textwidth}\def\hw{\hskip 0.015\textwidth}\centering}%
+\newcommand{\fourplots}{\def\nw{0.235\textwidth}\def\hw{\hskip 0.01\textwidth}\centering}%
+\newcommand{\fiveplots}{\def\nw{0.185\textwidth}\def\hw{\hskip 0.01\textwidth}\centering}%
+\def\Xib{\ensuremath{\Xi_b^0}\xspace}
+\newcommand{\EB}[1]{{\bf [For EB: #1]}\xspace}

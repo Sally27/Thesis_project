@@ -1,0 +1,648 @@
+\section{Theory}
+The form of the full Standard Model Lagrangian is dictated by the internal symmetries $SU(3)\times SU(2)\times U(1)$, where $SU(n)$ denotes the special unitary group of $n \times n$ matrices with determinant one. In the SM, the gluon field ($g$) transform under the symmetry $SU(3)$ and the Electroweak sector under the symmetry $SU(2)\times U(1)$.
+
+This chapters will focus on the Electro-weak SU(2)$\times$U(1) sector.  There are however two brief points to be made on the nature QCD, which are those of confinement and asymptotic freedom.
+
+\begin{description}
+\item [Confinement] refers to the analytically inferred phenomena that the  strength of the colour force does not diminish with increased separation between quarks. This means that a lone colour charge can never be observed as in the limit of $R\to \infty$ the total energy would also go as $E(R)\to \infty$. Instead, when two quarks separate, the most energetically favoured state is to create two new quarks from the resulting colour field. This process is referred to as hadronization.
+
+\item[Asymptotic freedom] refers to the fact that if two quarks are very close (short distance or high energy interactions) they feel almost not colour potential and can be treated using perturbation methods. Unfortunately most of the experimentally interesting or accessible QCD processes are not in this limit. As a result either effective theories (i.e. theories which give qualitatively correct result in certain limits) or computational-time expensive non-perturbative methods are needed to produce QCD predictions. These methods will be discussed in more detail in section~\ref{subsec:ff}.
+\end{description}
+The rest of this section will focus on the Electroweak force, which is responsible for the Flavour Changing Neutral Currents in the decay \Lbpi, denoted as $\Delta F = 2$. There will be a brief explanation of how fermions and the Electroweak propagators acquire mass, followed by a discussion on flavour and Minimal Flavour violation.
+
+\subsection{Local gauge invariance}
+\label{subsec:gauge}
+The Lagrangian density for a free fermion in natural units is given as
+\begin{equation}
+  \label{eq:L_free}
+  \mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi
+\end{equation}
+which yields the equation of motion
+
+\begin{equation}
+ i\partial_{\mu}\overline{\psi}\gamma^{\mu} -  m\psi = 0
+\end{equation}
+This is the Dirac equation describing a particle of spin $\frac{1}{2}$ and mass, $m$, here represented by the field $\psi$. 
+
+If the spinor $\psi$ is transformed by a global phase such that $\psi \to e^{i\theta}\psi$ \autoref{eq:L_free} remains invariant because the phase term commutes past the partial derivative. However if the phase $\theta$ is dependent on space-time points, $x^{\mu}$, such that $\psi \to e^{iq\lambda(x)}\psi$, where $\lambda(x) = \frac{\theta(x)}{q}$ and $q$ is a constant, the resulting Lagrangian transform is $\mathcal{L} \to \mathcal{L} - \partial_{\mu}\lambda(x)\overline{\psi}\gamma^{\mu}\psi$. Thus \autoref{eq:L_free} breaks \emph{local gauge invariance}.
+
+Requiring that a complete Lagrangian be invariant under local gauge transformations requires the addition of new gauge fields to \autoref{eq:L_free}.
+
+Adding a new field,$A_{\mu}$, as
+
+\begin{equation}
+  \label{eq:L_free}
+  \mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi - (q\overline{\psi}\gamma^{\mu}\psi)A_{\mu}
+\end{equation}
+would require $A^{\mu}$ to transform as $A^{\mu} \to A^{\mu} + \partial_{\mu}\lambda(x)$ in order to preserve local gauge invariance.
+
+This gauge transofrmation can can be expressed more concisely by using the covaraint devriative defined as
+\begin{equation}
+ D_{\mu} = \partial_{\mu} - iq\lambda(x)A_{\mu}
+\end{equation}
+which transforms as the field itself.
+That is %, if $\phi^\prime  = e^{-iq\lambda(x)}\phi{e}, D_{\mu}\phi^\prime(x) \to e^{-iq\lambda(x)}D_{\mu}\phi(x)$ or expiclicty
+\begin{equation}
+  \phi^\prime  = e^{-iq\lambda(x)}\phi\\
+  \rightarrow D_{\mu}\phi^\prime(x) \to e^{-iq\lambda(x)}D_{\mu}\phi(x)
+ % $D_{\mu} \to \D_{\mu} - \overline{\psi}\gamma^{\mu}\psi\partial_{\mu}\lambda(x)
+\end{equation}
+The transformation $q\lambda(x)$ can be written more generally as $q^{\beta}\alpha^{\beta}$, where $\beta$ sums over each group generator.
+
+This formation of the Lagragain also means all the kinematic terms involving the fermion field are now contained within the covariant derviative.
+
+In the simple case of QED, $A^{\mu}$ is the electromagnetic potential, $q = e$ and $\lambda(x)$ is the generator of the Abelian group U(1).
+
+The current density can be read off from the interaction term in the Lagragian as
+\begin{equation}
+  J^{\mu} = q\overline{\psi}\gamma^{\mu}\psi
+\end{equation}
+
+Introducing the $A^{\mu}$ field to \autoref{eq:L_free} also requires an additional new term describing a free photon. The free photon term consists of a kinematic part, $F^{\mu\nu}F_{\mu\nu}$, and a mass term, $-m^{2}A^{\mu}A_{\mu}$. Whereas the kinematic term for the free photon is locally gauge invariant the mass term is not, which forbids a photon mass.
+
+Thus the construction of a locally gauge invariant U(1) QED Lagraigian is fairly straightforward because of certain experimental observations:
+\begin{enumerate}
+\item
+  The photon mass is observed to be zero. Thus the mass term of the boson, -$m^{2}A^{\mu}A_{\mu}$, is not locally gauge invariant, does not break the gauge symmetry because m=0.
+\item
+  The photon has been observed to be invariant under a parity transformation and have no EM charge. This allows the EM force to be modelled using a  simple U(1) symmetry, under which the fermion mass term, -$mc^{2}\psi\overline{\psi}$, in \autoref{eq:L_free}, remains locally gauge invariant.
+
+\end{enumerate}
+\subsection{Generation of fermion masses}
+Both points made above in section~\ref{subsec:gauge} do not apply to the case of the full SU(2) $\times$ U(1) Electroweak interaction, due to a number of differences in experimental observations. Firstly the $W^{\pm}$ bosons carry EM charge and all three gauge bosons, $W^{\pm}$ and $Z^{0}$, are massive. Secondly the $W^{\pm}$ bosons are observed to violate parity, only interacting with left-handed particles, whereas the $Z^{0}$ boson is observed to interact with both right and left handed particles. 
+
+The violation of parity requires a model which allows for parity violation whilst still preserving Lorentz invariance.
+The fermion field can be written in terms of its left and right-handed componentes by using the the projection operators, defined as
+\begin{equation}
+  P_{R} = \frac{1+\gamma^{5}}{2}
+\end{equation}
+and
+\begin{equation}
+  P_{L} = \frac{1-\gamma^{5}}{2}
+\end{equation}
+Thus the fermion spinor can be written as
+\begin{equation}
+\psi = \frac{1-\gamma^{5}}{2}\psi + \frac{1+\gamma^{5}}{2}\psi = \psi_{L}+\psi_{R}
+\end{equation}
+where $\psi_{L}\overline{\psi}_{L}$ = $\psi_{R}\overline{\psi}_{R}$ = 0 (as $P_{i}^{2} = P_{i}$ and $P_{R} + P_{L} = 1$). The gives the remaining mass term as
+\begin{equation}
+  -m\psi\overline{\psi} = -m[\overline{\psi}_{R}\psi_{L} + \overline{\psi}_{L}\psi_{R}]
+\end{equation}
+
+
+A gauge field which allows for this partity violation is also required.  To achieve this, three gauge bosons, $W^{1-3}$, are introduced.  These bosons are representations of the SU(2) group and only interact with left-handed particles in the SM.
+
+The generators of the SU(2) group are the Pauli matrices give by:
+
+\begin{equation}
+  \begin{split}
+    SU(2):
+    &\sigma_{1} =\begin{pmatrix}0&&1\\1&&0\end{pmatrix}\\
+    &\sigma_{2} =\begin{pmatrix}0&&-i\\i&&0\end{pmatrix}\\
+    &\sigma_{3} =\begin{pmatrix}1&&0\\0&&-1\end{pmatrix}\\
+  \end{split}
+\end{equation}
+which gives the SU(2) covariant derivative as
+
+\begin{equation}
+  D_{\mu} = \partial_{\mu} + i\frac{g}{2}W^{\mu}_{i} \sigma^{i} = \partial_{\mu} + \begin{pmatrix} W^{\mu}_{3} && W^{\mu}_{1} - iW^{\mu}_{2}\\W^{\mu}_{1} + iW^{\mu}_{2} && -W^{\mu}_{3}\end{pmatrix} = \partial_{\mu} + i\frac{g}{2}\begin{pmatrix}W^{3}_{\mu} && \sqrt{2}W^{+}_{\mu}\\\sqrt{2}W^{-}_{\mu} && -W^{3}_{\mu}\end{pmatrix}
+\end{equation}
+where $W^{\pm}_{\mu} = \frac{1}{\sqrt{2}}(W^{1}_{\mu}\mp iW^{2}_{\mu})$ and the $\pm$ superscipt on the  $W^{\pm}_{\mu}$ indicate the electric charge carried by the gauge boson. The affect of the $W^{\pm}$ charged field on the fermion fields is therefore to change between the lower and upper components of the SU(2) left-handed doublets. Writing the SU(2) left-handed doublets as
+\begin{equation}
+  \begin{split}
+    &q_{L_{u,d}} = \binom{u_{L}}{d_{L}}\\
+    &q_{l_{e,\nu_{e}}} = \binom{e_{L}}{\nu_{L}}\\
+    \end{split}
+\end{equation}
+%% and rigght-handed singlets as
+%% \begin{equation}
+%%   u_{R}, u_{d}, e_{R}, \nu_{R}
+%% \end{equation}
+ allows the charged currents to be written as
+\begin{equation}
+    J_{W^{+}}^{\mu} = \frac{1}{\sqrt{2}}(\overline{\nu}_{L}\gamma^{\mu}e_{L} + \overline{u}_{L}\gamma^{\mu}d_{L}) $$and$$ J_{W^{-}}^{\mu} = \frac{1}{\sqrt{2}}(\overline{e}_{L}\gamma^{\mu}\nu_{L} + \overline{d}_{L}\gamma^{\mu}u_{L})
+    \label{eq:chargedcurr}
+\end{equation}
+
+
+These $W^{\pm}_{\mu}$ boson represent the charged $W$ bosons of the weak force.
+The SU(2) neutral current does not however transform between upper and lower SU(2) doublet components as the $W^{\mu}_{3}$ generator only has diagonal matrix elements.
+
+
+
+%% Taking the covariant 
+%% which, as in the simple QED, gives the current densties as
+
+%% \begin{equation}
+%%   J_{\mu} = \partial_{\mu} + i\frac{g}{2}W^{i}_{\mu}\sigma^{i}
+%% \end{equation}
+
+
+
+
+
+
+%% A collary of allowing the SU(2) bosons to only interacting with left-handed particles is that left-handed particles are now SU(2) doublets and right-handed particles, SU(2) singlets, This allows the left-handed fermions to be written as
+
+%% giving charged weak currents as
+
+
+%% %% meaning that the weak currents can be written in terms of $\gamma^{\mu}$ matrices and $\gamma^{5}$. This gives the charged weak currents as
+%% %% \begin{equation}
+%% %%     J_{W}^{\mu^{+}} = \frac{1}{\sqrt{2}}(\overline{\nu}_{L}\gamma^{\mu}e_{L} + \overline{u}_{L}\gamma^{\mu}d_{L}) $$and$$ J_{W}^{\mu^{-}} = \frac{1}{\sqrt{2}}(\overline{e}_{L}\gamma^{\mu}\nu_{L} + \overline{d}_{L}\gamma^{\mu}u_{L})
+%% %%     \label{eq:chargedcurr}
+%% %% \end{equation}
+Since $\psi_{L}$ is a weak isospin doublet ($\bf{I}=\frac{1}{2}$) but $\psi_{R}$ is an isospin singlet ($\bf{I}=0$) they will behave differently under rotations and thus the combination of left and right terms, $-m\psi\overline{\psi} = -m[\overline{\psi}_{R}\psi_{L} + \overline{\psi}_{L}\psi_{R}]$, is not gauge invariant.
+The solution is to introduce a very specific potential that keeps the full Lagrangian invariant under $SU(2)\times U(1)$ but will break symmetry of the vacuum.
+This potential is given by
+\begin{equation}
+  V(\phi) = -\mu^{2}\phi^{*}\phi +\lambda|\phi^{*}\phi|^{2}
+\end{equation}
+
+This is the Higgs potential,  where $\mu$ is the Higgs mass parameters and $\lambda$ is the Higgs self-coupling. The complete Higgs Lagragian is given as 
+\begin{equation}
+  \mathcal{L_{Higgs}} = -(D_{\mu}\phi)^{\dagger}(D^{\mu}\phi) - V(\phi) + \mathcal{L}_{Y}
+\end{equation}
+
+By using the Higgs field, the fermions can acquire their mass through the Higgs vacuum expectation value whilst still preserving gauge invariance.
+
+The Higgs field is represented as 
+\begin{equation}
+  \phi = \binom{\phi^{+}}{\phi^{0}}  = \binom{\phi_{1} + i\phi_{2}}{\phi_{3} + i\phi_{2}}
+  \label{eq:higgsspin_1}
+\end{equation}
+
+%% \begin{equation}
+%%   \tilde{\phi} = \binom{\phi^{0^{*}}}{-\phi^{-}}% =  \binom{\phi_{1} + i\phi_{2}}{\phi_{3} + i\phi_{2}}
+%%   \label{eq:higgsspin_2}
+%% \end{equation}
+which is an SU(2) doublet of complex scalar fields (isospin component $I_{3}$ =  $\pm\frac{1}{2}$) where the electric charges of the upper and lower components are chosen to ensure that hypercharge Y  = $\pm 1$ (discussed in Secion) through the relation 
+\begin{equation}
+  Q = I_{3}+\frac{Y}{2}
+\end{equation}
+A stable minima is found when $\mu^{2}<0$ which yields an infinite number of degenerate minima states which satisfy
+
+\begin{equation}
+  \phi\phi^{\dagger} = \sqrt{\frac{\mu^{2}}{2\lambda}} = \frac{\nu}{\sqrt{2}}
+\end{equation}
+Here $\nu$ is a real constant measured to be 246 $\gev$~\cite{vev} and is the only parameter in the Standard Model to have units. In summary, by choosing $\mu^{2}<0$, the vacuum expectation value (i.e the value of $|\phi|$ at the minima) is now non-zero and the symmetry has been spontaneously broken %%Transfering to what is referred to as the unitary gauge, where by the scalar degrees of freedom are used to give the W^{\pm} and Z bosons their longitudinal degrees of freedom and there is a single real scalar particle, the Higgs, gives
+ Without any lose of generality, the expectation of the Higgs field can be written as
+ \begin{equation}
+   \label{eq:expt}
+  \langle{\phi}\rangle = \frac{1}{\sqrt{2}}\binom{0}{\nu}  %$\implies$ $L\phi\overline{R}$ = 
+\end{equation}
+
+\begin{equation}
+  \langle\tilde{\phi}\rangle = \frac{1}{\sqrt{2}}\binom{\nu}{0}
+\end{equation}
+The introduction of the Higgs potential can now be used to generate fermion mass whislt still preserving the local gauge invariance of the Lagragian. This is done by combining the Higgs potential at its vacuum expectation value, as given in \label{eq:expt}, with the left and right handed fermion fields, $L\phi\overline{R}$. This yields a SU(2) singlet and is invariant. 
+
+The term $L\phi\overline{R}$ is referred to as a Yukawa interaction, where a Yukuawa interaction is the term given to any interaction between a Dirac and scalar field.  The Yukawa interaction terms for quarks are given as
+\begin{equation}
+  \mathcal{L}^{q}_{Y} = a_{ij}\overline{q}_{Li}\phi^{*}u_{Rj} + b_{ij}\overline{q}_{Li}\phi u_{dj} + h.c.%
+  =%
+   \overline{u}_{Li}\frac{\nu}{\sqrt{2}}a_{ij}u_{Rj} + \overline{u}_{Li}\frac{\nu}{\sqrt{2}} b_{ij}u_{Rj} + h.c
+\label{eq:yukawa}
+\end{equation}
+where $a_{ij}$ and $b_{ij}$ are the Yukawa couplings strengths.
+and from which the the mass matrices are defined as
+\begin{equation}
+  m^{u}_{ij} = \frac{a_{ij}\nu}{\sqrt{2}} $$and$$ \\
+  m^{d}_{ij} = \frac{b_{ij}\nu}{\sqrt{2}} 
+\end{equation}
+
+\begin{equation}
+  u_{L} \equiv \begin{bmatrix}u_{L}\\c_{L}\\t_{L}\end{bmatrix}
+  u_{R} \equiv \begin{bmatrix}u_{R}\\c_{R}\\t_{R}\end{bmatrix}
+  d_{L} \equiv \begin{bmatrix}d_{L}\\s_{L}\\b_{L}\end{bmatrix}
+  d_{R} \equiv \begin{bmatrix}d_{R}\\s_{R}\\b_{R}\end{bmatrix}
+  \label{eq:yukdef1}
+\end{equation}
+\begin{equation}
+  \begin{split}
+    &
+    Y_{u} \equiv \begin{bmatrix}y^{u}_{11}&&y^{u}_{12}&&y^{u}_{13}\\y^{u}_{21}&&y^{u}_{22}&&y^{u}_{23}\\y^{u}_{31}&&y^{u}_{32}&&y^{u}_{33}\end{bmatrix}
+    Y_{d} \equiv \begin{bmatrix}y^{d}_{11}&&y^{d}_{12}&&y^{d}_{13}\\y^{d}_{21}&&y^{d}_{22}&&y^{d}_{23}\\y^{d}_{31}&&y^{d}_{32}&&y^{d}_{33}\end{bmatrix}
+    \\
+  \end{split}
+\end{equation}
+
+allows \autoref{eq:yukawa} to be re-written as
+\begin{equation}
+  \mathcal{L}^{q}_{Yukawa} = -\frac{\nu}{\sqrt{2}}{\overline{d}_{L}Y_{d}d_{R} + \overline{u}_{L}Y_{u}U_{R} + h.c.}
+\end{equation}
+
+
+The weak-interaction eigenstates for the quarks are not the same however as the Higgs-interaction (mass) eigenstates.
+
+The unitary transforms to obtain mass eigen states are given as
+
+\begin{equation}
+  q^{\prime}_{A} = V_{A,q}q_{A} $$with$$ q = u,d;   A = R,L $$and$$ V_{A,q}V^{+}_{A,q} = 1
+  \label{eq:yukdef2}
+\end{equation}
+where primed vectors indicate weak eigenstates and non-primed are mass eigenstates.
+
+Using the vector definitions in \autoref{eq:yukdef1} and inserting \autoref{eq:yukdef2} into the expression for weak charged currents (in this example just considering the postive current $J^{\mu^{+}}_{W}$) gives:
+\begin{equation}
+\begin{split}
+  J^{\mu^{+}}_{W} =
+  & \frac{1}{\sqrt{2}}\overline{u}^{\prime}_{L}\gamma^{\mu}d^{\prime}_{L} = \frac{1}{\sqrt{2}}\overline{u}_{L}V^{\dagger}_{L,u}\gamma^{\mu}V_{L,d}d_{L} \\
+  & = \frac{1}{\sqrt{2}}\overline{u}_{L}\gamma^{\mu}(V^{\dagger}_{L,u}V_{L,d})d_{L} \\
+  & = \begin{pmatrix}\overline{u}_{L}&\overline{c}_{L}&\overline{t}_{L}\end{pmatrix}\gamma_{\mu}V_{CKM}\begin{pmatrix}d_{L}\\s_{L}\\b_{L}\end{pmatrix} \\
+  & = \begin{pmatrix}\overline{u}_{L}&\overline{c}_{L}&\overline{t}_{L}\end{pmatrix}\gamma_{\mu}\begin{pmatrix}V_{ud}&V_{us}&V_{ub}\\V_{cd}&V_{cs}&V_{cb}\\V_{td}&V_{ts}&V_{tb}\\\end{pmatrix} \begin{pmatrix}  d_{L}\\s_{L}\\b_{L}\end{pmatrix} \\
+  \end{split}
+\end{equation}
+As stated previously, there are no flavour changing neutral currents due to only having diagonal terms in the $W^{\mu}$. This remains the case after diagonalising the mass matrices. Applying the same rocess to the neutral currents
+\begin{equation}
+  \begin{split}
+  J^{\mu}_{W} =
+  & \frac{1}{\sqrt{2}}(\overline{u}^{\prime}_{L}\gamma^{\mu}u^{\prime}_{L}  + \overline{d}^{\prime}_{L}\gamma^{\mu}d^{\prime}_{L}) = \\
+  & \frac{1}{\sqrt{2}}(\overline{u}_{L}V^{\dagger}_{L,u}\gamma^{\mu}V_{L,u}u_{L}  + \overline{d}_{L}V^{\dagger}_{L,d}\gamma^{\mu}V_{L,d}d_{L}) \\
+  & \frac{1}{\sqrt{2}}(\overline{u}_{L}\gamma^{\mu}V^{\dagger}_{L,u}V_{L,u}u_{L}  + \overline{d}_{L}\gamma^{\mu}V^{\dagger}_{L,d}V_{L,d}d_{L}) \\
+  & \frac{1}{\sqrt{2}}(\overline{u}_{L}\gamma^{\mu}u_{L}  + \overline{d}_{L}\gamma^{\mu}d_{L}) \\
+  \end{split}
+\end{equation}
+The elements of the CKM matrix have a hierarchical structure where the most off-diagonal terms (i.e. $V_{td}$ and $V_{ub}$) are the smallest and the diagonal terms are the largest ($\sim$ unity). As it is a $3\times3$ complex matrix there are initially 18 free parameters. The requirement of unitary reduces this to nine.
+Each quark field could also go under a phase transform, $q_{i}\to e^{\Phi_{i}}q_{i}$, such that the product  $\frac{1}{\sqrt{2}}\overline{u}_{L}\gamma^{\mu}V^{\dagger}_{L,u}V_{L,u}u_{L}$ remains unchanged in the Lagragian. This phase transformation affects the CKM matrix as:
+\begin{equation}
+  V_{CKM} = V_{\alpha j} \to \begin{pmatrix}e^{\Phi_{u}}&&\\&e^{\Phi_{c}}&\\&&e^{\Phi_{t}}\end{pmatrix}\begin{pmatrix}V_{ud}&V_{us}&V_{ub}\\V_{cd}&V_{cs}&V_{cb}\\V_{td}&V_{ts}&V_{tb}\\\end{pmatrix} \begin{pmatrix}e^{\Phi_{d}}&&\\&e^{\Phi_{s}}&\\&&e^{\Phi_{b}}\end{pmatrix} \to V_{\alpha j}e^{i(\Phi_{j} - \Phi_{\alpha})}
+\end{equation}
+
+The global phase transform of each quark gives 5 relative phases between the 6 quarks in the CKM matrix, reducing the number of degrees of freedom to four. These four parameters can be expressed in the Wolfenstein parameterisation, which to third order in the parameter $\lambda$ gives ~\cite{wolf}
+\begin{equation}
+  \begin{pmatrix}1 - \frac{\lambda^{2}}{2} &\lambda& A\lambda^{3}(\rho - i\eta)\\-\lambda&1-\frac{\lambda^{2}}{2} & A\lambda^{2}\\ A\lambda^{3}(1-\rho - i\eta)&-A\lambda^{2}&1\\\end{pmatrix}
+\end{equation}
+where 
+\begin{equation}
+  \begin{split} 
+    &A = 0.808\substack{+0.022\\-0.015}, \\
+    & \lambda = 0.2253\pm 0.0007,  \\
+    & \rho =+ 0.135\substack{+0.031\\-0.016}, \\
+    &\eta = 0.349\pm0.017\\
+    \end{split}
+\end{equation}
+%%as taken from Ref.~\cite{wolf}
+%%http://arxiv.org/pdf/1002.0900v2.pdfwhere $\overline{\rho} = \rho(1-\lambda^{2}/2 + ...)$ and $\overline{\eta} = \eta(1-\lambda^{2}/2 + ...)$  as taken from Ref.~\cite{wolf} %\url{http://www.sciencedirect.com/science/article/pii/S0370269311009956}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Introducing hypercharge}
+In the arguments laid out thus far, the three SU(2) gauge bosons $W^{1-3}$ have provided a satisfactory model for the left-handed nature of the $W^{\pm}$ bosons. The $Z^{0}$ boson interacts with both left and right handed fermions however, as does the massless photon of the $A_{\mu}$ gauge field.
+
+A new massive gauge field $B^{\mu}$ is introduced, which transforms under a U(1) symmetry. The group generator of this U(1) symmetry is denoted $Y_{W}$ and generally referred to as weak hypercharge. As will be shown in the following section the currents generated by the massive $W^{3}$ and $B^{\mu}$ bosons mix to give the massless photon and massive $Z^{0}$. The Higgs potential has a weak hypercharge of $\pm$1. As will be seen this choice of hypercharge serves to ensure that one of the Higgs components is always neutral.%This combination of $SU(2)\times U(1)$ is referred to as Electroweak unification. 
+
+\subsection{Generation of gauge boson masses}
+
+
+As discussed previously experiment shows that the Electroweak force has massive propagators. To illustrate how these gauge bosons $W^{\pm}$ and $Z^{0}$ acquire their mass it is necessary to introduce the full Higgs potential
+\begin{equation}
+\mathcal{L}_{scale} = (D^{\mu}\phi)^{\dagger}(D_{\mu}\phi) - V(\phi)
+\end{equation}
+where $D^{\mu}$ is the covariant derivative and is chosen as %such the scalar fields transfrom the same way as the gauge bosons.
+\begin{equation}
+  D_{\mu} = \partial_{\mu}+ig\frac{1}{2}\vec{\tau}.\vec{W_{\mu}} + ig^{'}\frac{1}{2}YB_{\mu}
+  \label{eq:higgscodev}
+\end{equation}
+where $W^{\mu}$ and $B^{\mu}$ are gauge bosons and $\tau_{i = 1,2,3}$ are the group generators of SU(2), the Pauli matrices. As done previously 3 components of the $\phi$ field are can be set to zero to leave just the real part of the lower component of the spinor, $\binom{0}{\nu}$.
+\subsection{An example Goldstone's theorem under a  U(1) symmetry}
+The choice of $\mu^{2} < 0$ results in a non-zero vacuum expectation value and thus spontaneously breaks the symmetry. % Goldstones therom states that in potenitals where the ground state is degenerate (as in this case) massless bscalar bosons will appear. These bosons however are not observed in nature.
+A consequence of this symmetry breaking is the generation of goldstone boson's. Consider a U(1) complex scalar field given by
+$\phi_{u(1)}$ = $\phi_{1}$ + $i\phi_{2}$
+
+It is natural to write $\phi_{u(1)}$ in terms of the fields ($\xi$,$\eta$) which are shifted to the vacuum minima, as sketched in Fig~\ref{fig:higgs}
+\begin{figure}[ht!]
+  \centering
+  \subfloat[]{
+    \includegraphics[scale = 0.3]{/home/es708/work_home/lambda/AnalysisNeat/EventSelection/screenshots/higgspotential}\label{fig:potential}}
+  \\
+  \subfloat[]
+           {\includegraphics[scale = 0.3, trim  = 5mm 0mm 0mm 0mm, clip]{/home/es708/work_home/lambda/AnalysisNeat/EventSelection/screenshots/vacuumshift}\label{fig:fields}}
+           \caption{Showing \protect\subref{fig:potential} the resulting $V(\phi)$ potential for the case of $\mu^{2}<0$ and \protect\subref{fig:fields} the shift of fields to the minima}
+           \label{fig:higgs}
+\end{figure}
+
+
+
+This gives
+\begin{equation}
+  \phi_{u(1)} = \frac{1}{\sqrt{2}}[(v+\eta) + i\xi]
+  \end{equation}
+
+
+To make the resulting Lagrangian easier to interpret a gauge is chosen such that the $\xi$ terms vanish.  This requires $\phi_{u(1)}$ to be rotated by -$\frac{\xi}{\nu}$. Assuming such a rotation is infinitesimal such that terms $\mathcal{O}(\xi^{2}\eta^{2}\eta\xi)$ can be dropped leaves
+\begin{equation}
+  \phi^{'}_{u(1)} \to e^{-i\xi/\nu}\phi_{u(1)}  = e^{-i\xi/\nu}\frac{1}{\sqrt{2}}[(v+\eta) + i\xi] = e^{-i\xi/\nu}\frac{1}{\sqrt{2}}[v+\eta]e^{+i\xi/\nu} = \frac{1}{\sqrt{2}}[v+\eta] =\frac{1}{\sqrt{2}}[v+h]
+\end{equation}
+The absorption of $\xi$ (referred to as a Goldstone Boson) gives an extra degree of freedom to the $h$ field which is used to generate its mass. This choice of gauge is referred to as the unitary gauge and $h$ is the Higgs field of the real massive scalar particular, the Higgs. Goldstone's theorem states that for each broken generator of an original symmetry group a massless spin-zero particle will appear. By transforming the gauge this spin-zero particle can be eaten to provide the longitudinal components of other bosons $\implies$ \emph{if the symmetries associated with a gauge boson are broken then said gauge boson will acquire a mass via the Higgs mechanism.} 
+\subsection{Giving mass to the $\bf{W^{\mu}}$ and Z bosons}
+In the case of $SU(2)\times U(1)$ symmtery  there are 4 generators.
+Invariance of the potential $\phi$ under the a symmetry with a generator $Z$ implies that $e^{i\alpha Z}\phi_{0} = \phi_{0}$.  Again dropping higher orders implies that for such $\phi$ to remain invariant under such a transformation requires Z$\phi_{0} = 0$. Thus it can be seen that all SU(2) $W^{\mu}$  bosons and the $U(1)_{Y}$ $B^{\mu}$ gauge boson will acquire a mass as:
+\begin{equation}
+  \begin{split}
+    SU(2):
+    &\tau_{1}\phi_{0} =\begin{psmallmatrix}0&&1\\1&&0\end{psmallmatrix}\frac{1}{\sqrt{2}} \begin{psmallmatrix}0\\v+h\end{psmallmatrix}= +\frac{1}{\sqrt{2}}\begin{psmallmatrix}v+h\\0\end{psmallmatrix}\neq 0 \to broken\\
+    &\tau_{2}\phi_{0} =\begin{psmallmatrix}0&&-i\\i&&0\end{psmallmatrix}\frac{1}{\sqrt{2}}\begin{psmallmatrix}0\\v+h\end{psmallmatrix}= -\frac{i}{\sqrt{2}}\begin{psmallmatrix}v+h\\0\end{psmallmatrix}\neq 0 \to broken\\
+    &\tau_{3}\phi_{0} =\begin{psmallmatrix}1&&0\\0&&-1\end{psmallmatrix}\frac{1}{\sqrt{2}}\begin{psmallmatrix}0\\v+h\end{psmallmatrix}= -\frac{1}{\sqrt{2}}\begin{psmallmatrix}0\\v+h\end{psmallmatrix}\neq 0 \to broken\\
+    U(1)_{Y}:
+    &Y\phi_{0} =         Y_{\phi_{0}}\frac{1}{\sqrt{2}} \begin{psmallmatrix}0\\v+h\end{psmallmatrix}= \frac{1}{\sqrt{2}}\begin{psmallmatrix}0\\v+h\end{psmallmatrix}\neq 0 \to broken\\
+  \end{split}
+\end{equation}
+Thus it would intially seemd that all 4 gauge bosons acquire mass through the Higgs mechanism.
+It is known however that the $U(1))_{EM}$ cannot be broken, as the photon is massless. The generator for the $U(1)_{EM}$ charge is charge, Q, given as
+\begin{equation}
+  Q = \frac{1}{2}(I_{3}+Y)
+\end{equation}
+giving
+\begin{equation}
+  U(1)_{EM}: Q\phi_{0} = \frac{1}{2}(\tau_{3} + Y)\phi_{0} = \begin{psmallmatrix}1&&0\\0&&0\end{psmallmatrix}\frac{1}{\sqrt{2}} \begin{psmallmatrix}0\\v+h\end{psmallmatrix}= 0 \to unbroken\\
+\end{equation}
+The orthogonal generator to $Q$ is thus $Q^{\perp}$ = $\frac{1}{2}(\tau_{3} - Y)$ which gives
+
+\begin{equation}
+ Q^{\perp}\phi_{0} = \frac{1}{2}(\tau_{3} - Y)\phi_{0} = \begin{psmallmatrix}0&&0\\0&&-1\end{psmallmatrix}\frac{1}{\sqrt{2}} \begin{psmallmatrix}0\\v+h\end{psmallmatrix}\neq 0 \to broken\\
+\end{equation}
+
+Thus by mixing the third component of $SU(2)_{L}$ with $U(1)_{Y}$ there is one broken generator and one unbroken generator. These correspond to the photon and the $Z$ boson. Writing the $Z$ and $\gamma$ in terms of $B$ and $W^{3}$ gives
+
+
+\begin{equation}
+  Z_{\mu} = \frac{1}{\sqrt{g^{2}+g^{\prime 2}}} (gW_{3} - g^{\prime}B_{\mu})
+\end{equation}
+ and
+ \begin{equation}
+  A_{\mu} = \frac{1}{\sqrt{g^{2}+g^{\prime 2}}} (gW_{3} + g^{\prime}B_{\mu})
+\end{equation}
+ where $g$ and $g^{\prime}$ are free parameters as in \autoref{eq:higgscodev}. Expanding \autoref{eq:higgscodev} and making these substitutions leaves
+\begin{equation}
+  (D^{\mu}\phi)^\dagger(D_{\mu}\phi) = \frac{1}{8}\nu^{2}[g^{2}(W^{+})^{2} + g^{2}(W^{-})^{2} + (g^{2}+g^{\prime 2})Z_{\mu}^{2} + 0.A_{\mu}^{2}] 
+  \end{equation}
+from which the masses of the gauge bosons can be read off as $M^{2}V_{\mu}^{2}$ giving
+\begin{equation}
+  \begin{split}
+    &M_{\gamma} = 0\\
+    &M_{W_{-}} = M_{W_{+}} = \frac{1}{2}\nu g\\
+    &M_{Z} =  \frac{1}{2}\nu\sqrt{g^{2}+g^{\prime 2}} \\
+  \end{split}
+\end{equation}
+This leads to the expression
+\begin{equation}
+  \frac{M_{W}^{2}}{M_{Z}^{2}\cos^{2}(\theta_{W})}  = 1 $$where$$
+  \cos(\theta_{W}) =  \frac{M_{W}}{M_{Z}}
+\end{equation}
+Thus the degrees of freedom given by Goldstone bosons that were generated when the symmetry was broken provide the longitudinal components of the $W^{\pm}$ and $Z$ bosons, allowing them to acquire mass, whilst still preserving local gauge invariance. The Standard Model does not predict the values of $g$ and $g^{\prime}$. Experimental measurements of the masses gives
+
+\begin{equation}
+  \begin{split}
+  &M_{W} = 80.385 \pm 0.015 \gevcc\\
+    &M_{Z} = 91.1875 \pm 0.0021 \gevcc\\
+    \end{split}
+\end{equation}
+The fact that these propagators are massive explains why the weak force is comparatively weak compared to the Electromagnetic force.
+\subsection{The flavour problem}
+\label{subsec:mfv}
+Loop-level flavour changing neutral currents, like the decay \Lbpi, contain both QCD and weak contributions. Due to the large separation in distance and time scales of these two forces, the total Lagrangian can be written as an effective theory whereby the physics can be separated at a certain energy, $\mu$. such that the effective Hamiltonian is factorised into the short distance (energy $>\mu$) and long distance (energy $<\mu$) parts. Perturbation theory can then be used to calculate the short distance physics using the effective Hamiltonian
+\begin{equation}
+  \mathcal{H}_{eff} = -\sum_{i}\frac{c_{i}}{\Lambda^{2}}\mathcal{O}_{i} \propto -\sum_{i}\mathcal{C}_{i}\mathcal{O}_{i}
+\end{equation}
+where $\Lambda$ is the mass scale of any NP contributions, $\mathcal{O}_{i}$ is an operator, called a Wilson operator, representing an effective interaction, $\mathcal{C}_{i}$ is the Wilson coefficent and $\frac{c_{i}}{\Lambda^{2}}$ is related to $\mathcal{C}_{i}$ be a normalization factor.
+These Wilson coefficients can be calculated precisely in SM and New Physics (NP) models. Some of the tightest limits on a NP model with generic flavour structure come from meson oscillation such as $-K^{0} - \overline{K}^{0}$ and $B^{0} - \overline{B}^{0}$ oscillations, which are shown in Figure~\ref{fig:Bdmix}
+\begin{figure}[!h]\def\nh{0.5\textwidth}
+  \centering
+  \includegraphics[clip=true,   trim =0mm 190mm 0mm 0mm, scale = 0.7]{feynmann/Bd_mix}
+  \caption{An example of a Feynman diagram for $\Bd$ and $\Bs$ mixing}
+  \label{fig:Bdmix}
+\end{figure}
+
+Such mixing occurs via FCNC where $\Delta$F = 2 and hence there is no contribution from tree-level diagrams. %%The effective Hamiltonian can be written as
+Given that experimental measurements of such meson mixing suggest no NP constribution it must be the case that , $|\mathcal{A}_{NP}^{\Delta F = 2}|<|\mathcal{A}_{SM}^{\Delta F = 2}|$, where $\mathcal{A}$ indicates the amplitude. This  sets the mass scale, $\Lambda$, to be~\cite{kaonmix} - PUT IN OTHER TABLE?? from Isidori Perez etc
+\begin{equation}
+  \Lambda>\frac{4.4\tev}{|V_{ti}^{*}V_{tj}|/|c_{ij}|^{1/2}} \sim
+  \begin{cases}
+    1.3\times 10^{4}\tev \times |c_{sd}|^{1/2}\\
+    5.1\times 10^{2}\tev \times |c_{bd}|^{1/2}\\
+    1.1\times 10^{2}\tev \times |c_{bs}|^{1/2}\\
+  \end{cases}
+  %%\right
+\end{equation}
+Assuming a generic structure where $c_{ij} = 1$, the analysis in Ref determines that $\Lambda \gtrsim 100\tev$. Alternatively if $\Lambda \sim 1\tev$ then $c_{ij}\lesssim 10^{-5}$ ~\cite{flavourlimit} . This can be interpreted as NP being found at $\Lambda \sim 1\tev$  but the coupling constants for NP contributions to $\Delta F=2$ operators are highly non-generic (and these particles have somehow evaded detection thus far), the coupling constants being generic but NP lies at a much higher energy scale, or some combination of both these factors.
+
+There is a scheme however which would allow for a ~\tev NP energy scale and accomdate the experimenatl constraints on $\Delta F = 2$ processes. If it is assumed that the unique source of flavour symmetry breaking beyond the SM is also from the Yukawa couplings. That is, it is the same mechanism that causes symmetry-breaking is the same as the in NP. This is an attractive solution as it naturally gives small effects to $\Delta F = 2$ processes. It does not however offer an explanation for the observed pattern of masses and mixing anlges of qurks.%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Form factors for hadronic transition}
+\label{subsec:ff}
+Electroweak decays such as $\Lbpi$ also have contributions from non-perturbative QCD contributions which are difficult to calculate. These QCD contributions are expressed as form factors,  which describe the QCD effects during hadronisation as a generic functional form, and are dependent on the final and initial hadron states. As these are non-perturbative they are difficult to calculate and there are various models and approximations used to do so. The most relevant for $b\to dll$ decays are Heavy Quark Effective Theory and lattice QCD. Heavy Quark Effective Theory is effective when the transitioning quarks in both the initial and final state hadron are much heavier than the spectator quarks. In this scenario, instead of the light quark interacting directly with the heavy quark, the light quark can be treated as interacting with a colour potential whose source is the effectively stationary heavy quark. It is assumed that this potential is unchanged when the quark transition occurs. This works very well for $b\to c$ transitions but less well for $b\to s $ and $b\to d$ transitions. The HQET can be combined with lattice QCD for light quark transition however, as in the calculation of $\Lb\to\PLambda_{0}\mun\mup$ decays~\cite{Meinel}.%, which will be discussed later.
+
+Lattice QCD can be used in the case when there is no appropriate effective theory or perturbative alternative. The idea of lattice QCD is to express the matrix elements of interest as correlation functions, and then effectively use numerical integration to solve for the path integral corresponding to these correlation functions. This numerical integration is carried out on a grid or lattice of points in space time. At each lattice site a field, representing a quark, is defined and the link between each site represents the gluon. Monte Carlo methods are then used to evaluate the path integrals, or gauge links, for different lattice configurations. The fact there is a finite spacing, given by the lattice spacing, $a$, means that discreet, as opposed to continuous, symmetries are involved and the theory remains renormalizable. Lattice QCD has proved to a powerful technique, for example,  it has allowed the proton mass to be calculated with a value within 2\% of its actual value~\cite{proton}.
+% It has show far had relative success, the proton mass for explain has been theoretically calculated to within 2\% of its actual value~\cite{proton}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Using $\bf{b\to dll}$ decays to test minimal flavour
+violation}
+\subsubsection{Measuring $V_{ts}$ and $V_{td}$ using tree-level process}
+It is difficult to measure CKM elements $V_{ts}$ and $V_{td}$ with
+precision using tree-level decays, as top quarks decay before they
+hadronize,  so decays mediated via loop or box diagrams are generally used to
+measure them. There values of $V_{td}$ $V_{ts}$ for tree-level
+processes can be inferred however, by using unitary constraints
+in the CKM triangle, as given in Ref~\cite{ckm}.
+\subsubsection{Measuring $V_{ts}$ and $V_{td}$ using loop-level processes}
+\label{subsubsec:loop}
+The most precise measurements of $V_{td}$ and $V_{ts}$ come from
+$\B^{0}-\overline{B}^{0}$ and $\Bs-\overline{\Bs}$ mixing
+respectively, the Feynman diagrams for which can be seen in
+Fig~\ref{fig:Bdmix}.
+The measured values for the mass differences give \cite{pdg} \cite{bslhcb}
+\begin{equation}
+  \Delta m_{B_{d}} = (0.5055\pm0.0020)\ps^{-1}  $$and$$
+\Delta m_{\B_{s}} = 17.757 ± 0.021\ps^{-1}.
+\label{eq:mdms}
+\end{equation}
+The largest source of error on the values of $V_{td}$ and $V_{ts}$,
+extrated from the measuremnts in \autoref{eq:mdms}, are due to theoretical uncertainties on the hadronic $B_{q = d,s}$-mixing matrix elements.
+
+
+Recent work \cite{vtdvts} has used improved
+techniques within the context of lattice QCD to increase the
+precision on these  matrix-element calculations. Using the
+experimental values shown in \autoref{eq:mdms}, along with the
+increased precision on matrix-element calculations, the values of
+$V_{td}$ and $V_{ts}$ are calculated to give
+\begin{equation}
+  \begin{split}
+    & |\Vtd| = 7.94(31)(2)(3)(8)\times 10^{-3},\\
+& |\Vts| = 38.8(1.1)(0.0)(0.2)(0.4)\times 10^{-3},\\
+& |\Vtd/\Vts| = 0.2047(29)(4)(0)(10),
+  \end{split}
+\end{equation}
+where the errors are from the lattice mixing matrix elements, the measured $\Delta M_{q}$, other parametric inputs such as $M_{W}$ and the omission of charm sea quarks from the calculations. The error on $|\Vtd/\Vts|$ is smaller than that of its products due to the the cancelations of error in the ratio.
+
+The values in Figure~\ref{Fig:vtdvts} show the $|\Vtd/\Vts|$ and $\Vtd$, $\Vts$ calculated from $\Delta M_{q}$ with the improved mixing matrix elements, along with the values for $|\Vtd/\Vts|$ and $\Vtd$, $\Vts$ calculated using CKM unitary conditions for tree-level processes and all processes (labelled 'full') and the values for $|\Vtd/\Vts|$ and $\Vtd$, $\Vts$ taken from $\B\to\pip(\kaon^{+})\mun\mup$ (discussed further in Sectin)   % There are also the   profrom the semi-leptonic decays 
+
+Using these improved values for |\Vtd|, |\Vts|, the analysis in Ref con
+thus improving on the
+theorticial error of $\Delta m_{B_{q = d,s}}$ and allowing more precise measurement of $|V_{td}/V_{ts}|$ from deltaMdvdelta Ms to be extraacted.
+
+\begin{figure}
+\includegraphics[scale = 0.6]{figs/vtdvts.png}
+\caption{Comparing measurements of \Vtd, \Vts $\frac{\Vtd}{\Vts}$ using (top to bottom) current experimental measuremnets of $\Delta_{M_{b/s}}$ with latest thoery calculations, as given in the PDG,  using semileptonic decays, and for tree and loop level processes, using unitarirty constraints (CKM fitter). Plot taken from reference. Plot taken from Ref~\cite{vtdvts}}
+\label{Fig:vtdvts}
+\end{figure}
+
+
+Of all of the $u$-type quarks appearing in Fig.~\ref{fig:Bdmix} the top will dominate as it is heaviest. This gives
+\begin{equation}
+  \begin{split}
+    & \Delta m_{\B_{d}} \sim m_{t}^{2}|\Vtb\Vtd|^{2} \sim m_{t}^{2}.\mathcal{O}(\lambda^{6}) \\
+    & \Delta m_{\B_{s}} \sim m_{t}^{2}|\Vtb\Vts|^{2} \sim m_{t}^{2}.\mathcal{O}(\lambda^{4})
+  \end{split}
+\end{equation}
+ 
+Using the experimental values for the mass differences gives $\Delta m_{B_{d}} = (0.510\pm0.003)\ps^{-1}$ \cite{pdg},  $\Delta m_{\B_{s}} = 17.761 ± 0.022\ps^{-1}$ \cite{bslhcb}, leads to
+\begin{equation}
+  \begin{split}
+    & |\Vtd| = (8.4\pm0.6)\times 10^{-3},\\
+    & |\Vts| = (40.0\pm2.7)\times 10^{-3},
+  \end{split}
+\end{equation}
+where the uncertainties are theoretically dominated~\cite{pdg}. Many of these uncertainties cancel when the ratio of the two CKM elements is taken yielding
+\begin{equation}
+  \frac{|V_{ts}|}{|V_{td}|} = 0.216\pm0.001\pm 0.011
+  \label{eq:vtsvtd}
+\end{equation}
+As discussed in section~\ref{subsec:mfv}, measuring such CKM elements can be used as a probe for potential new physics effects. Assuming the effects of any new physics are small, more suppressed decays in the SM may be more sensitive to new physics, thus there is a motivation to measure $\frac{|V_{ts}|}{|V_{td}|}$ in rarer decays.
+In Ref~\cite{pimumunew}, the value of $\BF(\B\to\pip\mun\mup)$ is measured to be $1.83\pm0.24\pm0.05 \times 10^{-8}$ where the first error is statistical and the second is systematic. There has been much theoretical work around this decay channel (~\cite{bpipi_th_1}, ~\cite{bpipi_th_2}, ~\cite{bpipi_th_3} ~\cite{bpipi_th_4}) and the measured branching fraction was found to be consistent with theoretical prediction.  This channel is the equivalent process of $\Lbpi$ but with one less spectator quark, as demonstrated in Fig.~\ref{fig:boxpeng}.
+
+\begin{figure}[!h]\def\nh{0.5\textwidth}
+  \centering
+  \hspace*{-1cm}
+  \subfloat[]{\includegraphics[clip=true,   trim =0mm 150mm 0mm 30mm, scale = 0.4]{feynmann/Lb_peng_ds_HUGE}\label{FD:1}}
+  \subfloat[]{\includegraphics[clip=true, trim =0mm 150mm 0mm 30mm, scale = 0.4]{feynmann/B_peng_ds_HUGE}\label{FD:3}}\\
+  \hspace*{-1cm}
+  \subfloat[]{\includegraphics[clip =true, trim = 0mm 150mm 0mm 30mm, scale = 0.4]{feynmann/Lb_box_ds_HUGE}\label{FD:2}}%%\hskip 0.04\textwidth
+  \subfloat[]{\includegraphics[clip =true, trim = 0mm 150mm 0mm 30mm, scale = 0.4]{feynmann/B_box_ds_HUGE}\label{FD:4}}%%\hskip 0.04\textwidth
+  \caption{Feynman diagrams for \protect\subref{FD:1} \Lb\to\proton\pim/\Km\mup\mun via a loop,  \protect\subref{FD:3} $B^{-}\to\pim/\kaon^{-}\mup\mun$ via a loop,  \protect\subref{FD:2}, \Lb\to\proton\pim/\Km\mup\mun via a box diagram,
+   \protect\subref{FD:4}, $B^{-}\to\pim/\kaon^{-}\mup\mun$ via a box diagram.
+  }
+  \label{fig:boxpeng}
+\end{figure}
+The combination of $\BF(\B\to\pip\mun\mup)$ with $\BF(\B\to\Kp\mun\mup)$ ~\cite{bKmumu},  gives
+\begin{equation}
+  \frac{|V_{ts}|}{|V_{td}|} = \frac{\BF(\B\to\Kp\mun\mup)}{\BF(\B\to\pip\mun\mup)} \times \frac{\int F_{K}d q^{2}}{\int F_{\pi}\,dq^{2}} = 0.24^{+0.05}_{-0.04}
+  \end{equation}
+where $F_{K/\pi}d q^{2}$ is a combination of Wilson coefficients, phase space factors and form factors. The form factors for $\B\to\pi$ are taken from Ref~\cite{bpimumuff1} and Ref~\cite{bpimumuff2} and the form factors for $\B\to K$ are taken from Ref~\cite{bKmumuff1}.
+
+This provides the most accurate determination of $|V_{td}/V_{ts}|$ from a decay a that includes both penguin and box diagrams and it is consistent with previous measurements as per \autoref{eq:vtsvtd}.
+
+\subsection{Discrepancies between loop and tree-level measurements of $|V_{td}/V_{ts}|$}
+Theoretical uncertainties on the hadronic Bq-mixing matrix elements are the dominating source of error in $|V_{td}/V_{ts}|$.
+
+Work published recently in (\url{http://arxiv.org/pdf/1602.03560v1.pdf}) has produced more precise e matrix-element calculations, thus improving on the theorticial error on deltaMdvdelta Ms and allowing more precise measurement of $|V_{td}/V_{ts}|$ from deltaMdvdelta Ms to be extraacted.
+
+\begin{figure}
+\includegraphics[scale = 0.6]{figs/vtdvts.png}
+\caption{Comparing measurements of \Vtd, \Vts $\frac{\Vtd}{\Vts}$}
+%% using (top to bottom) current experimental measuremnets of
+%% \Delta_{M_{b/s}} with latest thoery calculations, as given in the PDG,
+%% using semileptonic decays, and for tree and loop level processes,
+%% using unitarirty constraints (CKM fitter). Plot taken from reference}
+\end{figure}
+
+
+
+The value of $V_{ts}/\Vtd$ has never been measured before in the baryonic sector however, and there has thus far been no theoretical work done on this sector either. The study of baryonic $b\to dll$ decays via \Lbpi is important as the spin of \Lb baryon differs from that of the \B meson (1/2 as opposed 0) which can in principle prove an additional handle on the fundamental interaction~\cite{Meinel}. An angular analysis of \Lbpi, when more data in available, would also allow measurements of different Wilson Coefficients. In the case of $b\to sll$ decays measurements of the same process,e.g. the $b\to sll$ electroweak loop, done via either mesonic or baryonic decays, show different results with respect to the SM. The electroweak decays $\B\to\kaon^{*}\mup\mun$ and $\Lb\to\Lambda_{0}\mup\mun$ are both $b\to sl^{+}l^{-}$ type decays and in the former the branching fraction is lower than the SM prediction at high $q^{2}$ whist in the latter it is higher at high $q^{2}$, see Fig.~\ref{fig:bfq2}. Here $q^{2}$ refers to the total 4-momentum of the dimuon system. This could easily be statistics or poor theoretical understanding, as high $q^{2}$ means softer hadrons, however the argument remains that there is an interest in performing the same measurements via the baryonic sector as have been performed in the meson sector.
+\begin{figure}[!h]\def\nh{0.5\textwidth}
+  \centering
+  \hspace*{-2cm}  
+  \subfloat[]{\includegraphics [clip =true, trim = 50mm 50mm 10mm 0mm, scale = 0.35]{figs/lbtolmumuq2.png}\label{FD:1}}
+   \subfloat[]{\includegraphics [clip =true, trim = 50mm 50mm 10mm 0mm, scale = 0.35]{figs/btokstmumuq2.png}\label{FD:2}}
+   %%\subfloat[]{\includegraphicss[scale = 0.4]{figs/btokstmumuq2.png}\label{FD:3}}
+  \caption{Branching fraction as a function of $q^{2}$ for \protect\subref{FD:1} $\B\to\kaon^{*}\mun\mup$~\cite{LHCB-PAPER-2015-051} and \protect\subref{FD:3} $\Lb\to\Lambda^{0}\mun\mup$~\cite{LHCB-PAPER-2015-009}}
+  \label{fig:bfq2}
+\end{figure}
+
+\subsection{Effective Hamiltonian for b\to dll decays} %and $\boldmath{N_{\Lbpi}}$ for 3\invfb of data}
+As mentioned there are no theoretical predictions for \BF(\Lbpi) and for a value of $|\Vts/\Vtd|$ to be obtained from a measurement the relevant form factors would need to be calculated. The decay rate would be calculated by treating the electroweak part of the diagram with an effective Hamiltonian, using Wilson co-efficient, as shown by the blob in Fig.~\ref{fig:wilson}. The theoretical difficulty is predicting the form factors for $\Lb\to\proton\pim$, which is made more complicated due to the fact that it involes baryons and is 3 body.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[clip=true, trim =0mm 150mm 0mm 30mm, scale = 0.7]{feynmann/Lb_peng_wilson}
+  \caption{Showing the feynmann diagram for \Lbpi with an effective Hamiltonian for the electroweak part of the decay~\cite{lowrecoil}}
+  \label{fig:wilson}
+    \end{figure}
+The effective Hamiltonian for a $b\to d$ decay is given as
+\begin{equation}
+H^{b\to d}_{eff} = \frac{4G_{F}}{\sqrt{2}}(\lambda_{u}\sum^{2}_{i=1}\mathcal{C}_{i}\mathcal{O}^{u}_{i} + \lambda_{c}\sum^{2}_{i=1}\mathcal{C}_{i}\mathcal{O}^{c}_{i} - \lambda_{t}\sum^{10}_{i=3}\mathcal{C}_{i}\mathcal{O}^{t}_{i}) + h.c.
+\end{equation}
+
+where as indicated $\mathcal{O}_{1,2}$ represent diagrams with internal $u$ and $c$ quarks and $\mathcal{O}_{3,10}$ represent diagrams with internal $t$ quarks and $\lambda_{p} = V_{pb}V^{*}_{pd}$, ($p = u,c,t$) are the products of CKM matrix elements. Unlike in the $b\to s$ case all three terms in the unitary relation have the same order of suppression. This is effectively because in each product $V_{pb}V^{*}_{pd}$ there is the same total number of changes across quark family pairs, each product being doubly Cabibbo suppressed in total, giving $\lambda_{u} \sim \lambda_{c} \sim \lambda_{t} \sim \lambda^{3}$, $\lambda$ being the Wolfenstein parameter. As mentioned the operators $\mathcal{O}_{1-2}$ represent diagrams with $u$ and $c$ quarks, moreover the operators $\mathcal{O}_{3-6}$ represent $b\to dq\overline{q}$ transitions and $\mathcal{O}_{8}$ represents a chromomagentic operator. Thus in the case of the electroweak process the operators $\mathcal{O}_{7,9,10}$ are of most interest as these represent either vector or axial Z current or a photon as shown in Fig.~\ref{fig:wilson7910}, meaning that it is the top quark that dominants.
+\begin{figure}[ht!]
+    \centering
+  \hspace*{-2cm}
+  \subfloat[]{
+    \includegraphics[clip=true, trim =0mm 150mm 0mm 30mm, scale = 0.45]{feynmann/Lb_peng_wilson_coeff7}\label{coeff7}}
+  \subfloat[]
+           {\includegraphics[scale = 0.45, trim  = 0mm 150mm 10mm 0mm, clip]{feynmann/Lb_peng_wilson_coeff910}\label{coeff910}} 
+           \caption{Showing \protect\subref{coeff7} the diagram represented by the $\mathcal{O}_{7}$ operator and\protect\subref{coeff910} the diagrams represented by the $\mathcal{O}_{9,10}$ operators~\cite{lowrecoil}}
+           \label{fig:wilson7910}
+\end{figure}
+
+%% \begin{figure}[h!]
+%%   \centering
+%%   \includegraphics[clip=true, trim =0mm 150mm 0mm 30mm, scale = 0.7]{feynmann/Lb_peng_wilson}
+%%   \caption{Showing the feynmann diagram for \Lbpi with an effective Hamiltonian for the electroweak part of the decay http://arxiv.org/pdf/1506.07760v3.pdf}
+%%   \label{fig:wilson7910}
+%%     \end{figure}
+
+Thus the most important operators are given as 
+\begin{equation}
+\begin{split}
+&\mathcal{O}_{7} = \frac{e}{g^{2}}m_{b}(\overline{q}_{L}\sigma^{\mu\nu}b_{R}F_{\mu\nu})\\
+&\mathcal{O}_{9} = \frac{e}{g^{2}}m_{b}(\overline{q}_{L}\gamma_{\mu}b_{L}\lepton\gamma^{\mu}\lepton)\\
+&\mathcal{O}_{10} = \frac{e}{g^{2}}m_{b}(\overline{q}_{L}\gamma_{\mu}b_{L}\lepton\gamma^{\mu}\gamma_{5}\lepton)\\
+\end{split}
+\end{equation}
+where $F^{\nu\mu}$ is the electromagnetic field tensor and $\sigma_{\nu\mu}$ are the Pauli spin matrices. Using these operator definitions the effective Hamiltonian for a $b\to dll$ transition can be written as
+\begin{equation}
+\hspace*{-1cm}
+H^{b\to dll}_{eff} = \frac{G_{F}\alpha_{em}\Vtb\Vts^{*}}{2\sqrt{2}}(C_{9}^{eff}\overline{d}\gamma_{\mu}(1 - \gamma_{5})b\overline{\lepton}\gamma^{\mu}\lepton + C_{10}\overline{d}\gamma_{\mu}(1-\gamma_{5})b\overline{\lepton}\gamma^{\mu}\gamma_{5}\lepton - 2m_{b}C_{7}\frac{1}{q^{2}}\overline{d}i\sigma_{\mu\nu}q^{\nu}(1+\gamma_{5})b\overline{\lepton}\gamma^{\mu}\lepton)
+\end{equation}
+where $q^{\nu}$ is the four-momenta of the dimuon system and the terms $(1-\gamma_{5})$ and $(1+\gamma_{5})$ project out either the left or right part, respectively,  of the $b$ quark.
+To get the final amplitude it is necessary to sandwhich this effective Hamiltonian between the initial and final baryon states. As little work has been done on the decay of $\Lb$ into four-body final states, i.e. $\Lb\to h h \mu\mu$, it is useful to consider instead the case when the proton and the pion form a resonant $N^{*}$ state (which can loosely be thought of as an excited neutron) such that $\Lb\to N^{*}\mun\mup$. This gives the final amplitude as $\left<\Lb(p+q)|\mathcal{H}_{eff}|N^{*}(p)\right>$ where $p$ in the momentum of the $N^{*}$ state and $q$ is the momentum of dimuon system. Splitting into left and right handed parts gives two matrices elements to calculate, namely $\left<\Lb(p+q)|\overline{b}\gamma_{\mu}(1-\gamma_{5})d|N^{*}(p)\right>$ and $\left<\Lb(p+q)|\overline{b}i\sigma_{\mu\nu}q^{\nu}(1+\gamma_{5})d|N^{*}(p)\right>$  Using the theory work done on $\Lb\to\Lambda_{0}\mup\mun$ in Ref~\cite{lbtolmumu} gives %%$\left<\Lb(p+q)|\mathcal{H}_{eff}|N^{*}(p)\right>$
+\begin{equation}
+\hspace*{-0.5cm}
+\begin{split}
+&\left<\Lb(p+q)|\overline{b}i\sigma_{\mu\nu}q^{\nu}(1+\gamma_{5})d|N^{*}(p)\right> = \\&\\&\overline{u}_{N^{*}}(p)[\gamma_{\mu}f^{T}_{1}(Q^{2}) + i\sigma_{\mu\nu}q^{\nu}f^{T}_{2}(Q^{2}) + q^{\mu}f^{T}_{3}(Q^{2}) + \\
+&\gamma_{\mu}\gamma_{5}g^{T}_{1}(Q^{2}) + i\sigma_{\mu\nu}\gamma_{5}q^{\nu}g^{T}_{2}(Q^{2}) + q^{\mu}\gamma_{5}g^{T}_{3}(Q^{2})]u_{\Lb}(p+q)
+\end{split}
+\end{equation}
+\begin{equation}
+\hspace*{-0.5cm}
+\begin{split}
+&\left<\Lb(p+q)|\overline{b}(1-\gamma_{5})d|N^{*}(p)\right> = \\&\\&\overline{u}_{N^{*}}(p)[\gamma_{\mu}f_{1}(Q^{2}) + i\sigma_{\mu\nu}q^{\nu}f_{2}(Q^{2}) + q^{\mu}f_{3}(Q^{2}) + \\
+&\gamma_{\mu}\gamma_{5}g_{1}(Q^{2}) + i\sigma_{\mu\nu}\gamma_{5}q^{\nu}g_{2}(Q^{2}) + q^{\mu}\gamma_{5}g_{3}(Q^{2})]u_{\Lb}(p+q)\\
+\end{split}
+\end{equation}
+where $g_{i}$,$g^{T}_{i}$ and $f_{i}$,$f^{T}_{i}$ are all form factors. Thus using these operators there are 12 form factors to calculate. There are however ways of reducing the number of form factors needed to describe a process, such as Heavy Quark Effective Theory, which is used, along with lattice QCD in Ref~\cite{Meinel} to predict the differential branching fraction of $\Lb\to\Lambda_{0}\mun\mup$.
+%% \subsection{Form factors for hadronic transtition}
+%% \label{subsec:ff}
+%% Electroweak decays such as $\Lbpi$ also have contributions from non-perturbative QCD contributions which are difficult to calculate. These non-perturbative QCD contributions are expressed as form factors,  which describe the non-perturbuatuve QCD effects during hadronisation as a generic functional form, and are dependent on the final and intial hadron states. As these are non-perturbative they are difficult to calculate and there are various models and approxiamtions used to do so. The most relevant for $b\to dll$ decays are Heavy Quark Effective Theory and lattice QCD. Heavy Quark Effective Theory can be effective when the transitiiong quarks in both the intial and final state hadron are much heavier than the rest. In this scenario, instead of the light quark interacting directly with the heavy quark, the light quark can be treated as interacting with a color potential whose source is the effectively stationary heavy quark. It assumed that this potential is unchanged when the quark tansition occurs. This works very well for $b\to c$ transitions but less well for $b\to s $ and $b\to d$ transistions, although it is still used, combined along with lattice QCD, in the calculation of $\Lb\to\Lambda_{0}\mun\mup$ decays.
+%% Lattice QCD can be used in the case when no exact 
+
+
+%% \subsection{Effective hamilitioan for b\to dll decays and $\boldmath{N_{\Lbpi}}$ for 3\invfb of data}
+%% As mentioned there are no theoritical predictions for \BF(\Lbpi) and for a value of $|\Vts/\Vtd|$ to be obtained from a measuremnt the relevant form factors would need to be calculated. The decay rate woudl be calculated by treating the electroweak part of the diagram with an effective hamilitonion, using Wilson co-efficients, as shown by the blob in Fig.~\ref{fig:wilson}  The theoritical difficulty is predicting the form factors for $\Lb\to\proton\pim$, which is made more complicated due to the fact that it involed baryons and is 3 body.
+%% \begin{figure}[h!]
+%%   \centering
+%%   \includegraphics[clip=true, trim =0mm 150mm 0mm 30mm, scale = 0.7]{feynmann/Lb_peng_wilson}
+%%   \caption{Showing the feynmann diagram for \Lbpi with an effective Hamiltonian for the electroweak part of the decay http://arxiv.org/pdf/1506.07760v3.pdf}
+%%   \label{fig:wilson}
+%%     \end{figure}
+%% The effective hamiltionan for a $b\to dll$ decay is given as
+%% \begin{equation}
+%% H^{b\to d}_{eff} = \frac{4G_{F}}{\sqrt{2}}(\lambda_{u}\sum^{2}_{i=1}\mathcal{C}_{i}\mathcal{O}^{u}_{i} + \lambda_{c}\sum^{2}_{i=1}\mathcal{C}_{i}\mathcal{O}^{c}_{i} - \lambda_{t}\sum^{10}_{i=3}\mathcal{C}_{i}\mathcal{O}^{t}_{i}) + h.c.
+%% \end{equation}
+
+%% where as indicated $\mathcal{0}_{1,2}$ represent diagrams with internal $u$ and $c$ quarks and $\mathcal{0}_{3,10}$ represent diagrams with internal $t$ quarks and $\lambda_{p} = V_{pb}V^{*}_{pd}$, ($p = u,c,t$) are the products of CKM matrix elements. Unlike in the $b\to sll$ case all three terms in the unitary relation have the same order of supression. This is effectvely because in each product $V_{pb}V^{*}_{pd}$ there is the same total number of changes across quark family pairs, each product being doubly Cabibbo supressed in total, giving $\lambda_{u} \sim \lambda_{c} \sim \lambda_{t} \sim \lambda^{3}$, $\lambda$ being the Wolfenstein parameter. A list of all .In the case of the electroweak process however only the last 3 operators are imporant as these represent either vector or aixial Z current or a photon http://arxiv.org/pdf/1506.07760v3.pdf http://lhc.fuw.edu.pl/misiak.pdf  

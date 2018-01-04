@@ -1,0 +1,38 @@
+%\section{The \sPlot  technique and $\mathbf{sWeight}$-ing data}
+\label{sec:splot}
+%% As the following section on the RICH detectors will mention a statistical technique referred to as the \sPlot technique \cite{sPlot}, or sWeight-ing, the concept is introduced here.
+%\cite{sPlot} 
+The \sPlot technique is used extensively throughout this thesis. It is used in cases when there is a merged dataset which consists of data from different sources of data species, namely background and signal. These datasets are assumed to have two different sets of variables associated with the events they contain. Discriminating variables are those whose distributions are known for background and signal. Control variables are those whose distributions are unknown, or are assumed to be unknown.
+
+The \sPlot technique allows the distribution of the control variables for each data species to be deduced by using the species discriminating variable. This method relies on the assumption that there is no correlation between the discriminating variable and the control variable. The discriminating variable used in this thesis is always the mass distribution. The full mathematical description of the \sPlot technique can be found in Ref \cite{pythia8} % \cite{sPlot}
+, the key points are outlined here.
+
+An unbinned extended maximum likelihood analysis of a data sample of several species is considered. The log-likelihood is expressed as
+
+\begin{equation}
+  \mathcal{L} = \sum^{N}_{e = 1} \left\{\ln \sum^{N_{s}}_{i = 1} N_{i}f_{i}(y_{e})\right\} - \sum^{N_{s}}_{i = 1}N_{i},
+  \label{eq:ll}
+\end{equation}
+where $N$ is the total number of events considered, $N_{s}$ is the number of species of event (i.e. two - background and signal), $N_{i}$ is the average number of expected events for the $i^{th}$ species, $y$ represents the set of discriminating variables, $f_{i}(y_{e})$ is the value of the Probability Density Function (PDF) of $y$ for event $e$ for the $i^{th}$ species and the control variable, $x$, does not appear in the expression of $\mathcal{L}$ by definition. 
+
+For the simple (and not particularly practical) case of the control variable $x$ being a function of $y$, i.e. completely correlated, one could naively assume that the probability of a given event of the discriminating variable $y$ being of the species $n$ would be given by
+
+\begin{equation}
+  \mathcal{P}_{n} (y_{e}) = \frac{N_{n}f_{n}(y_{e})}{\sum^{N_{s}}_{k =1} N_{k}f_{k}(y_{e})}.
+\end{equation}
+
+The distribution for a control variable $x$ for the $n^{th}$ species, $M_{n}(x)$, can be deduced by histogramming in $x$ and applying $\mathcal{P}_{n} (y_{e})$ as a weight to event $e$. In this scenario the probability, $\mathcal{P}_{n} (y_{e})$, would run from 0 to 1.
+
+In the case considered in this thesis, where $x$ is entirely uncorrelated with $y$, it can be shown that $\mathcal{P}_{n} (y_{e})$ can be written as
+
+\begin{equation}
+  \mathcal{P}_{n} (y_{e}) = \frac{\sum^{N_{s}}_{j = 1} V_{nj}f_{j}(y_{e})}{\sum^{N_{s}}_{k =1} N_{k}f_{k}(y_{e})},
+  \label{eq:sw}
+\end{equation}
+where $V_{nj}$ is the covariance matrix between the species $n$ and the $j^{th}$ species. The inverse of this covariance matrix is given by the second derivative of -$\mathcal{L}$ in \autoref{eq:ll}.
+
+The quantity in \autoref{eq:sw} is donated as the sWeight. In this thesis the species, $n$, in \autoref{eq:sw} is always the signal. Because of the presence of the covariant derivative the sWeight of an event can be both positive and negative. The more negative an event is, the more likely it is to be background and vice versa for positive sWeights. The signal distribution for the control variable $x$, $M_{s}(x)$, can again   be deduced by histogramming events in $x$, applying the sWeight to each event. %Again it is important that the $x$ variable is not correlated with $y$ (that is - the mass distribution).
+
+
+%% In practice, the \sPlot technique is applied by fitting the background and signal mass distributions in data and using the fitted probability density function (PDF) of the $i_{th}$ species, the total number of events in the data sample, the number of species in the data sample (i.e. two) and the number of average events expected for the $i_{th}$ species, to deduce a weight for each event. These weights range between -1 and 1 .
+

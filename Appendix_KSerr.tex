@@ -1,0 +1,55 @@
+%\section{Error calculation}
+%\label{app:error}
+
+The statistical errors are calculated by propagating through the  statistical errors on each data set according to how they are corrected and extrapolated, as detailed below.
+
+Firstly, for the $i$th and $j$th $p$, $\eta$ sub-bin the error on the reconstruction efficiency for data for the $k$th $z$ bin is calculated as
+\begin{equation}
+%\label{eq:efferr}
+{(\frac{\Delta\epsilon_{DATA_{ijk}}}{\epsilon_{DATA_{ijk}}})}^{2}=({\frac{\Delta n_{RECO_{\omega,ijk}}}{n_{RECO_{\omega,ijk}}})}^{2} + {(\frac{\Delta N_{GEN_{ijk}}}{N_{GEN_ijk}})}^{2}
+\end{equation} where
+$\Delta\epsilon_{DATA_{ij}}$ refers to the error on the reconstruction efficiency of the data set, $n_{RECO_{\omega,ij}}$ refers to the number of events in the reconstruction simulation data set and $N_{GEN_ij}$ refers to the number of events in the generator simulation data set. 
+
+In the case where the data set is weighted, as in the case of the reconstructed simulated events, which is corrected by the long track efficiency ratio, the error is given as the square root of the sum of the weights, giving 
+\begin{equation}
+\Delta n_{RECO}= \sqrt{\sum_{\alpha=1}^{\alpha=n_{MC_z}} {(\omega_{\alpha})}^{2}}
+\end{equation}
+ This yields the error on the $i$th, $j$th bin of the efficiency corrected data set, $N_{DATACORR_{ij}}$, as 
+\begin{equation}
+{(\frac{\Delta N_{DATACORR_{ij}}}{N_{DATACORR_{ij}}})}^{2}=({\frac{\Delta n_{RECO_{\omega,ij}}}{n_{RECO_{\omega,ij}}})}^{2} + {(\frac{\Delta N_{GEN_{ij}}}{N_{GEN_ij}})}^{2}+{(\frac{\Delta n_{DATA_{ij}}}{n_{DATA_ij}})}^{2}
+\end{equation}
+%\end{frame}
+
+%\begin{frame}
+The error integrated over $\eta$ gives
+\begin{equation}
+\Delta N_{DATACORR_{i}}= \sqrt{\sum_{j=1}^{j=n_{\eta}} {(\Delta N_{DATACORR_{ij}})}^{2}}
+\label{eq:sumqd}
+\end{equation}
+%\Delta n_{RECO}= \sqrt{\sum_{\alpha=1}^{\alpha=n_{MC_z}} {(\omega_{eff_{\alpha}}\omega_{PV_{MC_\alpha}})}^{2}}
+%\item
+%Extrapolation using generator level momentum distribution compared with $z$.
+Errors are then extrapolated from the $k$th $z$ reference bin to all $z$ (nominated $z_{\beta}$) according to
+\begin{equation}
+%\Delta N_{i} = \sum_{j = pmin}^{j=pmax} N_{0j}e^{-(z_{i}-z_{k})\lambda}
+\Delta N_{i\beta} = \Delta N_{ik}e^{-(z_{\beta}-z_{k})\lambda}
+\end{equation}
+\begin{equation}
+%\Delta N_{i} = \sum_{j = pmin}^{j=pmax} N_{0j}e^{-(z_{i}-z_{k})\lambda}
+\Delta N_{i\beta} = \Delta N_{ik}e^{-(z_{\beta}-z_{k})\lambda}
+\end{equation}
+
+Thus the error for the efficiency on each sub-momentum bin,$\Delta\epsilon_{CAL_{i\beta}}$, is given by the sum in quadrature of the error on the original and extrapolated distributions.
+
+%$\Delta N_{\beta}$ is given by the quadrature sum over $i$ (as equation \ref{eq:sumqd})
+%Final error is therefore 
+\begin{equation}
+\label{eq:efferr}
+{(\frac{\Delta\epsilon_{CAL_{i\beta}}}{\epsilon_{CAL_{i\beta}}})}^{2}=({\frac{\Delta N_{CAL_{i\beta}}}{N_{CAL_{i\beta}}})}^{2}+({\frac{\Delta n_{DATA_{i\beta}}}{n_{DATA_{i\beta}}})}^{2} %+ {(\frac{\Delta n_{DATA_{i\beta}}}{n_{DATA_{i\beta}})}^{2}
+\end{equation}
+
+The final error for the total momentum bin is then given as the weighted average of each individual sub-momentum bin. The value of the efficiency for each sub momentum bin is weighted according to 
+ \begin{equation}
+\label{eq:weightav}
+ \Delta n_{RECO}= \frac{{\Delta\epsilon_{CAL_{i\beta}}}^{2}}{\sum_{\i}^{\alpha=n_{MC_z}}{\Delta\epsilon_{CAL_{i\beta}}^{2}}}
+ \end{equation}

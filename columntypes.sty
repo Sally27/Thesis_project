@@ -1,0 +1,19 @@
+% for thousands 
+\newcolumntype{M}{D{.}{\:}{3}}
+% for decimals aligned on dot
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+% for math mode
+\newcolumntype{C}{>{$}c<{$}}
+\newcolumntype{R}{>{$}r<{$}}
+\newcolumntype{L}{>{$}l<{$}}
+% for scientific mode
+\newcolumntype{T}{D{!}{\:\cdot\:}{4}}
+% for \pm
+\newcolumntype{P}[1]{D{!}{\ \pm\ }{#1}}
+% for kilo
+\newcolumntype{K}[1]{D{!}{\,\text{k}}{#1}}
+% for decays
+\newcolumntype{T}{D{.}{\ \to\ }{6}}
+% for units
+\newcolumntype{U}[1]{D{!}{\:}{#1}}
+\newcolumntype{P}[1]{D{!}{\ \pm\ }{#1}}
