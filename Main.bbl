@@ -19,6 +19,15 @@ T.~Sjostrand, S.~Mrenna, and P.~Z. Skands,
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{acceptance}
+LHCb Collaboration, \ifthenelse{\boolean{articletitles}}{\emph{Image of the
+  acceptance of using simulation taken from
+  \rm{\texttt{https://lhcb.web.cern.ch/lhcb/speakersbureau/html/bb$\_$productionangles.html}}},
+  }{} Accessed in 2017\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{LHCb-PAPER-2010-002}
 LHCb collaboration, R.~Aaij {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Measurement of
