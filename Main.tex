@@ -1,7 +1,30 @@
 %slide 7 - cancel out - contasin out line of theoires - whihc?? - muon pature
 \documentclass[12pt,a4paper]{report}
 
+%\usepackage{fancyhdr}
+
+%\pagestyle{fancy}
+
+%\rhead{Share\LaTeX}
+%\lhead{Guides and tutorials}
+%\rfoot{Page \thepage}
+
+
+
+
 \usepackage{amsmath}
+\newcommand{\Rn}[1]{%make roman
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+
+
+%\usepackage{fancyhdr}
+%\fancyhead[LE,RO]{foo}
+%\fancyhead[LO,RE]{bar}
+%\pagestyle{fancy}
+
+
+
 \usepackage{fixmath}
 %\usepackage{bm}
 \usepackage{ifthen} % for conditional statements
@@ -28,11 +51,14 @@
 \newboolean{inbibliography}
 \setboolean{inbibliography}{false} %
 \usepackage{multirow}
-\usepackage{tocloft}
+%\usepackage{tocloft}
 \linespread{1.5}
+
+
+
 %\usepackage[version=4]{mhchem}
-%% \renewcommand\cftchapfont{\boldfont}
-%% \renewcommand\cftchappagefont{\boldfont}
+%\renewcommand\cftchapfont{\boldfont}
+%\renewcommand\cftchappagefont{\boldfont}
 %% \usepackage{etoolbox}
 %% \makeatletter
 %% \patchcmd{\@dottedtocline}{\leavevmode}{\leavevmode\bfseries\boldmath}{}{}
@@ -64,7 +90,9 @@
 \input{glos}
 \makeglossaries
 
+
 %\newcommand*{\Appendixautorefname}{appendix}
+%\pagestyle{headings}
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Title     %%%%%%%%%
@@ -172,18 +200,18 @@
 % edited independently.  This type of file organization is shown here.
 %
 %\cleardoublepage
-\printglossaries
-%\printglossary[title=List of abbreviations and definitions, toctitle=List of abbreviations and definitions]
+%\printglossaries
+\printglossary[title=List of abbreviations and definitions, toctitle=List of abbreviations and definitions]
 \clearpage
 %\clearpage
-\emph{To Nain, on behalf of all four of us}
-\clearpage
+%\emph{To Nain, on behalf of all four of us}
+%\clearpage
 
 %\addcontentsline{toc}{chapter}{\listfigurename}
 %\clearpage
 %\addcontentsline{toc}{chapter}{\listtablename}
 
-
+\pagestyle{fancy}
 \cleardoublepage
 \input{introduction_sally}
 %% \cleardoublepage
@@ -207,7 +235,7 @@
 %%   The contents...
 %%   \end{appendices}
 
-
+\pagestyle{plain}
 %asdasdasd
 %% \renewcommand{\thechapter}{A}
 %% \section*{Appendices}

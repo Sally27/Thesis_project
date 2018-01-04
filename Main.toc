@@ -1,13 +1,13 @@
-\contentsline {chapter}{Declaration of originality}{3}{section*.2}
-\contentsline {chapter}{Copyright declaration}{4}{section*.4}
-\contentsline {chapter}{Acknowledgements}{5}{section*.6}
-\contentsline {chapter}{List of Figures}{6}{section*.8}
-\contentsline {chapter}{List of Tables}{7}{section*.9}
-\contentsline {chapter}{Glossary}{8}{section*.10}
+\contentsline {chapter}{Declaration of originality}{3}{section*.3}
+\contentsline {chapter}{Copyright declaration}{4}{section*.5}
+\contentsline {chapter}{Acknowledgements}{5}{section*.7}
+\contentsline {chapter}{List of Figures}{6}{section*.9}
+\contentsline {chapter}{List of Tables}{8}{section*.11}
+\contentsline {chapter}{List of abbreviations and definitions}{9}{section*.13}
 \contentsline {chapter}{\numberline {1}Introduction}{10}{chapter.1}
 \contentsline {chapter}{\numberline {2}The LHCb detector}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}LHCb Layout}{13}{section.2.1}
-\contentsline {chapter}{Bibliography}{16}{figure.caption.16}
-\contentsline {chapter}{Appendices}{18}{chapter*.17}
+\contentsline {chapter}{Bibliography}{16}{figure.caption.18}
+\contentsline {chapter}{Appendices}{18}{chapter*.19}
 \contentsline {chapter}{\numberline {A}Boosted Decision Trees}{18}{appendix.A}
 \contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{21}{appendix.B}

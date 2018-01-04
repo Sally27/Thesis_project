@@ -6,8 +6,8 @@ CERN built one of the most exciting laboratories to study elementary particle in
 
 \begin{figure}
   \centering
-  \includegraphics[scale = 0.5]{figs/detector/AccComplex.jpg}
-  \caption{Accelerator complex at CERN}
+  \includegraphics[scale = 0.1]{figs/detector/AccComplex.png}
+	\caption{Accelerator complex at CERN. The image is taken from \cite{complex}.}
   \label{fig:AcceleratorComplex}
 \end{figure}
 
@@ -21,7 +21,6 @@ Study of \Bmumumu was performed using data obtained at \Gls{LHCb}.
 
 Contrary to the two general purpose detectors where the collisions are occuring in the centre of the detector, \Gls{LHCb}'s collision point is located at one end of the detector, hence its description as a forward single-arm spectrometer. This means that information about products outside of its scope are not known, meaning that there is no overall constraint on collision information, unlike in other flavour experiments. This is compensated by production mechanism of $b\bar{b}$ and $c\bar{c}$ in $pp$ interactions, which occurs via gluon-gluon fusion. In this process, each gluon will carry part of proton's momentum. If the two gluons from two protons carry significantly different momentum, the $b\bar{b}$ system will be boosted with respect to the $pp$ rest frame, either in forward or backward cone closely to the beamline, as can be seen in \autoref{fig:Acceptance}.
 
-
 \begin{figure}
 	\centering
 	\includegraphics[scale = 0.3]{figs/detector/Acceptance.pdf}
@@ -34,47 +33,56 @@ The angular coverage of LHCb is formally defined using pseudorapidity $\eta$,
 \begin{equation}
 	\eta = -\ln (\tan\frac{\theta}{2})
 \end{equation}	
-where $\theta$ is defined in \autoref{fig:LHCbDetector}. \Gls{LHCb}, hence, covers the region $2<\eta<5$ or 300\mrad. The production cross-section of the fundamental process $pp\rightarrow b\bar{b}X$, $\sigma (pp\rightarrow b\bar{b}X)$= 75.3$\pm$5.4$\pm$13.0 $\upmu$b at 7 \tev \cite{LHCb-PAPER-2010-002} and 144$\pm$1$\pm$21 $\upmu$b at 13 \tev \cite{LHCb-PAPER-2016-031} has been measured.
-
-To limit the background coming from especially soft QCD processes (due to hadronic collision enviroment) global event cuts, \textit{GEC}s, are put in the place. To limit the occupancy of the detector only events with 600 (in 7,8 \tev) and 450 (in 13 \tev) tracks and less are allowed to be processed. In order to achieve these occupancies, $\mu_{vis}$, the average number of visible $pp$ interactions per bunch-crossing is kept below 1, so that the pile-up, the visible number of $pp$ interaction in the visible events, is limited. This LHCb-specific control of luminosity is achieved by \textit{luminosity levelling}. This procedure achieves stable instantenous luminosity by controlling the transverse overlap of the beams at collision point. It limits the effects of luminosity decay, which can lead to trigger alterations during specific data taking run, resulting in systematic uncertainties.
-
-So far, the detector has been running since 2010, with diferrent running conditions summarized in Table , and with collected integrated luminosity \autoref{fig:lhcbintlumi}
-%Formally LHCb detector is placed along the beamline, where $x,y,z$ a spectrometer which cover the region of 300 \mrad defined a
-%http://lhcb.web.cern.ch/lhcb/speakersbureau/excel/default.html
-
+where $\theta$ is defined in \autoref{fig:LHCbDetector}. \Gls{LHCb} detector, hence, covers the region $2<\eta<5$. The production cross-section of the fundamental process of $pp\rightarrow b\bar{b}X$ was measured in this region yielding, $\sigma (pp\rightarrow b\bar{b}X)$= 75.3$\pm$5.4$\pm$13.0 $\upmu$b at 7 \tev \cite{LHCb-PAPER-2010-002} and 144$\pm$1$\pm$21 $\upmu$b at 13 \tev \cite{LHCb-PAPER-2016-031}, which shows that the production cross-sections scales roughly linearly with the centre-of-mass energy.
 
 \begin{figure}
 	\centering
 	\includegraphics[scale = 0.15]{figs/detector/lhcbdet.pdf}
-	\caption{The schematic slice of LHCb detector in $y,z$ plane where $z$ is defined to be the direction parallel to beamline, and $x,y$ define the plane perpendicular to the beamline. $\theta$, the opening angle in y-z plane with $\theta$ = 0 along $z-axis$.}
+	\caption{The schematic slice of LHCb detector in $y,z$ plane where $z$ is defined to be the direction parallel to beamline, and $x,y$ define the plane perpendicular to the beamline. $\theta$, the opening angle in y-z plane with $\theta$ = 0 along $z-axis$. The figure was taken from \cite{LHCbdetector}.}
 	\label{fig:LHCbDetector}
 \end{figure}
 
 
+To limit the background coming from especially soft QCD processes (due to hadronic collision enviroment) global event cuts, \textit{GEC}s, are put in the place. To limit the occupancy of the detector only events with 600 (in 7,8 \tev) and 450 (in 13 \tev) tracks and less are allowed to be processed. In order to achieve these occupancies, $\mu_{vis}$, the average number of visible $pp$ interactions per bunch-crossing is kept below 1, so that the pile-up, the visible number of $pp$ interaction in the visible events, is limited. This LHCb-specific control of luminosity is achieved by \textit{luminosity levelling}. This procedure achieves stable instantenous luminosity by controlling the transverse overlap of the beams at collision point. It limits the effects of luminosity decay, which can lead to trigger alterations during specific data taking run, resulting in systematic uncertainties.
 
-\begin{table}[!h]
-	\centering
-	\hspace*{-0.8cm}
-	\begin{tabular}{l c c c c }
-		\hline
-		 & $\sqrt(s)$ [TeV] & Luminosity $\mathcal{L}$ [$\times10^{32} cm^{-2}
-		s^{-1}$] & Number of Bunches & Bunch Spacing [ns] \\ \hline
-		2011 & 7  & 3.5 & 1300 &  50\\
-		2012 & 8 & 4 & 1300 &  50\\
-		2015 & 13 & 4 &  1.12 &  25\\      
-		2016 & 13 & 4 &  1.12 &  25\\\hline      
-		2017 & 13 & 4 &  1.12 &  25\\\hline      
-	\end{tabular}
-	\caption{}
-	\label{tab:runcond}
-\end{table}   
+So far, the detector has been running since 2010, with collected integrated luminosity shown in \autoref{fig:lhcbintlumi}. As compared to \Gls{ATLAS} and \Gls{CMS} the integrated luminosity is much lower, due to allowed pile-up conditions. In 2017, there were two $pp$ collision energies at which the data was taken: at $\sqrt(s)$  = 13 and 5 TeV. Run \Rn{1} data-taking (2010-2012) was paused by Long Shutdown 1 (\Gls{LS1}) and followed with Run \Rn{2} data-taking (2015-2018). 
+
+%Formally LHCb detector is placed along the beamline, where $x,y,z$ a spectrometer which cover the region of 300 \mrad defined a
+%http://lhcb.web.cern.ch/lhcb/speakersbureau/excel/default.html
+
+%\begin{figure}
+%	\centering
+%	\includegraphics[scale = 0.5]{figs/detector/lumicompare.png}
+%	\caption{Integrated luminosity collected in different years of data-taking. This plot is taken from \cite{lumiover}.}
+%	\label{fig:lhcbintlumi}
+%\end{figure}
+
+
+
+%\begin{table}[!h]
+%	\centering
+%	\hspace*{-0.8cm}
+%	\begin{tabular}{l c c c c }
+%		\hline
+%		 & $\sqrt(s)$ [TeV] & Luminosity $\mathcal{L}$ [$\times10^{32} cm^{-2}
+%		s^{-1}$] & Number of Bunches & Bunch Spacing [ns] \\ \hline
+%		2011 & 7  & 3.5 & 1300 &  50\\
+%		2012 & 8 & 4 & 1300 &  50\\
+%		2015 & 13 & 4 &  1.12 &  25\\      
+%		2016 & 13 & 4 &  1.12 &  25\\      
+%		2017 & 13 & 4 &  1.12 &  25\\\hline      
+%	\end{tabular}
+%	\caption{}
+%	\label{tab:runcond}
+%\end{table}   
 
 \begin{figure}
 	\centering
-	\includegraphics[scale = 0.5]{figs/detector/intlumi.png}
-	\caption{Integrated luminosity collected in different years of data-taking. As compared to ATLAS and CMS the integrated luminosity is much lower, due to pile-up conditions. In 2017, there were two $pp$ collision energies at $\sqrt(s)$ =13 and 5 TeV.}
+	\includegraphics[width = 0.5\textwidth]{figs/detector/intlumi.png}%
+        \includegraphics[width = 0.5\textwidth]{figs/detector/lumicompare.png}
+	\caption{Integrated luminosity collected in different years of data-taking. This plot is taken from \cite{lumiover} (left). Development of the instantaneous luminosity for \Gls{ATLAS}, \Gls{CMS} and \Gls{LHCb} during LHC fill 2651. After ramping to the desired value of $4\times10^{32}cm^{-2}s^{-1}$
+for LHCb, the luminosity is kept stable in a range of 5$\%$ for about 15 hours by adjusting the transversal beam overlap.The difference in luminosity towards the end of the fill between ATLAS, CMS and LHCb is due to the difference in the final focusing at the collision points, commonly referred to as the beta function, $\beta^{*}$. This plot was obtained from \cite{LHCb-DP-2014-002} (right).}
 	\label{fig:lhcbintlumi}
 \end{figure}
 
 
-are hence heavily exploited at LHCb, with $pp\rightarrow b\bar{b}X$ This is compensated by preferential decays of containing $b$ particles in a specific angular region.  This region is defined along the beam pipe $\phi$ z-axis

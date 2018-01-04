@@ -8,6 +8,14 @@
 \mciteSetBstSublistLabelBeginEnd{\mcitemaxwidthsubitemform\space}
 {\relax}{\relax}
 
+\bibitem{complex}
+\ifthenelse{\boolean{articletitles}}{\emph{Image of the cern accelerator
+  complex from \rm{\texttt{https://cds.cern.ch/record/2197559}}}, }{} Accessed
+  in 2017\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{pythia8}
 T.~Sjostrand, S.~Mrenna, and P.~Z. Skands,
   \ifthenelse{\boolean{articletitles}}{\emph{{A Brief Introduction to PYTHIA
@@ -20,7 +28,7 @@ T.~Sjostrand, S.~Mrenna, and P.~Z. Skands,
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{acceptance}
-LHCb Collaboration, \ifthenelse{\boolean{articletitles}}{\emph{Image of the
+LHCb collaboration, \ifthenelse{\boolean{articletitles}}{\emph{Image of the
   acceptance of using simulation taken from
   \rm{\texttt{https://lhcb.web.cern.ch/lhcb/speakersbureau/html/bb$\_$productionangles.html}}},
   }{} Accessed in 2017\relax
@@ -50,6 +58,32 @@ LHCb collaboration, R.~Aaij {\em et~al.},
   \href{http://dx.doi.org/10.1103/PhysRevLett.119.169901}{ibid.\   \textbf{119}
   (2017) 169901}, \href{http://arxiv.org/abs/1612.05140}{{\normalfont\ttfamily
   arXiv:1612.05140}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCbdetector}
+\ifthenelse{\boolean{articletitles}}{\emph{Image of the lhcb detector from
+  \rm{\texttt{http://cds.cern.ch/record/1087860}}}, }{} Accessed in 2017\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{lumiover}
+\ifthenelse{\boolean{articletitles}}{\emph{Image of the luminosty overview from
+  \rm{\texttt{https://lbgroups.cern.ch/online/operationsplots/index$\_$files/integratedlumilhcbtime$\_$yearlycumul.png}}},
+  }{} Accessed in 2017\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCb-DP-2014-002}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{LHCb detector performance}},
+  }{}\href{http://dx.doi.org/10.1142/S0217751X15300227}{Int.\ J.\ Mod.\ Phys.\
+  \textbf{A30} (2015) 1530022},
+  \href{http://arxiv.org/abs/1412.6352}{{\normalfont\ttfamily
+  arXiv:1412.6352}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
