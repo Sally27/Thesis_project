@@ -7,7 +7,8 @@
 \contentsline {chapter}{\numberline {1}Introduction}{10}{chapter.1}
 \contentsline {chapter}{\numberline {2}The LHCb detector}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}LHCb Layout}{13}{section.2.1}
-\contentsline {chapter}{Bibliography}{16}{figure.caption.18}
-\contentsline {chapter}{Appendices}{18}{chapter*.19}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{18}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{21}{appendix.B}
+\contentsline {subsection}{\numberline {2.1.1}VErtex LOcator}{16}{subsection.2.1.1}
+\contentsline {chapter}{Bibliography}{17}{subsection.2.1.1}
+\contentsline {chapter}{Appendices}{19}{chapter*.19}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{19}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{22}{appendix.B}
