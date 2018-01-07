@@ -1,14 +1,16 @@
-\contentsline {chapter}{Declaration of originality}{3}{section*.3}
-\contentsline {chapter}{Copyright declaration}{4}{section*.5}
-\contentsline {chapter}{Acknowledgements}{5}{section*.7}
-\contentsline {chapter}{List of Figures}{6}{section*.9}
-\contentsline {chapter}{List of Tables}{8}{section*.11}
-\contentsline {chapter}{List of abbreviations and definitions}{9}{section*.13}
-\contentsline {chapter}{\numberline {1}Introduction}{10}{chapter.1}
-\contentsline {chapter}{\numberline {2}The LHCb detector}{11}{chapter.2}
-\contentsline {section}{\numberline {2.1}LHCb Layout}{13}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}VErtex LOcator}{16}{subsection.2.1.1}
-\contentsline {chapter}{Bibliography}{17}{subsection.2.1.1}
-\contentsline {chapter}{Appendices}{19}{chapter*.19}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{19}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{22}{appendix.B}
+\contentsline {chapter}{Declaration of originality}{4}{section*.3}
+\contentsline {chapter}{Copyright declaration}{5}{section*.5}
+\contentsline {chapter}{Acknowledgements}{6}{section*.7}
+\contentsline {chapter}{List of Figures}{7}{section*.9}
+\contentsline {chapter}{List of Tables}{9}{section*.11}
+\contentsline {chapter}{List of abbreviations and definitions}{10}{section*.13}
+\contentsline {chapter}{\numberline {1}Introduction}{12}{chapter.1}
+\contentsline {chapter}{\numberline {2}The LHCb detector}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}LHCb Layout}{15}{section.2.1}
+\contentsline {section}{\numberline {2.2}VErtex LOcator}{18}{section.2.2}
+\contentsline {section}{\numberline {2.3}Tracking System}{19}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Tracking Algorithms}{20}{subsection.2.3.1}
+\contentsline {chapter}{Bibliography}{21}{figure.caption.20}
+\contentsline {chapter}{Appendices}{24}{chapter*.21}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{24}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{27}{appendix.B}

@@ -2,7 +2,7 @@
 \PackageError{LHCb.bst}{mciteplus.sty has not been loaded}
 {This bibstyle requires the use of the mciteplus package.}\fi
 \providecommand{\href}[2]{#2}
-\begin{mcitethebibliography}{1}
+\begin{mcitethebibliography}{10}
 \mciteSetBstSublistMode{n}
 \mciteSetBstMaxWidthForm{subitem}{\alph{mcitesubitemcount})}
 \mciteSetBstSublistLabelBeginEnd{\mcitemaxwidthsubitemform\space}
@@ -84,6 +84,35 @@ LHCb collaboration, R.~Aaij {\em et~al.},
   \textbf{A30} (2015) 1530022},
   \href{http://arxiv.org/abs/1412.6352}{{\normalfont\ttfamily
   arXiv:1412.6352}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{det_paper}
+The LHCb collaboration, A.~A. Alves, Jr.\ {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{The LHCb Detector at the LHC}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/3/08/S08005}{JINST \textbf{3}
+  (2008) S08005}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{OT}
+\ifthenelse{\boolean{articletitles}}{\emph{{Image of the Tracker System taken
+  from
+  \href{https://lhcb-public.web.cern.ch/lhcb-public/en/Detector/Trackers2-en.html}{the
+  LHCb public web page}}}, }{} Accessed in 2017\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCb-DP-2013-002}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Measurement of the track
+  reconstruction efficiency at LHCb}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/10/02/P02007}{JINST \textbf{10}
+  (2015) P02007}, \href{http://arxiv.org/abs/1408.1251}{{\normalfont\ttfamily
+  arXiv:1408.1251}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

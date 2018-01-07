@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  5 JAN 2018 20:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  6 JAN 2018 19:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -816,66 +816,66 @@ me{page.1}) has been already used, duplicate ignored
 l.115 \clearpage
                  [1
 
-] (./Main.toc)
+] (./Main.toc [2
+
+
+])
 \tf@toc=\write7
 \openout7 = `Main.toc'.
 
- [2
+ [3] (./declaration.tex
+
+LaTeX Warning: Reference `chap:ks' on page 4 undefined on input line 2.
 
 
-] (./declaration.tex
-
-LaTeX Warning: Reference `chap:ks' on page 3 undefined on input line 2.
+LaTeX Warning: Reference `Sec:Results' on page 4 undefined on input line 2.
 
 
-LaTeX Warning: Reference `Sec:Results' on page 3 undefined on input line 2.
+LaTeX Warning: Reference `chap:ks' on page 4 undefined on input line 2.
+
+[4
 
 
-LaTeX Warning: Reference `chap:ks' on page 3 undefined on input line 2.
-
-[3
+]) [5
 
 
-]) [4
+] (./ackn.tex) [6
 
 
-] (./ackn.tex) [5
+] (./Main.lof [7
 
 
-] (./Main.lof)
+])
 \tf@lof=\write8
 \openout8 = `Main.lof'.
 
- [6
-
-
-] [7] (./Main.lot)
+ [8] (./Main.lot)
 \tf@lot=\write9
 \openout9 = `Main.lot'.
 
- [8
+ [9
 
 
-] (./Main.gls)
-[9
+] (./Main.gls
+[10
 
 
 
-] (./introduction_sally.tex
+]) [11] (./introduction_sally.tex
 Chapter 1.
-) (./Detector2.tex [10
+) (./Detector2.tex [12
 
 
 
 ]
 Chapter 2.
-<figs/detector/AccComplex.png, id=195, 346.896pt x 245.9589pt>
+<figs/detector/AccComplex.png, id=238, 346.896pt x 245.9589pt>
 File: figs/detector/AccComplex.png Graphic file (type png)
 
 <use figs/detector/AccComplex.png>
 Package pdftex.def Info: figs/detector/AccComplex.png used on input line 9.
 (pdftex.def)             Requested size: 346.89514pt x 245.95828pt.
- [11
+ [13
 
 ]
 
@@ -884,8 +884,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12 <./figs/detector/AccComplex.png>]
-<figs/detector/Acceptance.pdf, id=218, 569.12625pt x 552.0625pt>
+[14 <./figs/detector/AccComplex.png>]
+<figs/detector/Acceptance.pdf, id=260, 569.12625pt x 552.0625pt>
 File: figs/detector/Acceptance.pdf Graphic file (type pdf)
 
 <use figs/detector/Acceptance.pdf>
@@ -898,11 +898,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13 <./figs/detector/Acceptance.pdf, page is rotated 90 degrees>]
+[15 <./figs/detector/Acceptance.pdf, page is rotated 90 degrees>]
 
 pdfTeX warning: pdflatex (file ./figs/detector/lhcbdet.pdf): PDF inclusion: fou
 nd PDF version <1.6>, but at most version <1.5> allowed
-<figs/detector/lhcbdet.pdf, id=274, 1643.13875pt x 1156.32pt>
+<figs/detector/lhcbdet.pdf, id=317, 1643.13875pt x 1156.32pt>
 File: figs/detector/lhcbdet.pdf Graphic file (type pdf)
 
 <use figs/detector/lhcbdet.pdf>
@@ -915,15 +915,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./figs/detector/lhcbdet.pdf>]
-<figs/detector/intlumi.png, id=292, 748.7975pt x 473.77pt>
+[16 <./figs/detector/lhcbdet.pdf>]
+<figs/detector/intlumi.png, id=335, 748.7975pt x 473.77pt>
 File: figs/detector/intlumi.png Graphic file (type png)
 
 <use figs/detector/intlumi.png>
 Package pdftex.def Info: figs/detector/intlumi.png used on input line 81.
 (pdftex.def)             Requested size: 227.62204pt x 144.01889pt.
 
-<figs/detector/lumicompare.png, id=293, 1126.2075pt x 733.23938pt>
+<figs/detector/lumicompare.png, id=336, 1126.2075pt x 733.23938pt>
 File: figs/detector/lumicompare.png Graphic file (type png)
 
 <use figs/detector/lumicompare.png>
@@ -936,33 +936,81 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./figs/detector/intlumi.png> <./figs/detector/lumicompare.png>]) [16]
-(./Main.bbl
+[17 <./figs/detector/intlumi.png> <./figs/detector/lumicompare.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 93.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 93.
+
+<figs/detector/veloOverview.png, id=356, 3639.56459pt x 2729.67345pt>
+File: figs/detector/veloOverview.png Graphic file (type png)
+
+<use figs/detector/veloOverview.png>
+Package pdftex.def Info: figs/detector/veloOverview.png used on input line 104.
+
+(pdftex.def)             Requested size: 341.43306pt x 256.07286pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19 <./figs/detector/veloOverview.png>]
+<figs/detector/trackingsystem.jpg, id=380, 317.185pt x 300.12125pt>
+File: figs/detector/trackingsystem.jpg Graphic file (type jpg)
+
+<use figs/detector/trackingsystem.jpg>
+Package pdftex.def Info: figs/detector/trackingsystem.jpg used on input line 12
+2.
+(pdftex.def)             Requested size: 159.3382pt x 150.77007pt.
+
+<figs/detector/tracktype.png, id=381, 608.2725pt x 288.07625pt>
+File: figs/detector/tracktype.png Graphic file (type png)
+
+<use figs/detector/tracktype.png>
+Package pdftex.def Info: figs/detector/tracktype.png used on input line 123.
+(pdftex.def)             Requested size: 273.14922pt x 129.36496pt.
+) [20 <./figs/detector/trackingsystem.jpg> <./figs/detector/tracktype.png>] (./
+Main.bbl
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (19.82007pt too wide) in paragraph at lines 31--39
+Overfull \hbox (25.695pt too wide) in paragraph at lines 31--39
 \OT1/cmtt/m/n/12 https://lhcb.web.cern.ch/lhcb/speakersbureau/html/bb$[]$produc
 tionangles.html\OT1/cmr/m/n/12 (-20) ,
  []
 
 
-Overfull \hbox (354.54384pt too wide) in paragraph at lines 75--80
+Overfull \hbox (360.41878pt too wide) in paragraph at lines 75--80
 []\OT1/cmr/m/it/12 (-20) Image of the lu-mi-nosty overview from \OT1/cmtt/m/n/1
 2 https://lbgroups.cern.ch/online/operationsplots/index$[]$files/integratedlumi
 lhcbtime$[]$yearlycumul.png\OT1/cmr/m/n/12 (-20) ,
  []
 
-) [17
+[21
 
 
-] [18
+]) [22] [23
 
 ]
 Appendix A.
-(./Appendix_BDT.tex <figs/BDT.png, id=338, 892.08281pt x 407.27156pt>
+(./Appendix_BDT.tex <figs/BDT.png, id=419, 892.08281pt x 407.27156pt>
 File: figs/BDT.png Graphic file (type png)
 
 <use figs/BDT.png>
@@ -973,21 +1021,21 @@ Overfull \hbox (169.20963pt too wide) in paragraph at lines 12--13
  [][] 
  []
 
-[19
+[24
 
-] [20 <./figs/BDT.png>]) [21]
+] [25 <./figs/BDT.png>]) [26]
 Appendix B.
-(./Appendix_splot.tex [22
+(./Appendix_splot.tex [27
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 364.
- [23]
+ [28]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
  (./Main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 364.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 364.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: B6A8A95368F13E796B0CA2EA3C429E0F;789.
+(rerunfilecheck)             Checksum: F1BEF8B8AE33D5F6CB996632E21062C9;918.
 
 
 LaTeX Warning: There were undefined references.
@@ -995,13 +1043,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 364.
  ) 
 Here is how much of TeX's memory you used:
- 17800 strings out of 494946
- 264273 string characters out of 6180981
- 444134 words of memory out of 5000000
- 20594 multiletter control sequences out of 15000+600000
- 22457 words of font info for 118 fonts, out of 8000000 for 9000
+ 17901 strings out of 494946
+ 265702 string characters out of 6180981
+ 446558 words of memory out of 5000000
+ 20662 multiletter control sequences out of 15000+600000
+ 22593 words of font info for 122 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 46i,12n,77p,1951b,581s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,12n,77p,1951b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/t
@@ -1019,10 +1067,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/euler/eurm10.pfb>
-Output written on Main.pdf (24 pages, 744724 bytes).
+Output written on Main.pdf (29 pages, 1441462 bytes).
 PDF statistics:
- 446 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 500000)
- 16015 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 533 PDF objects out of 1000 (max. 8388607)
+ 426 compressed objects within 5 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 16046 words of extra memory for PDF output out of 17280 (max. 10000000)
 
