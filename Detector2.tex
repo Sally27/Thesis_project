@@ -163,7 +163,17 @@ Both RICH1 and RICH2 use set of spherical primary mirrors to guide the photons o
 \end{figure}
 
 \section{RICH Reconstruction and Performance}
-In order to establish species of particles for each track, the Cerenkov angle is combined with the track momentum measured by tracking. In practice, however, as RICH detectors operate in high track density environment, many Cerenkov rings will be overlapping and hence a complex pattern recognition algorithm is deployed. For each event, all the tracks in both RICH detectors are assigned all possible mass hypotheses to give a full event likelihood \cite{Forty:1999sg}.   
+In order to establish species of particles for each track, the Cerenkov angle is combined with the track momentum measured by tracking. In practice, however, as RICH detectors operate in high track density environment, many Cerenkov rings will be overlapping and hence a complex pattern recognition algorithm is deployed \cite{Forty:1999sg}. 
+
+
+For each event, the RICH computes full event likelihood that is consistent with pion mass hypothesis $\mathcal{L})_{\pi}$ for all tracks given the observed hit distribution read out by \Gls{HPD}. The algorithm then iterates through all other particle species assigning new full event likelihoods $\mathcal{L})_{x}$ for a given track. The mass hypothesis with the highest full event likelihood is assigned to the track and this process is repeated for all the tracks in the event, until no improvement is found. 
+
+Results of this algorithm provide likelihood variables $DLL_{x}$ that quantify the strenght of the chosen species hypothesis against pion hypothesis
+\begin{equation}
+	DLL_{x} = log(\mathcal{L})_{x} - log(\mathcal{L})_{\pi}  x\in{K,\mu,p}
+\end{equation}
+
+
 
 
 

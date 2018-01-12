@@ -12,7 +12,7 @@
 \contentsline {subsection}{\numberline {2.3.1}Tracking Algorithms}{20}{subsection.2.3.1}
 \contentsline {section}{\numberline {2.4}Particle ID}{21}{section.2.4}
 \contentsline {section}{\numberline {2.5}RICH Reconstruction and Performance}{23}{section.2.5}
-\contentsline {chapter}{Bibliography}{24}{section.2.5}
-\contentsline {chapter}{Appendices}{27}{chapter*.23}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{27}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{30}{appendix.B}
+\contentsline {chapter}{Bibliography}{25}{equation.2.5.3}
+\contentsline {chapter}{Appendices}{28}{chapter*.23}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{28}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{31}{appendix.B}
