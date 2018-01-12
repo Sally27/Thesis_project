@@ -111,18 +111,30 @@ The closest detector around the collision point is VErtex LOcator (\Gls{VELO}). 
 \section{Tracking System}
 In addition to tracking information provided by \Gls{VELO}, the trajectories of charged particles are monitored by series of tracking subdetectors. The main task of these tracking subdetectors is to provide efficient reconstruction and precise measurement of particle's momentum. There are four tracking stations apart from \Gls{VELO}: Tracker Turicensis (\Gls{TT}), positioned upstream from magnet, and  \Gls{Tstation} tracking stations on the other side from the magnet. The 10 \m dipole magnet with $\approx$ 4 Tm integrated field provides enough strenght to bend charged particles with $p$ of 200 $GeV/c^{2}$.      
 
- Two different dectection technologies are used in these trackers reflecting the nature of track occupancy as function of distance from beam pipe. The tracker's part close to the beam pipe, \Gls{TT} station together with central region of T1-T3 (Inner Tracker (\Gls{IT}) expects higher occupancy, making use of the the silicon microstrip detection mechanism. The outer part of \Gls{Tstation} stations, also known as outer tracker \Gls{OT}, is made of a straw-tube detectors. It measures the hit position by measuring the drift-time of ionized electrons. This two technologies are seen in  
+ Two different dectection technologies are used in these trackers reflecting the nature of track occupancy as function of distance from beam pipe. The tracker's part close to the beam pipe, \Gls{TT} station together with central region of T1-T3 (Inner Tracker (\Gls{IT}) expects higher occupancy, making use of the the silicon microstrip detection mechanism. The outer part of \Gls{Tstation} stations, also known as outer tracker \Gls{OT}, is made of a straw-tube detectors. It measures the hit position by measuring the drift-time of ionized electrons. This two technologies are seen in \autoref{fig:tracktype}. 
 
 \subsection{Tracking Algorithms}
-   Altogether, there are several track categories, that can be formed visualized in \autoref{fig:tracktype}. 
-
+Different particles will leave different footprint in the detector. Charged particles will form tracks. Depending on presence of hits in individual subdetectors, they are grouped into several categories, visualized in \autoref{fig:tracktype}.
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width = 0.35\textwidth]{figs/detector/trackingsystem.jpg}%
 	\includegraphics[width = 0.6\textwidth]{figs/detector/tracktype.png}
-	\caption{ Visualisation of use of different technology with silicon technology in violet and straw-tube technology in cyan \cite{OT}. The Figure was obtained in  (left). Track types visualisation depending on which track stations provided hits. Figure is taken from \cite{LHCb-DP-2013-002}. For the study of \Bmumumu decay only long tracks are considered (right). }
+	\caption{ Visualisation of use of different technology with silicon technology in violet and straw-tube technology in cyan. The Figure was obtained in \cite{OT}(left). Track types visualisation depending on which track stations provided hits. For the study of \Bmumumu decays only, \Gls{longtrack}, are considered as muons will travel to the end of the detector leaving the hits all along. Figure is taken from \cite{LHCb-DP-2013-002} (right).}
 	\label{fig:tracktype}
 \end{figure}
 
+%http://iopscience.iop.org/article/10.1088/1748-0221/3/08/S08005/pdf
+%https://twiki.cern.ch/twiki/bin/view/LHCb/TrackingEffAbsLength /secondary interactions - hadronic int.
 
+Most of the physics analyses use long tracks, tracks leaving hits in VELO and \Gls{Tstation}, as they give most precise momenta estimates.
+VELO tracks leave hits only in $R$ and $\Phi$ sensor, but not in any other tracking stations, meaning that they must have left LHCb acceptance or they come from particles produced backwards and hence are useful for $PV$ reconstruction. Upstream tracks are formed by tracks leaving hits in VELO and TT only. These are usually low momentum particles, which are bent out LHCb acceptance while traversing the magnet. Long-lived particles such as $\Lambda$ or $K^{0}_{s}$ will only decay ouside of the VELO acceptance and hence will produce no hits until \Gls{TT} and \Gls{Tstation} forming downstream tracks. T-track is track type that only have hits in \Gls{Tstation}. Again this could be due to presence of long-lived particles or due to secondary interactions in the detector.   
+Mass uncertainty is one of the crucial parameters to minimize as it provides opportunity for high precision measurements by better separations from backgrounds. It strongly correlates with momentum resolution that is obtained using tracking. Resulting relative momentum uncertainty (0.5-1.1\%) on long tracks using $J/\psi \rightarrow \mu^{+} \mu^{-}$ using \textit{tag and probe} can be seen in \autoref{fig:momres}. It varies logarithmically with increasing momentum.
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width = 0.6\textwidth]{figs/detector/momresolution.png}
+	\caption{Momentum resolution of long tracks measured using "tag and probe" method at LHCb. The decay channel $J/\psi^{+} \rightarrow \mu^{+} \mu^{-}$ is analyzed.}
+	\label{fig:momres}
+\end{figure}
