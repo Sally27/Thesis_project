@@ -117,4 +117,13 @@ LHCb collaboration, R.~Aaij {\em et~al.},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Forty:1999sg}
+LHCb, R.~Forty, \ifthenelse{\boolean{articletitles}}{\emph{{RICH pattern
+  recognition for LHCb}},
+  }{}\href{http://dx.doi.org/10.1016/S0168-9002(99)00310-1}{Nucl.\ Instrum.\
+  Meth.\  \textbf{A433} (1999) 257}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \end{mcitethebibliography}
