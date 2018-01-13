@@ -126,4 +126,27 @@ LHCb, R.~Forty, \ifthenelse{\boolean{articletitles}}{\emph{{RICH pattern
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{LHCb-DP-2012-003}
+M.~Adinolfi {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Performance of the \lhcb RICH
+  detector at the LHC}},
+  }{}\href{http://dx.doi.org/10.1140/epjc/s10052-013-2431-9}{Eur.\ Phys.\ J.\
+  \textbf{C73} (2013) 2431},
+  \href{http://arxiv.org/abs/1211.6759}{{\normalfont\ttfamily
+  arXiv:1211.6759}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCb-PAPER-2012-002}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Measurement of $\bquark$-hadron
+  branching fractions for two-body decays into charmless charged hadrons}},
+  }{}\href{http://dx.doi.org/10.1007/JHEP10(2012)037}{JHEP \textbf{10} (2012)
+  037}, \href{http://arxiv.org/abs/1206.2794}{{\normalfont\ttfamily
+  arXiv:1206.2794}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \end{mcitethebibliography}

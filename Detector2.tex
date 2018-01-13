@@ -24,11 +24,11 @@ Contrary to the two general purpose detectors where the collisions are occuring 
 \begin{figure}
 	\centering
 	\includegraphics[scale = 0.3]{figs/detector/Acceptance.pdf}
-	\caption{Angular production and acceptance of LHCb's $b\bar{b}$ pair (in red) as well as General Purpose Detector (in yellow). LHCb covers region with highest production cross-section at 8 \tev. These plots were produced using PYTHIA8 \cite{pythia8} simulation. This plot was taken from \cite{acceptance}.}
+	\caption{Angular production and acceptance of LHCb's $b\bar{b}$ pair (in red) as well as General Purpose Detector (in yellow). \Gls{LHCb} covers region with highest production cross-section at 8 \tev. These plots were produced using PYTHIA8 \cite{pythia8} simulation. This plot was taken from \cite{acceptance}.}
 	\label{fig:Acceptance}
 \end{figure}
 
-The angular coverage of LHCb is formally defined using pseudorapidity $\eta$, 
+The angular coverage of \Gls{LHCb} is formally defined using pseudorapidity $\eta$, 
 
 \begin{equation}
 	\eta = -\ln (\tan\frac{\theta}{2})
@@ -38,7 +38,7 @@ where $\theta$ is defined in \autoref{fig:LHCbDetector}. \Gls{LHCb} detector, he
 \begin{figure}
 	\centering
 	\includegraphics[scale = 0.15]{figs/detector/lhcbdet.pdf}
-	\caption{The schematic slice of LHCb detector in $y,z$ plane where $z$ is defined to be the direction parallel to beamline, and $x,y$ define the plane perpendicular to the beamline. $\theta$, the opening angle in y-z plane with $\theta$ = 0 along $z-axis$. The figure was taken from \cite{LHCbdetector}.}
+	\caption{The schematic slice of \Gls{LHCb} detector in $y,z$ plane where $z$ is defined to be the direction parallel to beamline, and $x,y$ define the plane perpendicular to the beamline. $\theta$, the opening angle in y-z plane with $\theta$ = 0 along $z-axis$. The figure was taken from \cite{LHCbdetector}.}
 	\label{fig:LHCbDetector}
 \end{figure}
 
@@ -47,7 +47,7 @@ To limit the background coming from especially soft QCD processes (due to hadron
 
 So far, the detector has been running since 2010, with collected integrated luminosity shown in \autoref{fig:lhcbintlumi}. As compared to \Gls{ATLAS} and \Gls{CMS} the integrated luminosity is much lower, due to allowed pile-up conditions. In 2017, there were two $pp$ collision energies at which the data was taken: at $\sqrt(s)$  = 13 and 5 TeV. Run \Rn{1} data-taking (2010-2012) was paused by Long Shutdown 1 (\Gls{LS1}) and followed with Run \Rn{2} data-taking (2015-2018). 
 
-%Formally LHCb detector is placed along the beamline, where $x,y,z$ a spectrometer which cover the region of 300 \mrad defined a
+%Formally \Gls{LHCb}   detector is placed along the beamline, where $x,y,z$ a spectrometer which cover the region of 300 \mrad defined a
 %http://lhcb.web.cern.ch/lhcb/speakersbureau/excel/default.html
 
 %\begin{figure}
@@ -81,7 +81,7 @@ So far, the detector has been running since 2010, with collected integrated lumi
 	\includegraphics[width = 0.5\textwidth]{figs/detector/intlumi.png}%
         \includegraphics[width = 0.5\textwidth]{figs/detector/lumicompare.png}
 	\caption{Integrated luminosity collected in different years of data-taking. This plot is taken from \cite{lumiover} (left). Development of the instantaneous luminosity for \Gls{ATLAS}, \Gls{CMS} and \Gls{LHCb} during LHC fill 2651. After ramping to the desired value of $4\times10^{32}cm^{-2}s^{-1}$
-for LHCb, the luminosity is kept stable in a range of 5$\%$ for about 15 hours by adjusting the transversal beam overlap. The difference in luminosity towards the end of the fill between ATLAS, CMS and LHCb is due to the difference in the final focusing at the collision points, commonly referred to as the beta function, $\beta^{*}$. This plot was obtained from \cite{LHCb-DP-2014-002} (right).}
+for LHCb, the luminosity is kept stable in a range of 5$\%$ for about 15 hours by adjusting the transversal beam overlap. The difference in luminosity towards the end of the fill between ATLAS, \Gls{CMS} and \Gls{LHCb} is due to the difference in the final focusing at the collision points, commonly referred to as the beta function, $\beta^{*}$. This plot was obtained from \cite{LHCb-DP-2014-002} (right).}
 	\label{fig:lhcbintlumi}
 \end{figure}
 
@@ -127,8 +127,8 @@ Different particles will leave different footprint in the detector. Charged part
 %http://iopscience.iop.org/article/10.1088/1748-0221/3/08/S08005/pdf
 %https://twiki.cern.ch/twiki/bin/view/LHCb/TrackingEffAbsLength /secondary interactions - hadronic int.
 
-Most of the physics analyses use long tracks, tracks leaving hits in VELO and \Gls{Tstation}, as they give most precise momenta estimates.
-VELO tracks leave hits only in $R$ and $\Phi$ sensor, but not in any other tracking stations, meaning that they must have left LHCb acceptance or they come from particles produced backwards and hence are useful for $PV$ reconstruction. Upstream tracks are formed by tracks leaving hits in VELO and TT only. These are usually low momentum particles, which are bent out LHCb acceptance while traversing the magnet. Long-lived particles such as $\Lambda$ or $K^{0}_{s}$ will only decay ouside of the VELO acceptance and hence will produce no hits until \Gls{TT} and \Gls{Tstation} forming downstream tracks. T-track is track type that only have hits in \Gls{Tstation}. Again this could be due to presence of long-lived particles or due to secondary interactions in the detector.   
+Most of the physics analyses use long tracks, tracks leaving hits in \Gls{VELO} and \Gls{Tstation}, as they give most precise momenta estimates.
+VELO tracks leave hits only in $R$ and $\Phi$ sensor, but not in any other tracking stations, meaning that they must have left \Gls{LHCb} acceptance or they come from particles produced backwards and hence are useful for $PV$ reconstruction. Upstream tracks are formed by tracks leaving hits in \Gls{VELO} and TT only. These are usually low momentum particles, which are bent out \Gls{LHCb} acceptance while traversing the magnet. Long-lived particles such as $\Lambda$ or $K^{0}_{s}$ will only decay ouside of the \Gls{VELO} acceptance and hence will produce no hits until \Gls{TT} and \Gls{Tstation} forming downstream tracks. T-track is track type that only have hits in \Gls{Tstation}. Again this could be due to presence of long-lived particles or due to secondary interactions in the detector.   
 Mass uncertainty is one of the crucial parameters to minimize as it provides opportunity for high precision measurements by better separations from backgrounds. It strongly correlates with momentum resolution that is obtained using tracking. Resulting relative momentum uncertainty (0.5-1.1\%) on long tracks using $J/\psi \rightarrow \mu^{+} \mu^{-}$ using \textit{tag and probe} can be seen in \autoref{fig:momres}. It varies logarithmically with increasing momentum.
 
 
@@ -140,7 +140,7 @@ Mass uncertainty is one of the crucial parameters to minimize as it provides opp
 \end{figure}
 
 \section{Ring Imaging Detectors}
-Particle identification at LHCb relies heavily on two dedicated Ring Imaging subdetectors. These detectors take advantage of the phenomena, emission of Cerenkov light, which happens when a charged particle travels through a medium at a speed faster than the phase velocity of light in that medium. This cone of light is emitted at an angle $\theta$ with respect to the charged particle’s trajectory. Using the knowlegde of refractive index of the medium, $n$, and momentum $p$ that is measured using tracking, mass $m$ of the particle can be obtained through:
+Particle identification, \Gls{PID}, at \Gls{LHCb} relies heavily on two dedicated Ring Imaging subdetectors. These detectors take advantage of the phenomena, emission of Cerenkov light, which happens when a charged particle travels through a medium at a speed faster than the phase velocity of light in that medium. This cone of light is emitted at an angle $\theta$ with respect to the charged particle's trajectory. Using the knowlegde of refractive index of the medium, $n$, and momentum $p$ that is measured using tracking, mass $m$ of the particle can be obtained through:
 
 \begin{equation}
 	\cos\theta_{c} =  \frac{\sqrt{m^{2} + p^{2}}}{pn}.
@@ -163,10 +163,10 @@ Both RICH1 and RICH2 use set of spherical primary mirrors to guide the photons o
 \end{figure}
 
 \section{RICH Reconstruction and Performance}
-In order to establish species of particles for each track, the Cerenkov angle is combined with the track momentum measured by tracking. In practice, however, as RICH detectors operate in high track density environment, many Cerenkov rings will be overlapping and hence a complex pattern recognition algorithm is deployed \cite{Forty:1999sg}. 
+In order to establish species of particles for each track, the Cerenkov angle is combined with the track momentum measured by tracking. In practice, however, as \Gls{RICH} detectors operate in high track density environment, many Cerenkov rings will be overlapping and hence a complex pattern recognition algorithm is deployed \cite{Forty:1999sg}. 
 
 
-For each event, the RICH computes full event likelihood that is consistent with assigning pion mass hypothesis for all tracks given the observed hit distribution read out by \Gls{HPD}. The algorithm then iterates through all other possible particle species, ($e, \mu, \pi, K,$ proton, deuteron), assigning new full event likelihood for a given track, having all other hypotheses fixed. The mass hypothesis with the highest full event likelihood is assigned to the track and this process is repeated for all the tracks in the event, until no improvement is found. 
+For each event, the \Gls{RICH} computes full event likelihood that is consistent with assigning pion mass hypothesis for all tracks given the observed hit distribution read out by \Gls{HPD}. The algorithm then iterates through all other possible particle species, ($e, \mu, \pi, K,$ proton, deuteron), assigning new full event likelihood for a given track, having all other hypotheses fixed. The mass hypothesis with the highest full event likelihood is assigned to the track and this process is repeated for all the tracks in the event, until no improvement is found. 
 
 Results of this algorithm provide likelihood variables, $DLL_{x}$, that quantify the strenght of the chosen species hypothesis against pion hypothesis,
 \begin{equation}
@@ -176,10 +176,26 @@ Results of this algorithm provide likelihood variables, $DLL_{x}$, that quantify
 By calculating $DLL_{x_{1}} - DLL_{x_{2}}$, one can obtain discriminative strenght between any two species.
 
 \subsection{RICH performance}
-In order to measure the perfomance of the PID computed by RICH, populous samples need to be analyzed.
-The PID performance of the RICH is assesed using set of standard candle
+In order to measure the performance of the \Gls{PID} computed by RICH, populous calibration samples with very little background contamination are required. In order not to bias results, these samples have no \Gls{PID} constraints themselves and are reconstructed solely using kinematic information. For studies of pion/kaon efficiencies, $D^{*+} \to D^{0}(\kaon^{-}\pip)\pip$ backround-substracted samples are used, whereby the daughter tracks of $D^{0}$ become proxies for evaluation. The probability of correctly identifying kaon given certain constraint on $DLL_{K}$, identification efficiency (\Gls{ID}), and probability of mistakenly swapping pion identification, \Gls{misID} efficiency, are summarized in \autoref{fig:richperf}. Identification probabilities of $\approx$ 85\% with misidentification rate of $\approx$ 3\% provide invaluable discriminating separation between kaon and pion.
 
 
 
 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width = 0.525\textwidth]{figs/detector/D0mass.png}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/RICHperfdata.png}%
+	\caption{Invariant mass distribution of $D^{0}$ data sample (in black) overlayed with fit to both background and signal (in blue) (left). An example of kaon \Gls{ID} (red) and \Gls{misID} (black) efficiency as a funtion of momentum under two PID hypotheses, $DLL_{K} > 0$ (empty)  and $DLL_{K} > 5$ (filled) (right). Boths figures are taken from \cite{LHCb-DP-2012-003}.}
+	\label{fig:richperf}
+\end{figure}
+
+$\pi^{+} \pi^{-}$ invariant mass spectra in $B^{0} \rightarrow h^{+} h^{-}$ with and without PID requirements, \autoref{fig:richnice}, demonstrates clear increase in sensitivity searching for $B^{0} \rightarrow \pi^{+} \pi^{-}$ signal. 
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhnopid.png}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhnopid.png}%
+	\caption{ $\pi^{+} \pi^{-}$ invariant mass distributions obtained using kinematic constraints only (left) and also using PID constraints (right) in order to isolate $B^{0} \rightarrow \pi^{+} \pi^{-}$ peak. This figure is taken from \cite{LHCb-PAPER-2012-002}. }  
+	\label{fig:richnice}
+\end{figure}
 
