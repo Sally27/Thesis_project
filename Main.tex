@@ -8,8 +8,8 @@
 %\rhead{Share\LaTeX}
 %\lhead{Guides and tutorials}
 %\rfoot{Page \thepage}
-
-
+\usepackage[T1]{fontenc}
+\usepackage{kpfonts}
 
 
 \usepackage{amsmath}
@@ -35,7 +35,10 @@
 \usepackage{upgreek}
 \usepackage{color}
 \usepackage[dvipsnames]{xcolor}
-\usepackage[colorlinks = true, linkcolor = NavyBlue, citecolor = ForestGreen]{hyperref}
+\definecolor{semigreen}{HTML}{1b9e77}
+\definecolor{orangy}{HTML}{d95f02}
+\definecolor{bluey}{HTML}{7570b3}
+\usepackage[colorlinks = true, linkcolor = bluey, citecolor = semigreen]{hyperref}
 \usepackage{gensymb}
 %\usepackage{glossaries}
 \newboolean{pdflatex}
@@ -85,7 +88,8 @@
 
 \usepackage[toc, nonumberlist, acronym]{glossaries}
 \usepackage[titletoc, title]{appendix}
-\renewcommand*{\glstextformat}[1]{\textcolor{Mulberry}{#1}}
+%\renewcommand*{\glstextformat}[1]{\textcolor{Mulberry}{#1}}
+\renewcommand*{\glstextformat}[1]{\textcolor{orangy}{#1}}
 \makeglossaries
 \input{glos}
 \makeglossaries

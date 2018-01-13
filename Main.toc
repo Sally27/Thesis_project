@@ -1,18 +1,19 @@
-\contentsline {chapter}{Declaration of originality}{4}{section*.3}
-\contentsline {chapter}{Copyright declaration}{5}{section*.5}
-\contentsline {chapter}{Acknowledgements}{6}{section*.7}
-\contentsline {chapter}{List of Figures}{7}{section*.9}
-\contentsline {chapter}{List of Tables}{9}{section*.11}
-\contentsline {chapter}{List of abbreviations and definitions}{10}{section*.13}
-\contentsline {chapter}{\numberline {1}Introduction}{12}{chapter.1}
-\contentsline {chapter}{\numberline {2}The LHCb detector}{13}{chapter.2}
-\contentsline {section}{\numberline {2.1}LHCb Layout}{15}{section.2.1}
-\contentsline {section}{\numberline {2.2}VErtex LOcator}{18}{section.2.2}
-\contentsline {section}{\numberline {2.3}Tracking System}{19}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Tracking Algorithms}{20}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Particle ID}{21}{section.2.4}
-\contentsline {section}{\numberline {2.5}RICH Reconstruction and Performance}{23}{section.2.5}
-\contentsline {chapter}{Bibliography}{25}{equation.2.5.3}
-\contentsline {chapter}{Appendices}{28}{chapter*.23}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{28}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{31}{appendix.B}
+\contentsline {chapter}{Declaration of originality}{5}{section*.3}
+\contentsline {chapter}{Copyright declaration}{6}{section*.5}
+\contentsline {chapter}{Acknowledgements}{7}{section*.7}
+\contentsline {chapter}{List of Figures}{9}{section*.9}
+\contentsline {chapter}{List of Tables}{11}{section*.11}
+\contentsline {chapter}{List of abbreviations and definitions}{12}{section*.13}
+\contentsline {chapter}{\numberline {1}Introduction}{14}{chapter.1}
+\contentsline {chapter}{\numberline {2}The LHCb detector}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}LHCb Layout}{16}{section.2.1}
+\contentsline {section}{\numberline {2.2}VErtex LOcator}{19}{section.2.2}
+\contentsline {section}{\numberline {2.3}Tracking System}{21}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Tracking Algorithms}{21}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Ring Imaging Detectors}{23}{section.2.4}
+\contentsline {section}{\numberline {2.5}RICH Reconstruction and Performance}{25}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}RICH performance}{25}{subsection.2.5.1}
+\contentsline {chapter}{Bibliography}{26}{subsection.2.5.1}
+\contentsline {chapter}{Appendices}{29}{chapter*.23}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{29}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{32}{appendix.B}

@@ -139,7 +139,7 @@ Mass uncertainty is one of the crucial parameters to minimize as it provides opp
 	\label{fig:momres}
 \end{figure}
 
-\section{Particle ID}
+\section{Ring Imaging Detectors}
 Particle identification at LHCb relies heavily on two dedicated Ring Imaging subdetectors. These detectors take advantage of the phenomena, emission of Cerenkov light, which happens when a charged particle travels through a medium at a speed faster than the phase velocity of light in that medium. This cone of light is emitted at an angle $\theta$ with respect to the charged particle’s trajectory. Using the knowlegde of refractive index of the medium, $n$, and momentum $p$ that is measured using tracking, mass $m$ of the particle can be obtained through:
 
 \begin{equation}
@@ -151,7 +151,7 @@ As the momentum and mass are intrinsic properties of passing particle, the momen
 Low momentum (2-60 \gev) particles are identified in the upstream RICH1 detector and high momentum particles (15-100) \gev are analyzed downstream in RICH2. RICH1 covers $\pm$ 25-300 mrad in x-z plane, $\pm$ 250 mrad in the x-y plane, using either gaseous Aerogel ($n=1.03$) and $C_{4}F_{10}$ ($n = 1.0014$) as radiators. RICH2 has more limited acceptance of $\pm$15-120 mrad in x-y plane and $\pm$100 mrad in x-z plane and uses $CF_{4}$ as radiator, with lower $n=1.0005$. The discrimination power between different particles can be seen \autoref{fig:richres}. 
 
 
-Both RICH1 and RICH2 use set of spherical primary mirrors to guide the photons onto the flat secondary mirrors which are then further reflected as rings onto surface of Hybrid Photon Multipliers, \Gls{HPD}. The schmematic view of a particle passing through RICH1 can be also be seen in \autoref{fig:richres}. 
+Both RICH1 and RICH2 use set of spherical primary mirrors to guide the photons onto the flat secondary mirrors which are then further focused into Cerenkov rings onto the surface of Hybrid Photon Multipliers, \Gls{HPD}. The schmematic view of a particle passing through RICH1 can be also be seen in \autoref{fig:richres}. 
 
 
 \begin{figure}[!h]
@@ -166,12 +166,18 @@ Both RICH1 and RICH2 use set of spherical primary mirrors to guide the photons o
 In order to establish species of particles for each track, the Cerenkov angle is combined with the track momentum measured by tracking. In practice, however, as RICH detectors operate in high track density environment, many Cerenkov rings will be overlapping and hence a complex pattern recognition algorithm is deployed \cite{Forty:1999sg}. 
 
 
-For each event, the RICH computes full event likelihood that is consistent with pion mass hypothesis $\mathcal{L})_{\pi}$ for all tracks given the observed hit distribution read out by \Gls{HPD}. The algorithm then iterates through all other particle species assigning new full event likelihoods $\mathcal{L})_{x}$ for a given track. The mass hypothesis with the highest full event likelihood is assigned to the track and this process is repeated for all the tracks in the event, until no improvement is found. 
+For each event, the RICH computes full event likelihood that is consistent with assigning pion mass hypothesis for all tracks given the observed hit distribution read out by \Gls{HPD}. The algorithm then iterates through all other possible particle species, ($e, \mu, \pi, K,$ proton, deuteron), assigning new full event likelihood for a given track, having all other hypotheses fixed. The mass hypothesis with the highest full event likelihood is assigned to the track and this process is repeated for all the tracks in the event, until no improvement is found. 
 
-Results of this algorithm provide likelihood variables $DLL_{x}$ that quantify the strenght of the chosen species hypothesis against pion hypothesis
+Results of this algorithm provide likelihood variables, $DLL_{x}$, that quantify the strenght of the chosen species hypothesis against pion hypothesis,
 \begin{equation}
-	DLL_{x} = log(\mathcal{L})_{x} - log(\mathcal{L})_{\pi}  x\in{K,\mu,p}
+	DLL_{x} = log(\mathcal{L})_{x} - log(\mathcal{L})_{\pi} \quad  x\in{e, \mu, K, proton, deuteron}.
 \end{equation}
+
+By calculating $DLL_{x_{1}} - DLL_{x_{2}}$, one can obtain discriminative strenght between any two species.
+
+\subsection{RICH performance}
+In order to measure the perfomance of the PID computed by RICH, populous samples need to be analyzed.
+The PID performance of the RICH is assesed using set of standard candle
 
 
 
