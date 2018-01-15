@@ -189,13 +189,52 @@ In order to measure the performance of the \Gls{PID} computed by RICH, populous 
 	\label{fig:richperf}
 \end{figure}
 
-$\pi^{+} \pi^{-}$ invariant mass spectra in $B^{0} \rightarrow h^{+} h^{-}$ with and without PID requirements, \autoref{fig:richnice}, demonstrates clear increase in sensitivity searching for $B^{0} \rightarrow \pi^{+} \pi^{-}$ signal. 
+In search for $B^{0}$ and $B^{0}_{s}$ decaying to $h^{+}h^{-}$, where $h\in K, \pi$, $\pi^{+} \pi^{-}$ invariant mass spectra with and without PID $DLL_{x}$ requirements can be seen in \autoref{fig:richnice}. These plots clearly demonstrate increase in sensitivity searching for $B^{0} \rightarrow \pi^{+} \pi^{-}$ signal amongst other components. 
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhnopid.png}%
-	\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhnopid.png}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
 	\caption{ $\pi^{+} \pi^{-}$ invariant mass distributions obtained using kinematic constraints only (left) and also using PID constraints (right) in order to isolate $B^{0} \rightarrow \pi^{+} \pi^{-}$ peak. This figure is taken from \cite{LHCb-PAPER-2012-002}. }  
 	\label{fig:richnice}
 \end{figure}
+
+
+\subsection{Calorimetry}
+As many other particle physics detectors, \Gls{LHCb} is equipped with series od subdetectors providing separation and \Gls{PID} tool for electrons, pions and photons. This separation is achieved because different particles interact at different distances, producing differently shaped showers of light. This part of detector is not only integral to the way \Gls{LHCb} trigger system works but it also provides precise measurement of energies of these objects.
+All the subcomponents discussed here operate on the same principle. The light from the scintillating material is guided to photomultiplier tubes by wawelenght shifting fibres.
+
+Electrons, pions and photons firstly encounter two planes of scintillating tiles: Scintillating Pad Detector (\Gls{SPD}), Preshower Detector (\Gls{PRS}) intersected by a wall of lead. The \Gls{SPD} senses the passage of charged particles whereas neutral particles will not be affected, distinguishing electrons from photons. The wall of lead initiates the electromagnetic shower, where photons are converted into electron-positron pairs, depositing sizable energy in the \Gls{PRS} allowing electron/pion separation. 
+
+The following Elecromagnetic Calorimeter (\Gls{ECAL}) is based on sampling shashlik-type technology, where scintillating tiles are alternated by lead plates measuring the energy deposit of electromagnetic showers. As the best energy resolution requires full energy deposit of energetic photons along the \Gls{ECAL}, the thickness is eqvivalent to 25 radiation lengths. The resulting resolution of \Gls{ECAL} is $\frac{\sigma_{E}}{E} = \frac{10\%}{\sqrt{E}} \oplus 1\%$, where $E$ is in \gev.
+
+On the other hand, \Gls{HCAL} sandwiches iron instead of lead as the absorber with thickness of 5.6 interaction lenght only, achieving resolution of $\frac{\sigma_{E}}{E} = \frac{70\%}{\sqrt{E}} \oplus 10\%$ in beam tests. This poorer resolution however fullfils the requirements necessary for the main purpose of this detector, hadron trigger. Away from beampipe the granularity of cells is coarser to mirror the track occupancy as seen in \autoref{fig:CaloGran}. 
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width = 1.0\textwidth]{figs/detector/CaloGran.png}%
+	%\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
+	\caption{Granularity of \Gls{ECAL} (left) and \Gls{HCAL} (right) detectors. The figure was taken from \cite{det_paper}. }  
+	\label{fig:CaloGran}
+\end{figure}
+
+
+
+
+\subsection{Muon Stations}
+Muons are considered to be of fundamental importance to many flagship analyses by \Gls{LHCb}, such as the search for the rare $\B^{0}_{s} \rightarrow \mu^{+} \mu^{-}$ decay . Analysis of \Bmumumu ofcourse relies heavily on good performance of this part of detector. Muon stations are positioned at the end of the detector, taking advantage of the low probability of interaction of muon previously in the detector.
+
+\Gls{LHCb}'s five muon stations \Gls{muonstation} are positioned before and after calorimetry system, with first station M1 upstream of the \Gls{SPD}, and four stations (M2-M5) downstream of \Gls{HCAL} as shown in \autoref{fig:MuonGran}. The M1 station consists of 12 sets of three gas electron 
+multiplier foils (triple-GEMs) in the region closest to the beam pipe, where the highest dose of radiation due to the highest particle flux is expected. M2-M5 station each consist of 276 multi-wire proportional chambers (\Gls{MWPCs}). All the stations are split into two independent mechanical sides, also known A and C side.
+The first muon station M1 
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width = 1.0\textwidth]{figs/detector/MuonGran.png}%
+	%\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
+	\caption{(a) Layout of the muon detector x-z plane and (b) x-y plane. This figure is taken from \cite{LHCb-DP-2012-002}. }  
+	\label{fig:MuonGran}
+\end{figure}
+
 

@@ -149,4 +149,15 @@ LHCb collaboration, R.~Aaij {\em et~al.},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{LHCb-DP-2012-002}
+A.~A. Alves~Jr.\ {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Performance of the LHCb muon
+  system}}, }{}\href{http://dx.doi.org/10.1088/1748-0221/8/02/P02022}{JINST
+  \textbf{8} (2013) P02022},
+  \href{http://arxiv.org/abs/1211.1346}{{\normalfont\ttfamily
+  arXiv:1211.1346}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \end{mcitethebibliography}
