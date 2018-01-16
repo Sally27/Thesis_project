@@ -200,7 +200,7 @@ In search for $B^{0}$ and $B^{0}_{s}$ decaying to $h^{+}h^{-}$, where $h\in K, \
 \end{figure}
 
 
-\subsection{Calorimetry}
+\section{Calorimetry}
 As many other particle physics detectors, \Gls{LHCb} is equipped with series od subdetectors providing separation and \Gls{PID} tool for electrons, pions and photons. This separation is achieved because different particles interact at different distances, producing differently shaped showers of light. This part of detector is not only integral to the way \Gls{LHCb} trigger system works but it also provides precise measurement of energies of these objects.
 All the subcomponents discussed here operate on the same principle. The light from the scintillating material is guided to photomultiplier tubes by wawelenght shifting fibres.
 
@@ -221,12 +221,16 @@ On the other hand, \Gls{HCAL} sandwiches iron instead of lead as the absorber wi
 
 
 
-\subsection{Muon Stations}
+\section{Muon Stations}
 Muons are considered to be of fundamental importance to many flagship analyses by \Gls{LHCb}, such as the search for the rare $\B^{0}_{s} \rightarrow \mu^{+} \mu^{-}$ decay . Analysis of \Bmumumu ofcourse relies heavily on good performance of this part of detector. Muon stations are positioned at the end of the detector, taking advantage of the low probability of interaction of muon previously in the detector.
 
-\Gls{LHCb}'s five muon stations \Gls{muonstation} are positioned before and after calorimetry system, with first station M1 upstream of the \Gls{SPD}, and four stations (M2-M5) downstream of \Gls{HCAL} as shown in \autoref{fig:MuonGran}. The M1 station consists of 12 sets of three gas electron 
-multiplier foils (triple-GEMs) in the region closest to the beam pipe, where the highest dose of radiation due to the highest particle flux is expected. M2-M5 station each consist of 276 multi-wire proportional chambers (\Gls{MWPCs}). All the stations are split into two independent mechanical sides, also known A and C side.
-The first muon station M1 
+\Gls{LHCb}'s five rectangular muon stations \Gls{muonstation} are positioned before and after calorimetry system, with first station M1 upstream of the \Gls{SPD}, and four stations (M2-M5) downstream of \Gls{HCAL} as shown in \autoref{fig:MuonGran}. The M1 station consists of 12 sets of three gas electron 
+multiplier foils (triple-GEMs) in the region closest to the beam pipe, resisting the highest dose of radiation due to the highest particle flux. Its main use lies in improving the $p_{T}$ resolution by $\approx$ 10\%. M2-M5 station each consist of 276 multi-wire proportional chambers (\Gls{MWPCs}) filled with  $\rm{Ar-CO2-CF4}$ gas mixture. They are interlayed with 0.8\m iron walls, to provide stopping target to all particles, other than muons with momentum higher than $6$ GeV/c. In order to ease the accesibility, like in \Gls{VELO}, all the stations are split into two independent mechanical sides, also known A and C side.
+
+Each station is then further segmented into four increasingly larger regions away from the beam, R1 to R4.
+ All the regions were constructed to cover the same acceptance, keeping the track occupancy constant accross the station. The granularity of the readout is higher in the horizontal plane to take advantage of magnet's horizontal bending plane.
+
+
 
 
 \begin{figure}[!h]
@@ -236,5 +240,33 @@ The first muon station M1
 	\caption{(a) Layout of the muon detector x-z plane and (b) x-y plane. This figure is taken from \cite{LHCb-DP-2012-002}. }  
 	\label{fig:MuonGran}
 \end{figure}
+
+Both GEM and \Gls{MWPCs} operate on a same principle. In each station, position in the $x-y$ plane is determined by ionizing electrons that come from muons passing through the detector, which are then attracted either to the closest anode mesh or wire mesh. The trigger is fired if the corresponding rectangular region in each station enregistered positive binary decision. This means the efficiency of each station must be $\geq$99\% to give overall 95\% trigger efficiency. Geometrical layout covers $\approx$ 20\% muons originating in semileptonic $b$ decays.
+
+
+\subsection{Muon Identification}
+Apart from triggering events with high enough $p_{T}$ muons, muon stations provide necessary PID information for muon analyses. Offline variables mostly used for muon ID by analysts are
+\begin{itemize}
+	\item{\textbf{IsMuon}: Boolean decision of muon candidates with momentum-dependent categorisation. Long tracks with $p>3$\gev/c are extrapolated to muon stations yielding $x-y$ coordinates in $M2-M5$, considering only tracks within acceptance. For each station, search for the hit information within elliptical area defined by momentum, field of interest (\Gls{FOI}), is perfomed. The hit requirements are summarized in \autoref{tab:ismuontab}.}
+	\item{\textbf{muDLL}: Difference in log likelihoods computed using muon and non-muon hypothesis. These hypotheses are based on the proximity/distance $D^{2}$ of the track extrapolation into the muon stations and corresponding closest sensed hits in those stations. Muon-like particle will tend to have sharper distribution in $D^{2}$ as compared to other species. Protons were chosen for the calibration purposes giving broader distribution originating from punch-through protons, protons having concident hit position to true muon, and random hits.}
+	\item{\textbf{DLLmu}}:  For each track global likelihood is produced, by combination of muon and non-muon likelihood from \textbf{muDLL}, with the \Gls{RICH} different mass hypothesis likelihoods, and calorimetry likelihood exploiting the energy deposits information. Like in \Gls{RICH} likelihoods, the default hypothesis corresponds to separation bewtween muon and pion hypothesis.    
+
+\end{itemize}
+
+
+\begin{table}[!h]
+	\centering
+	\hspace*{-0.8cm}
+	\begin{tabular}{c c}
+		\hline
+		Particle Momentum $p$  & Hits in Muon Stations \\ \hline
+		3 \gev/c <$p$<6 \gev/c & M1 $\&$ M2\\
+		6 \gev/c <$p$<10 \gev/c & M1 $\&$ M2 $\&$ (M3 $||$ M4) \\
+		10 \gev/c <$p$ & M1, M2, M3 and M4 \\ \\\hline      
+	\end{tabular}
+	\caption{Momentum-dependent definition \texttt{IsMuon} variable.}
+	\label{tab:ismuontab}
+\end{table}   
+
 
 
