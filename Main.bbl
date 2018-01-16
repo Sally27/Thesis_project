@@ -160,4 +160,15 @@ A.~A. Alves~Jr.\ {\em et~al.},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{LHCb-DP-2013-001}
+F.~Archilli {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Performance of the muon
+  identification at LHCb}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/8/10/P10020}{JINST \textbf{8}
+  (2013) P10020}, \href{http://arxiv.org/abs/1306.0249}{{\normalfont\ttfamily
+  arXiv:1306.0249}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \end{mcitethebibliography}

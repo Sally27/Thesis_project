@@ -268,5 +268,31 @@ Apart from triggering events with high enough $p_{T}$ muons, muon stations provi
 	\label{tab:ismuontab}
 \end{table}   
 
+\subsection{Muon Performance}
+As in hadron performance measurements, muon ID is determined using high statistics decay channel $J/\psi \rightarrow \mu^{+} \mu^{-}$ using tag-and-probe method. Mis-ID rates are computed using the same decay channels as previously. The summary of \texttt{IsMuon} \Gls{ID} and misid rates are presented in \autoref{fig:MuonID}. Very high ID rate (above 90\%) for relatively low misid probability (below 10\%) performs the least well in low $p_{T}$ bins as here the muons end up outside of the acceptance. The misid rates for kaon and pions are significantly higher in low momenta region as the dominant process causing this are prompt muons from decay-in-flight.   
+
+\begin{figure}[!h]
+	\includegraphics[width = 1.0\textwidth]{figs/detector/MuonPIDIsMuon.eps}%
+	\caption{(a) Probability of correctly identifying muons as a function of momentum $p$ in the bins of $p_{T}$ for $J/\psi \rightarrow \mu^{+} \mu^{-}$ with \texttt{IsMuon} constraint. (c) Probability of incorrectly identifying pion (b) proton and (d) kaon as muon with \texttt{IsMuon}. This figure is taken from \cite{LHCb-DP-2013-001}. }  
+	\label{fig:MuonID}
+\end{figure}
+
+
+\section{Trigger}
+Nowadays, big-data physics experiments have to make decisions on what kind of data they want to keep. The choice of interesting events is performed by series of decisions, which is cumulatively known as trigger. \Gls{LHCb} trigger system was build around constraints posed by the run conditions, read-out capabilities and available disk space. In Run \Rn{1} and Run \Rn{2} LHCb has at its disposal the multistage trigger consisting of hardware-based level 0 trigger (\Gls{L0}) and software-based high level trigger (\Gls{HLT}).
+
+\Gls{L0} reduces the rate of data from 40 MHz to 1 MHz by employing five trigger decisions, also known as lines. First three lines make desicion using calorimeter information about the transverse energy deposited for photon, electron, and hadron. Two other lines are triggered by looking for transverse momentum for muon and dimuon (two muon tracks) objects.
+
+Secondly the High Level Trigger (HLT) reduces the data rate
+further down to the required 3-5 kHz ready to write to disk. L0 is a hardware trigger based on
+field programmable gate arrays and only uses information from the calorimeters and the muon
+system. The criteria necessary for keeping an event is a high transverse energy particle in the
+calorimeter or a reconstructed muon with high transverse momentum. In this thesis, transverse
+momentum, pT, is defined as the momentum component perpendicular to the beam axis. L0 uses
+techniques such as pipelining and parallelism to increase the amount of time allowed to make a
+decision. For the analyses described in this thesis, at L0, one muon is required to have pT greater
+than 1.48 (1.76) GeV/c in 2011 (2012) and has a rate of around 400 kHz. The pT requirement was
+tightened in 2012 due to the higher instantaneous luminosity in this period.
+
 
 

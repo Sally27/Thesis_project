@@ -11,6 +11,7 @@
 \glossaryentry{misID?\glossentry{misID}|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{ECAL?\glossentry{ECAL}|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{HCAL?\glossentry{HCAL}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{L0?\glossentry{L0}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{SM?\glossentry{SM}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{16}
@@ -91,3 +92,8 @@
 \glossaryentry{FOI?\glossentry{FOI}|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{RICH?\glossentry{RICH}|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{RICH?\glossentry{RICH}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{ID?\glossentry{ID}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{33}
+\glossaryentry{L0?\glossentry{L0}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{HLT?\glossentry{HLT}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{L0?\glossentry{L0}|setentrycounter[]{page}\glsnumberformat}{34}

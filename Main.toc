@@ -16,7 +16,9 @@
 \contentsline {section}{\numberline {2.6}Calorimetry}{28}{section.2.6}
 \contentsline {section}{\numberline {2.7}Muon Stations}{29}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Muon Identification}{31}{subsection.2.7.1}
-\contentsline {chapter}{Bibliography}{33}{table.caption.27}
-\contentsline {chapter}{Appendices}{36}{chapter*.28}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{36}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{39}{appendix.B}
+\contentsline {subsection}{\numberline {2.7.2}Muon Performance}{32}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}Trigger}{33}{section.2.8}
+\contentsline {chapter}{Bibliography}{35}{section.2.8}
+\contentsline {chapter}{Appendices}{38}{chapter*.29}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{38}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{41}{appendix.B}
