@@ -281,18 +281,31 @@ As in hadron performance measurements, muon ID is determined using high statisti
 \section{Trigger}
 Nowadays, big-data physics experiments have to make decisions on what kind of data they want to keep. The choice of interesting events is performed by series of decisions, which is cumulatively known as trigger. \Gls{LHCb} trigger system was build around constraints posed by the run conditions, read-out capabilities and available disk space. In Run \Rn{1} and Run \Rn{2} LHCb has at its disposal the multistage trigger consisting of hardware-based level 0 trigger (\Gls{L0}) and software-based high level trigger (\Gls{HLT}).
 
-\Gls{L0} reduces the rate of data from 40 MHz to 1 MHz by employing five trigger decisions, also known as lines. First three lines make desicion using calorimeter information about the transverse energy deposited for photon, electron, and hadron. Two other lines are triggered by looking for transverse momentum for muon and dimuon (two muon tracks) objects.
+\Gls{L0} reduces the rate of data from 40 MHz to 1 MHz by employing five trigger decisions, also known as lines. First three lines make desicion using calorimeter information about the transverse energy, $E_{T}$, whether it is photon, electron or hadron causing the shower energy deposit. Two other lines are reading out information from the muon system by looking for transverse momentum, $p_{T}$, of muon and dimuon (two muon tracks) objects. Efficiencies of L0 muon triggers are evaluated using $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ decays. Hadron trigger efficiency in different decay channels can be seen in \autoref{fig:L0Perf}. 
 
-Secondly the High Level Trigger (HLT) reduces the data rate
-further down to the required 3-5 kHz ready to write to disk. L0 is a hardware trigger based on
-field programmable gate arrays and only uses information from the calorimeters and the muon
-system. The criteria necessary for keeping an event is a high transverse energy particle in the
-calorimeter or a reconstructed muon with high transverse momentum. In this thesis, transverse
-momentum, pT, is defined as the momentum component perpendicular to the beam axis. L0 uses
-techniques such as pipelining and parallelism to increase the amount of time allowed to make a
-decision. For the analyses described in this thesis, at L0, one muon is required to have pT greater
-than 1.48 (1.76) GeV/c in 2011 (2012) and has a rate of around 400 kHz. The pT requirement was
-tightened in 2012 due to the higher instantaneous luminosity in this period.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width = 1.0\textwidth]{figs/detector/L0performance.eps}%
+	%\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
+	\caption{ \Gls{TOS} efficiency as a function of $p_{T}$ for muon-based decisions (left).         \Gls{TOS} efficiency for different decays using L0 hadron trigger lines. This figure is taken from \cite{LHCb-DP-2012-002}. }  
+	\label{fig:L0Perf}
+\end{figure}
+
+
+Software-based \Gls{HLT} then further reduces the rate from 1 MHz down to $40-80$ kHz which can be safely stored to disk. The first stage of the \Gls{HLT}, (\Gls{HLT1}), performs limited track reconstruction and hence makes decision based on the presence of charged tracks in the event. \Gls{HLT1} uses \Gls{VELO} hits to reconstructs \Gls{PV}s and \Gls{VELO} trakcs by using 3D pattern recognition. As \Gls{LHCb}'s primary mission is to study decays of hadrons containing $b$ and $c$ quark, \Gls{HLT1} will make decision based on the track segments being displaced (having high \Gls{IP}) with respect to the \Gls{PV}. For events selected by the $L0Muon$, an attempt is made to match the \Gls{VELO} tracks to hits observed in the vertical plane in the muon chambers due to magnet bending plane. By computing the track $\chi^2$, the potential muon track canditates are selected. Finally, the \Gls{VELO} tracks and muon tracks are extrapolated into the \Gls{OT} or \Gls{IT} trackers, allowing for so called \textit{forward tracking}, whereby $p$ and $p_{T}$ requirements are imposed to reduce processing time. Each track is then fitted with fast Kalman filter providing the $\chi^2$ of the fit.
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width = 1.0\textwidth]{figs/detector/HLT1performance.eps}%
+	%\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
+	\caption{ \Gls{HLT1} efficiencies of the corresponding triggers using the same proxy as in autoref{fig:L0Perf}.  This figure is taken from \cite{Albrecht:2013fba}. }  
+	\label{fig:L0Perf}
+\end{figure}
+
+The second stage $\Gls{HLT2}$ reduces the rate to 5 kHz that can be safely written to disk. $\Gls{HLT2}$ consists of a series of decisions based on a full reconstruction of either groups of decays or specific decay modes. \textit{Topological triggers} exploit the vertex and track information (topology) of $b$-hadron decays. By employing multivariate techniques 2,3 or 4-body decays away from $PV$ are reconstructed. To account for decays where final state particle is not fully reconstructed, corrected mass serves as an input variable in the the \Gls{BDT}. Dedicted lines are also written to reconstruct muon and dimuon channels allowing for both prompt $J/\psi$ and $B\rightarrow J/\psi X$ studies. Finally \textit{Exclusive triggers} concentrating on selecting events with $c\bar{c}$ do selection very similar to the offline selection but without \Gls{PID} cuts and with \textit{prescales}, only allowed in a certain fraction of events, is applied.
+
 
 
 

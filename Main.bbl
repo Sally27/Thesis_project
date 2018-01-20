@@ -171,4 +171,16 @@ F.~Archilli {\em et~al.},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Albrecht:2013fba}
+LHCb HLT project, J.~Albrecht, V.~V. Gligorov, G.~Raven, and S.~Tolk,
+  \ifthenelse{\boolean{articletitles}}{\emph{{Performance of the LHCb High
+  Level Trigger in 2012}},
+  }{}\href{http://dx.doi.org/10.1088/1742-6596/513/1/012001}{J.\ Phys.\ Conf.\
+  Ser.\  \textbf{513} (2014) 012001},
+  \href{http://arxiv.org/abs/1310.8544}{{\normalfont\ttfamily
+  arXiv:1310.8544}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \end{mcitethebibliography}

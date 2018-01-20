@@ -4,21 +4,21 @@
 \contentsline {chapter}{List of Figures}{9}{section*.9}
 \contentsline {chapter}{List of Tables}{12}{section*.11}
 \contentsline {chapter}{List of abbreviations and definitions}{13}{section*.13}
-\contentsline {chapter}{\numberline {1}Introduction}{15}{chapter.1}
-\contentsline {chapter}{\numberline {2}The LHCb detector}{16}{chapter.2}
-\contentsline {section}{\numberline {2.1}LHCb Layout}{17}{section.2.1}
-\contentsline {section}{\numberline {2.2}VErtex LOcator}{20}{section.2.2}
-\contentsline {section}{\numberline {2.3}Tracking System}{22}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Tracking Algorithms}{22}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Ring Imaging Detectors}{24}{section.2.4}
-\contentsline {section}{\numberline {2.5}RICH Reconstruction and Performance}{26}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}RICH performance}{26}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Calorimetry}{28}{section.2.6}
-\contentsline {section}{\numberline {2.7}Muon Stations}{29}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Muon Identification}{31}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Muon Performance}{32}{subsection.2.7.2}
-\contentsline {section}{\numberline {2.8}Trigger}{33}{section.2.8}
-\contentsline {chapter}{Bibliography}{35}{section.2.8}
-\contentsline {chapter}{Appendices}{38}{chapter*.29}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{38}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{41}{appendix.B}
+\contentsline {chapter}{\numberline {1}Introduction}{16}{chapter.1}
+\contentsline {chapter}{\numberline {2}The LHCb detector}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}LHCb Layout}{18}{section.2.1}
+\contentsline {section}{\numberline {2.2}VErtex LOcator}{21}{section.2.2}
+\contentsline {section}{\numberline {2.3}Tracking System}{23}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Tracking Algorithms}{23}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Ring Imaging Detectors}{25}{section.2.4}
+\contentsline {section}{\numberline {2.5}RICH Reconstruction and Performance}{27}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}RICH performance}{27}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Calorimetry}{29}{section.2.6}
+\contentsline {section}{\numberline {2.7}Muon Stations}{30}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Muon Identification}{32}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Muon Performance}{33}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}Trigger}{34}{section.2.8}
+\contentsline {chapter}{Bibliography}{37}{figure.caption.30}
+\contentsline {chapter}{Appendices}{40}{chapter*.31}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{40}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{43}{appendix.B}
