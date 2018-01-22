@@ -183,4 +183,72 @@ LHCb HLT project, J.~Albrecht, V.~V. Gligorov, G.~Raven, and S.~Tolk,
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Belyaev:2011zza}
+LHCb, I.~Belyaev {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Handling of the generation of
+  primary events in Gauss, the LHCb simulation framework}},
+  }{}\href{http://dx.doi.org/10.1088/1742-6596/331/3/032047}{J.\ Phys.\ Conf.\
+  Ser.\  \textbf{331} (2011) 032047}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{pythia6}
+T.~Sjostrand, S.~Mrenna, and P.~Z. Skands,
+  \ifthenelse{\boolean{articletitles}}{\emph{{PYTHIA 6.4 Physics and Manual}},
+  }{}\href{http://dx.doi.org/10.1088/1126-6708/2006/05/026}{JHEP \textbf{05}
+  (2006) 026}, \href{http://arxiv.org/abs/hep-ph/0603175}{{\normalfont\ttfamily
+  arXiv:hep-ph/0603175}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Lange:2001uf}
+D.~J. Lange, \ifthenelse{\boolean{articletitles}}{\emph{{The EvtGen particle
+  decay simulation package}},
+  }{}\href{http://dx.doi.org/10.1016/S0168-9002(01)00089-4}{Nucl.\ Instrum.\
+  Meth.\  \textbf{A462} (2001) 152}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{photos}
+P.~Golonka and Z.~Was, \ifthenelse{\boolean{articletitles}}{\emph{{PHOTOS Monte
+  Carlo: A Precision tool for QED corrections in $Z$ and $W$ decays}},
+  }{}\href{http://dx.doi.org/10.1140/epjc/s2005-02396-4}{Eur.\ Phys.\ J.\
+  \textbf{C45} (2006) 97},
+  \href{http://arxiv.org/abs/hep-ph/0506026}{{\normalfont\ttfamily
+  arXiv:hep-ph/0506026}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Geant4}
+Geant4 collaboration, J.~Allison {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Geant4 developments and
+  applications}}, }{}\href{http://dx.doi.org/10.1109/TNS.2006.869826}{IEEE
+  Trans.\ Nucl.\ Sci.\  \textbf{53} (2006) 270}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Agostinelli:2002hh}
+Geant4 collaboration, S.~Agostinelli {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Geant4: a simulation toolkit}},
+  }{}\href{http://dx.doi.org/10.1016/S0168-9002(03)01368-8}{Nucl.\ Instrum.\
+  Meth.\  \textbf{A506} (2003) 250}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Clemencic:2011zza}
+LHCb, M.~Clemencic {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{The LHCb simulation application,
+  Gauss: Design, evolution and experience}},
+  }{}\href{http://dx.doi.org/10.1088/1742-6596/331/3/032023}{J.\ Phys.\ Conf.\
+  Ser.\  \textbf{331} (2011) 032023}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \end{mcitethebibliography}

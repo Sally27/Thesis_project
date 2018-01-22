@@ -293,19 +293,57 @@ Nowadays, big-data physics experiments have to make decisions on what kind of da
 \end{figure}
 
 
-Software-based \Gls{HLT} then further reduces the rate from 1 MHz down to $40-80$ kHz which can be safely stored to disk. The first stage of the \Gls{HLT}, (\Gls{HLT1}), performs limited track reconstruction and hence makes decision based on the presence of charged tracks in the event. \Gls{HLT1} uses \Gls{VELO} hits to reconstructs \Gls{PV}s and \Gls{VELO} trakcs by using 3D pattern recognition. As \Gls{LHCb}'s primary mission is to study decays of hadrons containing $b$ and $c$ quark, \Gls{HLT1} will make decision based on the track segments being displaced (having high \Gls{IP}) with respect to the \Gls{PV}. For events selected by the $L0Muon$, an attempt is made to match the \Gls{VELO} tracks to hits observed in the vertical plane in the muon chambers due to magnet bending plane. By computing the track $\chi^2$, the potential muon track canditates are selected. Finally, the \Gls{VELO} tracks and muon tracks are extrapolated into the \Gls{OT} or \Gls{IT} trackers, allowing for so called \textit{forward tracking}, whereby $p$ and $p_{T}$ requirements are imposed to reduce processing time. Each track is then fitted with fast Kalman filter providing the $\chi^2$ of the fit.
+Software-based \Gls{HLT} then further reduces the rate from 1 MHz down to $40-80$ kHz which can be safely stored to disk. The first stage of the \Gls{HLT}, (\Gls{HLT1}), performs limited track reconstruction and hence makes decision based on the presence of charged tracks in the event. \Gls{HLT1} uses \Gls{VELO} hits to reconstructs \Gls{PV}s and \Gls{VELO} trakcs by using 3D pattern recognition. As \Gls{LHCb}'s primary mission is to study decays of hadrons containing $b$ and $c$ quark, \Gls{HLT1} will make decision based on the track segments being displaced (having high \Gls{IP}) with respect to the \Gls{PV}. For events selected by the $L0Muon$, an attempt is made to match the \Gls{VELO} tracks to hits observed in the vertical plane in the muon chambers due to magnet bending plane. By computing the track $\chi^2$, the potential muon track canditates are selected. Finally, the \Gls{VELO} tracks and muon tracks are extrapolated into the \Gls{OT} or \Gls{IT} trackers, allowing for so called \textit{forward tracking}, whereby $p$ and $p_{T}$ requirements are imposed to reduce processing time. Each track is then fitted with fast Kalman filter providing the $\chi^2$ of the fit. The corresponding performance of \Gls{HLT1} trigger lines are shown in \autoref{fig:Hlt1Perf}.
 
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width = 1.0\textwidth]{figs/detector/HLT1performance.eps}%
 	%\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
-	\caption{ \Gls{HLT1} efficiencies of the corresponding triggers using the same proxy as in autoref{fig:L0Perf}.  This figure is taken from \cite{Albrecht:2013fba}. }  
-	\label{fig:L0Perf}
+	\caption{ \Gls{HLT1} efficiencies of the corresponding triggers using the same proxy as in \autoref{fig:L0Perf}.  This figure is taken from \cite{Albrecht:2013fba}. }  
+	\label{fig:Hlt1Perf}
 \end{figure}
 
 The second stage $\Gls{HLT2}$ reduces the rate to 5 kHz that can be safely written to disk. $\Gls{HLT2}$ consists of a series of decisions based on a full reconstruction of either groups of decays or specific decay modes. \textit{Topological triggers} exploit the vertex and track information (topology) of $b$-hadron decays. By employing multivariate techniques 2,3 or 4-body decays away from $PV$ are reconstructed. To account for decays where final state particle is not fully reconstructed, corrected mass serves as an input variable in the the \Gls{BDT}. Dedicted lines are also written to reconstruct muon and dimuon channels allowing for both prompt $J/\psi$ and $B\rightarrow J/\psi X$ studies. Finally \textit{Exclusive triggers} concentrating on selecting events with $c\bar{c}$ do selection very similar to the offline selection but without \Gls{PID} cuts and with \textit{prescales}, only allowed in a certain fraction of events, is applied.
 
 
+In the end, selected events have their trigger decisions categorized by different type.  An event where signal candidate caused the trigger to fire is known to be Trigger on Signal (\Gls{TOS}). An event where it is non-signal like particle causing the trigger decision to occur, Trigger Independent of Signal (\Gls{TIS}) is used. Finally, if only by combination of signal particle together with other particle's properties in the event produce affirmative decision, then these events are categorized as \Gls{TIS} $\&$ \Gls{TOS} = \Gls{TISTOS}.
+
+
+\section{Simulation}
+In order to optimise the event selections, extract efficiencies and model the backgrounds, a full Monte Carlo Simulation \Gls{MC} starting from simulation the $pp$ collision to detector readout of decay of interest is produced. 
+The $pp$ collisions within \Gls{LHCb} configuration \cite{Belyaev:2011zza} are simulated with Pythia 6.4 \cite{pythia6} and Pythia 8.2 \cite{pythia8}. \Gls{LHCb} specific settings are mostly related to running conditions: luminosity, number of collisions per bunch crossing as well as contamination from other bunches, \textit{spill-over}. 
+
+In the $pp$ collision, the $b$ and $c$ production mechanisms are simulated and then the following $b\bar{b}$ or $c\bar{c}$ pair is hadronized into hadrons of interest. In this thesis and the analysis presented, \Bp is the hadron of interest. Hadrons are then further decayed using EVTGEN \cite{Lange:2001uf} into the chosen decay products. In this stage, different physics models or inputs from theory can be configured. At the same time some initial CPU-friendly selection is established, usually requiring the hadrons to be contained within the forward detector's acceptance.
+In order to account for the effects of \Gls{QED} radiative corrections, PHOTOS \cite{photos} algorithm can be used. All of this combined establishes \textit{generator-level simulation} of LHCb.
+
+
+In the next phase, \textit{detector simulation}, the interactions of the all the particles with the detector, transport, as well as detector's response are simulated using the C++ GEANT4 toolkit \cite{Geant4},\cite{Agostinelli:2002hh}. \Gls{LHCb}'s interface to GEANT4 is detailed in \cite{Clemencic:2011zza}. 
+
+\subsection{Differences in Simulation And Data}
+Despite the complexity and best intention of the \Gls{LHCb} simulation, there are several shortcomings that represent different degrees of obstacles of its use.
+The most afftected variables necessary for physics analyses that one needs to consider are impact parameter, track reconstruction efficiencies,\Gls{PID} variables and track occupancy.
+
+The IP resolution is better in the simulation than the data, as shown in Fig. 3.8. This
+is likely caused by the distribution of material in the VELO and the scattering of particles
+by the VELO not being modelled precisely in the Geant 4 stage of the simulation. The
+correct IP resolution is achieved by smearing the (x, y) position of the tracks with a
+Gaussian distribution, the width of which defines a ‘smearing scale’, calibrated such that
+a scale of 1.0 reproduces the data IP distribution and 0 corresponds to no smearing being
+applied.
+The overall track reconstruction efficiency is replicated by the simulation to within
+1%, where the efficiency is measured in data using the ‘tag-and-probe’ technique with
+J/ψ → μ+μ− decays [15]. There are slightly larger data-simulation deviations in some
+bins of track p and η, as shown in Fig. 3.21, caused by small inaccuracies in the material
+description of the tracking system, the relative alignment between its different compo-
+nents and the modelling of scattering interactions. When calculating the reconstruction
+efficiency of a decay each final state particle is assigned a weight which corrects the effi-
+ciency to that measured in data, using the values shown in Fig. 3.21.
+The DLL variables are not well replicated in the simulation. This is primary because
+the photoelectron background is underestimated in the simulation. This in turn is caused
+by the multiplicity of low momentum tracks originating from secondary interactions in
+the detector and beampipe being lower than in data. To correct for this the likelihood for
+a particle to pass a given DLL cut is extracted from the data using the PID calibration
+samples detailed in Appendix B.
 
 
