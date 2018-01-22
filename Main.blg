@@ -8,44 +8,44 @@ Database file #2: LHCb-PAPER.bib
 Database file #3: LHCb-CONF.bib
 Database file #4: LHCb-DP.bib
 Database file #5: LHCb-TDR.bib
-You've used 24 entries,
+You've used 26 entries,
             2909 wiz_defined-function locations,
-            832 strings with 9669 characters,
-and the built_in function-call counts, 90843 in all, are:
-= -- 9911
-> -- 169
+            850 strings with 10072 characters,
+and the built_in function-call counts, 94761 in all, are:
+= -- 10332
+> -- 181
 < -- 0
-+ -- 657
-- -- 40
-* -- 9168
-:= -- 11237
-add.period$ -- 24
-call.type$ -- 24
-change.case$ -- 24
++ -- 705
+- -- 43
+* -- 9528
+:= -- 11771
+add.period$ -- 26
+call.type$ -- 26
+change.case$ -- 26
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 1560
-empty$ -- 9579
-format.name$ -- 40
-if$ -- 19847
+cite$ -- 26
+duplicate$ -- 1688
+empty$ -- 9972
+format.name$ -- 43
+if$ -- 20691
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 107
-newline$ -- 155
-num.names$ -- 19
-pop$ -- 398
+int.to.str$ -- 26
+missing$ -- 118
+newline$ -- 167
+num.names$ -- 21
+pop$ -- 429
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 181
+skip$ -- 194
 stack$ -- 0
-substring$ -- 26652
+substring$ -- 27661
 swap$ -- 0
-text.length$ -- 48
+text.length$ -- 52
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 553
-width$ -- 26
-write$ -- 375
+while$ -- 599
+width$ -- 28
+write$ -- 407

@@ -11,7 +11,7 @@ CERN built one of the most exciting laboratories to study elementary particle in
   \label{fig:AcceleratorComplex}
 \end{figure}
 
-The Large Hadron Collider (LHC) is a complex machine which accelerates beams of protons in opposite directions in $\sim$ 27km circular tunnel. It is located
+The Large Hadron Collider (LHC) is a complex machine which accelerates beams of protons in opposite directions in $$\sim$$ 27km circular tunnel. It is located
 50-157\m below ground on the border of Switzerland and France. Once the desired energy is achieved proton-proton, $pp$, or ion, collisions happen at four distinct points, where different detectors with different physics focus are located. These are \Gls{ATLAS}, \Gls{CMS}, \Gls{ALICE} and \Gls{LHCb}. 
 Study of \Bmumumu was performed using data obtained at \Gls{LHCb}. 
 
@@ -23,8 +23,9 @@ Contrary to the two general purpose detectors where the collisions are occuring 
 
 \begin{figure}
 	\centering
-	\includegraphics[scale = 0.3]{figs/detector/Acceptance.pdf}
-	\caption{Angular production and acceptance of LHCb's $b\bar{b}$ pair (in red) as well as General Purpose Detector (in yellow). \Gls{LHCb} covers region with highest production cross-section at 8 \tev. These plots were produced using PYTHIA8 \cite{pythia8} simulation. This plot was taken from \cite{acceptance}.}
+	\includegraphics[scale = 0.4]{figs/detector/Acceptance.pdf}%
+	\includegraphics[scale = 0.5]{figs/detector/ProbInt.png}
+	\caption{Angular production and acceptance of LHCb's $b\bar{b}$ pair (in red) as well as General Purpose Detector (in yellow). \Gls{LHCb} covers region with highest production cross-section at 8 \tev. These plots were produced using PYTHIA8 \cite{pythia8} simulation. This plot was taken from \cite{acceptance} (left). Probability of interaction per bunch crossing as a function of instanteneous luminosity. This figure was obtained from \cite{Raven:2007zi} (right).}
 	\label{fig:Acceptance}
 \end{figure}
 
@@ -33,7 +34,7 @@ The angular coverage of \Gls{LHCb} is formally defined using pseudorapidity $\et
 \begin{equation}
 	\eta = -\ln (\tan\frac{\theta}{2})
 \end{equation}	
-where $\theta$ is defined in \autoref{fig:LHCbDetector}. \Gls{LHCb} detector, hence, covers the region $2<\eta<5$. The production cross-section of the fundamental process of $pp\rightarrow b\bar{b}X$ was measured in this region yielding, $\sigma (pp\rightarrow b\bar{b}X)$= 75.3$\pm$5.4$\pm$13.0 $\upmu$b at 7 \tev \cite{LHCb-PAPER-2010-002} and 144$\pm$1$\pm$21 $\upmu$b at 13 \tev \cite{LHCb-PAPER-2016-031}, which shows that the production cross-sections scales roughly linearly with the centre-of-mass energy.
+where $\theta$ is defined in \autoref{fig:LHCbDetector}. \Gls{LHCb} detector, hence, covers the region $2<\eta<5$. The production cross-section of the fundamental process of $pp\rightarrow b\bar{b}X$ was measured in this region yielding, $\sigma (pp\rightarrow b\bar{b}X)$= 75.3$\pm$5.4$\pm$13.0 $\upmu$b at 7 \tev \cite{LHCb-PAPER-2010-002} and 144$\pm$1$\pm$21 $\upmu$b at 13 \tev \cite{LHCb-PAPER-2016-031}, which shows that the production cross-sections scales roughly linearly with the centre-of-mass energy. Assuming design conditions of LHCb, seen in \autoref{tab:runcond}, 2$\fb^{-1}$ of data would correspond to $10^{12}$ of $b\bar{b}$ pairs being produced. 
 
 \begin{figure}
 	\centering
@@ -42,11 +43,12 @@ where $\theta$ is defined in \autoref{fig:LHCbDetector}. \Gls{LHCb} detector, he
 	\label{fig:LHCbDetector}
 \end{figure}
 
+Despite such impressive statistics of $b\bar{b}$ pairs available to \Gls{LHCb}, the bottleneck arises in much more copious inelastic background. It mostly originates from soft QCD processes which are related to the amount of pile-up, the visible number of $pp$ interaction in the visible events. By looking at the probability of number of $pp$ interaction per bunch crossing as a function of luminosity, shown in \autoref{fig:Acceptance}, it can be noted that the maximum probability for only one $pp$ interaction (and hence minimizing the background) is found to be at the LHCb design luminosity. In addition, to keep the occupancy of the detector reasonable, global event cuts, \textit{GEC}s, are put in the place, where only events with 600 (in 7,8 \tev) and 450 (in 13 \tev) tracks and less are allowed to be processed.
 
-To limit the background coming from especially soft QCD processes (due to hadronic collision enviroment) global event cuts, \textit{GEC}s, are put in the place. To limit the occupancy of the detector only events with 600 (in 7,8 \tev) and 450 (in 13 \tev) tracks and less are allowed to be processed. In order to achieve these occupancies, $\mu_{vis}$, the average number of visible $pp$ interactions per bunch-crossing is kept below 1, so that the pile-up, the visible number of $pp$ interaction in the visible events, is limited. This LHCb-specific control of luminosity is achieved by \textit{luminosity levelling}. This procedure achieves stable instantenous luminosity by controlling the transverse overlap of the beams at collision point. It limits the effects of luminosity decay, which can lead to trigger alterations during specific data taking run, resulting in systematic uncertainties.
+As \Gls{LHCb} requires much lower luminosity compared to other LHC detectors, it is achieved by LHCb-specific control of luminosity known as \textit{luminosity levelling}. This procedure achieves stable instantenous luminosity by controlling the transverse overlap of the beams at collision point. It limits the effects of luminosity decay, which can lead to trigger alterations during specific data taking run, resulting in systematic uncertainties.
 
-So far, the detector has been running since 2010, with collected integrated luminosity shown in \autoref{fig:lhcbintlumi}. As compared to \Gls{ATLAS} and \Gls{CMS} the integrated luminosity is much lower, due to allowed pile-up conditions. In 2017, there were two $pp$ collision energies at which the data was taken: at $\sqrt(s)$  = 13 and 5 TeV. Run \Rn{1} data-taking (2010-2012) was paused by Long Shutdown 1 (\Gls{LS1}) and followed with Run \Rn{2} data-taking (2015-2018). 
 
+So far, the detector has been running since 2010, with collected integrated luminosity shown in \autoref{fig:lhcbintlumi}. As compared to \Gls{ATLAS} and \Gls{CMS} the integrated luminosity is much lower, due to allowed pile-up conditions. In 2017, there were two $pp$ collision energies at which the data was taken: at $\sqrt(s)$  = 13 and 5 TeV. Run \Rn{1} data-taking (2010-2012) was paused by Long Shutdown 1 (\Gls{LS1}) and followed with Run \Rn{2} data-taking (2015-2018). The summary of LHCb running conditions is provided in \autoref{tab:runcond}, showing the evolution of the instantenous luminosity as well as the frequency of collisions compared to the design proposal.
 %Formally \Gls{LHCb}   detector is placed along the beamline, where $x,y,z$ a spectrometer which cover the region of 300 \mrad defined a
 %http://lhcb.web.cern.ch/lhcb/speakersbureau/excel/default.html
 
@@ -59,22 +61,22 @@ So far, the detector has been running since 2010, with collected integrated lumi
 
 
 
-%\begin{table}[!h]
-%	\centering
-%	\hspace*{-0.8cm}
-%	\begin{tabular}{l c c c c }
-%		\hline
-%		 & $\sqrt(s)$ [TeV] & Luminosity $\mathcal{L}$ [$\times10^{32} cm^{-2}
-%		s^{-1}$] & Number of Bunches & Bunch Spacing [ns] \\ \hline
-%		2011 & 7  & 3.5 & 1300 &  50\\
-%		2012 & 8 & 4 & 1300 &  50\\
-%		2015 & 13 & 4 &  1.12 &  25\\      
-%		2016 & 13 & 4 &  1.12 &  25\\      
-%		2017 & 13 & 4 &  1.12 &  25\\\hline      
-%	\end{tabular}
-%	\caption{}
-%	\label{tab:runcond}
-%\end{table}   
+\begin{table}[!h]
+	\centering
+	\hspace*{-0.8cm}
+	\begin{tabular}{l c c l }
+		\hline
+		year & $\sqrt(s)$ [TeV] & Instantenous Luminosity $\mathcal{L}$ [$\times10^{32}                 cm^{-2}	s^{-1}$] \\ \hline
+		Design & Up to 14 & 2\\
+		2011 & 7 & $\sim$ 3.0-3.5 \\
+		2012 & 8 & $\sim$ 4.0 \\
+		2015 & 13 & $\sim$ 0.5-4.5 \\      
+		2016 & 13 & $\sim$ 4.0  \\      
+		2017 & 13 & $\sim$4.0-6.0 \\\hline      
+	\end{tabular}
+	\caption{Running conditions of LHC and \Gls{LHCb} in different years of data-taking. The statistics of LHCb's instantenous luminosity is extracted using run database. }
+	\label{tab:runcond}
+\end{table}   
 
 \begin{figure}
 	\centering
@@ -97,7 +99,7 @@ The closest detector around the collision point is VErtex LOcator (\Gls{VELO}). 
 
 
 
- The detector consists of two sets of 21 silicon modules positioned around the beam pipe, where each module has 2 types of half-moon-shaped discs. In the first disc type the strips are arranged to provide radial information ($R$), whereas the second type provides azimuthal ($\phi$) information. As $pp$ interaction point brings high radiation dose for this detector, the first sensitive strip starts only at a distance of 8 \mm once stable beams are declared. Throughout the beam injection, when the beam radius may be larger, the two sets are moved away 3 \cm perpendicularly from the interaction point. For the ($R$) sensor The individual module's strip pitch, distance between two strips, varies from 38 $\mu m$ to 102 $\mu m$ away from the beam pipe, so that the hit occupancy is roughly even. This setup, which can be seen in \autoref{fig:veloover}, brings outstanding hit resolution (4-40$\mu m$). 
+ The detector consists of two sets of 21 silicon modules positioned around the beam pipe, where each module has 2 types of half-moon-shaped discs. In the first disc type the strips are arranged to provide radial information ($R$), whereas the second type provides azimuthal ($\phi$) information. As $pp$ interaction point brings high radiation dose for this detector, the first sensitive strip starts only at a distance of 8 \mm once stable beams are declared. Throughout the beam injection, when the beam radius may be larger, the two sets are moved away 3 \cm perpendicularly from the interaction point. For the ($R$) sensor, the individual module's strip pitch, distance between two strips, varies from 38 $\mu m$ to 102 $\mu m$ away from the beam pipe, so that the hit occupancy is roughly even . This setup, which can be seen in \autoref{fig:veloover}, brings outstanding hit resolution (4-40$\mu m$). 
 
 \begin{figure}[!h]
 	\centering
@@ -321,29 +323,22 @@ In order to account for the effects of \Gls{QED} radiative corrections, PHOTOS \
 In the next phase, \textit{detector simulation}, the interactions of the all the particles with the detector, transport, as well as detector's response are simulated using the C++ GEANT4 toolkit \cite{Geant4},\cite{Agostinelli:2002hh}. \Gls{LHCb}'s interface to GEANT4 is detailed in \cite{Clemencic:2011zza}. 
 
 \subsection{Differences in Simulation And Data}
-Despite the complexity and best intention of the \Gls{LHCb} simulation, there are several shortcomings that represent different degrees of obstacles of its use.
-The most afftected variables necessary for physics analyses that one needs to consider are impact parameter, track reconstruction efficiencies,\Gls{PID} variables and track occupancy.
+Despite the complexity and best intention of the \Gls{LHCb} simulation, there are several shortcomings that require correction treatment.
+The most afftected variables necessary for physics analyses that one needs to consider are \Gls{IP} resolution, track reconstruction efficiencies, \Gls{PID} variables and track occupancy.
 
-The IP resolution is better in the simulation than the data, as shown in Fig. 3.8. This
-is likely caused by the distribution of material in the VELO and the scattering of particles
-by the VELO not being modelled precisely in the Geant 4 stage of the simulation. The
-correct IP resolution is achieved by smearing the (x, y) position of the tracks with a
-Gaussian distribution, the width of which defines a ‘smearing scale’, calibrated such that
-a scale of 1.0 reproduces the data IP distribution and 0 corresponds to no smearing being
-applied.
-The overall track reconstruction efficiency is replicated by the simulation to within
-1%, where the efficiency is measured in data using the ‘tag-and-probe’ technique with
-J/ψ → μ+μ− decays [15]. There are slightly larger data-simulation deviations in some
-bins of track p and η, as shown in Fig. 3.21, caused by small inaccuracies in the material
-description of the tracking system, the relative alignment between its different compo-
-nents and the modelling of scattering interactions. When calculating the reconstruction
-efficiency of a decay each final state particle is assigned a weight which corrects the effi-
-ciency to that measured in data, using the values shown in Fig. 3.21.
-The DLL variables are not well replicated in the simulation. This is primary because
-the photoelectron background is underestimated in the simulation. This in turn is caused
-by the multiplicity of low momentum tracks originating from secondary interactions in
-the detector and beampipe being lower than in data. To correct for this the likelihood for
-a particle to pass a given DLL cut is extracted from the data using the PID calibration
-samples detailed in Appendix B.
+The \Gls{IP} resolution shows better trend in the simulation then in the data due to the mismodelling of material description of \Gls{VELO} simulation. As shown in \autoref{fig:IPRES} \Gls{IP} resolution does greatly differ depending the variation of material density of \Gls{VELO}. Around $\phi=\pm\pi/2$, where the two \Gls{VELO} parts overlap, the material difference causes the discrepancy. It can be corrected either by reweighting to data or by smearing the resolution wit Gaussian distribution.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{figs/detector/IPres.eps}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/IPresAngle.eps}%
+	\caption{\Gls{IP} resolution in x-direction comparing the data and simulation output for 2012 data-taking period (left). \Gls{IP} resolution in x-direction comparing the data and simulation output for 2011 data-taking period as a function of angle, $\phi$ (right). This figures are taken from \cite{LHCbVELOGroup:2014uea}. }  
+	\label{fig:IPRES}
+\end{figure}
+
+
+Track reconstruction efficiency is also not reproduced very well in certain kinematical bins, again due to modelling of scattering interactions.
+
+The most critical problem that needs to be addressed in the presented analysis are the inaccuracies of \Gls{PID} variables, which are mismodelled in the simulation. The origin of this problem arises as a consequence of much lower estimate of low momentum tracks in the detector making the photoelectron background underestimated. This results in better performace of separation power in simulation and is corrected using real data calibration.
 
 

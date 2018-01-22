@@ -36,6 +36,15 @@ LHCb collaboration, \ifthenelse{\boolean{articletitles}}{\emph{Image of the
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Raven:2007zi}
+G.~Raven, \ifthenelse{\boolean{articletitles}}{\emph{{LHCb: Status and
+  prospects}},
+  }{}\href{http://dx.doi.org/10.1016/j.nuclphysbps.2006.09.019}{Nucl.\ Phys.\
+  Proc.\ Suppl.\  \textbf{163} (2007) 153}, [,153(2007)]\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{LHCb-PAPER-2010-002}
 LHCb collaboration, R.~Aaij {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Measurement of
@@ -247,6 +256,16 @@ LHCb, M.~Clemencic {\em et~al.},
   Gauss: Design, evolution and experience}},
   }{}\href{http://dx.doi.org/10.1088/1742-6596/331/3/032023}{J.\ Phys.\ Conf.\
   Ser.\  \textbf{331} (2011) 032023}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCbVELOGroup:2014uea}
+R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{Performance
+  of the LHCb Vertex Locator}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/9/09/P09007}{JINST \textbf{9}
+  (2014) 09007}, \href{http://arxiv.org/abs/1405.7808}{{\normalfont\ttfamily
+  arXiv:1405.7808}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
