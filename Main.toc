@@ -9,18 +9,18 @@
 \contentsline {section}{\numberline {2.1}LHCb Layout}{18}{section.2.1}
 \contentsline {section}{\numberline {2.2}VErtex LOcator}{22}{section.2.2}
 \contentsline {section}{\numberline {2.3}Tracking System}{24}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Tracking Algorithms}{24}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Ring Imaging Detectors}{26}{section.2.4}
-\contentsline {section}{\numberline {2.5}RICH Reconstruction and Performance}{28}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}RICH performance}{28}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Calorimetry}{30}{section.2.6}
-\contentsline {section}{\numberline {2.7}Muon Stations}{31}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Muon Identification}{33}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Muon Performance}{34}{subsection.2.7.2}
-\contentsline {section}{\numberline {2.8}Trigger}{35}{section.2.8}
-\contentsline {section}{\numberline {2.9}Simulation}{38}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Differences in Simulation And Data}{39}{subsection.2.9.1}
-\contentsline {chapter}{Bibliography}{41}{figure.caption.32}
-\contentsline {chapter}{Appendices}{45}{chapter*.33}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{45}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{48}{appendix.B}
+\contentsline {subsection}{\numberline {2.3.1}Tracking Algorithms}{25}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Ring Imaging Detectors}{27}{section.2.4}
+\contentsline {section}{\numberline {2.5}RICH Reconstruction and Performance}{29}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}RICH performance}{29}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Calorimetry}{31}{section.2.6}
+\contentsline {section}{\numberline {2.7}Muon Stations}{32}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Muon Identification}{34}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Muon Performance}{35}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}Trigger}{36}{section.2.8}
+\contentsline {section}{\numberline {2.9}Simulation}{40}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Differences in Simulation And Data}{41}{subsection.2.9.1}
+\contentsline {chapter}{Bibliography}{43}{figure.caption.34}
+\contentsline {chapter}{Appendices}{47}{chapter*.35}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{47}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{50}{appendix.B}

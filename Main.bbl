@@ -106,6 +106,16 @@ The LHCb collaboration, A.~A. Alves, Jr.\ {\em et~al.},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{LHCbVELOGroup:2014uea}
+R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{Performance
+  of the LHCb Vertex Locator}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/9/09/P09007}{JINST \textbf{9}
+  (2014) 09007}, \href{http://arxiv.org/abs/1405.7808}{{\normalfont\ttfamily
+  arXiv:1405.7808}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{OT}
 \ifthenelse{\boolean{articletitles}}{\emph{{Image of the Tracker System taken
   from
@@ -122,6 +132,15 @@ LHCb collaboration, R.~Aaij {\em et~al.},
   }{}\href{http://dx.doi.org/10.1088/1748-0221/10/02/P02007}{JINST \textbf{10}
   (2015) P02007}, \href{http://arxiv.org/abs/1408.1251}{{\normalfont\ttfamily
   arXiv:1408.1251}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Hierk:684697}
+R.~Hierk, M.~Merk, M.~Needham, and R.~Van~der Eijk,
+  \ifthenelse{\boolean{articletitles}}{\emph{{Performance of the LHCb 00 track
+  fitting software}}, }{} Tech. Rep. LHCb-2000-086, CERN, Geneva, Aug,
+  2000\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -192,6 +211,15 @@ LHCb HLT project, J.~Albrecht, V.~V. Gligorov, G.~Raven, and S.~Tolk,
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{triggerscheme}
+\ifthenelse{\boolean{articletitles}}{\emph{{Images of different trigger schemes
+  taken from
+  \href{https://lhcb.web.cern.ch/lhcb/speakersbureau/html/TriggerScheme.html}{the
+  LHCb speaker's bureau web page}}}, }{} Accessed in 2018\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{Belyaev:2011zza}
 LHCb, I.~Belyaev {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Handling of the generation of
@@ -256,16 +284,6 @@ LHCb, M.~Clemencic {\em et~al.},
   Gauss: Design, evolution and experience}},
   }{}\href{http://dx.doi.org/10.1088/1742-6596/331/3/032023}{J.\ Phys.\ Conf.\
   Ser.\  \textbf{331} (2011) 032023}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem{LHCbVELOGroup:2014uea}
-R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{Performance
-  of the LHCb Vertex Locator}},
-  }{}\href{http://dx.doi.org/10.1088/1748-0221/9/09/P09007}{JINST \textbf{9}
-  (2014) 09007}, \href{http://arxiv.org/abs/1405.7808}{{\normalfont\ttfamily
-  arXiv:1405.7808}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

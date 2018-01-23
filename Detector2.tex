@@ -34,7 +34,7 @@ The angular coverage of \Gls{LHCb} is formally defined using pseudorapidity $\et
 \begin{equation}
 	\eta = -\ln (\tan\frac{\theta}{2})
 \end{equation}	
-where $\theta$ is defined in \autoref{fig:LHCbDetector}. \Gls{LHCb} detector, hence, covers the region $2<\eta<5$. The production cross-section of the fundamental process of $pp\rightarrow b\bar{b}X$ was measured in this region yielding, $\sigma (pp\rightarrow b\bar{b}X)$= 75.3$\pm$5.4$\pm$13.0 $\upmu$b at 7 \tev \cite{LHCb-PAPER-2010-002} and 144$\pm$1$\pm$21 $\upmu$b at 13 \tev \cite{LHCb-PAPER-2016-031}, which shows that the production cross-sections scales roughly linearly with the centre-of-mass energy. Assuming design conditions of LHCb, seen in \autoref{tab:runcond}, 2$\fb^{-1}$ of data would correspond to $10^{12}$ of $b\bar{b}$ pairs being produced. 
+where $\theta$ is defined in \autoref{fig:LHCbDetector}. \Gls{LHCb} detector, hence, covers the region $2<\eta<5$. The production cross-section of the fundamental process of $pp\rightarrow b\bar{b}X$ was measured in this region yielding, $\sigma (pp\rightarrow b\bar{b}X)$= 75.3$\pm$5.4$\pm$13.0 $\mub$b at 7 \tev \cite{LHCb-PAPER-2010-002} and 144$\pm$1$\pm$21 $\mub$ at 13 \tev \cite{LHCb-PAPER-2016-031}, which shows that the production cross-sections scales roughly linearly with the centre-of-mass energy. Assuming design conditions of LHCb, seen in \autoref{tab:runcond}, 2$\fb^{-1}$ of data would correspond to $10^{12}$ of $b\bar{b}$ pairs being produced. 
 
 \begin{figure}
 	\centering
@@ -43,9 +43,9 @@ where $\theta$ is defined in \autoref{fig:LHCbDetector}. \Gls{LHCb} detector, he
 	\label{fig:LHCbDetector}
 \end{figure}
 
-Despite such impressive statistics of $b\bar{b}$ pairs available to \Gls{LHCb}, the bottleneck arises in much more copious inelastic background. It mostly originates from soft QCD processes which are related to the amount of pile-up, the visible number of $pp$ interaction in the visible events. By looking at the probability of number of $pp$ interaction per bunch crossing as a function of luminosity, shown in \autoref{fig:Acceptance}, it can be noted that the maximum probability for only one $pp$ interaction (and hence minimizing the background) is found to be at the LHCb design luminosity. In addition, to keep the occupancy of the detector reasonable, global event cuts, \textit{GEC}s, are put in the place, where only events with 600 (in 7,8 \tev) and 450 (in 13 \tev) tracks and less are allowed to be processed.
+Despite such impressive statistics of $b\bar{b}$ pairs available to \Gls{LHCb}, the bottleneck arises in much more copious inelastic background. It mostly originates from soft QCD processes which are related to the amount of pile-up, the visible number of $pp$ interaction in the visible events. By looking at the probability of number of $pp$ interaction per bunch crossing as a function of luminosity, shown in \autoref{fig:Acceptance}, it can be noted that the maximum probability for only one $pp$ interaction (and hence minimizing the background) is found to be at $\sim 2 \times10^{32} cm^{-2} s^{-1}$, hence the LHCb design luminosity. In addition, to keep the occupancy of the detector reasonable, global event cuts, \textit{GEC}s, are put in the place, where only events with 600 (in 7,8 \tev) and 450 (in 13 \tev) tracks and less are allowed to be processed.
 
-As \Gls{LHCb} requires much lower luminosity compared to other LHC detectors, it is achieved by LHCb-specific control of luminosity known as \textit{luminosity levelling}. This procedure achieves stable instantenous luminosity by controlling the transverse overlap of the beams at collision point. It limits the effects of luminosity decay, which can lead to trigger alterations during specific data taking run, resulting in systematic uncertainties.
+As \Gls{LHCb} requires much lower luminosity compared to other LHC detectors, it is achieved by LHCb-specific control of luminosity known as \textit{luminosity levelling}. This procedure achieves stable instantenous luminosity by controlling that the two beams do not collide straight head-on at collision point, but are moved with respect to each other. It limits the effects of luminosity decay, which can lead to trigger alterations during specific data taking run, resulting in systematic uncertainties.
 
 
 So far, the detector has been running since 2010, with collected integrated luminosity shown in \autoref{fig:lhcbintlumi}. As compared to \Gls{ATLAS} and \Gls{CMS} the integrated luminosity is much lower, due to allowed pile-up conditions. In 2017, there were two $pp$ collision energies at which the data was taken: at $\sqrt(s)$  = 13 and 5 TeV. Run \Rn{1} data-taking (2010-2012) was paused by Long Shutdown 1 (\Gls{LS1}) and followed with Run \Rn{2} data-taking (2015-2018). The summary of LHCb running conditions is provided in \autoref{tab:runcond}, showing the evolution of the instantenous luminosity as well as the frequency of collisions compared to the design proposal.
@@ -64,9 +64,9 @@ So far, the detector has been running since 2010, with collected integrated lumi
 \begin{table}[!h]
 	\centering
 	\hspace*{-0.8cm}
-	\begin{tabular}{l c c l }
+	\begin{tabular}{l c c }
 		\hline
-		year & $\sqrt(s)$ [TeV] & Instantenous Luminosity $\mathcal{L}$ [$\times10^{32}                 cm^{-2}	s^{-1}$] \\ \hline
+		year & $\sqrt(s)$ [TeV] & Instantenous Luminosity $\mathcal{L}$ [$\times10^{32} cm^{-2}	s^{-1}$] \\ \hline
 		Design & Up to 14 & 2\\
 		2011 & 7 & $\sim$ 3.0-3.5 \\
 		2012 & 8 & $\sim$ 4.0 \\
@@ -90,16 +90,13 @@ for LHCb, the luminosity is kept stable in a range of 5$\%$ for about 15 hours b
 In the following sections, brief discussion of different subdetectors is presented. Both hardware and software overview will be presented with particular emphasis given to Muon Station and Simulation of LHCb.
 
 \section{VErtex LOcator}
-The closest detector around the collision point is VErtex LOcator (\Gls{VELO}). This silicon-strip based detector, that extends 1 \m along the beam axis, is primarily used for to distinguish events from promt background. The typical differing property of a $B$ hadron decay includes large impact parameter (\Gls{IP}), the minimal distance between the track and primary vertex, in addition to significantly higher transverse momentum $p_{T}$. 
+The closest detector around the collision point is VErtex LOcator (\Gls{VELO}). This silicon-strip based detector, that extends 1 \m along the beam axis, is primarily used for to distinguish events from promt background. The typical differing property of a $B$ hadron decay includes large impact parameter (\Gls{IP}), the minimal distance between the track and primary vertex, in addition to significantly higher transverse momentum $p_{T}$. Main uses of this subdetector include finding: 
 \begin{itemize}
 \item primary vertices positions
 \item secondary vertices of short-lived particles (heavy quark hadrons)
 \item tracks that did NOT originate from primary vertex
 \end{itemize}.
 
-
-
- The detector consists of two sets of 21 silicon modules positioned around the beam pipe, where each module has 2 types of half-moon-shaped discs. In the first disc type the strips are arranged to provide radial information ($R$), whereas the second type provides azimuthal ($\phi$) information. As $pp$ interaction point brings high radiation dose for this detector, the first sensitive strip starts only at a distance of 8 \mm once stable beams are declared. Throughout the beam injection, when the beam radius may be larger, the two sets are moved away 3 \cm perpendicularly from the interaction point. For the ($R$) sensor, the individual module's strip pitch, distance between two strips, varies from 38 $\mu m$ to 102 $\mu m$ away from the beam pipe, so that the hit occupancy is roughly even . This setup, which can be seen in \autoref{fig:veloover}, brings outstanding hit resolution (4-40$\mu m$). 
 
 \begin{figure}[!h]
 	\centering
@@ -109,11 +106,23 @@ The closest detector around the collision point is VErtex LOcator (\Gls{VELO}). 
 	\label{fig:veloover}
 \end{figure}
 
+The detector consists of two sets of 21 silicon modules positioned around the beam pipe, where each module has 2 types of half-moon-shaped discs as seen in \autoref{fig:veloover}. In the first disc type the strips are arranged to provide radial information ($R$), whereas the second type provides azimuthal ($\phi$) information. As $pp$ interaction point brings high radiation dose for this detector, the first sensitive strip starts only at a distance of 8 \mm once stable beams are declared. Throughout the beam injection, when the beam radius may be larger, the two sets are moved away 3 \cm perpendicularly from the interaction point. For the ($R$) sensor, the individual module's strip pitch, distance between two strips, varies from 38 $\mum$ to 102 $\mum$ away from the beam pipe, so that the hit occupancy is roughly even. Each \Gls{VELO} half is kept within an alluminum welded box causing material overlap once stable beams are declared. These boxes then create their own vacuum which is different to the nominal LHC vacuum in order to protect the detector from any elelctromagnetic interference with the beam. 
+
+This setup brings outstanding hit resolution (4-40$\mum$), which in turn allows for very high impact parameter resolution and very good primary vertex resolution, as seen in \autoref{fig:veloIPres}. This is indispensable not only in order to perform the precise measurements of $B$ and $D$ lifetimes, but also to resolve oscillations caused by $B^{0}_{s}-\bar{B}^{0}_{s}$ mixing occuring at 3 trillion \hz rate.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{figs/detector/IPresmhm.eps}%
+        \includegraphics[width = 0.5\textwidth]{figs/detector/PVres.eps}
+	\caption{Two key variables which quantify performance of the \Gls{VELO} detector. \Gls{IP} resolution which is worse for low momentum tracks (left) and \Gls{PV} resolution dependent on the number of tracks forming the primary vertex $N$ (right). Figures taken from \cite{LHCbVELOGroup:2014uea}.}
+	\label{fig:veloIPres}
+\end{figure}
+
 
 \section{Tracking System}
 In addition to tracking information provided by \Gls{VELO}, the trajectories of charged particles are monitored by series of tracking subdetectors. The main task of these tracking subdetectors is to provide efficient reconstruction and precise measurement of particle's momentum. There are four tracking stations apart from \Gls{VELO}: Tracker Turicensis (\Gls{TT}), positioned upstream from magnet, and  \Gls{Tstation} tracking stations on the other side from the magnet. The 10 \m dipole magnet with $\approx$ 4 Tm integrated field provides enough strenght to bend charged particles with $p$ of 200 $GeV/c^{2}$.      
 
- Two different dectection technologies are used in these trackers reflecting the nature of track occupancy as function of distance from beam pipe. The tracker's part close to the beam pipe, \Gls{TT} station together with central region of T1-T3 (Inner Tracker (\Gls{IT}) expects higher occupancy, making use of the the silicon microstrip detection mechanism. The outer part of \Gls{Tstation} stations, also known as outer tracker \Gls{OT}, is made of a straw-tube detectors. It measures the hit position by measuring the drift-time of ionized electrons. This two technologies are seen in \autoref{fig:tracktype}. 
+ Two different dectection technologies are used in these trackers reflecting the nature of track occupancy as function of distance from beam pipe. The tracker's part close to the beam pipe, \Gls{TT} station together with central region of T1-T3, also known as Inner Tracker (\Gls{IT}), expects higher occupancy and makes use of the the silicon microstrip detection mechanism. The outer part of \Gls{Tstation} stations, also known as Outer Tracker \Gls{OT}, is made of a straw-tube detectors. It measures the hit position by measuring the drift-time of ionized electrons. This two technologies are seen in \autoref{fig:tracktype}. 
 
 \subsection{Tracking Algorithms}
 Different particles will leave different footprint in the detector. Charged particles will form tracks. Depending on presence of hits in individual subdetectors, they are grouped into several categories, visualized in \autoref{fig:tracktype}.
@@ -131,6 +140,11 @@ Different particles will leave different footprint in the detector. Charged part
 
 Most of the physics analyses use long tracks, tracks leaving hits in \Gls{VELO} and \Gls{Tstation}, as they give most precise momenta estimates.
 VELO tracks leave hits only in $R$ and $\Phi$ sensor, but not in any other tracking stations, meaning that they must have left \Gls{LHCb} acceptance or they come from particles produced backwards and hence are useful for $PV$ reconstruction. Upstream tracks are formed by tracks leaving hits in \Gls{VELO} and TT only. These are usually low momentum particles, which are bent out \Gls{LHCb} acceptance while traversing the magnet. Long-lived particles such as $\Lambda$ or $K^{0}_{s}$ will only decay ouside of the \Gls{VELO} acceptance and hence will produce no hits until \Gls{TT} and \Gls{Tstation} forming downstream tracks. T-track is track type that only have hits in \Gls{Tstation}. Again this could be due to presence of long-lived particles or due to secondary interactions in the detector.   
+
+In general, the track reconstruction software starts with \textit{pattern recognition}, where several hits in one part of a tracking subdetector are identified and form \textit{track seeds}, which are then extrapolated and combined with hits in other tracking subdetector provided this subdetector sits in low magnetic field. The long track candidates are formed and fitted with a Kalman filter\cite{Hierk:684697}, where because of the material present in the detector, corrections for energy losses as well as multiple scaterring are incorporated.
+
+Sometimes \textit{pattern recognition} may combine random hits into a track, \textit{ghost track}, or several tracks could be made out of same hits, \textit{clone track}. Presence of these tracks are heavily suppresed with different techniques - such as establishing ghost probability - variable based on the output of neural network combining track $\chi^{2}$ and missing hits in the subdetectors.
+
 Mass uncertainty is one of the crucial parameters to minimize as it provides opportunity for high precision measurements by better separations from backgrounds. It strongly correlates with momentum resolution that is obtained using tracking. Resulting relative momentum uncertainty (0.5-1.1\%) on long tracks using $J/\psi \rightarrow \mu^{+} \mu^{-}$ using \textit{tag and probe} can be seen in \autoref{fig:momres}. It varies logarithmically with increasing momentum.
 
 
@@ -283,7 +297,7 @@ As in hadron performance measurements, muon ID is determined using high statisti
 \section{Trigger}
 Nowadays, big-data physics experiments have to make decisions on what kind of data they want to keep. The choice of interesting events is performed by series of decisions, which is cumulatively known as trigger. \Gls{LHCb} trigger system was build around constraints posed by the run conditions, read-out capabilities and available disk space. In Run \Rn{1} and Run \Rn{2} LHCb has at its disposal the multistage trigger consisting of hardware-based level 0 trigger (\Gls{L0}) and software-based high level trigger (\Gls{HLT}).
 
-\Gls{L0} reduces the rate of data from 40 MHz to 1 MHz by employing five trigger decisions, also known as lines. First three lines make desicion using calorimeter information about the transverse energy, $E_{T}$, whether it is photon, electron or hadron causing the shower energy deposit. Two other lines are reading out information from the muon system by looking for transverse momentum, $p_{T}$, of muon and dimuon (two muon tracks) objects. Efficiencies of L0 muon triggers are evaluated using $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ decays. Hadron trigger efficiency in different decay channels can be seen in \autoref{fig:L0Perf}. 
+\Gls{L0} reduces the rate of data from 40 \mhz to 1 \mhz by employing five trigger decisions, also known as lines. First three lines make desicion using calorimeter information about the transverse energy, $E_{T}$, whether it is photon, electron or hadron causing the shower energy deposit. Two other lines are reading out information from the muon system by looking for transverse momentum, $p_{T}$, of muon and dimuon (two muon tracks) objects. Efficiencies of L0 muon triggers are evaluated using $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ decays. Hadron trigger efficiency in different decay channels can be seen in \autoref{fig:L0Perf}. 
 
 
 \begin{figure}[!h]
@@ -295,7 +309,7 @@ Nowadays, big-data physics experiments have to make decisions on what kind of da
 \end{figure}
 
 
-Software-based \Gls{HLT} then further reduces the rate from 1 MHz down to $40-80$ kHz which can be safely stored to disk. The first stage of the \Gls{HLT}, (\Gls{HLT1}), performs limited track reconstruction and hence makes decision based on the presence of charged tracks in the event. \Gls{HLT1} uses \Gls{VELO} hits to reconstructs \Gls{PV}s and \Gls{VELO} trakcs by using 3D pattern recognition. As \Gls{LHCb}'s primary mission is to study decays of hadrons containing $b$ and $c$ quark, \Gls{HLT1} will make decision based on the track segments being displaced (having high \Gls{IP}) with respect to the \Gls{PV}. For events selected by the $L0Muon$, an attempt is made to match the \Gls{VELO} tracks to hits observed in the vertical plane in the muon chambers due to magnet bending plane. By computing the track $\chi^2$, the potential muon track canditates are selected. Finally, the \Gls{VELO} tracks and muon tracks are extrapolated into the \Gls{OT} or \Gls{IT} trackers, allowing for so called \textit{forward tracking}, whereby $p$ and $p_{T}$ requirements are imposed to reduce processing time. Each track is then fitted with fast Kalman filter providing the $\chi^2$ of the fit. The corresponding performance of \Gls{HLT1} trigger lines are shown in \autoref{fig:Hlt1Perf}.
+Software-based \Gls{HLT} then further reduces the rate from 1 \mhz down to $40-80$ \khz which can be safely stored to disk. The first stage of the \Gls{HLT}, (\Gls{HLT1}), performs limited track reconstruction and hence makes decision based on the presence of charged tracks in the event. \Gls{HLT1} uses \Gls{VELO} hits to reconstructs \Gls{PV}s and \Gls{VELO} trakcs by using 3D pattern recognition. As \Gls{LHCb}'s primary mission is to study decays of hadrons containing $b$ and $c$ quark, \Gls{HLT1} will make decision based on the track segments being displaced (having high \Gls{IP}) with respect to the \Gls{PV}. For events selected by the $L0Muon$, an attempt is made to match the \Gls{VELO} tracks to hits observed in the vertical plane in the muon chambers due to magnet bending plane. By computing the track $\chi^2$, the potential muon track canditates are selected. Finally, the \Gls{VELO} tracks and muon tracks are extrapolated into the \Gls{OT} or \Gls{IT} trackers, allowing for so called \textit{forward tracking}, whereby $p$ and $p_{T}$ requirements are imposed to reduce processing time. Each track is then fitted with fast Kalman filter providing the $\chi^2$ of the fit. The corresponding performance of \Gls{HLT1} trigger lines are shown in \autoref{fig:Hlt1Perf}.
 
 
 \begin{figure}[!h]
@@ -306,10 +320,23 @@ Software-based \Gls{HLT} then further reduces the rate from 1 MHz down to $40-80
 	\label{fig:Hlt1Perf}
 \end{figure}
 
-The second stage $\Gls{HLT2}$ reduces the rate to 5 kHz that can be safely written to disk. $\Gls{HLT2}$ consists of a series of decisions based on a full reconstruction of either groups of decays or specific decay modes. \textit{Topological triggers} exploit the vertex and track information (topology) of $b$-hadron decays. By employing multivariate techniques 2,3 or 4-body decays away from $PV$ are reconstructed. To account for decays where final state particle is not fully reconstructed, corrected mass serves as an input variable in the the \Gls{BDT}. Dedicted lines are also written to reconstruct muon and dimuon channels allowing for both prompt $J/\psi$ and $B\rightarrow J/\psi X$ studies. Finally \textit{Exclusive triggers} concentrating on selecting events with $c\bar{c}$ do selection very similar to the offline selection but without \Gls{PID} cuts and with \textit{prescales}, only allowed in a certain fraction of events, is applied.
+The second stage $\Gls{HLT2}$ reduces the rate to 5 \khz that can be safely written to disk. $\Gls{HLT2}$ consists of a series of decisions based on a full reconstruction of either groups of decays or specific decay modes. \textit{Topological triggers} exploit the vertex and track information (topology) of $b$-hadron decays. By employing multivariate techniques 2,3 or 4-body decays away from $PV$ are reconstructed. To account for decays where final state particle is not fully reconstructed, corrected mass serves as an input variable in the the \Gls{BDT}. Dedicted lines are also written to reconstruct muon and dimuon channels allowing for both prompt $J/\psi$ and $B\rightarrow J/\psi X$ studies. Finally \textit{Exclusive triggers} concentrating on selecting events with $c\bar{c}$ do selection very similar to the offline selection but without \Gls{PID} cuts and with \textit{prescales}, only allowed in a certain fraction of events, is applied.
 
 
 In the end, selected events have their trigger decisions categorized by different type.  An event where signal candidate caused the trigger to fire is known to be Trigger on Signal (\Gls{TOS}). An event where it is non-signal like particle causing the trigger decision to occur, Trigger Independent of Signal (\Gls{TIS}) is used. Finally, if only by combination of signal particle together with other particle's properties in the event produce affirmative decision, then these events are categorized as \Gls{TIS} $\&$ \Gls{TOS} = \Gls{TISTOS}.
+
+Between the Run \Rn{1} and Run \Rn{2} period there has been a change in how the software trigger operates, which can be seen in \autoref{fig:TriggerChange}. As more timing budget was introduced for both \Gls{HLT1} and \Gls{HLT2}, \Gls{LHCb} took advatage in upgrading the trigger system. By introducing update of calibration and alignment constants of the relevant subdetectors before the data is sent to permanent disk, \textit{online reconstruction}, defined as being produced at trigger farm, is the same as the \textit{offline reconstruction}, defined as reconstruction made when data reached the permanent disk. Hence, there is enhancement of available information, such as the \Gls{PID} in the \Gls{HLT}, which can be then used at the trigger level. 
+(Mention Turbo?).
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width = 0.5\textwidth]{figs/detector/LHCb_Trigger_RunIAlg.pdf}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/LHCb_Trigger_RunII.pdf}%
+	%\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
+	\caption{Trigger scheme differences between Run \Rn{1} and Run \Rn{2}. Figures obtained from \cite{triggerscheme}}  
+	\label{fig:TriggerChange}
+\end{figure}
 
 
 \section{Simulation}
