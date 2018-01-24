@@ -20,7 +20,9 @@
 \contentsline {section}{\numberline {2.8}Trigger}{36}{section.2.8}
 \contentsline {section}{\numberline {2.9}Simulation}{40}{section.2.9}
 \contentsline {subsection}{\numberline {2.9.1}Differences in Simulation And Data}{41}{subsection.2.9.1}
-\contentsline {chapter}{Bibliography}{43}{figure.caption.34}
-\contentsline {chapter}{Appendices}{47}{chapter*.35}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{47}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{50}{appendix.B}
+\contentsline {chapter}{\numberline {3}Discovering (Setting Limit for) \relax \mathversion {bold}{\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } at LHCb}{43}{chapter.3}
+\contentsline {section}{\numberline {3.1}Topology of \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{43}{section.3.1}
+\contentsline {chapter}{Bibliography}{45}{figure.caption.35}
+\contentsline {chapter}{Appendices}{49}{chapter*.36}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{49}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{52}{appendix.B}
