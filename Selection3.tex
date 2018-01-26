@@ -1,0 +1,45 @@
+
+\chapter{Discovering (Setting Limit for) \boldmath{\Bmumumu} at LHCb}
+\label{chap:sel}
+
+\textit{LHCb's flagship analyses contain several muons in the final state coming from differently flavoured $B$ mesons. Despite being in this category, search for \Bmumumu is limited by the rareness of its occurence as well as different backgrounds that can mimique its signature in the detector. Moreover, presence of invisible neutrino does induce uncertainties into reconstruction. This \autoref{chap:sel} will concentrate on characterisation of backgrounds as well as selection that is performed in order to reduce the backgrounds.}
+
+
+\section{Topology of \Bmumumu at LHCb}
+
+Upon hadronisation of $b\bar{b}$ pair \Bpm particle will travel less than a milimetre in the laboratory frame of reference before it decays into its decay products. This allows reconstruction of a primary vertex \Gls{PV} and its decay vertex, \textit{secondary vertex} \Gls{SV}. By joining these vertices, direction as well as lenght of the \Bpm existence, also known as flight distance (\Gls{FD}), can be established. In order to infer information about kinematic properties of \Bpm, the decay products are studied. All three muons are used to reconstruct the visible four-momentum. By conservation of momentum with respects to the direction of the flight of \Bpm, neutrino is assigned all missing momentum transverse to the direction of the flight of \Bpm. The schematic diagram can be seen in \autoref{fig:sigtopolog}.
+
+%\begin{figure}[!h]
+%	\includegraphics[width = 0.05\textwidth]{figs/sel/DecReco_fin.png}
+%	\caption{Schematic view of \Bmumumu decay. At $pp$ interaction point, or $PV$, $b\bar{b}$ pair hadronizes into \Bpm. \Bpm flies some distance before decaying into three muons and neutrino. All charged tracks (in filled-blue) seen can be combined into four-vector representing the visible part of the decay (semifilled-blue). Information about invisible neutrino (semifilled-red) are deduced from the conservation of momentum with respect to the direction of the flight of \Bpm. Neglecting momentum component parallel to the direction of flight for neutrino, transverse component of momentum is given.}
+%	\label{fig:sigtopolog}
+%\end{figure}
+
+
+Altogether it allows for reconstruction of a quantity, \textit{corrected mass}, that plays similar role to invariant mass in fully reconstructed decays. Invariant mass is ususally used in \Gls{LHCb} for fitting distribution from which physics results are extracted as it distinguishes well signal from background and there is minimal modelling problem.
+
+\textit{Corrected mass} is defined as
+
+\begin{equation}
+	M_{corr} = \sqrt{{M}^{2} + |p^{2}_{T}|} + |p_{T}|,
+\end{equation}	
+where the $M^{2}$ is the invariant visible mass squared and $p^{2}_{T}$ is the missing momentum squared transverse to the direction of $B^{+}$ flight.
+%\begin{equation}
+%M_{B_{corr}} = \sqrt{M_{\mu^{+} \mu^{-} \mu^{+}}^{2} + |p_{T}|} + |p_{T}|,
+%\end{equation}	
+$M_{corr}$ can be thought of as the the minimal correction to the visible mass to account for the missing neutrino information. 
+
+
+The resolution on the \textit{corrected mass} hence becomes a critical quantity that needs to be understood. As the method of 
+reconstruction of corrected mass relies heavily on the knowledge of \Bpm flight direction, the resolution of \Gls{PV} 
+position and \Gls{SV} vertex is crucial. Let $\overrightarrow{{x}}_{PV}=\{x_{PV},y_{PV},z_{PV}\}$, $\overrightarrow{{x}}_{SV}=\{x_{SV},y_{SV},z_{SV}\} $ be \Gls{PV} and \Gls{SV} vertex position and $\overrightarrow{p}=\{p_{x},p_{y},p_{z}\}$ be the visible trimuon momentum. Then the missing transverse momentum to the direction of the flight $p_{T}$ (momentum of the neutrino) is
+
+\begin{equation}
+	p^{2}_{T} = |\overrightarrow{p} - (\overrightarrow{{x}}_{SV}-\overrightarrow{{x}}_{PV})\frac{\overrightarrow{p} \cdot(\overrightarrow{{x}}_{SV}-\overrightarrow{{x}}_{PV})}{|(\overrightarrow{{x}}_{SV}-\overrightarrow{{x}}_{PV})|^{2}}|^{2}
+\end{equation}
+
+\subsection{Sources of Backgrounds}
+The largest background that can be mistaken for signal comes from so called \textit{cascade decays}, or $b \rightarrow c \rightarrow s$ transitions. MisID background is one of the most prominent backgrounds that is expected to be present. This type of background proceeds mostly via cascade decays,
+where $B^{+} \rightarrow (\overline{D^{0}} \rightarrow ((K^{+},\pi^{+},p) \rightarrow \mu^{-} \nu) \mu^{+} \nu$) and then $(K^{+},\pi^{+},p)$ are misidentified as muons. In this case
+the sign of the misidentified particle agrees with the sign of the mother $B$, this will be denoted as same sign misID background (SS misID) background.
+It is possible to also have the opposite sign particle misidentified (OS misID), however this contribution is expected to have smaller rate. But why 

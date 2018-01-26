@@ -23,8 +23,9 @@
 %\fancyhead[LO,RE]{bar}
 %\pagestyle{fancy}
 
-
-
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{bm}
 \usepackage{fixmath}
 %\usepackage{bm}
 \usepackage{ifthen} % for conditional statements
@@ -56,8 +57,9 @@
 \usepackage{multirow}
 %\usepackage{tocloft}
 \linespread{1.5}
-
-
+\newcommand{\mb}[1]{\mbox{\boldmath{$#1$}}}
+\DeclareRobustCommand{\mb}[1]{\boldmath$#1$\unboldmath}
+%\usepackage{physics}
 
 %\usepackage[version=4]{mhchem}
 %\renewcommand\cftchapfont{\boldfont}
@@ -81,7 +83,7 @@
 %% \patchcmd{\subparagraph}{\bfseries}{\bfseries\boldmath}{}{}
 %% \makeatother
 
-%\bfseries{\boldmath} 
+%%\bfseries{\boldmath} 
 
 \input{preamble}
 \input{styles}
@@ -221,8 +223,10 @@
 %% \cleardoublepage
 %% \input{Theory_cut}
 \input{Detector2}
-%% \input{K_{s}_tracking_efficiency}
+%%\input{Appendix_BDT}
+
 \input{Selection2}
+%%\input{Selection3}
 %% \input{BDT}
 %% \input{MassFits}
 %% \input{Results}

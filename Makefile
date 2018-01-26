@@ -14,6 +14,7 @@ TARGET = thesis
 
 # name of command to perform Latex (either pdflatex or latex)
 LATEX = pdflatex
+#LATEX = xelatex
 
 ifeq ($(LATEX),pdflatex)
 	FIGEXT = .pdf
