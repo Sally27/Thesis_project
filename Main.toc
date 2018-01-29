@@ -22,8 +22,8 @@
 \contentsline {subsection}{\numberline {2.9.1}Differences in Simulation And Data}{42}{subsection.2.9.1}
 \contentsline {chapter}{\numberline {3}Discovering (Setting Limit for) \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{44}{chapter.3}
 \contentsline {section}{\numberline {3.1}Topology of at LHCb \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{44}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Sources of Backgrounds}{46}{subsection.3.1.1}
-\contentsline {chapter}{Bibliography}{47}{subsection.3.1.1}
-\contentsline {chapter}{Appendices}{51}{chapter*.36}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{51}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{54}{appendix.B}
+\contentsline {section}{\numberline {3.2}Sources of Backgrounds}{47}{section.3.2}
+\contentsline {chapter}{Bibliography}{48}{section.3.2}
+\contentsline {chapter}{Appendices}{52}{chapter*.36}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{52}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{55}{appendix.B}

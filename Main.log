@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  26 JAN 2018 13:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  26 JAN 2018 19:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2179,7 +2179,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45 <./figs/sel/DecReco_fin-eps-converted-to.pdf>]) [46] (./Main.bbl
+[45 <./figs/sel/DecReco_fin-eps-converted-to.pdf>])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46] [47] (./Main.bbl
 Overfull \hbox (43.67137pt too wide) in paragraph at lines 31--39
 \T1/jkptt/m/n/12 https://lhcb.web.cern.ch/lhcb/speakersbureau/html/bb$[]$produc
 tionangles.html\T1/jkp/m/n/12 (-20) ,
@@ -2192,14 +2199,14 @@ Overfull \hbox (380.1717pt too wide) in paragraph at lines 84--89
 hcbtime$[]$yearlycumul.png\T1/jkp/m/n/12 (-20) ,
  []
 
-[47
+[48
 
 
-] [48]) [49] [50
+] [49]) [50] [51
 
 ]
 Appendix A.
-(./Appendix_BDT.tex <figs/BDT.png, id=1157, 892.08281pt x 407.27156pt>
+(./Appendix_BDT.tex <figs/BDT.png, id=1164, 892.08281pt x 407.27156pt>
 File: figs/BDT.png Graphic file (type png)
 
 <use figs/BDT.png>
@@ -2210,21 +2217,21 @@ Overfull \hbox (169.20963pt too wide) in paragraph at lines 12--13
  [][] 
  []
 
-[51
+[52
 
-] [52 <./figs/BDT.png>]) [53]
+] [53 <./figs/BDT.png>]) [54]
 Appendix B.
-(./Appendix_splot.tex [54
+(./Appendix_splot.tex [55
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 372.
- [55]
+ [56]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 372.
  (./Main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 372.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 372.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: E6FE1D1DD77A65EE9831903391D18723;1859.
+(rerunfilecheck)             Checksum: 5DEA8D10C5AB0AB16FD42D54BDB0568D;1847.
 
 
 LaTeX Warning: There were undefined references.
@@ -2232,9 +2239,9 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 372.
  ) 
 Here is how much of TeX's memory you used:
- 20090 strings out of 494946
- 297209 string characters out of 6180981
- 469806 words of memory out of 5000000
+ 20094 strings out of 494946
+ 297248 string characters out of 6180981
+ 470803 words of memory out of 5000000
  22419 multiletter control sequences out of 15000+600000
  146691 words of font info for 377 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -2257,10 +2264,10 @@ re/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpbsy.pfb></usr/share/texlive
 jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on Main.pdf (56 pages, 3017864 bytes).
+Output written on Main.pdf (57 pages, 3021096 bytes).
 PDF statistics:
- 1285 PDF objects out of 1440 (max. 8388607)
- 996 compressed objects within 10 object streams
- 191 named destinations out of 1000 (max. 500000)
+ 1294 PDF objects out of 1440 (max. 8388607)
+ 1003 compressed objects within 11 object streams
+ 195 named destinations out of 1000 (max. 500000)
  40826 words of extra memory for PDF output out of 42996 (max. 10000000)
 
