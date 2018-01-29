@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {2.5.1}RICH performance}{30}{subsection.2.5.1}
 \contentsline {section}{\numberline {2.6}Calorimetry}{32}{section.2.6}
 \contentsline {section}{\numberline {2.7}Muon Stations}{33}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Muon Identification}{35}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.1}Muon Identification}{34}{subsection.2.7.1}
 \contentsline {subsection}{\numberline {2.7.2}Muon Performance}{36}{subsection.2.7.2}
 \contentsline {section}{\numberline {2.8}Trigger}{37}{section.2.8}
 \contentsline {section}{\numberline {2.9}Simulation}{41}{section.2.9}
@@ -23,7 +23,9 @@
 \contentsline {chapter}{\numberline {3}Discovering (Setting Limit for) \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{44}{chapter.3}
 \contentsline {section}{\numberline {3.1}Topology of at LHCb \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{44}{section.3.1}
 \contentsline {section}{\numberline {3.2}Sources of Backgrounds}{47}{section.3.2}
-\contentsline {chapter}{Bibliography}{48}{section.3.2}
-\contentsline {chapter}{Appendices}{52}{chapter*.36}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{52}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{55}{appendix.B}
+\contentsline {section}{\numberline {3.3}Analysis strategy}{48}{section.3.3}
+\contentsline {section}{\numberline {3.4}Preselection for \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace }{48}{section.3.4}
+\contentsline {chapter}{Bibliography}{52}{table.caption.36}
+\contentsline {chapter}{Appendices}{56}{chapter*.37}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{56}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{59}{appendix.B}
