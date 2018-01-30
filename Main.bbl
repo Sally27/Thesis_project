@@ -288,4 +288,16 @@ LHCb, M.~Clemencic {\em et~al.},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Ali:1999mm}
+A.~Ali, P.~Ball, L.~T. Handoko, and G.~Hiller,
+  \ifthenelse{\boolean{articletitles}}{\emph{{A Comparative study of the decays
+  $B \to$ ($K$, $K^{*)} \ell^+ \ell^-$ in standard model and supersymmetric
+  theories}}, }{}\href{http://dx.doi.org/10.1103/PhysRevD.61.074024}{Phys.\
+  Rev.\  \textbf{D61} (2000) 074024},
+  \href{http://arxiv.org/abs/hep-ph/9910221}{{\normalfont\ttfamily
+  arXiv:hep-ph/9910221}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \end{mcitethebibliography}

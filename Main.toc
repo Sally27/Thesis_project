@@ -4,28 +4,32 @@
 \contentsline {chapter}{List of Figures}{9}{section*.9}
 \contentsline {chapter}{List of Tables}{13}{section*.11}
 \contentsline {chapter}{List of abbreviations and definitions}{14}{section*.13}
-\contentsline {chapter}{\numberline {1}Introduction}{17}{chapter.1}
-\contentsline {chapter}{\numberline {2}The LHCb detector}{18}{chapter.2}
-\contentsline {section}{\numberline {2.1}LHCb Layout}{19}{section.2.1}
-\contentsline {section}{\numberline {2.2}VErtex LOcator}{23}{section.2.2}
-\contentsline {section}{\numberline {2.3}Tracking System}{25}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Tracking Algorithms}{26}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Ring Imaging Detectors}{28}{section.2.4}
-\contentsline {section}{\numberline {2.5}RICH Reconstruction and Performance}{30}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}RICH performance}{30}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Calorimetry}{32}{section.2.6}
-\contentsline {section}{\numberline {2.7}Muon Stations}{33}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Muon Identification}{34}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Muon Performance}{36}{subsection.2.7.2}
-\contentsline {section}{\numberline {2.8}Trigger}{37}{section.2.8}
-\contentsline {section}{\numberline {2.9}Simulation}{41}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Differences in Simulation And Data}{42}{subsection.2.9.1}
-\contentsline {chapter}{\numberline {3}Discovering (Setting Limit for) \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{44}{chapter.3}
-\contentsline {section}{\numberline {3.1}Topology of at LHCb \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{44}{section.3.1}
-\contentsline {section}{\numberline {3.2}Sources of Backgrounds}{47}{section.3.2}
-\contentsline {section}{\numberline {3.3}Analysis strategy}{48}{section.3.3}
-\contentsline {section}{\numberline {3.4}Preselection for \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace }{48}{section.3.4}
-\contentsline {chapter}{Bibliography}{52}{table.caption.36}
-\contentsline {chapter}{Appendices}{56}{chapter*.37}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{56}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{59}{appendix.B}
+\contentsline {chapter}{\numberline {1}Introduction}{18}{chapter.1}
+\contentsline {chapter}{\numberline {2}The LHCb detector}{19}{chapter.2}
+\contentsline {section}{\numberline {2.1}LHCb Layout}{20}{section.2.1}
+\contentsline {section}{\numberline {2.2}VErtex LOcator}{24}{section.2.2}
+\contentsline {section}{\numberline {2.3}Tracking System}{26}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Tracking Algorithms}{27}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Ring Imaging Detectors}{29}{section.2.4}
+\contentsline {section}{\numberline {2.5}RICH Reconstruction and Performance}{31}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}RICH performance}{31}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Calorimetry}{33}{section.2.6}
+\contentsline {section}{\numberline {2.7}Muon Stations}{34}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Muon Identification}{35}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Muon Performance}{37}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}Trigger}{38}{section.2.8}
+\contentsline {section}{\numberline {2.9}Simulation}{42}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Differences in Simulation And Data}{43}{subsection.2.9.1}
+\contentsline {chapter}{\numberline {3}Discovering (Setting Limit for) \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{45}{chapter.3}
+\contentsline {section}{\numberline {3.1}Topology of at LHCb \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{45}{section.3.1}
+\contentsline {section}{\numberline {3.2}Sources of Backgrounds}{48}{section.3.2}
+\contentsline {section}{\numberline {3.3}Analysis strategy}{49}{section.3.3}
+\contentsline {section}{\numberline {3.4}Samples}{49}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Data Samples}{49}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Simulation Samples}{50}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Preselection for \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace }{52}{section.3.5}
+\contentsline {section}{\numberline {3.6}Trigger Selection}{53}{section.3.6}
+\contentsline {chapter}{Bibliography}{55}{table.caption.39}
+\contentsline {chapter}{Appendices}{59}{chapter*.40}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{59}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{62}{appendix.B}
