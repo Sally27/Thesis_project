@@ -217,27 +217,68 @@ Requiring that \Bp direction points in the same direction as the line from \gls{
 \end{table}
 
 \section{Trigger Selection}
-In order to obtain triggered data, $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_\mu$ candidates are required to pass certain set of trigger decisions at \gls{L0}, \gls{HLT1} and \gls{HLT2} levels summarized in \autoref{tab:triggersel}. It can be noted that the decision is applied at the mother \Bpm level. In particular, Bplus$\_$L0MuonDecision$\_$TOS decision, means that one of the muons from \Bpm in an event has triggered and made positive decision.
+In order to obtain triggered data, $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_\mu$ candidates are required to pass certain set of trigger decisions at \gls{L0}, \gls{HLT1} and \gls{HLT2} levels summarized in \autoref{tab:triggersel}. It can be noted that the decision is applied at the mother \Bpm level. In particular, \texttt{Bplus$\_$L0MuonDecision$\_$TOS decision}, means that one of the muons from \Bpm in an event has triggered and made positive decision.
 
 \begin{table}[h!]
 \begin{center}
-	\begin{tabular}{ l }%l | l | }
+	\begin{tabular}{ l l}%l | l | }
 Trigger Selection  \\ %& 2011 & 2012 & 2016 \\
 \hline
-Bplus$\_$L0MuonDecision$\_$TOS \\ %& 0.915 & 0.895 & 0.74 \\
+		\texttt{Bplus$\_$L0MuonDecision$\_$TOS} \\ %& 0.915 & 0.895 & 0.74 \\
 \hline
-Bplus$\_$Hlt1TrackMuonDecision$\_$TOS \\% & 0.874 & 0.929 & 0.931 \\
+		\texttt{Bplus$\_$Hlt1TrackMuonDecision$\_$TOS} \\% & 0.874 & 0.929 & 0.931 \\
 %Or of HLT2 lines below & 0.986 & 0.987 & 0.996  \\
 \hline
-Bplus$\_$Hlt2TopoMu2BodyBBDTDecision$\_$TOS \\ % & 0.859 & 0.892 & 0.94* \\
-Bplus$\_$Hlt2TopoMu3BodyBBDTDecision$\_$TOS \\ % & 0.677 & 0.76 & 0.886* \\
-Bplus$\_$Hlt2DiMuonDetachedDecision$\_$TOS \\ % & 0.809 & 0.769 & 0.988 \\
-Bplus$\_$Hlt2DiMuonDetachedHeavyDecision$\_$TOS \\ % & 0.94 & 0.929 & 0.99 \\
+		\texttt{Bplus$\_$Hlt2TopoMu2BodyBBDTDecision$\_$TOS} & \rdelim\}{4}{1cm}[\ OR]\\ % & 0.859 & 0.892 & 0.94* \\
+		\texttt{Bplus$\_$Hlt2TopoMu3BodyBBDTDecision$\_$TOS} \\ % & 0.677 & 0.76 & 0.886* \\
+		\texttt{Bplus$\_$Hlt2DiMuonDetachedDecision$\_$TOS} \\ % & 0.809 & 0.769 & 0.988 \\
+		\texttt{Bplus$\_$Hlt2DiMuonDetachedHeavyDecision$\_$TOS} \\ % & 0.94 & 0.929 & 0.99 \\
 \hline
 \end{tabular}
 \end{center}
 	\caption{Trigger selection applied on both signal and normalisation samples}
 	\label{tab:triggersel}
 \end{table}
+
+As discussed in \autoref{triggerchap} \texttt{L0MuonDecision} decides on whether an event is accepted depending on the $p_{T}$ of muon and the number of hits in the \gls{SPD}. Run \Rn{1} can be split into 2011 and 2012 conditions where, in 2011 the most used threshold for positive decision is 1.48 \gevc \cite{Aaij:2012me} and 1.76 \gevc \cite{Albrecht:2013fba}. Run \Rn{1} \gls{SPD} rate only accepts events below 600. In Run \Rn{2}, the trigger thresholds varied more but the most representative acceptance for muon $p_{T}$ was above 1.85 \gevc with \gls{SPD} multiplicity below 450.
+
+\texttt{Hlt1TrackMuonDecision} accepts events where mother particle has certain lifetime, such as $B,D$ by requiring certain \gls{ipchi2} of the track with respect to all of its \gls{PV}s. There has to be at least one muon (\texttt{isMuon==true}) in its final state with certain kinematic thresholds on $p$ and $p_{T}$, for example in 2011, the identified muons that triggered positive decision had to have $p$ above 8 \gevc \cite{Aaij:2012me}.
+
+At \gls{HLT2} level, the candidates are reuqired to pass through at least one of the four decisions. \texttt{Hlt2TopoMu[2,3]BodyBBDTDecision} belong to the \textit{topological triggers} category with extra requirement of muon being idendified by \texttt{isMuon} decision. \texttt{Hlt2DiMuonDetachedDecision} and \texttt{Hlt2DiMuonDetachedHeavyDecision} reconstruct decays with two muons in a final state, dimuon. The two lines differ in selection that is optimized either for heavy or light dimuon pair. For example, \texttt{Hlt2DiMuonDetachedDecision} accepts events dimuon $p_{T}$ above 1.5 \gevc and with mass above 1 \gevcc, whereas  \texttt{Hlt2DiMuonDetachedHeavyDecision} accepts dimuon pairs with any $p_{T}$ but above 2.95 \gevcc in mass. The reason why these lines are called detached are because individual muons are required to have high \gls{ipchi2}.
+
+
+\section{$q^{2}$ selection}
+
+In \Bmumumu, two pairs of opposite sign muons can be formed, namely $q^2(\mu_1,\mu_2)$ and $q^2(\mu_2,\mu_3)$ where $\mu_1=\mu^{+} , \mu_2=\mu^{-}, \mu_3=\mu^{+} $.
+From the two invariant mass squared pairs one can define, $minq^2 = min[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$ and $maxq^{2} = max[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$. This measurement is made in region where ${minq<980}$ \mevcc because of two main reasons: most of the contributions to the amplitude of the decay is below this value, see \autoref{fig:qsqsel} and especially combinatorial background is greatly reduced if $minq^{2}<1$ (\gevcc)$^{2}$.
+
+In order to remove backgrounds that proceed via resonant $J/\psi$ and $\Psi(2S)$ contributions, vetoes are placed in the corresponding regions \autoref{tab:vetoes}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\linewidth]{./sel/scatterplotiatko_qmin.pdf}\put(-70,133){(a)}
+\includegraphics[width=0.5\linewidth]{./sel/scatterplotiatko_qmin_data.pdf}\put(-50,133){(b)}
+	\caption{(a) Signal simulation sample distribution in $minq$ and $maxq$ variables. Values below 980 \mevcc are accepted. (b) Data sample after \textit{stripping} selection with no other cuts shows clearly the $J/\psi$ and $\Psi(2S)$ resonances.  }
+\label{fig:qsqsel}
+%\vspace*{-1.0cm}
+\end{figure}
+
+
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{l c c}
+	Veto & $minq$ \mevcc & $maxq$ \mevcc \\ \hline
+        J/$\psi$  & !(2946.0 $<$ $|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3176.0) & !(2946.0 $<$ $|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3176.0) \\
+	$\Psi$(2S) &  !(3586.0 $<|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3766.0) & !(3586.0 $<$ $|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3766.0) \\
+        \hline
+\end{tabular}
+\end{center}
+\caption{Vetoes for $J/\psi$ and $\Psi(2S)$ contributions}
+\label{tab:vetoes}
+\end{table}
+
+
+Similarly to
 
 

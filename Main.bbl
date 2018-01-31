@@ -300,4 +300,14 @@ A.~Ali, P.~Ball, L.~T. Handoko, and G.~Hiller,
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Aaij:2012me}
+R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{The LHCb
+  Trigger and its Performance in 2011}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/8/04/P04022}{JINST \textbf{8}
+  (2013) P04022}, \href{http://arxiv.org/abs/1211.3055}{{\normalfont\ttfamily
+  arXiv:1211.3055}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \end{mcitethebibliography}

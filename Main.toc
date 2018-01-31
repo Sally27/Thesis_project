@@ -29,7 +29,8 @@
 \contentsline {subsection}{\numberline {3.4.2}Simulation Samples}{50}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}Preselection for \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace }{52}{section.3.5}
 \contentsline {section}{\numberline {3.6}Trigger Selection}{53}{section.3.6}
-\contentsline {chapter}{Bibliography}{55}{table.caption.39}
-\contentsline {chapter}{Appendices}{59}{chapter*.40}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{59}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{62}{appendix.B}
+\contentsline {section}{\numberline {3.7}$q^{2}$ selection}{55}{section.3.7}
+\contentsline {chapter}{Bibliography}{57}{table.caption.41}
+\contentsline {chapter}{Appendices}{61}{chapter*.42}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{61}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{64}{appendix.B}

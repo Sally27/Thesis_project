@@ -1,5 +1,8 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
+\glsgroupheading{glssymbols}\relax \glsresetentrylist %
+\glossentry{ipchi2}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{50\delimN 51}}}\glsgroupskip
 \glsgroupheading{A}\relax \glsresetentrylist %
 \glossentry{ALICE}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{16}}}%
@@ -37,7 +40,7 @@
 		\setentrycounter[]{page}\glsnumberformat{49}}}%
 \glossentry{HLT2}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{36\delimN 37}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{49}}}%
+		\setentrycounter[]{page}\glsnumberformat{49\delimN 50}}}%
 \glossentry{HPD}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{26\delimN 27}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
@@ -55,7 +58,7 @@
 		\setentrycounter[]{page}\glsnumberformat{36}}}\glsgroupskip
 \glsgroupheading{L}\relax \glsresetentrylist %
 \glossentry{L0}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{10}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{11}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{35}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{49}}}%
 \glossentry{LHCb}{\glossaryentrynumbers{\relax 
@@ -105,7 +108,8 @@
 		\setentrycounter[]{page}\glsnumberformat{35}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{41}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{43}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{48}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{48}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{50}}}\glsgroupskip
 \glsgroupheading{Q}\relax \glsresetentrylist %
 \glossentry{QED}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{39}}}\glsgroupskip
@@ -118,7 +122,8 @@
 		\setentrycounter[]{page}\glsnumberformat{14}}}%
 \glossentry{SPD}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{29}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{31}}}%
+		\setentrycounter[]{page}\glsnumberformat{31}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{49\delimN 50}}}%
 \glossentry{SV}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{41}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{43}\delimN 

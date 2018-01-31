@@ -22,7 +22,7 @@
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{FD?\glossentry{FD}|setentrycounter[]{page}\glsnumberformat}{14}
-\glossaryentry{L0?\glossentry{L0}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{L0?\glossentry{L0}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{SM?\glossentry{SM}|setentrycounter[]{page}\glsnumberformat}{18}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{19}
@@ -197,3 +197,10 @@
 \glossaryentry{L0?\glossentry{L0}|setentrycounter[]{page}\glsnumberformat}{53}
 \glossaryentry{HLT1?\glossentry{HLT1}|setentrycounter[]{page}\glsnumberformat}{53}
 \glossaryentry{HLT2?\glossentry{HLT2}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{$\mathbold {IP\chisq }$?\glossentry{ipchi2}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{HLT2?\glossentry{HLT2}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{$\mathbold {IP\chisq }$?\glossentry{ipchi2}|setentrycounter[]{page}\glsnumberformat}{55}
