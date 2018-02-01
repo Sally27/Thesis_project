@@ -2,3 +2,7 @@ Main.bib - put references to general pictures from web.
 glos.tex - define new abbreviations
 lhcb-symbols-list.tex - summary of lhcb symbol list.
 preamble.tex - define the body of main text with header staff
+styles.tex define all the abbreviations for decays
+
+to look for anything do : grep -rnw . -e 'Bmumumu'
+

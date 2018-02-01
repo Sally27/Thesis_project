@@ -21,18 +21,22 @@
 \BOOKMARK [1][-]{section.2.9}{Simulation}{chapter.2}% 21
 \BOOKMARK [2][-]{subsection.2.9.1}{Differences in Simulation And Data}{section.2.9}% 22
 \BOOKMARK [0][-]{chapter.3}{Handling of trimuon correlations at LHCb}{}% 23
-\BOOKMARK [0][-]{chapter.4}{Discovering \(Setting Limit for\) B + \040+- + \040at LHCb}{}% 24
-\BOOKMARK [1][-]{section.4.1}{Topology of at LHCb B + \040+- + \040at LHCb}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.2}{Sources of Backgrounds}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.3}{Analysis strategy}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.4}{Samples}{chapter.4}% 28
-\BOOKMARK [2][-]{subsection.4.4.1}{Data Samples}{section.4.4}% 29
-\BOOKMARK [2][-]{subsection.4.4.2}{Simulation Samples}{section.4.4}% 30
-\BOOKMARK [1][-]{section.4.5}{Preselection for B + \040+- + }{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.6}{Trigger Selection}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.7}{q2 selection}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.8}{Further Selection}{chapter.4}% 34
-\BOOKMARK [0][-]{table.caption.43}{Bibliography}{}% 35
-\BOOKMARK [0][-]{chapter*.44}{Appendices}{}% 36
-\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 37
-\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 38
+\BOOKMARK [1][-]{section.3.1}{Binary Muon PID variables}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.2}{Muon PID variables based on sharing hits}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.2.1}{Different nShared definitions for Run i and Run ii}{section.3.2}% 26
+\BOOKMARK [1][-]{section.3.3}{Muon PID variables based on regression techniques}{chapter.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Discovering \(Setting Limit for\) B + \040+- + \040at LHCb}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Topology of at LHCb B + \040+- + \040at LHCb}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{Sources of Backgrounds}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.3}{Analysis strategy}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.4}{Samples}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.4.1}{Data Samples}{section.4.4}% 33
+\BOOKMARK [2][-]{subsection.4.4.2}{Simulation Samples}{section.4.4}% 34
+\BOOKMARK [1][-]{section.4.5}{Preselection for B + \040+- + }{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.6}{Trigger Selection}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.7}{q2 selection}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.8}{Further Selection}{chapter.4}% 38
+\BOOKMARK [0][-]{table.caption.45}{Bibliography}{}% 39
+\BOOKMARK [0][-]{chapter*.46}{Appendices}{}% 40
+\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 41
+\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 42

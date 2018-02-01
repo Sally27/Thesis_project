@@ -3,3 +3,9 @@ hey - I think you need glossaries.sty for this to work out of the box - the Main
 in my home computer I have the glossary package installed under my texmf path - so I guess you acn either do that or try with a simple glossary.sty
 
 The only files the are interesting here are the Main and the Title page and glossary I guess;)
+
+
+Sally comments: 
+Backuped this way:
+cp -r * ../backup_Thesis
+scp -r * ss4314@lx00.hep.ph.ic.ac.uk:/vols/lhcb/ss4314/Thesis/
