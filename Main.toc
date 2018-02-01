@@ -20,17 +20,19 @@
 \contentsline {section}{\numberline {2.8}Trigger}{38}{section.2.8}
 \contentsline {section}{\numberline {2.9}Simulation}{42}{section.2.9}
 \contentsline {subsection}{\numberline {2.9.1}Differences in Simulation And Data}{43}{subsection.2.9.1}
-\contentsline {chapter}{\numberline {3}Discovering (Setting Limit for) \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{45}{chapter.3}
-\contentsline {section}{\numberline {3.1}Topology of at LHCb \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{45}{section.3.1}
-\contentsline {section}{\numberline {3.2}Sources of Backgrounds}{48}{section.3.2}
-\contentsline {section}{\numberline {3.3}Analysis strategy}{49}{section.3.3}
-\contentsline {section}{\numberline {3.4}Samples}{49}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Data Samples}{49}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Simulation Samples}{50}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Preselection for \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace }{52}{section.3.5}
-\contentsline {section}{\numberline {3.6}Trigger Selection}{53}{section.3.6}
-\contentsline {section}{\numberline {3.7}$q^{2}$ selection}{55}{section.3.7}
-\contentsline {chapter}{Bibliography}{57}{table.caption.41}
-\contentsline {chapter}{Appendices}{61}{chapter*.42}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{61}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{64}{appendix.B}
+\contentsline {chapter}{\numberline {3}Handling of trimuon correlations at LHCb}{45}{chapter.3}
+\contentsline {chapter}{\numberline {4}Discovering (Setting Limit for) \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{46}{chapter.4}
+\contentsline {section}{\numberline {4.1}Topology of at LHCb \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{46}{section.4.1}
+\contentsline {section}{\numberline {4.2}Sources of Backgrounds}{49}{section.4.2}
+\contentsline {section}{\numberline {4.3}Analysis strategy}{50}{section.4.3}
+\contentsline {section}{\numberline {4.4}Samples}{50}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Data Samples}{50}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Simulation Samples}{51}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Preselection for \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace }{53}{section.4.5}
+\contentsline {section}{\numberline {4.6}Trigger Selection}{54}{section.4.6}
+\contentsline {section}{\numberline {4.7}$q^{2}$ selection}{56}{section.4.7}
+\contentsline {section}{\numberline {4.8}Further Selection}{57}{section.4.8}
+\contentsline {chapter}{Bibliography}{58}{table.caption.43}
+\contentsline {chapter}{Appendices}{62}{chapter*.44}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{62}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{65}{appendix.B}

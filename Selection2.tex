@@ -250,16 +250,16 @@ At \gls{HLT2} level, the candidates are reuqired to pass through at least one of
 \section{$q^{2}$ selection}
 
 In \Bmumumu, two pairs of opposite sign muons can be formed, namely $q^2(\mu_1,\mu_2)$ and $q^2(\mu_2,\mu_3)$ where $\mu_1=\mu^{+} , \mu_2=\mu^{-}, \mu_3=\mu^{+} $.
-From the two invariant mass squared pairs one can define, $minq^2 = min[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$ and $maxq^{2} = max[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$. This measurement is made in region where ${minq<980}$ \mevcc because of two main reasons: most of the contributions to the amplitude of the decay is below this value, see \autoref{fig:qsqsel} and especially combinatorial background is greatly reduced if $minq^{2}<1$ (\gevcc)$^{2}$.
+From the two invariant mass squared pairs one can define, $minq^2 = min[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$ and $maxq^{2} = max[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$. This measurement is made in region where $\sqrt{minq^{2}}={minq<980}$ \mevcc because of two main reasons: most of the contributions to the amplitude of the decay is below this value and combinatorial background is greatly reduced if $minq^{2}<1$ (\gevcc)$^{2}$, see \autoref{fig:qsqsel}.
 
-In order to remove backgrounds that proceed via resonant $J/\psi$ and $\Psi(2S)$ contributions, vetoes are placed in the corresponding regions \autoref{tab:vetoes}.
+In order to remove backgrounds that proceed via resonant $J/\psi$ and $\Psi(2S)$ contributions, vetoes in invariant mass are placed in the corresponding regions, see \autoref{tab:vetoes} for more details.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\linewidth]{./sel/scatterplotiatko_qmin.pdf}\put(-70,133){(a)}
-\includegraphics[width=0.5\linewidth]{./sel/scatterplotiatko_qmin_data.pdf}\put(-50,133){(b)}
-	\caption{(a) Signal simulation sample distribution in $minq$ and $maxq$ variables. Values below 980 \mevcc are accepted. (b) Data sample after \textit{stripping} selection with no other cuts shows clearly the $J/\psi$ and $\Psi(2S)$ resonances.  }
-\label{fig:qsqsel}
+\includegraphics[width=0.5\linewidth]{./sel/scatterplotiatko_qmin_combidata.pdf}\put(-50,133){(b)}
+	\caption{(a) Signal simulation sample distribution in $minq$ and $maxq$ variables. Values below 980 \mevcc (red line) are accepted. (b) Combinatorial data sample after \textit{stripping} selection with no other cuts shows clearly the $J/\psi$ (green) and $\Psi(2S)$ (blue) resonances which are vetoed and the measurement region (red).}
+        \label{fig:qsqsel}
 %\vspace*{-1.0cm}
 \end{figure}
 
@@ -268,17 +268,38 @@ In order to remove backgrounds that proceed via resonant $J/\psi$ and $\Psi(2S)$
 \begin{table}[h!]
 \begin{center}
 \begin{tabular}{l c c}
-	Veto & $minq$ \mevcc & $maxq$ \mevcc \\ \hline
-        J/$\psi$  & !(2946.0 $<$ $|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3176.0) & !(2946.0 $<$ $|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3176.0) \\
-	$\Psi$(2S) &  !(3586.0 $<|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3766.0) & !(3586.0 $<$ $|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3766.0) \\
+	Veto & $minq$ [\mevcc] & $maxq$ [\mevcc] \\ \hline
+        J/$\psi$  & !(2946.0 $<$ $minq$ $<$ 3176.0) & !(2946.0 $<$ $maxq$ $<$ 3176.0) \\
+	$\Psi$(2S) &  !(3586.0 $<$ $minq$  $<$ 3766.0) & !(3586.0 $<$ $maxq$ $<$ 3766.0) \\
         \hline
 \end{tabular}
 \end{center}
-\caption{Vetoes for $J/\psi$ and $\Psi(2S)$ contributions}
+\caption{Vetoes for $J/\psi$ and $\Psi(2S)$ contributions.}
 \label{tab:vetoes}
 \end{table}
 
+\section{Further Selection}
 
-Similarly to
+Further selection was performed as seen in \autoref{tab:OfflineSelection}. It further hepls to suppress backgrounds and but requires different treatement in 
+Run \Rn{1} and Run \Rn{2} due to the different definitions of variables. 
 
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{l l c c}
+
+%    \begin{tabular}{ | l | c |  } %p{7cm}|}
+      Idea & Object & Selection Run1 & Selection 2016 \\ \hline
+      Clean & Muon & - & \texttt{IsMuonTight==1.0}\\
+      Clone and ghost & Muon & \texttt{Nshared==0} & \texttt{Nshared<2} \\
+      Fit Region & $B$ & 4000 MeV $<M_{B_{corr}}<$ 7000 MeV & 4000 MeV $<M_{B_{corr}}<$ 7000 MeV \\
+      Bkg Removal & event &Combinatorial BDT selection & Combinatorial BDT selection \\
+      Bkg Removal & event & Misid BDT selection & Misid BDT selection \\
+      Optimize FOM & Muon & \texttt{PID$\mu$>0.35} & \texttt{PID$\mu$>0.35} \\
+      \hline
+%      Clean & Min Dimuon & min $q^{2}(\mu^{+},\mu^{-})$ $<$ 960400 MeV$^{2}$/c$^{4}$  & min $q^{2}(\mu^{+},\mu^{-})$ $<$ 960400 MeV$^{2}$/c$^{4}$ \\ \hline
+      \end{tabular}
+\end{center}
+\caption{Offline selection performed after stripping. Differences can be seen between Run \Rn{1} and Run \Rn{2} datasets}
+\label{tab:OfflineSelection}
+\end{table}
 
