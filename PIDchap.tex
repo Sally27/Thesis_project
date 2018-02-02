@@ -3,8 +3,11 @@
 
 \textit{Having three muons passing through the detector may result in few issues. Two collimated muons may be passing through the same parts of the detector if they bear the same charge, which causes problems in resolving them. From tracking point of view, ghosts and clones are hence much more likely to occur. In LHCb, plethora of muon \Gls{PID} variables can be used to suppress these spurious tracks, however, one must be careful once estimating the relevant \gls{PID} efficiencies as most these efficiencies will be dependant on number of muons in the detector.}
 
-\section{Binary Muon PID variables}
-There is a further set of muon variables apart from the ones mentioned in \autoref{muonID} that are avialable for \gls{PID} of muon. Similar to \texttt{isMuon} there are two more binary variables, \texttt{isMuonTight} and \texttt{isMuonLoose}, that can help with classification of muons. 
+\section{Muon PID variables}
+There is a further set of muon variables apart from the ones mentioned in \autoref{muonID} that are available for \gls{PID} of muon. In this section there is summary of the variables used in analysis of \Bmumumu.
+
+\subsection{Binary Muon PID variables}
+Similar to \texttt{isMuon} shown in \autoref{tab:ismuontab},  there are two more binary variables, \texttt{isMuonTight} and \texttt{isMuonLoose}, that can help with classification of muons. 
 
 In each station (M1-M4) and in each dimension, $d=$(x or y), \gls{FOI} is defined as a function of momentum $p$,
 \begin{equation}
@@ -24,12 +27,12 @@ Because the detector information is read out in $x$ $y$ direction separately, th
         \label{fig:pads}
 \end{figure}
 
-\section{Muon PID variables based on sharing hits}
+\subsection{Muon PID variables based on sharing hits}
 \label{bugs}
 
 The \texttt{nShared} variable for muons gives number of tracks with shared hits in the muon stations. For each hit within \gls{FOI} of the extrapolated track, the \texttt{nShared} algorithm will check whether any other track has been established using the given hit. In this case, the muon track which has bigger distance between the extrapolation and the hit is increased by 1 and the other tracks becomes the hit owner track. Hence this integer \gls{PID} variable, \texttt{nShared}, can help greatly reduce \textit{ghost} tracks and \textit{clones} if \texttt{nShared==0}.
 
-\subsection{Different \texttt{nShared} definitions for Run \Rn{1} and Run \Rn{2}}
+%\subsection{Different \texttt{nShared} definitions for Run \Rn{1} and Run \Rn{2}}
 To make sure that muons for \Bmumumu are not coming from these spurious tracks,  \texttt{nShared==0} for all three muons, i.e, not to share hits in muon stations with any other downstream or long tracks. In analysing data, there were features in the software which changed between Run \Rn{1} and Run \Rn{2}.
 
 The first feature that is different comes from the calculation of the distance between the extrapolation and the hit in \texttt{nShared} algorithm.
@@ -64,14 +67,32 @@ This will have inevitably and impact on the \gls{PID} probabilities. Using the s
 %\vspace*{-1.0cm}
 \end{figure}
 
-\section{Muon PID variables based on regression techniques}
+\subsection{Muon PID variables based on regression techniques}
 Similar to the $DLLmu$ variable in \autoref{muonID}, which combines all the information from the detector into a global likelihood, it is posible to feed all the different variables to a neural network, which can then produce an output 
-corresponding to the probability of a particle to be of a certain species. \texttt{Probnn$\_{x}$} where, x is the species of interest, is calculated and can be used also for muonID. Compared to $DLL_{x}$ variables, \texttt{Probnn$\_{x}$} variables tend to have smaller correlation with the kinematics of the particle, and hence are more useful with decays where particles are soft, such as \Bmumumu. As with any machine learning alghotritms, the selection of the training sample is important as well as input variables. In \Rn{1} there were two tunings introduced \texttt{V2} and \texttt{V3}, with more variables in \texttt{V2}. Depending on the species of particles, \texttt{V2} or \texttt{V3} perfomed better.In the analysis of \Bmumumu \texttt{Probnn$\_${x}$\_$V2} is used.
+corresponding to the probability of a particle to be of a certain species. \texttt{Probnn$\_{x}$} where, x is the species of interest, is calculated and can be used also for muonID. Compared to $DLL_{x}$ variables, \texttt{Probnn$\_{x}$} variables tend to have smaller correlation with the kinematics of the particle, and hence are more useful with decays where particles are soft, such as \Bmumumu. As with any machine learning alghotritms, the selection of the training sample is important as well as input variables. In \Rn{1} there were two tunings introduced \texttt{V2} and \texttt{V3}, with more variables in \texttt{V2}. Depending on the species of particles, \texttt{V2} or \texttt{V3} perfomed better. In the analysis of \Bmumumu \texttt{Probnn$\_${x}$\_$V2} is used.
 
 
+\section{Ghosts and Clones}
+When analysing decays with two muons of the same charge, \gls{LHCb} magnet bends these two muons in two separate planes. With two muons of the same sign, it is more likely that their two tracks will be collimated. This poses more difficult task for tracking as it distinguishes these two tracks less well. It is even possible that these two same sign muon tracks are not genuine tracks, but rather subtracks or a copy of another track, \textit{clone tracks}. Two tracks are clones if they share at least 70\% of the hits in the \gls{VELO} and at least 70\% of the hits in the other T-stations. Ofcourse, once it is established that two tracks share this percentage of hits, it has to be established which track is the clone track. This decision is based on the total number of hits and the \gls{trackchi2ndof} comparison of the two tracks.   
 
+In search for \Bmumumu two muons have the same charge, and hence are affected by the \textit{clones}, which needs to be understood. In this case, sample with three muons of same sign was obtained, where the effect is even more prominent and can create potentially \textit{fake peaks} in visible mass spectrum. \textit{Clones} peak at well defined visible mass 
+\begin{equation}
+M_{B}=\sqrt(3 \times M_{\mu})^{2}\approx 318 \mevcc
+\end{equation}
 
+Once translated into corrected mass, these \textit{fake peaks} are smeared and look like genuine resonances with resolution as seen in \autoref{fig:Clones}.  
 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\linewidth]{trimuon/compnice_even_nicer_ONLY_STACKED_HIST_VisibleCorrM.pdf}\put(-50,133){(a)}
+\includegraphics[width=0.5\linewidth]{trimuon/compnice_even_nicer_ONLY_STACKED_HIST_CorrM.pdf}\put(-50,133){(b)}
+	\caption{(a) Visible and (b) corrected mass of $B$, shows a clear peak coming from clones in 2012 same sign data sample. }
+\label{fig:Clones}
+%\vspace*{-1.0cm}
+\end{figure}
+
+The shape of genuine resonance comes as an interplay between trigger, tracking and vertexing. As there are three parallel tracks.
+In order to supress these peaks requiring \texttt{nShared==0} removes all of the clones.
 
 %\newline In order to keep the signal efficiency high in 2016 data, as shown in Table ~\ref{tab:Reason}, softer condition ,$\texttt{nShared}<2$, is applied.
 
