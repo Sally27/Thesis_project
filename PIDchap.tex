@@ -91,9 +91,53 @@ Once translated into corrected mass, these \textit{fake peaks} are smeared and l
 %\vspace*{-1.0cm}
 \end{figure}
 
-The shape of genuine resonance comes as an interplay between trigger, tracking and vertexing. As there are three parallel tracks.
-In order to supress these peaks requiring \texttt{nShared==0} removes all of the clones.
+The shape of genuine resonance comes as a result of \gls{LHCb} many factors: vertexing, tracking and and trigger selection. As there are three parallel tracks, the vertex of the system is not well defined. However, the vertex fitting of the \gls{PV} and \gls{SV} is functional and \gls{vertexchi2ndof} is good as these tracks are subtracks of each other.  \textit{Clones} can be, however, differentiated by the position of the decay vertex of $B$, \autoref{fig:ClonesFD} as well as the occupancy in the tracking, \gls{OT} as seen in \autoref{fig:ClonesOT}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\linewidth]{trimuon/VertexInfoClone.pdf}\put(-50,133){(a)}
+\includegraphics[width=0.5\linewidth]{trimuon/VertexInfoNoClone.pdf}\put(-50,133){(b)}
+	\caption{(a) Clone and (b) no clones flight distance properties. It can be seen that \textit{clone} tracks have their decay vertex placed at $\sim $ }
+\label{fig:ClonesFD}
+%\vspace*{-1.0cm}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\linewidth]{trimuon/OTxandyClone.pdf}\put(-50,133){(a)}
+\includegraphics[width=0.5\linewidth]{trimuon/OTxandyNoClone.pdf}\put(-50,133){(b)}
+	\caption{The occupancy difference in the \gls{OT} detector between (a) clones and (b) real tracks in the \Gls{OT} at the distance 9450 \mm along the \gls{LHCb}. \textit{Clones} are concetrated along the inner edge of the \gls{OT}.}
+\label{fig:ClonesOT}
+%\vspace*{-1.0cm}
+\end{figure}
+
+With this setup the will be a fixed angle of the clones trough the detector (the angle between muon momentum the z-axis), which is calculated in a following way:
+
+\begin{equation}
+	\arctan(\theta)=\arctan\Big(\frac{\gls{FD}\ radius}{\gls{FD}\ distance\ along\ z}\Big)=\arctan\Big(\frac{200\ \mm\ (\autoref{fig:ClonesOT})}{8500\ \mm}\Big) = 0.023 rad. 
+\end{equation}
+
+
+With the typical \texttt{L0Muon} $p_{T}$ threshold of 1.76 \gevc for 2012 \cite{Albrecht:2013fba}, this will lead to typical momentum from about 75 to 120 \gevc because
+
+\begin{equation}
+	p=1.76/\sin\bigg(\arctan(\theta)=\arctan\Big(\frac{200\ \mm}{8500\ \mm}\Big)\bigg).
+\end{equation}
+
+
+In order to supress these peaks requiring \texttt{nShared==0} removes all of the clones as it can be seen in \autoref{fig:ClonesnShared}.
 
 %\newline In order to keep the signal efficiency high in 2016 data, as shown in Table ~\ref{tab:Reason}, softer condition ,$\texttt{nShared}<2$, is applied.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\linewidth]{trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_sumnSharedclone.pdf}\put(-50,133){(a)}
+\includegraphics[width=0.5\linewidth]{trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_sumnSharednoclone.pdf}\put(-50,133){(b)}
+	\caption{(a) Clone and (b) no clone distribution for sum of all muon \texttt{nShared}. Since in this case the clones are of each other, for clone there is clear peak at three. }
+\label{fig:ClonesnShared}
+%\vspace*{-1.0cm}
+\end{figure}
+
 
 
