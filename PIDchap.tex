@@ -72,15 +72,9 @@ Similar to the $DLLmu$ variable in \autoref{muonID}, which combines all the info
 corresponding to the probability of a particle to be of a certain species. \texttt{Probnn$\_{x}$} where, x is the species of interest, is calculated and can be used also for muonID. Compared to $DLL_{x}$ variables, \texttt{Probnn$\_{x}$} variables tend to have smaller correlation with the kinematics of the particle, and hence are more useful with decays where particles are soft, such as \Bmumumu. As with any machine learning alghotritms, the selection of the training sample is important as well as input variables. In \Rn{1} there were two tunings introduced \texttt{V2} and \texttt{V3}, with more variables in \texttt{V2}. Depending on the species of particles, \texttt{V2} or \texttt{V3} perfomed better. In the analysis of \Bmumumu \texttt{Probnn$\_${x}$\_$V2} is used.
 
 
-\section{Ghosts and Clones}
+\section{Clones}
 When analysing decays with two muons of the same charge, \gls{LHCb} magnet bends these two muons in two separate planes. With two muons of the same sign, it is more likely that their two tracks will be collimated. This poses more difficult task for tracking as it distinguishes these two tracks less well. It is even possible that these two same sign muon tracks are not genuine tracks, but rather subtracks or a copy of another track, \textit{clone tracks}. Two tracks are clones if they share at least 70\% of the hits in the \gls{VELO} and at least 70\% of the hits in the other T-stations. Ofcourse, once it is established that two tracks share this percentage of hits, it has to be established which track is the clone track. This decision is based on the total number of hits and the \gls{trackchi2ndof} comparison of the two tracks.   
 
-In search for \Bmumumu two muons have the same charge, and hence are affected by the \textit{clones}, which needs to be understood. In this case, sample with three muons of same sign was obtained, where the effect is even more prominent and can create potentially \textit{fake peaks} in visible mass spectrum. \textit{Clones} peak at well defined visible mass 
-\begin{equation}
-M_{B}=\sqrt(3 \times M_{\mu})^{2}\approx 318 \mevcc
-\end{equation}
-
-Once translated into corrected mass, these \textit{fake peaks} are smeared and look like genuine resonances with resolution as seen in \autoref{fig:Clones}.  
 
 \begin{figure}[h!]
 \centering
@@ -91,13 +85,23 @@ Once translated into corrected mass, these \textit{fake peaks} are smeared and l
 %\vspace*{-1.0cm}
 \end{figure}
 
+
+In search for \Bmumumu two muons have the same charge, and hence are affected by the \textit{clones}, which needs to be understood. In this case, sample with three muons of same sign was obtained, where the effect is even more prominent and can create potentially \textit{fake peaks} in visible mass spectrum. \textit{Clones} peak at well defined visible mass 
+\begin{equation}
+	M_{B}=\sqrt{(3 \times M_{\mu})^{2}}\approx 318 \mevcc
+	\label{eq:invmass}
+\end{equation}
+
+Once translated into corrected mass, these \textit{fake peaks} are smeared and look like genuine resonances with resolution as seen in \autoref{fig:Clones}.  
+
+
 The shape of genuine resonance comes as a result of \gls{LHCb} many factors: vertexing, tracking and and trigger selection. As there are three parallel tracks, the vertex of the system is not well defined. However, the vertex fitting of the \gls{PV} and \gls{SV} is functional and \gls{vertexchi2ndof} is good as these tracks are subtracks of each other.  \textit{Clones} can be, however, differentiated by the position of the decay vertex of $B$, \autoref{fig:ClonesFD} as well as the occupancy in the tracking, \gls{OT} as seen in \autoref{fig:ClonesOT}.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\linewidth]{trimuon/VertexInfoClone.pdf}\put(-50,133){(a)}
 \includegraphics[width=0.5\linewidth]{trimuon/VertexInfoNoClone.pdf}\put(-50,133){(b)}
-	\caption{(a) Clone and (b) no clones flight distance properties. It can be seen that \textit{clone} tracks have their decay vertex placed at $\sim $ }
+	\caption{(a) Clone and (b) no clones flight distance properties. It can be seen that \textit{clone} tracks have their decay vertex placed at the end of the detector, whereas regular good tracks will decay within \gls{VELO}.}
 \label{fig:ClonesFD}
 %\vspace*{-1.0cm}
 \end{figure}
@@ -112,21 +116,41 @@ The shape of genuine resonance comes as a result of \gls{LHCb} many factors: ver
 %\vspace*{-1.0cm}
 \end{figure}
 
-With this setup the will be a fixed angle of the clones trough the detector (the angle between muon momentum the z-axis), which is calculated in a following way:
+With this typical path for the clones there is a fixed angle of the clones trough the detector (the angle between muon momentum the z-axis), which is calculated using information from \gls{OT} in a following way:
 
 \begin{equation}
 	\arctan(\theta)=\arctan\Big(\frac{\gls{FD}\ radius}{\gls{FD}\ distance\ along\ z}\Big)=\arctan\Big(\frac{200\ \mm\ (\autoref{fig:ClonesOT})}{8500\ \mm}\Big) = 0.023 rad. 
 \end{equation}
 
 
-With the typical \texttt{L0Muon} $p_{T}$ threshold of 1.76 \gevc for 2012 \cite{Albrecht:2013fba}, this will lead to typical momentum from about 75 to 120 \gevc because
+With the \texttt{L0Muon} $p_{T}$ threshold of 1.76 \gevc for 2012 \cite{Albrecht:2013fba}, the typical momentum from about 75  to 120 \gevc is yielded because
 
 \begin{equation}
-	p=1.76/\sin\bigg(\arctan(\theta)=\arctan\Big(\frac{200\ \mm}{8500\ \mm}\Big)\bigg).
+	p=1.76\gevc/\sin\bigg(\arctan(\theta)=\arctan\Big(\frac{200\ \mm}{8500\ \mm}\Big)\bigg).
 \end{equation}
 
+The angle between $B$ flight and trimuon momentum vector, \gls{DIRA}, will also be fixed and have typical value of 0.7 \mrad as seen in \autoref{fig:ClonesDIRA}.
 
-In order to supress these peaks requiring \texttt{nShared==0} removes all of the clones as it can be seen in \autoref{fig:ClonesnShared}.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\linewidth]{trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_BplusDiraclone.pdf}\put(-50,133){(a)}
+\includegraphics[width=0.5\linewidth]{trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_BplusDiranoclone.pdf}\put(-50,133){(b)}
+	\caption{(a) Clone and (b) no clone distribution for \gls{DIRA}.}
+\label{fig:ClonesDIRA}
+%\vspace*{-1.0cm}
+\end{figure}
+
+Hence, missing $p_{T}$ in the direction of the flight can be calculated using \gls{DIRA} and typical $p$,
+
+\begin{equation}
+100\gevc \times \sin(0.0007)=0.7\gevc.
+	\label{eq:mispt}
+\end{equation}
+
+Hence corrected mass $M_{corr} = \sqrt{{M}^{2} + |p^{2}_{T}|} + |p_{T}| = 4.2 \gevcc$, using missing $p_{T}$ from \autoref{eq:mispt} and visible mass of \textit{clones} from \autoref{eq:invmass}.
+
+
+In order to supress these tracks in analysing \Bmumumu, where two muons have the same sign, any distinguishing features mentioned could be used. But the most powerful \gls{PID}-wise is requiring \texttt{nShared==0}, as this requirement removes all of the clones, as seen in \autoref{fig:ClonesnShared}.
 
 %\newline In order to keep the signal efficiency high in 2016 data, as shown in Table ~\ref{tab:Reason}, softer condition ,$\texttt{nShared}<2$, is applied.
 
@@ -139,5 +163,59 @@ In order to supress these peaks requiring \texttt{nShared==0} removes all of the
 %\vspace*{-1.0cm}
 \end{figure}
 
+\section{Probability of $K/\pi$ $\rightarrow \mu$ misidentification at LHCb}
+
+Usually, in order to estimate background coming from misidentification of species into muons in the detector, data samples with \textit{non-muon} (identified not to be muons) tracks are obtained. They are assigned parametrically probabilities of misid rates from some specific control samples, which were discussed in \autoref{RICHperf}. However, three muon signature will induce problems for \gls{PID} variables that are correlated with the number of muons in the detector and other control samples need to be used.
+
+\subsection{Specific control sample for $K/\pi$ $\rightarrow \mu$ misid rates}
+\label{extraction}
+At LHCb, \texttt{PIDCalib} package can usually provide misID and ID rates obtained from standard $K/\pi$ control samples $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$. These statistically populated background-free \textit{sWeighted} samples, for which it is possible to extract misID and ID rates as a function of kinematics given certain \gls{PID} criteria, however do not have other muons in the final state. 
+
+More specifically, the topology of the mis-ID background component, which is two real muon track with an additional \textit{fake} muon track is very different to \texttt{PIDCalib} sample $D^{0} \rightarrow K^{+} \pi^{-}$. This influences rest of misID rates as some of the \gls{PID} variables are strongly correlated with number of muons in the decay, due to the fact that the mis-identified particle can share hits with other muons in the rest of the decay. This should be reflected mostly in high momenta region, where the three particles tend to be collimated and share hits most often.
+
+For this reason, an alternative sample (should also be statistically populated background-free), $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$, which mimics the two real muon plus fake muon correctly, will be used to obtain misID rates.
+% This is a clean decay that can be fit to obtain \textit{sWeights} to measure PID efficiencies. Moreover, its the signal topology and kinematics are much closer to the actual mis-ID backgroundcomponent than
+% that of the PIDCalib control samples.
+
+\subsection{Selection for $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ }
+Data samples for each year of data taking were obtained from \textit{stripping} dedicated to look for this type of decay, but with both kaon and pion having no particle identifcation applied, which ensures that \gls{PID} performance of different variables can be studied. Some initial selection was applied together with more stringent \Bmumumu selection including trigger (but on $J/\psi$ candidate rather than $B$). Finally to remove most of the backgrounds that still polute the signal samples following selection summarized in Table ~\ref{tab:cleanjpsikst} are used.
 
 
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ l  l }
+Idea  & Cut  \\ \hline
+ID $K^{*}$ & $|$ m(K$\pi$) - m$_{PDG}(K^{∗}_{0})$ $|$ $ <100$ \mevcc \\
+Compatible with \textit{PIDCalib} &  for K,$\pi$ , p$_{T} > 250$ \mevc\\
+Compatible with \textit{PIDCalib} &  for $\mu$ , p$_{T} > 800$ \mevc \\
+Muon swap veto & $|$ m((h $\rightarrow \mu$ )$\mu$) - m$_{PDG}$(J/$\psi$)$|$ $> 60$ \mevcc \\
+Veto $B^{+}\rightarrow K^{+}\mu^{+}\mu^{-}$ & max(m($K^{+}\mu^{+}\mu^{-}$)), m($(\pi^{+} \rightarrow K)\mu^{+}\mu^{-})$) $< 5100$ \mevcc\\
+Veto $B^{0}_{s}\rightarrow \phi \mu^{+} \mu^{-} $ & m(K($\pi\rightarrow$ K)) $>1040$ \mevcc \\
+ID muons & mu1$\_$ProbNNmu$>$0.5 and mu2$\_$ProbNNmu$>$0.5 \\
+\hline
+For kaon misID rates: & \\
+ID pion & DLLK $<$ 0 DLLp $<$ 0 and \texttt{IsMuon==0}\\
+\hline
+For pion misID rates: & \\
+ID kaon & DLLK $>$ 0 and DLLK-DLLp $>$ 0 and \texttt{IsMuon==0} \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Offline selection for $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ decay.}
+\label{tab:cleanjpsikst}
+\end{table}
+
+
+\subsection{Fitting Strategy for $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ decay }
+After all the selection, there will be still some background that needs to be modelled. 
+
+The signal component, $B^{0} \rightarrow J/\psi K^{*}$, is obtained by fixing the shape from simulation apart from mean $\mu$ and width $\sigma$. It is fitted with double-sided Hypatia function \cite{Santos:2013gra} (more in \autoref{IP}).
+
+Background that peaks in the upper mass sideband, coming from heavier $B^{0}_{s}$, $B^{0}_{s} \rightarrow \pi^{+} K^{-} (J/\psi \rightarrow \mu^{+} \mu^{-})$ is also modelled using simulation, using the same function as a signal but with offset of $\mu$ by PDG difference between $B^{0}_{s}$ and $B^{0}$.
+
+It is also possible that kaons and pions are swapped between themselves. Background coming from $K \leftrightarrow \pi$ swaps is modelled from simulation where mass hypotheses were swapped. Its distribution is fitted with double sided Crystal Ball function \cite{Skwarnicki:1986xj} (more in \autoref{CB}).
+
+Possibility of misidentified background comes from $\Lambda_{b} \rightarrow K^{-} p \mu^{+} \mu^{-}$ where proton is misidentified as pion. This background is modelled from simulation and fitted with \texttt{RooKeys} (more in \autoref{RK}).
+
+And finally combinatorial component is modelled by the exponential function.
+In order to obtain these $K/\pi$ misid rates fit to constrained mass between 5150 - 5450 \mevcc was performed, where all of the yields for different components are left floating.

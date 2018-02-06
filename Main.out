@@ -25,19 +25,27 @@
 \BOOKMARK [2][-]{subsection.3.1.1}{Binary Muon PID variables}{section.3.1}% 25
 \BOOKMARK [2][-]{subsection.3.1.2}{Muon PID variables based on sharing hits}{section.3.1}% 26
 \BOOKMARK [2][-]{subsection.3.1.3}{Muon PID variables based on regression techniques}{section.3.1}% 27
-\BOOKMARK [1][-]{section.3.2}{Ghosts and Clones}{chapter.3}% 28
-\BOOKMARK [0][-]{chapter.4}{Discovering \(Setting Limit for\) B + \040+- + \040at LHCb}{}% 29
-\BOOKMARK [1][-]{section.4.1}{Topology of at LHCb B + \040+- + \040at LHCb}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.2}{Sources of Backgrounds}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.3}{Analysis strategy}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.4}{Samples}{chapter.4}% 33
-\BOOKMARK [2][-]{subsection.4.4.1}{Data Samples}{section.4.4}% 34
-\BOOKMARK [2][-]{subsection.4.4.2}{Simulation Samples}{section.4.4}% 35
-\BOOKMARK [1][-]{section.4.5}{Preselection for B + \040+- + }{chapter.4}% 36
-\BOOKMARK [1][-]{section.4.6}{Trigger Selection}{chapter.4}% 37
-\BOOKMARK [1][-]{section.4.7}{q2 selection}{chapter.4}% 38
-\BOOKMARK [1][-]{section.4.8}{Further Selection}{chapter.4}% 39
-\BOOKMARK [0][-]{table.caption.49}{Bibliography}{}% 40
-\BOOKMARK [0][-]{chapter*.50}{Appendices}{}% 41
-\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 42
-\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 43
+\BOOKMARK [1][-]{section.3.2}{Clones}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.3}{Probability of K/ \040misidentification at LHCb}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.1}{Specific control sample for K/ \040misid rates}{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.2}{Selection for B0 J/\(+ -\) K* }{section.3.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.3}{Fitting Strategy for B0 J/\(+ -\) K* decay }{section.3.3}% 32
+\BOOKMARK [0][-]{chapter.4}{Discovering \(Setting Limit for\) B + \040+- + \040at LHCb}{}% 33
+\BOOKMARK [1][-]{section.4.1}{Topology of at LHCb B + \040+- + \040at LHCb}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.2}{Sources of Backgrounds}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.3}{Analysis strategy}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.4}{Samples}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.4.1}{Data Samples}{section.4.4}% 38
+\BOOKMARK [2][-]{subsection.4.4.2}{Simulation Samples}{section.4.4}% 39
+\BOOKMARK [1][-]{section.4.5}{Preselection for B + \040+- + }{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.6}{Trigger Selection}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.7}{q2 selection}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.8}{Further Selection}{chapter.4}% 43
+\BOOKMARK [0][-]{table.caption.51}{Bibliography}{}% 44
+\BOOKMARK [0][-]{chapter*.52}{Appendices}{}% 45
+\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 46
+\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 47
+\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 48
+\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 49
+\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 50
+\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 51

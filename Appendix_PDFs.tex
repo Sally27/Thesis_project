@@ -1,0 +1,37 @@
+\label{sec:PDFS}
+\section{Crystal Ball function}
+\label{CB}
+Crystal Ball (\Gls{CB}) function \cite{Skwarnicki:1986xj}
+is usually used for fitting of signal mass peaks in the invariant mass distributions. The \gls{CB} function consists of Gaussian function (which usually describes mass peak) with a power-law tail below a certain threshold. Its PDF is defined as
+\begin{equation}
+  f(x; \alpha,n,\overline{\mu},\sigma) = N \cdot
+  \begin{dcases}
+    e^{-\frac{(x-\overline{\mu})^{2}}{2\sigma^{2}}},& \text{if } \frac{(x-\overline{\mu})}{\sigma}  >\alpha\\
+    A \cdot\Big(B - \frac{(x-\overline{\mu})}{\sigma}\Big)^{-n}, & \text{otherwise}
+  \end{dcases}
+  %% $$where$$
+  %% \mathcal{C} = e^{-\frac{1}{2}(\frac{\alpha-\overline{\mu}}{k})^{2}}e^{-\beta \alpha};  \beta = \frac{\overline{\mu} - \alpha}{k^{2}}.
+  \label{Eq:CB}
+\end{equation}
+where $A, B$ and $N$ are all constants that depend on ${\alpha,n,\overline{\mu},\sigma}$ ensuring correct normalisation and continuity of the first derivative. Thus, if $\alpha$ is positive, the tail, $A\cdot \Big(B - \frac{(x-\overline{\mu})}{2\sigma}\Big)^{-n}$, will start below the mean, usually arising from the photon-radiating decay products (left tail) and vice versa for the case where $\alpha$ is negative, arising from non-Gaussian resolution effects (right tail).
+
+If one has to deal with different per-event uncertainties on the mass, one way is to model this by a sum of two Crystal Ball functions, where then each uncertainty on the event, would correspond to sum of two delta functions. Hence, double-sided Crystall Ball is defined as a linear combination of $f(x; \alpha,n,\overline{\mu},\sigma)$:
+\begin{equation}
+	g(x; \alpha,n,\overline{\mu},\sigma, f_{cb}) = f_{cb} \cdot f(x; \alpha,n,\overline{\mu},\sigma) + (1-f_{cb})\cdot f(x; \alpha,n,\overline{\mu},\sigma).
+\end{equation}
+
+
+\section{Double-sided Ipatia function}
+\label{IP}
+Generalisation of (double-sided) Crystal Ball function where per-event uncertainty is taken into account, known as (double-sided) Ipatia function,\cite{Santos:2013gra}. 
+%, is defined in the following way:
+
+\section{\texttt{Rookeys} function from \texttt{ROOFIT} package}
+\label{RK}
+A non-parametric function that is composed of superposition of Gaussians with equal surface, but with different widths $\sigma$, which are established by data at a given point.
+%\begin{equation}
+%I(x,\mu_{IP},\sigma_{IP},\lambda,\zeta,\beta,a_{1},n_{1},a_{2},n_{2})
+%\end{equation}
+
+
+

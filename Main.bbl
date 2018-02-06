@@ -288,6 +288,25 @@ LHCb, M.~Clemencic {\em et~al.},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Santos:2013gra}
+D.~Martínez~Santos and F.~Dupertuis,
+  \ifthenelse{\boolean{articletitles}}{\emph{{Mass distributions marginalized
+  over per-event errors}},
+  }{}\href{http://dx.doi.org/10.1016/j.nima.2014.06.081}{Nucl.\ Instrum.\
+  Meth.\  \textbf{A764} (2014) 150},
+  \href{http://arxiv.org/abs/1312.5000}{{\normalfont\ttfamily
+  arXiv:1312.5000}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Skwarnicki:1986xj}
+T.~Skwarnicki, {\em {A study of the radiative CASCADE transitions between the
+  Upsilon-Prime and Upsilon resonances}}, PhD thesis, Cracow, INP, 1986\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{Ali:1999mm}
 A.~Ali, P.~Ball, L.~T. Handoko, and G.~Hiller,
   \ifthenelse{\boolean{articletitles}}{\emph{{A Comparative study of the decays
