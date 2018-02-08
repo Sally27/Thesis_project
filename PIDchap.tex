@@ -186,10 +186,10 @@ Data samples for each year of data taking were obtained from \textit{stripping} 
 \begin{tabular}{ l  l }
 Idea  & Cut  \\ \hline
 ID $K^{*}$ & $|$ m(K$\pi$) - m$_{PDG}(K^{∗}_{0})$ $|$ $ <100$ \mevcc \\
-Compatible with \textit{PIDCalib} &  for K,$\pi$ , p$_{T} > 250$ \mevc\\
-Compatible with \textit{PIDCalib} &  for $\mu$ , p$_{T} > 800$ \mevc \\
+Compatible with \texttt{PIDCalib} &  for K,$\pi$ , p$_{T} > 250$ \mevc\\
+Compatible with \texttt{PIDCalib} &  for $\mu$ , p$_{T} > 800$ \mevc \\
 Muon swap veto & $|$ m((h $\rightarrow \mu$ )$\mu$) - m$_{PDG}$(J/$\psi$)$|$ $> 60$ \mevcc \\
-Veto $B^{+}\rightarrow K^{+}\mu^{+}\mu^{-}$ & max(m($K^{+}\mu^{+}\mu^{-}$)), m($(\pi^{+} \rightarrow K)\mu^{+}\mu^{-})$) $< 5100$ \mevcc\\
+	Veto $B^{+}\rightarrow K^{+}\mu^{+}\mu^{-}$ & max(m($K^{+}\mu^{+}\mu^{-}$)), m($(\pi^{+} \rightarrow K^{+})\mu^{+}\mu^{-})$) $< 5100$ \mevcc\\
 Veto $B^{0}_{s}\rightarrow \phi \mu^{+} \mu^{-} $ & m(K($\pi\rightarrow$ K)) $>1040$ \mevcc \\
 ID muons & mu1$\_$ProbNNmu$>$0.5 and mu2$\_$ProbNNmu$>$0.5 \\
 \hline
@@ -218,4 +218,164 @@ It is also possible that kaons and pions are swapped between themselves. Backgro
 Possibility of misidentified background comes from $\Lambda_{b} \rightarrow K^{-} p \mu^{+} \mu^{-}$ where proton is misidentified as pion. This background is modelled from simulation and fitted with \texttt{RooKeys} (more in \autoref{RK}).
 
 And finally combinatorial component is modelled by the exponential function.
-In order to obtain these $K/\pi$ misid rates fit to constrained mass between 5150 - 5450 \mevcc was performed, where all of the yields for different components are left floating.
+
+In order to obtain $K/\pi$ misid probabilities fit to $\mu^{+} \mu^{-} \pi^{+} K^{-}$ mass between 5150 - 5450 \mevcc was performed, where all of the yields for different components are left floating. Moreover, mass of $J/\psi$ was \textit{constrained} to its nominal mass, known as \textit{mass constraint}, which will yield new estimates for track parameters of the final state particles, from which a new kinematic refit is done.
+
+Actual extraction of the misid rate was obtained using statistical subtraction of background, also known as \textit{sPlot} technique (the same as in \texttt{PIDCalib} package). It was cross-checked with \textit{fit twice method}, because \textit{sPlot} technique relies on the fact that there is no correlation between the between the control variables ($p$, $\eta$) and the discriminating variable (invariant mass) for both signal and backgound. This assumption may not be true especially for background, and it can introduce biases.
+
+The \textit{fit twice method} consists of fitting $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ before and after \gls{PID} requirement in a given kinematic ($p$, $\eta$) bin separately. Misid probabilities are then then obtained as a ratio of signal yields arising from these two fits.
+
+In the \textit{sPlot} method, the invariant mass distribution is fitted once and each event is assigned \textit{sWeights}, probabilities that a given event is a signal-like or a background-like. Then, through \textit{sPlot} technique, background is substracted. The misid probabilities are then obtained by looking at sum of all \textit{sWeights} in each bin.
+
+It was shown that these two methods yields very similar results, hence,
+for purposes of \Bmumumu analysis \textit{sWeight} values will be used. Fits to Run \Rn{1} and Run \Rn{2} data can be seen in ~\autoref{fig:JpsiKst}.
+
+
+%IF YOU WANT TO CHANGE THE PLOTS HAVE A LOOKHERE /vols/lhcb/ss4314/fitjpsikst/fitjpsikst_idKAON_includeswaps_automatize_master_sweight_cinMuonAc_NOghostprob_mydefbin_onnlyONEbinINeta_2016_newPIDopt/NOFCME/ there is mainPLOTonly function
+
+\begin{figure}[h!]
+\center
+\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2011/kaonmisid2011_new.pdf}\put(-150,100){(a) 49K events }%
+\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2011/pionmisid2011_new.pdf}\put(-150,100){(b) 46K events}
+\newline
+\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2012/KaonMisid_new.pdf}\put(-150,100){(c) 112K events }%
+\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2012/PiMisid_new.pdf}\put(-150,100){(d) 107K events}
+\newline
+\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2016/kaonmisid2016_new.pdf}\put(-150,100){(e) 205K events}%
+\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2016/pionmisid2016_new.pdf}\put(-150,100){(f) 161K events}
+	\caption{Fit to constrained $J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}(\rightarrow \pi^{+} K^{-})$ mass with all the components for (a)(b) 2011, (c)(d) 2012, (e)(f) 2016. On the left, fit to data with pion ID (giving kaon misid probabilities), on right data with kaon ID (pion misid rates).}
+\label{fig:JpsiKst}
+\end{figure}
+
+\subsection{Results of $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ control sample for $K/\pi$ $\rightarrow \mu$ misid rates }
+Using the \textit{sWeight} method, misid rates for $K/\pi$ are obtained.
+In ~\autoref{fig:JpsiKstWeights}, the rates for different PID cuts are seen.
+ As it can be noticed, more stringent the cut, lower the probability of misidentification. 
+In ~\autoref{fig:JpsiKstRatios}, these rates are compared to rates obtained from \texttt{PIDCalib}.
+%Requiring \texttt{IsMuon==1.0} means that the tracks leave hits within certain FOI. This FOI is defined differently depending on momentum of particles. 
+In the low momenta region, there is generally good aggreement between the two samples. This can be explained as these particles are softer, and they will not be collimated, causing less interference with other two real muons in decay. In high momenta region, particles will tend to be more collimated and hence the influence of other two real muons will lead to bigger disagreement. This is because the other two real muons leave hits in the muon chambers and hence the rate of \texttt{IsMuon==1.0} is higher. This disagreement is decreased by requiring \texttt{nShared==0.0}, as having 2 other muons to share hits will be more likely. The effect of other PID variables can also be seen, but it is harder to interpret as these depend on several variables.
+\newline In conclusion, the misid rates obtained from $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ control sample will be used for misid probabilities.
+\newline Finally, it was also checked that that these two samples have the same rest of event information by looking at the \texttt{InMuonAcceptance==1.0} of tracks, see ~\autoref{tab:ROE}.
+
+\begin{table}[h!]
+\small
+\begin{center}
+\begin{tabular}{| l | l | l | l | l | l | l |}
+\hline
+	$p$ low & $p$ high & $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$  & $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$  & Ratio  \\ \hline
+3000 & 6000 &   0.77$\pm$0.0016 & 0.83$\pm$0.0047 & 1.1$\pm$0.0065 \\
+6000 & 9300 &   0.93$\pm$0.00030 & 0.95$\pm$0.0019 & 1.0$\pm$0.0020 \\
+9300 & 10000 &  0.96$\pm$0.00037 & 0.97$\pm$0.0031 & 1.0$\pm$0.0033 \\
+10000 & 12600 &  0.97$\pm$0.00014 & 0.97$\pm$0.0017 & 1.0$\pm$0.0017 \\
+12600 & 15600 &   0.98$\pm$0.00011 & 0.97$\pm$0.0017 & 0.99$\pm$0.0018 \\
+15600 & 17500 &   0.98$\pm$0.00013 & 0.96$\pm$0.0024 & 0.98$\pm$0.0025 \\
+17500 & 21500 &   0.98$\pm$8.9e-05 & 0.96$\pm$0.0018 & 0.98$\pm$0.0018 \\
+21500 & 27000 &   0.98$\pm$7.8e-05 & 0.96$\pm$0.0018 & 0.98$\pm$0.0019 \\
+27000 & 32000 &   0.98$\pm$8.8e-05 & 0.96$\pm$0.0024 & 0.98$\pm$0.0025 \\
+32000 & 40000 &  0.98$\pm$8.0e-05 & 0.96$\pm$0.0022 & 0.98$\pm$0.0022 \\
+40000 & 60000 &  0.97$\pm$7.5e-05 & 0.95$\pm$0.0021 & 1.0$\pm$0.0022 \\
+60000 & 70000 &  0.96$\pm$0.00016 & 0.96$\pm$0.0043 & 1.0$\pm$0.0046 \\
+70000 & 100000 &  0.95$\pm$0.00013 & 0.94$\pm$0.0044 & 0.99$\pm$0.0046 \\
+\hline
+
+\end{tabular}
+\end{center}
+\caption{\texttt{K$\_$InMuonAcc==1.0} shows the interpolation of $K$ tracks into muon chambers. It can be seen that both samples agree with each other, meaning that the rest of the event information is the same for both samples. This measurement is in a bin $1.5<\eta<5.0$.}
+\label{tab:ROE}
+\end{table}
+
+
+\begin{figure}[h!]
+\center
+%\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2011_small.pdf}\put(-50,133){(a)}%
+		\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_PionMisid_2012_small_thesis.pdf}\put(-50,133){(a)}
+%		\newline
+%		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_small.pdf}\put(-50,133){(c)}%
+		\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Ratios_PionMisid_small_thesis.pdf}\put(-50,133){(b)}
+		\newline
+%		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2016_small.pdf}\put(-50,133){(e)}%
+		\includegraphics[width = 1.0\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_PionMisid_2012_small_thesis_legend.pdf}
+		\caption{(a) $\pi \rightarrow \mu$ misID probabibility for different PID requirements obtained using $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*} (\rightarrow {K^{+} \pi^{-}} )$ for 2012 data. (b) This is compared to the standard \texttt{PIDCalib} $D^{*+}(\rightarrow D^{0}(\rightarrow K^{+} \pi^{-}) \pi^{+})$ sample. }
+		\label{fig:JpsiKnew}
+\end{figure}
+
+
+\begin{figure}[h!]
+\center
+%\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2011_small.pdf}\put(-50,133){(a)}%
+		\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2012_small_thesis.pdf}\put(-50,133){(a)}
+%		\newline
+%		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_small.pdf}\put(-50,133){(c)}%
+		\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Ratios_KaonMisid_small_thesis.pdf}\put(-50,133){(b)}
+		\newline
+%		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2016_small.pdf}\put(-50,133){(e)}%
+		\includegraphics[width = 1.0\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2012_small_thesis_legend.pdf}
+		\caption{(a) $K \rightarrow \mu$ misID probabibility for different PID requirements obtained using $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*} (\rightarrow {K^{+} \pi^{-}} )$ for 2012 data. (b) This is compared to the standard \texttt{PIDCalib} $D^{*+}(\rightarrow D^{0}(\rightarrow K^{+} \pi^{-}) \pi^{+})$ sample. }
+		\label{fig:JpsiKaonnew}
+\end{figure}
+
+\begin{figure}[h!]
+\center
+%\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2011_small.pdf}\put(-50,133){(a)}%
+		\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2016/Visualize_Weights_PionMisid_2016_small_thesis.pdf}\put(-50,133){(a)}
+%		\newline
+%		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_small.pdf}\put(-50,133){(c)}%
+		\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2016/Visualize_Ratios_PionMisid_2016_small_thesis.pdf}\put(-50,133){(b)}
+		\newline
+%		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2016_small.pdf}\put(-50,133){(e)}%
+		\includegraphics[width = 1.0\textwidth]{figs/trimuon/jpsikst/2016/Visualize_Weights_PionMisid_2016_small_thesis_legend.pdf}
+		\caption{(a) $\pi \rightarrow \mu$ misID probabibility for different PID requirements obtained using $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*} (\rightarrow {K^{+} \pi^{-}} )$ for 2016 data. (b) This is compared to the standard \texttt{PIDCalib} $D^{*+}(\rightarrow D^{0}(\rightarrow K^{+} \pi^{-}) \pi^{+})$ sample. }
+		\label{fig:JpsiPionnew2016}
+\end{figure}
+
+
+\begin{figure}[h!]
+\center
+%\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2011_small.pdf}\put(-50,133){(a)}%
+		\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2016/Visualize_Weights_KaonMisid_2016_small_thesis.pdf}\put(-50,133){(a)}
+%		\newline
+%		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_small.pdf}\put(-50,133){(c)}%
+		\includegraphics[width = 0.5\textwidth]{figs/trimuon/jpsikst/2016/Visualize_Ratios_2016_KaonMisid_small_thesis.pdf}\put(-50,133){(b)}
+		\newline
+%		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2016_small.pdf}\put(-50,133){(e)}%
+		\includegraphics[width = 1.0\textwidth]{figs/trimuon/jpsikst/2016/Visualize_Weights_KaonMisid_2016_small_thesis_legend.pdf}
+		\caption{(a) $K \rightarrow \mu$ misID probabibility for different PID requirements obtained using $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*} (\rightarrow {K^{+} \pi^{-}} )$ for 2016 data. (b) This is compared to the standard \texttt{PIDCalib} $D^{*+}(\rightarrow D^{0}(\rightarrow K^{+} \pi^{-}) \pi^{+})$ sample. }
+		\label{fig:JpsiKaonnew2016}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+		\center
+		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2011/Visualize_Weights_KaonMisid_2011_small.pdf}\put(-50,133){(a)}%
+		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2011/Visualize_Weights_PionMisid_2011_small.pdf}\put(-50,133){(b)}
+		\newline
+		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_small.pdf}\put(-50,133){(c)}%
+		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Weights_PionMisid_small.pdf}\put(-50,133){(d)}
+		\newline
+		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2016/Visualize_Weights_KaonMisid_2016_small.pdf}\put(-50,133){(e)}%
+		\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2016/Visualize_Weights_PionMisid_2016_small.pdf}\put(-50,133){(f)}
+		\caption{Weights for different PID cuts from  $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ for (a)(b) 2011, (c)(d) 2012, (e)(f) 2016 data in different bins of $p$. On the left, kaon misid rates, on right pion misid rates.
+		\newline For (a)(b)(c)(d) In black: \texttt{isMuon==1.0} is probed, \color{red}{in red: \texttt{isMuon==1.0} $\&\&$ \texttt{nShared==0}}, \color{green}in green: \texttt{isMuon==1.0} $\&\&$ \texttt{nShared==0} $\&\&$ $\Delta$ LL($\mu$ - $\pi$) $>$0 $\&\&$ (($\Delta$ LL($\mu$ - $\pi$) - ($\Delta$ LL($K$ - $\pi$)) $>$ 0, \color{blue}in blue: \texttt{isMuon==1.0} $\&\&$ \texttt{nShared==0} $\&\&$ $\Delta$ LL($\mu$ - $\pi$) $>$0 $\&\&$ (($\Delta$ LL($\mu$ - $\pi$) - ($\Delta$ LL($K$ - $\pi$)) $>$ 0 $\&\&$ ProbNN$\mu$ $>$ 0.3.
+		\newline For (e)(f) \color{black}In black: \texttt{isMuon==1.0} is probed, \color{red}in red: \texttt{isMuon==1.0} $\&\&$ \texttt{isMuonTight==1.0}, \color{green}in green: \texttt{isMuon==1.0} $\&\&$ \texttt{isMuonTight==1.0} $\&\&$ \texttt{nShared<2} $\&\&$ $\Delta$ LL($\mu$ - $\pi$) $>$0 $\&\&$ (($\Delta$ LL($\mu$ - $\pi$) - ($\Delta$ LL($K$ - $\pi$)) $>$ 0, \color{blue}in blue: \texttt{isMuon==1.0} $\&\&$ \texttt{nShared<2} $\&\&$ \texttt{isMuonTight==1.0} $\&\&$ $\Delta$ LL($\mu$ - $\pi$) $>$0 $\&\&$ (($\Delta$ LL($\mu$ - $\pi$) - ($\Delta$ LL($K$ - $\pi$)) $>$ 0.
+		\newline \color{black} These plots show that misid in low $p$ region is highly suppressed with $\Delta$ LL and Probnn$\mu$ cuts leading to misid probabilities that are less than 0.5\%.}
+		\label{fig:JpsiKstWeights}
+\end{figure}
+
+ms 
+\begin{figure}[h!]
+	\center
+	\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2011/Visualize_Ratios_KaonMisid_2011_small.pdf}\put(-50,133){(a)}%
+	\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2011/Visualize_Ratios_PionMisid_2011_small.pdf}\put(-50,133){(b)}
+	\newline
+	\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Ratios_KaonMisid_small.pdf}\put(-50,133){(c)}%
+	\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2012/Visualize_Ratios_PionMisid_small.pdf}\put(-50,133){(d)}
+	\newline
+	\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2016/Visualize_Ratios_KaonMisid_2016_small.pdf}\put(-50,133){(e)}%
+	\includegraphics[width = 0.55\textwidth]{figs/trimuon/jpsikst/2016/Visualize_Ratios_PionMisid_2016_small.pdf}\put(-50,133){(f)}
+	\caption{Ratio of weights from  $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ as compared to those from \texttt{PIDCalib} for (a)(b) 2011, (c)(d) 2012, (e)(f) 2016 data in different bins of $p$. It can be seen that at low momenta region the agreement is very good, however in high momenta region, where particles become collimated this is not anymore the case.
+	\newline For (a)(b)(c)(d) In black: \texttt{isMuon==1.0} is probed, \color{red}{in red: \texttt{isMuon==1.0} $\&\&$ \texttt{nShared==0}}, \color{green}in green: \texttt{isMuon==1.0} $\&\&$ \texttt{nShared==0} $\&\&$ $\Delta$ LL($\mu$ - $\pi$) $>$0 $\&\&$ (($\Delta$ LL($\mu$ - $\pi$) - ($\Delta$ LL($K$ - $\pi$)) $>$ 0, \color{blue}in blue: \texttt{isMuon==1.0} $\&\&$ \texttt{nShared==0} $\&\&$ $\Delta$ LL($\mu$ - $\pi$) $>$0 $\&\&$ (($\Delta$ LL($\mu$ - $\pi$) - ($\Delta$ LL($K$ - $\pi$)) $>$ 0 $\&\&$ ProbNN$\mu$ $>$ 0.3.
+	\newline For (e)(f) \color{black}In black: \texttt{isMuon==1.0} is probed, \color{red}in red: \texttt{isMuon==1.0} $\&\&$ \texttt{isMuonTight==1.0}, \color{green}in green: \texttt{isMuon==1.0} $\&\&$ \texttt{isMuonTight==1.0} $\&\&$ \texttt{nShared<2} $\&\&$ $\Delta$ LL($\mu$ - $\pi$) $>$0 $\&\&$ (($\Delta$ LL($\mu$ - $\pi$) - ($\Delta$ LL($K$ - $\pi$)) $>$ 0, \color{blue}in blue: \texttt{isMuon==1.0} $\&\&$ \texttt{nShared<2} $\&\&$ \texttt{isMuonTight==1.0} $\&\&$ $\Delta$ LL($\mu$ - $\pi$) $>$0 $\&\&$ (($\Delta$ LL($\mu$ - $\pi$) - ($\Delta$ LL($K$ - $\pi$)) $>$ 0.}
+	\label{fig:JpsiKstRatios}
+\end{figure}
+
