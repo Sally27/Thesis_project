@@ -15,7 +15,7 @@ The Large Hadron Collider (LHC) is a complex machine which accelerates beams of 
 50-157\m below ground on the border of Switzerland and France. Once the desired energy is achieved proton-proton, $pp$, or ion, collisions happen at four distinct points, where different detectors with different physics focus are located. These are \Gls{ATLAS}, \Gls{CMS}, \Gls{ALICE} and \Gls{LHCb}. 
 Study of \Bmumumu was performed using data obtained at \Gls{LHCb}. 
 
-\section{LHCb Layout}
+\section{LHCb Layout \mybox{ULRIK}}
 
 \Gls{LHCb} differs from the other general purpose detectors on the LHC ring as its studies properties of heavy particles containing $b$ or $c$ quarks. This can be attributed to the geometrical acceptance and unique vertex resolution as well as excellent \Gls{PID}.
 
@@ -89,7 +89,7 @@ for LHCb, the luminosity is kept stable in a range of 5$\%$ for about 15 hours b
 
 In the following sections, brief discussion of different subdetectors is presented. Both hardware and software overview will be presented with particular emphasis given to Muon Station and Simulation of LHCb.
 
-\section{VErtex LOcator}
+\section{VErtex LOcator \mybox{ULRIK}}
 The closest detector around the collision point is VErtex LOcator (\Gls{VELO}). This silicon-strip based detector, that extends 1 \m along the beam axis, is primarily used for to distinguish events from prompt background. The typical differing property of a $B$ hadron decay includes large impact parameter (\Gls{IP}), the minimal distance between the track and primary vertex, in addition to significantly higher transverse momentum $p_{T}$. Main uses of this subdetector include finding: 
 \begin{itemize}
 \item primary vertices positions
@@ -119,12 +119,12 @@ This setup brings outstanding hit resolution (4-40$\mum$), which in turn allows 
 \end{figure}
 
 
-\section{Tracking System}
+\section{Tracking System \mybox{ULRIK}}
 In addition to tracking information provided by \Gls{VELO}, the trajectories of charged particles are monitored by series of tracking subdetectors. The main task of these tracking subdetectors is to provide efficient reconstruction and precise measurement of particle's momentum. There are four tracking stations apart from \Gls{VELO}: Tracker Turicensis (\Gls{TT}), positioned upstream from magnet, and  \Gls{Tstation} tracking stations on the other side from the magnet. The 10 \m dipole magnet with $\approx$ 4 Tm integrated field provides enough strength to bend charged particles with $p$ of 200 $\gev/c^{2}$.      
 
  Two different detection technologies are used in these trackers reflecting the nature of track occupancy as function of distance from beam pipe. The tracker's part close to the beam pipe, \Gls{TT} station together with central region of T1-T3, also known as Inner Tracker (\Gls{IT}), expects higher occupancy and makes use of the silicon microstrip detection mechanism. The outer part of \Gls{Tstation} stations, also known as Outer Tracker \Gls{OT}, is made of a straw-tube detectors. It measures the hit position by measuring the drift-time of ionized electrons. This two technologies are seen in \autoref{fig:tracktype}. 
 
-\subsection{Tracking Algorithms}
+\subsection{Tracking Algorithms \mybox{ULRIK}}
 Different particles will leave different footprint in the detector. Charged particles will form tracks. Depending on presence of hits in individual subdetectors, they are grouped into several categories, visualized in \autoref{fig:tracktype}.
 
 \begin{figure}[!h]
@@ -155,7 +155,7 @@ Mass uncertainty is one of the crucial parameters to minimize as it provides opp
 	\label{fig:momres}
 \end{figure}
 
-\section{Ring Imaging Detectors}
+\section{Ring Imaging Detectors \mybox{ULRIK}}
 Particle identification, \Gls{PID}, at \Gls{LHCb} relies heavily on two dedicated Ring Imaging subdetectors. These detectors take advantage of the phenomena, emission of Cerenkov light, which happens when a charged particle travels through a medium at a speed faster than the phase velocity of light in that medium. This cone of light is emitted at an angle $\theta$ with respect to the charged particle's trajectory. Using the knowledge of refractive index of the medium, $n$, and momentum $p$ that is measured using tracking, mass $m$ of the particle can be obtained through:
 
 \begin{equation}
@@ -178,7 +178,7 @@ Both RICH1 and RICH2 use set of spherical primary mirrors to guide the photons o
 	\label{fig:richres}
 \end{figure}
 
-\section{RICH Reconstruction and Performance}
+\section{RICH Reconstruction and Performance \mybox{ULRIK}}
 In order to establish species of particles for each track, the Cerenkov angle is combined with the track momentum measured by tracking. In practice, however, as \Gls{RICH} detectors operate in high track density environment, many Cerenkov rings will be overlapping and hence a complex pattern recognition algorithm is deployed \cite{Forty:1999sg}. 
 
 
@@ -191,7 +191,7 @@ Results of this algorithm provide likelihood variables, $DLL_{x}$, that quantify
 
 By calculating $DLL_{x_{1}} - DLL_{x_{2}}$, one can obtain discriminative strength between any two species.
 
-\subsection{RICH performance}
+\subsection{RICH performance \mybox{ULRIK}}
 \label{RICHperf}
 In order to measure the performance of the \Gls{PID} computed by RICH, populous calibration samples with very little background contamination are required. In order not to bias results, these samples have no \Gls{PID} constraints themselves and are reconstructed solely using kinematic information. For studies of pion/kaon efficiencies, $D^{*+} \to D^{0}(\kaon^{-}\pip)\pip$ backround-substracted samples are used, whereby the daughter tracks of $D^{0}$ become proxies for evaluation. The probability of correctly identifying kaon given certain constraint on $DLL_{K}$, identification efficiency (\Gls{ID}), and probability of mistakenly swapping pion identification, \Gls{misID} efficiency, are summarized in \autoref{fig:richperf}. Identification probabilities of $\approx$ 85\% with misidentification rate of $\approx$ 3\% provide invaluable discriminating separation between kaon and pion.
 
@@ -217,7 +217,7 @@ In search for $B^{0}$ and $B^{0}_{s}$ decaying to $h^{+}h^{-}$, where $h\in K, \
 \end{figure}
 
 
-\section{Calorimetry}
+\section{Calorimetry \mybox{ULRIK}}
 As many other particle physics detectors, \Gls{LHCb} is equipped with series of subdetectors providing separation and \Gls{PID} tool for electrons, pions and photons. This separation is achieved because different particles interact at different distances, producing differently shaped showers of light. This part of detector is not only integral to the way \Gls{LHCb} trigger system works but it also provides precise measurement of energies of these objects.
 All the subcomponents discussed here operate on the same principle. The light from the scintillating material is guided to photomultiplier tubes by wavelength shifting fibres.
 
@@ -238,7 +238,7 @@ On the other hand, \Gls{HCAL} sandwiches iron instead of lead as the absorber wi
 
 
 
-\section{Muon Stations}
+\section{Muon Stations \mybox{ULRIK}}
 Muons are considered to be of fundamental importance to many flagship analyses by \Gls{LHCb}, such as the search for the rare $\B^{0}_{s} \rightarrow \mu^{+} \mu^{-}$ decay . Analysis of \Bmumumu of course relies heavily on good performance of this part of detector. Muon stations are positioned at the end of the detector, taking advantage of the low probability of interaction of muon previously in the detector.
 
 \Gls{LHCb}'s five rectangular muon stations \Gls{muonstation} are positioned before and after calorimetry system, with first station M1 upstream of the \Gls{SPD}, and four stations (M2-M5) downstream of \Gls{HCAL} as shown in \autoref{fig:MuonGran}. The M1 station consists of 12 sets of three gas electron 
@@ -261,7 +261,7 @@ Each station is then further segmented into four increasingly larger regions awa
 Both GEM and \Gls{MWPCs} operate on a same principle. In each station, position in the $x-y$ plane is determined by ionizing electrons that come from muons passing through the detector, which are then attracted either to the closest anode mesh or wire mesh. The trigger is fired if the corresponding rectangular region in each station registered positive binary decision. This means the efficiency of each station must be $\geq$99\% to give overall 95\% trigger efficiency. Geometrical layout covers $\approx$ 20\% muons originating in semileptonic $b$ decays.
 
 
-\subsection{Muon Identification}
+\subsection{Muon Identification \mybox{ULRIK}}
 \label{muonID}
 Apart from triggering events with high enough $p_{T}$ muons, muon stations provide necessary PID information for muon analyses. Offline variables mostly used for muon ID by analysts are
 \begin{itemize}
@@ -286,7 +286,7 @@ Apart from triggering events with high enough $p_{T}$ muons, muon stations provi
 	\label{tab:ismuontab}
 \end{table}   
 
-\subsection{Muon Performance}
+\subsection{Muon Performance \mybox{ULRIK}}
 \label{muonperf}
 As in hadron performance measurements, muon ID is determined using high statistics decay channel $J/\psi \rightarrow \mu^{+} \mu^{-}$ using tag-and-probe method. Mis-ID rates are computed using the same decay channels as previously. The summary of \texttt{IsMuon} \Gls{ID} and misid rates are presented in \autoref{fig:MuonID}. Very high ID rate (above 90\%) for relatively low misid probability (below 10\%) performs the least well in low $p_{T}$ bins as here the muons end up outside of the acceptance. The misid rates for kaon and pions are significantly higher in low momenta region as the dominant process causing this are prompt muons from decay-in-flight.   
 
@@ -297,7 +297,7 @@ As in hadron performance measurements, muon ID is determined using high statisti
 \end{figure}
 
 
-\section{Trigger}
+\section{Trigger \mybox{ULRIK}}
 \label{triggerchap}
 Nowadays, big-data physics experiments have to make decisions on what kind of data they want to keep. The choice of interesting events is performed by series of decisions, which is cumulatively known as trigger. \Gls{LHCb} trigger system was build around constraints posed by the run conditions, read-out capabilities and available disk space. In Run \Rn{1} and Run \Rn{2} LHCb has at its disposal the multistage trigger consisting of hardware-based level 0 trigger (\Gls{L0}) and software-based high level trigger (\Gls{HLT}).
 
@@ -343,7 +343,7 @@ Between the Run \Rn{1} and Run \Rn{2} period there has been a change in how the 
 \end{figure}
 
 
-\section{Simulation}
+\section{Simulation \mybox{ULRIK}}
 In order to optimise the event selections, extract efficiencies and model the backgrounds, a full Monte Carlo Simulation \Gls{MC} starting from simulation the $pp$ collision to detector readout of decay of interest is produced. 
 The $pp$ collisions within \Gls{LHCb} configuration \cite{Belyaev:2011zza} are simulated with Pythia 6.4 \cite{pythia6} and Pythia 8.1 \cite{pythia8}. \Gls{LHCb} specific settings are mostly related to running conditions: luminosity, number of collisions per bunch crossing as well as contamination from other bunches, \textit{spill-over}. 
 
@@ -353,7 +353,7 @@ In order to account for the effects of \Gls{QED} radiative corrections, PHOTOS \
 
 In the next phase, \textit{detector simulation}, the interactions of the all the particles with the detector, transport, as well as detector's response are simulated using the C++ GEANT4 toolkit \cite{Geant4},\cite{Agostinelli:2002hh}. \Gls{LHCb}'s interface to GEANT4 is detailed in \cite{Clemencic:2011zza}. 
 
-\subsection{Differences in Simulation And Data}
+\subsection{Differences in Simulation And Data \mybox{ULRIK}}
 Despite the complexity and best intention of the \Gls{LHCb} simulation, there are several shortcomings that require correction treatment.
 The most affected variables necessary for physics analyses that one needs to consider are \Gls{IP} resolution, track reconstruction efficiencies, \Gls{PID} variables and track occupancy.
 

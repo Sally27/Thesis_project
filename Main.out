@@ -1,49 +1,49 @@
-\BOOKMARK [0][-]{section*.3}{Declaration of originality}{}% 1
-\BOOKMARK [0][-]{section*.5}{Copyright declaration}{}% 2
-\BOOKMARK [0][-]{section*.7}{Acknowledgements}{}% 3
-\BOOKMARK [0][-]{section*.9}{List of Figures}{}% 4
-\BOOKMARK [0][-]{section*.11}{List of Tables}{}% 5
-\BOOKMARK [0][-]{section*.13}{List of abbreviations and definitions}{}% 6
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 7
-\BOOKMARK [0][-]{chapter.2}{The LHCb detector}{}% 8
-\BOOKMARK [1][-]{section.2.1}{LHCb Layout}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.2}{VErtex LOcator}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.3}{Tracking System}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.3.1}{Tracking Algorithms}{section.2.3}% 12
-\BOOKMARK [1][-]{section.2.4}{Ring Imaging Detectors}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.5}{RICH Reconstruction and Performance}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.5.1}{RICH performance}{section.2.5}% 15
-\BOOKMARK [1][-]{section.2.6}{Calorimetry}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.7}{Muon Stations}{chapter.2}% 17
-\BOOKMARK [2][-]{subsection.2.7.1}{Muon Identification}{section.2.7}% 18
-\BOOKMARK [2][-]{subsection.2.7.2}{Muon Performance}{section.2.7}% 19
-\BOOKMARK [1][-]{section.2.8}{Trigger}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.9}{Simulation}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.9.1}{Differences in Simulation And Data}{section.2.9}% 22
-\BOOKMARK [0][-]{chapter.3}{Handling of trimuon correlations at LHCb}{}% 23
-\BOOKMARK [1][-]{section.3.1}{Muon PID variables}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.1.1}{Binary Muon PID variables}{section.3.1}% 25
-\BOOKMARK [2][-]{subsection.3.1.2}{Muon PID variables based on sharing hits}{section.3.1}% 26
-\BOOKMARK [2][-]{subsection.3.1.3}{Muon PID variables based on regression techniques}{section.3.1}% 27
-\BOOKMARK [1][-]{section.3.2}{Clones}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.3}{Probability of K/ \040misidentification at LHCb}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.3.1}{Specific control sample for K/ \040misid rates}{section.3.3}% 30
-\BOOKMARK [2][-]{subsection.3.3.2}{Selection for B0 J/\(+ -\) K* }{section.3.3}% 31
-\BOOKMARK [2][-]{subsection.3.3.3}{Fitting Strategy for B0 J/\(+ -\) K* decay }{section.3.3}% 32
-\BOOKMARK [2][-]{subsection.3.3.4}{Results of B0 J/\(+ -\) K* control sample for K/ \040misid rates }{section.3.3}% 33
-\BOOKMARK [0][-]{chapter.4}{Discovering \(Setting Limit for\) B + \040+- + \040at LHCb}{}% 34
-\BOOKMARK [1][-]{section.4.1}{Topology of at LHCb B + \040+- + \040at LHCb}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.2}{Sources of Backgrounds}{chapter.4}% 36
-\BOOKMARK [1][-]{section.4.3}{Analysis strategy}{chapter.4}% 37
-\BOOKMARK [1][-]{section.4.4}{Samples}{chapter.4}% 38
-\BOOKMARK [2][-]{subsection.4.4.1}{Data Samples}{section.4.4}% 39
-\BOOKMARK [2][-]{subsection.4.4.2}{Simulation Samples}{section.4.4}% 40
-\BOOKMARK [1][-]{section.4.5}{Preselection for B + \040+- + }{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.6}{Trigger Selection}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.7}{q2 selection}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.8}{Further Selection}{chapter.4}% 44
-\BOOKMARK [0][-]{table.caption.59}{Bibliography}{}% 45
-\BOOKMARK [0][-]{chapter*.60}{Appendices}{}% 46
+\BOOKMARK [0][-]{section*.2}{Declaration of originality}{}% 1
+\BOOKMARK [0][-]{section*.4}{Copyright declaration}{}% 2
+\BOOKMARK [0][-]{section*.7}{List of Figures}{}% 3
+\BOOKMARK [0][-]{section*.9}{List of Tables}{}% 4
+\BOOKMARK [0][-]{section*.11}{List of abbreviations and definitions}{}% 5
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
+\BOOKMARK [0][-]{chapter.2}{The LHCb detector}{}% 7
+\BOOKMARK [1][-]{section.2.1}{LHCb Layout ULRIK}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{VErtex LOcator ULRIK}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Tracking System ULRIK}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.3.1}{Tracking Algorithms ULRIK}{section.2.3}% 11
+\BOOKMARK [1][-]{section.2.4}{Ring Imaging Detectors ULRIK}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.5}{RICH Reconstruction and Performance ULRIK}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.5.1}{RICH performance ULRIK}{section.2.5}% 14
+\BOOKMARK [1][-]{section.2.6}{Calorimetry ULRIK}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.7}{Muon Stations ULRIK}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.7.1}{Muon Identification ULRIK}{section.2.7}% 17
+\BOOKMARK [2][-]{subsection.2.7.2}{Muon Performance ULRIK}{section.2.7}% 18
+\BOOKMARK [1][-]{section.2.8}{Trigger ULRIK}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.9}{Simulation ULRIK}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.9.1}{Differences in Simulation And Data ULRIK}{section.2.9}% 21
+\BOOKMARK [0][-]{chapter.3}{Handling of trimuon correlations at LHCb}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Muon PID variables ULRIK}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.1.1}{Binary Muon PID variables ULRIK}{section.3.1}% 24
+\BOOKMARK [2][-]{subsection.3.1.2}{Muon PID variables based on sharing hits ULRIK}{section.3.1}% 25
+\BOOKMARK [2][-]{subsection.3.1.3}{Muon PID variables based on regression techniques ULRIK}{section.3.1}% 26
+\BOOKMARK [1][-]{section.3.2}{Clones ULRIK}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.3}{Probability of K/ \040misidentification at LHCb ULRIK}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.1}{Specific control sample for K/ \040misid rates ULRIK}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.2}{Selection for B0 J/\(+ -\) K* ULRIK }{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.3}{Fitting Strategy for B0 J/\(+ -\) K* decay ULRIK}{section.3.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.4}{Results of B0 J/\(+ -\) K* control sample for K/ \040misid rates ULRIK}{section.3.3}% 32
+\BOOKMARK [0][-]{chapter.4}{Discovering \(Setting Limit for\) B + \040+- + \040at LHCb}{}% 33
+\BOOKMARK [1][-]{section.4.1}{Topology of at LHCb B + \040+- + \040at LHCb ULRIK}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.2}{Sources of Backgrounds ULRIK}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.3}{Analysis strategy ULRIK}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.4}{Samples ULRIK}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.4.1}{Data Samples ULRIK}{section.4.4}% 38
+\BOOKMARK [2][-]{subsection.4.4.2}{Simulation Samples ULRIK}{section.4.4}% 39
+\BOOKMARK [1][-]{section.4.5}{Preselection for B + \040+- + ULRIK}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.6}{Trigger Selection ULRIK}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.7}{q2 selection ULRIK}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.8}{Further Selection}{chapter.4}% 43
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 44
+\BOOKMARK [0][-]{chapter.5}{Bibliography}{}% 45
+\BOOKMARK [0][-]{chapter*.56}{Appendices}{}% 46
 \BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 47
 \BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 48
 \BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 49

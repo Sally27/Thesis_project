@@ -4,7 +4,7 @@
 \textit{LHCb's flagship analyses contain several muons in the final state coming from differently flavoured $B$ mesons. Despite being in this category, search for \Bmumumu is limited by the rareness of its occurrence as well as different backgrounds that can mimic its signature in the detector. Moreover, presence of invisible neutrino does induce uncertainties into reconstruction. This \autoref{chap:sel} will concentrate on characterisation of backgrounds as well as selection that is performed in order to reduce the backgrounds.}
 
 
-\section{Topology of at LHCb \Bmumumu at LHCb}
+\section{Topology of at LHCb \Bmumumu at LHCb \mybox{ULRIK}}
 
 Upon hadronisation of $b\bar{b}$ pair \Bpm particle will travel less than a millimetre in the laboratory frame of reference before it decays into its decay products. This allows reconstruction of a primary vertex \gls{PV} and its decay vertex, \textit{secondary vertex} \gls{SV}. By joining these vertices, direction as well as length of the \Bpm existence, also known as flight distance (\gls{FD}), can be established. In order to infer information about kinematic properties of \Bpm, the decay products are studied. All three muons are used to reconstruct the visible four-momentum. By conservation of momentum with respects to the direction of the flight of \Bpm, neutrino is assigned all missing momentum transverse to the direction of the flight of \Bpm. The schematic diagram can be seen in \autoref{fig:sigtopolog}.
 
@@ -84,7 +84,7 @@ In conclusion in order to calculate error on \textit{corrected mass}, $\delta_{c
 
 which can be calculated analytically (method used for all the plots) or using numerical approximation of first derivative of \textit{finite differences}.
 
-\section{Sources of Backgrounds}
+\section{Sources of Backgrounds \mybox{ULRIK}}
 The largest background that can be will be looking similar to signal comes from \textit{cascade decays}, where semileptonic $b \rightarrow c \rightarrow s$ or ($\bar{b} \rightarrow \bar{c} \rightarrow \bar{s}$) transition occurs. A typical example of this background in hadronic terms is $B^{+} \rightarrow (\bar{D}^{0} \rightarrow (K^{+} \rightarrow \mu^{-} \nu) \mu^{+} \nu$), where $K^{+}$ is misidentified as muon. Because $K^{+}$ is misidentified as muon, this type of background is denoted as misID background.
 
 In fact, any other particle species that is misidentified, belongs to the misID background category. If the sign of the misidentified particle agrees with the sign of the mother \Bpm, it belongs to the same sign misID background (\textit{SS misID}) background. In the event where opposite sign particle to the mother \Bpm is misidentified, this background will be referred to as (\textit{OS misID}) background. However, \textit{OS misID} background is expected to have smaller rate as the misidentified particle would have to proceed via decays with additional particles or if coming as product from other $b$ hadronization.
@@ -93,7 +93,7 @@ The presence of other \B-hadron from $b\bar{b}$ pair does create its own decay c
 
 Then presence of neutrino in a final state allows for certain uncertainty regarding the information of the fourth decay product. If some of the tracks of the decays are not reconstructed, either because they are neutral, or either they are charged but they are soft, it means that the missing information may be attributed to the neutrino. \textit{Missing tracks} will hence create partially reconstructed background. Some of the most dangerous are ${B^{+} \rightarrow D \mu^{+} \nu}$ type partially reconstructed backgrounds where $B^+ \rightarrow (D^0 \rightarrow K^- \pi^+ \mu^{+} \mu^{-})\mu \nu$, where $\mathcal{B}(D^0 \rightarrow K \pi^+ \mu^{+} \mu^{-}) \approx 4.17\times 10^{-6}$ and $B^{+} \rightarrow D^0 \mu \nu \approx 10 \%$. This predicts $\mathcal{B}(B^+ \rightarrow K^+ \pi^- \mu^+ \mu^{-} ) = 1\times10^{-7}$.
 
-\section{Analysis strategy}
+\section{Analysis strategy \mybox{ULRIK}}
 \label{Strategy}
 
 The analysis of the $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_\mu$ decay is divided into several different parts; signal selection, optimisation, normalisation, fitting and limit setting. Throughout this document, charge conjugates of the decays are assumed unless stated otherwise. Results presented are based on the analysis of the full 3 fb$^{-1}$ Run 1 dataset as well $\approx$ 1.7 fb$^{-1}$ Run 2 data (not using 2015 dataset due to very low sensitivity (high muon trigger thresholds)). Additionally the search will be conducted in a particular min$q^{2}$ = min($q^{2}(\mu_{1}^{+},\mu^{-}), q^2(\mu^{-},\mu_{2}^{+})$) region.
@@ -101,11 +101,11 @@ The analysis of the $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_\mu$ decay is
 \newline Combinatorial background, which arises as random combinations of tracks passing the preselection, is taken from the upper corrected $\mu^{+} \mu^{-} \mu^{+}$ mass side band, $M_{Bcorr} > 5.5$ GeV, where very few signal candidates are expected.
 
 
-\section{Samples}
-\subsection{Data Samples}
+\section{Samples \mybox{ULRIK}}
+\subsection{Data Samples \mybox{ULRIK}}
 Results presented in this thesis are based on the analysis of the full 3 fb$^{-1}$ Run \Rn{1} dataset at $\sqrt{s}={7},{8}$ \tev as well $\approx$ 1.7 fb$^{-1}$ Run \Rn{2} data at $\sqrt{s}=13$\tev.
 
-\subsection{Simulation Samples}
+\subsection{Simulation Samples \mybox{ULRIK}}
 \label{Simulation Samples}
 For signal simulation, three different decay models were exploited and are summarized in \autoref{tab:MCPPass}.
 
@@ -172,7 +172,7 @@ In order to produce simulation with decay model which is more representative of 
 Finally, exclusively for this decay, a new decay model \textit{B2MuMuMuNu} was added to EVTGEN, based on work performed by theorist Nikola Nikitin (write more once theory chapter is done and refer to it.). This model denoted as \textit{NIKI}, is used mainly for validation purposes. 
 
 
-\section{Preselection for \Bmumumu}
+\section{Preselection for \Bmumumu \mybox{ULRIK}}
 
 Set of initial identification for signal \Bmumumu summarized in \autoref{tab:stripcutsB}, also known as \textit{stripping} selection was develloped in order to improve signal to background ratio. 
 
@@ -216,7 +216,7 @@ Requiring that \Bp direction points in the same direction as the line from \gls{
 \label{tab:stripcutsB}
 \end{table}
 
-\section{Trigger Selection}
+\section{Trigger Selection \mybox{ULRIK}}
 In order to obtain triggered data, $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_\mu$ candidates are required to pass certain set of trigger decisions at \gls{L0}, \gls{HLT1} and \gls{HLT2} levels summarized in \autoref{tab:triggersel}. It can be noted that the decision is applied at the mother \Bpm level. In particular, \texttt{Bplus$\_$L0MuonDecision$\_$TOS decision}, means that one of the muons from \Bpm in an event has triggered and made positive decision.
 
 \begin{table}[h!]
@@ -247,7 +247,7 @@ As discussed in \autoref{triggerchap} \texttt{L0MuonDecision} decides on whether
 At \gls{HLT2} level, the candidates are reuqired to pass through at least one of the four decisions. \texttt{Hlt2TopoMu[2,3]BodyBBDTDecision} belong to the \textit{topological triggers} category with extra requirement of muon being idendified by \texttt{isMuon} decision. \texttt{Hlt2DiMuonDetachedDecision} and \texttt{Hlt2DiMuonDetachedHeavyDecision} reconstruct decays with two muons in a final state, dimuon. The two lines differ in selection that is optimized either for heavy or light dimuon pair. For example, \texttt{Hlt2DiMuonDetachedDecision} accepts events dimuon $p_{T}$ above 1.5 \gevc and with mass above 1 \gevcc, whereas  \texttt{Hlt2DiMuonDetachedHeavyDecision} accepts dimuon pairs with any $p_{T}$ but above 2.95 \gevcc in mass. The reason why these lines are called detached are because individual muons are required to have high \gls{ipchi2}.
 
 
-\section{$q^{2}$ selection}
+\section{$q^{2}$ selection \mybox{ULRIK}}
 
 In \Bmumumu, two pairs of opposite sign muons can be formed, namely $q^2(\mu_1,\mu_2)$ and $q^2(\mu_2,\mu_3)$ where $\mu_1=\mu^{+} , \mu_2=\mu^{-}, \mu_3=\mu^{+} $.
 From the two invariant mass squared pairs one can define, $minq^2 = min[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$ and $maxq^{2} = max[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$. This measurement is made in region where $\sqrt{minq^{2}}={minq<980}$ \mevcc because of two main reasons: most of the contributions to the amplitude of the decay is below this value and combinatorial background is greatly reduced if $minq^{2}<1$ (\gevcc)$^{2}$, see \autoref{fig:qsqsel}.
