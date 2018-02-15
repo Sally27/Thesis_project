@@ -329,4 +329,25 @@ R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{The LHCb
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Speckmayer:2010zz}
+P.~Speckmayer, A.~Hocker, J.~Stelzer, and H.~Voss,
+  \ifthenelse{\boolean{articletitles}}{\emph{{The toolkit for multivariate data
+  analysis, TMVA 4}},
+  }{}\href{http://dx.doi.org/10.1088/1742-6596/219/3/032057}{J.\ Phys.\ Conf.\
+  Ser.\  \textbf{219} (2010) 032057}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2015bfa}
+LHCb, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Determination of the quark
+  coupling strength $|V_{ub}|$ using baryonic decays}},
+  }{}\href{http://dx.doi.org/10.1038/nphys3415}{Nature Phys.\  \textbf{11}
+  (2015) 743}, \href{http://arxiv.org/abs/1504.01568}{{\normalfont\ttfamily
+  arXiv:1504.01568}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \end{mcitethebibliography}

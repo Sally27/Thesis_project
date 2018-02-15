@@ -280,21 +280,21 @@ In order to remove backgrounds that proceed via resonant $J/\psi$ and $\Psi(2S)$
 
 \section{Further Selection}
 
-Further selection was performed as seen in \autoref{tab:OfflineSelection}. It further hepls to suppress backgrounds and but requires different treatement in 
-Run \Rn{1} and Run \Rn{2} due to the different definitions of variables. 
+Further selection was performed as seen in \autoref{tab:OfflineSelection}. This selection further suppresses backgrounds but requires different treatement in 
+Run \Rn{1} and Run \Rn{2} due to the different definitions of variables as seen in \autoref{bugs}. 
 
 \begin{table}[h!]
 \begin{center}
 \begin{tabular}{l l c c}
 
 %    \begin{tabular}{ | l | c |  } %p{7cm}|}
-      Idea & Object & Selection Run1 & Selection 2016 \\ \hline
+      Idea & Object & Run \Rn{1} Selection & Run \Rn{2} Selection \\ \hline
       Clean & Muon & - & \texttt{IsMuonTight==1.0}\\
       Clone and ghost & Muon & \texttt{Nshared==0} & \texttt{Nshared<2} \\
-      Fit Region & $B$ & 4000 MeV $<M_{B_{corr}}<$ 7000 MeV & 4000 MeV $<M_{B_{corr}}<$ 7000 MeV \\
-      Bkg Removal & event &Combinatorial BDT selection & Combinatorial BDT selection \\
+      Fit Region & $B$ & 4000 \mevcc $<M_{B_{corr}}<$ 7000 \mevcc & 4000 \mevcc $<M_{B_{corr}}<$ 7000 \mevcc \\
+      Bkg Removal & event & Combinatorial BDT selection & Combinatorial BDT selection \\
       Bkg Removal & event & Misid BDT selection & Misid BDT selection \\
-      Optimize FOM & Muon & \texttt{PID$\mu$>0.35} & \texttt{PID$\mu$>0.35} \\
+      Optimize FOM \mybox{INTRODUCE FOM} & Muon & \texttt{PID$\mu$>0.35} & \texttt{PID$\mu$>0.35} \\
       \hline
 %      Clean & Min Dimuon & min $q^{2}(\mu^{+},\mu^{-})$ $<$ 960400 MeV$^{2}$/c$^{4}$  & min $q^{2}(\mu^{+},\mu^{-})$ $<$ 960400 MeV$^{2}$/c$^{4}$ \\ \hline
       \end{tabular}
@@ -302,4 +302,41 @@ Run \Rn{1} and Run \Rn{2} due to the different definitions of variables.
 \caption{Offline selection performed after stripping. Differences can be seen between Run \Rn{1} and Run \Rn{2} datasets}
 \label{tab:OfflineSelection}
 \end{table}
+
+
+\subsection{Isolation}
+\label{isolationvar}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.45\linewidth]{./sel/Isolation.eps}\put(-70,60){(a)}%
+\hspace*{1.0cm}
+\includegraphics[width=0.45\linewidth]{./sel/Isolation_Signal.eps}\put(-70,60){(b)}
+\caption{(a) An example of decay topology for background and (b) signal.}
+\label{fig:isolation}
+%\vspace*{-1.0cm}
+\end{figure}
+	
+	
+Vast majority of the backgrounds that share the possibility of contaminating \Bmumumu signal have one property in common: they have more tracks associated with the decay. It is hence possible to use multivariate analysis (MVA) techniques to establish how \textit{isolated} the signal trimuon vertex is as compared to background trimuon vertex as seen in \autoref{fig:isolation}
+
+	
+%	In an event, for both signal and misidentified background there is a possibility that neutral particles, charged tracks or even a combination of both cases had not been reconstructed in the given vertex.
+
+The isolation quality of the vertex is determined using TMVA's \cite{Speckmayer:2010zz} implementation of Boosted Decision Tree (BDT) based on the \texttt{AdaBoost} algorithm. This regression algorithm classifies the event to be more signal-like or background-like according to different track and vertex properties, the \textit{isolation variables}.
+
+
+The signal proxy for the isolation BDT was trained and tested with $\Lambda^{0}_{b}\rightarrow p \mu^{-} \bar{\nu}$ simulation sample, where all tracks apart from the $p \mu^{-}$ signal tracks are taken into the account. Background sample was formed with $\Lambda^{0}_{b} \rightarrow (\Lambda_{c} \rightarrow p) \mu^{-} \bar{\nu}$ tracks, also disregarding the $p \mu^{-}$ tracks. The isolation BDT is based on these samples yield weights, which are computed in \cite{Aaij:2015bfa}, and are result of other's people work. These weights are however then applied parametrically on \Bmumumu signal and background proxies, as they share similar topology with respect to isolation propreties.
+
+The \textit{isolation variables} for include track $p_T$, the opening angle between track's momentum and momentum of the combined signal/background visible system, the \gls{trackchi2ndof}, the ghost probability of the track \gls{pgh2}, \gls{ipchi2} of the track with respect to signal/background \gls{SV} and \gls{PV}.
+
+The Isolation BDT response peaks between -1 and 0 for isolated tracks (signal-like) and between 0 and 1 for non-isolated tracks (background-like). The output of this BDT can be seen in Figure~\ref{fig:isolation} for both types. Backrounds shown include combinatorial background and misID type background.
+
+\begin{figure}[ht]
+\centering
+	\includegraphics[width=0.5\linewidth]{./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22016.pdf}
+\caption{Isolation score for signal and backgrounds using 2016 samples. If isolation fails to find any other track in the event, by default it gives value -2.}
+\label{fig:isolation}
+\end{figure}
+
 

@@ -297,5 +297,10 @@
 \glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{71}
 \glossaryentry{HLT2?\glossentry{HLT2}|setentrycounter[]{page}\glsnumberformat}{71}
 \glossaryentry{$\mathbold {IP\chisq }$?\glossentry{ipchi2}|setentrycounter[]{page}\glsnumberformat}{72}
-\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{85}
-\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{Track $\mathbold {\chisq /\rm {ndof}}$?\glossentry{trackchi2ndof}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{P$\mathbold {_{ghost}}$?\glossentry{pgh2}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{$\mathbold {IP\chisq }$?\glossentry{ipchi2}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{SV?\glossentry{SV}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{87}
