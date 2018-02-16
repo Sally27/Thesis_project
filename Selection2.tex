@@ -303,8 +303,31 @@ Run \Rn{1} and Run \Rn{2} due to the different definitions of variables as seen 
 \label{tab:OfflineSelection}
 \end{table}
 
+The sections below will outline multivariate techniques used in this analysis, the isolation BDT, combinatorial BDT and misidBDT.
 
-\subsection{Isolation}
+As the background study of inclusive $b\bar{b}$ simulation sample shows that there will be two dominating backgrounds, combinatorial background and misID background. In order to reduce these backgrounds, two consecutive multivariate classifiers are used. The first multivariate classfier is developed to remove efficiently combinatorial background and a second multivariate classifier will help to control the contamination from misID decays. As one of the key variables that provide the greatest separation power is the isolation BDT.
+
+Cross-validation is one of the useful methods used within MVAs which improves the chance of good performance of the predictive model on an independent dataset. In this way, biases due to simple sample split into training and testing subsample, could be overcome. The cross-validation method used in both combinatorial BDT and misidBDT is known as \textit{k-folding} technique \cite{kfold}. 
+
+In particular, both background and signal samples are randomly split into $k$ similar size subsamples. Then the BDT is trained on the $k-1$ signal/background subsamples, which are subsequently tested on the remaining last subsamples. This process is repeated $k$-times for all possible combinations, hence the name of cross-validation. In the last step, the $k$ results produced from $k$ folds are averaged yielding final estimate. In the two consecutive BDTs, number of folds used is $k$=10.
+
+Both of the BDT classifiers use \texttt{AdaBoost} algorithm and same set of variables listed in \autoref{tab:vars}.
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{| l  l  l |} \hline
+$B^{+} p$ & \gls{minipchi2} of all three muons & \gls{DIRA} \\
+$B^{+}$ $p_T$ & $p_{T}$ of all three muons & $B^{+}$ \gls{fdchi2} \\ 
+$B^{+}$ \gls{vertexchi2ndof} & \gls{minipchi2} of all three muons  & Isolation variable ~\autoref{isolationvar} \\
+$B^{+}$ lifetime &  &  \\ \hline
+\end{tabular}
+\end{center}
+\caption{BDT variables used in both combinatorial and misID Run \Rn{1} and Run \Rn{2} BDTs}
+\label{tab:vars}
+\end{table}
+
+
+\subsection{The Isolation Boosted Decision Tree}
 \label{isolationvar}
 
 \begin{figure}[h!]
@@ -330,7 +353,7 @@ The signal proxy for the isolation BDT was trained and tested with $\Lambda^{0}_
 
 The \textit{isolation variables} for include track $p_T$, the opening angle between track's momentum and momentum of the combined signal/background visible system, the \gls{trackchi2ndof}, the ghost probability of the track \gls{pgh2}, \gls{ipchi2} of the track with respect to signal/background \gls{SV} and \gls{PV}.
 
-The Isolation BDT response peaks between -1 and 0 for isolated tracks (signal-like) and between 0 and 1 for non-isolated tracks (background-like). The output of this BDT can be seen in Figure~\ref{fig:isolation} for both types. Backrounds shown include combinatorial background and misID type background.
+The Isolation BDT response peaks between -1 and 0 for isolated tracks (signal-like) and between 0 and 1 for non-isolated tracks (background-like). The output of this BDT can be seen in Figure~\ref{fig:isolation} for both types. Backrounds shown include combinatorial background and misID type background. In the analysis, there is no explicit selection on this variable, but it is used as one of the variables for the for other BDTs.
 
 \begin{figure}[ht]
 \centering
@@ -338,5 +361,35 @@ The Isolation BDT response peaks between -1 and 0 for isolated tracks (signal-li
 \caption{Isolation score for signal and backgrounds using 2016 samples. If isolation fails to find any other track in the event, by default it gives value -2.}
 \label{fig:isolation}
 \end{figure}
+
+\subsection{The Combinatorial Boosted Decision Tree}
+\label{CombiBDTsel}
+One of the most prominent background is combinatorial background and to reduce its contamination while keeping signal as high as possible combinatorial BDT is trained.
+To obtain combinatorial BDT discriminant, a simulated sample for signal and upper mass sideband data ($M_{B_{corr}}>5.5$ \gevcc) for background is used as training and testing samples. These samples have passed through all previous pre-selection, trigger and selection and are using variables mentioned in \autoref{tab:vars}. The Punzi figure of merit \cite{Punzi:2003bu} is used to find optimal working point and isdefined,
+
+\begin{equation}
+	\texttt{FOM}=\frac{\varepsilon_{S}}{\sqrt{B}+\sigma/2},
+\end{equation}
+
+where $\varepsilon_{S}$ is the signal efficiency of the selection and $B$ refers to the number of
+background candidates, $\sigma$ is the significance. In this case, the significance 3$\sigma$ is used, but it was checked that there is no change to optimal working point if it is varied $\pm2\sigma$.
+
+The \texttt{FOM} is computed in mass region, $4.5\gevcc <M_{B_{corr}} <5.5$ \gevcc, which also known as blinded region. To estimate the number of background candidates in blinded region, final fit strategy described in \mybox{add reference to fit} is used to fit the data, yielding around $10000$ in Run \Rn{1}, and $9000$ combinatorial candidates in Run \Rn{2}. The yields are extracted from fits to data as shown in Figure~\ref{fig:beforecombidatafit}.
+
+In order to accomodate different offline selections between Run \Rn{1} and Run \Rn{2}, separate BDTs are trained for different Runs. Combined training of all of the datasets was also performed but it does not lead to any improvement. Results of the comparison between separate and combined trainings can be seen in Figure~\ref{fig:separatetraining}. Different properties (such as number of trees) and variables (2-particle vertex) have been added to see whether improvement in discrimination is possible but here are the results that prove to be most optimal.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{./sel/final_comparison_from_root_combi_2.pdf}
+\caption{Comparison of separate and combined training samples and performance on different datasets. Two vertical violet lines represent optimal cut points at signal efficiency, for Run1 (0.47) and for 2016 (0.34) where the working point of the two BDTs are chosen. Separate training provide greater rejection power in 2016. In Run1 training on both datasets provide comparable performance for given optimal signal efficiency. Taking into the account the fact that offline selection slightly differs for 2016, it is advantagous to keep training separately.}
+%\vspace*{-1.0cm}
+\label{fig:separatetraining}
+\end{figure}
+
+
+
+
+
+
 
 

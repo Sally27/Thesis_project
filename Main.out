@@ -41,13 +41,14 @@
 \BOOKMARK [1][-]{section.4.6}{Trigger Selection ULRIK}{chapter.4}% 41
 \BOOKMARK [1][-]{section.4.7}{q2 selection ULRIK}{chapter.4}% 42
 \BOOKMARK [1][-]{section.4.8}{Further Selection}{chapter.4}% 43
-\BOOKMARK [2][-]{subsection.4.8.1}{Isolation}{section.4.8}% 44
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 45
-\BOOKMARK [0][-]{chapter.5}{Bibliography}{}% 46
-\BOOKMARK [0][-]{chapter*.58}{Appendices}{}% 47
-\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 48
-\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 49
-\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 50
-\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 51
-\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 52
-\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 53
+\BOOKMARK [2][-]{subsection.4.8.1}{The Isolation Boosted Decision Tree}{section.4.8}% 44
+\BOOKMARK [2][-]{subsection.4.8.2}{The Combinatorial Boosted Decision Tree}{section.4.8}% 45
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 46
+\BOOKMARK [0][-]{chapter.5}{Bibliography}{}% 47
+\BOOKMARK [0][-]{chapter*.60}{Appendices}{}% 48
+\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 49
+\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 50
+\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 51
+\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 52
+\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 53
+\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 54

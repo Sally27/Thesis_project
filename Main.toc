@@ -2,52 +2,53 @@
 \contentsline {chapter}{Copyright declaration}{5}{section*.4}
 \contentsline {chapter}{List of Figures}{6}{section*.7}
 \contentsline {chapter}{List of Tables}{12}{section*.9}
-\contentsline {chapter}{List of abbreviations and definitions}{13}{section*.11}
-\contentsline {chapter}{\numberline {1}Introduction}{17}{chapter.1}
-\contentsline {chapter}{\numberline {2}The LHCb detector}{18}{chapter.2}
-\contentsline {section}{\numberline {2.1}LHCb Layout \framebox {ULRIK}}{19}{section.2.1}
-\contentsline {section}{\numberline {2.2}VErtex LOcator \framebox {ULRIK}}{23}{section.2.2}
-\contentsline {section}{\numberline {2.3}Tracking System \framebox {ULRIK}}{25}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Tracking Algorithms \framebox {ULRIK}}{26}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Ring Imaging Detectors \framebox {ULRIK}}{28}{section.2.4}
-\contentsline {section}{\numberline {2.5}RICH Reconstruction and Performance \framebox {ULRIK}}{30}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}RICH performance \framebox {ULRIK}}{30}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Calorimetry \framebox {ULRIK}}{32}{section.2.6}
-\contentsline {section}{\numberline {2.7}Muon Stations \framebox {ULRIK}}{33}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Muon Identification \framebox {ULRIK}}{34}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Muon Performance \framebox {ULRIK}}{36}{subsection.2.7.2}
-\contentsline {section}{\numberline {2.8}Trigger \framebox {ULRIK}}{37}{section.2.8}
-\contentsline {section}{\numberline {2.9}Simulation \framebox {ULRIK}}{41}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Differences in Simulation And Data \framebox {ULRIK - not fully finished}}{42}{subsection.2.9.1}
-\contentsline {chapter}{\numberline {3}Handling of trimuon correlations at LHCb}{44}{chapter.3}
-\contentsline {section}{\numberline {3.1}Muon PID variables \framebox {ULRIK}}{44}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Binary Muon PID variables \framebox {ULRIK}}{45}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Muon PID variables based on sharing hits \framebox {ULRIK}}{45}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Muon PID variables based on regression techniques \framebox {ULRIK}}{47}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Clones \framebox {ULRIK}}{49}{section.3.2}
-\contentsline {section}{\numberline {3.3}Probability of $K/\pi $ $\rightarrow \mu $ misidentification at LHCb \framebox {ULRIK}}{53}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Specific control sample for $K/\pi $ $\rightarrow \mu $ misid rates \framebox {ULRIK}}{53}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Selection for $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ \framebox {ULRIK} }{54}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Fitting Strategy for $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ decay \framebox {ULRIK}}{54}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Results of $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ control sample for $K/\pi $ $\rightarrow \mu $ misid rates \framebox {ULRIK}}{58}{subsection.3.3.4}
-\contentsline {chapter}{\numberline {4}Discovering (Setting Limit for) \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{62}{chapter.4}
-\contentsline {section}{\numberline {4.1}Topology of at LHCb \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb \framebox {ULRIK}}{62}{section.4.1}
-\contentsline {section}{\numberline {4.2}Sources of Backgrounds \framebox {ULRIK}}{65}{section.4.2}
-\contentsline {section}{\numberline {4.3}Analysis strategy }{66}{section.4.3}
-\contentsline {section}{\numberline {4.4}Samples \framebox {ULRIK}}{66}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Data Samples \framebox {ULRIK}}{66}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Simulation Samples \framebox {ULRIK}}{67}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Preselection for \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace \framebox {ULRIK}}{69}{section.4.5}
-\contentsline {section}{\numberline {4.6}Trigger Selection \framebox {ULRIK}}{70}{section.4.6}
-\contentsline {section}{\numberline {4.7}$q^{2}$ selection \framebox {ULRIK}}{72}{section.4.7}
-\contentsline {section}{\numberline {4.8}Further Selection}{73}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Isolation}{74}{subsection.4.8.1}
-\contentsline {chapter}{\numberline {5}Results}{76}{chapter.5}
-\contentsline {chapter}{Bibliography}{77}{chapter.5}
-\contentsline {chapter}{Appendices}{82}{chapter*.58}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{82}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{85}{appendix.B}
-\contentsline {chapter}{\numberline {C}Fitting functions}{87}{appendix.C}
-\contentsline {section}{\numberline {C.1}Crystal Ball function}{87}{section.C.1}
-\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{88}{section.C.2}
-\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{88}{section.C.3}
+\contentsline {chapter}{List of abbreviations and definitions}{14}{section*.11}
+\contentsline {chapter}{\numberline {1}Introduction}{18}{chapter.1}
+\contentsline {chapter}{\numberline {2}The LHCb detector}{19}{chapter.2}
+\contentsline {section}{\numberline {2.1}LHCb Layout \framebox {ULRIK}}{20}{section.2.1}
+\contentsline {section}{\numberline {2.2}VErtex LOcator \framebox {ULRIK}}{24}{section.2.2}
+\contentsline {section}{\numberline {2.3}Tracking System \framebox {ULRIK}}{26}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Tracking Algorithms \framebox {ULRIK}}{27}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Ring Imaging Detectors \framebox {ULRIK}}{29}{section.2.4}
+\contentsline {section}{\numberline {2.5}RICH Reconstruction and Performance \framebox {ULRIK}}{31}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}RICH performance \framebox {ULRIK}}{31}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Calorimetry \framebox {ULRIK}}{33}{section.2.6}
+\contentsline {section}{\numberline {2.7}Muon Stations \framebox {ULRIK}}{34}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Muon Identification \framebox {ULRIK}}{35}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Muon Performance \framebox {ULRIK}}{37}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}Trigger \framebox {ULRIK}}{38}{section.2.8}
+\contentsline {section}{\numberline {2.9}Simulation \framebox {ULRIK}}{42}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Differences in Simulation And Data \framebox {ULRIK - not fully finished}}{43}{subsection.2.9.1}
+\contentsline {chapter}{\numberline {3}Handling of trimuon correlations at LHCb}{45}{chapter.3}
+\contentsline {section}{\numberline {3.1}Muon PID variables \framebox {ULRIK}}{45}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Binary Muon PID variables \framebox {ULRIK}}{46}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Muon PID variables based on sharing hits \framebox {ULRIK}}{46}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Muon PID variables based on regression techniques \framebox {ULRIK}}{48}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Clones \framebox {ULRIK}}{50}{section.3.2}
+\contentsline {section}{\numberline {3.3}Probability of $K/\pi $ $\rightarrow \mu $ misidentification at LHCb \framebox {ULRIK}}{54}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Specific control sample for $K/\pi $ $\rightarrow \mu $ misid rates \framebox {ULRIK}}{54}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Selection for $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ \framebox {ULRIK} }{55}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Fitting Strategy for $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ decay \framebox {ULRIK}}{55}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Results of $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ control sample for $K/\pi $ $\rightarrow \mu $ misid rates \framebox {ULRIK}}{59}{subsection.3.3.4}
+\contentsline {chapter}{\numberline {4}Discovering (Setting Limit for) \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{63}{chapter.4}
+\contentsline {section}{\numberline {4.1}Topology of at LHCb \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb \framebox {ULRIK}}{63}{section.4.1}
+\contentsline {section}{\numberline {4.2}Sources of Backgrounds \framebox {ULRIK}}{66}{section.4.2}
+\contentsline {section}{\numberline {4.3}Analysis strategy }{67}{section.4.3}
+\contentsline {section}{\numberline {4.4}Samples \framebox {ULRIK}}{67}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Data Samples \framebox {ULRIK}}{67}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Simulation Samples \framebox {ULRIK}}{68}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Preselection for \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace \framebox {ULRIK}}{70}{section.4.5}
+\contentsline {section}{\numberline {4.6}Trigger Selection \framebox {ULRIK}}{71}{section.4.6}
+\contentsline {section}{\numberline {4.7}$q^{2}$ selection \framebox {ULRIK}}{73}{section.4.7}
+\contentsline {section}{\numberline {4.8}Further Selection}{74}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}The Isolation Boosted Decision Tree}{76}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}The Combinatorial Boosted Decision Tree}{77}{subsection.4.8.2}
+\contentsline {chapter}{\numberline {5}Results}{80}{chapter.5}
+\contentsline {chapter}{Bibliography}{81}{chapter.5}
+\contentsline {chapter}{Appendices}{86}{chapter*.60}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{86}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{89}{appendix.B}
+\contentsline {chapter}{\numberline {C}Fitting functions}{91}{appendix.C}
+\contentsline {section}{\numberline {C.1}Crystal Ball function}{91}{section.C.1}
+\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{92}{section.C.2}
+\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{92}{section.C.3}
