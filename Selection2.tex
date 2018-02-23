@@ -365,30 +365,60 @@ The Isolation BDT response peaks between -1 and 0 for isolated tracks (signal-li
 \subsection{The Combinatorial Boosted Decision Tree}
 \label{CombiBDTsel}
 One of the most prominent background is combinatorial background and to reduce its contamination while keeping signal as high as possible combinatorial BDT is trained.
-To obtain combinatorial BDT discriminant, a simulated sample for signal and upper mass sideband data ($M_{B_{corr}}>5.5$ \gevcc) for background is used as training and testing samples. These samples have passed through all previous pre-selection, trigger and selection and are using variables mentioned in \autoref{tab:vars}. The Punzi figure of merit \cite{Punzi:2003bu} is used to find optimal working point and isdefined,
+To obtain combinatorial BDT discriminant, a simulated sample for signal and upper mass sideband data ($M_{B_{corr}}>5.5$ \gevcc) for background is used as training and testing samples. These samples have passed through all previous pre-selection, trigger and selection and are using variables mentioned in \autoref{tab:vars}. As the branching fraction and hence the number of signal events is unknown, the Punzi figure of merit \cite{Punzi:2003bu} is used to find optimal working poin. It is defined,
 
 \begin{equation}
 	\texttt{FOM}=\frac{\varepsilon_{S}}{\sqrt{B}+\sigma/2},
 \end{equation}
 
 where $\varepsilon_{S}$ is the signal efficiency of the selection and $B$ refers to the number of
-background candidates, $\sigma$ is the significance. In this case, the significance 3$\sigma$ is used, but it was checked that there is no change to optimal working point if it is varied $\pm2\sigma$.
+background candidates, $\sigma$ is the significance. In this case, the significance 3$\sigma$ is used, but it was checked that there is no change to optimal working point if it is varied to $5\sigma$, as seen in \autoref{fig:punzifom}.
 
-The \texttt{FOM} is computed in mass region, $4.5\gevcc <M_{B_{corr}} <5.5$ \gevcc, which also known as blinded region. To estimate the number of background candidates in blinded region, final fit strategy described in \mybox{add reference to fit} is used to fit the data, yielding around $10000$ in Run \Rn{1}, and $9000$ combinatorial candidates in Run \Rn{2}. The yields are extracted from fits to data as shown in Figure~\ref{fig:beforecombidatafit}.
+\begin{figure}[ht]
+\centering
+	\includegraphics[width=0.5\linewidth]{./sel/Scaled_nice_FOM_Run1.pdf}%
+	\includegraphics[width=0.5\linewidth]{./sel/Scaled_nice_FOM_2016.pdf}%
+	\caption{ Punzi \texttt{FOM} have the optimum working point at 0.47 for Run \Rn{1} and 0.54 for Run \Rn{2} as seen in both figures with violet line for $\sigma=3$ and $\sigma=5$.}
+\label{fig:punzifom}
+\end{figure}
+
+
+The \texttt{FOM} is computed in mass region, $4.5\gevcc <M_{B_{corr}} <5.5$ \gevcc, which also known as blinded region. To estimate the number of background candidates in blinded region, final fit strategy described in \mybox{add reference to fit} is used to fit the data, yielding around $10000$ in Run \Rn{1}, and $9000$ combinatorial candidates in Run \Rn{2}. The yields are extracted from fits to data integrating the combinatorial part of the total background P.D.F in the blinded region.
 
 In order to accomodate different offline selections between Run \Rn{1} and Run \Rn{2}, separate BDTs are trained for different Runs. Combined training of all of the datasets was also performed but it does not lead to any improvement. Results of the comparison between separate and combined trainings can be seen in Figure~\ref{fig:separatetraining}. Different properties (such as number of trees) and variables (2-particle vertex) have been added to see whether improvement in discrimination is possible but here are the results that prove to be most optimal.
+
+In both Combinatorial BDTs the most discriminating variables are the isolation variable ~\autoref{isolationvar}, $B^{+}$ \gls{vertexchi2ndof}, \gls{minipchi2} of the muons and $p_{T}$ of $B^{+}$. Combinatorial muon comes more from somewhere else in the event and hence its \gls{minipchi2} is worse as compared to the signal, making $B^{+}$ \gls{vertexchi2ndof} worse. Moreover, as this combinatorial muon comes from somewhere else, other tracks may accompany it making the isolation variable a good discriminant. It also tends to have higher momenum and hence $p_{T}$ of $B^{+}$ is higher. Distributions for these different variables can be seen in \autoref{fig:discombi}. 
+
+
+\begin{figure}[ht]
+\centering
+	\includegraphics[width=0.5\linewidth]{./sel/plotvariableBplus_pmu_ISOLATION_BDT1_weightsNICEDISMIX.pdf}%
+	\includegraphics[width=0.5\linewidth]{./sel/plotvariableBplus_ENDVERTEX_CHI2NICEDISMIX.pdf}%
+	\newline
+	\includegraphics[width=0.5\linewidth]{./sel/plotvariableB_PTNICEDISMIX.pdf}%
+	\includegraphics[width=0.5\linewidth]{./sel/plotvariablemu1_MINIPCHI2NICEDISMIX.pdf}%
+	\caption{The variable with the most discriminative power for both Run \Rn{1} and 2016.}
+\label{fig:discombi}
+\end{figure}
+
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\linewidth]{./sel/final_comparison_from_root_combi_2.pdf}
-\caption{Comparison of separate and combined training samples and performance on different datasets. Two vertical violet lines represent optimal cut points at signal efficiency, for Run1 (0.47) and for 2016 (0.34) where the working point of the two BDTs are chosen. Separate training provide greater rejection power in 2016. In Run1 training on both datasets provide comparable performance for given optimal signal efficiency. Taking into the account the fact that offline selection slightly differs for 2016, it is advantagous to keep training separately.}
+	\caption{Comparison of separate and combined training samples and performance on different datasets. Two vertical violet lines represent optimal cut points at signal efficiency, for Run \Rn{1} (0.47) and for 2016 (0.34) where the working point of the two BDTs are chosen. Separate training provide greater rejection power in 2016. In Run \Rn{1} training on both datasets provide comparable performance for given optimal signal efficiency. Taking into the account the fact that offline selection slightly differs for 2016, it is advantagous to keep training separately.}
 %\vspace*{-1.0cm}
 \label{fig:separatetraining}
 \end{figure}
 
+It is also important that there is no skewing of the mass distribution for the background as this could lead later to modelling issues with these different background components. This was checked by looking at the behaviour of BDT output in different bins of $M_{B_{corr}}$. If this value stays constant then the background will not be skewed, which is the case for \Rn{2} as seen \autoref{fig:flatnessofcombibdt}. This is also the case in Run \Rn{1}. 
 
 
-
+\begin{figure}[ht]
+\centering
+	\includegraphics[width=1.0\linewidth]{./sel/CombiBDT_ProfileX_of_Bplus_Corrected_Mass_vs_MCSig2016_288888335_vs_DATACombi2016NTrees60_MinNodeSize2_MaxDepth3_SeparationTypeGiniIndex_PruneMethodNoPruning_DoPreselection_nice.pdf}
+\caption{Study of linear correlation between BDT output and $M_{B_{corr}}$ and BDT value for each bin of $M_{B_{corr}}$ in 2016 shows that Combinatorial BDT is relatively flat as a function $M_{B_{corr}}$.}
+\label{fig:flatnessofcombibdt}
+\end{figure}
 
 
 

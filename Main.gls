@@ -15,7 +15,7 @@
 		\setentrycounter[]{page}\glsnumberformat{33}}}\glsgroupskip
 \glsgroupheading{C}\relax \glsresetentrylist %
 \glossentry{CB}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{82}}}%
+		\setentrycounter[]{page}\glsnumberformat{85}}}%
 \glossentry{CMS}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{12}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{15\delimN 16}}}%
@@ -93,7 +93,8 @@
 		\setentrycounter[]{page}\glsnumberformat{34}}}%
 \glossentry{minipchi2}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{62\delimN 63}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{67}}}%
+		\setentrycounter[]{page}\glsnumberformat{67}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{70}}}%
 \glossentry{misID}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{23\delimN 24}}}%
 \glossentry{MWPCs}{\glossaryentrynumbers{\relax 
@@ -191,5 +192,6 @@
 \glossentry{vertexchi2ndof}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{43}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{62\delimN 63}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{67}}}%
+		\setentrycounter[]{page}\glsnumberformat{67}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{70}}}%
 \end{theglossary}\glossarypostamble

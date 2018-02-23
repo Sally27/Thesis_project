@@ -307,5 +307,9 @@
 \glossaryentry{$\mathbold {IP\chisq }$?\glossentry{ipchi2}|setentrycounter[]{page}\glsnumberformat}{76}
 \glossaryentry{SV?\glossentry{SV}|setentrycounter[]{page}\glsnumberformat}{76}
 \glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{76}
-\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{91}
-\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{93}

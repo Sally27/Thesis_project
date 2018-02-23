@@ -43,12 +43,12 @@
 \contentsline {section}{\numberline {4.8}Further Selection}{74}{section.4.8}
 \contentsline {subsection}{\numberline {4.8.1}The Isolation Boosted Decision Tree}{76}{subsection.4.8.1}
 \contentsline {subsection}{\numberline {4.8.2}The Combinatorial Boosted Decision Tree}{77}{subsection.4.8.2}
-\contentsline {chapter}{\numberline {5}Results}{80}{chapter.5}
-\contentsline {chapter}{Bibliography}{81}{chapter.5}
-\contentsline {chapter}{Appendices}{86}{chapter*.60}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{86}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{89}{appendix.B}
-\contentsline {chapter}{\numberline {C}Fitting functions}{91}{appendix.C}
-\contentsline {section}{\numberline {C.1}Crystal Ball function}{91}{section.C.1}
-\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{92}{section.C.2}
-\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{92}{section.C.3}
+\contentsline {chapter}{\numberline {5}Results}{82}{chapter.5}
+\contentsline {chapter}{Bibliography}{83}{chapter.5}
+\contentsline {chapter}{Appendices}{88}{chapter*.63}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{88}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{91}{appendix.B}
+\contentsline {chapter}{\numberline {C}Fitting functions}{93}{appendix.C}
+\contentsline {section}{\numberline {C.1}Crystal Ball function}{93}{section.C.1}
+\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{94}{section.C.2}
+\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{94}{section.C.3}
