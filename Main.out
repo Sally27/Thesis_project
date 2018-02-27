@@ -43,13 +43,16 @@
 \BOOKMARK [1][-]{section.4.8}{Further Selection}{chapter.4}% 43
 \BOOKMARK [2][-]{subsection.4.8.1}{The Isolation Boosted Decision Tree}{section.4.8}% 44
 \BOOKMARK [2][-]{subsection.4.8.2}{The Combinatorial Boosted Decision Tree}{section.4.8}% 45
-\BOOKMARK [1][-]{section.4.9}{Misid Boosted Decision Tree}{chapter.4}% 46
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 47
-\BOOKMARK [0][-]{chapter.5}{Bibliography}{}% 48
-\BOOKMARK [0][-]{chapter*.68}{Appendices}{}% 49
-\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 50
-\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 51
-\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 52
-\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 53
-\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 54
-\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 55
+\BOOKMARK [2][-]{subsection.4.8.3}{The Misid Boosted Decision Tree}{section.4.8}% 46
+\BOOKMARK [2][-]{subsection.4.8.4}{Further PID selection}{section.4.8}% 47
+\BOOKMARK [2][-]{subsection.4.8.5}{Multiple Candidates}{section.4.8}% 48
+\BOOKMARK [1][-]{section.4.9}{Normalisation channel}{chapter.4}% 49
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 50
+\BOOKMARK [0][-]{chapter.5}{Bibliography}{}% 51
+\BOOKMARK [0][-]{chapter*.69}{Appendices}{}% 52
+\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 53
+\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 54
+\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 55
+\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 56
+\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 57
+\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 58

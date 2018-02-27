@@ -248,7 +248,7 @@ At \gls{HLT2} level, the candidates are reqiured to pass through at least one of
 
 
 \section{$q^{2}$ selection \mybox{ULRIK}}
-
+\label{qsqchoice}
 In \Bmumumu, two pairs of opposite sign muons can be formed, namely $q^2(\mu_1,\mu_2)$ and $q^2(\mu_2,\mu_3)$ where $\mu_1=\mu^{+} , \mu_2=\mu^{-}, \mu_3=\mu^{+} $.
 From the two invariant mass squared pairs one can define, $minq^2 = min[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$ and $maxq^{2} = max[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$. This measurement is made in region where $\sqrt{minq^{2}}={minq<980}$ \mevcc because of two main reasons: most of the contributions to the amplitude of the decay is below this value and combinatorial background is greatly reduced if $minq^{2}<1$ (\gevcc)$^{2}$, see \autoref{fig:qsqsel}.
 
@@ -327,20 +327,6 @@ $B^{+}$ lifetime &  &  \\ \hline
 \end{table}
 
 
-	After classifiers to reduce combinatorial and misid backgrounds are trained and applied, further \gls{PID} selection is performed. This can be done as the preselection has relatively loose \texttt{DLL} selection and hence it is possible to improve the performance by using cuts on additional \gls{PID} variables. In the optimisation, different hypotheses were tested, such as cuts on \texttt{Probnnmu}, \texttt{Probnnpi}, and \texttt{ProbnnK} variables and their combinations. Optimisation was performed in a such a way as to optimize Punzi figure of merit \texttt{(FOM)} \cite{Punzi:2003bu}, defined in \autoref{eq:punzifom},  in a blinded signal region, by performing full blinded data fit \mybox{make reference to this once it is written}, but with Run \Rn{1} and Run \Rn{2} fits separately.
-
-
-Throughout the analysis the Punzi \texttt{FOM} is used to find optimal working point. It is defined,
-
-\begin{equation}
-	\texttt{FOM}=\frac{\varepsilon_{S}}{\sqrt{B}+\sigma/2},
-	\label{eq:punzifom}
-\end{equation}
-
-where $\varepsilon_{S}$ is the signal efficiency of the selection and $B$ refers to the number of background candidates, $\sigma$ is the significance. In this case, the significance 3$\sigma$ is used. The advantage of this \texttt{FOM} to more conventional ones, is is insensitive to the knowledge of exact number of signal events, which is the case as the branching fraction is unknown.
-
-
-In 2016, misID templates above 5800 \mevcc are not populated. Hence final 6 bins of corrected mass (5800 \mevcc -7000 \mevcc) are merged into 1. For each PID hypothesis, FOM was calculated. In both cases, in \Rn{1} and \Rn{2} \texttt{Probnnmu} $>$ 0.35 yielded highest \texttt{FOM}.
 
 \subsection{The Isolation Boosted Decision Tree}
 \label{isolationvar}
@@ -372,8 +358,9 @@ The Isolation BDT response peaks between -1 and 0 for isolated tracks (signal-li
 
 \begin{figure}[ht]
 \centering
-	\includegraphics[width=0.5\linewidth]{./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22016.pdf}
-\caption{Isolation score for signal and backgrounds using 2016 samples. If isolation fails to find any other track in the event, by default it gives value -2.}
+	\includegraphics[width=0.5\linewidth]{./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22012.pdf}{\put(-50,133){(a)}}%
+	\includegraphics[width=0.5\linewidth]{./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22016.pdf}{\put(-50,133){(b)}}
+	\caption{Isolation score for signal and backgrounds using (a) Run \Rn{1} (b) Run \Rn{2} samples. If isolation fails to find any other track in the event, by default it gives value -2.}
 \label{fig:isolation}
 \end{figure}
 
@@ -381,7 +368,21 @@ The Isolation BDT response peaks between -1 and 0 for isolated tracks (signal-li
 \label{CombiBDTsel}
 One of the most prominent background is combinatorial background and to reduce its contamination while keeping signal as high as possible combinatorial BDT is trained.
 To obtain combinatorial BDT discriminant, a simulated sample for signal and upper mass sideband data ($M_{B_{corr}}>5.5$ \gevcc) for background is used as training and testing samples. These samples have passed through all previous pre-selection, trigger and selection and are using variables mentioned in \autoref{tab:vars}.
-As the branching fraction and hence the number of signal events is unknown, the Punzi \texttt{FOM}, defined in \autoref{eq:punzifom}, is used to find optimal working point. In this case, the significance 3$\sigma$ is used, but it was checked that there is no change to optimal working point if it is varied to $5\sigma$, as seen in \autoref{fig:punzifom}.
+
+As the branching fraction and hence the number of signal events is unknown, the metric known as Punzi figure of merit \texttt{(FOM)} \cite{Punzi:2003bu}, is used to find optimal working point. It is defined,
+
+\begin{equation}
+	\texttt{FOM}=\frac{\varepsilon_{S}}{\sqrt{B}+\sigma/2},
+	\label{eq:punzifom}
+\end{equation}
+
+where $\varepsilon_{S}$ is the signal efficiency of the selection and $B$ refers to the number of background candidates, $\sigma$ is the significance. In this case, the significance 3$\sigma$ is used. The advantage of this \texttt{FOM} to more conventional onesi is that is it insensitive to the knowledge of exact number of signal events, which is the case as the branching fraction is unknown.
+
+
+In 2016, misID templates above 5800 \mevcc are not populated. Hence final 6 bins of corrected mass (5800 \mevcc -7000 \mevcc) are merged into 1. For each PID hypothesis, FOM was calculated. In both cases, in \Rn{1} and \Rn{2} \texttt{Probnnmu} $>$ 0.35 yielded highest \texttt{FOM}.
+
+
+In this case, the significance 3$\sigma$ is used, but it was checked that there is no change to optimal working point if it is varied to $5\sigma$, as seen in \autoref{fig:punzifom}.
 
 \begin{figure}[ht]
 \centering
@@ -433,9 +434,9 @@ It is also important that there is no skewing of the mass distribution for the b
 \label{fig:flatnessofcombibdt}
 \end{figure}
 
-\section{Misid Boosted Decision Tree}
+\subsection{The Misid Boosted Decision Tree}
 \label{misidbdt}
-In the same way, boosted decision tree was used to yield a classifier that distinguishes well between signal and misid background. The misid sample, that is used for training and testing, was obtained the same way as signal but with one of the muons not identified as muon. Rather, this third particle will be identified either as a proton, pion or kaon.  \mybox{talk about the misid parametrisation}. As before, Run \Rn{1} and Run \Rn{2} are trained and used separately on the relevant datasets \autoref{fig:separatetrainingmis}. Optimisation metric for this classifier was again was Punzi \texttt{FOM} in a signal region and hence number of background events need to be obtained. \textit{k-folding} technique was applied again to prevent overtraining.
+In the same way, boosted decision tree was used to yield a classifier that distinguishes well between signal and misid background. The misid sample, that is used for training and testing, was obtained the same way as signal but with one of the muons not identified as muon. Rather, this third particle will be identified either as a proton, pion or kaon.  \mybox{talk about the misid parametrisation}. As before, Run \Rn{1} and Run \Rn{2} are trained and used separately on the relevant datasets \autoref{fig:separatetrainingmis}. 
 
 
 \begin{figure}[ht]
@@ -446,7 +447,16 @@ In the same way, boosted decision tree was used to yield a classifier that disti
 \label{fig:separatetrainingmis}
 \end{figure}
 
+Optimisation metric for this classifier was again was Punzi \texttt{FOM} in a signal region and hence number of background events need to be obtained. The Punzi \texttt{FOM} for Run \Rn{1} and Run \Rn{2} as a function of BDT cut can be seen in \autoref{fig:punzifommisid} for both significances of $\sigma=\{3,5\}$. \textit{k-folding} technique was applied again to prevent overtraining.
 
+
+\begin{figure}[ht]
+\centering
+	\includegraphics[width=0.5\linewidth]{./sel/misid/Scaled_nice_FOM_Run1.pdf}%
+	\includegraphics[width=0.5\linewidth]{./sel/misid/Scaled_nice_FOM_2016.pdf}%
+	\caption{ Punzi \texttt{FOM} have the optimum working point at 0.21 for Run \Rn{1} and 0.27 for Run \Rn{2} as seen in both figures with violet line for $\sigma=3$ and $\sigma=5$.}
+\label{fig:punzifommisid}
+\end{figure}
 
 
 To obtain number of background events, the default fitting strategy for misID is used \mybox{talk about the misid fit}, where the total yield need to be multiplied by 100 in order to counter balance the prescale used at pre-selection stage. To obtain the yield, the binned $\chi^{2}$ fit is used as these samples are weighted and need to be directly used for the blinded data fit, which requires correct knowledge of the correlations of the fit results. The results of the binned $\chi^{2}$ fits to the misID templates are summarized in \autoref{fig:beforemisiddatafit} yielding in Run \Rn{1} 2400 unparametrized candidates for misid events are expected to be polluting the signal window in the prescaled sample, and in Run \Rn{2} 2200 candidates are obtained. 
@@ -462,7 +472,7 @@ To obtain number of background events, the default fitting strategy for misID is
 
 
 
-Misid background can proceed also through combination of random muon and hence by applying the combinatorial BDTs on the misid samples, this component is reduced and misid sample that is left should consist of true cascade decays, as seen in \autoref{fig:combionmisid2016},
+Misid background can proceed also through combination of random muon and hence by applying the combinatorial BDTs on the misid samples, this component is reduced and misid sample that is left should consist of true cascade decays, as seen in \autoref{fig:combionmisid2016}.
 
 \begin{figure}[ht]
 \centering
@@ -471,7 +481,7 @@ Misid background can proceed also through combination of random muon and hence b
 \label{fig:combionmisid2016}
 \end{figure}
 
-The performance of the two misID BDTs classifier are shown in . The most powerful variables that distinguish the signal from misid background are the kinematic properties of the misidentified muon, namely $p_{T}$, $p$ and \gls{minipchi2}. Misidentified muons tend to be softer than in the signal case as they come from cascades via $D^{0}$ and its excited states. The \gls{minipchi2} distribution will be different as the misid muon can proceed $D^{0}$, rather than directly from the $B$. The kinematic distributions are also different for the two real muons in signal and background misid. The real muon that has the same charge as $B$ tends to be softer for the signal case whereas the real muon that has opposite charge proceeding via $D$ will be harder, as seen \autoref{fig:dismisif}.
+The most powerful variables that distinguish the signal from misid background are the kinematic properties of the misidentified muon, namely $p_{T}$, $p$ and \gls{minipchi2}. Misidentified muons tend to be softer than in the signal case as they come from cascades via $D^{0}$ and its excited states. The \gls{minipchi2} distribution will be different as the misid muon can proceed $D^{0}$, rather than directly from the $B$. The kinematic distributions are also different for the two real muons in signal and background misid. The real muon that has the same charge as $B$ tends to be softer for the signal case whereas the real muon that has opposite charge proceeding via $D$ will be harder, as seen \autoref{fig:dismisif}.
 
 
 \begin{figure}[ht]
@@ -489,19 +499,60 @@ The performance of the two misID BDTs classifier are shown in . The most powerfu
 \end{figure}
 
 
-The Punzi \texttt{FOM} for Run \Rn{1} and Run \Rn{2} as a function of BDT cut can be seen in \autoref{fig:punzifommisid} for both significances of $\sigma=\{3,5\}$. 
+
+\subsection{Further \gls{PID} selection}
+
+After classifiers to reduce combinatorial and misid backgrounds are trained and applied, further \gls{PID} selection is performed. This can be done as the preselection has relatively loose \texttt{DLL} selection and hence it is possible to improve the performance by using cuts on additional \gls{PID} variables. In the optimisation, different hypotheses were tested, such as cuts on \texttt{Probnnmu}, \texttt{Probnnpi}, and \texttt{ProbnnK} variables and their combinations. Optimisation was performed in a such a way as to optimize Punzi \texttt{FOM} with $\sigma=3$ (\autoref{eq:punzifom}) in a blinded signal region, by performing full blinded data fit \mybox{make reference to this once it is written}, but with Run \Rn{1} and Run \Rn{2} fits separately.
 
 
-\begin{figure}[ht]
-\centering
-	\includegraphics[width=0.5\linewidth]{./sel/misid/Scaled_nice_FOM_Run1.pdf}%
-	\includegraphics[width=0.5\linewidth]{./sel/misid/Scaled_nice_FOM_2016.pdf}%
-	\caption{ Punzi \texttt{FOM} have the optimum working point at 0.21 for Run \Rn{1} and 0.27 for Run \Rn{2} as seen in both figures with violet line for $\sigma=3$ and $\sigma=5$.}
-\label{fig:punzifommisid}
-\end{figure}
+In 2016, misID templates above 5800 \mevcc are not populated. Hence final 6 bins of corrected mass (5800 \mevcc -7000 \mevcc) are merged into 1. For each PID hypothesis, FOM was calculated. In both cases, in \Rn{1} and \Rn{2} \texttt{Probnnmu} $>$ 0.35 yielded highest \texttt{FOM}.
 
 
+\subsection{Multiple Candidates}
+After all the selection performed, in blinded datasets, $M_{B_{corr}}<4500$ \mevcc and $M_{B_{corr}}>5500$ \mevcc there is very few canditates left: $683$ in Run \Rn{1} and $505$ in \Rn{2} and no multiple candidates are seen.
+
+\section{Normalisation channel}
+\label{nchannel}
+The normalisation channel used in this analysis is $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$
+as it is clean, well understood, and well populated channel that is similar to signal. This means that many systematic uncertainties will cancel. Normalising the signal decay to this decay also means that absolute efficiencies, luminosity, the b-quark cross-section or fragmentation fractions will be cancelled. With the same number of tracks it will also give a small uncertainty in the tracking efficiency. There are, however, few differences in selection that need to be underlined.
+
+Firstly, the preselection stream from which this sample is taken has different requirements seen in \autoref{tab:stripcutsBnorm}. As compared to preselection of the signal channel shown in \autoref{tab:stripcutsB}, this preselection is less tight. To unify and impose same kind of preselection so that the tracks chosen are of a good quality and away from \gls{PV}, the preselection for signal channel is applied on the top of the original preselection.
 
 
+\begin{table}%[H]
+\begin{center}
+\begin{tabular}{l|c l }
+
+    \hline
+     Candidate & Stripping Selection \\ \hline
+
+	muon & $p_{T} >$ 500 \mev \\ 
+
+	
+	muon & $DLLmu > 0$ & \rdelim\}{1}{1cm}[\ \gls{PID}] \\ \hline
+
+	kaon & PT > 500 \mev \\ 
+	kaon & \gls{trackchi2ndof}$ < 5$ \\
+	kaon & DLLK$ > 0$ & \rdelim\}{1}{1cm}[\ \gls{PID}] \\ \hline
+
+%	dimuon & DOCA $\chi^{2}$ < 20  \\ This one is not listed as the below one has stronger imposation
+	dimuon & \gls{vertexchi2ndof} $< 16$ \\
+	dimuon & $| M(\mu^{+},\mu^{-})\ -\ M_{PDG}(J/\psi)|\ <\ 80\ \mevcc$ \\ \hline
+
+	combination & \gls{vertexchi2ndof} $< 10$ \\
+	combination & $5150\ \mevcc\ <\ M_B\ <\ 5450\ \mevcc$ \\
+	combination & $B$ lifetime > 0.2 ps \\ \hline
+     \end{tabular}
+
+\end{center}
+	\caption{Original preselection of events for normalisation channel for $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ for Run \Rn{1} and Run \Rn{2}. }
+\label{tab:stripcutsBnorm}
+\end{table}
+
+
+Secondly, this decay proceeds via $J/\psi$ resonance and hence the $q^{2}$ veto for $J/\psi$ and $\Psi{(2S)}$, listed in \autoref{tab:vetoes}, is not applied but rather reversed as seen in \autoref{tab:stripcutsBnorm}. As the third particle is kaon rather than muon, there is no explicit choice of $minq$ region.
+
+And finally the kaon candidates are required to have \gls{PID} criteria consistent with being a kaon. In addition to preselection already imposing DLLK$ > 0$,  DLLp - DLLK < 5 is required to make distinction with protons. To assure that kaon is not confused with muon, \texttt{IsMuon==0.0} is required. But only kaon tracks, which have the properties that they could be within geometrical muon acceptance, \texttt{InMuonAcc==1.0}, are considered.  
+%$\epsilon_{PID}$ is the efficiency of PID, that is taken from control data samples and then parametrically applied to simulation samples.
 
 

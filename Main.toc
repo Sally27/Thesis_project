@@ -41,15 +41,18 @@
 \contentsline {section}{\numberline {4.6}Trigger Selection \framebox {ULRIK}}{72}{section.4.6}
 \contentsline {section}{\numberline {4.7}$q^{2}$ selection \framebox {ULRIK}}{74}{section.4.7}
 \contentsline {section}{\numberline {4.8}Further Selection}{75}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}The Isolation Boosted Decision Tree}{77}{subsection.4.8.1}
-\contentsline {subsection}{\numberline {4.8.2}The Combinatorial Boosted Decision Tree}{79}{subsection.4.8.2}
-\contentsline {section}{\numberline {4.9}Misid Boosted Decision Tree}{84}{section.4.9}
-\contentsline {chapter}{\numberline {5}Results}{89}{chapter.5}
-\contentsline {chapter}{Bibliography}{90}{chapter.5}
-\contentsline {chapter}{Appendices}{95}{chapter*.68}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{95}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{98}{appendix.B}
-\contentsline {chapter}{\numberline {C}Fitting functions}{100}{appendix.C}
-\contentsline {section}{\numberline {C.1}Crystal Ball function}{100}{section.C.1}
-\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{101}{section.C.2}
-\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{101}{section.C.3}
+\contentsline {subsection}{\numberline {4.8.1}The Isolation Boosted Decision Tree}{76}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}The Combinatorial Boosted Decision Tree}{78}{subsection.4.8.2}
+\contentsline {subsection}{\numberline {4.8.3}The Misid Boosted Decision Tree}{82}{subsection.4.8.3}
+\contentsline {subsection}{\numberline {4.8.4}Further \gls {PID} selection}{85}{subsection.4.8.4}
+\contentsline {subsection}{\numberline {4.8.5}Multiple Candidates}{86}{subsection.4.8.5}
+\contentsline {section}{\numberline {4.9}Normalisation channel}{88}{section.4.9}
+\contentsline {chapter}{\numberline {5}Results}{90}{chapter.5}
+\contentsline {chapter}{Bibliography}{91}{chapter.5}
+\contentsline {chapter}{Appendices}{96}{chapter*.69}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{96}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{99}{appendix.B}
+\contentsline {chapter}{\numberline {C}Fitting functions}{101}{appendix.C}
+\contentsline {section}{\numberline {C.1}Crystal Ball function}{101}{section.C.1}
+\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{102}{section.C.2}
+\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{102}{section.C.3}

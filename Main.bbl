@@ -338,15 +338,6 @@ A.~Blum {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{Beating the
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem{Punzi:2003bu}
-G.~Punzi, \ifthenelse{\boolean{articletitles}}{\emph{{Sensitivity of searches
-  for new signals and its optimization}}, }{}eConf \textbf{C030908} (2003)
-  MODT002, \href{http://arxiv.org/abs/physics/0308063}{{\normalfont\ttfamily
-  arXiv:physics/0308063}}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
 \bibitem{Speckmayer:2010zz}
 P.~Speckmayer, A.~Hocker, J.~Stelzer, and H.~Voss,
   \ifthenelse{\boolean{articletitles}}{\emph{{The toolkit for multivariate data
@@ -364,6 +355,15 @@ LHCb, R.~Aaij {\em et~al.},
   }{}\href{http://dx.doi.org/10.1038/nphys3415}{Nature Phys.\  \textbf{11}
   (2015) 743}, \href{http://arxiv.org/abs/1504.01568}{{\normalfont\ttfamily
   arXiv:1504.01568}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Punzi:2003bu}
+G.~Punzi, \ifthenelse{\boolean{articletitles}}{\emph{{Sensitivity of searches
+  for new signals and its optimization}}, }{}eConf \textbf{C030908} (2003)
+  MODT002, \href{http://arxiv.org/abs/physics/0308063}{{\normalfont\ttfamily
+  arXiv:physics/0308063}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
