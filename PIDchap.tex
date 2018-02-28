@@ -1,93 +1,97 @@
 \chapter{Handling of trimuon correlations at LHCb}
 \label{chap:trimuon}
 
-\textit{Having three muons passing through the detector may result in few issues, which need to be addressed. Two collimated muons may cross through the same parts of the detector if they bear the same charge, which causes problems in resolving their individual tracks. Hence, from the tracking point of view, ghosts and clones are much more likely to occur. In LHCb, plethora of muon \Gls{PID} variables can be used to suppress these types of spurious tracks, however, one must be careful once estimating the relevant \gls{PID} efficiencies as most efficiencies will be dependant on number of muons in the detector.}
+\textit{This chapter discusses issues associated with three muons passing through the detector. Two collimated muons may traverse through the same parts of the detector if they bear the same charge, causing problems in resolving their individual tracks. Therefore, ghosts and clones are much more likely to occur. In LHCb, plethora of muon \Gls{PID} variables are used to suppress these types of spurious tracks. However, the usage of \gls{PID} variables in an analysis in \gls{LHCb} brings its own challenges. As the simulation is not able to estimate \gls{PID} efficiencies correctly, most of the \gls{PID} efficiencies are taken from control samples. New control samples for \Bmumumu are considered as the \Gls{PID} efficiencies depend strongly on number of muons in the detector and in standard misid control samples there are no other muons in the event.}
 
 \section{Muon PID variables \mybox{ULRIK}}
-There is a further set of muon variables apart from the ones mentioned in \autoref{muonID} that are available for \gls{PID} of muon. In this section summary of the variables used in analysis of \Bmumumu is discussed.
+In addition to the muon identification variables mentioned in \autoref{muonID}, there is a further set of criteria for selecting muons. In this section a summary of the variables used in the analysis of the \Bmumumu is discussed.
 
 \subsection{Binary Muon PID variables \mybox{ULRIK}}
-Similar to \texttt{isMuon} shown in \autoref{tab:ismuontab}, there are two more binary variables, \texttt{isMuonTight} and \texttt{isMuonLoose}, that can help with classification of muons. As their name suggests, \texttt{isMuonLoose} has weaker and \texttt{isMuonTight} has stronger conditions to satisfy as compared to \texttt{isMuon}. 
+Similar to \texttt{isMuon} shown in \autoref{tab:ismuontab}, there are more binary variables, such as \texttt{isMuonTight}, that can help with classification of muons. As its name suggests, \texttt{isMuonTight} has stronger conditions to satisfy as compared to \texttt{isMuon}. 
 
-In each muon station (\gls{muonstation}) and in each dimension in perpendicular plane ($d=\{x,y\}$), \gls{FOI} is defined as a function of momentum $p$  in a following way:
+\color{red}{In each muon station (\gls{muonstation}) a field of interest, \gls{FOI} is defined as %a function of momentum $p$ in a following way:
 \begin{equation}
-	FOI_{d}=\rho_{d,1}+\rho_{d,2}\cdot \exp \left(\frac{\rho_{d,3}\cdot p}{\gevc} \right).
+	FOI_{x,y}=\rho0_{x,y}+\rho1_{x,y}\cdot \exp \left(\frac{\rho2_{x,y}\cdot p}{\gevc} \right),
 \end{equation}
+where $x,y$ are the dimensions perpendicular to the direction of the beam, $p$ is momentum of the muon, $\rho{i}_{x,y}$ are three dimension-dependent parameters tuned to give the best performance, by maximizing efficiency to misid rate.
 
-Muon passing through the detector will leave hit in $pad_{d}$ of each muon station and therefore have $h_{d}$ coordinate. Extrapolation coordinates from tracking system made into the stations are denoted $E_{d}$. The hits are considered to be within the \gls{FOI} for given $d$ if they satisfy the condition that $|| h_{d} - E_{d} || < FOI_{d} \cdot pad_{d}$. 
+When a muon passes through the detector, it leaves hits ($h_{x,y}$ coordinate) in pad with size $pad_{x,y}$ of each muon station. From the tracks formed in the tracking part of the detector, extrapolation coordinates $E_{x,y}$ are obtained by extrapolating the tracks into the muon stations. The hits are considered to be within the \gls{FOI} if they satisfy the condition that $|| h_{d} - E_{d} || < FOI_{d} \cdot pad_{d}$ for both d={x,y}.} 
 
-The detector information is read out in $x$ and $y$ direction separately. The pad slicing according to this read-out scheme is known as \textit{physical} slicing of pads. However, as seen in \autoref{fig:pads}, the overlapping $x$ and $y$ \textit{physical} pads of can be grouped into \textit{logical} pads, which give information about $x$ and $y$ simultaneously. These leads to two groups of hits according to pad type: uncrossed hits - registered within \textit{physical} pads only and crossed hits - given by \textit{logical} pads. Whereas \texttt{isMuon} only requires positive decision from uncrossed hits, \texttt{isMuonTight} requires positive decision based on crossed hits. 
+\color{black}
+
+The detector information is read out in the $x$ and $y$ direction separately. The pad slicing according to this read-out scheme is known as \textit{physical} slicing of pads. However, as seen in \autoref{fig:pads}, the overlapping $x$ and $y$ \textit{physical} pads of can be grouped into \textit{logical} pads, which give information about $x$ and $y$ simultaneously. This leads to two groups of hits according to pad type: uncrossed hits - registered within \textit{physical} pads only, and crossed hits - given by \textit{logical} pads. Whereas \texttt{isMuon} only requires positive decision from uncrossed hits, \texttt{isMuonTight} requires positive decision based on crossed hits. 
 
 
 \begin{figure}[!h]
         \centering
         %\includegraphics[width = 0.3\textwidth]{figs/trimuon/poze.jpg}
         \includegraphics[width = 1.0\textwidth]{figs/trimuon/pad.png}
-        \caption{Schematic view of the muon station slicing into x-y pads. This is left quadrant of M1 station, showing decreasing granularity of the muon stations away from the beam. This figure has been taken from \cite{LHCb-DP-2012-002}. M1R1 is the innermost region and M1R4 is the outermost region of the M1 station. }
+        \caption{Schematic view of the muon station slicing into x-y pads. This is the left quadrant of the M1 station, showing decreasing granularity of the muon stations away from the beam pipe. This figure has been taken from \cite{LHCb-DP-2012-002}. M1R1 is the innermost region and M1R4 is the outermost region of the M1 station. }
         \label{fig:pads}
 \end{figure}
 
 \subsection{Muon PID variables based on sharing hits \mybox{ULRIK}}
 \label{bugs}
 
-Another way of identifying muon tracks is based on variable, \texttt{nShared}, which gives number of tracks with shared hits in the muon stations. For each hit within \gls{FOI} of the extrapolated track, the \texttt{nShared} algorithm will check whether any other track was built using the given hit. In this case, the muon track which has bigger distance between the extrapolation coordinates and the hit coordinates is increased by 1 and the other track becomes the hit owner track. Hence this integer \gls{PID} variable helps supressing \textit{ghost} tracks and \textit{clones} if no tracks have hits in common with the owner of the track (\texttt{nShared==0}).
+Another way of identifying muon tracks is based on the variable, \texttt{nShared}, which identifies the number of tracks with shared hits in the muon stations. For each hit within the \gls{FOI} of an extrapolated track, the \texttt{nShared} algorithm will check whether any other track was built using the given hit. In this case, the \texttt{nShared} variable of the muon track which has the bigger distance between the extrapolation coordinates and the hit coordinates is increased by 1. Hence this integer \gls{PID} variable helps supressing \textit{ghost} tracks and \textit{clones} if no tracks have hits in common with the owner of the track (\texttt{nShared=0}).
 
-%\subsection{Different \texttt{nShared} definitions for Run \Rn{1} and Run \Rn{2}}
-To make sure that muons for \Bmumumu are not coming from these spurious tracks,  \texttt{nShared==0} for all three muons is required. These three muon tracks will not to share hits in muon stations with any other downstream or long tracks. In analysing data, there were features in the Muon ID alghorithm, software that calculates most of muon \gls{PID} variables, which changed between Run \Rn{1} and Run \Rn{2} and will be discussed in greater detail, as it impacts the selection performed for \Bmumumu search.
+%\subsection{Different \texttt{nShared} definitions for Run \Rn{1} and Run \Rn{2}
+%To make sure that muons for \Bmumumu are not coming from these spurious tracks,  \texttt{nShared==0} for all three muons is required. These three muon tracks will not to share hits in muon stations with any other downstream or long tracks. In analysing data, there were features in the Muon ID alghorithm, software that calculates most of muon \gls{PID} variables, which changed between Run \Rn{1} and Run \Rn{2} and will be discussed in greater detail, as it impacts the selection performed for \Bmumumu search.
+The muon identification software algorithms evolved significantly between the processing of Run \Rn{1} and Run \Rn{2} data. This included bug fixes, improvements and the introduction of new bugs. In the \Bmumumu analysis, this has to be taken into account.
+
 
 The first feature that is different between Run \Rn{1} and Run \Rn{2} arises from the calculation of the distance between the extrapolation and the hit in \texttt{nShared} algorithm.
-In \textit{Stripping 21} used for 2012 and \textit{21r1} used for 2011 data, it was discovered that the distance between extrapolated track and hit was wrongly calculated. This mistake was corrected before \textit{Stripping 23}, used for analysing 2015 data. 
+In \textit{Stripping 21} used for 2012 and \textit{21r1} used for 2011 data, it was discovered that the distance between an extrapolated track and a hit was wrongly calculated. This mistake was corrected before \textit{Stripping 23}, used for analysing 2015 data. 
 
-Secondly, information from M1 station was used to calculate distances, even though M1 information is not usually used for Muon ID algorithm.  For analysts, this feature was present across all reconstruction software and hence it is consistent within stripping version, meaning that simulation and data is affected in the same way.
+Secondly, information from M1 station was used to calculate distances, even though M1 information is not usually used for Muon ID algorithms.  For analysts, this feature was present across all reconstruction software, meaning that simulation and data is affected in the same way.
 
-In \textit{Stripping 23}, the Muon ID algorithm was rewritten to adapt for parallelisation that needs to be done in order to meet criteria for upgrade of \gls{LHCb}. There were two mistakes introduced prior to 2015 data taking.
-Firstly, an array was defined with 4-elements $[0,3]$ to store information about $x$ and $y$ coordinates of the hits. However, an iteration occurred by filling $[1,4]$ array (M2-M5 station) resulting in 5-element array where 0-th element was not filled. Despite this, it turns out to be well-behaved and has no impact on physics.
+In \textit{Stripping 23}, the Muon ID algorithm was rewritten to adapt for parallelisation that needs to be done in order to meet the criteria for the upgrade of \gls{LHCb}. There were two mistakes introduced prior to 2015 data taking.
+Firstly, an array was defined with 4-elements $[0,3]$ to store information about $x$ and $y$ coordinates of the hits. However, an iteration occurred by filling elements 1 to 4 of the array (M2-M5 station) resulting in a 5-element array where the 0-th element was not filled. Despite this, it turns out to be well-behaved and has no impact on physics.
 
-Further in the process, however, this information is used to calculate the sum and average of distances per station between the hits and extrapolations. This algorithm again iterates over $[0,3]$ arrays, meaning that no information is used from M5 muon station. This obviously has effect, but again it is consistent across the reconstruction version.
+Further in the process, however, this information is used to calculate the sum and average of distances per station between the hits and extrapolations. This algorithm again iterates over $[0,3]$ arrays, meaning that no information is used from the M5 muon station. This obviously has an effect, but again it is consistent across the versions of the reconstruction software used for the processing of Run \Rn{2} data.
 
 %\newline Summary of these features can be found in \href{https://indico.cern.ch/event/612764/contributions/2567244/attachments/1449649/2234804/20170426\_nShared.pdf}{\color{blue} in this presentation} 
-The interplay between all discussed features for \bjpsimumuk can be seen in Figure~\ref{fig:nSharedvar}, which see shift in distribution of \texttt{nShared} for 2016 data taking, making the muons less isolated.
+The interplay between all these features for \bjpsimumuk decays, can be seen in Figure~\ref{fig:nSharedvar}, which see shift in distribution of \texttt{nShared} for 2016 data taking, making the muons less isolated.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\linewidth]{trimuon/plotvariablemu1_nSharedJPSIKMC.pdf}\put(-40,133){(a)}
 \includegraphics[width=0.5\linewidth]{trimuon/plotvariablemu1_nSharedJPSIKDATA.pdf}\put(-40,133){(b)}
-	\caption{ (a) The \texttt{nShared} variable in simulation, (b) data for \bjpsimumuk in different stripping versions corresponding to 2012 (\textit{Stripping 21}), 2011 (\textit{Stripping 21r1}), 2016 (\textit{Stripping 26}) data-taking. There is shift of distribution in \textit{Stripping 26} towards less isolated tracks.}
+	\caption{(a) The \texttt{nShared} variable distribution for the positive muon in \bjpsimumuk decays in (a) simulation and (b) data. Different stripping versions corresponding to 2012 (\textit{Stripping 21}), 2011 (\textit{Stripping 21r1}), 2016 (\textit{Stripping 26}) data-taking are shown. There is shift of distribution in \textit{Stripping 26} towards less isolated tracks.}
 \label{fig:nSharedvar}
 %\vspace*{-1.0cm}
 \end{figure}
 
-
-This will have inevitably and impact on the \gls{PID} probabilities. Using the same calibration channels as in \autoref{muonperf}, misID and ID rates can be seen in Figure~\ref{fig:nSharedRun1andRun2}. As the tracks tend to be less isolated in \textit{Stripping 26}, typical of non-signal like events, the misID rate is expected to be higher for the same working point (ID efficiency).
+Using the same calibration channels as in \autoref{muonperf}, misID and ID rates can be seen in Figure~\ref{fig:nSharedRun1andRun2}. As the tracks tend to be less isolated in \textit{Stripping 26}, typical of non-signal like events, the misID rate is expected to be higher for the same working point (ID efficiency). While the issues highlighted here can be fixed with a reprocessing of the data, this is not expected to happen before 2019 or 2020.
 
 \begin{figure}[h!]
 \centering
 %\includegraphics[width=0.52\linewidth]{compareRun1and2016selection/final_comparedirectly2012vs2015_nolog.pdf}%
 \includegraphics[width=0.7\linewidth]{trimuon/final_comparedirectly2012vs2016_nolog.pdf}
-	\caption{ID and misID probabilities from standard calibration datasets from 2012 (\textit{Stripping 21}) 2016 (\textit{Stripping 26}), binned using default 2-dimensional binning scheme in momentum $p$ and pseudorapidity $\eta$. In this plot, ID and misID rate in central bin of $\eta$ and first and second bin in $p$ are compared. This demonstrates that for same ID efficiency, the misID rate is significantly higher in 2016.}
+	\caption{ID and misID probabilities from standard calibration datasets from 2012 (\textit{Stripping 21}) and 2016 (\textit{Stripping 26}), binned using the default 2-dimensional binning scheme in momentum $p$ and pseudorapidity $\eta$. In this plot, ID and misID rates in the central bin of $\eta$ and the first and second bin in $p$ are compared. This demonstrates that for the same ID efficiency, the misID rate is significantly higher in 2016 data.}
 \label{fig:nSharedRun1andRun2}
 %\vspace*{-1.0cm}
 \end{figure}
 
 \subsection{Muon PID variables based on regression techniques \mybox{ULRIK}}
-Similar to the \texttt{DLLmu} variable in \autoref{muonID}, which combines all the information from the detector into a global likelihood, it is possible to feed all the different variables to a neural network, which can then produce an output corresponding to the probability of a particle to be of a certain species. \texttt{Probnn${x}$}, where $x$ is the species of interest, is calculated and can be used also for muon identification. Compared to $DLL{x}$ variables, \texttt{Probnn${x}$} variables tend to have smaller correlation with the kinematics of the particle, and hence are more useful with decays where particles are soft, such as \Bmumumu. As with any machine learning algorithms, the selection of the training sample is important as well as input variables. In Run \Rn{1} there were two tunings (trainings) introduced \texttt{V2} and \texttt{V3}, with more input variables in \texttt{V2}. Depending on the species of particles, \texttt{V2} or \texttt{V3} performed better. In the analysis of \Bmumumu \texttt{Probnn${x}\_$V2} is used.
+Similar to the \texttt{DLLmu} variable in \autoref{muonID}, which combines all the information from the detector into a global likelihood, it is possible to feed all the different variables to a neural network, which can then produce an output corresponding to the probability of a particle to be of a certain species. \texttt{Probnn${x}$}, where $x$ is the species of interest, is calculated and can be used also for muon identification. Compared to $DLL{x}$ variables, \texttt{Probnn${x}$} variables tend to have smaller correlation with the kinematics of the particle, and hence are more useful with decays where particles are soft, such as \Bmumumu. As with any machine learning algorithm, the selection of both the training sample and the input variables are important. In Run \Rn{1}, there were two tunings (trainings) introduced \texttt{V2} and \texttt{V3}, with more input variables in \texttt{V2}. Depending on the species of particles, \texttt{V2} or \texttt{V3} performed better. In the analysis of \Bmumumu, \texttt{Probnn${x}\_$V2} is used.
 
 
 \section{Clones \mybox{ULRIK}}
-When analysing decays with two muons of the same charge, \gls{LHCb} magnet bends these two muons in two separate planes. With two muons of the same sign, it is more likely that their two tracks will be collimated. This poses more difficult task for tracking as it distinguishes these two tracks less well. It is even possible that these two same sign muon tracks are not genuine tracks, but rather subtracks or a copy of another track, \textit{clone tracks}. Two tracks are clones if they share at least 70\% of the hits in the \gls{VELO} and at least 70\% of the hits in the other T-stations. Of course, once it is established that two tracks share this percentage of hits, it has to be established which track is the clone track. This decision is based on the total number of hits and the \gls{trackchi2ndof} comparison of the two tracks.   
+When analysing decays with two muons of opposite charge, the \gls{LHCb} magnet bends these two muons in two opposite directions. With two muons of the same sign, the muons will instead bend in the same direction and can stay close together in both the tracking system and the muon detectors. This causes trouble for the tracking algorithm as it distinguishes these two tracks less well. It is even possible that these two same sign muon tracks are not genuine tracks, but rather subtracks or a copy of another track, \textit{clone tracks}. Two tracks are clones if they share at least 70\% of the hits in the \gls{VELO} and at least 70\% of the hits in the other T-stations. Of course, once it is established that two tracks share this percentage of hits, it has to be established which track is the clone track. This decision is based on the total number of hits and the \gls{trackchi2ndof} comparison of the two tracks.   
 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\linewidth]{trimuon/compnice_even_nicer_ONLY_STACKED_HIST_VisibleCorrM.pdf}\put(-50,133){(a)}
 \includegraphics[width=0.5\linewidth]{trimuon/compnice_even_nicer_ONLY_STACKED_HIST_CorrM.pdf}\put(-50,133){(b)}
-	\caption{(a) Visible and (b) corrected mass of $B$, shows a clear peak coming from clones in 2012 same sign data sample. }
+	\caption{(a) Visible and (b) corrected mass of \Bmumumu candidates in 2012 data where all the muons have the same charge. Clear fake peaks, arising from the correlation of several effects in the detector can be seen. }
 \label{fig:Clones}
 %\vspace*{-1.0cm}
 \end{figure}
 
 
-In search for \Bmumumu two muons have the same charge, and hence are affected by the \textit{clones}, which needs to be understood. In this case, sample with three muons of same sign was obtained, where the effect is even more prominent and can create potentially \textit{fake peaks} in visible mass spectrum. \textit{Clones} peak at well defined visible mass 
+In search for \Bmumumu, two muons have the same charge, and hence are affected by the \textit{clones}, which needs to be understood. In a control sample from data corresponding to 2012 data-taking period, which have three muon candidates of the same charge, the effect is even more prominent and can create potentially \textit{fake peaks} in visible mass spectrum. \textit{Clones} peak at well defined visible mass 
 \begin{equation}
 	M_{B}=\sqrt{(3 \times M_{\mu})^{2}}\approx 318 \mevcc
 	\label{eq:invmass}
@@ -96,13 +100,13 @@ In search for \Bmumumu two muons have the same charge, and hence are affected by
 Once translated into corrected mass, these \textit{fake peaks} are smeared and look like genuine resonances with resolution as seen in \autoref{fig:Clones}.  
 
 
-The shape of genuine resonance comes as a result of \gls{LHCb} many factors: vertexing, tracking and trigger selection. As there are three parallel tracks, the vertex of the system is not well defined. However, the vertex fitting of the \gls{PV} and \gls{SV} is functional and \gls{vertexchi2ndof} is good as these tracks are subtracks of each other.  \textit{Clones} can be, however, differentiated by the position of the decay vertex of $B$, \autoref{fig:ClonesFD} as well as the occupancy in the tracking, \gls{OT} as seen in \autoref{fig:ClonesOT}.
+The shape shape emulating a genuine resonance arises as a collective effect from vertexing, tracking and trigger selection. As there are three parallel tracks, the vertex of the system is not well defined. However, the vertex fitting of the \gls{PV} and \gls{SV} is functional and \gls{vertexchi2ndof} is good as these tracks are subtracks of each other. Howver, \textit{clones} can be differentiated by the position of the decay vertex of $B$, \autoref{fig:ClonesFD} as well as the transverse position of the track in the tracking, \gls{OT} as seen in \autoref{fig:ClonesOT}.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\linewidth]{trimuon/VertexInfoClone.pdf}\put(-50,133){(a)}
 \includegraphics[width=0.5\linewidth]{trimuon/VertexInfoNoClone.pdf}\put(-50,133){(b)}
-	\caption{(a) Clone and (b) no clones flight distance properties. It can be seen that \textit{clone} tracks have their decay vertex placed at the end of the detector, whereas regular good tracks will decay within \gls{VELO}.}
+	\caption{(a) Clone and (b) no clones flight distance properties. It can be seen that \textit{clone} tracks have their decay vertex placed at the end of the detector, whereas regular good tracks will decay within the \gls{VELO}.}
 \label{fig:ClonesFD}
 %\vspace*{-1.0cm}
 \end{figure}
@@ -112,22 +116,22 @@ The shape of genuine resonance comes as a result of \gls{LHCb} many factors: ver
 \centering
 \includegraphics[width=0.5\linewidth]{trimuon/OTxandyClone.pdf}\put(-50,133){(a)}
 \includegraphics[width=0.5\linewidth]{trimuon/OTxandyNoClone.pdf}\put(-50,133){(b)}
-	\caption{The occupancy difference in the \gls{OT} detector between (a) clones and (b) real tracks in the \Gls{OT} at the distance 9450 \mm along the \gls{LHCb}. \textit{Clones} are concentrated along the inner edge of the \gls{OT}. Good muon tracks will cover most of \gls{OT} evenly.}
+	\caption{The difference in the \gls{OT} detector between (a) clones and (b) real tracks in the \Gls{OT} at the distance 9450 \mm along the \gls{LHCb}. \textit{Clones} are concentrated along the inner edge of the \gls{OT}. Good muon tracks will cover most of \gls{OT} evenly.}
 \label{fig:ClonesOT}
 %\vspace*{-1.0cm}
 \end{figure}
 
-With this typical path for the clones there is a fixed angle of the clones trough the detector (the angle between muon momentum the z-axis), which is calculated using information from \gls{OT} in a following way:
+With this typical path for the clones there is a fixed angle of the clones trough the detector (the angle between the muon momentum and the z-axis), which is calculated using information from \gls{OT} as
 
 \begin{equation}
-	\arctan(\theta)=\arctan\Big(\frac{\gls{FD}\ radius}{\gls{FD}\ distance\ along\ z}\Big)=\arctan\Big(\frac{200\ \mm\ (\autoref{fig:ClonesOT})}{8500\ \mm}\Big) = 0.023 rad. 
+	\arctan(\theta)=\arctan\Big(\frac{\gls{FD}\ radius}{\gls{FD}\ distance\ along\ z}\Big)=\arctan\Big(\frac{200\ \mm\ (\autoref{fig:ClonesOT})}{8500\ \mm}\Big) = 0.023 \rm{rad}. 
 \end{equation}
 
 
 With the \texttt{L0Muon} $p_{T}$ threshold of 1.76 \gevc for 2012 \cite{Albrecht:2013fba}, the typical momentum from about 75  to 120 \gevc is yielded because
 
 \begin{equation}
-	p=1.76\gevc/\sin\bigg(\arctan(\theta)=\arctan\Big(\frac{200\ \mm}{8500\ \mm}\Big)\bigg).
+	p=1.76\gevc/\sin\bigg(\arctan\Big(\frac{200\ \mm}{8500\ \mm}\Big)\bigg).
 \end{equation}
 
 The angle between $B$ flight and trimuon momentum vector, \gls{DIRA}, will also be fixed and have typical value of 0.7 \mrad as seen in \autoref{fig:ClonesDIRA}.
@@ -144,42 +148,45 @@ The angle between $B$ flight and trimuon momentum vector, \gls{DIRA}, will also 
 Hence, missing $p_{T}$ in the direction of the flight can be calculated using \gls{DIRA} and typical $p$,
 
 \begin{equation}
-	p_{T}=100\gevc \times \sin(0.0007)=0.7\gevc.
+	p_{T}=100\gevc \times \sin(0.0007)=0.7\gevc,
 	\label{eq:mispt}
 \end{equation}
+corrected mass $M_{corr} = \sqrt{{M}^{2} + |p^{2}_{T}|} + |p_{T}| = 4.2 \gevcc$, using missing $p_{T}$ from \autoref{eq:mispt} and visible mass of \textit{clones} from \autoref{eq:invmass}.
 
-Hence corrected mass $M_{corr} = \sqrt{{M}^{2} + |p^{2}_{T}|} + |p_{T}| = 4.2 \gevcc$, using missing $p_{T}$ from \autoref{eq:mispt} and visible mass of \textit{clones} from \autoref{eq:invmass}.
 
-
-In order to suppress these tracks in analysing \Bmumumu, where two muons have the same sign, any distinguishing features mentioned could be used. But the most powerful \gls{PID}-wise is requiring \texttt{nShared==0}, as this requirement removes all of the clones, as seen in \autoref{fig:ClonesnShared}.
-
+In order to suppress these tracks in analysing \Bmumumu, where two muons have the same sign, any distinguishing features mentioned could be used. But the most powerful \gls{PID}-wise is requiring \texttt{nShared=0} in \Rn{1}, as this requirement removes all of the clones, as seen in \autoref{fig:ClonesnShared}. 
+\color{red}For Run \Rn{2}, due to the introduced bugs, such strong requirement would harm signal efficiency too much so combination of \texttt{nShared<2} and \texttt{isMuonTight=1} is applied.
+\textit{this should remove them as well as nShared is increased for the non-owner track only- i assume that owner track will be that of nshared=0. I.e below nShared==3 for the clones, so for two muons nShared==2 so if there are two tracks, is ok}
+\color{black}
 %\newline In order to keep the signal efficiency high in 2016 data, as shown in Table ~\ref{tab:Reason}, softer condition ,$\texttt{nShared}<2$, is applied.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\linewidth]{trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_sumnSharedclone.pdf}\put(-50,133){(a)}
 \includegraphics[width=0.5\linewidth]{trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_sumnSharednoclone.pdf}\put(-50,133){(b)}
-	\caption{(a) Clone and (b) no clone distribution for sum of all muon \texttt{nShared}. Since in this case the clones are of each other, for clone there is clear peak at three. }
+	\caption{(a) Clone and (b) no clone distribution for sum of all muon \texttt{nShared}. Since in this case the clones are of each other, for the clones there is clear peak at three. }
 \label{fig:ClonesnShared}
 %\vspace*{-1.0cm}
 \end{figure}
 
 \section{Probability of $K/\pi$ $\rightarrow \mu$ misidentification at LHCb \mybox{ULRIK}}
 
-Usually, in order to estimate background coming from misidentification of species into muons in the detector, data samples with \textit{non-muon} (identified not to be muons) tracks are obtained. They are assigned parametrically probabilities of misid rates from some specific control samples, which were discussed in \autoref{RICHperf}. However, three muon signature will induce problems for \gls{PID} variables that are correlated with the number of muons in the detector and other control samples need to be used.
+Usually, in order to estimate background coming from misidentification of particles as muons in the detector, data samples with particles of known (non-muon) type are identified from the kinematics of decay chains. From these samples, probabilities of mis-identification are derived as discussed in \autoref{RICHperf}. However, the three muon signature will induce problems for \gls{PID} variables that are correlated with the number of muons in the detector and specific data samples that incorporates this correlation have to be used for measuring the mis-identification probability.
 
 \subsection{Specific control sample for $K/\pi$ $\rightarrow \mu$ misid rates \mybox{ULRIK}}
 \label{extraction}
-At LHCb, \texttt{PIDCalib} package can usually provide misID and ID rates obtained from standard $K/\pi$ control samples $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$. These statistically populated background-free \textit{sWeighted} samples, for which it is possible to extract misID and ID rates as a function of kinematics given certain \gls{PID} criteria, do not have other muons in the final state. 
+A platform that \gls{LHCb} analysts usually use to extract the misid and id efficiencies, as described in \autoref{RICHperf}, is known as \texttt{PIDCalib} package. It contains samples where the identity of the particle is know purely from kinematics.  In this \texttt{PIDCalib} package, such a control same for $K/\pi$ is obtained from $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$. These statistically populated background-free \textit{sWeighted} samples, for which it is possible to extract misID and ID rates as a function of kinematics given certain \gls{PID} criteria, do not have other muons in the final state. 
 
-More specifically, the topology of the mis-ID background component, which is two real muon tracks with an additional \textit{fake} muon track is very different to \texttt{PIDCalib} sample $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$, where there are no muons in the final state. This influences rest of misID rates as some of the \gls{PID} variables are strongly correlated with number of muons in the decay, due to the fact that the mis-identified particle can share hits with other muons in the rest of the decay. This should be reflected mostly in high momenta region, where the three particles tend to be collimated and share hits most often.
+More specifically, the topology of the mis-ID background component, which is two real muon tracks with an additional \textit{fake} muon track is very different to \texttt{PIDCalib} sample $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$, where there are no muons in the final state.
 
-For this reason, an alternative sample that is also be statistically populated background-free, $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}(\rightarrow \underline{K^{+} \pi^{-}})$. It mimics the two real muon plus fake muon correctly and will be used to obtain pion and kaon misID probabilities.
+%This influences the rest of the misID rates as some of the \gls{PID} variables are strongly correlated with number of muons in the decay, due to the fact that the mis-identified particle can share hits with other muons in the rest of the decay. This should be reflected mostly in high momenta region, where the three particles tend to be collimated and share hits most often.
+
+For this reason, $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}(\rightarrow \underline{K^{+} \pi^{-}})$ is used instead. While not as common as $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$ decay, it still has high statistics and can be isolated with little background. It mimics the two real muon plus fake muon correctly and will be used to obtain pion and kaon misID probabilities.
 % This is a clean decay that can be fit to obtain \textit{sWeights} to measure PID efficiencies. Moreover, its the signal topology and kinematics are much closer to the actual mis-ID backgroundcomponent than
 % that of the PIDCalib control samples.
 
 \subsection{Selection for $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ \mybox{ULRIK} }
-Data samples for each year of data taking were obtained from \textit{stripping} dedicated to look for this type of decay, but with both kaon and pion having no particle identification applied, which ensures that \gls{PID} performance of different variables can be studied. Some initial selection was applied together with more stringent \Bmumumu selection including trigger (but on $J/\psi$ candidate rather than $B$). Finally to remove most of the backgrounds that still pollute the signal samples following selection summarized in Table ~\ref{tab:cleanjpsikst} is used.
+Data samples for each year of data taking were obtained from \textit{stripping line} dedicated to look for this type of decay. The sample can be used for mis-ID studies of the hadrons as no particle identification is applied on them. Some initial selection was applied together with the more stringent \Bmumumu selection.  The trigger criteria were applied on the $J/\psi$ candidate rather than on the B candidate. (but on $J/\psi$ candidate rather than $B$). The full additional selection is summarized in Table ~\ref{tab:cleanjpsikst} is used.
 
 
 \begin{table}[h!]
@@ -187,7 +194,7 @@ Data samples for each year of data taking were obtained from \textit{stripping} 
 \begin{tabular}{ l  l }
 Idea  & Cut  \\ \hline
 ID $K^{*}$ & $|$ m(K$\pi$) - m$_{PDG}(K^{∗}_{0})$ $|$ $ <100$ \mevcc \\
-Compatible with \texttt{PIDCalib} &  for K,$\pi$ , p$_{T} > 250$ \mevc\\
+Compatible with \texttt{PIDCalib} \color{red} kin comparison with pidcalib \color{black} &  for K,$\pi$ , p$_{T} > 250$ \mevc\\
 Compatible with \texttt{PIDCalib} &  for $\mu$ , p$_{T} > 800$ \mevc \\
 Muon swap veto & $|$ m((h $\rightarrow \mu$ )$\mu$) - m$_{PDG}$(J/$\psi$)$|$ $> 60$ \mevcc \\
 	Veto $B^{+}\rightarrow K^{+}\mu^{+}\mu^{-}$ & max(m($K^{+}\mu^{+}\mu^{-}$)), m($(\pi^{+} \rightarrow K^{+})\mu^{+}\mu^{-})$) $< 5100$ \mevcc\\
@@ -210,26 +217,32 @@ ID kaon & DLLK $>$ 0 and DLLK-DLLp $>$ 0 and \texttt{IsMuon==0} \\
 \subsection{Fitting Strategy for $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ decay \mybox{ULRIK}}
 After all the selection, the residual background needs to be modelled. 
 
-The signal component, $B^{0} \rightarrow J/\psi K^{*}$, is obtained by fixing the shape from simulation apart from mean $\mu$ and width $\sigma$. It is fitted with double-sided Hypatia function \cite{Santos:2013gra} (more in \autoref{IP}).
+The signal component, $B^{0} \rightarrow J/\psi K^{*}$, is obtained by fixing the shape from simulation apart from the mean $\mu$ and the width $\sigma$. It is fitted with a double-sided Hypatia function \cite{Santos:2013gra} (more in \autoref{IP}).
 
-Background that peaks in the upper mass sideband, coming from heavier $B^{0}_{s}$, $\bar{B}^{0}_{s} \rightarrow J/\psi (\rightarrow \mu^{+} \mu^{-}) K^*(\rightarrow \underline{K^{+} \pi^{-}})$ is also modelled using simulation, using the same function as a signal but with offset of $\mu$ by PDG difference between $B^{0}_{s}$ and $B^{0}$.
+Background that peaks in the upper mass sideband, coming from heavier $B^{0}_{s}$, $\bar{B}^{0}_{s} \rightarrow J/\psi (\rightarrow \mu^{+} \mu^{-}) K^*(\rightarrow \underline{K^{+} \pi^{-}})$ is also modelled using simulation, using the same function as signal but with $\mu$ offset by the difference between known $B^{0}_{s}$ and $B^{0}$.
 
-It is also possible that kaons and pions are swapped between themselves. Background coming from $K \leftrightarrow \pi$ swaps is modelled from simulation where mass hypotheses were swapped. Its distribution is fitted with double sided Crystal Ball function \cite{Skwarnicki:1986xj} (more in \autoref{CB}).
+It is also possible that kaons and pions are swapped between themselves. Background coming from $K \leftrightarrow \pi$ swaps is modelled from simulation where mass hypotheses were swapped. Its distribution is fitted with a double sided Crystal Ball function \cite{Skwarnicki:1986xj} (more in \autoref{CB}).
 
-Possibility of misidentified background comes from decay of $\Lambda_{b} \rightarrow K^{-} p \mu^{+} \mu^{-}$ where proton is misidentified as pion. This background is modelled from simulation and fitted with \texttt{RooKeys} p.d.f (more in \autoref{RK}).
+Possibility of misidentified background comes from decay of $\Lambda_{b} \rightarrow K^{-} p \mu^{+} \mu^{-}$ where the proton is misidentified as a pion. This background is modelled from simulation and fitted with a \texttt{RooKeys} p.d.f (more in \autoref{RK}).
 
-And finally combinatorial component is modelled by the exponential function.
+Finally a combinatorial component is modelled by the exponential function.
 
-In order to obtain $K/\pi$ misid probabilities fit to $\mu^{+} \mu^{-} \pi^{+} K^{-}$ mass between 5150 - 5450 \mevcc was performed, where all of the yields for different components are left floating. Moreover, mass of $J/\psi$ was \textit{constrained} to its nominal mass, known as \textit{mass constraint}, which will yield new estimates for track parameters of the final state particles, from which a new kinematic refit is done.
 
-Actual extraction of the misid rate was obtained using statistical subtraction of background, also known as \textit{sPlot} technique. The same is used in \texttt{PIDCalib} package. It was cross-checked with \textit{fit twice method}, because \textit{sPlot} technique relies on the fact that there is no correlation between the between the control variables ($p$, $\eta$) and the discriminating variable (invariant mass) for both signal and background. This assumption may not be true especially for background, and it can introduce biases.
+The mass of the $J/\psi$ was \textit{constrained} to its nominal mass, procedure also known as a \textit{mass constraint}. It yields new estimates for track parameters of the final state particles, from which a new kinematic refit is done.
 
-The \textit{fit twice method} consists of fitting $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ before and after \gls{PID} requirement in a given kinematic ($p$, $\eta$) bin separately. Misid probabilities are then then obtained as a ratio of signal yields arising from these two fits.
+In order to obtain $K/\pi$ misid probabilities a fit to $\mu^{+} \mu^{-} \pi^{+} K^{-}$ mass between 5150 - 5450 \mevcc was performed. This fit with free parameters \mybox{say exactly which parameters}, fits that data and determines the yield of all the components. 
 
-In the \textit{sPlot} method, the invariant mass distribution is fitted once and each event is assigned \textit{sWeights}, probabilities that a given event is a signal-like or a background-like. Then, through \textit{sPlot} technique, background is subtracted. The misid probabilities are then obtained by looking at sum of all \textit{sWeights} in each bin.
+
+The actual determination of the misid rate was obtained using a statistical subtraction of background, known as the \textit{sPlot} technique \mybox{reference}. The same is used in the \texttt{PIDCalib} package. \mybox{say something about splot}. 
+
+It was cross-checked with the \textit{fit twice method}, because \textit{sPlot} technique relies on the fact that there is no correlation between the control variables ($p$, $\eta$) and the discriminating variable (invariant mass) for both signal and background. This assumption may not be true, especially for background, and it can introduce biases.
+
+The \textit{fit twice method} consists of fitting $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ before and after the \gls{PID} requirement in a given kinematic ($p$, $\eta$) bin separately. Misid probabilities are then obtained as the ratio of signal yields arising from these two fits.
+
+In the \textit{sPlot} method, the invariant mass distribution is fitted once and each event is assigned \textit{sWeights}, probabilities that a given event is a signal-like or a background-like. Then, through the \textit{sPlot} technique, background is subtracted. The misid probabilities are then obtained by looking at the sum of all \textit{sWeights} in each bin.
 
 It was shown that these two methods yields very similar results, hence,
-for purposes of \Bmumumu analysis \textit{sWeight} values will be used. Fits to Run \Rn{1} and Run \Rn{2} data can be seen in ~\autoref{fig:JpsiKst}.
+for purposes of the \Bmumumu analysis \textit{sWeight} values will be used. Fits to Run \Rn{1} and Run \Rn{2} data can be seen in ~\autoref{fig:JpsiKst}.
 %IF YOU WANT TO CHANGE THE PLOTS HAVE A LOOKHERE /vols/lhcb/ss4314/fitjpsikst/fitjpsikst_idKAON_includeswaps_automatize_master_sweight_cinMuonAc_NOghostprob_mydefbin_onnlyONEbinINeta_2016_newPIDopt/NOFCME/ there is mainPLOTonly function
 \begin{figure}[H] 
 
@@ -246,7 +259,7 @@ for purposes of \Bmumumu analysis \textit{sWeight} values will be used. Fits to 
 \label{fig:JpsiKst}
 \end{figure}
 
-\subsection{Results of $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ control sample for $K/\pi$ $\rightarrow \mu$ misid rates \mybox{ULRIK}}
+\subsection{Results of  $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ control sample for \mb{$K/\pi \rightarrow \mu$} misid rates \mybox{ULRIK}}
 Using the \textit{sWeight} method, misID rates for $K/\pi$ can be obtained. In order to rule out that any disagreement of \gls{PID} performance is caused by the rest of the event (such as the different nature of the tracks) following check is performed. For both samples the probability of correctly identifying kaon is computed, given that only extrapolated tracks that fall within muon acceptance are considered. This is achieved by requiring that given kaon track has \texttt{InMuonAcceptance==1.0}. It can be seen in ~\autoref{tab:ROE} that the ID performance is the same across nearly all of the momentum range for kaons, showing that these kaons are good proxy for misID probability studies. The same check was done for pions tracks as well. 
 
 

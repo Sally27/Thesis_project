@@ -29,7 +29,7 @@
 \BOOKMARK [2][-]{subsection.3.3.1}{Specific control sample for K/ \040misid rates ULRIK}{section.3.3}% 29
 \BOOKMARK [2][-]{subsection.3.3.2}{Selection for B0 J/\(+ -\) K* ULRIK }{section.3.3}% 30
 \BOOKMARK [2][-]{subsection.3.3.3}{Fitting Strategy for B0 J/\(+ -\) K* decay ULRIK}{section.3.3}% 31
-\BOOKMARK [2][-]{subsection.3.3.4}{Results of B0 J/\(+ -\) K* control sample for K/ \040misid rates ULRIK}{section.3.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.4}{Results of B0 J/\(+ -\) K* control sample for K/ misid rates ULRIK}{section.3.3}% 32
 \BOOKMARK [0][-]{chapter.4}{Discovering \(Setting Limit for\) B + \040+- + \040at LHCb}{}% 33
 \BOOKMARK [1][-]{section.4.1}{Topology of at LHCb B + \040+- + \040at LHCb ULRIK}{chapter.4}% 34
 \BOOKMARK [1][-]{section.4.2}{Sources of Backgrounds ULRIK}{chapter.4}% 35
@@ -47,12 +47,14 @@
 \BOOKMARK [2][-]{subsection.4.8.4}{Further PID selection}{section.4.8}% 47
 \BOOKMARK [2][-]{subsection.4.8.5}{Multiple Candidates}{section.4.8}% 48
 \BOOKMARK [1][-]{section.4.9}{Normalisation channel}{chapter.4}% 49
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 50
-\BOOKMARK [0][-]{chapter.5}{Bibliography}{}% 51
-\BOOKMARK [0][-]{chapter*.69}{Appendices}{}% 52
-\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 53
-\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 54
-\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 55
-\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 56
-\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 57
-\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 58
+\BOOKMARK [0][-]{chapter.5}{Efficiencies}{}% 50
+\BOOKMARK [1][-]{section.5.1}{Efficiency Ratio}{chapter.5}% 51
+\BOOKMARK [0][-]{chapter.6}{Results}{}% 52
+\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 53
+\BOOKMARK [0][-]{chapter*.70}{Appendices}{}% 54
+\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 55
+\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 56
+\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 57
+\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 58
+\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 59
+\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 60

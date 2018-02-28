@@ -1,0 +1,69 @@
+\chapter{Efficiencies}
+
+\textit{ To be able to translate observed signal events into branching fraction estimate,  the normalisation channel
+of $B^{+} \rightarrow (J/\psi\rightarrow\mu^{+}\mu^{-})K^{+}$ is used. Both, for signal and normalisation
+channel the absolute efficiencies, luminosity, the b-quark cross-section or fragmentation fractions will
+cancel. There are, however, efficiencies that will not cancel and will be necessary for the final limit setting procedure. In this section, methods of obtaining efficiencies of selection for normalisation and signal channel are described as well as efficiencies themselves.}
+
+\section{Efficiency Ratio}
+\label{EfficiencyRatio}
+
+As this measurement was done in a particular min$q^{2}$ region, all signal efficiencies are calculated given the min$q^{2}$ selection. The summary of method used to extract signal efficiency is shown in Table ~\ref{tab:signaleffsummary}.
+
+\begin{table}[H]
+\centering
+\small
+\hspace*{-0.5cm}\begin{tabular}{| l | l |}
+\hline
+Component & Method  \\ \hline
+$\epsilon^{GEN}$, $\epsilon^{REC}$ & \textit{generator-level}   \\
+$\epsilon^{TRG}$, $\epsilon^{OFF}$, $\epsilon^{BDTs}$, $\epsilon^{fitrange}$   & \textit{generator-level+detector} \\
+$\epsilon^{PID}$ & Using \texttt{PIDCalib} \\
+\hline
+ \end{tabular}
+ \caption{Method of obtaining efficiencies.}
+\label{tab:signaleffsummary}
+\end{table}
+
+The first two efficiencies are obtained in the folloing way:
+
+\begin{equation}
+{\epsilon^{GEN,minq^{2}}}\times {\epsilon^{REC,minq^{2}}}= \frac{N^{in\_acc,minq^{2}}}{N^{generated,minq^{2}}}\times \frac{N^{REC,minq^{2}}}{N^{in\_acc,minq^{2}}}
+\end{equation}
+
+\begin{equation}
+N^{in\_acc,minq^{2}} = N^{in\_acc} \times \epsilon_{minq^{2}}
+\label{eq:number}
+\end{equation}
+
+In Equation ~\ref{eq:number}, $\epsilon_{minq^{2}}$ is obtained by dividing number of generated events in \textit{generator-level} simulation (mentioned in \autoref{tab:MCPPass}) with minq$^2$ condition imposed, $N^{generated,minq^{2}}$, to total number of generated events, $N^{generated}$. $N^{in\_acc}$ is the number of events in \textit{generator-level+detector} simulation before reconstruction, $N^{REC,minq^{2}}$ is the number of events after reconstruction with minq$^2$ condition.
+
+The relative efficiency is calcaulated as follows:
+
+%\hspace*{-1.0cm}\begin{equation}
+%R^{\{21,26\}}_{\{NOFCME\}}(\epsilon)=\frac{\epsilon_{s}}{\epsilon_{n}}=\frac{\epsilon^{GEN}_{s}}{\epsilon^{GEN}_{n}} \times \frac{\epsilon^{REC}_{s}}{\epsilon^{REC}_{n}} \times \frac{\epsilon^{TRG}_{s}}{\epsilon^{TRG}_{n}} \times \frac{\epsilon^{OFF}_{s}}{\epsilon^{OFF}_{n}} \times \frac{\epsilon^{CombiBDT}_{s}}{\epsilon^{CombiBDT}_{n}} \times \frac{\epsilon^{MisidBDT}_{s}}{\epsilon^{MisidBDT}_{n}} \times \frac{\epsilon^{fitrange}_{s}}{\epsilon^{fitrange}_{n}} \times \frac{\epsilon^{PID}_{s}}{\epsilon^{PID}_{n}},
+%\label{eq:notsplitted}
+%\end{equation}
+
+\hspace*{-1.0cm}\begin{equation}
+R^{\{21,26\}}(\epsilon)=\frac{\epsilon_{s}}{\epsilon_{n}}=\frac{\epsilon^{GEN}_{s}}{\epsilon^{GEN}_{n}} \times \frac{\epsilon^{REC}_{s}}{\epsilon^{REC}_{n}} \times \frac{\epsilon^{TRG}_{s}}{\epsilon^{TRG}_{n}} \times \frac{\epsilon^{OFF}_{s}}{\epsilon^{OFF}_{n}} \times \frac{\epsilon^{CombiBDT}_{s}}{\epsilon^{CombiBDT}_{n}} \times \frac{\epsilon^{MisidBDT}_{s}}{\epsilon^{MisidBDT}_{n}} \times \frac{\epsilon^{fitrange}_{s}}{\epsilon^{fitrange}_{n}} \times \frac{\epsilon^{PID}_{s}}{\epsilon^{PID}_{n}},
+\label{eq:notsplitted}
+\end{equation}
+
+%\hspace*{-1.0cm}\begin{equation}
+%\hspace*{-2.0cm}R^{\{21,26\}}_{\{lowFCME,highFCME\}}(\epsilon)=\frac{\epsilon_{s}}{\epsilon_{n}}=\frac{\epsilon^{GEN}_{s}}{\epsilon^{GEN}_{n}} \times \frac{\epsilon^{REC}_{s}}{\epsilon^{REC}_{n}} \times \frac{\epsilon^{TRG}_{s}}{\epsilon^{TRG}_{n}} \times \frac{\epsilon^{OFF}_{s}}{\epsilon^{OFF}_{n}} \times \frac{\epsilon^{CombiBDT}_{s}}{\epsilon^{CombiBDT}_{n}} \times \frac{\epsilon^{MisidBDT}_{s}}{\epsilon^{MisidBDT}_{n}} \times \frac{\epsilon^{fitrange}_{s}}{\epsilon^{fitrange}_{n}} \ \frac{\epsilon^{FCME}_{s}}{\epsilon^{FCME}_{n}} \times \frac{\epsilon^{PID}_{s}}{\epsilon^{PID}_{n}},
+%\label{eq:splitted}
+%\end{equation}
+
+%where NOFCME means one bin of fractional corrected mass error, lowFCME and highFCME fractional corrected mass error are two bins of fractional corrected mass error, see Section ~\ref{split} for more details. 
+
+21, 26 are the versions of stripping used.
+As seen in equations ~\ref{eq:notsplitted} and ~\ref{eq:splitted}, absolute selection efficiencies $\epsilon_{s}$, $\epsilon_{n}$ have several components.
+\newline Selection efficiency includes contribution from the detector acceptance efficiency (measured at the generator level and labelled (GEN));
+the reconstruction selection efficiency (REC); the efficiency of the offline selection (OFF) comprising of trigger, $J/\psi$ and $\Psi(2S)$ veto, qmin$^{2}$ selection, MVA based selection (CombiBDT and MisidBDT); fitregion selection (fitrange); the efficiency of the PID requirement (PID). Since this analysis will be perfomed in two bins of FCME, and in two Stripping version there will be 4 efficiency ratios.  Most of these efficiencies are evaluated using MC, however, TRG and PID efficiencies will be evaluted using data and/or MC techniques. Values for different efficiencies and exact method of obtaining them is described in the following subsections.
+
+
+
+
+
+
