@@ -16,6 +16,13 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{LHCbdetector}
+\ifthenelse{\boolean{articletitles}}{\emph{Image of the lhcb detector from
+  \rm{\texttt{http://cds.cern.ch/record/1087860}}}, }{} Accessed in 2017\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{pythia8}
 T.~Sjostrand, S.~Mrenna, and P.~Z. Skands,
   \ifthenelse{\boolean{articletitles}}{\emph{{A Brief Introduction to PYTHIA
@@ -67,13 +74,6 @@ LHCb collaboration, R.~Aaij {\em et~al.},
   \href{http://dx.doi.org/10.1103/PhysRevLett.119.169901}{ibid.\   \textbf{119}
   (2017) 169901}, \href{http://arxiv.org/abs/1612.05140}{{\normalfont\ttfamily
   arXiv:1612.05140}}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem{LHCbdetector}
-\ifthenelse{\boolean{articletitles}}{\emph{Image of the lhcb detector from
-  \rm{\texttt{http://cds.cern.ch/record/1087860}}}, }{} Accessed in 2017\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

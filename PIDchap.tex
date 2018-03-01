@@ -172,11 +172,11 @@ In order to suppress these tracks in analysing \Bmumumu, where two muons have th
 %\vspace*{-1.0cm}
 \end{figure}
 
-\section{Probability of $K/\pi$ $\rightarrow \mu$ misidentification at LHCb \mybox{ULRIK}}
+\section{Probability of \mb{K/\pi \rightarrow \mu} misidentification at LHCb \mybox{ULRIK}}
 
 Usually, in order to estimate background coming from misidentification of particles as muons in the detector, data samples with particles of known (non-muon) type are identified from the kinematics of decay chains. From these samples, probabilities of mis-identification are derived as discussed in \autoref{RICHperf}. However, the three muon signature will induce problems for \gls{PID} variables that are correlated with the number of muons in the detector and specific data samples that incorporates this correlation have to be used for measuring the mis-identification probability.
 
-\subsection{Specific control sample for $K/\pi$ $\rightarrow \mu$ misid rates \mybox{ULRIK}}
+\subsection{Specific control sample for \mb{K/\pi \rightarrow \mu} misid rates \mybox{ULRIK}}
 \label{extraction}
 A platform that \gls{LHCb} analysts usually use to extract the misid and id efficiencies, as described in \autoref{RICHperf}, is known as \texttt{PIDCalib} package \cite{Anderlini:2202412}. It contains samples where the identity of the particle is know purely from kinematics.  In this \texttt{PIDCalib} package, such a control same for $K/\pi$ is obtained from $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$. These statistically populated background-free \textit{sWeighted} samples, for which it is possible to extract misID and ID rates as a function of kinematics given certain \gls{PID} criteria, do not have other muons in the final state. 
 
@@ -188,7 +188,7 @@ For this reason, $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}(\r
 % This is a clean decay that can be fit to obtain \textit{sWeights} to measure PID efficiencies. Moreover, its the signal topology and kinematics are much closer to the actual mis-ID backgroundcomponent than
 % that of the PIDCalib control samples.
 
-\subsection{Selection for $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ \mybox{ULRIK} }
+\subsection{Selection for \mb{B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}} \mybox{ULRIK} }
 Data samples for each year of data taking were obtained from \textit{stripping line} dedicated to look for this type of decay. The sample can be used for mis-ID studies of the hadrons as no particle identification is applied on them. Some initial selection was applied together with the more stringent \Bmumumu selection.  The trigger criteria were applied on the $J/\psi$ candidate rather than on the B candidate. (but on $J/\psi$ candidate rather than $B$). The full additional selection is summarized in Table ~\ref{tab:cleanjpsikst} is used.
 
 
@@ -217,7 +217,7 @@ ID kaon & DLLK $>$ 0 and DLLK-DLLp $>$ 0 and \texttt{IsMuon==0} \\
 \end{table}
 
 
-\subsection{Fitting Strategy for $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ decay \mybox{ULRIK}}
+\subsection{Fitting Strategy for \mb{B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}} decay \mybox{ULRIK}}
 After all the selection, the residual background needs to be modelled. 
 
 The signal component, $B^{0} \rightarrow J/\psi K^{*}$, is obtained by fixing the shape from simulation apart from the mean $\mu$ and the width $\sigma$. It is fitted with a double-sided Hypatia function \cite{Santos:2013gra} (more in \autoref{IP}).
@@ -301,7 +301,7 @@ for purposes of the \Bmumumu analysis \textit{sWeight} values will be used. Fits
 \label{fig:JpsiKst}
 \end{figure}
 
-\subsection{Results of  $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ control sample for \mb{$K/\pi \rightarrow \mu$} misid rates \mybox{ULRIK}}
+\subsection{Results of  \mb{B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}} control sample for \mb{K/\pi \rightarrow \mu} misid rates \mybox{ULRIK}}
 
 \color{red} Using the \textit{sWeight} method, misID rates for kaons and pions can be obtained. In order to rule out that any disagreement of \gls{PID} performance is caused by the fraction of the real kaon and pions tracks within the muon fiducial area, following check is performed. For both control samples, kaon sample from the $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$ events and the kaon sample from the $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ events, the probability of correctly identifying kaon is computed, given that only extrapolated tracks that fall within muon acceptance are considered. This is achieved by requiring that given kaon track has \texttt{InMuonAcceptance==1.0}. It can be seen in ~\autoref{tab:ROE} that the ID performance is the same across nearly all of the momentum range for kaons, showing that the fraction of the kaons tracks within muon acceptance is very similar. The same check was performed for pions tracks as well. 
 

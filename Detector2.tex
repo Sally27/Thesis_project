@@ -1,8 +1,9 @@
 \chapter{The LHCb detector}
 \label{chap:dec}
-In this section, overview of accelerator complex at CERN as well as physics motivation behind \Gls{LHCb} detector and its details will be described.
 
-CERN built one of the most exciting laboratories to study elementary particle interactions. Its complex set of particle accelerators and detectors is shown in \autoref{fig:AcceleratorComplex}. The process of accelerating protons starts with the source of protons. Protons are obtained from hydrogen gas bottle by applying and an electric field separating hydrogen into positively and negatively charged constituents. The first proton accelerator in the chain, Linac 2, accelerates the protons to the energy of 50 \mev. Linac 2 is a tank composed of several chambers where the resonant cavity is tuned to a specific frequency creating potential differences in the cavities, which then make the protons accelerate. These protons are then injected into the Proton Synchrotron Booster (\Gls{PSB}), where they are accelerated further to 1.4 \gev. The next in line is the Proton Synchrotron (\Gls{PS}) reaching energy of 25 \gev. Before either entering the Large Hadron Collider (\Gls{LHC}) or North Area (mainly used as testing facility for experiment upgrades) Super Proton Synchrotron (\Gls{SPS}) is the last stop. Here proton acceleration to 450 \gev is achieved.
+\textit{In this section, an overview of the accelerator complex at CERN as well as the physics motivation behind the \Gls{LHCb} detector and its design will be described.}
+
+CERN has built one of the most exciting laboratories to study elementary particle interactions. Its complex set of particle accelerators and detectors is shown in \autoref{fig:AcceleratorComplex}. The process of accelerating protons starts with the source of protons. Protons are obtained from a hydrogen gas bottle by applying an electric field separating hydrogen into protons and electrons. The first proton accelerator in the chain, Linac 2, accelerates the protons to the energy of 50 \mev. Linac 2 is a tank composed of several chambers where the resonant cavities are tuned to a specific frequency creating potential differences in them, which then make the protons accelerate. The protons are then injected into the Proton Synchrotron Booster (\Gls{PSB}), where they are accelerated further to 1.4 \gev. The next in line is the Proton Synchrotron (\Gls{PS}) reaching energy of 25 \gev. Before either entering the Large Hadron Collider (\Gls{LHC}) or North Area (mainly used as testing facility for experiment upgrades) the Super Proton Synchrotron (\Gls{SPS}) is the last accelerator in the chain. Here proton acceleration to 450 \gev is achieved.
 
 \begin{figure}
   \centering
@@ -13,19 +14,30 @@ CERN built one of the most exciting laboratories to study elementary particle in
 
 \Gls{LHC} is a complex machine which accelerates beams of protons in opposite directions in $\sim$ 27km long circular tunnel. It is located
 50-157\m below ground on the border of Switzerland and France. Once the desired energy is achieved proton-proton ($pp$) or ion collisions happen at four distinct points, where different detectors with different physics focus are located. These are \Gls{ATLAS}, \Gls{CMS}, \Gls{ALICE} and \Gls{LHCb}. 
-Study of \Bmumumu was performed using data obtained at \Gls{LHCb}. 
+The search for the decay \Bmumumu was performed using data obtained at \Gls{LHCb}. 
 
 \section{LHCb Layout \mybox{ULRIK}}
 
-\Gls{LHCb} differs from the other general purpose detectors on the \Gls{LHC} ring as its studies properties of heavy particles containing $b$ or $c$ quarks. This can be attributed to the geometrical acceptance and unique vertex resolution as well as excellent particle identification (\Gls{PID}).
+\begin{figure}
+	\centering
+	\includegraphics[scale = 0.25]{figs/detector/lhcbdet.pdf}
+	\caption{Schematic slice of \Gls{LHCb} detector in $y,z$ plane where $z$ is defined to be the direction parallel to beamline, and $x,y$ define the plane perpendicular to the beamline. $\theta$, the opening angle in y-z plane with $\theta$ = 0 along $z-axis$. Figure from \cite{LHCbdetector}.}
+	\label{fig:LHCbDetector}
+\end{figure}
 
-Contrary to the two general purpose detectors where the collisions are occurring in the centre of the detector, \Gls{LHCb}'s collision point is located at one end of the detector, hence its description as a forward single-arm spectrometer. This means that information about products outside of its scope are not known, meaning that there is no overall constraint on collision information, unlike in other flavour experiments. This is compensated by production mechanism of $b\bar{b}$ and $c\bar{c}$ in $pp$ interactions, which occurs predominantly via gluon-gluon fusion. In this process, each gluon will carry part of proton's momentum. If the two gluons from two protons carry significantly different momentum, the $b\bar{b}$ system will be boosted with respect to the $pp$ rest frame, either in forward or backward cone closely to the beamline, as can be seen in \autoref{fig:Acceptance}.
+
+\Gls{LHCb}, seen in \autoref{fig:LHCbDetector}, differs from the other general purpose detectors on the \Gls{LHC} ring as its main aim is to study properties of heavy particles containing $b$ or $c$ quarks. This is possible as this experiments was designed to have the geometrical acceptance and unique vertex resolution as well as excellent particle identification (\Gls{PID}) suitable for beautiful and charming physics.
+
+Studies of $B$ mesons can happen either at positron-electron colliders or at hadron colliders. The advantage of positron-electron collider is that the information about all the event is known, as the collision point is in the centre of the detector that surrounds it. This gives an overall constraint on collision information, unlike in hadron collider $B$ factory \gls{LHCb}. Contrary to the two general purpose detectors in hadron collider, where the collisions are occurring in the centre of the detector, \Gls{LHCb}'s collision point is located at one end of the detector, hence its description as a forward single-arm spectrometer. 
+
+This disadvantage is, however, compensated by production mechanism of $b\bar{b}$ and $c\bar{c}$ in $pp$ interactions, which occurs predominantly via gluon-gluon fusion. In this process, each gluon will carry part of proton's momentum. If the two gluons from two protons carry significantly different momentum, the $b\bar{b}$ system will be boosted with respect to the $pp$ rest frame, either in forward or backward cone closely to the beamline, as can be seen in \autoref{fig:Acceptance} (Left).
+
 
 \begin{figure}
 	\centering
 	\includegraphics[scale = 0.4]{figs/detector/Acceptance.pdf}%
 	\includegraphics[scale = 0.5]{figs/detector/ProbInt.png}
-	\caption{Angular production and acceptance of LHCb's $b\bar{b}$ pair (in red) as well as General Purpose Detector (in yellow). \Gls{LHCb} covers region with highest production cross-section at 8 \tev. These plots were produced using PYTHIA8 \cite{pythia8} simulation. This plot was taken from \cite{acceptance} (left). Probability of interaction per bunch crossing as a function of instantaneous luminosity. This figure was obtained from \cite{Raven:2007zi} (right).}
+	\caption{(Left) Angular production and acceptance of the $b$ (x-axis) $\bar{b}$ (y-axis) pair produced from $pp$ collision at the LHC. The acceptance of the LHCb detector is the red box and the acceptance of the General Purpose Detector is shown in the yellow box. \Gls{LHCb} covers the region with highest production cross-section at 8 \tev. These plots were produced using PYTHIA8 \cite{pythia8} simulation. Figure from \cite{acceptance}.(Right) Probability of interaction per bunch crossing as a function of instantaneous luminosity. Figure from \cite{Raven:2007zi}.}
 	\label{fig:Acceptance}
 \end{figure}
 
@@ -34,16 +46,11 @@ The angular coverage of \Gls{LHCb} is formally defined using pseudorapidity $\et
 \begin{equation}
 	\eta = -\ln \Big(\tan\frac{\theta}{2}\Big)
 \end{equation}	
-where $\theta$ is defined in \autoref{fig:LHCbDetector}. \Gls{LHCb} detector was built to cover the region $2<\eta<5$. The production cross-section of the fundamental process of $pp\rightarrow b\bar{b}X$ was measured in this region yielding, $\sigma (pp\rightarrow b\bar{b}X)$= 75.3$\pm$5.4$\pm$13.0 $\mub$ at 7 \tev \cite{LHCb-PAPER-2010-002} and 144$\pm$1$\pm$21 $\mub$ at 13 \tev \cite{LHCb-PAPER-2016-031}, which shows that the production cross-sections scales roughly linearly with the centre-of-mass energy. Assuming design conditions of \gls{LHCb} listed in \autoref{tab:runcond}, 2$\fb^{-1}$ of data (eqvivalent to 2012 dataset) would correspond to $10^{12}$ of $b\bar{b}$ pairs being produced. 
+where $\theta$ is the polar angle measured from the beam axis. The \Gls{LHCb} detector was built to cover the region $2<\eta<5$. The production cross-section of the fundamental process of $pp\rightarrow b\bar{b}X$ was measured in this region yielding, $\sigma (pp\rightarrow b\bar{b}X)$= 75.3$\pm$5.4$\pm$13.0 $\mub$ at 7 \tev \cite{LHCb-PAPER-2010-002} and 144$\pm$1$\pm$21 $\mub$ at 13 \tev \cite{LHCb-PAPER-2016-031}, which shows that the production cross-sections scales roughly linearly with the centre-of-mass energy. Assuming design conditions of \gls{LHCb}, listed in \autoref{tab:runcond}, 2$\fb^{-1}$ of data (eqvivalent to 2012 dataset) would correspond to $10^{12}$ of $b\bar{b}$ pairs being produced in a full 4$\pi$ region. 27\% of these $b\bar{b}$ pairs are produced in the LHCb's acceptance. 
 
-\begin{figure}
-	\centering
-	\includegraphics[scale = 0.15]{figs/detector/lhcbdet.pdf}
-	\caption{The schematic slice of \Gls{LHCb} detector in $y,z$ plane where $z$ is defined to be the direction parallel to beamline, and $x,y$ define the plane perpendicular to the beamline. $\theta$, the opening angle in y-z plane with $\theta$ = 0 along $z-axis$. The figure was taken from \cite{LHCbdetector}.}
-	\label{fig:LHCbDetector}
-\end{figure}
 
-Despite such impressive statistics of $b\bar{b}$ pairs available to \Gls{LHCb}, the bottleneck arises in much more copious inelastic background. It mostly originates from soft QCD processes which are related to the amount of pile-up, the visible number of $pp$ interaction in the visible events. By looking at the probability of number of $pp$ interaction per bunch crossing as a function of luminosity, shown in \autoref{fig:Acceptance}, it can be noted that the maximum probability for only one $pp$ interaction (and hence minimizing the background) is found to be at $\sim 2 \times10^{32} cm^{-2} s^{-1}$.  This is the reason for the \gls{LHCb}'s design luminosity. In addition, to keep the occupancy of the detector reasonable for physics analyses, global event cuts, \textit{GEC}s, on the occupancy variables are put in the place. Only events with 600 (in 7,8 \tev) and 450 (in 13 \tev) hits and less, corresponding to the track density in the particular part of the detector, are allowed to be processed.
+Despite the impressive statistics of $b\bar{b}$ pairs available to \Gls{LHCb}, the bottleneck arises from the much more copious inelastic background. It mostly originates from soft QCD processes which are related to the amount of pile-up, the visible number of $pp$ interaction in the visible events. By looking at the probability of the number of $pp$ interaction per bunch crossing as a function of luminosity, shown in \autoref{fig:Acceptance}, it can be noted that the maximum probability for only one $pp$ interaction (and hence minimizing the background) is found to be at $\sim 2 \times10^{32} cm^{-2} s^{-1}$.  This was the reason behind the \gls{LHCb}'s design luminosity.\color{red} just trying to explain why we wanted to run at the lumi of 2, is it better to discuss why we run at 4? \color{black}In addition, to keeping the occupancy of the detector reasonable for physics analyses, global event cuts, GECs, on the occupancy variables are put in the place. Only events with 600 (in 7,8 \tev) and 450 (in 13 \tev) hits and less, corresponding to the track density in the particular part of the detector, are allowed to be processed.
+As the majority of the branching fractions measurements at \gls{LHCb} are measured with respect other branching fraction, so there is no bias being introduced by the GECs. 
 
 As \Gls{LHCb} requires much lower luminosity compared to other \gls{LHC} detectors, there is an LHCb-specific control of luminosity known as \textit{luminosity levelling}. This procedure achieves stable instantaneous luminosity by controlling that the two beams do not collide straight head-on at collision point, but are moved with respect to each other. It limits the effects of luminosity decay, which can lead to trigger alterations during specific data taking run, resulting in systematic uncertainties.
 

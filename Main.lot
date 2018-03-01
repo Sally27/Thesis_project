@@ -1,21 +1,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Running conditions of \gls {LHC} and \Gls {LHCb} in different years of data-taking. The statistics of \gls {LHCb}'s instantaneous luminosity is extracted using run database information.\relax }}{24}{table.caption.16}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Momentum-dependent definition \texttt {IsMuon} variable.\relax }}{38}{table.caption.27}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Running conditions of \gls {LHC} and \Gls {LHCb} in different years of data-taking. The statistics of \gls {LHCb}'s instantaneous luminosity is extracted using run database information.\relax }}{25}{table.caption.16}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Momentum-dependent definition \texttt {IsMuon} variable.\relax }}{39}{table.caption.27}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Offline selection for $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ decay.\relax }}{57}{table.caption.41}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Summary of the fit parameters and individual component constraints for $B^{0} \rightarrow J/\psi K^{*}$ fit.\relax }}{59}{table.caption.42}
-\contentsline {table}{\numberline {3.3}{\ignorespaces \color {red} It is necesarry as this is unrelated to following figures \color {black}\texttt {K$\_$InMuonAcc==1.0} shows the interpolation of $K$ tracks into muon chambers. It can be seen that both samples agree with each other very well, meaning that measured misid rate is done for the same fraction of considered tracks. This measurement is done in a pseudorapidity region $1.5<\eta <5.0$.\relax }}{62}{table.caption.44}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Offline selection for $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ decay.\relax }}{58}{table.caption.41}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Summary of the fit parameters and individual component constraints for $B^{0} \rightarrow J/\psi K^{*}$ fit.\relax }}{60}{table.caption.42}
+\contentsline {table}{\numberline {3.3}{\ignorespaces \color {red} It is necesarry as this is unrelated to following figures \color {black}\texttt {K$\_$InMuonAcc==1.0} shows the interpolation of $K$ tracks into muon chambers. It can be seen that both samples agree with each other very well, meaning that measured misid rate is done for the same fraction of considered tracks. This measurement is done in a pseudorapidity region $1.5<\eta <5.0$.\relax }}{63}{table.caption.44}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of signal simulation samples used in this analysis with different decay models. In all cases the daughters of {\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^\pm }}\xspace are required to be within \gls {LHCb} acceptance. All of this samples are mixture under magnetic polarity up and magnetic polarity down conditions. \relax }}{71}{table.caption.50}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Selection of events based on muon and the $B^{+}$ candidate requirements. \textit {Stripping selection} for the signal decay $B^{+} \rightarrow \mu ^{+} \mu ^{-} \mu ^{+} \nu _\mu $ is the same for both Run1 and 2016 data.\relax }}{74}{table.caption.52}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Trigger selection applied on both signal and normalisation samples\relax }}{75}{table.caption.53}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Vetoes for $J/\psi $ and $\Psi (2S)$ contributions.\relax }}{76}{table.caption.55}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Offline selection performed after stripping. Differences can be seen between Run \textup {\uppercase {i}} and Run \textup {\uppercase {ii}} datasets\relax }}{77}{table.caption.56}
-\contentsline {table}{\numberline {4.6}{\ignorespaces BDT variables used in both combinatorial and misID Run \textup {\uppercase {i}} and Run \textup {\uppercase {ii}} BDTs\relax }}{79}{table.caption.57}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Original preselection of events for normalisation channel for $B^{+} \rightarrow (J/\psi \rightarrow \mu ^{+} \mu ^{-}) K^{+}$ for Run \textup {\uppercase {i}} and Run \textup {\uppercase {ii}}. \relax }}{90}{table.caption.69}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of signal simulation samples used in this analysis with different decay models. In all cases the daughters of {\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^\pm }}\xspace are required to be within \gls {LHCb} acceptance. All of this samples are mixture under magnetic polarity up and magnetic polarity down conditions. \relax }}{72}{table.caption.50}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Selection of events based on muon and the $B^{+}$ candidate requirements. \textit {Stripping selection} for the signal decay $B^{+} \rightarrow \mu ^{+} \mu ^{-} \mu ^{+} \nu _\mu $ is the same for both Run1 and 2016 data.\relax }}{75}{table.caption.52}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Trigger selection applied on both signal and normalisation samples\relax }}{76}{table.caption.53}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Vetoes for $J/\psi $ and $\Psi (2S)$ contributions.\relax }}{77}{table.caption.55}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Offline selection performed after stripping. Differences can be seen between Run \textup {\uppercase {i}} and Run \textup {\uppercase {ii}} datasets\relax }}{78}{table.caption.56}
+\contentsline {table}{\numberline {4.6}{\ignorespaces BDT variables used in both combinatorial and misID Run \textup {\uppercase {i}} and Run \textup {\uppercase {ii}} BDTs\relax }}{80}{table.caption.57}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Original preselection of events for normalisation channel for $B^{+} \rightarrow (J/\psi \rightarrow \mu ^{+} \mu ^{-}) K^{+}$ for Run \textup {\uppercase {i}} and Run \textup {\uppercase {ii}}. \relax }}{91}{table.caption.69}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Method of obtaining efficiencies.\relax }}{92}{table.caption.70}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Method of obtaining efficiencies.\relax }}{93}{table.caption.70}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
