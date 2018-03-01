@@ -28,33 +28,33 @@
 \contentsline {section}{\numberline {3.3}Probability of $K/\pi $ $\rightarrow \mu $ misidentification at LHCb \framebox {ULRIK}}{55}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Specific control sample for $K/\pi $ $\rightarrow \mu $ misid rates \framebox {ULRIK}}{56}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Selection for $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ \framebox {ULRIK} }{56}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Fitting Strategy for $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ decay \framebox {ULRIK}}{56}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Results of $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ control sample for \mb {$K/\pi \rightarrow \mu $} misid rates \framebox {ULRIK}}{60}{subsection.3.3.4}
-\contentsline {chapter}{\numberline {4}Discovering (Setting Limit for) \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{64}{chapter.4}
-\contentsline {section}{\numberline {4.1}Topology of at LHCb \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb \framebox {ULRIK}}{64}{section.4.1}
-\contentsline {section}{\numberline {4.2}Sources of Backgrounds \framebox {ULRIK}}{67}{section.4.2}
-\contentsline {section}{\numberline {4.3}Analysis strategy }{68}{section.4.3}
-\contentsline {section}{\numberline {4.4}Samples \framebox {ULRIK}}{68}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Data Samples \framebox {ULRIK}}{68}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Simulation Samples \framebox {ULRIK}}{69}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Preselection for \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace \framebox {ULRIK}}{71}{section.4.5}
-\contentsline {section}{\numberline {4.6}Trigger Selection \framebox {ULRIK}}{72}{section.4.6}
-\contentsline {section}{\numberline {4.7}$q^{2}$ selection \framebox {ULRIK}}{74}{section.4.7}
-\contentsline {section}{\numberline {4.8}Further Selection}{75}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}The Isolation Boosted Decision Tree}{76}{subsection.4.8.1}
-\contentsline {subsection}{\numberline {4.8.2}The Combinatorial Boosted Decision Tree}{78}{subsection.4.8.2}
-\contentsline {subsection}{\numberline {4.8.3}The Misid Boosted Decision Tree}{82}{subsection.4.8.3}
-\contentsline {subsection}{\numberline {4.8.4}Further \gls {PID} selection}{85}{subsection.4.8.4}
-\contentsline {subsection}{\numberline {4.8.5}Multiple Candidates}{86}{subsection.4.8.5}
-\contentsline {section}{\numberline {4.9}Normalisation channel}{88}{section.4.9}
-\contentsline {chapter}{\numberline {5}Efficiencies}{90}{chapter.5}
-\contentsline {section}{\numberline {5.1}Efficiency Ratio}{90}{section.5.1}
-\contentsline {chapter}{\numberline {6}Results}{92}{chapter.6}
-\contentsline {chapter}{Bibliography}{93}{chapter.6}
-\contentsline {chapter}{Appendices}{98}{chapter*.70}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{98}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{101}{appendix.B}
-\contentsline {chapter}{\numberline {C}Fitting functions}{103}{appendix.C}
-\contentsline {section}{\numberline {C.1}Crystal Ball function}{103}{section.C.1}
-\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{104}{section.C.2}
-\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{104}{section.C.3}
+\contentsline {subsection}{\numberline {3.3.3}Fitting Strategy for $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ decay \framebox {ULRIK}}{57}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Results of $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ control sample for \mb {$K/\pi \rightarrow \mu $} misid rates \framebox {ULRIK}}{61}{subsection.3.3.4}
+\contentsline {chapter}{\numberline {4}Discovering (Setting Limit for) \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{66}{chapter.4}
+\contentsline {section}{\numberline {4.1}Topology of at LHCb \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb \framebox {ULRIK}}{66}{section.4.1}
+\contentsline {section}{\numberline {4.2}Sources of Backgrounds \framebox {ULRIK}}{69}{section.4.2}
+\contentsline {section}{\numberline {4.3}Analysis strategy }{70}{section.4.3}
+\contentsline {section}{\numberline {4.4}Samples \framebox {ULRIK}}{70}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Data Samples \framebox {ULRIK}}{70}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Simulation Samples \framebox {ULRIK}}{71}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Preselection for \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace \framebox {ULRIK}}{73}{section.4.5}
+\contentsline {section}{\numberline {4.6}Trigger Selection \framebox {ULRIK}}{74}{section.4.6}
+\contentsline {section}{\numberline {4.7}$q^{2}$ selection \framebox {ULRIK}}{76}{section.4.7}
+\contentsline {section}{\numberline {4.8}Further Selection}{77}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}The Isolation Boosted Decision Tree}{78}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}The Combinatorial Boosted Decision Tree}{80}{subsection.4.8.2}
+\contentsline {subsection}{\numberline {4.8.3}The Misid Boosted Decision Tree}{84}{subsection.4.8.3}
+\contentsline {subsection}{\numberline {4.8.4}Further \gls {PID} selection}{87}{subsection.4.8.4}
+\contentsline {subsection}{\numberline {4.8.5}Multiple Candidates}{88}{subsection.4.8.5}
+\contentsline {section}{\numberline {4.9}Normalisation channel}{90}{section.4.9}
+\contentsline {chapter}{\numberline {5}Efficiencies}{92}{chapter.5}
+\contentsline {section}{\numberline {5.1}Efficiency Ratio}{92}{section.5.1}
+\contentsline {chapter}{\numberline {6}Results}{94}{chapter.6}
+\contentsline {chapter}{Bibliography}{95}{chapter.6}
+\contentsline {chapter}{Appendices}{100}{chapter*.71}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{100}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{103}{appendix.B}
+\contentsline {chapter}{\numberline {C}Fitting functions}{105}{appendix.C}
+\contentsline {section}{\numberline {C.1}Crystal Ball function}{105}{section.C.1}
+\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{106}{section.C.2}
+\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{106}{section.C.3}
