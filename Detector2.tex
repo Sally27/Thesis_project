@@ -55,7 +55,8 @@ As the majority of the branching fractions measurements at \gls{LHCb} are measur
 As \Gls{LHCb} requires much lower luminosity compared to other \gls{LHC} detectors, there is an LHCb-specific control of luminosity known as \textit{luminosity levelling}. This procedure achieves stable instantaneous luminosity by controlling that the two beams do not collide straight head-on at collision point, but are moved with respect to each other. It limits the effects of luminosity decay, which can lead to trigger alterations during specific data taking run, resulting in systematic uncertainties.
 
 
-So far, the detector has been running since 2010 collecting data corresponding to integrated luminosity shown in \autoref{fig:lhcbintlumi}. As compared to \Gls{ATLAS} and \Gls{CMS} the integrated luminosity is much lower, due to allowed luminosity conditions. In 2017, there were two $pp$ collision energies at which the data was taken: at $\sqrt{s}$  = 13 and 5 \tev. Run \Rn{1} data-taking (2010-2012) was paused by Long Shutdown 1 (\Gls{LS1}) and followed with Run \Rn{2} data-taking period (2015-2018). The summary of \gls{LHCb} running conditions is provided in \autoref{tab:runcond}, showing the evolution of the instantaneous luminosity as well as the frequency of collisions compared to the design proposal.
+So far, the detector has been running since 2010 collecting data corresponding to integrated luminosity as summarized in \autoref{tab:runcond}. As compared to \Gls{ATLAS} and \Gls{CMS} the integrated luminosity is much lower, due to allowed luminosity conditions. In 2017, most of the data was taken at $\sqrt{s}$ = 13 \tev, with small luminosity collected at $\sqrt{s}$ = 5 \tev mainly to fuel studies involving productions comparisons at different energies. The Run \Rn{1} data-taking (2010-2012) was paused by Long Shutdown 1 (\Gls{LS1}) and followed with the Run \Rn{2} data-taking period (2015-2018). 
+%The summary of \gls{LHCb} running conditions is provided in \autoref{tab:runcond}, showing the evolution of the instantaneous luminosity as well as the frequency of collisions compared to the design proposal.
 %Formally \Gls{LHCb}   detector is placed along the beamline, where $x,y,z$ a spectrometer which cover the region of 300 \mrad defined a
 %http://lhcb.web.cern.ch/lhcb/speakersbureau/excel/default.html
 
@@ -71,17 +72,17 @@ So far, the detector has been running since 2010 collecting data corresponding t
 \begin{table}[!h]
 	\centering
 	\hspace*{-0.8cm}
-	\begin{tabular}{l c c }
+	\begin{tabular}{l c c c }
 		\hline
-		year & $\sqrt{s}$ [\tev] & Instantaneous Luminosity $\mathcal{L}$ [$\times10^{32} cm^{-2}	s^{-1}$] \\ \hline
-		Design & Up to 14 & 2\\
-		2011 & 7 & $\sim$ 3.0-3.5 \\
-		2012 & 8 & $\sim$ 4.0 \\
-		2015 & 13 & $\sim$ 0.5-4.5 \\      
-		2016 & 13 & $\sim$ 4.0  \\      
-		2017 & 13 & $\sim$4.0-6.0 \\\hline      
+		year & $\sqrt{s}$ [\tev] & $\mathcal{L}$ [$\times10^{32} \rm{cm^{-2}s^{-1}}$] & Integrated Recorded Luminosity [$\rm{fb}^{-1}$] \\ \hline
+		Design & Up to 14 & 2 & - \\
+		2011 & 7 & $\sim$ 3.0-3.5 & 1.1 \\
+		2012 & 8 & $\sim$ 4.0 & 2.1 \\
+		2015 & 13 & $\sim$ 0.5-4.5 & 0.3 \\      
+		2016 & 13 & $\sim$ 4.0 & 1.7  \\      
+		2017 & 13 & $\sim$4.0-6.0 & 1.7 \\\hline      
 	\end{tabular}
-	\caption{Running conditions of \gls{LHC} and \Gls{LHCb} in different years of data-taking. The statistics of \gls{LHCb}'s instantaneous luminosity is extracted using run database information.}
+	\caption{Running conditions of \gls{LHC} and \Gls{LHCb} in different years of data-taking. The statistics of \gls{LHCb}'s instantaneous luminosity, $\mathcal{L}$ is extracted using run database information.}
 	\label{tab:runcond}
 \end{table}   
 
@@ -94,9 +95,12 @@ for LHCb, the luminosity is kept stable in a range of 5$\%$ for about 15 hours b
 	\label{fig:lhcbintlumi}
 \end{figure}
 
-In the following sections, brief discussion of different subdetectors is presented. Both hardware and software overview will be presented with particular emphasis given to muon detectors and simulation of \gls{LHCb}.
+In the following sections, a brief discussion of the different subdetectors, shown in \autoref{fig:LHCbDetector}, is presented. The vertexing at \gls{LHCb} is performed with vertex locator system, also known as VELO, is described in \autoref{velosys}. The tracking system at \gls{LHCb} consisting of trackers before magnet (TT), and three tracking stations behind the magnet (T1, T2, T3) are highlighted in \autoref{tracksys}. The particle identification is provided by two Ring Imaging Cherencov counters (RICH1 and RICH2), which are detailed in \autoref{richsec}. No particle physics experiment is complete without calorimeter system, discussed in  which consists of a Scintillator Pad Detector and Preshower (SPD/PS), an electromagnetic calorimeter (ECAL) and finally a hadronic calorimeter (HCAL). The muon system positioned at the end of the detector, consisting from five muon chambers are described in \autoref{calosys}. The trigger chain as well as the simulation chain are discussed in \autoref{triggerchap},\autoref{simulationchap}. Particular emphasis is given to the muon detectors and the simulation of \gls{LHCb}.
+
+\color{red}{ \mybox{Sally} corrected until now} \color{black}.
 
 \section{VErtex LOcator \mybox{ULRIK}}
+\label{velosys}
 The closest detector around the collision point is VErtex LOcator (\Gls{VELO}). This silicon-strip based detector, that extends 1 \m along the beam axis, is primarily used to distinguish signal-like events from prompt background. The typical differing property of a $B$ hadron decay includes large impact parameter (\Gls{IP}), the minimal distance between the track and primary vertex, in addition to significantly higher transverse momentum, $p_{T}$. Therefore, the main tasks of this subdetector include finding: 
 \begin{itemize}
 \item primary vertices positions
@@ -127,6 +131,7 @@ This setup brings outstanding hit resolution (4-40$\mum$), which in turn allows 
 
 
 \section{Tracking System \mybox{ULRIK}}
+\label{tracksys}
 In addition to tracking information provided by \Gls{VELO}, the trajectories of charged particles are monitored by series of tracking subdetectors. The main task of these tracking subdetectors is to provide efficient reconstruction and precise measurement of particle's momentum. There are four tracking stations apart from \Gls{VELO}: Tracker Turicensis (\Gls{TT}), positioned upstream from magnet, and  \Gls{Tstation} tracking stations on the other side from the magnet. The 10 \m dipole magnet with $\approx$ 4 Tm integrated field provides enough strength to bend charged particles with $p$ of 200 $\gev/c^{2}$.      
 
  Two different detection technologies are used in these trackers reflecting the nature of track occupancy as function of distance from beam pipe. The tracker's part close to the beam pipe, \Gls{TT} station together with central region of \Gls{Tstation}, also known as Inner Tracker (\Gls{IT}), expects higher occupancy and makes use of the silicon microstrip detection mechanism. The outer part of \Gls{Tstation} stations, also known as Outer Tracker (\Gls{OT}), is made of a straw-tube detectors. Straw-tube detector measures the hit position by measuring the drift-time of ionized electrons. Use of the two technologies are seen in \autoref{fig:tracktype}. 
@@ -163,7 +168,7 @@ Uncertainty on mass is one of the crucial parameters to minimize as it provides 
 \end{figure}
 
 \section{Ring Imaging Detectors \mybox{ULRIK}}
-
+\label{richsec}
 Particle identification, \Gls{PID}, at \Gls{LHCb} relies heavily on two dedicated Ring Imaging subdetectors, \gls{RICH}. These detectors take advantage of the phenomena, emission of Cerenkov light, which happens when a charged particle travels through a medium at a speed faster than the phase velocity of light in that medium. This cone of light is emitted at an angle $\theta$ with respect to the charged particle's trajectory. Using the knowledge of refractive index of the medium, $n$, and momentum $p$ that is measured using tracking, mass $m$ of the particle can be obtained through:
 
 \begin{equation}
@@ -226,6 +231,7 @@ In search for $B^{0}$ and $B^{0}_{s}$ decaying to $h^{+}h^{-}$, where $h\in K, \
 
 
 \section{Calorimetry \mybox{ULRIK}}
+\label{calosys}
 As many other particle physics detectors, \Gls{LHCb} is equipped with series of subdetectors providing separation and \Gls{PID} tool for electrons, pions and photons. This separation is achieved because different particles interact at different distances, producing differently shaped showers of light. This part of detector is not only integral to the way \Gls{LHCb} trigger system works but it also provides precise measurement of energies of these objects.
 All the subcomponents discussed here operate on the same principle. The light from the scintillating material is guided to photomultiplier tubes by wavelength shifting fibres.
 
@@ -247,6 +253,7 @@ On the other hand, \Gls{HCAL} sandwiches iron instead of lead as the absorber wi
 
 
 \section{Muon Stations \mybox{ULRIK}}
+\label{muonsys}
 Muons are considered to be of fundamental importance to many flagship analyses by \Gls{LHCb}, such as the search for the rare $\B^{0}_{s} \rightarrow \mu^{+} \mu^{-}$ decay . Analysis of \Bmumumu of course relies heavily on good performance of this part of detector. Muon stations are positioned at the end of the detector, taking advantage of the low probability of interaction of muon previously in the detector.
 
 \Gls{LHCb}'s five rectangular muon stations \Gls{muonstation} are positioned before and after calorimetry system, with first station M1 upstream of the \Gls{SPD}, and four stations (M2-M5) downstream of \Gls{HCAL} as shown in \autoref{fig:MuonGran}. The M1 station consists of 12 sets of three gas electron 
@@ -353,6 +360,7 @@ Between the Run \Rn{1} and Run \Rn{2} period there has been a change in how the 
 
 
 \section{Simulation \mybox{ULRIK}}
+\label{simulationchap}
 In order to optimise the event selections, extract efficiencies and model the backgrounds, a full Monte Carlo Simulation \Gls{MC} can be produced starting from simulation of the $pp$ collision to detector readout of the decay of interest  produced. 
 The $pp$ collisions within \Gls{LHCb} configuration \cite{Belyaev:2011zza} are simulated with Pythia 6.4 \cite{pythia6} and Pythia 8.1 \cite{pythia8}. \Gls{LHCb} specific settings are mostly related to running conditions: luminosity, number of collisions per bunch crossing as well as contamination from other bunches, \textit{spill-over}. 
 

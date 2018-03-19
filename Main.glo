@@ -69,8 +69,9 @@
 \glossaryentry{ATLAS?\glossentry{ATLAS}|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{CMS?\glossentry{CMS}|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{LS1?\glossentry{LS1}|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{LHC?\glossentry{LHC}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{25}
@@ -328,5 +329,12 @@
 \glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{91}
 \glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{91}
 \glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{106}
-\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{95}
+\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{96}
+\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{97}
+\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{97}
+\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{97}
+\glossaryentry{P$\mathbold {_{ghost}}$?\glossentry{pgh2}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{111}

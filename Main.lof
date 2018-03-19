@@ -50,6 +50,6 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces An example decision tree. The S and B stand for `Signal-like' and `Background-like'. The $\beta _{i}$ variables refer to the cut values chosen by the machine learning algorithm after the tree has been trained on signal and background samples. The blue ovals represent final nodes called leafs, which each leaf having an associated purity, i.e. the fraction of the weight of a leaf due to signal events.\relax }}{102}{figure.caption.72}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces An example decision tree. The S and B stand for `Signal-like' and `Background-like'. The $\beta _{i}$ variables refer to the cut values chosen by the machine learning algorithm after the tree has been trained on signal and background samples. The blue ovals represent final nodes called leafs, which each leaf having an associated purity, i.e. the fraction of the weight of a leaf due to signal events.\relax }}{107}{figure.caption.77}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

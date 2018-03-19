@@ -49,12 +49,15 @@
 \BOOKMARK [1][-]{section.4.9}{Normalisation channel}{chapter.4}% 49
 \BOOKMARK [0][-]{chapter.5}{Efficiencies}{}% 50
 \BOOKMARK [1][-]{section.5.1}{Efficiency Ratio}{chapter.5}% 51
-\BOOKMARK [0][-]{chapter.6}{Results}{}% 52
-\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 53
-\BOOKMARK [0][-]{chapter*.71}{Appendices}{}% 54
-\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 55
-\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 56
-\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 57
-\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 58
-\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 59
-\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 60
+\BOOKMARK [2][-]{subsection.5.1.1}{Detector Acceptance Efficiency \(GEN\)}{section.5.1}% 52
+\BOOKMARK [2][-]{subsection.5.1.2}{Reconstruction Efficiency \(REC\)}{section.5.1}% 53
+\BOOKMARK [2][-]{subsection.5.1.3}{Trigger Efficiency \(TRG\)}{section.5.1}% 54
+\BOOKMARK [0][-]{chapter.6}{Results}{}% 55
+\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 56
+\BOOKMARK [0][-]{chapter*.76}{Appendices}{}% 57
+\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 58
+\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 59
+\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 60
+\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 61
+\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 62
+\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 63
