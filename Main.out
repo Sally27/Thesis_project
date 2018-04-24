@@ -44,20 +44,26 @@
 \BOOKMARK [2][-]{subsection.4.8.1}{The Isolation Boosted Decision Tree}{section.4.8}% 44
 \BOOKMARK [2][-]{subsection.4.8.2}{The Combinatorial Boosted Decision Tree}{section.4.8}% 45
 \BOOKMARK [2][-]{subsection.4.8.3}{The Misid Boosted Decision Tree}{section.4.8}% 46
-\BOOKMARK [2][-]{subsection.4.8.4}{Further PID selection}{section.4.8}% 47
-\BOOKMARK [2][-]{subsection.4.8.5}{Multiple Candidates}{section.4.8}% 48
-\BOOKMARK [1][-]{section.4.9}{Normalisation channel}{chapter.4}% 49
-\BOOKMARK [0][-]{chapter.5}{Efficiencies}{}% 50
-\BOOKMARK [1][-]{section.5.1}{Efficiency Ratio}{chapter.5}% 51
-\BOOKMARK [2][-]{subsection.5.1.1}{Detector Acceptance Efficiency \(GEN\)}{section.5.1}% 52
-\BOOKMARK [2][-]{subsection.5.1.2}{Reconstruction Efficiency \(REC\)}{section.5.1}% 53
-\BOOKMARK [2][-]{subsection.5.1.3}{Trigger Efficiency \(TRG\)}{section.5.1}% 54
-\BOOKMARK [0][-]{chapter.6}{Results}{}% 55
-\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 56
-\BOOKMARK [0][-]{chapter*.76}{Appendices}{}% 57
-\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 58
-\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 59
-\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 60
-\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 61
-\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 62
-\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 63
+\BOOKMARK [2][-]{subsection.4.8.4}{Fitting Region Selection}{section.4.8}% 47
+\BOOKMARK [2][-]{subsection.4.8.5}{Further PID selection}{section.4.8}% 48
+\BOOKMARK [2][-]{subsection.4.8.6}{Multiple Candidates}{section.4.8}% 49
+\BOOKMARK [1][-]{section.4.9}{Normalisation channel}{chapter.4}% 50
+\BOOKMARK [0][-]{chapter.5}{Efficiencies}{}% 51
+\BOOKMARK [1][-]{section.5.1}{Efficiency Ratio}{chapter.5}% 52
+\BOOKMARK [2][-]{subsection.5.1.1}{Detector Acceptance Efficiency \(GEN\)}{section.5.1}% 53
+\BOOKMARK [2][-]{subsection.5.1.2}{Reconstruction Efficiency \(REC\)}{section.5.1}% 54
+\BOOKMARK [2][-]{subsection.5.1.3}{Trigger Efficiency \(TRG\)}{section.5.1}% 55
+\BOOKMARK [2][-]{subsection.5.1.4}{Offline Selection \(OFF\)}{section.5.1}% 56
+\BOOKMARK [2][-]{subsection.5.1.5}{Combinatorial BDT and Misid BDT efficiency}{section.5.1}% 57
+\BOOKMARK [2][-]{subsection.5.1.6}{Fitting Range Efficiency}{section.5.1}% 58
+\BOOKMARK [2][-]{subsection.5.1.7}{PID Efficiencies \(PID\)}{section.5.1}% 59
+\BOOKMARK [2][-]{subsection.5.1.8}{Summary of efficiencies necessary for Single Event Sensitivity}{section.5.1}% 60
+\BOOKMARK [0][-]{chapter.6}{Results}{}% 61
+\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 62
+\BOOKMARK [0][-]{chapter*.86}{Appendices}{}% 63
+\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 64
+\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 65
+\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 66
+\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 67
+\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 68
+\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 69

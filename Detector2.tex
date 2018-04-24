@@ -387,6 +387,8 @@ The \Gls{IP} resolution shows better trend in the simulation then in the data du
 
 Track reconstruction efficiency is also not reproduced very well in certain kinematical bins, again due to modelling of scattering interactions.
 
-The most critical problem that needs to be addressed in the presented analysis are the inaccuracies of \Gls{PID} variables, which are mismodelled in the simulation. The origin of this problem arises as a consequence of much lower estimate of low momentum tracks in the detector making the photoelectron background underestimated. This results in better performance of separation power in simulation and is corrected using real data calibration.
+The most critical problem that needs to be addressed in the presented analysis are the inaccuracies of \Gls{PID} variables, which are mismodelled in the simulation. The origin of this problem arises as a consequence of much lower estimate of low momentum tracks in the detector making the photoelectron background underestimated. This results in better performance of separation power in simulation and is corrected using real data calibration. 
+
+Usually therefore PID efficiency is obtained from data. More specifically, by using high-yield and relatively background-free calibration channels, where the species of the particle can be deduced from kinematics of the decay. Standard set of these channels are "housed" in a \texttt{PIDCalib} package \cite{Anderlini:2202412}. In this package, PID efficinecy can be computed in a given kinematic region of interest. 
 
 

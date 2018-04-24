@@ -113,7 +113,7 @@ However, it should be noted that reconstruction efficiency reflects stripping se
                 \begin{center}
         \begin{tabular}{l c c }
 
-        \hline
+    %    \hline
 		Channel & Year & $\varepsilon_{rec|sel}$ \\ \hline
                 $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu$ & 2012 &  0.10841$\pm$0.00030 \\
                 $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu$ & 2016 &  0.12417$\pm$0.00032 \\ \hline
@@ -246,6 +246,48 @@ $\varepsilon_{HLT2}$ &0.883 & 0.981 & 0.973 \\
 \caption{2012 default TCK efficiencies. These values will be taken to be representative of 2012 and 2011 dataset as the cummulative efficiency for 2011 and 2012 is nearly identical.}
 \label{tab:L0andHLT1Calib2012}
 \end{table}
+
+
+\subsection{Offline Selection (OFF)}
+
+In this section offline efficiencies, These include $J/\psi$ and $\Psi(2S)$ veto signal efficiency that were mentioned in pre-selection section\mybox{link}, where 2946.0 $<$ $|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3176.0 for $J/\psi$ veto and 3586.0 $<|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3766.0 veto for $\Psi(2S)$ veto. For normalisation channel this is non applicable as the normalisation decay proceeds via $J/\psi$ resonance. As trigger efficiencies for \Rn{2} are TCK-dependant, luminosity-weighted average is used. Similarly for all 2016 efficiencies from now on that are calibrated from the simulation are weighted averages, unless stated otherwise.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{ l c  c  c }
+Efficiency & Year &  $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu$  &  $B^{+} \rightarrow J/\psi\ K^{+}$ \\
+\hline
+$\varepsilon_{c\bar{c}}$ & 2012  &0.882 & N/A \\
+$\varepsilon_{c\bar{c}}$ & 2016  &0.883 & N/A \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Efficiency of $J/\psi$ and $\Psi(2S)$ veto selections.}
+\end{table}
+
+\subsection{Combinatorial BDT and Misid BDT efficiency}
+ Efficiencies of MVA selection are also evaluated on simulation samples. These efficiencies are obtained using samples that passed (GEN), (REC) and (OFF) cuts. Specific MVA for combinatorial background suppression (see ~\autoref{CombiBDTsel}) and misid background suppression ( ~\autoref{misidbdt}) are applied to the simulation samples. As the optimisation led to different BDTs depending on the data-taking period, these are then applied parametrically to relevant simulation samples. The results are listed in \autoref{tab:CombinatorialBDT2012}.
+
+For Misid and Combinatorial BDT selection, normalisation $B^{+} \rightarrow J/\psi K^{+}$ channel retains more signal. This is due to the kaon/muon $p$ and $p_{T}$ kinematics difference. It is also true that since kaon reconstruction efficiency is worse, it implies that the $p_{T}$ of $B$ is on average harder for normalisation channel. As these two quantities are high in BDT importance ranking as mentioned in \autoref{CombiBDTsel}, this makes normalisation MC more efficient. In Misid BDT selection, again the kinematics of $B$ and the \gls{minipchi2} of the oppositely charged muon to $B$ is more signal like than signal. \mybox{SALLY-PLOTS}.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{ l c  c  c }
+Efficiency & Year & $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu$  &  $B^{+} \rightarrow J/\psi\ K^{+}$ \\
+\hline
+$\varepsilon_{combibdt}$& 2012 &0.473 & 0.509 \\
+$\varepsilon_{misidbdt}$& 2012 &0.436 & 0.511 \\
+\hline
+$\varepsilon_{combibdt}$& 2016 &0.343 & 0.397 \\
+$\varepsilon_{misidbdt}$& 2016 &0.368 & 0.446 \\	
+\hline
+\end{tabular}
+\end{center}
+\caption{2016 Combinatorial and Misid BDT selection efficiency.}
+\label{tab:CombinatorialBDT2012}
+\end{table}
+
+
 
 
 
