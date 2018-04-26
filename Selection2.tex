@@ -507,11 +507,48 @@ The mass distribution of the signal simulation shows that majority of the signal
 After classifiers to reduce combinatorial and misid backgrounds are trained and applied, further \gls{PID} selection is performed. This can be done as the preselection has relatively loose \texttt{DLL} selection and hence it is possible to improve the performance by using cuts on additional \gls{PID} variables. In the optimisation, different hypotheses were tested, such as cuts on \texttt{Probnnmu}, \texttt{Probnnpi}, and \texttt{ProbnnK} variables and their combinations. Optimisation was performed in a such a way as to optimize Punzi \texttt{FOM} with $\sigma=3$ (\autoref{eq:punzifom}) in a blinded signal region, by performing full blinded data fit \mybox{make reference to this once it is written}, but with Run \Rn{1} and Run \Rn{2} fits separately.
 
 
-In 2016, misID templates above 5800 \mevcc are not populated. Hence final 6 bins of corrected mass (5800 \mevcc -7000 \mevcc) are merged into 1. For each PID hypothesis, FOM was calculated. In both cases, in \Rn{1} and \Rn{2} \texttt{Probnnmu} $>$ 0.35 yielded highest \texttt{FOM}.
+In 2016, misID templates above 5800 \mevcc are not populated. Hence final 6 bins of corrected mass ($5800 \mevcc -7000 \mevcc$) are merged into 1. For each PID hypothesis, FOM was calculated. In both cases, in \Rn{1} and \Rn{2} \texttt{Probnnmu} $>$ 0.35 yielded highest \texttt{FOM}.
 
 
-\subsection{Multiple Candidates}
+
+\section{Multiple Candidates}
 After all the selection performed, in blinded datasets, $M_{B_{corr}}<4500$ \mevcc and $M_{B_{corr}}>5500$ \mevcc there is very few canditates left: $683$ in Run \Rn{1} and $505$ in \Rn{2} and no multiple candidates are seen.
+
+
+\section{Fractional Corrected Mass Error (FCME) Window Split}
+\label{split}
+Even though this is not part of selection but rather information about fitting procedure, it is important for efficiency calculation. In order to increase sensitivity, but not to decrease statistics as all the previous selection leads to low-statistics regime, it was decided that the fitting procedure for the final fit will be in two bins of fractional corrected mass error, defined as
+\begin{equation}
+	\sigma_{\rm{\{lowFCME,highFCME\}}} = \frac{\delta}{M_{B_{corr}}},
+\label{eq:fraccormerr}
+\end{equation}
+
+
+where $\delta$ is the corrected mass error. Because the corrected mass error has clear dependence on resolution (see ~\autoref{fig:resolution}), this split will split the data into two bins of resolution therefore increasing the sensitivity for observation.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{sel/trial2012.pdf}\put(-100,133){(a)}
+\includegraphics[width=0.5\linewidth]{sel/trial2016.pdf}\put(-100,133){(b)}
+\caption{ (a) The resolution of signal simulation with stripping $21$ in bins of corrected mass error $\delta$. (b) The resolution of signal simulation with stripping $26$ in bins of corrected mass error $\delta$. }
+\label{fig:resolution}
+%\vspace*{-1.0cm}
+\end{figure}
+
+The split boundary was chosen in such a way as to keep $\sim50\%$ of signal in $\sigma_{\rm{lowFCME}}$ and $\sim50\%$ signal in high $\sigma_{\rm{highFCME}}$.
+Numerically this corresponds to 
+
+\begin{equation}
+\sigma_{\rm{\{lowFCME,highFCME\}}}=
+   \begin{dcases}
+	   \sigma_{\rm{lowFCME}} &\text{if  }  \frac{\delta}{M_{B_{corr}}} < 0.0225,\\
+	  \sigma_{\rm{highFCME}} &\text{if  }  \frac{\delta}{M_{B_{corr}}} > 0.0225. 
+   \end{dcases}
+\label{eq:impsplit}
+\end{equation}
+
+However, in order to look at consistency of this two bin strategy also one bin of fractional corrected mass error strategy is performed and will be denoted as $\sigma_{\rm{NOFCME}}$.
+
+
 
 \section{Normalisation channel}
 \label{nchannel}

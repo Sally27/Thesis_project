@@ -10,9 +10,9 @@ cancel. There are, however, efficiencies that will not cancel and will be necess
 
 As this measurement is performed in a particular min$q^{2}$ region, all signal efficiencies are calculated with the min$q^{2}$ selection imposed. 
 
-Overall selection efficiency for signal, $\varepsilon_{s}$, and normalisation, $\varepsilon_{n}$, includes contributions from the detector acceptance efficiency labelled (GEN); the reconstruction selection efficiency (REC); the offline selection efficiency (OFF) comprising of trigger, $J/\psi$ and $\Psi(2S)$ veto, MVA based selection efficiency (CombiBDT and MisidBDT); fitting region selection efficiency (fitrange); the efficiency of the PID requirement (PID). 
+Overall selection efficiency for signal, $\varepsilon_{s}$, and normalisation, $\varepsilon_{n}$, includes contributions from the detector acceptance efficiency labelled (GEN); the reconstruction selection efficiency (REC); the offline selection efficiency comprising of trigger (TRG), $J/\psi$ and $\Psi(2S)$ veto (OFF), MVA based selection efficiency (CombiBDT and MisidBDT); fitting region selection efficiency (fitrange); the efficiency of the PID requirement (PID). 
 
-As the full simulation (\textit{generator-level+detector}) has no particular $minq^2$ selection imposed before reconstruction, the first two efficiencies will be obtained using privately generated \textit{generator-level} simulation. The summary of method used to extract signal efficiency is shown in Table ~\ref{tab:signaleffsummary}. For normalisation channel, there is no $minq^2$ region selection and hence full simulation can be used everywhere.
+As the full simulation (\textit{generator-level+detector}) has no particular $minq^2$ selection imposed before reconstruction, the first two efficiencies for signal are obtained using privately generated \textit{generator-level} simulation. The summary of method used to extract signal efficiency is shown in Table ~\autoref{tab:signaleffsummary}. For normalisation channel, there is no $minq^2$ region selection and hence full simulation can be used everywhere.
 
 \begin{table}[H]
 \centering
@@ -29,20 +29,24 @@ $\varepsilon^{PID}$ & Using \texttt{PIDCalib} \\
 \label{tab:signaleffsummary}
 \end{table}
 
-The first two efficiencies for signal and normalisation are obtained using privately generated simulation from \autoref{tab:MCPPass}
+\begin{itemize}
+\item Method \textit{generator-level} - The first two efficiencies, $\varepsilon^{GEN}$, $\varepsilon^{REC}$, for signal are obtained using privately generated simulation from \autoref{tab:MCPPass} using
 
 \begin{equation}
-{\varepsilon^{GEN,minq^{2}}}\times {\varepsilon^{REC,minq^{2}}}= \frac{N^{in\_acc,minq^{2}}}{N^{generated,minq^{2}}}\times \frac{N^{REC,minq^{2}}}{N^{in\_acc,minq^{2}}}
+{\varepsilon^{GEN,minq^{2}}}\times {\varepsilon^{REC,minq^{2}}}= \frac{N^{in\_acc,minq^{2}}}{N^{generated,minq^{2}}}\times \frac{N^{REC,minq^{2}}}{N^{in\_acc,minq^{2}}},
 \end{equation}
 
 \begin{equation}
-N^{in\_acc,minq^{2}} = N^{in\_acc} \times \varepsilon_{minq^{2}}
+N^{in\_acc,minq^{2}} = N^{in\_acc} \times \varepsilon_{minq^{2}}.
 \label{eq:number}
 \end{equation}
 
-In Equation ~\ref{eq:number}, $\varepsilon_{minq^{2}}$ is obtained by dividing number of generated events in \textit{generator-level} simulation (mentioned in \autoref{tab:MCPPass}) with minq$^2$ condition imposed, $N^{generated,minq^{2}}$, to total number of generated events, $N^{generated}$. $N^{in\_acc}$ is the number of events in \textit{generator-level+detector} simulation before reconstruction, $N^{REC,minq^{2}}$ is the number of events after reconstruction with minq$^2$ condition.
+In Equation ~\autoref{eq:number}, $\varepsilon_{minq^{2}}$ is obtained by dividing number of generated events in \textit{generator-level} simulation (mentioned in \autoref{tab:MCPPass}) with minq$^2$ condition imposed, $N^{generated,minq^{2}}$, to total number of generated events, $N^{generated}$. $N^{in\_acc}$ is the number of events in \textit{generator-level+detector} simulation before reconstruction, $N^{REC,minq^{2}}$ is the number of events after reconstruction with minq$^2$ condition.
+\item Method \textit{generator-level+detector} - Divide number of events that passed the cut by total number of events prior to the cut.
+\item Method Using \texttt{PIDCalib} - Data-driven approach explained in~\autoref{simulationchap} of determining PID efficiency is taken.
+\end{itemize}
 
-Hence the relative efficiency, $R^{\{21,26\}}(\varepsilon)$, is calculated 
+Having all the individual efficiencies the relative efficiency with no FCME split, $R_{\rm{NOFCME}}^{\{21,26\}}(\varepsilon)$, can be calculated 
 
 %\hspace*{-1.0cm}\begin{equation}
 %R^{\{21,26\}}_{\{NOFCME\}}(\varepsilon)=\frac{\varepsilon_{s}}{\varepsilon_{n}}=\frac{\varepsilon^{GEN}_{s}}{\varepsilon^{GEN}_{n}} \times \frac{\varepsilon^{REC}_{s}}{\varepsilon^{REC}_{n}} \times \frac{\varepsilon^{TRG}_{s}}{\varepsilon^{TRG}_{n}} \times \frac{\varepsilon^{OFF}_{s}}{\varepsilon^{OFF}_{n}} \times \frac{\varepsilon^{CombiBDT}_{s}}{\varepsilon^{CombiBDT}_{n}} \times \frac{\varepsilon^{MisidBDT}_{s}}{\varepsilon^{MisidBDT}_{n}} \times \frac{\varepsilon^{fitrange}_{s}}{\varepsilon^{fitrange}_{n}} \times \frac{\varepsilon^{PID}_{s}}{\varepsilon^{PID}_{n}},
@@ -50,7 +54,7 @@ Hence the relative efficiency, $R^{\{21,26\}}(\varepsilon)$, is calculated
 %\end{equation}
 
 \hspace*{-1.0cm}\begin{equation}
-R^{\{21,26\}}(\varepsilon)=\frac{\varepsilon_{s}}{\varepsilon_{n}}=\frac{\varepsilon^{GEN}_{s}}{\varepsilon^{GEN}_{n}} \times \frac{\varepsilon^{REC}_{s}}{\varepsilon^{REC}_{n}} \times \frac{\varepsilon^{TRG}_{s}}{\varepsilon^{TRG}_{n}} \times \frac{\varepsilon^{OFF}_{s}}{\varepsilon^{OFF}_{n}} \times \frac{\varepsilon^{CombiBDT}_{s}}{\varepsilon^{CombiBDT}_{n}} \times \frac{\varepsilon^{MisidBDT}_{s}}{\varepsilon^{MisidBDT}_{n}} \times \frac{\varepsilon^{fitrange}_{s}}{\varepsilon^{fitrange}_{n}} \times \frac{\varepsilon^{PID}_{s}}{\varepsilon^{PID}_{n}},
+	R_{\rm{NOFCME}}^{\{21,26\}}(\varepsilon)=\frac{\varepsilon_{s}}{\varepsilon_{n}}=\frac{\varepsilon^{GEN}_{s}}{\varepsilon^{GEN}_{n}} \times \frac{\varepsilon^{REC}_{s}}{\varepsilon^{REC}_{n}} \times \frac{\varepsilon^{TRG}_{s}}{\varepsilon^{TRG}_{n}} \times \frac{\varepsilon^{OFF}_{s}}{\varepsilon^{OFF}_{n}} \times \frac{\varepsilon^{CombiBDT}_{s}}{\varepsilon^{CombiBDT}_{n}} \times \frac{\varepsilon^{MisidBDT}_{s}}{\varepsilon^{MisidBDT}_{n}} \times \frac{\varepsilon^{FR}_{s}}{\varepsilon^{FR}_{n}} \times \frac{\varepsilon^{PID}_{s}}{\varepsilon^{PID}_{n}},
 \label{eq:notsplitted}
 \end{equation}
 
@@ -68,79 +72,171 @@ R^{\{21,26\}}(\varepsilon)=\frac{\varepsilon_{s}}{\varepsilon_{n}}=\frac{\vareps
 
 %Since this analysis will be perfomed in two bins of FCME, and in two Stripping version there will be 4 efficiency ratios.  Most of these efficiencies are evaluated using MC, however, TRG and PID efficiencies will be evaluted using data and/or MC techniques. Values for different efficiencies and exact method of obtaining them is described in the following subsections.
 
+
+\section{Summary of Efficiencies}
+\label{EfficiencySummary}
+
+The summary of individual efficiencies together with total efficiency, which is calculated for signal using nominator of \autoref{eq:notsplitted} and for normalisation denominator of \autoref{eq:notsplitted}, is given in \autoref{tab:effsumarry}.
+%taken from /vols/lhcb/ss4314/tablesforana/efficiencyratios/2016/SesFUMSB_NOTsimultaneous_full_Error/plot_interesting/bin/*OK*per*tex
+\begin{table}[H]
+\begin{center}
+\medskip
+\begin{tabular}{ 
+  l|  
+  >{\collectcell\num}r<{\endcollectcell}@{${}\pm{}$}>{\collectcell\num}l<{\endcollectcell} 
+  >{\collectcell\num}r<{\endcollectcell}@{${}\pm{}$}>{\collectcell\num}l<{\endcollectcell} |
+  >{\collectcell\num}r<{\endcollectcell}@{${}\pm{}$}>{\collectcell\num}l<{\endcollectcell}
+  >{\collectcell\num}r<{\endcollectcell}@{${}\pm{}$}>{\collectcell\num}l<{\endcollectcell}
+  }	
+%\toprule
+
+
+        \hline
+\multicolumn{1}{l|}{} & \multicolumn{4}{c|}{$ B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu$} & \multicolumn{4}{c}{$B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$} \\
+	Efficiency & \multicolumn{2}{c}{2012} & \multicolumn{2}{c|}{2016} & \multicolumn{2}{c}{2012} & \multicolumn{2}{c}{2016} \\
+
+%\midrule
+
+        \hline
+
+$\varepsilon_{GEN}$ & 18.56& 0.11 & 19.59& 0.07 & 16.22& 0.02 & 17.39& 0.02 \\
+$\varepsilon_{REC}$ & 10.84& 0.03 & 12.40& 0.01 & 17.74& 0.01 & 20.03& 0.00 \\
+$\varepsilon_{TRG}$ & 74.22& 0.13 & 74.83& 0.05 & 77.79& 0.03 & 79.12& 0.01 \\
+$\varepsilon_{OFF}$ & 88.20& 0.11 & 88.30& 0.05 & 100.00& 0.00 & 100.00& 0.00 \\
+$\varepsilon_{CombiBDT}$ & 47.25& 0.18 & 34.28& 0.07 & 50.89& 0.05 & 39.73& 0.02 \\
+$\varepsilon_{MisidBDT}$ & 43.58& 0.26 & 36.80& 0.12 & 51.12& 0.07 & 44.64& 0.02 \\
+$\varepsilon_{FR}$ & 92.30& 0.21 & 93.77& 0.10 & 99.59& 0.01 & 99.91& 0.00 \\
+$\varepsilon_{PID}$ & 63.15& 0.50 & 62.27& 0.27 & 68.53& 0.11 & 65.63& 0.04 \\
+\hline
+
+$\varepsilon_{total}$ & 0.1581& 0.0020 & 0.1182& 0.0008 & 0.3974& 0.0011 & 0.3203& 0.0005 \\
+
+	
+	
+	\hline
+%\bottomrule
+\end{tabular}
+\end{center}
+	\caption{Summary of individual simulation and/or data efficiencies in \% necessary for \textit{single event sensitivity} for signal and normalisation channel. Efficiency values for 2016 are TCK-weighted averaged efficiencies, which will be explained in \autoref{trigef}. The errors considered are of statistical nature, computed using binomial error.}
+\label{tab:effsumarry}
+\end{table}
+
+
+Hence resulting values for relative no fractional corrected mass split efficiency ratios defined in \autoref{eq:notsplitted} are
+
+\begin{equation}
+	R^{21}_{\rm{NOFCME}}(\varepsilon)=\frac{(1.58\pm0.02)\times 10 ^{-3 }}{(3.97\pm0.01)\times 10 ^{-3 }}=(3.98\pm0.05)\times 10 ^{-1 },
+\end{equation}
+
+\begin{equation}
+	R^{26}_{\rm{NOFCME}}(\varepsilon)=\frac{(1.18\pm0.01)\times 10 ^{-3 }}{(3.20\pm0.00)\times 10 ^{-3 }}=(3.69\pm0.03)\times 10 ^{-1 }.
+\end{equation}
+
+
+Including fractional corrected mass split efficiency ratios defined in~\autoref{eq:impsplit}
+
+\begin{equation}
+	R^{21}_{\rm{lowFCME}}(\varepsilon)=\frac{(7.44\pm0.12)\times 10 ^{-4 }}{(2.33\pm0.01)\times 10 ^{-3 }}=(3.20\pm0.05)\times 10 ^{-1 },
+\end{equation}
+\begin{equation}
+	R^{21}_{\rm{highFCME}}(\varepsilon)=\frac{(8.37\pm0.13)\times 10 ^{-4 }}{(1.65\pm0.01)\times 10 ^{-3 }}=(5.09\pm0.08)\times 10 ^{-1 },
+\end{equation}
+
+\begin{equation}
+	R^{26}_{\rm{lowFCME}}(\varepsilon)=\frac{(6.51\pm0.05)\times 10 ^{-4 }}{(2.15\pm0.00)\times 10 ^{-3 }}=(3.03\pm0.02)\times 10 ^{-1 },
+\end{equation}
+\begin{equation}
+	R^{26}_{\rm{highFCME}}(\varepsilon)=\frac{(5.33\pm0.05)\times 10 ^{-4 }}{(1.05\pm0.00)\times 10 ^{-3 }}=(5.06\pm0.04)\times 10 ^{-1 }.
+\end{equation}
+	
+	
+As it can be noticed, different selections that were optimised for Run \Rn{1} and \Rn{2} yield different overall as well as individual efficiencies. This results in small differences in sensitivity between Run \Rn{1} and Run \Rn{2}. To better understand where does this difference come from, ratio of individual relative efficiencies as a function of stripping version is plotted in the~\autoref{fig:rateffsnofcme}. The difference can be attributed to different BDTs.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = 0.8\textwidth]{efficiency/effiratio/Plot_ALL_Efficiencies_Ratio_Overview_Pretty.pdf}
+\caption{Summary of ratio of efficiencies between 2012 simulation and 2016 simulation with no FCME split. Efficiency values for 2016 are TCK-weighted averaged efficiencies.}
+\centering
+\label{fig:rateffsnofcme}
+\end{figure}
+
+
+More detailed discussion on individual efficiencies is covered in following subsections. 
+
+
 \subsection{Detector Acceptance Efficiency (GEN)}
-For charged particles detector acceptance efficiency describes the fraction of decays contained in the polar angle region of [10, 400] mrad. For neutral particles, the corresponding angular region is [0, 400] mrad. 
+For charged particles detector acceptance efficiency describes the fraction of decays contained in the polar angle region of [10, 400] mrad.  
+For 2012 and 2016 simulation samples, the overall detector acceptance efficiency will be the average for two possible magnetic polarity conditions: down, up. For 2012 this will be also averaged with two different simulation versions: Pythia 6.4\cite{pythia6} and Pythia 8.1\cite{pythia8}.
 
-        \begin{table}[H]
-                \begin{center}
-        \begin{tabular}{l c c }
-
-%        \hline
-                Channel & Year & $\varepsilon_{gen}$\\ \hline
-              %  $B^{+} \rightarrow J/\psi K^{+}$ & 2011 &  Sim08, Pyth6 & N/A & N/A & \\
-              %  $B^{+} \rightarrow J/\psi K^{+}$ & 2011 &  Sim08, Pyth8 & 0.16379 $\pm$ 0.00030 & 0.16366 $\pm$ 0.00030 & 0.16372$\pm$0.00021 \\
-                \Bmumumu & 2012 & 0.1856$\pm$0.0011 \\
-%                \Bmumumu & 2012 & \\
-                \Bmumumu & 2016 & 0.1959$\pm$0.0016 \\ \hline
-
-                \bjpsimumuk & 2012 & 0.1622$\pm$0.0002\\
-                %$B^{+} \rightarrow J/\psi K^{+}$ & 2012 &  \\
-                %$B^{+} \rightarrow J/\psi K^{+}$ & 2015 &  Sim09a, Pyth8 & 0.17304 $\pm$ 0.00048 & 0.17386 $\pm$ 0.00047 &0.17346$\pm$0.00034 \\
-                \bjpsimumuk & 2016 &  0.1739$\pm$0.0004  \\
-                \hline
-%               \Bmumumu & 2012 &  Sim08, Pyth6 &0.1828$\pm$0.0015 & \multirow{2}{*}{0.1856$\pm$0.0011} \\
-%                \Bmumumu & 2012 &  Sim08, Pyth8 &0.1884$\pm$0.0015 & \\
-%                \Bmumumu & 2016 &  Sim09b, Pyth8 &0.1959$\pm$0.0016 & 0.1959$\pm$0.0016 \\
-              %  $B^{+} \rightarrow J/\psi \pi^{+}$ & 2012 &  Sim08, Pyth6 & 0.1519 $\pm$ 0.000400 & N/A & \multirow{2}{*}{0.15816$\pm$0.00024}\\
-              %  $B^{+} \rightarrow J/\psi \pi^{+}$ & 2012 &  Sim08, Pyth8 & 0.1622 $\pm$ 0.000424 & 0.1611 $\pm$ 0.000421 &  \\
-%               \hline
-              %  $B^{0} \rightarrow J/\psi K^{*}$ & 2012 &  Sim08, Pyth8 & 0.16141 $\pm$ 0.00043 & 0.16050 $\pm$ 0.00043 &0.16095$\pm$0.00030 \\
+%
+%        \begin{table}[H]
+%                \begin{center}
+%        \begin{tabular}{l c c }
+%
+%%        \hline
+%                Channel & Year & $\varepsilon_{gen}$\\ \hline
+%              %  $B^{+} \rightarrow J/\psi K^{+}$ & 2011 &  Sim08, Pyth6 & N/A & N/A & \\
+%              %  $B^{+} \rightarrow J/\psi K^{+}$ & 2011 &  Sim08, Pyth8 & 0.16379 $\pm$ 0.00030 & 0.16366 $\pm$ 0.00030 & 0.16372$\pm$0.00021 \\
+%                \Bmumumu & 2012 & 0.1856$\pm$0.0011 \\
+%%                \Bmumumu & 2012 & \\
+%                \Bmumumu & 2016 & 0.1959$\pm$0.0016 \\ \hline
+%
+%                \bjpsimumuk & 2012 & 0.1622$\pm$0.0002\\
+%                %$B^{+} \rightarrow J/\psi K^{+}$ & 2012 &  \\
+%                %$B^{+} \rightarrow J/\psi K^{+}$ & 2015 &  Sim09a, Pyth8 & 0.17304 $\pm$ 0.00048 & 0.17386 $\pm$ 0.00047 &0.17346$\pm$0.00034 \\
+%                \bjpsimumuk & 2016 &  0.1739$\pm$0.0004  \\
 %                \hline
-              %  PartReco & 2012 & Sim08, Pyth8 & 0.16058 $\pm$ 0.00051 & 0.16058 $\pm$ 0.00050 & 0.1606$\pm$0.0004 \\
-%                \hline
-                \end{tabular}
-        \end{center}
-        \caption{Geometrical detector acceptance efficiencies for signal and normalisation channel. For 2012 and 2016 simulation samples, the overall detector acceptance efficiency will be the average for two possible magnetic polarity conditions: down, up. For 2012 this will be also averaged with two different simulation versions: Pythia 6.4\cite{pythia6} and Pythia 8.1\cite{pythia8}.}%  Efficiencies were calculated by generating statistics tables generated using dirac-bookeeping-prod4path, looking at generator level cut efficiency: /afs/cern.ch/user/s/slstefko/cmtuser/stattables.}
-        \label{tab:MCdeteff}
-        \end{table}
+%%               \Bmumumu & 2012 &  Sim08, Pyth6 &0.1828$\pm$0.0015 & \multirow{2}{*}{0.1856$\pm$0.0011} \\
+%%                \Bmumumu & 2012 &  Sim08, Pyth8 &0.1884$\pm$0.0015 & \\
+%%                \Bmumumu & 2016 &  Sim09b, Pyth8 &0.1959$\pm$0.0016 & 0.1959$\pm$0.0016 \\
+%              %  $B^{+} \rightarrow J/\psi \pi^{+}$ & 2012 &  Sim08, Pyth6 & 0.1519 $\pm$ 0.000400 & N/A & \multirow{2}{*}{0.15816$\pm$0.00024}\\
+%              %  $B^{+} \rightarrow J/\psi \pi^{+}$ & 2012 &  Sim08, Pyth8 & 0.1622 $\pm$ 0.000424 & 0.1611 $\pm$ 0.000421 &  \\
+%%               \hline
+%              %  $B^{0} \rightarrow J/\psi K^{*}$ & 2012 &  Sim08, Pyth8 & 0.16141 $\pm$ 0.00043 & 0.16050 $\pm$ 0.00043 &0.16095$\pm$0.00030 \\
+%%                \hline
+%              %  PartReco & 2012 & Sim08, Pyth8 & 0.16058 $\pm$ 0.00051 & 0.16058 $\pm$ 0.00050 & 0.1606$\pm$0.0004 \\
+%%                \hline
+%                \end{tabular}
+%        \end{center}
+%        \caption{Geometrical detector acceptance efficiencies for signal and normalisation channel. For 2012 and 2016 simulation samples, the overall detector acceptance efficiency will be the average for two possible magnetic polarity conditions: down, up. For 2012 this will be also averaged with two different simulation versions: Pythia 6.4\cite{pythia6} and Pythia 8.1\cite{pythia8}.}%  Efficiencies were calculated by generating statistics tables generated using dirac-bookeeping-prod4path, looking at generator level cut efficiency: /afs/cern.ch/user/s/slstefko/cmtuser/stattables.}
+%        \label{tab:MCdeteff}
+%        \end{table}
 
 \subsection{Reconstruction Efficiency (REC)}
-The reconstruction efficiency is calculated on simulated events which have passed the detector acceptance. For signal, this efficiency consists of reconstruction, stripping. For normalisation it consists from reconstruction, stripping, \textbf{and on the top} signal stripping is applied. This is done so that selections in normalisation and signal channel are kept as similar as possible and the fact that the signal selection has tighter cuts as explained in \autoref{nchannel}.
+The reconstruction efficiency is calculated on simulated events which have passed the detector acceptance. For signal, this efficiency consists of reconstruction, stripping. For normalisation it consists from reconstruction, stripping, \textbf{and on the top} signal stripping is applied. This is done so that selections in normalisation and signal channel are kept as similar as possible and the fact that the signal selection has tighter cuts as explained in \autoref{nchannel}. However, it should be noted that reconstruction efficiency reflects stripping selection \textbf{without the PID cuts} for both signal and normalisation. This is because \gls{PID} is badly modelled in simulation and hence will be accounted for separately and at the end of the selection chain.
 
-However, it should be noted that reconstruction efficiency reflects stripping selection \textbf{without the PID cuts} for both signal and normalisation. This is because \gls{PID} is badly modelled in simulation and hence will be accounted for separately.
-
-  \begin{table}[H]
-                \begin{center}
-        \begin{tabular}{l c c }
-
-    %    \hline
-		Channel & Year & $\varepsilon_{rec|sel}$ \\ \hline
-                \Bmumumu & 2012 &  0.10841$\pm$0.00030 \\
-                \Bmumumu & 2016 &  0.12417$\pm$0.00032 \\ \hline
-                \bjpsimumuk & 2012 & 0.17741$\pm$0.00013 \\ \
-%$B^{+} \rightarrow J/\psi K^{+}$ & 2015 &  Sim09a, Pyth8 & 4201997 & & \\
-                \bjpsimumuk & 2016 &  0.20031$\pm$0.00011 \\
-		
-		\hline
-        \end{tabular}
-        \end{center}
-        \caption{Reconstruction and preselection efficiencies for signal and normalisation channels.}
-        \label{tab:myreco}
-        \end{table}
+%  \begin{table}[H]
+%                \begin{center}
+%        \begin{tabular}{l c c }
+%
+%    %    \hline
+%		Channel & Year & $\varepsilon_{rec|sel}$ \\ \hline
+%                \Bmumumu & 2012 &  0.10841$\pm$0.00030 \\
+%                \Bmumumu & 2016 &  0.12417$\pm$0.00032 \\ \hline
+%                \bjpsimumuk & 2012 & 0.17741$\pm$0.00013 \\ \
+%%$B^{+} \rightarrow J/\psi K^{+}$ & 2015 &  Sim09a, Pyth8 & 4201997 & & \\
+%                \bjpsimumuk & 2016 &  0.20031$\pm$0.00011 \\
+%		
+%		\hline
+%        \end{tabular}
+%        \end{center}
+%        \caption{Reconstruction and preselection efficiencies for signal and normalisation channels.}
+%        \label{tab:myreco}
+%        \end{table}
 
 
 \subsection{Trigger Efficiency (TRG)}
 \label{trigef}
- The trigger efficiency is calculated on the top of (GEN) and (REC) efficiency. In order to extract the trigger efficiency, full simulation for both signal and normalisation can be used. It should be noted though that at \gls{LHCb}, full simulation is produced based on a certain trigger configuration. Trigger configuration key, TCK, represents unique code for exact conditions the data have been triggered with at \texttt{L0}, \texttt{HLT1} and \texttt{HLT2}, notably thresholds of certain quantities such as $p$, $p_{T}$. 
+ The trigger efficiency is calculated on the top of (GEN) and (REC) efficiency. In order to extract the trigger efficiency, full simulation for both signal and normalisation is used. It should be noted though that at \gls{LHCb}, full simulation is produced based on a certain trigger configuration. Trigger configuration key, TCK, represents unique code for exact conditions the data have been triggered with at \texttt{L0}, \texttt{HLT1} and \texttt{HLT2}, notably thresholds of certain quantities such as $p$, $p_{T}$. 
  
 Therefore if default TCK for simulation is representative for the whole considered dataset then the efficiency can be extracted directly from the simulation produced, which is the case for the Run \Rn{1} data.
 
 However in Run \Rn{2} the trigger thresholds have been changing often resulting in 16 different TCKs with very different $p$, $p_{T}$ thresholds, see Table ~\autoref{tab:2016MC} for full detail. In the third column, luminosity proportion for 2016 is given. It can be seen that the default simulation in 2016 (corresponding to TCK decimal key 288888335) only represents around 35\% of the data. For this reason, the trigger efficiencies for 2016 data have been obtained by emulation of the trigger on simulation for \texttt{L0} and \texttt{HLT1} level for each individual TCK, creating 16 TCK-based simulations.  This trigger emulation to extract efficiencies was tested with the default trigger configuation (TCK 288888335) to validate the emulation and the correct efficiencies have been recovered. It should be noted that small differences arise from difference between \textit{offline} and \texttt{HLT1} container for \gls{PV}s which stores the information about \gls{minipchi2} as the \gls{PV} finding-algorithm is different, but these have neglgible effect. \mybox{mentioning this jsut i case of reproducibility, but maybe not necessary}.
 %Therefore the emulation will not be exact, however, the effect is very small as it seems to be only resolution that will slightly shift the distribution, see figure ~\autoref{fig:hlt1shortcoming} 
 
-In order to obtain the average efficiency for Run\Rn{2}, the 16 TCK efficiencies are weighted by the proportion of luminosity corresponding to the integrated luminosity for a given TCK over the full 2016 integrated luminosity. The integrated luminosity per TCK was extracted by looking at API version of the LHCb rundatabase. 
+In order to obtain the average efficiency for Run \Rn{2}, the 16 TCK efficiencies are weighted by the proportion of luminosity corresponding to the integrated luminosity for a given TCK over the full 2016 integrated luminosity. The integrated luminosity per TCK was extracted by looking at API version of the LHCb rundatabase. 
 
-The full trigger luminosity for Run\Rn{2} is calculated by averaging the luminosity-weighted efficiencies, as seen in ~\autoref{tab:L0andHLT1Calib}.
+The full trigger luminosity for Run \Rn{2} is calculated by averaging the luminosity-weighted efficiencies, as seen in ~\autoref{tab:L0andHLT1Calib}. This averaged efficiency is going to be given as a final efficiency for 2016 from now on.  
 
 
 \begin{table}
@@ -227,115 +323,115 @@ Weighted efficiency & 0.876 & 0.967 & 0.884 & 0.849 & 0.953 & 0.978 \\
 
 
 
-Run \Rn{1} trigger efficiency is determined directly by looking at default TCK and is summarised in Table ~\autoref{tab:L0andHLT1Calib2012}. 
+Run \Rn{1} trigger efficiency is determined directly by looking at default TCK as it is representative of the whole dataset.% and is summarised in Table ~\autoref{tab:L0andHLT1Calib2012}. 
 
 %It should be noted that in the rest of the efficiencies Stripping 21 with be representative of 21+21r1 dataset as it was noticed that for normalisation channel these efficiencies are eqvivalent. In this section following ratio will be calculated,
 
 
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{ l  l  l  l  }
- Efficiency &  \Bmumumu  (2012)  &  \bjpsimumuk (2012) & \bjpsimumuk (2011) \\
-\hline
-$\varepsilon_{L0}$ &0.900 & 0.873 & 0.907 \\
-$\varepsilon_{HLT1}$ &0.934 & 0.908 & 0.879 \\
-$\varepsilon_{HLT2}$ &0.883 & 0.981 & 0.973 \\
-\hline
-\end{tabular}
-\end{center}
-\caption{2012 default TCK efficiencies. These values will be taken to be representative of 2012 and 2011 dataset as the cummulative efficiency for 2011 and 2012 is nearly identical.}
-\label{tab:L0andHLT1Calib2012}
-\end{table}
+%\begin{table}[H]
+%\begin{center}
+%\begin{tabular}{ l  l  l  l  }
+% Efficiency &  \Bmumumu  (2012)  &  \bjpsimumuk (2012) & \bjpsimumuk (2011) \\
+%\hline
+%$\varepsilon_{L0}$ &0.900 & 0.873 & 0.907 \\
+%$\varepsilon_{HLT1}$ &0.934 & 0.908 & 0.879 \\
+%$\varepsilon_{HLT2}$ &0.883 & 0.981 & 0.973 \\
+%\hline
+%\end{tabular}
+%\end{center}
+%\caption{2012 default TCK efficiencies. These values will be taken to be representative of 2012 and 2011 dataset as the cummulative efficiency for 2011 and 2012 is nearly identical.}
+%\label{tab:L0andHLT1Calib2012}
+%\end{table}
 
 
 \subsection{Offline Selection (OFF)}
 
-In this section offline efficiencies, These include $J/\psi$ and $\Psi(2S)$ veto signal efficiency that were mentioned in pre-selection section\mybox{link}, where 2946.0 $<$ $|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3176.0 for $J/\psi$ veto and 3586.0 $<|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3766.0 veto for $\Psi(2S)$ veto. For normalisation channel this is non applicable as the normalisation decay proceeds via $J/\psi$ resonance. As trigger efficiencies for \Rn{2} are TCK-dependant, luminosity-weighted average is used. Similarly for all 2016 efficiencies from now on that are calibrated from the simulation are weighted averages, unless stated otherwise.
+In this section offline efficiencies are discussed. These include $J/\psi$ and $\Psi(2S)$ veto signal efficiency that were mentioned in~\autoref{tab:vetoes}, where 2946.0 $<$ $|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3176.0 for $J/\psi$ veto and 3586.0 $<|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3766.0 veto for $\Psi(2S)$ veto. For normalisation channel this is non applicable as the normalisation decay proceeds via $J/\psi$ resonance. As trigger efficiencies for Run \Rn{2} are TCK-dependant, luminosity-weighted average is used. Similarly for all 2016 efficiencies from now on that are calibrated from the simulation are weighted averages, unless stated otherwise.
 
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{ l c  c  c }
-Efficiency & Year &  \Bmumumu  &  \bjpsimumuk \\
-\hline
-$\varepsilon_{c\bar{c}}$ & 2012  &0.882 & N/A \\
-$\varepsilon_{c\bar{c}}$ & 2016  &0.883 & N/A \\
-\hline
-\end{tabular}
-\end{center}
-\caption{Efficiency of $J/\psi$ and $\Psi(2S)$ veto selections.}
-\end{table}
+%\begin{table}[H]
+%\begin{center}
+%\begin{tabular}{ l c  c  c }
+%Efficiency & Year &  \Bmumumu  &  \bjpsimumuk \\
+%\hline
+%$\varepsilon_{c\bar{c}}$ & 2012  &0.882 & N/A \\
+%$\varepsilon_{c\bar{c}}$ & 2016  &0.883 & N/A \\
+%\hline
+%\end{tabular}
+%\end{center}
+%\caption{Efficiency of $J/\psi$ and $\Psi(2S)$ veto selections.}
+%\end{table}
 
 \subsection{Combinatorial BDT and Misid BDT efficiency}
- Efficiencies of MVA selection are also evaluated on simulation samples. These efficiencies are obtained using samples that passed (GEN), (REC) and (OFF) cuts. Specific MVA for combinatorial background suppression (see ~\autoref{CombiBDTsel}) and misid background suppression (see ~\autoref{misidbdt}) are applied to the simulation samples. As the optimisation led to different BDTs depending on the data-taking period, these are then applied parametrically to relevant simulation samples. The results are listed in \autoref{tab:CombinatorialBDT2012}.
+ Efficiencies of MVA selection are also evaluated on simulation samples. These efficiencies are obtained using samples that passed (GEN), (REC), (TRG) and (OFF) cuts. Specific MVA for combinatorial background suppression (see ~\autoref{CombiBDTsel}) and misid background suppression (see ~\autoref{misidbdt}) are applied to the simulation samples. As the optimisation led to different BDTs depending on the data-taking period, these are then applied parametrically to relevant simulation samples. The results were listed in \autoref{ab:effsumarry}.
 
 For Misid and Combinatorial BDT selection, normalisation \bjpsimumuk channel retains more signal than the \Bmumumu channel. This is due to the kaon/muon $p$ and $p_{T}$ kinematics difference as seen in ~\autoref{fig:reason1} and ~\autoref{fig:reason2}, where the kaon track is generally harder than the muon track. Kaon reconstruction efficiency is worse than muon reconstruction efficiency because about 11\% of the kaons cannot be reconstructed due to hadronic interactions that occur before the last T station~\cite{LHCb-DP-2013-002}, implying that the $p_{T}$ of $B$ is on average harder for normalisation channel. As these two quantities are high in BDT importance ranking as mentioned in \autoref{CombiBDTsel}, this makes normalisation MC more efficient. In Misid BDT selection, again the kinematics of $B$ and the \gls{minipchi2} of the oppositely charged muon to $B$ is more signal like than signal.
 
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{ l c  c  c }
-Efficiency & Year & \Bmumumu  &  \bjpsimumuk \\
-\hline
-$\varepsilon_{combibdt}$& 2012 &0.473 & 0.509 \\
-$\varepsilon_{misidbdt}$& 2012 &0.436 & 0.511 \\
-\hline
-$\varepsilon_{combibdt}$& 2016 &0.343 & 0.397 \\
-$\varepsilon_{misidbdt}$& 2016 &0.368 & 0.446 \\	
-\hline
-\end{tabular}
-\end{center}
-\caption{2016 Combinatorial and Misid BDT selection efficiency.}
-\label{tab:CombinatorialBDT2012}
-\end{table}
+%\begin{table}[H]
+%\begin{center}
+%\begin{tabular}{ l c  c  c }
+%Efficiency & Year & \Bmumumu  &  \bjpsimumuk \\
+%\hline
+%$\varepsilon_{CombiBDT}$& 2012 &0.473 & 0.509 \\
+%$\varepsilon_{MisidBDT}$& 2012 &0.436 & 0.511 \\
+%\hline
+%$\varepsilon_{CombiBDT}$& 2016 &0.343 & 0.397 \\
+%$\varepsilon_{MisidBDT}$& 2016 &0.368 & 0.446 \\	
+%\hline
+%\end{tabular}
+%\end{center}
+%\caption{2016 Combinatorial and Misid BDT selection efficiency.}
+%\label{tab:CombinatorialBDT2012}
+%\end{table}
 
 
 \begin{figure}[H]
 \center
-\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_combibdt_forefficiency/plotvariableCombiBDTNICEFOREFF}\put(-50,133){(a)}%
-\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_combibdt_forefficiency/plotvariableB_PTNICEFOREFF}\put(-50,133){(b)}%
+\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_combibdt_forefficiency/plotvariableCombiBDTNICEFOREFF}\put(-110,133){(a)}%
+\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_combibdt_forefficiency/plotvariableB_PTNICEFOREFF}\put(-110,133){(b)}%
 \newline
-\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_combibdt_forefficiency/plotvariablemu3_PTNICEFOREFF}\put(-50,133){(c)}%
-\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_combibdt_forefficiency/plotvariablemu3_PNICEFOREFF}\put(-50,133){(d)}%
+\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_combibdt_forefficiency/plotvariablemu3_PTNICEFOREFF}\put(-110,133){(c)}%
+\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_combibdt_forefficiency/plotvariablemu3_PNICEFOREFF}\put(-110,133){(d)}%
 \caption{(a) Combinatorial BDT response for signal MC and upper mass sideband as well as for normalisation channel MC for Stripping 21 and Stripping 26. The most discriminative variables are (b) $p_{T}$ of B, (c) muon/kaon $p_{T}$ and (d) muon/kaon $p$.}
 \label{fig:reason1}
 \end{figure}
 
 \begin{figure}[H]
 \center
-\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariableMisidBDTNICEFOREFF}\put(-50,133){(a)}%
-\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariableB_PTNICEFOREFF}\put(-50,133){(b)}%
+\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariableMisidBDTNICEFOREFF}\put(-110,133){(a)}%
+\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariableB_PTNICEFOREFF}\put(-110,133){(b)}%
 \newline
-\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariablemu2_MINIPCHI2NICEFOREFF}\put(-50,133){(c)}%
-\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariablemu3_PNICEFOREFF}\put(-50,133){(d)}%
+\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariablemu2_MINIPCHI2NICEFOREFF}\put(-110,133){(c)}%
+\includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariablemu3_PNICEFOREFF}\put(-110,133){(d)}%
 \caption{(a) Misid BDT response for signal MC and upper mass sideband as well as for normalisation channel MC for Stripping 21 and Stripping 26. The most discriminative variables are (b) $p_{T}$ of B, (c) muon IP $\chi^{2}$  and (d) muon/kaon $p$. Misid BDT responses are plotted with combinatorial BDT already applied.}
 \label{fig:reason2}
 \end{figure}
 
-\subsection{Fitting Range Efficiency}
+\subsection{Fitting Range Efficiency (FR)}
 
-As discussed in~\autoref{fittingsel},\mybox{reference combinatorial section}, fitting region was chosen firstly in order to avoid modelling combinatorial background drop in low corrected mass region (exclusion below $4000$ \mevcc) and secondly in order to not include region where there are very few/no events (exclusion above $7000$ \mevcc) in \textbf{corrected mass}. As seen in~\autoref{tab:fiteff} normalisation channel does not loose many candidates compared to signal channel. This is expected as the \textbf{visible mass} is more constrained in normalisation channel from preselection stage (see ~\autoref{tab:stripcutsBnorm}, where $5150\ \mevcc\ <\ B$ Mass$\ <\ 5450\ \mevcc$) than in signal channel as seen in~\autoref{fig:reasonfitrange}). Hence, restricting region in \textbf{corrected mass} is does not affect normalisation channel much.
+As discussed in~\autoref{fittingsel},\mybox{reference combinatorial section}, fitting region was chosen firstly in order to avoid modelling combinatorial background drop in low corrected mass region (exclusion below $4000$ \mevcc) and secondly in order to not include region where there are very few/no events (exclusion above $7000$ \mevcc) in \textbf{corrected mass}. As seen in~\autoref{tab:effsumarry} normalisation channel does not loose many candidates compared to signal channel. This is expected as the \textbf{visible mass} is more constrained in normalisation channel from preselection stage (see ~\autoref{tab:stripcutsBnorm}, where $5150\ \mevcc\ <\ B$ Mass$\ <\ 5450\ \mevcc$) than in signal channel as seen in~\autoref{fig:reasonfitrange}). Hence, restricting region in \textbf{corrected mass} is does not affect normalisation channel much.
 
 \begin{figure}[H]
 \center
-\includegraphics[width = 0.5\textwidth]{efficiency/plot_shapes_fittingregion/plotvariableB_MMMIX.pdf}\put(-50,133){(a)}%
-\includegraphics[width = 0.5\textwidth]{efficiency/plot_shapes_fittingregion/plotvariableLogyB_MMMIX.pdf}\put(-50,133){(b)}%
+\includegraphics[width = 0.5\textwidth]{efficiency/plot_shapes_fittingregion/plotvariableB_MMMIX.pdf}\put(-110,133){(a)}%
+\includegraphics[width = 0.5\textwidth]{efficiency/plot_shapes_fittingregion/plotvariableLogyB_MMMIX.pdf}\put(-110,133){(b)}%
 \caption{(a) Visible mass of normalisation and signal simulation. It can be seen that normalisation previous preselection has a sharp cut around $B$ visible mass leading to much higher fitting region efficiency. (b) The corresponding logharitmic version of plot (a).}
 \label{fig:reasonfitrange}
 \end{figure}
 
 
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{ l c  c  c }
-Efficiency & Year &  \Bmumumu  &  \bjpsimumuk \\
-\hline
-$\varepsilon_{fitrange}$ & 2012  &0.923 & 0.996 \\
-$\varepsilon_{fitrange}$ & 2016  &0.938 & 0.999 \\
-\hline
-\end{tabular}
-\end{center}
-\caption{Efficiency of fitting range selection.}
-\label{tab:fiteff}
-\end{table}
+%\begin{table}[H]
+%\begin{center}
+%\begin{tabular}{ l c  c  c }
+%Efficiency & Year &  \Bmumumu  &  \bjpsimumuk \\
+%\hline
+%$\varepsilon_{FR}$ & 2012  &0.923 & 0.996 \\
+%$\varepsilon_{FR}$ & 2016  &0.938 & 0.999 \\
+%\hline
+%\end{tabular}
+%\end{center}
+%\caption{Efficiency of fitting range selection.}
+%\label{tab:fiteff}
+%\end{table}
 
 \subsection{\gls{PID} Efficiencies (PID)}
 As \gls{PID} variables are not correctly modelled in simulation, mentioned in~\autoref{simulationchap}, data-driven approach of extracting PID efficiency is taken. To not introduce any biases in previous steps, especially in multivariate selection, PID efficiencies are evaluated at the end of the selection chain with \texttt{PIDCalib} package data samples.
@@ -388,82 +484,123 @@ As \gls{PID} variables are not correctly modelled in simulation, mentioned in~\a
 \end{table}
 
 
-\subsection{Summary of efficiencies necessary for \textit{Single Event Sensitivity}}
-\label{EfficiencySummary}
-Different selections that were optimised for Run \Rn{1} and \Rn{2} yield different overall as well as individual efficiencies. The summary of ratio of individual relative efficiencies as a function of stripping version can be seen in the~\autoref{fig:rateffsnofcme} where no FCME splitting is applied and in ~\autoref{tab:effsfcme} the summary of individual efficiencies with FCME applied.
+%\section{Summary of efficiencies}
+%\label{EfficiencySummary}
+%
+%The summary of individual efficiencies together with total efficiency, which is calculated for signal using nominator of \autoref{eq:notsplitted} and for normalisation denominator of \autoref{eq:notsplitted}, is given in \autoref{tab:effsumarry}.
+%%taken from /vols/lhcb/ss4314/tablesforana/efficiencyratios/2016/SesFUMSB_NOTsimultaneous_full_Error/plot_interesting/bin/*OK*per*tex
+%\begin{table}[H]
+%\begin{center}
+%\medskip
+%\begin{tabular}{ 
+%  l|  
+%  >{\collectcell\num}r<{\endcollectcell}@{${}\pm{}$}>{\collectcell\num}l<{\endcollectcell} 
+%  >{\collectcell\num}r<{\endcollectcell}@{${}\pm{}$}>{\collectcell\num}l<{\endcollectcell} |
+%  >{\collectcell\num}r<{\endcollectcell}@{${}\pm{}$}>{\collectcell\num}l<{\endcollectcell}
+%  >{\collectcell\num}r<{\endcollectcell}@{${}\pm{}$}>{\collectcell\num}l<{\endcollectcell}
+%  }	
+%%\toprule
+%
+%
+%        \hline
+%\multicolumn{1}{l|}{} & \multicolumn{4}{c|}{$ B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu$} & \multicolumn{4}{c}{$B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$} \\
+%	Efficiency & \multicolumn{2}{c}{2012} & \multicolumn{2}{c|}{2016} & \multicolumn{2}{c}{2012} & \multicolumn{2}{c}{2016} \\
+%
+%%\midrule
+%
+%        \hline
+%
+%$\varepsilon_{GEN}$ & 18.56& 0.11 & 19.59& 0.07 & 16.22& 0.02 & 17.39& 0.02 \\
+%$\varepsilon_{REC}$ & 10.84& 0.03 & 12.40& 0.01 & 17.74& 0.01 & 20.03& 0.00 \\
+%$\varepsilon_{TRG}$ & 74.22& 0.13 & 74.83& 0.05 & 77.79& 0.03 & 79.12& 0.01 \\
+%$\varepsilon_{OFF}$ & 88.20& 0.11 & 88.30& 0.05 & 100.00& 0.00 & 100.00& 0.00 \\
+%$\varepsilon_{CombiBDT}$ & 47.25& 0.18 & 34.28& 0.07 & 50.89& 0.05 & 39.73& 0.02 \\
+%$\varepsilon_{MisidBDT}$ & 43.58& 0.26 & 36.80& 0.12 & 51.12& 0.07 & 44.64& 0.02 \\
+%$\varepsilon_{FR}$ & 92.30& 0.21 & 93.77& 0.10 & 99.59& 0.01 & 99.91& 0.00 \\
+%$\varepsilon_{PID}$ & 63.15& 0.50 & 62.27& 0.27 & 68.53& 0.11 & 65.63& 0.04 \\
+%\hline
+%
+%$\varepsilon_{total}$ & 0.1581& 0.0020 & 0.1182& 0.0008 & 0.3974& 0.0011 & 0.3203& 0.0005 \\
+%
+%	
+%	
+%	\hline
+%%\bottomrule
+%\end{tabular}
+%\end{center}
+%\caption{Summary of individual simulation and/or data efficiencies in \% necessary for \textit{single event sensitivity} for signal and normalisation channel. Efficiency values for 2016 are TCK-weighted averaged efficiencies. The errors considered are of statistical nature, computed using binomial error.}
+%\label{tab:effsumarry}
+%\end{table}
+%
+%
+%Hence resulting values for relative no fractional corrected mass split efficiency ratios defined in \autoref{eq:notsplitted} are
+%
+%\begin{equation}
+%	R^{21}_{\rm{NOFCME}}(\varepsilon)=\frac{(1.58\pm0.02)\times 10 ^{-3 }}{(3.97\pm0.01)\times 10 ^{-3 }}=(3.98\pm0.05)\times 10 ^{-1 },
+%\end{equation}
+%
+%\begin{equation}
+%	R^{26}_{\rm{NOFCME}}(\varepsilon)=\frac{(1.18\pm0.01)\times 10 ^{-3 }}{(3.20\pm0.00)\times 10 ^{-3 }}=(3.69\pm0.03)\times 10 ^{-1 }.
+%\end{equation}
+%
+%
+%Including fractional corrected mass split efficiency ratios defined in~\autoref{eq:impsplit}
+%
+%\begin{equation}
+%	R^{21}_{\rm{lowFCME}}(\varepsilon)=\frac{(7.44\pm0.12)\times 10 ^{-4 }}{(2.33\pm0.01)\times 10 ^{-3 }}=(3.20\pm0.05)\times 10 ^{-1 },
+%\end{equation}
+%\begin{equation}
+%	R^{21}_{\rm{highFCME}}(\varepsilon)=\frac{(8.37\pm0.13)\times 10 ^{-4 }}{(1.65\pm0.01)\times 10 ^{-3 }}=(5.09\pm0.08)\times 10 ^{-1 },
+%\end{equation}
+%
+%\begin{equation}
+%	R^{26}_{\rm{lowFCME}}(\varepsilon)=\frac{(6.51\pm0.05)\times 10 ^{-4 }}{(2.15\pm0.00)\times 10 ^{-3 }}=(3.03\pm0.02)\times 10 ^{-1 },
+%\end{equation}
+%\begin{equation}
+%	R^{26}_{\rm{highFCME}}(\varepsilon)=\frac{(5.33\pm0.05)\times 10 ^{-4 }}{(1.05\pm0.00)\times 10 ^{-3 }}=(5.06\pm0.04)\times 10 ^{-1 }.
+%\end{equation}
+%	
+%	
+%As it can be noticed, different selections that were optimised for Run \Rn{1} and \Rn{2} yield different overall as well as individual efficiencies. This results in small differences in sensitivity between Run \Rn{1} and Run \Rn{2}. To better understand where does this difference come from, ratio of individual relative efficiencies as a function of stripping version is plotted in the~\autoref{fig:rateffsnofcme}. The difference can be attributed to different BDTs.
+%
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width = 0.8\textwidth]{efficiency/effiratio/Plot_ALL_Efficiencies_Ratio_Overview_Pretty.pdf}
+%\caption{Summary of ratio of efficiencies between 2012 simulation and 2016 simulation with no FCME split. Efficiency values for 2016 are TCK-weighted averaged efficiencies.}
+%\centering
+%\label{fig:rateffsnofcme}
+%\end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width = 0.8\textwidth]{efficiency/effiratio/Plot_ALL_Efficiencies_Ratio_Overview.pdf}
-\caption{Summary of ratio of efficiencies between 2012 simulation and 2016 simulation with no FCME split. Efficiency values for 2016 are TCK-weighted averaged efficiencies.}
-\centering
-\label{fig:rateffsnofcme}
-\end{figure}
 
 
-
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{ l  c  c  c  c  }
-\multicolumn{1}{ l }{} & \multicolumn{2}{c}{Low FCME} & \multicolumn{2}{c}{High FCME} \\
-Efficiency & 2012 & 2016 & 2012 & 2016 \\
-\hline
-$\varepsilon_{dec_{s}}$ & 0.186 & 0.196 & 0.186 & 0.196 \\
-$\varepsilon_{dec_{n}}$ & 0.162 & 0.174 & 0.162 & 0.174 \\
-$\varepsilon_{rec_{s}}$ & 0.108 & 0.124 & 0.108 & 0.124 \\
-$\varepsilon_{rec_{n}}$ & 0.177 & 0.2 & 0.177 & 0.2 \\
-$\varepsilon_{trg_{s}}$ & 0.742 & 0.748 & 0.742 & 0.748 \\
-$\varepsilon_{trg_{n}}$ & 0.778 & 0.791 & 0.778 & 0.791 \\
-$\varepsilon_{off_{s}}$ & 0.882 & 0.883 & 0.882 & 0.883 \\
-$\varepsilon_{off_{n}}$ & 1 & 1 & 1 & 1 \\
-$\varepsilon_{combi_{s}}$ & 0.473 & 0.343 & 0.473 & 0.343 \\
-$\varepsilon_{combi_{n}}$ & 0.509 & 0.397 & 0.509 & 0.397 \\
-$\varepsilon_{misid_{s}}$ & 0.436 & 0.368 & 0.436 & 0.368 \\
-$\varepsilon_{misid_{n}}$ & 0.511 & 0.446 & 0.511 & 0.446 \\
-$\varepsilon_{corm_{s}}$ & 0.923 & 0.938 & 0.923 & 0.938 \\
-$\varepsilon_{corm_{n}}$ & 0.996 & 0.999 & 0.996 & 0.999 \\
-$\varepsilon_{FCME_{s}}$ & 0.484 & 0.548 & 0.516 & 0.452 \\
-$\varepsilon_{FCME_{n}}$ & 0.593 & 0.673 & 0.407 & 0.327 \\
-$\varepsilon_{pid_{s}}$ & 0.615 & 0.625 & 0.647 & 0.62 \\
-$\varepsilon_{pid_{n}}$ & 0.677 & 0.654 & 0.697 & 0.661 \\
-\hline
-\end{tabular}
-\end{center}
-\caption{Summary of individual simulation and/or data efficiencies necessary for \textit{Single Event Sensitivity} for signal (\textit{s}) and normalisation channel (\textit{n}) with FCME split. Efficiency values for 2016 are TCK-weighted averaged efficiencies.}
-\label{tab:effsfcme}
-\end{table}
-
-
-Hence resulting values for relative no fractional corrected mass split efficiency ratios defined in \ref{eq:notsplitted} are
-
-
-
-\begin{equation}
-R^{21}_{NOFCME}(\epsilon)=\frac{(1.58\pm0.02)\times 10 ^{-3 }}{(3.97\pm0.01)\times 10 ^{-3 }}=(3.98\pm0.05)\times 10 ^{-1 }
-\end{equation}
-
-\begin{equation}
-R^{26}_{NOFCME}(\epsilon)=\frac{(1.18\pm0.01)\times 10 ^{-3 }}{(3.20\pm0.00)\times 10 ^{-3 }}=(3.69\pm0.03)\times 10 ^{-1 }
-\end{equation}
-
-
-and including fractional corrected mass split efficiency ratios defined in \ref{eq:splitted}
-
-\begin{equation}
-R^{21}_{lowFCME}(\epsilon)=\frac{(7.44\pm0.12)\times 10 ^{-4 }}{(2.33\pm0.01)\times 10 ^{-3 }}=(3.20\pm0.05)\times 10 ^{-1 }
-\end{equation}
-\begin{equation}
-R^{21}_{highFCME}(\epsilon)=\frac{(8.37\pm0.13)\times 10 ^{-4 }}{(1.65\pm0.01)\times 10 ^{-3 }}=(5.09\pm0.08)\times 10 ^{-1 }
-\end{equation}
-
-\begin{equation}
-R^{26}_{lowFCME}(\epsilon)=\frac{(6.51\pm0.05)\times 10 ^{-4 }}{(2.15\pm0.00)\times 10 ^{-3 }}=(3.03\pm0.02)\times 10 ^{-1 }
-\end{equation}
-\begin{equation}
-R^{26}_{highFCME}(\epsilon)=\frac{(5.33\pm0.05)\times 10 ^{-4 }}{(1.05\pm0.00)\times 10 ^{-3 }}=(5.06\pm0.04)\times 10 ^{-1 }
-\end{equation}
-
-It can be seen that 2012 and 2016 efficiencies slightly differ, hence the sensitivity will be slightly different. The individual efficiency ratios can be seen \autoref{rateffsnofcme}. It can be seen that difference can be attributed to nature of different BDT.
-
-
+%\begin{table}[H]
+%\begin{center}
+%\begin{tabular}{ l  c  c  c  c  }
+%\multicolumn{1}{ l }{} & \multicolumn{2}{c}{Low FCME} & \multicolumn{2}{c}{High FCME} \\
+%Efficiency & 2012 & 2016 & 2012 & 2016 \\
+%\hline
+%$\varepsilon_{dec_{s}}$ & 0.186 & 0.196 & 0.186 & 0.196 \\
+%$\varepsilon_{dec_{n}}$ & 0.162 & 0.174 & 0.162 & 0.174 \\
+%$\varepsilon_{rec_{s}}$ & 0.108 & 0.124 & 0.108 & 0.124 \\
+%$\varepsilon_{rec_{n}}$ & 0.177 & 0.2 & 0.177 & 0.2 \\
+%$\varepsilon_{trg_{s}}$ & 0.742 & 0.748 & 0.742 & 0.748 \\
+%$\varepsilon_{trg_{n}}$ & 0.778 & 0.791 & 0.778 & 0.791 \\
+%$\varepsilon_{off_{s}}$ & 0.882 & 0.883 & 0.882 & 0.883 \\
+%$\varepsilon_{off_{n}}$ & 1 & 1 & 1 & 1 \\
+%$\varepsilon_{combi_{s}}$ & 0.473 & 0.343 & 0.473 & 0.343 \\
+%$\varepsilon_{combi_{n}}$ & 0.509 & 0.397 & 0.509 & 0.397 \\
+%$\varepsilon_{misid_{s}}$ & 0.436 & 0.368 & 0.436 & 0.368 \\
+%$\varepsilon_{misid_{n}}$ & 0.511 & 0.446 & 0.511 & 0.446 \\
+%$\varepsilon_{corm_{s}}$ & 0.923 & 0.938 & 0.923 & 0.938 \\
+%$\varepsilon_{corm_{n}}$ & 0.996 & 0.999 & 0.996 & 0.999 \\
+%$\varepsilon_{FCME_{s}}$ & 0.484 & 0.548 & 0.516 & 0.452 \\
+%$\varepsilon_{FCME_{n}}$ & 0.593 & 0.673 & 0.407 & 0.327 \\
+%$\varepsilon_{pid_{s}}$ & 0.615 & 0.625 & 0.647 & 0.62 \\
+%$\varepsilon_{pid_{n}}$ & 0.677 & 0.654 & 0.697 & 0.661 \\
+%\hline
+%\end{tabular}
+%\end{center}
+%\caption{Summary of individual simulation and/or data efficiencies necessary for \textit{Single Event Sensitivity} for signal (\textit{s}) and normalisation channel (\textit{n}) with FCME split. Efficiency values for 2016 are TCK-weighted averaged efficiencies.}
+%\label{tab:effsfcme}
+%\end{table}
 
