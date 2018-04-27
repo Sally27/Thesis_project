@@ -8,65 +8,64 @@ cancel. There are, however, efficiencies that will not cancel and will be necess
 \section{Efficiency Ratio}
 \label{EfficiencyRatio}
 
-As this measurement is performed in a particular min$q^{2}$ region, all signal efficiencies are calculated with the min$q^{2}$ selection imposed. 
-
-Overall selection efficiency for signal, $\varepsilon_{s}$, and normalisation, $\varepsilon_{n}$, includes contributions from the detector acceptance efficiency labelled (GEN); the reconstruction selection efficiency (REC); the offline selection efficiency comprising of trigger (TRG), $J/\psi$ and $\Psi(2S)$ veto (OFF), MVA based selection efficiency (CombiBDT and MisidBDT); fitting region selection efficiency (fitrange); the efficiency of the PID requirement (PID). 
-
-As the full simulation (\textit{generator-level+detector}) has no particular $minq^2$ selection imposed before reconstruction, the first two efficiencies for signal are obtained using privately generated \textit{generator-level} simulation. The summary of method used to extract signal efficiency is shown in Table ~\autoref{tab:signaleffsummary}. For normalisation channel, there is no $minq^2$ region selection and hence full simulation can be used everywhere.
+As this measurement is performed in a particular min$q^{2}$ region, discussed in ~\autoref{qsqchoice}, all signal efficiencies are calculated with the min$q^{2}$ selection imposed. 
+Overall selection efficiency for signal, $\varepsilon^{s}$, and normalisation, $\varepsilon^{n}$, includes contributions from the detector acceptance efficiency labelled (GEN); the reconstruction selection efficiency (REC); the offline selection efficiency comprising of trigger (TRG), $J/\psi$ and $\Psi(2S)$ veto (OFF), MVA based selection efficiency (CombiBDT and MisidBDT); fitting region selection efficiency (FR); the efficiency of the PID requirement (PID). The summary of method used to extract signal efficiency is shown in Table ~\autoref{tab:signaleffsummary}. For normalisation channel, there is no $minq^2$ region selection and hence full (\textit{generator-level+detector}) simulation is used everywhere apart from $\varepsilon_{GEN}$, \textit{generator-level}.
 
 \begin{table}[H]
 \centering
 \small
-\hspace*{-0.5cm}\begin{tabular}{| l | l |}
+\hspace*{-0.5cm}\begin{tabular}{| l | l | l |}
 \hline
 Component & Method  \\ \hline
-$\varepsilon^{GEN}$, $\varepsilon^{REC}$ & \textit{generator-level}   \\
-$\varepsilon^{TRG}$, $\varepsilon^{OFF}$, $\varepsilon^{BDTs}$, $\varepsilon^{fitrange}$   & \textit{generator-level+detector} \\
-$\varepsilon^{PID}$ & Using \texttt{PIDCalib} \\
+	$\varepsilon_{GEN}$, $\varepsilon_{REC}$ & \Rn{1}  \\
+	$\varepsilon_{TRG}$, $\varepsilon_{OFF}$, $\varepsilon_{BDTs}$, $\varepsilon_{FR}$  & \Rn{2} \\
+	$\varepsilon_{PID}$ & \Rn{3} \\
 \hline
  \end{tabular}
  \caption{Method of obtaining efficiencies. Most of these efficiencies are evaluated using simulation, however, TRG and PID efficiencies are evaluted using data and/or simulation techniques.}
 \label{tab:signaleffsummary}
 \end{table}
 
+The three methods for signal efficiency determination are listed:
+
 \begin{itemize}
-\item Method \textit{generator-level} - The first two efficiencies, $\varepsilon^{GEN}$, $\varepsilon^{REC}$, for signal are obtained using privately generated simulation from \autoref{tab:MCPPass} using
+	\item Method \Rn{1} - The first two efficiencies, $\varepsilon_{GEN}$, $\varepsilon_{REC}$, for signal are obtained using privately generated simulation from \autoref{tab:MCPPass} using
 
 \begin{equation}
-{\varepsilon^{GEN,minq^{2}}}\times {\varepsilon^{REC,minq^{2}}}= \frac{N^{in\_acc,minq^{2}}}{N^{generated,minq^{2}}}\times \frac{N^{REC,minq^{2}}}{N^{in\_acc,minq^{2}}},
+{\varepsilon_{GEN,minq^{2}}}\times {\varepsilon_{REC,minq^{2}}}= \frac{N_{in\_acc,minq^{2}}}{N_{generated,minq^{2}}}\times \frac{N_{REC,minq^{2}}}{N_{in\_acc,minq^{2}}},
 \end{equation}
 
 \begin{equation}
-N^{in\_acc,minq^{2}} = N^{in\_acc} \times \varepsilon_{minq^{2}}.
+N_{in\_acc,minq^{2}} = N_{in\_acc} \times \varepsilon_{minq^{2}}.
 \label{eq:number}
 \end{equation}
 
-In Equation ~\autoref{eq:number}, $\varepsilon_{minq^{2}}$ is obtained by dividing number of generated events in \textit{generator-level} simulation (mentioned in \autoref{tab:MCPPass}) with minq$^2$ condition imposed, $N^{generated,minq^{2}}$, to total number of generated events, $N^{generated}$. $N^{in\_acc}$ is the number of events in \textit{generator-level+detector} simulation before reconstruction, $N^{REC,minq^{2}}$ is the number of events after reconstruction with minq$^2$ condition.
-\item Method \textit{generator-level+detector} - Divide number of events that passed the cut by total number of events prior to the cut.
-\item Method Using \texttt{PIDCalib} - Data-driven approach explained in~\autoref{simulationchap} of determining PID efficiency is taken.
+In Equation ~\autoref{eq:number}, $\varepsilon_{minq^{2}}$ is obtained by dividing number of generated events in \textit{generator-level} simulation (mentioned in \autoref{tab:MCPPass}) with minq$^2$ condition imposed, $N_{generated,minq^{2}}$, to total number of generated events, $N_{generated}$. $N_{in\_acc}$ is the number of events in \textit{generator-level+detector} simulation before reconstruction, $N_{REC,minq^{2}}$ is the number of events after reconstruction with minq$^2$ condition.
+\item Method \Rn{2} - Divide number of events that passed the selection by total number of events prior to this particular selection step.
+\item Method \Rn{3} - Data-driven approach using \texttt{PIDCalib} package explained in~\autoref{simulationchap} of determining PID efficiency is used.
 \end{itemize}
 
 Having all the individual efficiencies the relative efficiency with no FCME split, $R_{\rm{NOFCME}}^{\{21,26\}}(\varepsilon)$, can be calculated 
 
 %\hspace*{-1.0cm}\begin{equation}
-%R^{\{21,26\}}_{\{NOFCME\}}(\varepsilon)=\frac{\varepsilon_{s}}{\varepsilon_{n}}=\frac{\varepsilon^{GEN}_{s}}{\varepsilon^{GEN}_{n}} \times \frac{\varepsilon^{REC}_{s}}{\varepsilon^{REC}_{n}} \times \frac{\varepsilon^{TRG}_{s}}{\varepsilon^{TRG}_{n}} \times \frac{\varepsilon^{OFF}_{s}}{\varepsilon^{OFF}_{n}} \times \frac{\varepsilon^{CombiBDT}_{s}}{\varepsilon^{CombiBDT}_{n}} \times \frac{\varepsilon^{MisidBDT}_{s}}{\varepsilon^{MisidBDT}_{n}} \times \frac{\varepsilon^{fitrange}_{s}}{\varepsilon^{fitrange}_{n}} \times \frac{\varepsilon^{PID}_{s}}{\varepsilon^{PID}_{n}},
+%R^{\{21,26\}}_{\{NOFCME\}}(\varepsilon)=\frac{\varepsilon^{s}}{\varepsilon^{n}}=\frac{\varepsilon_{GEN}^{s}}{\varepsilon_{GEN}^{n}} \times \frac{\varepsilon_{REC}^{s}}{\varepsilon_{REC}^{n}} \times \frac{\varepsilon_{TRG}^{s}}{\varepsilon_{TRG}^{n}} \times \frac{\varepsilon_{OFF}^{s}}{\varepsilon_{OFF}^{n}} \times \frac{\varepsilon_{CombiBDT}^{s}}{\varepsilon_{CombiBDT}^{n}} \times \frac{\varepsilon_{MisidBDT}^{s}}{\varepsilon_{MisidBDT}^{n}} \times \frac{\varepsilon_{fitrange}^{s}}{\varepsilon_{fitrange}^{n}} \times \frac{\varepsilon_{PID}^{s}}{\varepsilon_{PID}^{n}},
 %\label{eq:notsplitted}
 %\end{equation}
 
 \hspace*{-1.0cm}\begin{equation}
-	R_{\rm{NOFCME}}^{\{21,26\}}(\varepsilon)=\frac{\varepsilon_{s}}{\varepsilon_{n}}=\frac{\varepsilon^{GEN}_{s}}{\varepsilon^{GEN}_{n}} \times \frac{\varepsilon^{REC}_{s}}{\varepsilon^{REC}_{n}} \times \frac{\varepsilon^{TRG}_{s}}{\varepsilon^{TRG}_{n}} \times \frac{\varepsilon^{OFF}_{s}}{\varepsilon^{OFF}_{n}} \times \frac{\varepsilon^{CombiBDT}_{s}}{\varepsilon^{CombiBDT}_{n}} \times \frac{\varepsilon^{MisidBDT}_{s}}{\varepsilon^{MisidBDT}_{n}} \times \frac{\varepsilon^{FR}_{s}}{\varepsilon^{FR}_{n}} \times \frac{\varepsilon^{PID}_{s}}{\varepsilon^{PID}_{n}},
+	R_{\rm{NOFCME}}^{\{21,26\}}(\varepsilon)=\frac{\varepsilon^{s}}{\varepsilon^{n}}=\frac{\varepsilon_{GEN}^{s}}{\varepsilon_{GEN}^{n}} \times \frac{\varepsilon_{REC}^{s}}{\varepsilon_{REC}^{n}} \times \frac{\varepsilon_{TRG}^{s}}{\varepsilon_{TRG}^{n}} \times \frac{\varepsilon_{OFF}^{s}}{\varepsilon_{OFF}^{n}} \times \frac{\varepsilon_{CombiBDT}^{s}}{\varepsilon_{CombiBDT}^{n}} \times \frac{\varepsilon_{MisidBDT}^{s}}{\varepsilon_{MisidBDT}^{n}} \times \frac{\varepsilon_{FR}^{s}}{\varepsilon_{FR}^{n}} \times \frac{\varepsilon_{PID}^{s}}{\varepsilon_{PID}^{n}},
 \label{eq:notsplitted}
 \end{equation}
 
 %\hspace*{-1.0cm}\begin{equation}
-%\hspace*{-2.0cm}R^{\{21,26\}}_{\{lowFCME,highFCME\}}(\varepsilon)=\frac{\varepsilon_{s}}{\varepsilon_{n}}=\frac{\varepsilon^{GEN}_{s}}{\varepsilon^{GEN}_{n}} \times \frac{\varepsilon^{REC}_{s}}{\varepsilon^{REC}_{n}} \times \frac{\varepsilon^{TRG}_{s}}{\varepsilon^{TRG}_{n}} \times \frac{\varepsilon^{OFF}_{s}}{\varepsilon^{OFF}_{n}} \times \frac{\varepsilon^{CombiBDT}_{s}}{\varepsilon^{CombiBDT}_{n}} \times \frac{\varepsilon^{MisidBDT}_{s}}{\varepsilon^{MisidBDT}_{n}} \times \frac{\varepsilon^{fitrange}_{s}}{\varepsilon^{fitrange}_{n}} \ \frac{\varepsilon^{FCME}_{s}}{\varepsilon^{FCME}_{n}} \times \frac{\varepsilon^{PID}_{s}}{\varepsilon^{PID}_{n}},
+%\hspace*{-2.0cm}R^{\{21,26\}}_{\{lowFCME,highFCME\}}(\varepsilon)=\frac{\varepsilon^{s}}{\varepsilon^{n}}=\frac{\varepsilon_{GEN}^{s}}{\varepsilon_{GEN}^{n}} \times \frac{\varepsilon_{REC}^{s}}{\varepsilon_{REC}^{n}} \times \frac{\varepsilon_{TRG}^{s}}{\varepsilon_{TRG}^{n}} \times \frac{\varepsilon_{OFF}^{s}}{\varepsilon_{OFF}^{n}} \times \frac{\varepsilon_{CombiBDT}^{s}}{\varepsilon_{CombiBDT}^{n}} \times \frac{\varepsilon_{MisidBDT}^{s}}{\varepsilon_{MisidBDT}^{n}} \times \frac{\varepsilon_{fitrange}^{s}}{\varepsilon_{fitrange}^{n}} \ \frac{\varepsilon_{FCME}^{s}}{\varepsilon_{FCME}^{n}} \times \frac{\varepsilon_{PID}^{s}}{\varepsilon_{PID}^{n}},
 %\label{eq:splitted}
 %\end{equation}
 
 %where NOFCME means one bin of fractional corrected mass error, lowFCME and highFCME fractional corrected mass error are two bins of fractional corrected mass error, see Section ~\ref{split} for more details. 
 
  where 21, 26 denote the stripping version for Run \Rn{1} and Run \Rn{2}.
-%As seen in equations ~\ref{eq:notsplitted} and ~\ref{eq:splitted}, absolute selection efficiencies $\varepsilon_{s}$, $\varepsilon_{n}$ have several components.
+%As seen in equations ~\ref{eq:notsplitted} and ~\ref{eq:splitted}, absolute selection efficiencies $\varepsilon^{s}$, $\varepsilon^{n}$ have several components.
 %\newline Overall selection efficiency includes contribution from the detector acceptance efficiency labelled (GEN);
 %the reconstruction selection efficiency (REC); the efficiency of the offline selection (OFF) comprising of trigger, $J/\psi$ and $\Psi(2S)$ veto, MVA based selection (CombiBDT and MisidBDT); fitting region selection (fitrange); the efficiency of the PID requirement (PID). Individual  
 
@@ -133,7 +132,7 @@ Hence resulting values for relative no fractional corrected mass split efficienc
 \end{equation}
 
 
-Including fractional corrected mass split efficiency ratios defined in~\autoref{eq:impsplit}
+Including fractional corrected mass split efficiency ratios defined in~\autoref{eq:impsplit} are
 
 \begin{equation}
 	R^{21}_{\rm{lowFCME}}(\varepsilon)=\frac{(7.44\pm0.12)\times 10 ^{-4 }}{(2.33\pm0.01)\times 10 ^{-3 }}=(3.20\pm0.05)\times 10 ^{-1 },
@@ -167,6 +166,8 @@ More detailed discussion on individual efficiencies is covered in following subs
 \subsection{Detector Acceptance Efficiency (GEN)}
 For charged particles detector acceptance efficiency describes the fraction of decays contained in the polar angle region of [10, 400] mrad.  
 For 2012 and 2016 simulation samples, the overall detector acceptance efficiency will be the average for two possible magnetic polarity conditions: down, up. For 2012 this will be also averaged with two different simulation versions: Pythia 6.4\cite{pythia6} and Pythia 8.1\cite{pythia8}.
+
+The hierarchy of generator level efficiencies $\varepsilon^{s}_{GEN} > \varepsilon^{n}_{GEN}$ is expected as the muon is lighter than kaon making kaon more likely to be softer and at larger angle, therefore outside of the acceptance. 
 
 %
 %        \begin{table}[H]
@@ -203,7 +204,9 @@ For 2012 and 2016 simulation samples, the overall detector acceptance efficiency
 %        \end{table}
 
 \subsection{Reconstruction Efficiency (REC)}
-The reconstruction efficiency is calculated on simulated events which have passed the detector acceptance. For signal, this efficiency consists of reconstruction, stripping. For normalisation it consists from reconstruction, stripping, \textbf{and on the top} signal stripping is applied. This is done so that selections in normalisation and signal channel are kept as similar as possible and the fact that the signal selection has tighter cuts as explained in \autoref{nchannel}. However, it should be noted that reconstruction efficiency reflects stripping selection \textbf{without the PID cuts} for both signal and normalisation. This is because \gls{PID} is badly modelled in simulation and hence will be accounted for separately and at the end of the selection chain.
+The reconstruction efficiency is calculated on simulated events which have passed the detector acceptance. For signal, this efficiency consists of reconstruction and stripping, detailed in~\autoref{tab:stripcutsB}. For normalisation it consists from reconstruction, stripping, \textbf{and on the top} signal stripping is applied. This is done so that selections in normalisation and signal channel are kept as similar as possible and the fact that the signal selection has tighter cuts as explained in \autoref{nchannel}. However, it should be noted that reconstruction efficiency reflects stripping selection \textbf{without the PID cuts} for both signal and normalisation. This is because \gls{PID} is badly modelled in simulation and hence will be accounted for separately and at the end of the selection chain.
+
+The hierarchy of reconstruction level efficiencies $\varepsilon^{s}_{REC} < \varepsilon^{n}_{REC}$ is also expected as many variables in a signal stripping are based on alignment of the mother $B$ with its daugthers. For fully reconstructed normalisation channel this is expected to be the case, whereas for not fully reconstructed decays alignment requiremnts make selection tighter. 
 
 %  \begin{table}[H]
 %                \begin{center}
@@ -244,7 +247,8 @@ The full trigger luminosity for Run \Rn{2} is calculated by averaging the lumino
 \footnotesize
       \begin{tabular}{l l l l | l l l l | l l }
       \multicolumn{4}{c |}{ } & \multicolumn{4}{c|}{\texttt{HLT1TrackMuon}} & \multicolumn{2}{c}{\texttt{L0Muon}}\\ \hline
-	      TCK dec & TCK hex & \%$\mathcal{L}$ & $\mathcal{L}\,\textrm{pb}^{-1}$ & \gls{pgh2} & $p_{\mu}$[\mev] & $p_T(\mu)$[\mev] & \gls{minipchi2} & $SPD_{mult}$ & $p_T(\mu)$[\mev] \\% & $sum_{ET}$\\
+	      TCK dec & TCK hex & \%$\mathcal{L}$ & $\mathcal{L}$ & \gls{pgh2} & $p_{\mu}$ & $p_T(\mu)$ & \gls{minipchi2} & $SPD_{mult}$ & $p_T(\mu)$\\% & $sum_{ET}$\\
+	      &  & \% & $\textrm{pb}^{-1}$ & & [\mev] & [\mev] &  & & [\mev] \\% & $sum_{ET}$\\
       \multicolumn{10}{c}{\textbf{2016 MD} $0.859656\,\textrm{fb}^{-1}$} \\
       287905280 & 0x11291600 & $0.769$ & $12.74$  & $-$ & 6.0 & 0.91 & 10        & 450  & 14 \\% &  $-$\\
       287905283 & 0x11291603 & $2.11$ & $35.01$  & $-$ & 6.0 & 0.91 & 10         & 450  & 23 \\% &  $-$ \\
@@ -436,6 +440,7 @@ As discussed in~\autoref{fittingsel},\mybox{reference combinatorial section}, fi
 \subsection{\gls{PID} Efficiencies (PID)}
 As \gls{PID} variables are not correctly modelled in simulation, mentioned in~\autoref{simulationchap}, data-driven approach of extracting PID efficiency is taken. To not introduce any biases in previous steps, especially in multivariate selection, PID efficiencies are evaluated at the end of the selection chain with \texttt{PIDCalib} package data samples.
 
+The PID efficiency is higher for normalisation channel with all PID requiremnts givne in~\autoref{tab:PIDselectionNorm} compared to signal provided in~\autoref{tab:PIDselection} due to weaker PID requirement on kaon as compared to muons.
 
 \begin{table}[H]
 \begin{center}
@@ -579,24 +584,24 @@ As \gls{PID} variables are not correctly modelled in simulation, mentioned in~\a
 %\multicolumn{1}{ l }{} & \multicolumn{2}{c}{Low FCME} & \multicolumn{2}{c}{High FCME} \\
 %Efficiency & 2012 & 2016 & 2012 & 2016 \\
 %\hline
-%$\varepsilon_{dec_{s}}$ & 0.186 & 0.196 & 0.186 & 0.196 \\
-%$\varepsilon_{dec_{n}}$ & 0.162 & 0.174 & 0.162 & 0.174 \\
-%$\varepsilon_{rec_{s}}$ & 0.108 & 0.124 & 0.108 & 0.124 \\
-%$\varepsilon_{rec_{n}}$ & 0.177 & 0.2 & 0.177 & 0.2 \\
-%$\varepsilon_{trg_{s}}$ & 0.742 & 0.748 & 0.742 & 0.748 \\
-%$\varepsilon_{trg_{n}}$ & 0.778 & 0.791 & 0.778 & 0.791 \\
-%$\varepsilon_{off_{s}}$ & 0.882 & 0.883 & 0.882 & 0.883 \\
-%$\varepsilon_{off_{n}}$ & 1 & 1 & 1 & 1 \\
-%$\varepsilon_{combi_{s}}$ & 0.473 & 0.343 & 0.473 & 0.343 \\
-%$\varepsilon_{combi_{n}}$ & 0.509 & 0.397 & 0.509 & 0.397 \\
-%$\varepsilon_{misid_{s}}$ & 0.436 & 0.368 & 0.436 & 0.368 \\
-%$\varepsilon_{misid_{n}}$ & 0.511 & 0.446 & 0.511 & 0.446 \\
-%$\varepsilon_{corm_{s}}$ & 0.923 & 0.938 & 0.923 & 0.938 \\
-%$\varepsilon_{corm_{n}}$ & 0.996 & 0.999 & 0.996 & 0.999 \\
-%$\varepsilon_{FCME_{s}}$ & 0.484 & 0.548 & 0.516 & 0.452 \\
-%$\varepsilon_{FCME_{n}}$ & 0.593 & 0.673 & 0.407 & 0.327 \\
-%$\varepsilon_{pid_{s}}$ & 0.615 & 0.625 & 0.647 & 0.62 \\
-%$\varepsilon_{pid_{n}}$ & 0.677 & 0.654 & 0.697 & 0.661 \\
+%$\varepsilon_{dec^{s}}$ & 0.186 & 0.196 & 0.186 & 0.196 \\
+%$\varepsilon_{dec^{n}}$ & 0.162 & 0.174 & 0.162 & 0.174 \\
+%$\varepsilon_{rec^{s}}$ & 0.108 & 0.124 & 0.108 & 0.124 \\
+%$\varepsilon_{rec^{n}}$ & 0.177 & 0.2 & 0.177 & 0.2 \\
+%$\varepsilon_{trg^{s}}$ & 0.742 & 0.748 & 0.742 & 0.748 \\
+%$\varepsilon_{trg^{n}}$ & 0.778 & 0.791 & 0.778 & 0.791 \\
+%$\varepsilon_{off^{s}}$ & 0.882 & 0.883 & 0.882 & 0.883 \\
+%$\varepsilon_{off^{n}}$ & 1 & 1 & 1 & 1 \\
+%$\varepsilon_{combi^{s}}$ & 0.473 & 0.343 & 0.473 & 0.343 \\
+%$\varepsilon_{combi^{n}}$ & 0.509 & 0.397 & 0.509 & 0.397 \\
+%$\varepsilon_{misid^{s}}$ & 0.436 & 0.368 & 0.436 & 0.368 \\
+%$\varepsilon_{misid^{n}}$ & 0.511 & 0.446 & 0.511 & 0.446 \\
+%$\varepsilon_{corm^{s}}$ & 0.923 & 0.938 & 0.923 & 0.938 \\
+%$\varepsilon_{corm^{n}}$ & 0.996 & 0.999 & 0.996 & 0.999 \\
+%$\varepsilon_{FCME^{s}}$ & 0.484 & 0.548 & 0.516 & 0.452 \\
+%$\varepsilon_{FCME^{n}}$ & 0.593 & 0.673 & 0.407 & 0.327 \\
+%$\varepsilon_{pid^{s}}$ & 0.615 & 0.625 & 0.647 & 0.62 \\
+%$\varepsilon_{pid^{n}}$ & 0.677 & 0.654 & 0.697 & 0.661 \\
 %\hline
 %\end{tabular}
 %\end{center}

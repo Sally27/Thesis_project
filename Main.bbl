@@ -8,6 +8,25 @@
 \mciteSetBstSublistLabelBeginEnd{\mcitemaxwidthsubitemform\space}
 {\relax}{\relax}
 
+\bibitem{book}
+O.~N. Hartmann {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Proceedings of the International
+  Conference on Exotic Atoms and Related Topics}}, }{}\href{https://cds.\
+  cern.\ ch/record/2053147?ln=en}{EXA 2011} (Vienna 5-9 September 2011)\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{wolf}
+Y.~H. Ahn, H.-Y. Cheng, and S.~Oh,
+  \ifthenelse{\boolean{articletitles}}{\emph{{Wolfenstein parametrization at
+  higher order: Seeming discrepancies and their resolution}},
+  }{}\href{http://dx.doi.org/http://dx.doi.org/10.1016/j.physletb.2011.08.047}{Physics
+  Letters B \textbf{703} (2011), no.~5 571 }\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{complex}
 \ifthenelse{\boolean{articletitles}}{\emph{Image of the cern accelerator
   complex from \rm{\texttt{https://cds.cern.ch/record/2225847}}}, }{} Accessed
@@ -327,6 +346,14 @@ M.~Pivk and F.~R. Le~Diberder,
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Egede:1694339}
+U.~Egede, P.~Owen, and W.~Sutcliffe,
+  \ifthenelse{\boolean{articletitles}}{\emph{{Determination of the quark
+  coupling strength $|V_{ub}|$ using baryonic decays}}, }{}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{Ali:1999mm}
 A.~Ali, P.~Ball, L.~T. Handoko, and G.~Hiller,
   \ifthenelse{\boolean{articletitles}}{\emph{{A Comparative study of the decays
@@ -349,21 +376,21 @@ R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{The LHCb
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem{kfold}
-A.~Blum {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{Beating the
-  hold-out: Bounds for k-fold and progressive cross-validation, in Proceedings
-  of the Twelfth Annual Conference on Computational Learning Theory}}, }{},
-  COLT 1999 (New York USA) pp. 203-208\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
 \bibitem{Speckmayer:2010zz}
 P.~Speckmayer, A.~Hocker, J.~Stelzer, and H.~Voss,
   \ifthenelse{\boolean{articletitles}}{\emph{{The toolkit for multivariate data
   analysis, TMVA 4}},
   }{}\href{http://dx.doi.org/10.1088/1742-6596/219/3/032057}{J.\ Phys.\ Conf.\
   Ser.\  \textbf{219} (2010) 032057}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{kfold}
+A.~Blum {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{Beating the
+  hold-out: Bounds for k-fold and progressive cross-validation, in Proceedings
+  of the Twelfth Annual Conference on Computational Learning Theory}}, }{},
+  COLT 1999 (New York USA) pp. 203-208\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

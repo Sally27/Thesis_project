@@ -8,44 +8,53 @@ Database file #2: LHCb-PAPER.bib
 Database file #3: LHCb-CONF.bib
 Database file #4: LHCb-DP.bib
 Database file #5: LHCb-TDR.bib
-You've used 38 entries,
+Warning--I didn't find a database entry for "threepole"
+Warning--I didn't find a database entry for "ewconstraint"
+Warning--I didn't find a database entry for "texture"
+Warning--I didn't find a database entry for "fritz"
+Warning--I didn't find a database entry for "param"
+Warning--I didn't find a database entry for "Buras"
+Warning--I didn't find a database entry for "jarsklog"
+Warning--I didn't find a database entry for "secondjar"
+You've used 41 entries,
             2909 wiz_defined-function locations,
-            936 strings with 12671 characters,
-and the built_in function-call counts, 175619 in all, are:
-= -- 19208
-> -- 291
+            960 strings with 13199 characters,
+and the built_in function-call counts, 192162 in all, are:
+= -- 21009
+> -- 325
 < -- 2
-+ -- 1058
-- -- 69
-* -- 17990
-:= -- 21414
-add.period$ -- 38
-call.type$ -- 38
-change.case$ -- 37
++ -- 1161
+- -- 77
+* -- 19668
+:= -- 23453
+add.period$ -- 41
+call.type$ -- 41
+change.case$ -- 40
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 2587
-empty$ -- 18634
-format.name$ -- 69
-if$ -- 38400
+cite$ -- 41
+duplicate$ -- 2852
+empty$ -- 20377
+format.name$ -- 77
+if$ -- 41986
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 160
-newline$ -- 239
-num.names$ -- 32
-pop$ -- 646
+int.to.str$ -- 41
+missing$ -- 171
+newline$ -- 257
+num.names$ -- 35
+pop$ -- 714
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 274
+skip$ -- 286
 stack$ -- 0
-substring$ -- 52736
+substring$ -- 57744
 swap$ -- 3
-text.length$ -- 78
+text.length$ -- 84
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 919
-width$ -- 40
-write$ -- 580
+while$ -- 1015
+width$ -- 43
+write$ -- 618
+(There were 8 warnings)

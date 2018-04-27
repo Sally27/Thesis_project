@@ -1,0 +1,122 @@
+\chapter{Theory}
+%\subsection{Introduction to Mixing Phenomenology}
+\section{Quarks}
+In this project, the emphasis lies in explaining of the generation of the masses and mixing of the quarks, the building blocks of matter. Quarks are spin 1/2 fermions that are affected by all three fundamental forces: electromagnetic, strong nuclear, and weak nuclear. They come in 6 different ``flavours'' and they carry fractional charge. Free quarks were never directly observed due to their confinement within hadrons -- composite quark systems. Is is important to note that the definition of mass for the quarks varies according to the renormalisation scheme of the QCD Lagrangian. The only definition of mass that is independent of the adopted renormalisation scheme is quark pole mass (position of the pole in the quark propagator) which is determined by the study of hadron decays and their spectrum using QCD perturbation theory. If desired to be used for phenomenological purposes this can be converted to the running  $\overline{MS}$ renormalisation scheme mass values which can be calculated at three loop order \cite{threepole}. Lattice gauge theory and hence lattice simulations use particular discretization of QCD and lattice spacing to determine a quantity known as bare mass. It is only possible to directly establish the so-called constituent mass which comes from non-relativistic quark models. These can be seen in Table \ref{nonlin}.
+
+\begin{table*} 
+
+\centering % used for centering table 
+\begin{tabular}{|c|c|c|c|} % centered columns (4 columns) 
+\hline %inserts double horizontal lines 
+Generation & ``Flavour" & Charge & Constituent Mass \\ [0.5ex]\hline% inserts table 
+%heading 
+\hline % inserts single horizontal line 
+1st & up  \textit{u}& +2/3 & ~300 Mev/c$^{2}$ \\ % inserting body of the table 
+1st & down \textit{d}& -1/3 &  ~300 MeV/c$^{2}$ \\[1ex]
+2nd & charm \textit{c}& +2/3 &  ~1.5 Gev/c$^{2}$\\ 
+2nd & strange \textit{s}& -1/3 &  ~500 Mev/c$^{2}$ \\[1ex]
+3rd & top \textit{t}& +2/3 &  ~175 Gev/c$^{2}$ \\ 
+3rd & bottom \textit{b}& -1/3 & ~ 5 Gev/c$^{2}$ \\ [1ex] % [1ex] adds vertical space 
+\hline %inserts single line 
+
+\end{tabular} 
+\caption{Quarks and their properties} 
+\label{nonlin} % is used to refer this table in the text 
+\end{table*} 
+\section{Lagrangian of the Standard Model}
+In order to understand the origin of the mass matrices and their form it is important to introduce some basic aspects of field theories. In quantum field theories, and hence the Standard Model, the dynamics of the system is captured by the most general renormalisable Lagrangian density that is invariant under gauge symmetry. Quantum Chromodynamics (QCD), the field theory that describes the strong interactions of colored quarks and gluons, is the SU(3) component of the Standard Model. Since the strong force is flavour symmetric, this results in mass matrices involving the electroweak interactions only, which are based on the gauge group SU(2)$\otimes$U(1). Both masses and mixing of quarks originate as a result of Yukawa interactions with Higgs condensate \cite{ewconstraint}. Before the spontaneous breakdown of the electroweak symmetry, all quarks and leptons are massless. Once the Higgs scalar field acquires a vacuum expectation value $\langle\phi\rangle = (0, v/\sqrt{2})$ implying broken symmetry, quarks acquire mass and hence the Lagrangian density term involving the mass matrices\cite{texture} is obtained: 
+\begin{equation}\label{lama}
+{\cal L}_m= -U_{0L}^{\dagger}M_u U_{0R} - D_{0L}^{\dagger}M_dD_{0R} - h.c,
+\end{equation}
+where $U_{0L}^{\dagger}=(u_0^{*}, c_0^{*}, t_0^{*})_L,\;\; D_{0L}^{\dagger}=(d_0^{*},s_0^{*}, b_0^{*})_L,\;\; U_{0R}^T=(u_0,c_0,t_0)_R,\;\;D_{0R}^T=(d_0,s_0,b_0)_R,$ with $\dagger$ representing conjugate transpose, $T$ transpose and $^{*}$ conjugate. $0$ signifies weak basis eigenstate, $R$ is right-handed quark state, $L$ is left-handed quark state and h.c stands for Hermitian conjugate. $M_{u}$ and $M_{d}$ represent 3 x 3 complex up and down type quark mass matrices containing 36 free parameters. Using polar matrix decomposition, it is possible to decompose  a complex matrix as the product of Hermitian and unitary matrix. Since the unitary matrix can be absorbed into the right-handed quark components, this immediately makes the number of free parameters 18 and $M_{u}$, $M_{d}$  complex Hermitian.
+\newline
+\indent More suitable, however, is to decompose a complex matrix into two distinguishable unitary and one diagonal matrix. By reverse action mass matrices can be diagonalised by unitary transformations $U_{uL}$ and $ U_{dL}$ in the following way:
+\begin{equation}
+\begin{split}
+\mathcal{M}_{u} = U_{uL}^{\dagger}M_{u}U_{uR} = Diag\{m_{u},m_{c},m_{t}\}
+\\
+\mathcal{M}_{d} = U_{dL}^{\dagger}M_{d}U_{dR} = Diag\{m_{d},m_{s},m_{b}\}
+\end{split}
+\end{equation}
+\newline
+\indent Unitary transformations acting simultaneously on the up and down quark vectors \cite{fritz} to diagonalise mass matrices were used because they are the most general case of a weak basis transformation which transforms a system to different basis without altering the physics, hence giving rise to the same masses and the same CKM matrix and leaving the mass matrices Hermitian. Such transformation is equivalent to changing quark fields from the basis of flavour eigenstates to that of mass eigenstates.
+\newline
+\indent Due to the diagonalisation of the mass matrices the Lagrangian density term which represents the ( $\text{W}^\pm$ -- mediated) charge current processes involving quarks now includes non diagonal couplings for the current:
+\begin{equation}\label{weakcurr}
+J_{\mu L}^-= U_{L}^{\dagger}\gamma_\mu V_{CKM}D_{L},
+\end{equation}
+where  $V_{CKM}= U_u^{\dagger} U_d= U_u^{\dag} U U^{\dag} U_d = U_{uL} U_{dL}^\dag$ is the Cabibbo-Kobayashi-Maskawa (CKM) mixing matrix, which arises as a result of $U_{uR}$ and $U_{dR}$ the unitary matrices diagonalizing the Hermitian $M_uM_u^\dagger$ and $M_dM_d^\dagger$ square mass matrices respectively. $U_{L}^\dagger =( u^{*}, c^{*}, t^{*})_L$ and $D_{L}^T=(d,s,b)_L$ are now the quark field mass eigenstates. So the complete electroweak Lagrangian includes both equations \ref{lama} and \ref{weakcurr}.
+
+\section{Quark Mixing Matrix}
+\indent As mentioned above, from transformation of mass matrices via two unitary matrices one obtains the Cabibbo-Kobayashi-Maskawa matrix. Experimentally there is a strong hierarchy in the size of the matrix elements of the quark mixing matrix. The origin of this hierarchy, however, is still an unsolved puzzle. In the literature, there  are several approaches to solving this problem, one of them being to search for simple textures of quark matrices that can predict self-consistent and experimentally favoured relations between quark masses and flavour mixing parameters. 
+\newline 
+\indent The quark mixing matrix is a $3 \times 3$ complex unitary matrix. Hence, there are 18 parameters to start with. Unitarity of the CKM matrix implies that matrix elements are orthonormal, reducing the count of free parameters to 9. Further, 5 out of 6 quark phases can be absorbed into the redefinition of the quark field, cutting the number of parameters down to 4 parameters, three quark mixing angles and one CP violating phase\cite{book}.
+\newline
+\indent There are many different parametrisations\cite{param} which are all mathematically equivalent to the CKM matrix, but the standard parametrisation of the CKM matrix for flavour mixing is the following:
+
+
+\begin{align}
+V_{\rm CKM} &=  \begin{pmatrix}   V_{ud} & V_{us} & V_{ub} \cr
+    V_{cd} & V_{cs} & V_{cb} \cr
+    V_{td} & V_{ts} & V_{tb} \cr \end{pmatrix} \\
+ &= \begin{pmatrix}c_{12}c_{13}& s_{12}c_{13} & s_{13}\exp(-i\delta) \cr
+-s_{12}c_{23}-c_{12}s_{23}s_{13}\exp(i\delta) & c_{12}c_{23}- 
+s_{12}s_{23}s_{13}\exp(i\delta) & s_{23}c_{13} \cr 
+s_{12}s_{23}- c_{12}c_{23}s_{13}\exp(i\delta) & 
+-c_{12}s_{23}-s_{12}c_{23}s_{13}\exp(i\delta) & c_{23}c_{13}\end{pmatrix},
+\end{align}
+
+where $s_{ij} = \sin(\theta_{ij})$ and $c_{ij} = \cos(\theta_{ij})$, $\theta_{12}$ , $\theta_{23}$, $\theta_{13}$ are Euler angles and $\theta_{12}$ is also known as the Cabibbo angle.
+A parametrisation reflecting the hierarchical nature in flavour mixing, which is an expansion in terms of the small parameter $\lambda$, was introduced by Wolfenstein\cite{wolf}. The four Wolfenstein parameters, which will be of paramount interest in exploring one of the ans\"{a}tze for the mass matrices, are related to the standard parametrization via the following expressions:
+\begin{equation}
+\begin{split}
+\lambda = s_{12}, \\
+\qquad
+A\lambda^{2} = s_{23}, \\
+\qquad
+A\lambda^{3}(\rho - i\eta) = s_{13}exp(-i\delta),\\
+\end{split}
+\end{equation}
+
+\begin{equation}V_{\rm CKM_{Wolfenstein}} = \begin{pmatrix}1-\lambda^2/2 & \lambda & A\lambda^3(\rho-i\eta) \cr
+ -\lambda & 1-\lambda^2/2 & A\lambda^2 \\
+ A\lambda^3(1-\rho-i\eta) & -A\lambda^2 & 1\end{pmatrix} + {\cal O}\left( \lambda^4 \right). \
+\end{equation}
+
+
+\indent A geometrical interpretation of $CP$ violation is offered by the concept of unitarity triangles. Unitarity of the CKM matrix can be summarized by two sets of orthogonality relations:
+$\sum_{k} |V_{ik}|^2 = \sum_{i} |V_{ik}|^2 = 1$ for all $i$ generations and $\sum_k V_{ik}V^*_{jk} = 0$ for all $i\neq j$. One of the unitary constraints of the CKM matrix explicitly states:
+\begin{equation}
+  V_{ud}V^*_{ub} + V_{cd}V^*_{cb} + V_{td}V^*_{tb} = 0 \, .
+\end{equation}
+If you divide this expression by 
+\begin{equation}
+V_{cd}V^*_{cb}
+\end{equation}
+and take relation\cite{Buras} of $\bar{\rho}$ and $\bar{\eta}$ to ${\rho}$ and ${\eta}$ 
+\begin{equation}
+   {\rho} + i {\eta} = \frac{\sqrt{A^{4}\lambda^{4}}(\bar{\rho} + i \bar{\eta})}{\sqrt{1-\lambda^2}[A^{4}\lambda^{4}(\bar{\rho} + i \bar{\eta})]}
+\end{equation}
+and definition of $\bar{\rho}$ and $\bar{\eta}$
+\begin{equation}
+\bar{\rho} \approx \rho - \frac{\rho\lambda^{2}}{2}
+\end{equation}
+\begin{equation}
+\bar{\eta} \approx \eta - \frac{\eta\lambda^{2}}{2}
+\end{equation}
+
+  it can be pictorially represented \cite{ewconstraint} in the $\bar{\rho}$ and $\bar{\eta}$ plane as in Figure 1.
+%\begin{figure*}[t]
+%\caption{Unitarity triangle in a complex plane.}
+%  \centering
+%    \includegraphics[width=0.5\textwidth]{triangle2.eps}
+%\end{figure*}
+
+The area of these triangles are half of the Jarlskog invariant \textit{J}, a quantifier of CP violation, which is defined as $ Im[V_{ij}V_{kl}V^*_{il}V^*_{kj}]$ \cite{jarsklog}. It is independent of phase convention. It is important to emphasize that the Standard Model with its parameters may or may not violate CP. Only after measuring the parameter it is possible to determine the CP non-conservation. \textit{J} vanishes\cite{secondjar} only if mixing angle $\theta_{ij} = 0 , \pi/2$; $\delta =  0 , \pi$; So measurements of \textit{J} allows to verify that the CKM matrix is complex and hence different mixing for quarks and anti-quarks is obtained, providing theoretical grounding for CP violation, one of the Sakharov conditions for the evolution of the universe which we see today, although the standard model CP violation is not big enough to explain the matter dominated universe.
+
+Experimentally the most precise measurement of the CKM matrix\cite{ewconstraint} to-date is 
+%\begin{equation}|V_{\rm CKM}| = \begin{pmatrix}0.97427 \pm 0.00015 & 0.22534 \pm 0.00065  &  0.00351\pm \bfrac{0.00015}{0.00014} \cr
+%0.22520 \pm 0.00065 &  0.97344 \pm 0.00016 & 0.0412\pm\bfrac{0.0011}{0.0005} \cr
+%0.00867 \pm \bfrac{0.00029}{0.00031} & 0.0404 \pm \bfrac{0.0011}{0.0005} &  0.999146 \pm \bfrac{0.000021}{0.000046} \cr \end{pmatrix} .
+%\end{equation}
+
