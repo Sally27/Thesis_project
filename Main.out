@@ -9,19 +9,19 @@
 \BOOKMARK [1][-]{section.2.2}{Lagrangian of the Standard Model}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.3}{Quark Mixing Matrix}{chapter.2}% 10
 \BOOKMARK [0][-]{chapter.3}{The LHCb detector}{}% 11
-\BOOKMARK [1][-]{section.3.1}{LHCb Layout ULRIK}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{VErtex LOcator ULRIK}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.3}{Tracking System ULRIK}{chapter.3}% 14
-\BOOKMARK [2][-]{subsection.3.3.1}{Tracking Algorithms ULRIK}{section.3.3}% 15
-\BOOKMARK [1][-]{section.3.4}{Ring Imaging Detectors ULRIK}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.5}{RICH Reconstruction and Performance ULRIK}{chapter.3}% 17
-\BOOKMARK [2][-]{subsection.3.5.1}{RICH performance ULRIK}{section.3.5}% 18
-\BOOKMARK [1][-]{section.3.6}{Calorimetry ULRIK}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.7}{Muon Stations ULRIK}{chapter.3}% 20
-\BOOKMARK [2][-]{subsection.3.7.1}{Muon Identification ULRIK}{section.3.7}% 21
-\BOOKMARK [2][-]{subsection.3.7.2}{Muon Performance ULRIK}{section.3.7}% 22
-\BOOKMARK [1][-]{section.3.8}{Trigger ULRIK}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.9}{Simulation ULRIK}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.1}{LHCb Layout }{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{VErtex LOcator }{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.3}{Tracking System }{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.3.1}{Tracking Algorithms }{section.3.3}% 15
+\BOOKMARK [1][-]{section.3.4}{Ring Imaging Detectors }{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.5}{RICH Reconstruction and Performance }{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.5.1}{RICH performance }{section.3.5}% 18
+\BOOKMARK [1][-]{section.3.6}{Calorimetry }{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.7}{Muon Stations }{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.7.1}{Muon Identification }{section.3.7}% 21
+\BOOKMARK [2][-]{subsection.3.7.2}{Muon Performance }{section.3.7}% 22
+\BOOKMARK [1][-]{section.3.8}{Trigger }{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.9}{Simulation }{chapter.3}% 24
 \BOOKMARK [2][-]{subsection.3.9.1}{Differences in Simulation And Data ULRIK - not fully finished}{section.3.9}% 25
 \BOOKMARK [0][-]{chapter.4}{Handling of trimuon correlations at LHCb}{}% 26
 \BOOKMARK [1][-]{section.4.1}{Muon PID variables }{chapter.4}% 27
@@ -43,7 +43,7 @@
 \BOOKMARK [2][-]{subsection.5.4.2}{Simulation Samples ULRIK}{section.5.4}% 43
 \BOOKMARK [1][-]{section.5.5}{Preselection for B + \040+- + ULRIK}{chapter.5}% 44
 \BOOKMARK [1][-]{section.5.6}{Trigger Selection ULRIK}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.7}{q2 selection ULRIK}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.7}{q2 Selection ULRIK}{chapter.5}% 46
 \BOOKMARK [1][-]{section.5.8}{Further Selection ULRIK}{chapter.5}% 47
 \BOOKMARK [2][-]{subsection.5.8.1}{General Features of Multivariate Selections ULRIK}{section.5.8}% 48
 \BOOKMARK [2][-]{subsection.5.8.2}{The Isolation Boosted Decision Tree ULRIK}{section.5.8}% 49
@@ -51,25 +51,27 @@
 \BOOKMARK [2][-]{subsection.5.8.4}{The Misid Boosted Decision Tree ULRIK}{section.5.8}% 51
 \BOOKMARK [2][-]{subsection.5.8.5}{Fitting Region Selection}{section.5.8}% 52
 \BOOKMARK [2][-]{subsection.5.8.6}{Further PID Selection ULRIK}{section.5.8}% 53
-\BOOKMARK [1][-]{section.5.9}{Multiple Candidates}{chapter.5}% 54
+\BOOKMARK [1][-]{section.5.9}{Normalisation channel ULRIK}{chapter.5}% 54
 \BOOKMARK [1][-]{section.5.10}{Fractional Corrected Mass Error \(FCME\) Window Split ULRIK}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.11}{Normalisation channel ULRIK}{chapter.5}% 56
-\BOOKMARK [0][-]{chapter.6}{Efficiencies}{}% 57
-\BOOKMARK [1][-]{section.6.1}{Efficiency Ratio}{chapter.6}% 58
-\BOOKMARK [1][-]{section.6.2}{Summary of Efficiencies}{chapter.6}% 59
-\BOOKMARK [2][-]{subsection.6.2.1}{Detector Acceptance Efficiency \(GEN\)}{section.6.2}% 60
-\BOOKMARK [2][-]{subsection.6.2.2}{Reconstruction Efficiency \(REC\)}{section.6.2}% 61
-\BOOKMARK [2][-]{subsection.6.2.3}{Trigger Efficiency \(TRG\)}{section.6.2}% 62
-\BOOKMARK [2][-]{subsection.6.2.4}{Offline Selection \(OFF\)}{section.6.2}% 63
-\BOOKMARK [2][-]{subsection.6.2.5}{Combinatorial BDT and Misid BDT efficiency}{section.6.2}% 64
-\BOOKMARK [2][-]{subsection.6.2.6}{Fitting Range Efficiency \(FR\)}{section.6.2}% 65
-\BOOKMARK [2][-]{subsection.6.2.7}{PID Efficiencies \(PID\)}{section.6.2}% 66
-\BOOKMARK [0][-]{chapter.7}{Results}{}% 67
-\BOOKMARK [0][-]{chapter.7}{Bibliography}{}% 68
-\BOOKMARK [0][-]{chapter*.82}{Appendices}{}% 69
-\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 70
-\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 71
-\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 72
-\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 73
-\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 74
-\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 75
+\BOOKMARK [0][-]{chapter.6}{ Mass fits and efficiencies}{}% 56
+\BOOKMARK [1][-]{section.6.1}{Mass Fits}{chapter.6}% 57
+\BOOKMARK [2][-]{subsection.6.1.1}{Normalisation Channel}{section.6.1}% 58
+\BOOKMARK [2][-]{subsection.6.1.2}{Signal Fit}{section.6.1}% 59
+\BOOKMARK [1][-]{section.6.2}{Efficiency Ratio}{chapter.6}% 60
+\BOOKMARK [1][-]{section.6.3}{Summary of Efficiencies}{chapter.6}% 61
+\BOOKMARK [2][-]{subsection.6.3.1}{Detector Acceptance Efficiency \(GEN\)}{section.6.3}% 62
+\BOOKMARK [2][-]{subsection.6.3.2}{Reconstruction Efficiency \(REC\)}{section.6.3}% 63
+\BOOKMARK [2][-]{subsection.6.3.3}{Trigger Efficiency \(TRG\)}{section.6.3}% 64
+\BOOKMARK [2][-]{subsection.6.3.4}{Offline Selection \(OFF\)}{section.6.3}% 65
+\BOOKMARK [2][-]{subsection.6.3.5}{Combinatorial BDT and Misid BDT efficiency}{section.6.3}% 66
+\BOOKMARK [2][-]{subsection.6.3.6}{Fitting Range Efficiency \(FR\)}{section.6.3}% 67
+\BOOKMARK [2][-]{subsection.6.3.7}{PID Efficiencies \(PID\)}{section.6.3}% 68
+\BOOKMARK [0][-]{chapter.7}{Results}{}% 69
+\BOOKMARK [0][-]{chapter.7}{Bibliography}{}% 70
+\BOOKMARK [0][-]{chapter*.85}{Appendices}{}% 71
+\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 72
+\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 73
+\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 74
+\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 75
+\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 76
+\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 77

@@ -1,9 +1,104 @@
-\chapter{Efficiencies}
+\chapter{ Mass fits and efficiencies}
 
 \textit{ To be able to translate observed signal events into branching fraction estimate,  the normalisation channel
 of \bjpsimumuk is used. Both, for signal and normalisation
 channel the absolute efficiencies, luminosity, the b-quark cross-section or fragmentation fractions will
 cancel. There are, however, efficiencies that will not cancel and will be necessary for the final limit setting procedure. In this section, methods of obtaining efficiencies of selection for normalisation and signal channel are described as well as efficiencies themselves.}
+
+\section{Mass Fits}
+
+\subsection{Normalisation Channel}
+
+The obtain the \bjpsimumuk yield of Run \Rn{1} and Run \Rn{2}, an unbinned extended maximum likelihood fit to the invariant $\mu^{+} \mu^{-} K^{+}$ data distribution in each respective year is performed. In order to perform this fit different contributions to these spectrum are described. The \bjpsimumuk decays are very often studies at LHCb and in this particular case, there will be three components to the fit. The first component is the proxy for signal, which is provided by PID-weighted simulation and can be best described by double-sided Ipatia function, described in~\autoref{IP}, where all the parameters apart from $\mu^{IP},\sigma^{IP}$ are fixed from the signal simulations. These simulations passed through the same selection process as the \bjpsimumuk data, which was described in~\autoref{nchannel}, except that instead of directly cutting on \gls{PID} variables, the simulations were reweighted with the relevant PID.  
+Since the PID requirement on kaon is very loose, there will background contribution from $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$.
+This contribution is modelled by double-sided Crystal Ball function to $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$ MC under kaon mass hypothesis. Again, all the parameters apart from $\mu^{CB},\sigma^{CB}$ will be fixed from the fit of this sample. In ~\autoref{fig:FitToPiMuMu}, fits to signal MC and misid MC from Stripping 21 are showed. For signal, Run1 (Stripping 21) and 2016 (Stripping 26 - TCK 288888335) MC samples are used, for misid Stripping 21 is used for all samples. Combinatorial background is modelled by exponential function. The $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ signal yield is extracted by performing an unbinned extended
+maximum likelihood fit to the invariant $\mu^{+} \mu^{-} K^{+}$ distribution in $5150<M_{B^{+}}<5450$. Fits to the $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ for Run1 and 2016 are shown in~\autoref{fig:run1jpsikfitnofcme}.
+
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ l  l }
+\toprule
+Fit Parameter & Status  \\ \midrule
+\multicolumn{2}{c}{Yields} \\ \midrule
+N$_{\bjpsimumuk}$ (Signal)  &  free \\
+N$_{\bjpsimumupi}$ & free\\
+N$_{Combinatorial}$ & free\\
+\midrule
+	\multicolumn{2}{c}{Signal Shape Parameters (double-sided Ipatia)} \\
+\midrule
+	$\mu^{IP}_{\bjpsimumuk}$ & constrained from signal MC\\
+	$\sigma^{IP}_{\bjpsimumuk}$ & constrained from signal MC\\
+Others & fixed from MC\\
+\midrule
+     \multicolumn{2}{c}{\bjpsimumupi Shape Parameters (double-sided Crystal Ball)} \\
+\midrule
+	$\mu^{CB}_{\bjpsimumupi}$ & constrained from signal MC\\
+	$\sigma^{CB}_{\bjpsimumupi}$ & constrained from signal MC\\
+Others & fixed from MC \\
+\midrule
+	\multicolumn{2}{c}{Combinatorial Shape Parameters}  \\
+\midrule
+exponential par.  & free\\
+\bottomrule
+\end{tabular}
+\caption{Summary of the fit parameters and individual component constraints for the fit to \bjpsimumuk decays.}
+\label{tab:floatingparsummarynorm}
+\end{table}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlnofcmeRun1.pdf}\put(-50,133){(a)}%
+\includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlnofcme2016.pdf}\put(-50,133){(b)}%
+
+\includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controllowhfcmeRun1.pdf}\put(-50,133){(c)}%
+\includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controllowfcme2016.pdf}\put(-50,133){(d)}%
+
+
+	\includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlhighfcmeRun1.pdf}\put(-50,133){(e)}%
+\includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlhighfcme2016.pdf}\put(-50,133){(f)}%
+%\includegraphics[width=0.5\linewidth]{./normalisationfits/HypatiaplotJpsiKFitLogyPrettyRun1lowFCME.pdf}\put(-50,133){(c)}%
+%\includegraphics[width=0.5\linewidth]{./normalisationfits/HypatiaplotJpsiKFitLogyPretty2016lowFCME.pdf}\put(-50,133){(d)}%
+
+%\includegraphics[width=0.5\linewidth]{./normalisationfits/HypatiaplotJpsiKFitLogyPrettyRun1highFCME.pdf}\put(-50,133){(e)}%
+%\includegraphics[width=0.5\linewidth]{./normalisationfits/HypatiaplotJpsiKFitLogyPretty2016highFCME.pdf}\put(-50,133){(f)}%
+\caption{Fit to (a) Stripping21 and 21r1 (b) Stripping 26 data with no fractional corrected mass split, (c)(d) low FCME, (e)(f)high FCME.}
+%\vspace*{-1.0cm}
+\label{fig:run1jpsikfitnofcme}
+\end{figure}
+
+
+
+
+Yields from fit to \bjpsimumuk are obtained and summarized in~\autoref{tab:normchannelyields}.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{ l  l  l  l }
+\toprule
+Sample & Stripping & Split  &Yields \\
+\midrule
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & NOFCME & 173422$\pm$446  \\
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & NOFCME &94491$\pm$313  \\
+\midrule
+$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & lowFCME & 109224$\pm$337  \\
+$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & lowFCME & 64723$\pm$259  \\
+\midrule
+$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & highFCME &64078$\pm$257  \\
+$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & highFCME & 29760$\pm$176  \\
+\bottomrule
+\end{tabular}
+\end{center}
+	\caption{ \bjpsimumuk signal yield obtained from fits to $\mu^{+} \mu^{-} K^{+}$ mass spectrum shown in~\autoref{fig:run1jpsikfitnofcme}.}
+\label{tab:normchannelyields}
+\end{table}
+
+
+
+
+\subsection{Signal Fit}
+
 
 \section{Efficiency Ratio}
 \label{EfficiencyRatio}
