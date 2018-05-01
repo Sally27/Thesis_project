@@ -7,13 +7,39 @@ cancel. There are, however, efficiencies that will not cancel and will be necess
 
 \section{Mass Fits}
 
-\subsection{Normalisation Channel}
+\subsection{Normalisation Channel Fit}
 
-The obtain the \bjpsimumuk yield of Run \Rn{1} and Run \Rn{2}, an unbinned extended maximum likelihood fit to the invariant $\mu^{+} \mu^{-} K^{+}$ data distribution in each respective year is performed. In order to perform this fit different contributions to these spectrum are described. The \bjpsimumuk decays are very often studies at LHCb and in this particular case, there will be three components to the fit. The first component is the proxy for signal, which is provided by PID-weighted simulation and can be best described by double-sided Ipatia function, described in~\autoref{IP}, where all the parameters apart from $\mu^{IP},\sigma^{IP}$ are fixed from the signal simulations. These simulations passed through the same selection process as the \bjpsimumuk data, which was described in~\autoref{nchannel}, except that instead of directly cutting on \gls{PID} variables, the simulations were reweighted with the relevant PID.  
-Since the PID requirement on kaon is very loose, there will background contribution from $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$.
-This contribution is modelled by double-sided Crystal Ball function to $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$ MC under kaon mass hypothesis. Again, all the parameters apart from $\mu^{CB},\sigma^{CB}$ will be fixed from the fit of this sample. In ~\autoref{fig:FitToPiMuMu}, fits to signal MC and misid MC from Stripping 21 are showed. For signal, Run1 (Stripping 21) and 2016 (Stripping 26 - TCK 288888335) MC samples are used, for misid Stripping 21 is used for all samples. Combinatorial background is modelled by exponential function. The $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ signal yield is extracted by performing an unbinned extended
-maximum likelihood fit to the invariant $\mu^{+} \mu^{-} K^{+}$ distribution in $5150<M_{B^{+}}<5450$. Fits to the $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ for Run1 and 2016 are shown in~\autoref{fig:run1jpsikfitnofcme}.
 
+The obtain the \bjpsimumuk yield of Run \Rn{1} and Run \Rn{2}, an unbinned extended maximum likelihood fit to the invariant $\mu^{+} \mu^{-} K^{+}$ data distribution in each respective year is performed. In order to perform the fit, three different contributions to these mass spectrums are considered. 
+%The \bjpsimumuk decays are very often studies at LHCb and in this particular case, there will be three components to the fit.
+
+\subsubsection{Signal}
+
+The first component is the signal itself, which is modelled with PID-weighted simulation and can be best described by double-sided Ipatia function, detailed in~\autoref{IP}, where all the parameters apart from the mean $\mu^{IP}$ and width $\sigma^{IP}$ are fixed from the signal simulations. These simulations passed through the same selection process as the corresponding \bjpsimumuk data, described in~\autoref{nchannel}, with one exception. Instead of directly cutting on \gls{PID} variables, the simulations were reweighted with the relevant PID weights, because of known mismatch between simulation and data. More on this will be covered in~\autoref{PIDaff}. 
+
+
+\subsubsection{\mb{\bjpsimumupi} Background}
+
+Secondly, since the PID requirements on kaon are very loose, there will background contribution from $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$. This contribution is modelled by double-sided Crystal Ball function to $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$ simulation, where the pion track is given kaon mass hypothesis. Again, all the parameters apart from mean $\mu^{CB}$ and width $\sigma^{CB}$ are fixed from the fit of this simulation. In ~\autoref{fig:FitToPiMuMu}, fits to \bjpsimumuk simulation and \bjpsimumupi simulation from Stripping 21 are showed using different scales.
+For signal, Run \Rn{1} Stripping 21 simulation is used and for Run \Rn{2} (Stripping 26 - TCK 288888335) simulation sample is used, for \bjpsimumupi Stripping 21 is used for all samples.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.45\linewidth]{./efficiency/controlchannelfits/controlsigmcnofcmeRun1nolog.pdf}\put(-50,57){(a)}%
+\includegraphics[width=0.45\linewidth]{./efficiency/controlchannelfits/controlsigmcnofcmeRun1log.pdf}\put(-50,57){(b)}
+
+
+\includegraphics[width=0.45\linewidth]{./efficiency/controlchannelfits/controlpimumumcnofcmeRun1nolog.pdf}\put(-50,57){(c)}%
+\includegraphics[width=0.45\linewidth]{./efficiency/controlchannelfits/controlpimumumcnofcmeRun1log.pdf}\put(-50,57){(d)}
+	
+\caption{Fit to 2012 (a) \bjpsimumuk simulation and (c) \bjpsimumupi simulation under kaon mass hypothesis. On right, the same
+ plots but with logharitmic scale instead.}
+\label{fig:FitToPiMuMu}
+\end{figure}
+
+\subsubsection{Combinatorial Background}
+
+Lastly, combinatorial background is modelled by exponential function, where the exponential constant is let free. The full fit model, containing description of the individual components as well as their constraints that are propagated to the extended maximum likelihood fit is given in~\autoref{tab:floatingparsummarynorm}. 
 
 
 \begin{table}[h]
@@ -48,7 +74,13 @@ exponential par.  & free\\
 \end{table}
 
 
-\begin{figure}[h]
+\subsubsection{Fit to \mb{\bjpsimumuk} Data}
+
+The $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ signal yield is extracted by performing an unbinned extended maximum likelihood fit to the invariant $\mu^{+} \mu^{-} K^{+}$ distribution in $5150<M_{B^{+}}<5450$. Fits to the $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ for Run \Rn{1} and \Rn{2} are shown in~\autoref{fig:run1jpsikfitnofcme}. Yields from fit to \bjpsimumuk are obtained and summarized in~\autoref{tab:normchannelyields}.
+
+
+\newpage
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlnofcmeRun1.pdf}\put(-50,133){(a)}%
 \includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlnofcme2016.pdf}\put(-50,133){(b)}%
@@ -57,14 +89,14 @@ exponential par.  & free\\
 \includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controllowfcme2016.pdf}\put(-50,133){(d)}%
 
 
-	\includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlhighfcmeRun1.pdf}\put(-50,133){(e)}%
+\includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlhighfcmeRun1.pdf}\put(-50,133){(e)}%
 \includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlhighfcme2016.pdf}\put(-50,133){(f)}%
 %\includegraphics[width=0.5\linewidth]{./normalisationfits/HypatiaplotJpsiKFitLogyPrettyRun1lowFCME.pdf}\put(-50,133){(c)}%
 %\includegraphics[width=0.5\linewidth]{./normalisationfits/HypatiaplotJpsiKFitLogyPretty2016lowFCME.pdf}\put(-50,133){(d)}%
 
 %\includegraphics[width=0.5\linewidth]{./normalisationfits/HypatiaplotJpsiKFitLogyPrettyRun1highFCME.pdf}\put(-50,133){(e)}%
 %\includegraphics[width=0.5\linewidth]{./normalisationfits/HypatiaplotJpsiKFitLogyPretty2016highFCME.pdf}\put(-50,133){(f)}%
-\caption{Fit to (a) Stripping21 and 21r1 (b) Stripping 26 data with no fractional corrected mass split, (c)(d) low FCME, (e)(f)high FCME.}
+	\caption{Fit results in logharithmic scale to (a) Run \Rn{1} (b) Run \Rn{2} $\mu^{+} \mu^{-} K^{+}$ mass spectrum with no fractional corrected mass split, (c)(d) low FCME bin, (e)(f)high FCME bin.}
 %\vspace*{-1.0cm}
 \label{fig:run1jpsikfitnofcme}
 \end{figure}
@@ -72,7 +104,6 @@ exponential par.  & free\\
 
 
 
-Yields from fit to \bjpsimumuk are obtained and summarized in~\autoref{tab:normchannelyields}.
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{ l  l  l  l }
@@ -97,7 +128,159 @@ $N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & highFCME & 29760$\pm$176  \
 
 
 
-\subsection{Signal Fit}
+\subsection{Signal Channel Fit}
+A simultaneous unbinned maximum likelihood fit to the $\mu^{+} \mu^{-} \mu^{+}$ corrected mass spectrum to combined Run \Rn{1} and \Rn{2} dataset after the full selection in two bins of fractional corrected mass error is performed. As the corrected mass error have a dependence on resolution as mentioned in \autoref{split}, this split will increase sensitivity.
+Shapes and yields used for different components of the signal corrected mass fits will be described in this sections.
+Components are constrained using either by using data driven methods or simulated samples.
+
+Throughout the analysis there was a \textbf{blinding procedure} in place where the signal region $4500\mevcc <M_{B_{corr}}<5500\mevcc$ was blinded. \mybox{\color{red} Sally once unblinded delete} Hence in data plots in this region is omitted. In blinded unbinned likelihood fit, the shapes and yields are extrapolated to the blinded region in order to asses sensitivity, summarized in Section ~\ref{fitsens}. Once given permission to unblind unbinned likelihood fit to full data will be perfomed with signal yield floating and mean $\mu_{sig}$ and width $\sigma_{sig}$ constrained from simulation.
+
+\subsubsection{Signal}
+The full fit to Run \Rn{1} and Run \Rn{2} data requires the signal shape knowledge for combined dataset. This is obtained fromRun \Rn{1} and Run \Rn{2} signal simulation \textit{cocktail}. The cocktail is created after full selection by assigning event-by-event weights, \textit{$w^{i}$}, which capture the differences between Run \Rn{1} and Run \Rn{2} simulation, that ware not considered by full selection.
+
+Firstly, weights that reflect the expected difference due to increased luminosity are computed. To obtain these signal weights, following conditions must be satisfied
+
+%Signal shape for Run \Rn{1} and Run \Rn{2} is described by probability density function (P.D.F) in corrected mass taken from $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_\mu$ 2012 MC and 2016 MC cocktail. After all respective
+%selection, this cocktail is created by assigning event-by-event weights. Signal event-by-event weights, \textit{$w^{i}$}, to create cocktail come from differences between 2012 MC and 2016 MC. To obtain signal weights, following conditions must be satisfied,
+\begin{equation}
+n^{2012}=\mathcal{L}^{2012} \times \sigma^{2012}_{pp \rightarrow b \overline{b}},
+\end{equation}
+
+\begin{equation}
+n^{2016}=\mathcal{L}^{2016} \times \sigma^{2016}_{pp \rightarrow b \overline{b}},
+\end{equation}
+
+\begin{equation}
+w^{2012} \times N^{2012} + w^{2016} \times N^{2016} = N^{2012} + N^{2016},
+\end{equation}
+
+\begin{equation}
+\frac{w^{2012} \times N^{2012}}{w^{2016} \times N^{2016}} = \frac{n^{2012}}{n^{2016}}.
+\end{equation}
+
+These constraints yield following value for event-by-event (or rather yearly) weights
+
+\begin{equation}
+w^{2012}= \frac{N^{2012}+N^{2016}}{N^{2012}+ \frac{n^{2016}}{n^{2012}}}=0.93,
+\end{equation}
+
+
+\begin{equation}
+w^{2016}= \frac{N^{2016}+N^{2012}}{N^{2016}+ \frac{n^{2012}}{n^{2016}}}=1.09,
+\end{equation}
+
+where $N^{2012},N^{2016}$ number of events at \textit{generator level}, $\mathcal{L}^{2012},\mathcal{L}^{2016}$ are integrated luminosities, and $\sigma^{2012}_{pp \rightarrow b \overline{b}}, \sigma^{2016}_{pp \rightarrow b \overline{b}}$ are cross-sections in a given year. $N^{2012},N^{2016}$ number of events at \textit{generator level} is obtained by dividing number of reconstructed events $N_{REC}$ by the reconstruction efficiency $\varepsilon_{REC}$ (see~\autoref{tab:effsumarry}). Values for these variables are summarized in Table ~\ref{tab:MCweightNOFCME}.
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ l  c  c }
+\toprule
+Summary & 2012 Simulation & 2016 Simulation \\
+\midrule
+%$\epsilon_{PID}$ & taken from PID & taken from PID  \\
+%$\epsilon_{GEN}$  & 0.18643$\pm$0.00029 & 0.1977$\pm$0.0004 \\
+
+
+$N_{REC}$  & 1114130 & 1107715 \\
+$\mathcal{L}$ & 2968 $\rm{pb^{-1}}$ & 1612 $\rm{pb^{-1}}$ \\
+$\sigma_{pp \rightarrow b \overline{b}}$ & 1 & 2  \\
+\bottomrule
+\end{tabular}
+\caption{Signal MC weights used to create cocktail of mixed 2012+2016 MC.}
+\label{tab:MCweightNOFCME}
+\end{table}
+
+Secondly, event-by-event weight which differs between Run \Rn{1} and \Rn{2} that need to be accounted is PID efficiency $\varepsilon_{PID}$ (see~\autoref{tab:effsumarry}), which depends on the kinematics of the final state particles. It is denoted as $w^{i\varepsilon\{2012,2016\}}_{\varepsilon^{i}_{PID}}$. 
+
+The final weight of an event depending on Run \Rn{1} and Run \Rn{2} is calculated 
+
+\begin{equation}
+	w^{i\varepsilon\{2012,2016\}}_{total}=  w^{i\varepsilon\{2012,2016\}} \times w^{i\varepsilon\{2012,2016\}}_{\varepsilon^{i}_{PID}}.
+\end{equation}
+
+After obtaining combined Run \Rn{1} and \Rn{2} signal \textit{cocktail}, fit to this weighted simulation is done with the shape in the corrected mass modelled by double-sided Crystal Ball function~\autoref{IP}. Fit and its parameters can be seen in~\autoref{fig:MCSignalFit}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{./efficiency/signalfits/signalmc/sigmcnofcmeRun1nolog.pdf}\put(-30,60){(a)}
+\newline
+\includegraphics[width=0.5\linewidth]{./efficiency/signalfits/signalmc/sigmclowfcmeRun1nolog.pdf}\put(-30,60){(b)}%
+\includegraphics[width=0.5\linewidth]{./efficiency/signalfits/signalmc/sigmchighfcmeRun1nolog.pdf}\put(-30,60){(c)}%
+\caption{Fit to weighted combined signal \textit{cocktail} for (a) NO FCME (b) Low FCME and (c) High FCME split.}
+%\vspace*{-1.0cm}
+\label{fig:MCSignalFit}
+\end{figure}
+
+\subsubsection{Partially Reconstructed Background}
+Simulation sample for partially reconstructed background that originates through $D^{0}$ was described in Section ~\ref{PartRecoCon}. This sample passed all of the selection and total selection efficiency $\varepsilon_{totalsel}$ is listed in Table ~\ref{tab:prsum}. \label{partdetailed} The Table~\ref{tab:partrecotabapp} in Appendix~\ref{partdetailed} details the efficiencies in individual steps of selection. Normalising to \bjpsimumuk decay channel following relationship must hold
+
+\begin{equation}
+\frac{\mathcal{B}(\pr)}{\mathcal{B}(\bjpsimumuk)}= \frac{\varepsilon_{\pr}}{\varepsilon_{\bjpsimumuk}} \times \frac{N_{\pr}}{N_{\bjpsimumuk}}.
+ \end{equation}
+
+Hence to obtain number of partially reconstructed background events following equation is used: 
+
+\begin{equation}
+N^{year}= \frac{N(\bjpsimumuk) \times \varepsilon_{GEN_{pr}} \times \varepsilon_{TOT_{pr}}}{\varepsilon_{GEN_{\bjpsimumuk}} \times \varepsilon_{TOT_{\bjpsimumuk}}}
+\end{equation}
+
+
+
+%produced in /vols/lhcb/ss4314/compare_mcpartreco_and_mcsignal/normalize_to_jpsiK/bin using the nicer figure staff
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{| l | l | l |}
+\hline
+Properties & Run1 (2012 MC) & 2016 (2012 MC)  \\
+\hline
+\hline
+ $\mathcal{B}(B^+ \rightarrow K^+ \pi^- \mu^+ \mu^{-})$ & $(4.10\pm0.50)\times 10 ^{-7 }$ &$(4.10\pm0.50)\times 10 ^{-7 }$ \\
+  $\mathcal{B}(B^+ \rightarrow (J/\psi \rightarrow \mu^+ \mu^{-}) K^{+})$ &$(6.12\pm0.19)\times 10 ^{-5 }$ & $(6.12\pm0.19)\times 10 ^{-5 }$ \\
+\hline
+  $\varepsilon_{gen}$ & $(1.61\pm0.00)\times 10 ^{-1 }$ & Using 2012  \\
+  $\varepsilon_{sel}$ &  $(1.16\pm0.02)\times 10 ^{-3 }$ & Using 2012  \\
+\hline
+ $\varepsilon_{gennorm}$ & $(1.62\pm0.00)\times 10 ^{-1 }$ &  Using 2012 \\
+ $\varepsilon_{selnorm}$ & $(3.58\pm0.01)\times 10 ^{-2 }$ & Using 2012  \\
+\hline
+ \hline
+ \multicolumn{3}{|c|}{\textbf{lowFCME}}  \\
+ \hline
+$ \mathcal{B} \times \varepsilon_{pr} $ low &  $(3.80\pm0.50)\times 10 ^{-11 }$ & Using 2012 \\
+$ \mathcal{B} \times \varepsilon_{norm} $ low &  $(2.10\pm0.06)\times 10 ^{-7 }$ & Using 2012 \\
+$ \frac{\mathcal{B} \times \varepsilon_{pr}}{\mathcal{B} \times \varepsilon_{norm}}$ low  &  $(1.81\pm0.24)\times 10 ^{-4 }$ & Using 2012  \\
+N($B^+ \rightarrow (J/\psi \rightarrow \mu^+ \mu^{-}) K^{+}$) low & 109000$\pm$337 & 64700$\pm$259 \\
+N($B^+ \rightarrow (D^{0} \rightarrow K^+ \pi^- \mu^+ \mu^{-}) \mu^+ \nu$ low & \textbf{19.8$\pm$2.58} & \textbf{11.7$\pm$1.53} \\
+\hline
+ \hline
+ \multicolumn{3}{|c|}{\textbf{highFCME}}  \\
+ \hline
+$ \mathcal{B} \times \varepsilon_{pr} $ high &  $(3.80\pm0.50)\times 10 ^{-11 }$ & Using 2012 \\
+$ \mathcal{B} \times \varepsilon_{norm} $ high &  $(1.44\pm0.04)\times 10 ^{-7 }$ & Using 2012 \\
+$ \frac{\mathcal{B} \times \varepsilon_{pr}}{\mathcal{B} \times \varepsilon_{norm}}$ high  &  $(2.60\pm0.40)\times 10 ^{-4 }$ & Using 2012  \\
+N($B^+ \rightarrow (J/\psi \rightarrow \mu^+ \mu^{-}) K^{+}$) high & 64100$\pm$257 & 29800$\pm$176 \\
+N($B^+ \rightarrow (D^{0} \rightarrow K^+ \pi^- \mu^+ \mu^{-}) \mu^+ \nu$ high & \textbf{17$\pm$2.21} & \textbf{7.89$\pm$1.03} \\
+\hline
+ \hline
+ \multicolumn{3}{|c|}{\textbf{noFCME}}  \\
+ \hline
+$ \mathcal{B} \times \varepsilon_{pr} $ no &  $(7.63\pm0.95)\times 10 ^{-11 }$ & Using 2012 \\
+$ \mathcal{B} \times \varepsilon_{norm} $ no &  $(3.55\pm0.11)\times 10 ^{-7 }$ & Using 2012 \\
+$ \frac{\mathcal{B} \times \varepsilon_{pr}}{\mathcal{B} \times \varepsilon_{norm}}$ no  &  $(2.15\pm0.28)\times 10 ^{-4 }$ & Using 2012  \\
+N($B^+ \rightarrow (J/\psi \rightarrow \mu^+ \mu^{-}) K^{+}$) no & 173000$\pm$446 & 94500$\pm$314 \\
+N($B^+ \rightarrow (D^{0} \rightarrow K^+ \pi^- \mu^+ \mu^{-}) \mu^+ \nu$ no & \textbf{37.3$\pm$4.8} & \textbf{20.3$\pm$2.61} \\
+\hline
+\hline
+\end{tabular}
+\end{center}
+\caption{Calculation of number of events that comes from partially reconstructed backgrounds, assuming 2012 efficiencies but extrapolating to 2011,2012,2016 samples. $\mathcal{B}(B^+ \rightarrow K^+ \pi^- \mu^+ \mu^{-})$ is obtained by multiplying  $\mathcal{B}(D^{0} \rightarrow K^+ \pi^- \mu^+ \mu^{-}) $ and $\mathcal{B}(B^{+} \rightarrow D l^{+} \nu $ anything) = $(4.10\pm0.50)\times 10 ^{-7 }$. Normalisation channel $B^+ \rightarrow (J/\psi \rightarrow \mu^+ \mu^{-}) K^{+}$ was used to normalize to using Run1 and 2016 yields. Assumes $\varepsilon_{PID}$ between normalisation and partially reconstructed sample ratio 1.}
+\label{tab:prsum}
+\end{table}
+
+
+
 
 
 \section{Efficiency Ratio}
@@ -533,6 +716,7 @@ As discussed in~\autoref{fittingsel},\mybox{reference combinatorial section}, fi
 %\end{table}
 
 \subsection{\gls{PID} Efficiencies (PID)}
+\label{PIDaff}
 As \gls{PID} variables are not correctly modelled in simulation, mentioned in~\autoref{simulationchap}, data-driven approach of extracting PID efficiency is taken. To not introduce any biases in previous steps, especially in multivariate selection, PID efficiencies are evaluated at the end of the selection chain with \texttt{PIDCalib} package data samples.
 
 The PID efficiency is higher for normalisation channel with all PID requiremnts givne in~\autoref{tab:PIDselectionNorm} compared to signal provided in~\autoref{tab:PIDselection} due to weaker PID requirement on kaon as compared to muons.

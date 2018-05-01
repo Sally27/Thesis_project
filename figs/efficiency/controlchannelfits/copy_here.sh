@@ -12,3 +12,14 @@ scp -r ss4314@lx00.hep.ph.ic.ac.uk:/home/hep/ss4314/public_html/fitcontrol/fitco
 
 scp -r ss4314@lx00.hep.ph.ic.ac.uk:/home/hep/ss4314/public_html/fitcontrol/fitcontrolchannelFUMSB_simultaneous_NewTCK_PIDoptimisation_extremeweights/2016_probmu35/HighFCME/HypatiaplotJpsiKFitLogyPretty_veryniceplot_paper2016.pdf controlhighfcme2016.pdf
 
+
+
+
+scp -r ss4314@lx00.hep.ph.ic.ac.uk:/home/hep/ss4314/public_html/fitcontrol/fitcontrolchannelFUMSB_NOTsimultaneous_NewTCK_PIDoptimisation_extremeweights/probnnmu035/NOFCME/SimSig_HypatiaplotJpsiKFitLogyPretty_veryniceplot_paperRun1.pdf controlsigmcnofcmeRun1log.pdf
+
+scp -r ss4314@lx00.hep.ph.ic.ac.uk:/home/hep/ss4314/public_html/fitcontrol/fitcontrolchannelFUMSB_NOTsimultaneous_NewTCK_PIDoptimisation_extremeweights/probnnmu035/NOFCME/SimSig_HypatiaplotJpsiKFitPretty_veryniceplot_paperRun1.pdf controlsigmcnofcmeRun1nolog.pdf
+
+scp -r ss4314@lx00.hep.ph.ic.ac.uk:/home/hep/ss4314/public_html/fitcontrol/fitcontrolchannelFUMSB_NOTsimultaneous_NewTCK_PIDoptimisation_extremeweights/probnnmu035/NOFCME/SimPiMuMu_HypatiaplotJpsiKFitLogyPretty_veryniceplot_paperRun1.pdf controlpimumumcnofcmeRun1log.pdf
+
+
+scp -r ss4314@lx00.hep.ph.ic.ac.uk:/home/hep/ss4314/public_html/fitcontrol/fitcontrolchannelFUMSB_NOTsimultaneous_NewTCK_PIDoptimisation_extremeweights/probnnmu035/NOFCME/SimPiMuMu_HypatiaplotJpsiKFitPretty_veryniceplot_paperRun1.pdf controlpimumumcnofcmeRun1nolog.pdf
