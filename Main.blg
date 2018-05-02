@@ -16,45 +16,45 @@ Warning--I didn't find a database entry for "param"
 Warning--I didn't find a database entry for "Buras"
 Warning--I didn't find a database entry for "jarsklog"
 Warning--I didn't find a database entry for "secondjar"
-You've used 41 entries,
+You've used 43 entries,
             2909 wiz_defined-function locations,
-            960 strings with 13199 characters,
-and the built_in function-call counts, 192162 in all, are:
-= -- 21009
-> -- 325
+            976 strings with 13572 characters,
+and the built_in function-call counts, 198098 in all, are:
+= -- 21653
+> -- 341
 < -- 2
-+ -- 1161
-- -- 77
-* -- 19668
-:= -- 23453
-add.period$ -- 41
-call.type$ -- 41
-change.case$ -- 40
++ -- 1217
+- -- 81
+* -- 20239
+:= -- 24231
+add.period$ -- 43
+call.type$ -- 43
+change.case$ -- 42
 chr.to.int$ -- 0
-cite$ -- 41
-duplicate$ -- 2852
-empty$ -- 20377
-format.name$ -- 77
-if$ -- 41986
+cite$ -- 43
+duplicate$ -- 3006
+empty$ -- 20981
+format.name$ -- 81
+if$ -- 43268
 int.to.chr$ -- 0
-int.to.str$ -- 41
-missing$ -- 171
-newline$ -- 257
-num.names$ -- 35
-pop$ -- 714
+int.to.str$ -- 43
+missing$ -- 182
+newline$ -- 269
+num.names$ -- 37
+pop$ -- 749
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 286
+skip$ -- 301
 stack$ -- 0
-substring$ -- 57744
+substring$ -- 59386
 swap$ -- 3
-text.length$ -- 84
+text.length$ -- 88
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 1015
-width$ -- 43
-write$ -- 618
+while$ -- 1071
+width$ -- 45
+write$ -- 652
 (There were 8 warnings)

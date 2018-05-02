@@ -60,24 +60,25 @@
 \contentsline {subsubsection}{\mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {(\ensuremath {{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\psi }\xspace \mskip 2mu}}}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}}\xspace }\xspace ){\ensuremath {{\ensuremath {\ensuremath {\pi }\xspace }}\xspace ^+}}\xspace }}\xspace \xspace } Background}{104}{section*.73}
 \contentsline {subsubsection}{Combinatorial Background}{104}{section*.75}
 \contentsline {subsubsection}{Fit to \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {(\ensuremath {{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\psi }\xspace \mskip 2mu}}}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}}\xspace }\xspace ){\ensuremath {{\ensuremath {\ensuremath {K}\xspace }}\xspace ^+}}\xspace }}\xspace \xspace } Data}{104}{section*.77}
-\contentsline {subsection}{\numberline {6.1.2}Signal Channel Fit}{107}{subsection.6.1.2}
-\contentsline {subsubsection}{Signal}{108}{section*.80}
-\contentsline {subsubsection}{Partially Reconstructed Background}{110}{section*.83}
-\contentsline {section}{\numberline {6.2}Efficiency Ratio}{113}{section.6.2}
-\contentsline {section}{\numberline {6.3}Summary of Efficiencies}{114}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Detector Acceptance Efficiency (GEN)}{117}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Reconstruction Efficiency (REC)}{117}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Trigger Efficiency (TRG)}{118}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Offline Selection (OFF)}{121}{subsection.6.3.4}
-\contentsline {subsection}{\numberline {6.3.5}Combinatorial BDT and Misid BDT efficiency}{121}{subsection.6.3.5}
-\contentsline {subsection}{\numberline {6.3.6}Fitting Range Efficiency (FR)}{123}{subsection.6.3.6}
-\contentsline {subsection}{\numberline {6.3.7}\gls {PID} Efficiencies (PID)}{124}{subsection.6.3.7}
-\contentsline {chapter}{\numberline {7}Results}{126}{chapter.7}
-\contentsline {chapter}{Bibliography}{127}{chapter.7}
-\contentsline {chapter}{Appendices}{132}{chapter*.95}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{132}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{135}{appendix.B}
-\contentsline {chapter}{\numberline {C}Fitting functions}{137}{appendix.C}
-\contentsline {section}{\numberline {C.1}Crystal Ball function}{137}{section.C.1}
-\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{138}{section.C.2}
-\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{138}{section.C.3}
+\contentsline {subsection}{\numberline {6.1.2}Signal Channel Fit}{105}{subsection.6.1.2}
+\contentsline {subsubsection}{Signal}{107}{section*.80}
+\contentsline {subsubsection}{Partially Reconstructed Background}{109}{section*.83}
+\contentsline {subsubsection}{MisID background}{112}{section*.86}
+\contentsline {section}{\numberline {6.2}Efficiency Ratio}{116}{section.6.2}
+\contentsline {section}{\numberline {6.3}Summary of Efficiencies}{117}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Detector Acceptance Efficiency (GEN)}{120}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Reconstruction Efficiency (REC)}{120}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Trigger Efficiency (TRG)}{121}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Offline Selection (OFF)}{124}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Combinatorial BDT and Misid BDT efficiency}{124}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {6.3.6}Fitting Range Efficiency (FR)}{126}{subsection.6.3.6}
+\contentsline {subsection}{\numberline {6.3.7}\gls {PID} Efficiencies (PID)}{127}{subsection.6.3.7}
+\contentsline {chapter}{\numberline {7}Results}{129}{chapter.7}
+\contentsline {chapter}{Bibliography}{130}{chapter.7}
+\contentsline {chapter}{Appendices}{136}{chapter*.98}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{136}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{139}{appendix.B}
+\contentsline {chapter}{\numberline {C}Fitting functions}{141}{appendix.C}
+\contentsline {section}{\numberline {C.1}Crystal Ball function}{141}{section.C.1}
+\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{142}{section.C.2}
+\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{142}{section.C.3}

@@ -415,4 +415,25 @@ G.~Punzi, \ifthenelse{\boolean{articletitles}}{\emph{{Sensitivity of searches
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Aaij:2015hva}
+LHCb, R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{First
+  observation of the decay $D^{0}\rightarrow K^{-}\pi^{+}\mu^{+}\mu^{-}$ in the
+  $\rho^{0}$-$\omega$ region of the dimuon mass spectrum}},
+  }{}\href{http://dx.doi.org/10.1016/j.physletb.2016.04.029}{Phys.\ Lett.\
+  \textbf{B757} (2016) 558},
+  \href{http://arxiv.org/abs/1510.08367}{{\normalfont\ttfamily
+  arXiv:1510.08367}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Patrignani:2016xqp}
+Particle Data Group, C.~Patrignani {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Review of Particle Physics}},
+  }{}\href{http://dx.doi.org/10.1088/1674-1137/40/10/100001}{Chin.\ Phys.\
+  \textbf{C40} (2016), no.~10 100001}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \end{mcitethebibliography}
