@@ -27,6 +27,18 @@ Y.~H. Ahn, H.-Y. Cheng, and S.~Oh,
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Akeroyd:2003zr}
+A.~G. Akeroyd and S.~Recksiegel,
+  \ifthenelse{\boolean{articletitles}}{\emph{{The Effect of H+- on B+- --->
+  tau+- nu(tau) and B+- ---> mu+- muon neutrino}},
+  }{}\href{http://dx.doi.org/10.1088/0954-3899/29/10/301}{J.\ Phys.\
+  \textbf{G29} (2003) 2311},
+  \href{http://arxiv.org/abs/hep-ph/0306037}{{\normalfont\ttfamily
+  arXiv:hep-ph/0306037}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{complex}
 \ifthenelse{\boolean{articletitles}}{\emph{Image of the cern accelerator
   complex from \rm{\texttt{https://cds.cern.ch/record/2225847}}}, }{} Accessed
