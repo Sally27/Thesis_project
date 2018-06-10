@@ -16,45 +16,47 @@ Warning--I didn't find a database entry for "param"
 Warning--I didn't find a database entry for "Buras"
 Warning--I didn't find a database entry for "jarsklog"
 Warning--I didn't find a database entry for "secondjar"
-You've used 44 entries,
+Warning--I didn't find a database entry for "Charles:2004jd"
+Warning--I didn't find a database entry for "Danilina:2017bcn"
+You've used 55 entries,
             2909 wiz_defined-function locations,
-            985 strings with 13771 characters,
-and the built_in function-call counts, 201849 in all, are:
-= -- 22061
-> -- 350
+            1080 strings with 16102 characters,
+and the built_in function-call counts, 239661 in all, are:
+= -- 26179
+> -- 437
 < -- 2
-+ -- 1253
-- -- 83
-* -- 20612
-:= -- 24705
-add.period$ -- 44
-call.type$ -- 44
-change.case$ -- 43
++ -- 1575
+- -- 104
+* -- 24360
+:= -- 29508
+add.period$ -- 55
+call.type$ -- 55
+change.case$ -- 54
 chr.to.int$ -- 0
-cite$ -- 44
-duplicate$ -- 3083
-empty$ -- 21371
-format.name$ -- 83
-if$ -- 44084
+cite$ -- 55
+duplicate$ -- 3886
+empty$ -- 25276
+format.name$ -- 104
+if$ -- 52294
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 188
-newline$ -- 275
-num.names$ -- 38
-pop$ -- 767
+int.to.str$ -- 55
+missing$ -- 250
+newline$ -- 341
+num.names$ -- 49
+pop$ -- 948
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 310
+skip$ -- 400
 stack$ -- 0
-substring$ -- 60458
+substring$ -- 71263
 swap$ -- 3
-text.length$ -- 90
+text.length$ -- 112
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 1099
-width$ -- 46
-write$ -- 668
-(There were 8 warnings)
+while$ -- 1390
+width$ -- 57
+write$ -- 848
+(There were 10 warnings)

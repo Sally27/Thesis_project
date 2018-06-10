@@ -27,14 +27,139 @@ Y.~H. Ahn, H.-Y. Cheng, and S.~Oh,
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Hou:1992sy}
+W.-S. Hou, \ifthenelse{\boolean{articletitles}}{\emph{{Enhanced charged Higgs
+  boson effects in B- ---> tau anti-neutrino, mu anti-neutrino and b ---> tau
+  anti-neutrino + X}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.48.2342}{Phys.\ Rev.\
+  \textbf{D48} (1993) 2342}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{Akeroyd:2003zr}
 A.~G. Akeroyd and S.~Recksiegel,
-  \ifthenelse{\boolean{articletitles}}{\emph{{The Effect of H+- on B+- --->
-  tau+- nu(tau) and B+- ---> mu+- muon neutrino}},
-  }{}\href{http://dx.doi.org/10.1088/0954-3899/29/10/301}{J.\ Phys.\
-  \textbf{G29} (2003) 2311},
+  \ifthenelse{\boolean{articletitles}}{\emph{{The Effect of $H^{\pm} on B^{\pm}
+  \rightarrow \tau^{\pm} \nu(\tau)$ and $B^{\pm} \rightarrow \mu^{\pm}$ muon
+  neutrino}}, }{}\href{http://dx.doi.org/10.1088/0954-3899/29/10/301}{J.\
+  Phys.\  \textbf{G29} (2003) 2311},
   \href{http://arxiv.org/abs/hep-ph/0306037}{{\normalfont\ttfamily
   arXiv:hep-ph/0306037}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Dobrescu:2008er}
+B.~A. Dobrescu and A.~S. Kronfeld,
+  \ifthenelse{\boolean{articletitles}}{\emph{{Accumulating evidence for
+  nonstandard leptonic decays of $D_s$ mesons}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.100.241802}{Phys.\ Rev.\
+  Lett.\  \textbf{100} (2008) 241802},
+  \href{http://arxiv.org/abs/0803.0512}{{\normalfont\ttfamily
+  arXiv:0803.0512}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Adachi:2012mm}
+Belle, I.~Adachi {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Evidence for $B^- \to \tau^-
+  \bar{\nu}_\tau$ with a Hadronic Tagging Method Using the Full Data Sample of
+  Belle}}, }{}\href{http://dx.doi.org/10.1103/PhysRevLett.110.131801}{Phys.\
+  Rev.\ Lett.\  \textbf{110} (2013), no.~13 131801},
+  \href{http://arxiv.org/abs/1208.4678}{{\normalfont\ttfamily
+  arXiv:1208.4678}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Kronenbitter:2015kls}
+Belle, B.~Kronenbitter {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Measurement of the branching
+  fraction of $B^+ \tau^+ \nu_\tau$ decays with the semileptonic tagging
+  method}}, }{}\href{http://dx.doi.org/10.1103/PhysRevD.92.051102}{Phys.\ Rev.\
+   \textbf{D92} (2015), no.~5 051102},
+  \href{http://arxiv.org/abs/1503.05613}{{\normalfont\ttfamily
+  arXiv:1503.05613}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Lees:2012ju}
+BaBar, J.~P. Lees {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Evidence of $B^+ \to \tau^+\nu$
+  decays with hadronic B tags}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.88.031102}{Phys.\ Rev.\
+  \textbf{D88} (2013), no.~3 031102},
+  \href{http://arxiv.org/abs/1207.0698}{{\normalfont\ttfamily
+  arXiv:1207.0698}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aubert:2009wt}
+BaBar, B.~Aubert {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{A
+  Search for $B^+ \to \ell^+ \nu_{\ell}$ Recoiling Against $B^{-}\to D^{0}
+  \ell^{-}\bar{\nu} X$}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.81.051101}{Phys.\ Rev.\
+  \textbf{D81} (2010) 051101},
+  \href{http://arxiv.org/abs/0912.2453}{{\normalfont\ttfamily
+  arXiv:0912.2453}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Sibidanov:2017vph}
+Belle, A.~Sibidanov {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Search for
+  $B^{-}\to\mu^{-}\bar\nu_\mu$ Decays at the Belle Experiment}},
+  }{}\href{http://arxiv.org/abs/1712.04123}{{\normalfont\ttfamily
+  arXiv:1712.04123}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Burdman:1994ip}
+G.~Burdman, J.~T. Goldman, and D.~Wyler,
+  \ifthenelse{\boolean{articletitles}}{\emph{{Radiative leptonic decays of
+  heavy mesons}}, }{}\href{http://dx.doi.org/10.1103/PhysRevD.51.111}{Phys.\
+  Rev.\  \textbf{D51} (1995) 111},
+  \href{http://arxiv.org/abs/hep-ph/9405425}{{\normalfont\ttfamily
+  arXiv:hep-ph/9405425}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Beneke:2011nf}
+M.~Beneke and J.~Rohrwild, \ifthenelse{\boolean{articletitles}}{\emph{{B meson
+  distribution amplitude from $B \rightarrow \gamma l \nu$}},
+  }{}\href{http://dx.doi.org/10.1140/epjc/s10052-011-1818-8}{Eur.\ Phys.\ J.\
+  \textbf{C71} (2011) 1818},
+  \href{http://arxiv.org/abs/1110.3228}{{\normalfont\ttfamily
+  arXiv:1110.3228}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Wang:2016beq}
+Y.-M. Wang, \ifthenelse{\boolean{articletitles}}{\emph{{Subleading power
+  corrections in radiative leptonic $B$ decay}},
+  }{}\href{http://dx.doi.org/10.1016/j.nuclphysbps.2017.03.014}{Nucl.\ Part.\
+  Phys.\ Proc.\  \textbf{285-286} (2017) 75},
+  \href{http://arxiv.org/abs/1609.09813}{{\normalfont\ttfamily
+  arXiv:1609.09813}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Heller:2015vvm}
+Belle, A.~Heller {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Search for $B^+ →
+  ℓ^+ν_ℓγ$ decays with hadronic tagging using the full Belle data
+  sample}}, }{}\href{http://dx.doi.org/10.1103/PhysRevD.91.112009}{Phys.\ Rev.\
+   \textbf{D91} (2015), no.~11 112009},
+  \href{http://arxiv.org/abs/1504.05831}{{\normalfont\ttfamily
+  arXiv:1504.05831}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
