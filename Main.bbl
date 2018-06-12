@@ -61,6 +61,18 @@ B.~A. Dobrescu and A.~S. Kronfeld,
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Charles:2004jd}
+CKMfitter Group, J.~Charles {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Results as of up to ICHEP 2016,
+  updated results and plots available at: http://ckmfitter.in2p3.fr}},
+  }{}\href{http://dx.doi.org/10.1140/epjc/s2005-02169-1}{Eur.\ Phys.\ J.\
+  \textbf{C41} (2005), no.~1 1},
+  \href{http://arxiv.org/abs/hep-ph/0406184}{{\normalfont\ttfamily
+  arXiv:hep-ph/0406184}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{Adachi:2012mm}
 Belle, I.~Adachi {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Evidence for $B^- \to \tau^-
@@ -160,6 +172,37 @@ Belle, A.~Heller {\em et~al.},
    \textbf{D91} (2015), no.~11 112009},
   \href{http://arxiv.org/abs/1504.05831}{{\normalfont\ttfamily
   arXiv:1504.05831}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Danilina:2017bcn}
+A.~Danilina and N.~Nikitin, \ifthenelse{\boolean{articletitles}}{\emph{{Rare
+  four-leptonic B-decays with light leptons in the final state in the Standard
+  Model}}, }{}\href{http://dx.doi.org/10.1051/epjconf/201715803005}{EPJ Web
+  Conf.\  \textbf{158} (2017) 03005}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Ali:1999mm}
+A.~Ali, P.~Ball, L.~T. Handoko, and G.~Hiller,
+  \ifthenelse{\boolean{articletitles}}{\emph{{A Comparative study of the decays
+  $B \to$ ($K$, $K^{*)} \ell^+ \ell^-$ in standard model and supersymmetric
+  theories}}, }{}\href{http://dx.doi.org/10.1103/PhysRevD.61.074024}{Phys.\
+  Rev.\  \textbf{D61} (2000) 074024},
+  \href{http://arxiv.org/abs/hep-ph/9910221}{{\normalfont\ttfamily
+  arXiv:hep-ph/9910221}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{pythia6}
+T.~Sjostrand, S.~Mrenna, and P.~Z. Skands,
+  \ifthenelse{\boolean{articletitles}}{\emph{{PYTHIA 6.4 Physics and Manual}},
+  }{}\href{http://dx.doi.org/10.1088/1126-6708/2006/05/026}{JHEP \textbf{05}
+  (2006) 026}, \href{http://arxiv.org/abs/hep-ph/0603175}{{\normalfont\ttfamily
+  arXiv:hep-ph/0603175}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -386,16 +429,6 @@ LHCb, I.~Belyaev {\em et~al.},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem{pythia6}
-T.~Sjostrand, S.~Mrenna, and P.~Z. Skands,
-  \ifthenelse{\boolean{articletitles}}{\emph{{PYTHIA 6.4 Physics and Manual}},
-  }{}\href{http://dx.doi.org/10.1088/1126-6708/2006/05/026}{JHEP \textbf{05}
-  (2006) 026}, \href{http://arxiv.org/abs/hep-ph/0603175}{{\normalfont\ttfamily
-  arXiv:hep-ph/0603175}}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
 \bibitem{Lange:2001uf}
 D.~J. Lange, \ifthenelse{\boolean{articletitles}}{\emph{{The EvtGen particle
   decay simulation package}},
@@ -487,18 +520,6 @@ M.~Pivk and F.~R. Le~Diberder,
 U.~Egede, P.~Owen, and W.~Sutcliffe,
   \ifthenelse{\boolean{articletitles}}{\emph{{Determination of the quark
   coupling strength $|V_{ub}|$ using baryonic decays}}, }{}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem{Ali:1999mm}
-A.~Ali, P.~Ball, L.~T. Handoko, and G.~Hiller,
-  \ifthenelse{\boolean{articletitles}}{\emph{{A Comparative study of the decays
-  $B \to$ ($K$, $K^{*)} \ell^+ \ell^-$ in standard model and supersymmetric
-  theories}}, }{}\href{http://dx.doi.org/10.1103/PhysRevD.61.074024}{Phys.\
-  Rev.\  \textbf{D61} (2000) 074024},
-  \href{http://arxiv.org/abs/hep-ph/9910221}{{\normalfont\ttfamily
-  arXiv:hep-ph/9910221}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

@@ -1,9 +1,11 @@
 \chapter{Theory}
 %\subsection{Introduction to Mixing Phenomenology}
-\section{Quarks}
-In this project, the emphasis lies in explaining of the generation of the masses and mixing of the quarks, the building blocks of matter. Quarks are spin 1/2 fermions that are affected by all three fundamental forces: electromagnetic, strong nuclear, and weak nuclear. They come in 6 different ``flavours'' and they carry fractional charge. Free quarks were never directly observed due to their confinement within hadrons -- composite quark systems. Is is important to note that the definition of mass for the quarks varies according to the renormalisation scheme of the QCD Lagrangian. The only definition of mass that is independent of the adopted renormalisation scheme is quark pole mass (position of the pole in the quark propagator) which is determined by the study of hadron decays and their spectrum using QCD perturbation theory. If desired to be used for phenomenological purposes this can be converted to the running  $\overline{MS}$ renormalisation scheme mass values which can be calculated at three loop order \cite{threepole}. Lattice gauge theory and hence lattice simulations use particular discretization of QCD and lattice spacing to determine a quantity known as bare mass. It is only possible to directly establish the so-called constituent mass which comes from non-relativistic quark models. These can be seen in Table \ref{nonlin}.
+\section{Review of the Standard Model}
+The Standard Model (SM) of particle physics is to-the-date the most accurate model describing the buildings blocks of matter (particles) and their interactions (via forces). In particular SM describes all the fundamental forces but gravity: electromagnetic, strong nuclear, and weak nuclear force. It is a quantum field theory (QFT), whereby the dynamics of the system is captured by the most general renormalisable Lagrangian density that is invariant under gauge symmetry. QFT considers particles to be an excited states of an underlying field, also known as quanta. In the SM particles and forces are the results of interactions between scalar, vector and spinor fields. In general there are two sets of particles: force-carrying particles also known as bosons, which have integer spin and are quanta of the scalar and vector fields. More specifically, there is thes Higgs boson, the only elementary scalar boson in the SM, and vector bosons: gluons, $W^{\pm}$, Z and $\gamma$. Secondly, there are the non-force carrying particles, which are known to be fermions, quanta of spinor fields. Unlike bosons they carry half-integer spin. These can be further classified into two elementary families of particles: quarks, which cannot be observed alone and leptons which can be detected on their own. Out of all of these fundamental particles, those that have mass acquire it by the most famous symmetry-breaking mechanism - Higg's mechanism.
 
-\begin{table*} 
+Quarks are affected by all three fundamental forces. They come in six different \textit{flavours} and they carry fractional charge as seen in~\autoref{nonlin}.
+
+\begin{table} 
 
 \centering % used for centering table 
 \begin{tabular}{|c|c|c|c|} % centered columns (4 columns) 
@@ -20,11 +22,83 @@ Generation & ``Flavour" & Charge & Constituent Mass \\ [0.5ex]\hline% inserts ta
 \hline %inserts single line 
 
 \end{tabular} 
-\caption{Quarks and their properties} 
+\caption{Quarks and their properties.} 
 \label{nonlin} % is used to refer this table in the text 
-\end{table*} 
-\section{Lagrangian of the Standard Model}
-In order to understand the origin of the mass matrices and their form it is important to introduce some basic aspects of field theories. In quantum field theories, and hence the Standard Model, the dynamics of the system is captured by the most general renormalisable Lagrangian density that is invariant under gauge symmetry. Quantum Chromodynamics (QCD), the field theory that describes the strong interactions of colored quarks and gluons, is the SU(3) component of the Standard Model. Since the strong force is flavour symmetric, this results in mass matrices involving the electroweak interactions only, which are based on the gauge group SU(2)$\otimes$U(1). Both masses and mixing of quarks originate as a result of Yukawa interactions with Higgs condensate \cite{ewconstraint}. Before the spontaneous breakdown of the electroweak symmetry, all quarks and leptons are massless. Once the Higgs scalar field acquires a vacuum expectation value $\langle\phi\rangle = (0, v/\sqrt{2})$ implying broken symmetry, quarks acquire mass and hence the Lagrangian density term involving the mass matrices\cite{texture} is obtained: 
+\end{table} 
+
+The reason why quarks are not observed alone is due to their confinment within hadrons, which is an artefact of strong interaction acting on quarks. This can be understood within the framework of quantum field theory by observing evolution of the coupling strenght $g$ as a function of energy scale, also known as $\beta$ function.
+The $\beta$-function for a coupling constant $g$ in the SM to the two loop contribution takes the following form:
+\begin{equation}
+\beta_g = \mu {{d g}\over d \mu} = {1\over16\pi^2} \beta_g^{(1)}
++ {1\over(16\pi^2)^2} \beta_g^{(2)},
+\end{equation}
+where $\beta_g^{(1)},~ \beta_g^{(2)}$ denote the one-loop and two-loop
+contributions respectively, and $\mu$ is the energy scale. For the strong interaction, unlike electromagnetic and weak interaction, $\beta_g$ is negative. For low energies as $\mu \rightarrow 0$ the coupling is very high and hence quarks cannot be observed on their own, \textit{confinement}. On the other hand as $\mu \rightarrow \infty$, or at high energies, the coupling gets small, particles get decoupled, which is known as \textit{asymptotic freedom}. 
+
+There are altogether 12 leptons. Unlike quarks they are not affected by strong force but also come along in three generations: electrons, muons and taus. They have their equivalent antiparticles and corresponding neutrinos. Much of this thesis is dedicated to the study of the muons, antimuons and their neutrinos with LHCb detector.
+
+\section{Lagrangian density of the Standard Model}
+In more mathematical terminology, the SM is a theory that respects SU(3)$\otimes$SU(2)$\otimes$U(1) symmetries. In this section the form of the Lagrangian density of the SM is motivated. It is assumed that $\hbar=1$, $c=1$. Let $\psi$ to be a spinor field. The Dirac Lagrangian for spin-$\frac{1}{2}$ non-interacting or free field for a particle with mass $m$ can be written as: 
+\begin{equation}
+\mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi.
+\label{eq:lag_first}
+\end{equation}
+
+where $\gamma^{\mu}$ are $4\times 4$ Dirac matrices and $\mu\in\{0,1,2,3\}$.
+
+By using Euler-Lagrange equation in the relativistic theory
+
+\begin{equation}
+	\partial_{\mu}\Big(\frac{\partial{\mathcal{L}}}{\partial(\partial_{\mu}\psi_{i})} \Big) =\frac{\partial \mathcal{L}}{\partial\psi_{i}}
+\label{eq:lag_first}
+\end{equation}
+
+for $\overline\psi$ the Dirac equation of motion
+
+\begin{equation}
+ i\gamma^{\mu}\partial_{\mu}\psi - m\psi = 0
+\label{eq:lag_first}
+\end{equation}
+
+is retrieved.
+
+The Dirac Lagrangian in~\autoref{eq:lag_first} stays the same under global phase transformation: $\psi \rightarrow e^{i\phi}\psi$ as $\overline\psi \rightarrow e^{-i\phi}\overline\psi$. However, undel local phase transformation, where $\phi$ is a function of $x^{\mu}$  this is not the case anymore. In this case
+\begin{equation}
+\mathcal{L} \rightarrow \mathcal{L}- (\partial_{\mu}\phi) \overline{\psi}\gamma^{\mu}\psi.
+\label{eq:notinv}
+\end{equation}
+
+By requiring local gauge invariance for the Lagrangian, it is necessary to add a term to counteract the left-over term in~\autoref{eq:notinv}. Let $\lambda=-\frac{\phi(x)}{q}$ and let $A_{\mu}$ be some new (vector) field which transforms as $A_{\mu} \rightarrow \partial_{\mu}\lambda$ then the following Lagrangian
+
+\begin{equation}
+	\mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi - q\overline{\psi}\gamma^{\mu}\psi A_{\mu}
+\label{eq:lag_sec}
+\end{equation}
+
+stays invariant under local phase transformation. That is good, however, there is a penalty for introducing a new vector field $A_{\mu}$ which interacts with spinor field $\psi$ as can be seen in the last part of~\autoref{eq:lag_sec}, that is a non-interacting term for $A_{\mu}$.
+
+The Lagrangian for non-interacting vector field for a particle with mass $m_{A}$ where $F^{\mu\nu}=\partial^{u}A^{\nu} - \partial^{\nu}A^{u}$ is
+\begin{equation}
+\mathcal{L}= -\frac{1}{16\pi} F^{\mu\nu}F_{\mu\nu} + \frac{1}{8\pi}m_{A}^{2}A^{\mu}A_{\mu}.
+\end{equation}
+
+In order not to spoil the local gauge invariance the $m_{A}=0$. Hence the full Dirac Lagrangian with local phase invariance introduces massless vector field $A^{\mu}$ yields
+
+\begin{equation}
+	\mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi - q\overline{\psi}\gamma^{\mu}\psi A_{\mu} -\frac{1}{16\pi} F^{\mu\nu}F_{\mu\nu},
+\label{eq:lag_thir}
+\end{equation}
+
+which can be recognized as the Lagrangian for quantum electrodynamics, whereby the electrons and positrons (quanta of spinor field) are interacting with photons (quanta of vector field). In other words, $A_{\mu}$ is electromagnetic potential and $q=e$, the current density is hence $J^{\mu}=e\overline{\psi}\gamma^{\mu}\psi$.
+
+To upgrade from global invariance of the non-interacting Lagrangian in~\autoref{eq:lag_first} to local invariance one can also achieve it in one step be defining \textit{covariant derivative}
+\begin{equation}
+	\mathcal{D}_{\mu} = \partial_{\mu}+ iqA_{\mu}.
+\end{equation}
+
+
+\section{Quark Mass Genertion}
+Quantum Chromodynamics (QCD), the field theory that describes the strong interactions of colored quarks and gluons, is the SU(3) component of the Standard Model. Since the strong force is flavour symmetric, this results in mass matrices involving the electroweak interactions only, which are based on the gauge group SU(2)$\otimes$U(1). Both masses and mixing of quarks originate as a result of Yukawa interactions with Higgs condensate \cite{ewconstraint}. Before the spontaneous breakdown of the electroweak symmetry, all quarks and leptons are massless. Once the Higgs scalar field acquires a vacuum expectation value $\langle\phi\rangle = (0, v/\sqrt{2})$ implying broken symmetry, quarks acquire mass and hence the Lagrangian density term involving the mass matrices\cite{texture} is obtained: 
 \begin{equation}\label{lama}
 {\cal L}_m= -U_{0L}^{\dagger}M_u U_{0R} - D_{0L}^{\dagger}M_dD_{0R} - h.c,
 \end{equation}
@@ -208,6 +282,7 @@ With helicity supressed rates and very limited signature in the detector (one ch
 \section{Fully Leptonic $B^{+}\rightarrow l^{+} \nu_{l} \gamma$ decays}
 The helicity suppression can be lifted by considering the decay with an additional photon radiated from the $B^{+}$ meson, at the cost of the electromagnetic suppression with coupling constant $\alpha_{em}$. Consequently, the branching fraction for radiative decays can be comparable or even larger than the corresponding fraction for purely leptonic decays. It has been shown that $R^{\mu}_{B}=\frac{\Gamma(B\rightarrow \mu \nu \gamma)}{\Gamma(B\rightarrow \mu \nu)}\approx(1-20)$ making $\mathcal{B}(B\rightarrow \mu \nu \gamma)\approx(10^{-7}-10^{-6})$ \cite{Burdman:1994ip}.
 
+As compared to photonless decays the amplitude of the decay will have contribution from both axial-vector weak current as well as vector current.
 The differential decay width with $\frac{1}{m_{b}}$ and radiative corrections
 at next-to-leading logarithmic order calculated in\cite{Beneke:2011nf} is given by the following formula:
 \begin{equation}
@@ -238,20 +313,46 @@ Recent measurement of the radiative $B^{+} \rightarrow l^{+} \nu_{l} \gamma$, wh
 
 \section{Fully Leptonic $B^{+}\rightarrow l^{+} l^{-} l^{+} \nu_{l} $ decays}
 
-In LHCb, the most optimal approach due to the detector capabilities is to measure this kind of decay by decaying the photon into pair of muons, see~\autoref{fig:myfeyn}(a). This though introduces suppression by $\alpha_{em}$. If the naive expectation of only taking into account photon conversion into two muons is adopted, then the expected branching fraction for this analysis is $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_{\mu}) \approx 10^{-8}$ (will be referred to as pessimistic BF). However this estimate is of course not correct because there are other contributions to the total branching fraction as it was shown in the first theoretical prediction for $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_{\mu})$.
 
-The first theoretical prediction published for the $\mathcal{B}(B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_{\mu})$ decay branching fraction\cite{Danilina:2017bcn} yields approximately $1\times 10^{-7}$ where the majority of the contribution actually comes from the $\rho$ and $\omega$ resonances, which are included as a part of the signal (will be referred to as optimistic BF). An example of of such contribution can be seen in~\autoref{fig:myfeyn}(b), where \Bmumumu proceeds via the hadronic contributions to the photon pole.
+In LHCb, the most optimal approach due to the detector capabilities is to measure this kind of decay by decaying the photon into pair of muons, see~\autoref{fig:myfeyn}(a). If the naive expectation of only taking into account photon conversion into two muons is adopted, then the expected branching fraction for this analysis is $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_{\mu}) \approx 10^{-8}$. However, such estimate is not correct because there are other contributions to the total decay rate as shown in the first theoretical prediction for $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_{\mu})$ in \cite{Danilina:2017bcn} based on Vector Meson Dominance (VMD) model. This theoretical prediction yields $\mathcal{B}(B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_{\mu}) \approx 1\times 10^{-7}$ and the rest of this section is a short summary of this publication.
 
-%\begin{figure}[here]
-%\includegraphics[scale=0.5]{theory/newfeyn4}\put(-30,133){(a)}
-%\includegraphics[scale=0.5]{theory/btorhomunurad}\put(-30,133){(b)}
-%\centering
-%\caption{(a) Annihilation diagram where the initial state quark radiates off a virtual photon which decays into a pair of muons with small invariant mass ($q^{2}$) and the $W^{+}$ turns into a muon and muon neutrino. (b) Most of the contribution to the rate comes from hadronic contribution to photon.}
-%\label{fig:myfeyn}
-%\end{figure}
+VMD model was formulated to describe the interaction between photon and hadrons before quantum chromodynamics was formulated. It is an approximative model where photon is treated to be made of both purely electromagnetic component and vector meson component. This idea originates in the fact that both photon and vector mesons have the same quantum numbers $J^{PC} = 1^{-\ -}$ and if two particles have the same quantum numbers then they mix (the state which commutes with the Hamiltonian is a superposition of all such states). Therefore there is mixing between $\gamma$ and vector mesons.
+
+As mentioned previously, there are different contributions to the amplitude of the $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$. Using VMD model, it is no suprising that the biggest contribution arises the photon emission from the valence $u$-quark of the $B$ meson. In this case, contribution from $\rho(770)$ and $\omega(782)$ resonances are included in the calculation. Secondly, contribution of photon emission from the $b$-quark is studied, effectively creating excited $B^{+}$, $B^{+*}$ intermediate resonance state. Thirdly, photon can be emitted from the final-state lepton, process known as Brehmstrahlung. All these different contributions to the decay amplitude are shown in \autoref{fig:myfeyn}. To obtain the total amplitude, sum of the matrix elements of the three contributions is calculated in the limit where $m_{l}$ is set to zero.
 
 
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{theory/nik_1figure}\put(-30,133){(a)}
+\includegraphics[scale=0.5]{theory/nik_2figure}\put(-30,133){(b)}
+\newline
+\includegraphics[scale=0.55]{theory/nik_3figure}\put(-30,133){(c)}
+\centering
+	\caption{(a) Annihilation diagram where the initial $u$-quark state radiates off a virtual photon which decays into a pair of muons and the $W^{+}$ decays into a muon and muon neutrino. Most of the contribution to the rate comes from hadronic contribution to the photon. (b) Photon emission from $b$-quark and (c) finally emission from the final state muon.}
+\label{fig:myfeyn}
+\end{figure}
 
+
+In this publication the amplitude of $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$ is estimated by calculating $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} e^{+} \nu)$ amplitude first and then adding an negative interference term that arises due to the identical fermions in the final state doubling the number of possible diagrams. The numerical calculation yields $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} e^{+} \nu) \approx 1.3 \times 10^{-7}$ and $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu) \approx 1.0 \times 10^{-7}$. 
+
+\section{\Bmumumu decay model}
+As the search for \Bmumumu decay is first of its kind, simulation that describes this type of decay was not available. 
+
+For any decay, it is possible to use phase space model, \textit{PHSP}, which only takes into account the kinematic constraints of the decay without taking into account any input from theoretical considerations as the matrix element is constant. This is not satisfactory for decays where there are intermediate virtual photons or vector mesons resonances.
+
+Following decay model is developped to take into the account more correct behaviour of the leading order contribution to the decay shown in~\autoref{fig:myfeyn}(a). The decay proceeds through a virtual $W$ decaying to $\mu^{+} \nu$ and a virtual photon with vector resonance decaying to a muon pair. This has similar structure to $\B^{+} \rightarrow (K^{*+}) \mu^{+} \mu^{-}$ decay, where the $K^{*+}$ can take the role of the virtual $W$ decay. By using the \textit{BTOSLLBALL} model\cite{Ali:1999mm}, traditionally used for $B^{+} \rightarrow (K^{*+}) l^{+} l^{-}$ decays, but modifying properties of the $K^{*+}$ to those of virtual $W$ (having mass of 0.1 \gevcc and width 50 \gev), it is possible to obtain good approximation to the correct features of the decay . This is shown in~\autoref{fig:mcgeneration}, where there is a characteristic photon pole for low $q(\mu^{+},\mu^{-})$, invariant mass of the opposite muon pair, and flat distribution for $K^{*}(\mu^{+}, \nu_{\mu}) $, invariant mass of the muon and neutrino pair. This decay model will be further referred to as SALLY's model. 
+
+
+%\mybox{Sally: move it to theory and check ulrik's comment} In order to produce simulation with a decay model which is more representative of the spin structure involved, the following strategy is adapted. In this simulation approach, the decay proceeds as follows: \Bpm decays into \Wpm and a pair of opposite sign muons and then \Wp is decayed to $\mu^{+} \nu$. \textit{BTOSLLBALL} model\cite{Ali:1999mm}, traditionally used for $\B \rightarrow (K,K^{*}) l^{+} l^{-}$ decay, with the form factor calculations can be used to simulate $\Bpm \rightarrow \Wpm l^{+} l^{-}$ decay. After that, \Wp is decayed to $\mu^{+} \nu$ using \textit{PHSP}. For semileptonic $b \rightarrow s l^{+} l^{-}$ transitions, there is a characteristic photon pole for low $q(\mu^{+},\mu^{-})$, invariant mass of the opposite muon pair, and flat distribution for $K^{*}(\mu^{+}, \nu_{\mu}) $, invariant mass of the muon and neutrino pair. In order to achieve this, a new pseudo-particle is introduced to EVTGEN with specific properties, $K^{*}(\mu^{+}, \nu_{\mu})$, and the best output can be seen to be for a particle $K^{*}(\mu^{+}, \nu_{\mu})$ with mass to be set to $0.1 \text{GeV/c}^{2}$, and width, corresponding to $\tau= 1.3\times10^{-17}$ nanoseconds as can be seen in \autoref{fig:mcgeneration}. This procedure was also applied for the charge conjugate case. This model is denoted as \textit{INSP} and is used as default in mass fits and efficiency calculations.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\linewidth]{./sel/reporttry_new}\put(-70,133){(a)}
+\includegraphics[width=0.5\linewidth]{./sel/reporttrialqpres_new}\put(-50,133){(b)}
+\caption{Distributions for signal MC in using Pythia 6.4 \cite{pythia6} conditions. (a) $K^{*}(\mu^{+}, \nu_{\mu})$ (b) $q(\mu^{+},\mu^{-})$ distributions under different $K^{*}$ mass hypotheses. The most flat distribution in $K^{*}(\mu^{+}, \nu_{\mu})$ is plotted in yellow.}
+\label{fig:mcgeneration}
+%\vspace*{-1.0cm}
+\end{figure}
 
 
 
