@@ -37,7 +37,8 @@ contributions respectively, and $\mu$ is the energy scale. For the strong intera
 
 There are altogether 12 leptons. Unlike quarks they are not affected by strong force but also come along in three generations: electrons, muons and taus. They have their equivalent antiparticles and corresponding neutrinos. Much of this thesis is dedicated to the study of the muons, antimuons and their neutrinos with LHCb detector.
 
-\section{Lagrangian density of the Standard Model}
+
+\section{Principle of Standard Model Building}
 In more mathematical terminology, the SM is a theory that respects SU(3)$\otimes$SU(2)$\otimes$U(1) symmetries. In this section the form of the Lagrangian density of the SM is motivated. It is assumed that $\hbar=1$, $c=1$. Let $\psi$ to be a spinor field. The Dirac Lagrangian for spin-$\frac{1}{2}$ non-interacting or free field for a particle with mass $m$ can be written as: 
 \begin{equation}
 \mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi.
@@ -77,7 +78,7 @@ By requiring local gauge invariance for the Lagrangian, it is necessary to add a
 
 stays invariant under local phase transformation. That is good, however, there is a penalty for introducing a new vector field $A_{\mu}$ which interacts with spinor field $\psi$ as can be seen in the last part of~\autoref{eq:lag_sec}, that is a non-interacting term for $A_{\mu}$.
 
-The Lagrangian for non-interacting vector field for a particle with mass $m_{A}$ where $F^{\mu\nu}=\partial^{u}A^{\nu} - \partial^{\nu}A^{u}$ is
+The Lagrangian for non-interacting vector field for a particle with mass $m_{A}$ with the field strenght $F^{\mu\nu}=\partial^{u}A^{\nu} - \partial^{\nu}A^{u}$ is
 \begin{equation}
 \mathcal{L}= -\frac{1}{16\pi} F^{\mu\nu}F_{\mu\nu} + \frac{1}{8\pi}m_{A}^{2}A^{\mu}A_{\mu}.
 \end{equation}
@@ -89,15 +90,94 @@ In order not to spoil the local gauge invariance the $m_{A}=0$. Hence the full D
 \label{eq:lag_thir}
 \end{equation}
 
-which can be recognized as the Lagrangian for quantum electrodynamics, whereby the electrons and positrons (quanta of spinor field) are interacting with photons (quanta of vector field). In other words, $A_{\mu}$ is electromagnetic potential and $q=e$, the current density is hence $J^{\mu}=e\overline{\psi}\gamma^{\mu}\psi$.
+which can be recognized as the Lagrangian for quantum electrodynamics (QED), whereby the electrons and positrons (quanta of spinor field) are interacting with photons (quanta of vector field). In other words, $A_{\mu}$ is electromagnetic potential and $q=e$, the current density is hence $J^{\mu}=e\overline{\psi}\gamma^{\mu}\psi$. This represents U(1)  
 
 To upgrade from global invariance of the non-interacting Lagrangian in~\autoref{eq:lag_first} to local invariance one can also achieve it in one step be defining \textit{covariant derivative}
 \begin{equation}
-	\mathcal{D}_{\mu} = \partial_{\mu}+ iqA_{\mu}.
+	\mathcal{D}_{\mu} = \partial_{\mu}+ iqA_{\mu},
 \end{equation}
 
+where the secret ingredient is to transform the partial derivative in the same way as the field itself undel local gauge transformation.
 
-\section{Quark Mass Genertion}
+\section{Quantum Chromodynamics}
+Requirement of gauge invariance under local transformation is a powerful tool and it is used throughout the Standard Model building. In this section the development of Lagrangian for Quantum chromodynamics (QCD) is explained. QCD dectribes strong interactions or nuclear binding forces and makes use of quarks ($q$) whereby most of the time they are observed to be bound either in pairs - mesons ($q\bar{q}$) - or triplets - baryons ($qqq$). The interactions between quarks and gluons are described by $SU(3)_{C}$ gauge group. The conserving charge associated with strong force is known as color, hence the subpscipt $C$. It was experimentally established that there are 3 colors and borrowing from color theory used by painters these colors are red, blue and green. The quark carries color and antiquark anticolor making mesons and baryons to have zero net color. There are 8 quanta of strong interactions known as gluons.
+
+With these constraints and by requiring the free Lagrangian to be invariant under local $SU(3)$ transformation similarly to the QED case, one obtaines again \textit{covariant derivative}
+
+\begin{equation}
+\mathcal{D}_{\mu} = \partial_{\mu} - ig_{s}\frac{\lambda^{a}}{2}G^{a}_{\mu},
+\end{equation}
+
+that respects $SU(3)$ symmetry, where $\lambda^{a}$ are Gell-Mann matrices, $a\in\{1..8\}$ (8 possible gluons), $g_{s}$ is the strong coupling. The field strenght for the gluon field is defined as $G_{a}^{\mu\nu}=\partial^{u}G_{a}^{\nu} - \partial^{\nu}G_{a}^{u} + g_{s}f^{abc}G_{b}^{\mu}G_{c}^{\nu}$, where $f^{abc}$ are so-called structure constants which satisfy the following commutaion relation:
+
+\begin{equation}
+	\Big[\frac{\lambda^{a}}{2},\frac{\lambda^{b}}{2}\Big] = if^{abc}\frac{\lambda^{c}}{2}.
+\end{equation}
+
+As compared to QED field strenght, there is an additional term involving gluon fields themselves, causing cubic and quartic gluon interactions, which were not present before.
+
+
+Then the full Lagrangian density for the strong interaction then reads as:
+
+\begin{equation}
+	\mathcal{L}_{QCD} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi + g_{s}\overline{\psi}\gamma^{\mu}\frac{\lambda_{a}}{2}\psi G^{a}_{\mu} -\frac{1}{4} G_{a}^{\mu\nu}G^{a}_{\mu\nu},
+\label{eq:lag_fourth}
+\end{equation}
+
+where the interaction between quarks and gluons is encoded in the third term of~\autoref{eq:lag_fourth}.
+
+
+\section{Electroweak unification}
+The idea behind unification of weak and electromagnetic interactions is very powerful, as it has to accomodate for forces that act with very different strenght with force-carrying particles that are both massive ($W^{\pm}$,$Z$) and masless ($\gamma$). Furthermore $W^{\pm}$ only couple to left-handed particles, whereas, known as parity violation, whereas $Z^{0}$ couple to both left and right-handed particles  electromagnetic vertex factor is purely vectorial($\gamma^{\mu}$) whereas $W^{\pm}$ coupling has both axial and vector components: ($\gamma^{\mu}(1-\gamma^{5})$), where $\gamma^{5}=i\times\gamma^{0}\times\gamma^{1}\times\gamma^{2}\times\gamma^{3}$, which can be solved by absorption of $1-\gamma^{5}$ into a spinor field itself.
+
+In this way one can decompose the spinor field into left-handed and right-handed (chiral) spinors
+\begin{equation}
+	\psi=\psi_{L}+\psi_{R} = P_{L}\psi + P_{R}\psi
+\end{equation}
+
+where $P_{L} =\frac{1-\gamma^{5}}{2}$ and $P_{R}=\frac{1-\gamma^{5}}{2}$ are known to be projection operators. By calling these operators left-handed and right-handed, there is a misconception that $\psi_{L}$ is a helicity eigenstate, but this is only true given the particle in question is masless. These spinors are known to have chirality - known as left or right-handedness. Helicity is rather a projection of the spin on the direction of the momentum.
+
+As the quarks and leptons can couple within the generation exchanging $W^{\pm}$ this gives rise to left-handed isospin doublets and right-handed isospin singlets. The simplest group with doublet representation is SU(2) and in combination with the electromagnetic ineraction forms $SU(2)_{L} \otimes U(1)_{Y}$, refers to weak isospin (I) and $Y$ refers to weak hypercharge, where they are inter-related by equation
+
+\begin{equation}
+Q=I^{3} + \frac{1}{2}Y
+\end{equation}
+
+where $Q$ is electric charge. Again assuming gauge invariance under local transformation leads to \textit{covariant derivative} of $SU(2)_{L}\otimes U(1)_{Y}$ is
+
+\begin{equation}
+	D_{\mu} = \partial_{\mu} + i\frac{g}{2}W_{\mu}^{i} \frac{\sigma^{i}}{2} - i \frac{1}{2}g'B_{\mu} 
+\end{equation}
+where $\sigma^{i}$ are Pauli matrices, $g,g'$ are the weak and strong couplings and $W_{\mu}^{i}$ where $i\in\{1,2,3\}$ and $B_{\mu}$ are the vector fields that should be corresponding to $W^{\pm},Z^{0},\gamma$.
+The field strenghts are defined as $B^{\mu\nu}=\partial^{u}B^{\nu} - \partial^{\nu}B^{u}$ and $W^{i}_{\mu\nu} = \partial^{\mu}W^{i}_{\nu} - \partial^{\nu}W^{i}_{\mu}+ g\epsilon^{ijk}W_{\mu}^{j}W_{\nu}^{k}$.
+
+The real charged bosons corresponding to $W^{\pm}$ arise as linear combinatios in the following way
+\begin{equation}
+W^{\pm}_{\mu} = \frac{1}{\sqrt{2}}(W^{1}_{\mu}\mp iW^{2}_{\mu})
+\end{equation}, 
+whereas the neutral bosons are obtained in the following way:
+
+
+\begin{equation}
+	Z_{\mu}=-B_{\mu}sin\theta_{W}+W^{3}_{\mu}cos\theta_{W}
+\end{equation}
+\begin{equation}
+	A_{\mu}= B_{\mu}cos\theta_{W}+W^{3}_{\mu}sin\theta_{W},
+\end{equation}
+
+where angle $\theta_{W}$ is known as w weak mixing angle and can be determined experimentally from masses of $Z$ and $W^{\pm}$ by the relation
+$cos\theta_{W} = \frac{M_{W}}{M_{Z}}$. So far however there was no consideration of how bosons or fermions for that matter become massive which will be covered in the next section.
+
+Before that the full Lagrangian of electroweak theory can be written as:
+
+%\begin{equation}
+%\mathcal{L}_{EW} =  -\frac{1}{4} W_^{\mu\nu}W^{i}_{\mu\nu} -\frac{1}{4} B_^{\mu\nu}B_{\mu\nu}
+%\label{eq:lag_fourth}
+%\end{equation}
+
+% $psi_{L}=\frac{l}{\nu_{l}}$ where $l$ is lepton or for quarks $\psi_{L}=\frac{q_{i}}{\bar{q_{i}}}$ where $q_{i}$ is quark in a given generation and $\bar{q_{i}}$ is the other quark in a given generation.
+
+\section{Quark Mass Generation}
 Quantum Chromodynamics (QCD), the field theory that describes the strong interactions of colored quarks and gluons, is the SU(3) component of the Standard Model. Since the strong force is flavour symmetric, this results in mass matrices involving the electroweak interactions only, which are based on the gauge group SU(2)$\otimes$U(1). Both masses and mixing of quarks originate as a result of Yukawa interactions with Higgs condensate \cite{ewconstraint}. Before the spontaneous breakdown of the electroweak symmetry, all quarks and leptons are massless. Once the Higgs scalar field acquires a vacuum expectation value $\langle\phi\rangle = (0, v/\sqrt{2})$ implying broken symmetry, quarks acquire mass and hence the Lagrangian density term involving the mass matrices\cite{texture} is obtained: 
 \begin{equation}\label{lama}
 {\cal L}_m= -U_{0L}^{\dagger}M_u U_{0R} - D_{0L}^{\dagger}M_dD_{0R} - h.c,
