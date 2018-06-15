@@ -120,7 +120,7 @@ As compared to QED field strenght, there is an additional term involving gluon f
 Then the full Lagrangian density for the strong interaction then reads as:
 
 \begin{equation}
-	\mathcal{L}_{QCD} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi + g_{s}\overline{\psi}\gamma^{\mu}\frac{\lambda_{a}}{2}\psi G^{a}_{\mu} -\frac{1}{4} G_{a}^{\mu\nu}G^{a}_{\mu\nu},
+	\mathcal{L}_{QCD} = i\overline{\psi}\gamma^{\mu}\mathcal{D}_{\mu}\psi - m\overline{\psi}\psi -\frac{1}{4} G_{a}^{\mu\nu}G^{a}_{\mu\nu} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi + g_{s}\overline{\psi}\gamma^{\mu}\frac{\lambda^{a}}{2}\psi G^{a}_{\mu} -\frac{1}{4} G_{a}^{\mu\nu}G^{a}_{\mu\nu},
 \label{eq:lag_fourth}
 \end{equation}
 
@@ -137,7 +137,22 @@ In this way one can decompose the spinor field into left-handed and right-handed
 
 where $P_{L} =\frac{1-\gamma^{5}}{2}$ and $P_{R}=\frac{1-\gamma^{5}}{2}$ are known to be projection operators. By calling these operators left-handed and right-handed, there is a misconception that $\psi_{L}$ is a helicity eigenstate, but this is only true given the particle in question is masless. These spinors are known to have chirality - known as left or right-handedness. Helicity is rather a projection of the spin on the direction of the momentum.
 
-As the quarks and leptons can couple within the generation exchanging $W^{\pm}$ this gives rise to left-handed isospin doublets and right-handed isospin singlets. The simplest group with doublet representation is SU(2) and in combination with the electromagnetic ineraction forms $SU(2)_{L} \otimes U(1)_{Y}$, refers to weak isospin (I) and $Y$ refers to weak hypercharge, where they are inter-related by equation
+As the quarks and leptons can couple within the generation exchanging $W^{\pm}$ this motivates left-handed isospin doublets where for the first generation of fermions:
+
+\begin{equation}
+%\begin{split}
+Q_{L_{u,d}} = \binom{u_{L}}{d_{L}},~L_{l_{e,\nu_{e}}} = \binom{e_{L}}{\nu_{L}},
+%\end{split}
+\end{equation}
+
+and right-handed isospin singlets for up-type quarks, down-type quarks and charged leptons:
+
+\begin{equation}
+	u_{R}=(u_{R},c_{R},t_{R}),~
+	d_{R}=(d_{R},s_{R},b_{R}),~
+	l_{R}=(e_{R},\mu_{R},\tau_{R}).
+\end{equation}
+The simplest group with doublet representation is SU(2) and in combination with the electromagnetic ineraction forms $SU(2)_{L} \otimes U(1)_{Y}$, refers to weak isospin (I) and $Y$ refers to weak hypercharge, where they are inter-related by equation
 
 \begin{equation}
 Q=I^{3} + \frac{1}{2}Y
@@ -147,14 +162,15 @@ where $Q$ is electric charge. Again assuming gauge invariance under local transf
 
 \begin{equation}
 	D_{\mu} = \partial_{\mu} + i\frac{g}{2}W_{\mu}^{i} \frac{\sigma^{i}}{2} - i \frac{1}{2}g'B_{\mu} 
+\label{eq:covdev}
 \end{equation}
 where $\sigma^{i}$ are Pauli matrices, $g,g'$ are the weak and strong couplings and $W_{\mu}^{i}$ where $i\in\{1,2,3\}$ and $B_{\mu}$ are the vector fields that should be corresponding to $W^{\pm},Z^{0},\gamma$.
 The field strenghts are defined as $B^{\mu\nu}=\partial^{u}B^{\nu} - \partial^{\nu}B^{u}$ and $W^{i}_{\mu\nu} = \partial^{\mu}W^{i}_{\nu} - \partial^{\nu}W^{i}_{\mu}+ g\epsilon^{ijk}W_{\mu}^{j}W_{\nu}^{k}$.
 
 The real charged bosons corresponding to $W^{\pm}$ arise as linear combinatios in the following way
 \begin{equation}
-W^{\pm}_{\mu} = \frac{1}{\sqrt{2}}(W^{1}_{\mu}\mp iW^{2}_{\mu})
-\end{equation}, 
+W^{\pm}_{\mu} = \frac{1}{\sqrt{2}}(W^{1}_{\mu}\mp iW^{2}_{\mu}),
+\end{equation} 
 whereas the neutral bosons are obtained in the following way:
 
 
@@ -168,14 +184,83 @@ whereas the neutral bosons are obtained in the following way:
 where angle $\theta_{W}$ is known as w weak mixing angle and can be determined experimentally from masses of $Z$ and $W^{\pm}$ by the relation
 $cos\theta_{W} = \frac{M_{W}}{M_{Z}}$. So far however there was no consideration of how bosons or fermions for that matter become massive which will be covered in the next section.
 
-Before that the full Lagrangian of electroweak theory can be written as:
+Again that the full Lagrangian of electroweak theory can be then obtained consisting of the kinetic part
+\begin{equation}
+\mathcal{L}_{kin}=  -\frac{1}{4} B^{\mu\nu}B_{\mu\nu} -\frac{1}{4} W_{i}^{\mu\nu}W^{i}_{\mu\nu}
+\end{equation}
+where for $W_{i}^{\mu\nu}$ like in QCD there is cubic and quartic self interaction amongst the gauge fields. Then there are interactions between the quark/lepton fields and the gauge bosons where it is convential to split this into two categories according to the charge of gauge bosons.
+This is what gives rise to charged and neutral current for electroweak force. And for the physical gauge boson representation, charged current Lagrangian $\mathcal{L}_{CC}$ and neutral current Lagrangian $\mathcal{L}_{NC}$, where for the single family of fermions
+\begin{equation}
+	\mathcal{L}_{CC}= - \frac{g}{2\sqrt{2}}[W^{+}[\overline{\nu}\gamma^{\mu}(1-\gamma_{5})l + \overline{u}\gamma^{\mu}(1-\gamma_{5})d] + h.c], 
+\end{equation}
 
-%\begin{equation}
-%\mathcal{L}_{EW} =  -\frac{1}{4} W_^{\mu\nu}W^{i}_{\mu\nu} -\frac{1}{4} B_^{\mu\nu}B_{\mu\nu}
-%\label{eq:lag_fourth}
-%\end{equation}
+\begin{equation}
+	\mathcal{L}_{NC}= - g sin\theta_{W}(\overline{l}\gamma^{\mu}l)A_{\mu} - \frac{g}{2cos\theta_{W}}\sum_{\psi=\nu,l} \overline{\psi_{i}}\gamma^{\mu}(g^{i}_{V} - g^{i}_{A}\gamma_{5})\psi^{i}Z_{\mu}
+\end{equation}
 
-% $psi_{L}=\frac{l}{\nu_{l}}$ where $l$ is lepton or for quarks $\psi_{L}=\frac{q_{i}}{\bar{q_{i}}}$ where $q_{i}$ is quark in a given generation and $\bar{q_{i}}$ is the other quark in a given generation.
+
+where the famous maximal (V-A) structure of weak charged current comes from. As the first part of $\mathcal{L}_{NC}$ represents known electromagnetic interaction $e=gsin\theta_{W}$. 
+
+If the field is considered to be under U(1) charge then it was observed that this gauge field was invariant. However under SU(2) there is a tranformation whereby $l_{L}$ into $\nu_{L}$. In this case, the Lagrangian for the fermion mass field breaks the local gauge invariance and for this reason and as well to give the mass to the gauge bosons Higgs mechanism is introduced.
+
+\section{Higgs Mechanism}
+Higgs mechanism for both the fermions and gauge bosons allow to obtain mass by a process known as spontaneous symmetry breaking by introduction of new scalar field with potential $V$ into the model. Let actually $\phi$ be a doublet of complex scalar fields where
+
+\begin{equation}
+\phi = \binom{\phi^{+}}{\phi^{0}},
+\end{equation}
+
+where $\phi^{+} = \frac{\phi_{1} + i{\phi_{2}}}{\sqrt{2}}$ and $\phi^{0} = \frac{\phi_{3} + i{\phi_{4}}}{\sqrt{2}}$ so that $\phi^{\dagger}\phi = \frac{\phi_{1}^{2} + \phi_{2}^{2} + \phi_{3}^{2} + \phi_{4}^{2}}{2}$.
+
+Lagrangian for this field is then
+
+
+
+\begin{equation}
+	\mathcal{L}_{Higgs} = (D_{\mu}\phi)^{\dagger}(D^{\mu}\phi) + V = (D_{\mu}\phi)^{\dagger}(D^{\mu}\phi) - \mu^{2}\phi^{\dagger}\phi - \lambda (\phi^{\dagger}\phi)^{2},
+\end{equation}
+where $D_{\mu}$ is given in~\autoref{eq:covdev}, and $V$ is the famous mexican hat potential where x-axis is $\phi_{1}$, y-axis is $\phi_{2}$ where. So that there is possibiliy of ground state it is required that $\lambda>0$.
+
+By finding the ground state - or the stable minimum - of this potential with $\mu^{2}<0$, one gets infinite number of this minima such that
+\begin{equation}
+	\phi\phi^{\dagger}=\frac{-\mu^{2}}{2\lambda}=\frac{v^{2}}{2}.
+\end{equation}
+
+This is the same as saying that the minimum is independent of direction as it lies on the circle of minima. As the minimum is usually known as vaccum, $v$ is known to be vaccuum expectation value. By chosing a particular minimum one fixes direction and the symmetry of $SU(2)\otimes U(1)$ is spontaneously broken, meaning that the overall theory is symmetrical but the ground state exhibits antisymmetry. In this case direction $\phi=\frac{1}{\sqrt{2}}\binom{0}{v}$ is chosen or detailing both real and imaginary part of the fields the direction is chosen so that $\phi_{3}=v$ $\phi_{1}=\phi_{2}=\phi_{4}=0$. This allows for generation of three massive bosons $W^{\pm}$ and $Z^{0}$ and massless $\gamma$ of the electroweak theory. By fluctuating the field around minima 
+
+\begin{equation}
+\phi=\frac{1}{\sqrt{2}}\binom{0}{v+H},
+\label{eq:ref}
+\end{equation}
+the so well-studied Higgs boson is created.
+
+
+\section{Fermion mass generation}
+Moreover introducing an additional scalar doublet into the model also fixes the broken gauge symmetry for fermionic mass as it is possible to construct the fermion-scalar interaction Lagrangian that is gauge invariant, usually denoted as Yukawa Lagrangian $\mathcal{L}_{Y}$ which is made up of te leptonic part and quark part:
+\begin{equation}
+	\mathcal{L}_{Y}= \mathcal{L}_{L} + \mathcal{L}_{Q}
+\end{equation}
+
+where
+
+\begin{equation}
+	\mathcal{L}_{L}= g_{l}(\overline{L}_{L}\phi l_{R} + \overline{l}_{R} \phi^{\dagger} L_{L}) 
+	\label{eq:SSB1}
+\end{equation}
+
+\begin{equation}
+	\mathcal{L}_{Q}= g_{l}(\overline{L}_{L}\phi l_{R} + \overline{l}_{R} \phi^{\dagger} L_{L}) 
+	\label{eq:SSB2}
+\end{equation}
+
+
+
+where each $g_{l}$ is a coupling constant. After spontaneous symmetry breaking (~\autoref{eq:ref}), the leptonic part becomes
+
+\begin{equation}
+	\mathcal{L}_{L}= \frac{g_{l}v}{\sqrt{2}}\overline{l}_{L}l_{R} + \frac{g_{l}}{\sqrt{2}}\overline{l}_{R} l_{L}H
+        \label{eq:SSB1}
+\end{equation}
 
 \section{Quark Mass Generation}
 Quantum Chromodynamics (QCD), the field theory that describes the strong interactions of colored quarks and gluons, is the SU(3) component of the Standard Model. Since the strong force is flavour symmetric, this results in mass matrices involving the electroweak interactions only, which are based on the gauge group SU(2)$\otimes$U(1). Both masses and mixing of quarks originate as a result of Yukawa interactions with Higgs condensate \cite{ewconstraint}. Before the spontaneous breakdown of the electroweak symmetry, all quarks and leptons are massless. Once the Higgs scalar field acquires a vacuum expectation value $\langle\phi\rangle = (0, v/\sqrt{2})$ implying broken symmetry, quarks acquire mass and hence the Lagrangian density term involving the mass matrices\cite{texture} is obtained: 
