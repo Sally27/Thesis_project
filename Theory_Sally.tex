@@ -1,33 +1,36 @@
 \chapter{Theory}
 %\subsection{Introduction to Mixing Phenomenology}
-\section{Review of the Standard Model}
-The Standard Model (SM) of particle physics is to-the-date the most accurate model describing the buildings blocks of matter (particles) and their interactions (via forces). In particular SM describes all the fundamental forces but gravity: electromagnetic, strong nuclear, and weak nuclear force. It is a quantum field theory (QFT), whereby the dynamics of the system is captured by the most general renormalisable Lagrangian density that is invariant under gauge symmetry. QFT considers particles to be an excited states of an underlying field, also known as quanta. In the SM particles and forces are the results of interactions between scalar, vector and spinor fields. In general there are two sets of particles: force-carrying particles also known as bosons, which have integer spin and are quanta of the scalar and vector fields. More specifically, there is thes Higgs boson, the only elementary scalar boson in the SM, and vector bosons: gluons, $W^{\pm}$, Z and $\gamma$. Secondly, there are the non-force carrying particles, which are known to be fermions, quanta of spinor fields. Unlike bosons they carry half-integer spin. These can be further classified into two elementary families of particles: quarks, which cannot be observed alone and leptons which can be detected on their own. Out of all of these fundamental particles, those that have mass acquire it by the most famous symmetry-breaking mechanism - Higg's mechanism.
+\textit{The Standard Model is without question the most powerful and tested model of particle physics. It describes and predicts many phenomena very well even though we know that there are several shortcomings such as gravity inclusion or dark matter candidate, which could lead potentially to unified theory. Furthermore, fine-tuning of some parameters in the Standard Model such as Higgs mass, where parameters get exactly the right value to produce required behaviour, beg questions if there is some symmetry in the model building that is missing. In this chapter theoretical basis of the Standard Model is discussed which is then followed by experimental and theoretical consideration of fully leptonic decays.}
 
-Quarks are affected by all three fundamental forces. They come in six different \textit{flavours} and they carry fractional charge as seen in~\autoref{nonlin}.
+
+
+\section{Review of the Standard Model}
+The Standard Model (\gls{SM}) of particle physics is to-the-date the most accurate model describing the buildings blocks of matter, particles, and their interactions via forces. In particular \gls{SM} describes all the fundamental forces but gravity: electromagnetic, strong nuclear, and weak nuclear force. It is a quantum field theory (\gls{QFT}) whereby the dynamics of the system is captured by the most general renormalisable Lagrangian density that is invariant under gauge symmetry. \gls{QFT} considers particles to be an excited states of an underlying field, also known as quanta. In the \gls{SM} particles and forces are the results of interactions between scalar, vector and spinor fields. In general there are two sets of particles: force-carrying particles also known as bosons, which have integer spin and are quanta of the scalar and vector fields. More specifically, there is the Higgs boson, the only elementary scalar boson in the \gls{SM}, and vector bosons: gluons, $W^{\pm}$, Z and $\gamma$. Secondly, there are the non-force carrying particles, which are known under name fermions, quanta of spinor fields. Unlike bosons they carry half-integer spin. These can be further classified into two elementary families of particles: quarks, which cannot be observed alone and leptons which can be detected on their own. Out of all of these fundamental particles, those that have mass acquire it by the most famous symmetry-breaking mechanism - Higgs mechanism.
+
+%Quarks are affected by all three fundamental forces. They come in six different \textit{flavours} and they carry fractional charge as seen in~\autoref{nonlin}.
 
 \begin{table} 
 
 \centering % used for centering table 
 \begin{tabular}{|c|c|c|c|} % centered columns (4 columns) 
 \hline %inserts double horizontal lines 
-Generation & ``Flavour" & Charge & Constituent Mass \\ [0.5ex]\hline% inserts table 
+Generation & Flavour & Charge & Constituent Mass \\ [0.5ex]\hline% inserts table 
 %heading 
 \hline % inserts single horizontal line 
-1st & up  \textit{u}& +2/3 & ~300 Mev/c$^{2}$ \\ % inserting body of the table 
-1st & down \textit{d}& -1/3 &  ~300 MeV/c$^{2}$ \\[1ex]
-2nd & charm \textit{c}& +2/3 &  ~1.5 Gev/c$^{2}$\\ 
-2nd & strange \textit{s}& -1/3 &  ~500 Mev/c$^{2}$ \\[1ex]
-3rd & top \textit{t}& +2/3 &  ~175 Gev/c$^{2}$ \\ 
-3rd & bottom \textit{b}& -1/3 & ~ 5 Gev/c$^{2}$ \\ [1ex] % [1ex] adds vertical space 
+1st & up  \textit{u}& +2/3 & ~300 \mevcc \\ % inserting body of the table 
+1st & down \textit{d}& -1/3 &  ~300 \mevcc \\[1ex]
+2nd & charm \textit{c}& +2/3 &  ~1.5 \gevcc\\ 
+2nd & strange \textit{s}& -1/3 &  ~500 \mevcc\\[1ex]
+3rd & top \textit{t}& +2/3 &  ~175 \gevcc \\ 
+3rd & bottom \textit{b}& -1/3 & ~ 5 \gevcc \\ [1ex] % [1ex] adds vertical space 
 \hline %inserts single line 
-
 \end{tabular} 
 \caption{Quarks and their properties.} 
 \label{nonlin} % is used to refer this table in the text 
 \end{table} 
 
-The reason why quarks are not observed alone is due to their confinment within hadrons, which is an artefact of strong interaction acting on quarks. This can be understood within the framework of quantum field theory by observing evolution of the coupling strenght $g$ as a function of energy scale, also known as $\beta$ function.
-The $\beta$-function for a coupling constant $g$ in the SM to the two loop contribution takes the following form:
+Quarks are affected by all three fundamental forces. They come in six different \textit{flavours} and they carry fractional charge as seen in~\autoref{nonlin}. The reason why quarks are not observed alone is due to their confinement within hadrons, which is an artefact of strong interaction acting on quarks. This can be understood within the framework of \gls{QFT} theory by observing evolution of the coupling strength $g$ as a function of energy scale, also known as $\beta$ function.
+The $\beta$-function for a coupling constant $g$ in the \gls{SM} to the two loop contribution takes the following form:
 \begin{equation}
 \beta_g = \mu {{d g}\over d \mu} = {1\over16\pi^2} \beta_g^{(1)}
 + {1\over(16\pi^2)^2} \beta_g^{(2)},
@@ -35,35 +38,33 @@ The $\beta$-function for a coupling constant $g$ in the SM to the two loop contr
 where $\beta_g^{(1)},~ \beta_g^{(2)}$ denote the one-loop and two-loop
 contributions respectively, and $\mu$ is the energy scale. For the strong interaction, unlike electromagnetic and weak interaction, $\beta_g$ is negative. For low energies as $\mu \rightarrow 0$ the coupling is very high and hence quarks cannot be observed on their own, \textit{confinement}. On the other hand as $\mu \rightarrow \infty$, or at high energies, the coupling gets small, particles get decoupled, which is known as \textit{asymptotic freedom}. 
 
-There are altogether 12 leptons. Unlike quarks they are not affected by strong force but also come along in three generations: electrons, muons and taus. They have their equivalent antiparticles and corresponding neutrinos. Much of this thesis is dedicated to the study of the muons, antimuons and their neutrinos with LHCb detector.
+There are also 12 leptons in total. Unlike quarks they are not affected by strong force but also come along in three generations with increasing mass: electrons, muons and taus. They have their equivalent antiparticles and corresponding neutrinos. Much of this thesis is dedicated to the study of the muons or antimuons and their neutrinos. 
 
+In the rest of the chapter, \gls{SM} formulation is introduced starting with the principle of local gauge invariance explained in~\autoref{build}. Strong and electroweak sector are described in ~\autoref{qcd} and~\autoref{weak} and the necessary process of mass generation in the \gls{SM}, Higgs mechanism, is covered in~\autoref{higgs}. Effect on the electroweak sector is then described in~\autoref{mass} resulting in the quark mixing matrix detailed in~\autoref{ckm}. Following sections (~\autoref{lnudecays},~\autoref{lnugamma},~\autoref{mydecay}) then discuss the theoretical and experimental status of fully leptonic decays, which are sensitive to elements of the quark mixing matrix. Finally discussion about decay model used for the search of \Bmumumu is covered in~\autoref{mydecay}.  
 
-\section{Principle of Standard Model Building}
-In more mathematical terminology, the SM is a theory that respects SU(3)$\otimes$SU(2)$\otimes$U(1) symmetries. In this section the form of the Lagrangian density of the SM is motivated. It is assumed that $\hbar=1$, $c=1$. Let $\psi$ to be a spinor field. The Dirac Lagrangian for spin-$\frac{1}{2}$ non-interacting or free field for a particle with mass $m$ can be written as: 
+\section{The Principle of Standard Model Building}
+\label{build}
+In more mathematical terminology, the \gls{SM} is a theory that respects SU(3)$\otimes$SU(2)$\otimes$U(1) symmetries. In this section the form of the Lagrangian density of the \gls{SM} is motivated. Throughout it is assumed that $\hbar=1$, $c=1$. The Dirac Lagrangian for spin-$\frac{1}{2}$ non-interacting or free field $\psi$ (spinor field) for a particle with mass $m$ can be written as: 
 \begin{equation}
 \mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi.
 \label{eq:lag_first}
 \end{equation}
 
-where $\gamma^{\mu}$ are $4\times 4$ Dirac matrices and $\mu\in\{0,1,2,3\}$.
-
-By using Euler-Lagrange equation in the relativistic theory
+\noindent where $\gamma^{\mu}$ are $4\times 4$ Dirac matrices and $\mu\in\{0,1,2,3\}$. By using Euler-Lagrange equation in the relativistic theory
 
 \begin{equation}
 	\partial_{\mu}\Big(\frac{\partial{\mathcal{L}}}{\partial(\partial_{\mu}\psi_{i})} \Big) =\frac{\partial \mathcal{L}}{\partial\psi_{i}}
 \label{eq:lag_first}
 \end{equation}
-
-for $\overline\psi$ the Dirac equation of motion
+for $\overline\psi$ in~\autoref{eq:lag_first} following equation 
 
 \begin{equation}
  i\gamma^{\mu}\partial_{\mu}\psi - m\psi = 0
-\label{eq:lag_first}
+\label{eq:lag_first2}
 \end{equation}
+can be retrieved. This is the Dirac equation of motion.
 
-is retrieved.
-
-The Dirac Lagrangian in~\autoref{eq:lag_first} stays the same under global phase transformation: $\psi \rightarrow e^{i\phi}\psi$ as $\overline\psi \rightarrow e^{-i\phi}\overline\psi$. However, undel local phase transformation, where $\phi$ is a function of $x^{\mu}$  this is not the case anymore. In this case
+The Dirac Lagrangian in~\autoref{eq:lag_first} stays the same under global phase transformation: $\psi \rightarrow e^{i\phi}\psi$ and $\overline\psi \rightarrow e^{-i\phi}\overline\psi$. However, under local phase transformation, where $\phi$ is a function of $x^{\mu}$, this is not the case anymore. In this case
 \begin{equation}
 \mathcal{L} \rightarrow \mathcal{L}- (\partial_{\mu}\phi) \overline{\psi}\gamma^{\mu}\psi.
 \label{eq:notinv}
@@ -75,10 +76,9 @@ By requiring local gauge invariance for the Lagrangian, it is necessary to add a
 	\mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi - q\overline{\psi}\gamma^{\mu}\psi A_{\mu}
 \label{eq:lag_sec}
 \end{equation}
+stays invariant under local phase transformation. That is good, however, there is a penalty for introducing a new vector field $A_{\mu}$ which interacts with spinor field $\psi$ as can be seen in the last part of~\autoref{eq:lag_sec}. It is now necessary to also introduce that is a non-interacting term for $A_{\mu}$.
 
-stays invariant under local phase transformation. That is good, however, there is a penalty for introducing a new vector field $A_{\mu}$ which interacts with spinor field $\psi$ as can be seen in the last part of~\autoref{eq:lag_sec}, that is a non-interacting term for $A_{\mu}$.
-
-The Lagrangian for non-interacting vector field for a particle with mass $m_{A}$ with the field strenght $F^{\mu\nu}=\partial^{u}A^{\nu} - \partial^{\nu}A^{u}$ is
+The Lagrangian for non-interacting vector field for a particle with mass $m_{A}$ with the field strength $F^{\mu\nu}=\partial^{u}A^{\nu} - \partial^{\nu}A^{u}$ is
 \begin{equation}
 \mathcal{L}= -\frac{1}{16\pi} F^{\mu\nu}F_{\mu\nu} + \frac{1}{8\pi}m_{A}^{2}A^{\mu}A_{\mu}.
 \end{equation}
@@ -89,95 +89,94 @@ In order not to spoil the local gauge invariance the $m_{A}=0$. Hence the full D
 	\mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi - q\overline{\psi}\gamma^{\mu}\psi A_{\mu} -\frac{1}{16\pi} F^{\mu\nu}F_{\mu\nu},
 \label{eq:lag_thir}
 \end{equation}
-
-which can be recognized as the Lagrangian for quantum electrodynamics (QED), whereby the electrons and positrons (quanta of spinor field) are interacting with photons (quanta of vector field). In other words, $A_{\mu}$ is electromagnetic potential and $q=e$, the current density is hence $J^{\mu}=e\overline{\psi}\gamma^{\mu}\psi$. This represents U(1)  
+which can be recognized as the Lagrangian for quantum electrodynamics (\gls{QED}), whereby the electrons and positrons (quanta of spinor field) are interacting with photons (quanta of vector field). In other words, $A_{\mu}$ is electromagnetic potential and $q=e$, the current density is hence $J^{\mu}=e\overline{\psi}\gamma^{\mu}\psi$. This represents $U(1)_{EM}$ part of the SM.
 
 To upgrade from global invariance of the non-interacting Lagrangian in~\autoref{eq:lag_first} to local invariance one can also achieve it in one step be defining \textit{covariant derivative}
 \begin{equation}
 	\mathcal{D}_{\mu} = \partial_{\mu}+ iqA_{\mu},
 \end{equation}
-
-where the secret ingredient is to transform the partial derivative in the same way as the field itself undel local gauge transformation.
+where the secret ingredient is to transform the partial derivative in the same way as the field itself under local gauge transformation.
 
 \section{Quantum Chromodynamics}
-Requirement of gauge invariance under local transformation is a powerful tool and it is used throughout the Standard Model building. In this section the development of Lagrangian for Quantum chromodynamics (QCD) is explained. QCD dectribes strong interactions or nuclear binding forces and makes use of quarks ($q$) whereby most of the time they are observed to be bound either in pairs - mesons ($q\bar{q}$) - or triplets - baryons ($qqq$). The interactions between quarks and gluons are described by $SU(3)_{C}$ gauge group. The conserving charge associated with strong force is known as color, hence the subpscipt $C$. It was experimentally established that there are 3 colors and borrowing from color theory used by painters these colors are red, blue and green. The quark carries color and antiquark anticolor making mesons and baryons to have zero net color. There are 8 quanta of strong interactions known as gluons.
+\label{qcd}
+Requirement of gauge invariance under local transformation is a powerful tool and it is used throughout the \gls{SM} building. In this section the development of Lagrangian for Quantum chromodynamics (\gls{QCD}) is explained. \gls{QCD} describes strong interactions or nuclear binding forces and makes use of quarks ($q$) whereby most of the time they are observed to be bound either in pairs - mesons ($q\bar{q}$) - or triplets - baryons ($qqq$). The interactions between quarks and gluons are described by $SU(3)_{C}$ gauge group. The conserving charge associated with strong force is known as color, hence the subscript $C$. It was experimentally established that there are 3 colors and borrowing from color theory used by painters these colors are red, blue and green. The quark carries color and antiquark anticolor making mesons and baryons colorless. There are 8 quanta of strong interactions known under name gluons.
 
-With these constraints and by requiring the free Lagrangian to be invariant under local $SU(3)$ transformation similarly to the QED case, one obtaines again \textit{covariant derivative}
+With these constraints and by requiring the free Lagrangian to be invariant under local $SU(3)$ transformation similarly to the \gls{QED} case, one obtains again \textit{covariant derivative}
 
 \begin{equation}
 \mathcal{D}_{\mu} = \partial_{\mu} - ig_{s}\frac{\lambda^{a}}{2}G^{a}_{\mu},
 \end{equation}
-
-that respects $SU(3)$ symmetry, where $\lambda^{a}$ are Gell-Mann matrices, $a\in\{1..8\}$ (8 possible gluons), $g_{s}$ is the strong coupling. The field strenght for the gluon field is defined as $G_{a}^{\mu\nu}=\partial^{u}G_{a}^{\nu} - \partial^{\nu}G_{a}^{u} + g_{s}f^{abc}G_{b}^{\mu}G_{c}^{\nu}$, where $f^{abc}$ are so-called structure constants which satisfy the following commutaion relation:
+that respects $SU(3)$ symmetry, where $\lambda^{a}$ are Gell-Mann matrices, $a\in\{1..8\}$ (8 possible gluons), $g_{s}$ is the strong coupling. The field strength for the gluon field is defined as $G_{a}^{\mu\nu}=\partial^{u}G_{a}^{\nu} - \partial^{\nu}G_{a}^{u} + g_{s}f^{abc}G_{b}^{\mu}G_{c}^{\nu}$, where $f^{abc}$ are so-called structure constants which satisfy the following commutation relation:
 
 \begin{equation}
 	\Big[\frac{\lambda^{a}}{2},\frac{\lambda^{b}}{2}\Big] = if^{abc}\frac{\lambda^{c}}{2}.
 \end{equation}
 
-As compared to QED field strenght, there is an additional term involving gluon fields themselves, causing cubic and quartic gluon interactions, which were not present before.
+As compared to \gls{QED} field strength, there is an additional term involving gluon fields themselves, causing cubic and quartic gluon interactions, which were not present before.
 
 
-Then the full Lagrangian density for the strong interaction then reads as:
+Then the full Lagrangian density for the strong interaction reads as:
 
 \begin{equation}
-	\mathcal{L}_{QCD} = i\overline{\psi}\gamma^{\mu}\mathcal{D}_{\mu}\psi - m\overline{\psi}\psi -\frac{1}{4} G_{a}^{\mu\nu}G^{a}_{\mu\nu} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi + g_{s}\overline{\psi}\gamma^{\mu}\frac{\lambda^{a}}{2}\psi G^{a}_{\mu} -\frac{1}{4} G_{a}^{\mu\nu}G^{a}_{\mu\nu},
+	\mathcal{L}_{\gls{QCD}} = i\overline{\psi}\gamma^{\mu}\mathcal{D}_{\mu}\psi - m\overline{\psi}\psi -\frac{1}{4} G_{a}^{\mu\nu}G^{a}_{\mu\nu} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi + g_{s}\overline{\psi}\gamma^{\mu}\frac{\lambda^{a}}{2}\psi G^{a}_{\mu} -\frac{1}{4} G_{a}^{\mu\nu}G^{a}_{\mu\nu},
 \label{eq:lag_fourth}
 \end{equation}
-
 where the interaction between quarks and gluons is encoded in the third term of~\autoref{eq:lag_fourth}.
 
 
 \section{Electroweak unification}
-The idea behind unification of weak and electromagnetic interactions is very powerful, as it has to accomodate for forces that act with very different strenght with force-carrying particles that are both massive ($W^{\pm}$,$Z$) and masless ($\gamma$). Furthermore $W^{\pm}$ only couple to left-handed particles, whereas, known as parity violation, whereas $Z^{0}$ couple to both left and right-handed particles  electromagnetic vertex factor is purely vectorial($\gamma^{\mu}$) whereas $W^{\pm}$ coupling has both axial and vector components: ($\gamma^{\mu}(1-\gamma^{5})$), where $\gamma^{5}=i\times\gamma^{0}\times\gamma^{1}\times\gamma^{2}\times\gamma^{3}$, which can be solved by absorption of $1-\gamma^{5}$ into a spinor field itself.
+\label{weak}
+The idea behind unification of weak and electromagnetic interactions is very powerful, as it has to accommodate for forces that act with very different strength with force-carrying particles that are both massive ($W^{\pm}$,$Z$) and massless ($\gamma$). Furthermore $W^{\pm}$ only couple to left-handed particles, whereas $Z^{0}$ couple to both left and right-handed particles. Furthermore, electromagnetic vertex factor is purely vectorial($\gamma^{\mu}$) whereas $W^{\pm}$ coupling has both axial and vector components: ($\gamma^{\mu}(1-\gamma^{5})$), where $\gamma^{5}=i\times\gamma^{0}\times\gamma^{1}\times\gamma^{2}\times\gamma^{3}$. This last issue can be solved by absorption of $1-\gamma^{5}$ into a spinor field itself.
 
-In this way one can decompose the spinor field into left-handed and right-handed (chiral) spinors
+In this way one can decompose the spinor field into left-handed and right-handed (chiral) spinor components
 \begin{equation}
-	\psi=\psi_{L}+\psi_{R} = P_{L}\psi + P_{R}\psi
+	\psi=\psi_{L}+\psi_{R} = P_{L}\psi + P_{R}\psi,
 \end{equation}
-
-where $P_{L} =\frac{1-\gamma^{5}}{2}$ and $P_{R}=\frac{1-\gamma^{5}}{2}$ are known to be projection operators. By calling these operators left-handed and right-handed, there is a misconception that $\psi_{L}$ is a helicity eigenstate, but this is only true given the particle in question is masless. These spinors are known to have chirality - known as left or right-handedness. Helicity is rather a projection of the spin on the direction of the momentum.
+where $P_{L} =\frac{1-\gamma^{5}}{2}$ and $P_{R}=\frac{1-\gamma^{5}}{2}$ are known to be projection operators. By calling these operators left-handed and right-handed, there is a misconception that $\psi_{L}$ is a helicity eigenstate, but this is only true given the particle in question is massless. These spinors are known to have chirality - known as left or right-handedness. Helicity is rather a projection of the spin on the direction of the momentum.
 
 As the quarks and leptons can couple within the generation exchanging $W^{\pm}$ this motivates left-handed isospin doublets where for the first generation of fermions:
 
 \begin{equation}
 %\begin{split}
-Q_{L_{u,d}} = \binom{u_{L}}{d_{L}},~L_{l_{e,\nu_{e}}} = \binom{e_{L}}{\nu_{L}},
+Q_{L} = \binom{u_{L}}{d_{L}}, ~L_{L} = \binom{e_{L}}{\nu_{L}},
 %\end{split}
+	\label{eq:defdou}
 \end{equation}
-
 and right-handed isospin singlets for up-type quarks, down-type quarks and charged leptons:
 
 \begin{equation}
 	u_{R}=(u_{R},c_{R},t_{R}),~
 	d_{R}=(d_{R},s_{R},b_{R}),~
 	l_{R}=(e_{R},\mu_{R},\tau_{R}).
+	\label{eq:defsin}
 \end{equation}
-The simplest group with doublet representation is SU(2) and in combination with the electromagnetic ineraction forms $SU(2)_{L} \otimes U(1)_{Y}$, refers to weak isospin (I) and $Y$ refers to weak hypercharge, where they are inter-related by equation
+The simplest group with doublet representation is SU(2) and in combination with the electromagnetic interaction forms $SU(2)_{L} \otimes U(1)_{Y}$. The conserving charges are inter-related by equation
 
 \begin{equation}
 Q=I^{3} + \frac{1}{2}Y
 \end{equation}
+where $I$ refers to weak isospin, $Y$ refers to weak hypercharge, and $Q$ is electric charge.
 
-where $Q$ is electric charge. Again assuming gauge invariance under local transformation leads to \textit{covariant derivative} of $SU(2)_{L}\otimes U(1)_{Y}$ is
+Again by assuming gauge invariance under local transformation \textit{covariant derivative} of $SU(2)_{L}\otimes U(1)_{Y}$
 
 \begin{equation}
-	D_{\mu} = \partial_{\mu} + i\frac{g}{2}W_{\mu}^{i} \frac{\sigma^{i}}{2} - i \frac{1}{2}g'B_{\mu} 
+	D_{\mu} = \partial_{\mu} + i\frac{g}{2}W_{\mu}^{i} \frac{\sigma^{i}}{2} - i \frac{g'}{2}B_{\mu} 
 \label{eq:covdev}
 \end{equation}
-where $\sigma^{i}$ are Pauli matrices, $g,g'$ are the weak and strong couplings and $W_{\mu}^{i}$ where $i\in\{1,2,3\}$ and $B_{\mu}$ are the vector fields that should be corresponding to $W^{\pm},Z^{0},\gamma$.
-The field strenghts are defined as $B^{\mu\nu}=\partial^{u}B^{\nu} - \partial^{\nu}B^{u}$ and $W^{i}_{\mu\nu} = \partial^{\mu}W^{i}_{\nu} - \partial^{\nu}W^{i}_{\mu}+ g\epsilon^{ijk}W_{\mu}^{j}W_{\nu}^{k}$.
+is obtained. Here $\sigma^{i}$ are Pauli matrices, $g,g'$ are the weak and strong couplings and $W_{\mu}^{i}$ where $i\in\{1,2,3\}$ and $B_{\mu}$ are the vector fields that should be corresponding to $W^{\pm},Z^{0},\gamma$.
+The field strengths are defined as $B^{\mu\nu}=\partial^{u}B^{\nu} - \partial^{\nu}B^{u}$ and $W^{i}_{\mu\nu} = \partial^{\mu}W^{i}_{\nu} - \partial^{\nu}W^{i}_{\mu}+ g\epsilon^{ijk}W_{\mu}^{j}W_{\nu}^{k}$.
 
-The real charged bosons corresponding to $W^{\pm}$ arise as linear combinatios in the following way
+The real charged bosons corresponding to $W^{\pm}$ arise as linear combinations of $W^{i}_{\mu}$, for $i\in(1,2)$ in the following way
 \begin{equation}
 \begin{split}
 W^{\pm}_{\mu} = \frac{1}{\sqrt{2}}(W^{1}_{\mu}\mp iW^{2}_{\mu}),
 \\
-W_{\mu} \equiv W^{-}_{\mu}
+W_{\mu} \equiv W^{-}_{\mu},
 \\
-W^{\dagger}_{\mu} \equiv W^{+}_{\mu} 
+W^{\dagger}_{\mu} \equiv W^{+}_{\mu}. 
 \end{split}
 \end{equation} 
-whereas the neutral bosons are obtained in the following way:
+The neutral bosons are obtained using $W_{\mu}^{3}$ and $B_{\mu}$ in a similar fashion in the following way:
 
 
 \begin{equation}
@@ -186,16 +185,15 @@ whereas the neutral bosons are obtained in the following way:
 \begin{equation}
 	A_{\mu}= B_{\mu}cos\theta_{W}+W^{3}_{\mu}sin\theta_{W},
 \end{equation}
+where $\theta_{W}$ angle is known as weak mixing angle and can be determined experimentally from masses of $Z$ and $W^{\pm}$ by the relation
+$cos\theta_{W} = \frac{M_{W}}{M_{Z}}$. So far, however, there was no consideration of how bosons or fermions for that matter become massive which will be covered in the next section.
 
-where angle $\theta_{W}$ is known as w weak mixing angle and can be determined experimentally from masses of $Z$ and $W^{\pm}$ by the relation
-$cos\theta_{W} = \frac{M_{W}}{M_{Z}}$. So far however there was no consideration of how bosons or fermions for that matter become massive which will be covered in the next section.
-
-Again that the full Lagrangian of electroweak theory can be then obtained consisting of the kinetic part
+The full Lagrangian of electroweak theory then consists of the kinetic part
 \begin{equation}
 \mathcal{L}_{kin}=  -\frac{1}{4} B^{\mu\nu}B_{\mu\nu} -\frac{1}{4} W_{i}^{\mu\nu}W^{i}_{\mu\nu}
 \end{equation}
-where for $W_{i}^{\mu\nu}$ like in QCD there is cubic and quartic self interaction amongst the gauge fields. Then there are interactions between the quark/lepton fields and the gauge bosons where it is convential to split this into two categories according to the charge of gauge bosons.
-This is what gives rise to charged and neutral current for electroweak force. And for the physical gauge boson representation, charged current Lagrangian $\mathcal{L}_{CC}$ and neutral current Lagrangian $\mathcal{L}_{NC}$, where for the single family of fermions
+where for $W_{i}^{\mu\nu}$ like in \gls{QCD} there is cubic and quartic self interaction amongst the gauge fields. Then there are interactions between the quark/lepton fields and the gauge bosons where it is conventional to split this into two categories according to the charge of gauge bosons.
+This is what gives rise to charged and neutral current for electroweak interactions. So employing the physical gauge boson representation, charged current Lagrangian $\mathcal{L}_{CC}$ and neutral current Lagrangian $\mathcal{L}_{NC}$ for one family of fermions reads as
 \begin{equation}
 	\mathcal{L}_{CC}= - \frac{g}{2\sqrt{2}}\Big[W_{\mu}^{\dagger}\big[\overline{\nu}\gamma^{\mu}(1-\gamma_{5})l + \overline{u}\gamma^{\mu}(1-\gamma_{5})d\big] + h.c\Big], 
 \label{eq:LC}
@@ -205,36 +203,29 @@ This is what gives rise to charged and neutral current for electroweak force. An
 	\mathcal{L}_{NC}= - g sin\theta_{W}(\overline{l}\gamma^{\mu}l)A_{\mu} - \frac{g}{2cos\theta_{W}}\sum_{\psi=\nu,l} \overline{\psi_{i}}\gamma^{\mu}(g^{i}_{V} - g^{i}_{A}\gamma_{5})\psi_{i}Z_{\mu}
 \label{eq:NC}
 \end{equation}
+where the famous (V-A) structure of weak charged current can be seen. The first part of $\mathcal{L}_{NC}$ represents known electromagnetic interaction $e=gsin\theta_{W}$. 
 
-
-where the famous maximal (V-A) structure of weak charged current comes from. The first part of $\mathcal{L}_{NC}$ represents known electromagnetic interaction $e=gsin\theta_{W}$. 
-
-If the field is considered to be under U(1) charge then it was observed that this gauge field was invariant. However under SU(2) there is a tranformation whereby $l_{L}$ into $\nu_{L}$. In this case, the Lagrangian for the fermion mass field breaks the local gauge invariance and for this reason and as well to give the mass to the gauge bosons Higgs mechanism is introduced.
+If the field is considered to be under U(1) charge then it was shown that this gauge field was invariant in the QED case. However under SU(2) there is a transformation whereby $l_{L}$ is transformed into $\nu_{L}$. In this case, the Lagrangian for the fermion mass field breaks the local gauge invariance and for this reason and as well to give the mass to the gauge bosons Higgs mechanism is introduced.
 
 \section{Higgs Mechanism}
-Higgs mechanism for both the fermions and gauge bosons allow to obtain mass by a process known as spontaneous symmetry breaking by introduction of new scalar field with potential $V$ into the model. Let actually $\phi$ be a doublet of complex scalar fields where
+\label{higgs}
+Higgs mechanism for both the fermions and gauge bosons allow to obtain mass by a process known as spontaneous symmetry breaking by introduction of new scalar field with potential $V$ into the model. Let $\phi$ be a doublet of complex scalar fields where
 
 \begin{equation}
 \phi = \binom{\phi^{+}}{\phi^{0}},
 \end{equation}
-
-where $\phi^{+} = \frac{\phi_{1} + i{\phi_{2}}}{\sqrt{2}}$ and $\phi^{0} = \frac{\phi_{3} + i{\phi_{4}}}{\sqrt{2}}$ so that $\phi^{\dagger}\phi = \frac{\phi_{1}^{2} + \phi_{2}^{2} + \phi_{3}^{2} + \phi_{4}^{2}}{2}$.
-
-Lagrangian for this field is then
-
-
+where $\phi^{+} = \frac{\phi_{1} + i{\phi_{2}}}{\sqrt{2}}$ and $\phi^{0} = \frac{\phi_{3} + i{\phi_{4}}}{\sqrt{2}}$ so that $\phi^{\dagger}\phi = \frac{\phi_{1}^{2} + \phi_{2}^{2} + \phi_{3}^{2} + \phi_{4}^{2}}{2}$. Lagrangian for this field is then
 
 \begin{equation}
 	\mathcal{L}_{Higgs} = (D_{\mu}\phi)^{\dagger}(D^{\mu}\phi) + V = (D_{\mu}\phi)^{\dagger}(D^{\mu}\phi) - \mu^{2}\phi^{\dagger}\phi - \lambda (\phi^{\dagger}\phi)^{2},
 \end{equation}
-where $D_{\mu}$ is given in~\autoref{eq:covdev}, and $V$ is the famous mexican hat potential where x-axis is $\phi_{1}$, y-axis is $\phi_{2}$ where. So that there is possibiliy of ground state it is required that $\lambda>0$.
+where $D_{\mu}$ is given in~\autoref{eq:covdev}, and $V$ is the famous Mexican hat potential where x-axis is $\phi_{1}$, y-axis is $\phi_{2}$ where. So that there is possibility of ground state it is required that $\lambda>0$.
 
 By finding the ground state - or the stable minimum - of this potential with $\mu^{2}<0$, one gets infinite number of this minima such that
 \begin{equation}
 	\phi\phi^{\dagger}=\frac{-\mu^{2}}{2\lambda}=\frac{v^{2}}{2}.
 \end{equation}
-
-This is the same as saying that the minimum is independent of direction as it lies on the circle of minima. As the minimum is usually known as vaccum, $v$ is known to be vaccuum expectation value. By chosing a particular minimum one fixes direction and the symmetry of $SU(2)\otimes U(1)$ is spontaneously broken, meaning that the overall theory is symmetrical but the ground state exhibits antisymmetry. In this case direction $\phi=\frac{1}{\sqrt{2}}\binom{0}{v}$ is chosen or detailing both real and imaginary part of the fields the direction is chosen so that $\phi_{3}=v$ $\phi_{1}=\phi_{2}=\phi_{4}=0$. This allows for generation of three massive bosons $W^{\pm}$ and $Z^{0}$ and massless $\gamma$ of the electroweak theory. By fluctuating the field around minima 
+This is the same as saying that the minimum is independent of direction as it lies on the circle of minima. As the minimum is usually known as vacuum, $v$ is known to be vacuum expectation value. By choosing a particular minimum one fixes direction and the symmetry of $SU(2)\otimes U(1)$ is spontaneously broken, meaning that the overall theory is symmetrical but the ground state exhibits antisymmetry. In this case, direction $\phi=\frac{1}{\sqrt{2}}\binom{0}{v}$ is chosen. Detailing both real and imaginary part of the fields the direction can be translated so that $\phi_{3}=\frac{v}{2}$ $\phi_{1}=\phi_{2}=\phi_{4}=0$. This allows for generation of three massive bosons $W^{\pm}$ and $Z^{0}$ and massless $\gamma$ of the electroweak theory. By fluctuating the field around minima 
 
 \begin{equation}
 \phi=\frac{1}{\sqrt{2}}\binom{0}{v+H},
@@ -244,42 +235,34 @@ the so well-studied Higgs boson is created.
 
 
 \section{Fermion mass generation}
-Moreover introducing an additional scalar doublet into the model also fixes the broken gauge symmetry for fermionic mass as it is possible to construct the fermion-scalar interaction Lagrangian that is gauge invariant, usually denoted as Yukawa Lagrangian $\mathcal{L}_{Y}$ which is made up of te leptonic part and quark part:
+\label{mass}
+Moreover, introducing an additional scalar doublet into the model fixes the broken gauge symmetry for fermionic mass as it is possible to construct the fermion-scalar interaction Lagrangian that is gauge invariant, usually denoted as Yukawa Lagrangian $\mathcal{L}_{Y}$. It is made up of the leptonic part and the quark part:
 
 \begin{equation}
 	\mathcal{L}_{Y}= \mathcal{L}_{L} + \mathcal{L}_{Q}.
 \end{equation}
-
-The leptonic term for one family of leptons is
-
+The leptonic term for one family of leptons using definitions ini~\autoref{eq:defdou} and ~\autoref{eq:defsin} is
 \begin{equation}
 	\mathcal{L}_{L}= g_{l}(\overline{L}_{L}\phi l_{R} + \overline{l}_{R} \phi^{\dagger} L_{L}), 
 	\label{eq:SSB1}
 \end{equation}
-
-and defining $\phi_{c}=\binom{\phi^{0*}}{\phi^{-}}$ the quark term,
-
+With $\phi_{c}=\binom{\phi^{0*}}{\phi^{-}}$ the full three generation quark term is
 \begin{equation}
 	\mathcal{L}_{Q}= y^{u}_{ij}\overline{Q}^{i}_{L}\phi u^{j}_{R} + {y}^{d}_{ij}\overline{Q}^{i}_{L}\phi_{c} d^{j}_{R} + h.c .,
 	\label{eq:SSB2}
 \end{equation}
-
-where h.c stands for Hermitian conjugate, $i,j$ are the generations over which it is summed, $y^{q}$ are $3\times3$ matrices defining strenghts between generations with each $y_{q}$. After spontaneous symmetry breaking (~\autoref{eq:ref}), the leptonic interaction term is
-
+where h.c stands for Hermitian conjugate, $i,j$ are the generations, $y^{q}$ are $3\times3$ matrices defining strengths between generations with each $y^{q}$. After spontaneous symmetry breaking (~\autoref{eq:ref}), the leptonic interaction term becomes
 \begin{equation}
-	\mathcal{L}_{L}= \frac{g_{l}v}{\sqrt{2}}(\overline{l}_{L}l_{R} + \overline{l}_{R}l_{L}) + \frac{g_{l}}{\sqrt{2}}(\overline{l}_{L} l_{R}+\overline{l}_{R} l_{L})H = m_{l}(\overline{l}_{L}l_{R} + \overline{l}_{R}l_{L})(1+\frac{H}{v})
+	\mathcal{L}_{L}= \frac{g_{l}v}{\sqrt{2}}(\overline{l}_{L}l_{R} + \overline{l}_{R}l_{L}) + \frac{g_{l}}{\sqrt{2}}(\overline{l}_{L} l_{R}+\overline{l}_{R} l_{L})H = m_{l}(\overline{l}_{L}l_{R} + \overline{l}_{R}l_{L})(1+\frac{H}{v}),
         \label{eq:SSB3}
 \end{equation}
-
-
-making the mass term to be $m_{l}=\frac{g_{l}v}{\sqrt{2}}$. In a similar way for quarks,
+where the mass term is then defined $m_{l}=\frac{g_{l}v}{\sqrt{2}}$. In a similar way for quarks,
 
 
 \begin{equation}
 	\mathcal{L}_{Q}=\frac{v}{\sqrt{2}}(y^{d}_{ij}\overline{u}^{i}_{L} u^{j}_{R} + {y}_{ij}^{d}\overline{d}^{i}_{L} d^{j}_{R} + h.c)(1+\frac{H}{v}).
 	\label{eq:SSB4}
 \end{equation}
-
 where the quark masses are grouped into $3\times3$ complex matrices of up-type quark (down-type quark) $M^{u}_{ij}=\frac{v}{\sqrt{2}}y_{ij}^{u}$ ($M^{d}_{ij}=\frac{v}{\sqrt{2}}y_{ij}^{d}$).
 So in conclusion before the spontaneous breakdown of the electroweak symmetry, all quarks and leptons are massless. Once the Higgs scalar field acquires a vacuum expectation value implying broken symmetry, quarks and leptons acquire mass. It is possible then to decompose a complex matrix into two distinguishable unitary and one diagonal matrix. The mass matrices can be diagonalised by unitary transformations $U_{uL}$ and $ U_{dL}$ in the following way:
 \begin{equation}
@@ -291,37 +274,36 @@ So in conclusion before the spontaneous breakdown of the electroweak symmetry, a
 \end{equation}
 
 This way of diagonalising mass matrices is the most general case of a weak basis transformation which transforms a system to different basis without altering the physics. Such transformation is equivalent to changing quark fields from the basis of flavour eigenstates to that of mass eigenstates.
-In particular, 
+In particular for $q\in(u,d)$, 
 
 
 \begin{equation}
 \begin{split}
-q^{'}_{L} \equiv U_{qL} q_{L}
+q'_{L} \equiv U_{qL} q_{L}
 \\
-q^{'}_{R} \equiv U_{qR} q_{R}
+q'_{R} \equiv U_{qR} q_{R}
 \end{split}
 \end{equation},
 
-where $q\in(u,d)$.
-
-Changing into the mass eigenstate basis, however, does not affect most of the Lagrangian. More specifically, there will be no change to the $L_{NC}$ in~\autoref{eq:NC} when expressed in mass eigenstates (hence at tree-level there are no flavour changing neutral-currents in the SM), however, charged current $L_{CC}$ in~\autoref{eq:LC} is affected. Due to the diagonalisation of the mass matrices $L_{CC}$ now includes non diagonal couplings for the current as seen in the $L_{CC}$ for all three fermion generations is:
+This change into the mass eigenstate basis does not affect most of the Lagrangian. More specifically, there will be no change to the $L_{NC}$ in~\autoref{eq:NC} when expressed in mass eigenstates (hence at tree-level there are no flavour changing neutral-currents in the \gls{SM}), however, charged current $L_{CC}$ in~\autoref{eq:LC} is affected. Due to the diagonalisation of the mass matrices $L_{CC}$ now includes non diagonal couplings for the current as seen in the $L_{CC}$ for all three fermion generations:
 
 \begin{equation}
 	\mathcal{L}_{CC}= - \frac{g}{2\sqrt{2}}\Big[W^{\dagger}_{\mu}\big[\sum_{l}\overline{\nu}\gamma^{\mu}(1-\gamma_{5})l + \sum_{ij}\overline{u_{i}}\gamma^{\mu}(1-\gamma_{5})V_{ij}d_{j}\big] + h.c\Big], 
 \label{eq:LC}
 \end{equation}
-
+In this equation there is a new term $V_{ij}=V_{CKM}= U_{uL} U_{dL}^\dag$ which is the Cabibbo-Kobayashi-Maskawa (CKM) mixing matrix. In the \gls{SM} there is an assumption that $V^{\dagger}_{CKM}V_{CKM}=1$, or that \gls{CKM} mixing matrix is unitary.
  
 
 %\begin{equation}\label{weakcurr}
 %J_{\mu L}^-= U_{L}^{\dagger}\gamma_\mu V_{CKM}D_{L},
 %\end{equation}
-where  $V_{ij}=V_{CKM}= U_{uL} U_{dL}^\dag$ is the Cabibbo-Kobayashi-Maskawa (CKM) mixing matrix. In the SM there is an assumption that $V^{\dagger}_{CKM}V_{CKM}=1$, or that CKM mixing matrix is unitary.
+
 
 
 
 \section{Quark Mixing Matrix}
-As mentioned above, from transformation of mass matrices via two unitary matrices one obtains the CKM matrix which exhibits a strong hierarchy in the size of the matrix elements of the quark mixing matrix, which is still an unsovled puzzle. From the previous discussion the quark mixing matrix is a $3 \times 3$ complex unitary matrix yielding 18 parameters to start with. Unitarity of the CKM matrix implies that matrix elements are orthonormal, reducing the count of free parameters to 9. Further, 5 out of 6 quark phases can be absorbed into the redefinition of the quark field, cutting the number of parameters down to 4 parameters, three quark mixing angles and one CP violating phase. There are many different parametrisations which are all mathematically equivalent to the CKM matrix, but the standard parametrisation of the CKM matrix for flavour mixing is the following:
+\label{ckm}
+As mentioned above, from transformation of mass matrices via two unitary matrices one obtains the \gls{CKM} matrix which exhibits a strong hierarchy in the size of the matrix elements of the quark mixing matrix, which is still an unsolved puzzle. From the previous discussion the quark mixing matrix is a $3 \times 3$ complex unitary matrix yielding 18 parameters to start with. Unitarity of the \gls{CKM} matrix implies that matrix elements are orthonormal, reducing the count of free parameters to 9. Further, 5 out of 6 quark phases can be absorbed into the redefinition of the quark field, cutting the number of parameters down to 4 parameters, three quark mixing angles and one CP violating phase. There are many different parametrisations which are all mathematically equivalent to the \gls{CKM} matrix, but the standard parametrisation of the \gls{CKM} matrix for flavour mixing is the following:
 
 \begin{align}
 V_{\rm CKM} &=  \begin{pmatrix}   V_{ud} & V_{us} & V_{ub} \cr
@@ -333,8 +315,8 @@ s_{12}s_{23}s_{13}\exp(i\delta) & s_{23}c_{13} \cr
 s_{12}s_{23}- c_{12}c_{23}s_{13}\exp(i\delta) & 
 -c_{12}s_{23}-s_{12}c_{23}s_{13}\exp(i\delta) & c_{23}c_{13}\end{pmatrix},
 \end{align}
-
 where $s_{ij} = \sin(\theta_{ij})$ and $c_{ij} = \cos(\theta_{ij})$, $\theta_{12}$ , $\theta_{23}$, $\theta_{13}$ are Euler angles and $\theta_{12}$ is also known as the Cabibbo angle.
+
 A parametrisation reflecting the hierarchical nature in flavour mixing, which is an expansion in terms of the small parameter $\lambda$, was introduced by Wolfenstein\cite{wolf}. The four Wolfenstein parameters are related to the standard parametrization via the following expressions:
 \begin{equation}
 \begin{split}
@@ -351,28 +333,23 @@ A\lambda^{3}(\rho - i\eta) = s_{13}exp(-i\delta),\\
 \circledss{}A\lambda^3(1-\rho-i\eta) & \circleds{-A\lambda^2} & \circledb{1}\end{pmatrix} + {\cal O}\left( \lambda^4 \right). \
 \end{equation}
 
-A geometrical interpretation of $CP$ violation is offered by the concept of unitarity triangles. Unitarity of the CKM matrix can be summarized by two sets of orthogonality relations:
-$\sum_{k} |V_{ik}|^2 = \sum_{i} |V_{ik}|^2 = 1$ for all $i$ generations and $\sum_k V_{ik}V^*_{jk} = 0$ for all $i\neq j$. One of the unitary constraints of the CKM matrix explicitly states:
+A geometrical interpretation of $CP$ violation is offered by the concept of unitarity triangles. Unitarity of the \gls{CKM} matrix can be summarized by two sets of orthogonality relations:
+$\sum_{k} |V_{ik}|^2 = \sum_{i} |V_{ik}|^2 = 1$ for all $i$ generations and $\sum_k V_{ik}V^*_{jk} = 0$ for all $i\neq j$. One of the unitary constraints of the \gls{CKM} matrix explicitly states:
 \begin{equation}
   V_{ud}V^*_{ub} + V_{cd}V^*_{cb} + V_{td}V^*_{tb} = 0 \, .
 \end{equation}
-If you divide this expression by 
-\begin{equation}
-V_{cd}V^*_{cb}
-\end{equation}
-and take relation of $\bar{\rho}$ and $\bar{\eta}$ to ${\rho}$ and ${\eta}$ 
+Dividing this constraint by $V_{cd}V^*_{cb}$ and using relation of $\bar{\rho}$ and $\bar{\eta}$ to ${\rho}$ and ${\eta}$ 
 \begin{equation}
    {\rho} + i {\eta} = \frac{\sqrt{A^{4}\lambda^{4}}(\bar{\rho} + i \bar{\eta})}{\sqrt{1-\lambda^2}[A^{4}\lambda^{4}(\bar{\rho} + i \bar{\eta})]}
 \end{equation}
-and definition of $\bar{\rho}$ and $\bar{\eta}$
+ where $\bar{\rho}$ and $\bar{\eta}$ are defined
 \begin{equation}
-\bar{\rho} \approx \rho - \frac{\rho\lambda^{2}}{2}
+\bar{\rho} \approx \rho - \frac{\rho\lambda^{2}}{2},
 \end{equation}
 \begin{equation}
-\bar{\eta} \approx \eta - \frac{\eta\lambda^{2}}{2}
+\bar{\eta} \approx \eta - \frac{\eta\lambda^{2}}{2},
 \end{equation}
-
-it can be pictorially represented in the $\bar{\rho}$ and $\bar{\eta}$ plane as in~\autoref{fig:unitr}.
+the constraint can be pictorially represented in the $\bar{\rho}$ and $\bar{\eta}$ plane as in~\autoref{fig:unitr}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{theory/triangle2.eps}
@@ -380,40 +357,38 @@ it can be pictorially represented in the $\bar{\rho}$ and $\bar{\eta}$ plane as 
 \label{fig:unitr}
 \end{figure}
 
-The area of these triangles are half of the Jarlskog invariant \textit{J}, a quantifier of CP violation, which is defined as $Im[V_{ij}V_{kl}V^*_{il}V^*_{kj}]$ \cite{Jarlskog:1985ht}. It is interesting to notice that the SM with its parameters may or may not violate CP. Only after measuring the parameter it is possible to determine the CP non-conservation. \textit{J} vanishes only if mixing angle $\theta_{ij} = 0 , \pi/2$; $\delta =  0 , \pi$; So measurements of \textit{J} allows to verify that the CKM matrix is complex and hence different mixing for quarks and anti-quarks is obtained, providing theoretical grounding for CP violation, although SM CP violation is not big enough to explain the matter dominated universe.
+The area of these triangles are half of the Jarlskog invariant \textit{J}, a quantifier of CP violation, which is defined as $Im[V_{ij}V_{kl}V^*_{il}V^*_{kj}]$ \cite{Jarlskog:1985ht}. It is interesting to notice that the \gls{SM} with its parameters may or may not violate CP. Only after measuring the parameter it is possible to determine the CP non-conservation. \textit{J} vanishes only if mixing angle $\theta_{ij} = \{0 , \pi/2\}$; $\delta = \{0 , \pi\}$. So measurements of \textit{J} allows to verify that the \gls{CKM} matrix is complex and hence different mixing for quarks and anti-quarks is obtained, providing theoretical grounding for CP violation, although \gls{SM} CP violation is not big enough to explain the matter dominated universe.
 
-The CKM matrix elements which comprises of magnitudes and phases can be determined in different ways but the most precise option employs a global fit to
-all available measurements (as seen in~\autoref{fig:unifit}) while imposing the SM constraints such as the unitarity of CKM matrix. Hence, the most precise measurement of the CKM matrix magnitudes \mybox{export 2018 citation PDG} to-date is 
+The \gls{CKM} matrix elements which comprises of magnitudes and phases can be determined in different ways but the most precise option employs a global fit to
+all available measurements (as seen in~\autoref{fig:unifit}) while imposing the \gls{SM} constraints such as the unitarity of \gls{CKM} matrix. Hence, the most precise measurement of the \gls{CKM} matrix magnitudes \mybox{export 2018 citation PDG} to-date is 
 \begin{equation}|V_{\rm CKM}| = \begin{pmatrix}0.97446 \pm 0.00010 & 0.22452 \pm 0.00044  & \circledimp{0.00365\pm 0.00012} \cr
 	0.22438 \pm 0.00044 &  0.97359 \bfrac{+0.00010}{-0.00011} & 0.04214\pm 0.00076 \cr
 0.00896 \bfrac{+0.00024}{-0.00023} & 0.04133 \pm 0.00074 &  0.999105 \pm 0.000032 \cr \end{pmatrix},
 \end{equation}
-
-with non-zero Jarlskog invariant $J=(3.18\pm0.15)\times 10^{-5}$. Higlighted is the result for magnitude of the $V_{ub}$ matrix element $|V_{ub}|$ which is the element with highest fractional uncertainty on its value. Therefore precise measurement of this element is very important. Moreover, in~\autoref{fig:unifit}, it can be noticed that the measurement of $|V_{ub}|$ together with $sin(2\beta)$ measurement constrain apex of the triangle and indirectly the unitariy of the CKM matrix, which is one of the assumptions of the SM.
+with non-zero Jarlskog invariant $J=(3.18\pm0.15)\times 10^{-5}$. Highlighted is the result for magnitude of the $V_{ub}$ matrix element $|V_{ub}|$ which is the element with highest fractional uncertainty on its value. Therefore precise measurement of this element is very important and was the original motivation for analysis of \Bmumumu. Moreover, as displayed in~\autoref{fig:unifit}, the measurement of $|V_{ub}|$ (green circle) together with $sin(2\beta)$ measurement (blue band) constrain apex of the triangle. This means that they indirectly test the unitarity of the \gls{CKM} matrix, one of the fundamental assumptions of the \gls{SM}.
 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.75\textwidth]{theory/rhoeta_large_lol.eps}
-\caption{Different experimental measurements that constrain the CKM matrix elements together with the fit result.}
+\includegraphics[width=0.5\textwidth]{theory/rhoeta_large_lol.eps}
+\caption{Different experimental measurements that constrain the \gls{CKM} matrix elements together with the fit result.}
 \label{fig:unifit}
 \end{figure}
 
 
-\section{Fully Leptonic $P^{+}\rightarrow l^{+} \nu_{l}$ decays}
-This text is based on a summary provided by PDG on Leptonic Decays of Charged Pseudoscalar Mesons.
-
-
-Purely leptonic decays that proceed by annihilation-type diagrams of pseudoscalar mesons ($P$) are of great interest for flavour physicists because of several reasons as they allow:
+\section{Fully Leptonic \mb{P^{+}\rightarrow l^{+} \nu_{l}} decays}
+\label{lnudecays}
+%This text is based on a summary provided by PDG on Leptonic Decays of Charged Pseudoscalar Mesons.
+Purely leptonic decays that proceed by annihilation-type diagrams of pseudoscalar mesons ($P$) are of great interest for flavour physicists because they allow to make:
 \begin{itemize}
-\item measurements of the CKM matrix elements,
+\item measurements of the \gls{CKM} matrix elements,
 \item measurements of leptonic decay constants,
 \item measurements of the new physics effects.
 \end{itemize}
 
 
 
-First two types of measurements are possible because the decay rates of $P^{+}\rightarrow l^{+} \nu_{l}$ decays are sensitive to the product of the appropriate CKM matrix element ($V_{q_{1}q_{2}}$ where $q_{1}$ and $q_{2}$ are constituent quarks of the pseudoscalar meson) and decay constant $f_{P}$, related parameter arising from the strong interaction. In more detail, the decay width of fully leptonic decay of a pseudoscalar meson in the Stadard Model to the lowest order can expressed as 
+First two types of measurements are possible because the decay rates of $P^{+}\rightarrow l^{+} \nu_{l}$ decays are sensitive to the product of the appropriate \gls{CKM} matrix element ($V_{q_{1}q_{2}}$ where $q_{1}$ and $q_{2}$ are constituent quarks of the pseudoscalar meson) and decay constant $f_{P}$, related parameter arising from the strong interaction. In more detail, the decay width of fully leptonic decay of a pseudoscalar meson in the \gls{SM} to the lowest order can expressed as 
 
 \begin{equation}
 %\label{eqn:br} 
@@ -424,17 +399,16 @@ First two types of measurements are possible because the decay rates of $P^{+}\r
 	,
 \label{eqn:dw} 
 \end{equation}
-
 where
 $G_F$ is the Fermi constant,
 $m^{}_{P^{+}}$ and $m_{l^{+}}$ are the pseudoscalar meson and lepton masses, respectively,
 $\tau_{P^{+}}$ is the $P^{+}$ lifetime.
 
-So in order to measure CKM matrix amplitude, knowledge of $f_{P}$ must be inferred. $f_{P}$ can be calculated using lattice QCD techniques and together with experimental determination of the decay rates provides provide a way to determine relevant amplitude squared of the relevant CKM matrix element. More conventionally, CKM magnitudes are determined from semileptonic decays, but in this case the sensitivity to different type of current is given. In purely leptonic decays axial-vector flavour-changing currents ($q_{1}\gamma_{\mu}\gamma_{5}q_{2}$) are probed as opposed to vector current ($q_{1}\gamma_{\mu}q_{2}$) in semileptonic case.
+So in order to measure \gls{CKM} matrix amplitude, knowledge of $f_{P}$ must be inferred. $f_{P}$ can be calculated using lattice \gls{QCD} techniques and together with experimental determination of the decay rates provides provide a way to determine relevant amplitude squared of the relevant \gls{CKM} matrix element. More conventionally, \gls{CKM} magnitudes are determined from semileptonic decays, but in this case the sensitivity to different type of current is given. In purely leptonic decays axial-vector flavour-changing currents ($q_{1}\gamma_{\mu}\gamma_{5}q_{2}$) are probed as opposed to vector current ($q_{1}\gamma_{\mu}q_{2}$) in semileptonic case.
 
-Vice versa, assuming unitarity of CKM triangle and experimental determination of relevant $V_{q_{1}q_{2}}$ one can obtain experimental determination of the decay constants and compare it with theoretical prediction.
+Vice versa, assuming unitarity of \gls{CKM} triangle and experimental determination of relevant $V_{q_{1}q_{2}}$ one can obtain experimental determination of the decay constants and compare it with theoretical prediction.
 
-Last, but not least, is of course the measurement of presence of new physics in these decays. Especially appealing is the presence of new particles which would manifest themselves in the decay rates of heavier pseudoscalars ($D_{(s)}$ or $B$). Example of such new particles include charged Higgs bosons, $H^{\pm}$, coming from so-called Type II of two-Higgs-doublet models \cite{Hou:1992sy}\cite{Akeroyd:2003zr}\cite{Dobrescu:2008er} or leptoquarks\cite{Dobrescu:2008er}. In this case, considering $B^{+}\rightarrow l^{+}\nu$ decay, four-fermion interaction between $W^{\pm}$ and $H^{\pm}$ would modify the SM decay width~\autoref{eqn:dw} to
+Last, but not least, is of course the measurement of presence of new physics in these decays. Especially appealing is the presence of new particles which would manifest themselves in the decay rates of heavier pseudoscalars ($D_{(s)}$ or $B$). Example of such new particles include charged Higgs bosons, $H^{\pm}$, coming from so-called Type II of two-Higgs-doublet models \cite{Hou:1992sy}\cite{Akeroyd:2003zr}\cite{Dobrescu:2008er} or leptoquarks\cite{Dobrescu:2008er}. In this case, considering $B^{+}\rightarrow l^{+}\nu$ decay, four-fermion interaction between $W^{\pm}$ and $H^{\pm}$ would modify the \gls{SM} decay width~\autoref{eqn:dw} to
 %remember branching fraction is partial width of total width
 %total width  h over liftime so lifetime is always missing from equations 
 % see https://www2.ph.ed.ac.uk/~vjm/Lectures/ParticlePhysics2010_files/Particle3-2Nov.pdf this
@@ -447,7 +421,6 @@ Last, but not least, is of course the measurement of presence of new physics in 
 %\Gamma(B^+\to \ell^+\nu_\ell)={G_F^2 m_{B} m_l^2 f_{B}^2\over 8\pi}
 %|V_{ub}|^2 \left(1-{m_l^2\over m^2_{B}}\right)^2 \,\times\, r_H
 \end{equation}
-
 where
 \begin{equation}
 	r_H=[1-\tan^2\beta(m^{2}_{B^{+}}/m^{2}_{H^{+}})]^2.
@@ -455,12 +428,12 @@ where
 
 Here $\tan\beta = \frac{v_{2}}{v_{1}}$, where $v_{i}$ are the vacuum expectation values for the Higgs doublets. In order to have enhancing effect for the rate of $B^{+}\rightarrow l^{+}\nu$ decay (to have $r_{H}>1$), $\tan\beta/H^{\pm}> 0.27 \gev^{-1}$.
 
-Given current tensions arising in flavour physics searches especially concerning lepton non-unversality, ratio of rates between $P\rightarrow\tau\nu$,$P\rightarrow\mu\nu$ and $P\rightarrow e\nu$ should be measured. In the ratios the decay constant $f_{P}$ cancels out making such measurements good tool for lepton universality tests.
+Given current tensions arising in flavour physics searches, especially concerning lepton non-universality, ratio of rates between $P\rightarrow\tau\nu$,$P\rightarrow\mu\nu$ and $P\rightarrow e\nu$ should be measured. In the ratios the decay constant $f_{P}$ cancels out making such measurements good tool for lepton universality tests.
 
-As seen in~\autoref{eqn:dw}, purely leptonic final state going through $P\rightarrow W^{*}\rightarrow l \nu$ is supressed by $m^{2}_{l}$, also known as helicity supression. This suppression occurs as a result of angular momentum conservation. In case of $B^{+}\rightarrow l^{+} \nu$, $B^{+}$ is a spin-0 particle and hence its decay products have to have spin 0 combined, or in other words, be anti-aligned. Neutrinos in the SM are always produced left-handed. As the spin of the antilepton and the neutrino should be anti-aligned, antilepton also needs to be left-handed (to have negative helicity). However, the weak current only couples to right-handed antiparticles. Therefore, the antilepton has to be boosted in order to have different helicity. For massless particles such helicity flip is not possible making this decay impossible. The lighter the lepton the larger the velocity and hence higher boost is necessary, making decays to lighter leptons rarer even though they have bigger kinematic phase space available.
+As seen in~\autoref{eqn:dw}, purely leptonic final state going through $P\rightarrow W^{*}\rightarrow l \nu$ is suppressed by $m^{2}_{l}$, also known as helicity suppression. This suppression occurs as a result of angular momentum conservation. In case of $B^{+}\rightarrow l^{+} \nu$, $B^{+}$ is a spin-0 particle and hence its decay products have to have spin 0 combined, or in other words, be anti-aligned. Neutrinos in the \gls{SM} are always produced left-handed. As the spin of the antilepton and the neutrino should be anti-aligned, antilepton also needs to be left-handed (to have negative helicity). However, the weak current only couples to right-handed antiparticles. Therefore, the antilepton has to be boosted in order to have different helicity. For massless particles such helicity flip is not possible making this decay impossible. The lighter the lepton the larger the velocity and hence higher boost is necessary, making decays to lighter leptons rarer even though they have bigger kinematic phase space available.
 
 %https://www.physicsforums.com/threads/helicity-and-suppression.804600/
-The latest experimental measurements for rates of these measurements have been performed by $B$ factories, finding evidence for $B^{+}\rightarrow \tau^{+}\nu$ and first sign of $B^{+}\rightarrow \mu^{+}\nu$ as seen in~\autoref{tab:sum}. These results are to be compared with SM prediction $\mathcal{B}(B^{+}\rightarrow \tau^{+}\nu) = (0.82+0.03-0.02)\times10^{-4}$\cite{Charles:2004jd} which is obtained by using unitarity-constrained $V_{ub}$ value aggregated from other measurements and lattice calculations of $f_{B}$. Quite subtantial statistical as well as systematical errors show the difficulty of this type of measurements. 
+The latest experimental measurements for rates of these measurements have been performed by $B$ factories, finding evidence for $B^{+}\rightarrow \tau^{+}\nu$ and first sign of $B^{+}\rightarrow \mu^{+}\nu$ as seen in~\autoref{tab:sum}. These results are to be compared with \gls{SM} prediction $\mathcal{B}(B^{+}\rightarrow \tau^{+}\nu) = (0.82+0.03-0.02)\times10^{-4}$\cite{Charles:2004jd} which is obtained by using unitarity-constrained $V_{ub}$ value aggregated from other measurements and lattice calculations of $f_{B}$. Quite substantial statistical as well as systematical errors show the difficulty of this type of measurements. 
 
 \begin{table}[ht]
 \begin{center}
@@ -483,9 +456,10 @@ $B^{+}\rightarrow \mu^{+}\nu$ & Belle~\cite{Sibidanov:2017vph} & Untagged& $(6.4
 \end{table}
 
 
-With helicity supressed rates and very limited signature in the detector (one chaged track for muons and electron, more charged tracks for taus, but also more missing energy depending on the reconstruction channel) searching for such decays is still very challenging. In order to make measurements of the same kind (CKM precision measurements, decay constants measurements, new physics searches), fully leptonic decays but with photons can be considered.   
+With helicity suppressed rates and very limited signature in the detector (one charged track for muons and electron, more charged tracks for taus, but also more missing energy depending on the reconstruction channel) searching for such decays is still very challenging. In order to make measurements of the same kind (CKM precision measurements, decay constants measurements, new physics searches), fully leptonic decays with photons can be considered.   
 
-\section{Fully Leptonic $B^{+}\rightarrow l^{+} \nu_{l} \gamma$ decays}
+\section{Fully Leptonic \mb{B^{+}\rightarrow l^{+} \nu_{l} \gamma} decays}
+\label{lnugamma}
 The helicity suppression can be lifted by considering the decay with an additional photon radiated from the $B^{+}$ meson, at the cost of the electromagnetic suppression with coupling constant $\alpha_{em}$. Consequently, the branching fraction for radiative decays can be comparable or even larger than the corresponding fraction for purely leptonic decays. It has been shown that $R^{\mu}_{B}=\frac{\Gamma(B\rightarrow \mu \nu \gamma)}{\Gamma(B\rightarrow \mu \nu)}\approx(1-20)$ making $\mathcal{B}(B\rightarrow \mu \nu \gamma)\approx(10^{-7}-10^{-6})$ \cite{Burdman:1994ip}.
 
 As compared to photonless decays the amplitude of the decay will have contribution from both axial-vector weak current as well as vector current.
@@ -503,8 +477,7 @@ F_{V}(E_{\gamma}) = \frac{Q_{u}m_{B}f_{B}}{2E_{\gamma}\lambda_{B}(\mu)} R(E_{\ga
 F_{A}(E_{\gamma}) = \frac{Q_{u}m_{B}f_{B}}{2E_{\gamma}\lambda_{B}(\mu)} R(E_{\gamma}, \mu) + [\xi(E_\gamma) -  \frac{Q_{u}m_{B}f_{B}}{(2E_{\gamma})^{2}} - \frac{Q_{b}m_{B}f_{B}}{2E_{\gamma}m_{b}} + \frac{Q_{l}f_{B}}{E_{\gamma}}].
 \end{equation}
 Here $Q_{l},Q_{u},Q_{b}$ are the charges of the lepton, up quark, and
-bottom quark, respectively, $f_{B}$ is the decay constant for
-the B meson, and $R(E_{\gamma}, \mu)$ is a radiative correction
+bottom quark, respectively, and $R(E_{\gamma}, \mu)$ is a radiative correction
 calculated at the energy scale $\mu$ %that equals one at tree level.
 and $m_{b}$ is the mass of $b$ quark.
 
@@ -513,18 +486,18 @@ is the same for the vector and axial form factor. The terms in square brackets a
 
 
 
-Recent measurement of the radiative $B^{+} \rightarrow l^{+} \nu_{l} \gamma$, where $l^{+}$ is either $e^{+}$ or $\mu^{+}$ was performed by Belle using hadronic tagging on their full data sample\cite{Heller:2015vvm}.The search yielded $\mathcal{B}(B^{+}\rightarrow \mu^{+} \nu_\mu \gamma) < 3.4\times 10^{-6}$ \cite{Heller:2015vvm}.
+Recent measurement of the radiative $B^{+} \rightarrow l^{+} \nu_{l} \gamma$, where $l^{+}$ is either $e^{+}$ or $\mu^{+}$ was performed by Belle using hadronic tagging on their full data sample\cite{Heller:2015vvm}. The search yielded $\mathcal{B}(B^{+}\rightarrow \mu^{+} \nu_\mu \gamma) < 3.4\times 10^{-6}$ and $\mathcal{B}(B^{+}\rightarrow e^{+} \nu_e \gamma) < 6.1\times 10^{-6}$.
 
 
 
-\section{Fully Leptonic $B^{+}\rightarrow l^{+} l^{-} l^{+} \nu_{l} $ decays}
-
+\section{Fully Leptonic \mb{B^{+}\rightarrow l^{+} l^{-} l^{+} \nu_{l}} decays}
+\label{mydecay}
 
 In LHCb, the most optimal approach due to the detector capabilities is to measure this kind of decay by decaying the photon into pair of muons, see~\autoref{fig:myfeyn}(a). If the naive expectation of only taking into account photon conversion into two muons is adopted, then the expected branching fraction for this analysis is $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_{\mu}) \approx 10^{-8}$. However, such estimate is not correct because there are other contributions to the total decay rate as shown in the first theoretical prediction for $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_{\mu})$ in \cite{Danilina:2017bcn} based on Vector Meson Dominance (VMD) model. This theoretical prediction yields $\mathcal{B}(B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_{\mu}) \approx 1\times 10^{-7}$ and the rest of this section is a short summary of this publication.
 
 VMD model was formulated to describe the interaction between photon and hadrons before quantum chromodynamics was formulated. It is an approximative model where photon is treated to be made of both purely electromagnetic component and vector meson component. This idea originates in the fact that both photon and vector mesons have the same quantum numbers $J^{PC} = 1^{-\ -}$ and if two particles have the same quantum numbers then they mix (the state which commutes with the Hamiltonian is a superposition of all such states). Therefore there is mixing between $\gamma$ and vector mesons.
 
-As mentioned previously, there are different contributions to the amplitude of the $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$. Using VMD model, it is no suprising that the biggest contribution arises the photon emission from the valence $u$-quark of the $B$ meson. In this case, contribution from $\rho(770)$ and $\omega(782)$ resonances are included in the calculation. Secondly, contribution of photon emission from the $b$-quark is studied, effectively creating excited $B^{+}$, $B^{+*}$ intermediate resonance state. Thirdly, photon can be emitted from the final-state lepton, process known as Brehmstrahlung. All these different contributions to the decay amplitude are shown in \autoref{fig:myfeyn}. To obtain the total amplitude, sum of the matrix elements of the three contributions is calculated in the limit where $m_{l}$ is set to zero.
+As mentioned previously, there are different contributions to the amplitude of the $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$. Using VMD model, it is no surprising that the biggest contribution arises the photon emission from the valence $u$-quark of the $B$ meson. In this case, contribution from $\rho(770)$ and $\omega(782)$ resonances are included in the calculation. Secondly, contribution of photon emission from the $b$-quark is studied, effectively creating excited $B^{+}$, $B^{+*}$ intermediate resonance state. Thirdly, photon can be emitted from the final-state lepton, process known as Bremsstrahlung. All these different contributions to the decay amplitude are shown in \autoref{fig:myfeyn}. To obtain the total amplitude, sum of the matrix elements of the three contributions is calculated in the limit where $m_{l}$ is set to zero.
 
 
 \begin{figure}[ht]
@@ -539,14 +512,18 @@ As mentioned previously, there are different contributions to the amplitude of t
 \end{figure}
 
 
-In this publication the amplitude of $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$ is estimated by calculating $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} e^{+} \nu)$ amplitude first and then adding an negative interference term that arises due to the identical fermions in the final state doubling the number of possible diagrams. The numerical calculation yields $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} e^{+} \nu) \approx 1.3 \times 10^{-7}$ and $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu) \approx 1.0 \times 10^{-7}$. 
+In this publication the amplitude of $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$ is estimated by calculating $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} e^{+} \nu)$ amplitude first and then adding a negative interference term that arises due to the identical fermions in the final state doubling the number of possible diagrams. The numerical calculation yields $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} e^{+} \nu) \approx 1.3 \times 10^{-7}$ and $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu) \approx 1.0 \times 10^{-7}$. 
 
-\section{\Bmumumu decay model}
+\section{\mb{\Bmumumu} decay model}
+\label{simulation}
 As the search for \Bmumumu decay is first of its kind, simulation that describes this type of decay was not available. 
 
 For any decay, it is possible to use phase space model, \textit{PHSP}, which only takes into account the kinematic constraints of the decay without taking into account any input from theoretical considerations as the matrix element is constant. This is not satisfactory for decays where there are intermediate virtual photons or vector mesons resonances.
 
-Following decay model is developped to take into the account more correct behaviour of the leading order contribution to the decay shown in~\autoref{fig:myfeyn}(a). The decay proceeds through a virtual $W$ decaying to $\mu^{+} \nu$ and a virtual photon with vector resonance decaying to a muon pair. This has similar structure to $\B^{+} \rightarrow (K^{*+}) \mu^{+} \mu^{-}$ decay, where the $K^{*+}$ can take the role of the virtual $W$ decay. By using the \textit{BTOSLLBALL} model\cite{Ali:1999mm}, traditionally used for $B^{+} \rightarrow (K^{*+}) l^{+} l^{-}$ decays, but modifying properties of the $K^{*+}$ to those of virtual $W$ (having mass of 0.1 \gevcc and width 50 \gev), it is possible to obtain good approximation to the correct features of the decay . This is shown in~\autoref{fig:mcgeneration}, where there is a characteristic photon pole for low $q(\mu^{+},\mu^{-})$, invariant mass of the opposite muon pair, and flat distribution for $K^{*}(\mu^{+}, \nu_{\mu}) $, invariant mass of the muon and neutrino pair. This decay model will be further referred to as SALLY's model. 
+Following decay model is developed to take into the account more correct behaviour of the decay shown in~\autoref{fig:myfeyn}.
+
+The decay proceeds through a virtual $W$ decaying to $\mu^{+} \nu$ and a virtual photon decaying to a muon pair. This has similar structure to $\B^{+} \rightarrow (K^{*+}) \mu^{+} \mu^{-}$ decay, where the $K^{*+}$ can take the role of the virtual $W$ decay. By using the \textit{BTOSLLBALL} model\cite{Ali:1999mm}, traditionally used for $B^{+} \rightarrow (K^{*+}) l^{+} l^{-}$ decays, but modifying properties of the $K^{*+}$ to those of virtual $W$ (having mass of 0.1 \gevcc and width 50 \gev), it is possible to obtain good approximation to the correct features of the decay. This is visible in~\autoref{fig:mcgeneration}, where there is a characteristic photon pole for low $q(\mu^{+},\mu^{-})$, invariant mass of the opposite muon pair, and flat distribution for $K^{*}(\mu^{+}, \nu_{\mu}) $, invariant mass of the muon and neutrino pair. This decay model will be further referred to as SALLY's (\mybox{can I do this?}) model. 
+
 
 
 %\mybox{Sally: move it to theory and check ulrik's comment} In order to produce simulation with a decay model which is more representative of the spin structure involved, the following strategy is adapted. In this simulation approach, the decay proceeds as follows: \Bpm decays into \Wpm and a pair of opposite sign muons and then \Wp is decayed to $\mu^{+} \nu$. \textit{BTOSLLBALL} model\cite{Ali:1999mm}, traditionally used for $\B \rightarrow (K,K^{*}) l^{+} l^{-}$ decay, with the form factor calculations can be used to simulate $\Bpm \rightarrow \Wpm l^{+} l^{-}$ decay. After that, \Wp is decayed to $\mu^{+} \nu$ using \textit{PHSP}. For semileptonic $b \rightarrow s l^{+} l^{-}$ transitions, there is a characteristic photon pole for low $q(\mu^{+},\mu^{-})$, invariant mass of the opposite muon pair, and flat distribution for $K^{*}(\mu^{+}, \nu_{\mu}) $, invariant mass of the muon and neutrino pair. In order to achieve this, a new pseudo-particle is introduced to EVTGEN with specific properties, $K^{*}(\mu^{+}, \nu_{\mu})$, and the best output can be seen to be for a particle $K^{*}(\mu^{+}, \nu_{\mu})$ with mass to be set to $0.1 \text{GeV/c}^{2}$, and width, corresponding to $\tau= 1.3\times10^{-17}$ nanoseconds as can be seen in \autoref{fig:mcgeneration}. This procedure was also applied for the charge conjugate case. This model is denoted as \textit{INSP} and is used as default in mass fits and efficiency calculations.
@@ -555,7 +532,7 @@ Following decay model is developped to take into the account more correct behavi
 \centering
 \includegraphics[width=0.5\linewidth]{./sel/reporttry_new}\put(-70,133){(a)}
 \includegraphics[width=0.5\linewidth]{./sel/reporttrialqpres_new}\put(-50,133){(b)}
-\caption{Distributions for signal MC in using Pythia 6.4 \cite{pythia6} conditions. (a) $K^{*}(\mu^{+}, \nu_{\mu})$ (b) $q(\mu^{+},\mu^{-})$ distributions under different $K^{*}$ mass hypotheses. The most flat distribution in $K^{*}(\mu^{+}, \nu_{\mu})$ is plotted in yellow.}
+\caption{Distributions for signal simulation. (a) $K^{*}(\mu^{+}, \nu_{\mu})$ (b) $q(\mu^{+},\mu^{-})$ distributions under different $K^{*}$ mass hypotheses. The most flat distribution in $K^{*}(\mu^{+}, \nu_{\mu})$ is plotted in yellow.}
 \label{fig:mcgeneration}
 %\vspace*{-1.0cm}
 \end{figure}
