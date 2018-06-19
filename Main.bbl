@@ -8,21 +8,22 @@
 \mciteSetBstSublistLabelBeginEnd{\mcitemaxwidthsubitemform\space}
 {\relax}{\relax}
 
-\bibitem{book}
-O.~N. Hartmann {\em et~al.},
-  \ifthenelse{\boolean{articletitles}}{\emph{{Proceedings of the International
-  Conference on Exotic Atoms and Related Topics}}, }{}\href{https://cds.\
-  cern.\ ch/record/2053147?ln=en}{EXA 2011} (Vienna 5-9 September 2011)\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
 \bibitem{wolf}
 Y.~H. Ahn, H.-Y. Cheng, and S.~Oh,
   \ifthenelse{\boolean{articletitles}}{\emph{{Wolfenstein parametrization at
   higher order: Seeming discrepancies and their resolution}},
   }{}\href{http://dx.doi.org/http://dx.doi.org/10.1016/j.physletb.2011.08.047}{Physics
   Letters B \textbf{703} (2011), no.~5 571 }\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Jarlskog:1985ht}
+C.~Jarlskog, \ifthenelse{\boolean{articletitles}}{\emph{{Commutator of the
+  Quark Mass Matrices in the Standard Electroweak Model and a Measure of
+  Maximal CP Violation}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.55.1039}{Phys.\ Rev.\ Lett.\
+  \textbf{55} (1985) 1039}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

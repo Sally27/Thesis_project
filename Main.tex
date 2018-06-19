@@ -63,6 +63,22 @@
 \DeclareRobustCommand{\mb}[1]{\boldmath$#1$\unboldmath}
 \usepackage{multirow,bigdelim}
 %\usepackage{physics}
+\usepackage{tikz}
+\newcommand*\circledss[1]{\tikz[baseline=(math.base)]{\node[shape=circle,draw=green,text width=0.5cm] (math) {};}}
+\newcommand*\circledsst[1]{\tikz[baseline=(math.base)]{\node[shape=circle,draw=red,text width=0.5cm] (math) {$#1$};}}
+\newcommand*\circleds[1]{\tikz[baseline=(math.base)]{\node[shape=circle,draw=red,text width=1.0cm] (math) {$#1$};}}
+\newcommand*\circledm[1]{\tikz[baseline=(math.base)]{\node[shape=circle,draw=yellow,text width=1.5cm] (math) {$#1$};}}
+\newcommand*\circledb[1]{\tikz[baseline=(math.base)]{\node[shape=circle,draw=violet,text width=2cm] (math) {$#1$};}}
+
+\newcommand*\circledimp[1]{\tikz[baseline=(math.base)]{\node[shape=circle,draw=green,text width=2cm] (math) {$#1$};}}
+\newcommand*{\bfrac}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+%\usepackage{mathtools}
+%\newcommand\mathcircled[1]{%
+%  \mathpalette\@mathcircled{#1}%
+%}
+%\newcommand\@mathcircled[2]{%
+%  \tikz[baseline=(math.base)] \node[draw,circle,inner sep=1pt] (math) {$\m@th#1#2$};%
+%}
 
 
 \usepackage{siunitx}

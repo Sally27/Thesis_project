@@ -8,52 +8,44 @@ Database file #2: LHCb-PAPER.bib
 Database file #3: LHCb-CONF.bib
 Database file #4: LHCb-DP.bib
 Database file #5: LHCb-TDR.bib
-Warning--I didn't find a database entry for "ewconstraint"
-Warning--I didn't find a database entry for "texture"
-Warning--I didn't find a database entry for "fritz"
-Warning--I didn't find a database entry for "param"
-Warning--I didn't find a database entry for "Buras"
-Warning--I didn't find a database entry for "jarsklog"
-Warning--I didn't find a database entry for "secondjar"
 You've used 57 entries,
             2909 wiz_defined-function locations,
-            1093 strings with 16693 characters,
-and the built_in function-call counts, 257225 in all, are:
-= -- 28114
-> -- 454
+            1089 strings with 16641 characters,
+and the built_in function-call counts, 254409 in all, are:
+= -- 27806
+> -- 450
 < -- 2
-+ -- 1661
-- -- 108
-* -- 26223
-:= -- 31580
++ -- 1649
+- -- 107
+* -- 25926
+:= -- 31250
 add.period$ -- 57
 call.type$ -- 57
 change.case$ -- 56
 chr.to.int$ -- 0
 cite$ -- 57
-duplicate$ -- 4040
-empty$ -- 27174
-format.name$ -- 108
-if$ -- 56159
+duplicate$ -- 4015
+empty$ -- 26869
+format.name$ -- 107
+if$ -- 55550
 int.to.chr$ -- 0
 int.to.str$ -- 57
-missing$ -- 261
+missing$ -- 263
 newline$ -- 353
 num.names$ -- 51
-pop$ -- 982
+pop$ -- 974
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 414
+skip$ -- 418
 stack$ -- 0
-substring$ -- 76751
+substring$ -- 75835
 swap$ -- 3
 text.length$ -- 116
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 1446
+while$ -- 1437
 width$ -- 59
-write$ -- 881
-(There were 7 warnings)
+write$ -- 884

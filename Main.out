@@ -11,77 +11,76 @@
 \BOOKMARK [1][-]{section.2.4}{Electroweak unification}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.5}{Higgs Mechanism}{chapter.2}% 12
 \BOOKMARK [1][-]{section.2.6}{Fermion mass generation}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.7}{Quark Mass Generation}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.8}{Quark Mixing Matrix}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.9}{Fully Leptonic P+l+ l decays}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.10}{Fully Leptonic B+l+ l \040decays}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.11}{Fully Leptonic B+l+ l- l+ l \040decays}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.12}{B + \040+- + \040decay model}{chapter.2}% 19
-\BOOKMARK [0][-]{chapter.3}{The LHCb detector}{}% 20
-\BOOKMARK [1][-]{section.3.1}{LHCb Layout }{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.2}{VErtex LOcator }{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.3}{Tracking System }{chapter.3}% 23
-\BOOKMARK [2][-]{subsection.3.3.1}{Tracking Algorithms }{section.3.3}% 24
-\BOOKMARK [1][-]{section.3.4}{Ring Imaging Detectors }{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.5}{RICH Reconstruction and Performance }{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.5.1}{RICH performance }{section.3.5}% 27
-\BOOKMARK [1][-]{section.3.6}{Calorimetry }{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.7}{Muon Stations }{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.7.1}{Muon Identification }{section.3.7}% 30
-\BOOKMARK [2][-]{subsection.3.7.2}{Muon Performance }{section.3.7}% 31
-\BOOKMARK [1][-]{section.3.8}{Trigger }{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.9}{Simulation }{chapter.3}% 33
-\BOOKMARK [2][-]{subsection.3.9.1}{Differences in Simulation And Data ULRIK - not fully finished}{section.3.9}% 34
-\BOOKMARK [0][-]{chapter.4}{Handling of trimuon correlations at LHCb}{}% 35
-\BOOKMARK [1][-]{section.4.1}{Muon PID variables }{chapter.4}% 36
-\BOOKMARK [2][-]{subsection.4.1.1}{Binary Muon PID variables }{section.4.1}% 37
-\BOOKMARK [2][-]{subsection.4.1.2}{Muon PID variables based on sharing hits }{section.4.1}% 38
-\BOOKMARK [2][-]{subsection.4.1.3}{Muon PID variables based on regression techniques }{section.4.1}% 39
-\BOOKMARK [1][-]{section.4.2}{Clones }{chapter.4}% 40
-\BOOKMARK [1][-]{section.4.3}{Probability of K/ misidentification at LHCb }{chapter.4}% 41
-\BOOKMARK [2][-]{subsection.4.3.1}{Specific control sample for K/ misid rates }{section.4.3}% 42
-\BOOKMARK [2][-]{subsection.4.3.2}{Selection for B0 J/\(+ -\) K* }{section.4.3}% 43
-\BOOKMARK [2][-]{subsection.4.3.3}{Fitting Strategy for B0 J/\(+ -\) K* decay }{section.4.3}% 44
-\BOOKMARK [2][-]{subsection.4.3.4}{Results of B0 J/\(+ -\) K* control sample for K/ misid rates }{section.4.3}% 45
-\BOOKMARK [0][-]{chapter.5}{Discovering \(Setting Limit for\) B + \040+- + \040at LHCb}{}% 46
-\BOOKMARK [1][-]{section.5.1}{Topology of the B + \040+- + \040decay at LHCb ULRIK}{chapter.5}% 47
-\BOOKMARK [1][-]{section.5.2}{Sources of Backgrounds ULRIK}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.3}{Analysis strategy }{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.4}{Samples ULRIK}{chapter.5}% 50
-\BOOKMARK [2][-]{subsection.5.4.1}{Data Samples ULRIK}{section.5.4}% 51
-\BOOKMARK [2][-]{subsection.5.4.2}{Simulation Samples ULRIK}{section.5.4}% 52
-\BOOKMARK [1][-]{section.5.5}{Preselection for B + \040+- + ULRIK}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.6}{Trigger Selection ULRIK}{chapter.5}% 54
-\BOOKMARK [1][-]{section.5.7}{q2 Selection ULRIK}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.8}{Further Selection ULRIK}{chapter.5}% 56
-\BOOKMARK [2][-]{subsection.5.8.1}{General Features of Multivariate Selections ULRIK}{section.5.8}% 57
-\BOOKMARK [2][-]{subsection.5.8.2}{The Isolation Boosted Decision Tree ULRIK}{section.5.8}% 58
-\BOOKMARK [2][-]{subsection.5.8.3}{The Combinatorial Boosted Decision Tree ULRIK}{section.5.8}% 59
-\BOOKMARK [2][-]{subsection.5.8.4}{The Misid Boosted Decision Tree ULRIK}{section.5.8}% 60
-\BOOKMARK [2][-]{subsection.5.8.5}{Fitting Region Selection}{section.5.8}% 61
-\BOOKMARK [2][-]{subsection.5.8.6}{Further PID Selection ULRIK}{section.5.8}% 62
-\BOOKMARK [1][-]{section.5.9}{Normalisation channel ULRIK}{chapter.5}% 63
-\BOOKMARK [1][-]{section.5.10}{Fractional Corrected Mass Error \(FCME\) Window Split ULRIK}{chapter.5}% 64
-\BOOKMARK [0][-]{chapter.6}{ Mass fits and efficiencies}{}% 65
-\BOOKMARK [1][-]{section.6.1}{Efficiency Ratio}{chapter.6}% 66
-\BOOKMARK [1][-]{section.6.2}{Summary of Efficiencies}{chapter.6}% 67
-\BOOKMARK [2][-]{subsection.6.2.1}{Detector Acceptance Efficiency \(GEN\)}{section.6.2}% 68
-\BOOKMARK [2][-]{subsection.6.2.2}{Reconstruction Efficiency \(REC\)}{section.6.2}% 69
-\BOOKMARK [2][-]{subsection.6.2.3}{Trigger Efficiency \(TRG\)}{section.6.2}% 70
-\BOOKMARK [2][-]{subsection.6.2.4}{Offline Selection \(OFF\)}{section.6.2}% 71
-\BOOKMARK [2][-]{subsection.6.2.5}{Combinatorial BDT and Misid BDT efficiency}{section.6.2}% 72
-\BOOKMARK [2][-]{subsection.6.2.6}{Fitting Range Efficiency \(FR\)}{section.6.2}% 73
-\BOOKMARK [2][-]{subsection.6.2.7}{PID Efficiencies \(PID\)}{section.6.2}% 74
-\BOOKMARK [1][-]{section.6.3}{Mass Fits}{chapter.6}% 75
-\BOOKMARK [2][-]{subsection.6.3.1}{Normalisation Channel Fit}{section.6.3}% 76
-\BOOKMARK [2][-]{subsection.6.3.2}{Signal Channel Fit}{section.6.3}% 77
-\BOOKMARK [2][-]{subsection.6.3.3}{Signal Data Fit}{section.6.3}% 78
-\BOOKMARK [0][-]{chapter.7}{Results}{}% 79
-\BOOKMARK [0][-]{chapter.7}{Bibliography}{}% 80
-\BOOKMARK [0][-]{chapter*.105}{Appendices}{}% 81
-\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 82
-\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 83
-\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 84
-\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 85
-\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 86
-\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 87
+\BOOKMARK [1][-]{section.2.7}{Quark Mixing Matrix}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.8}{Fully Leptonic P+l+ l decays}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.9}{Fully Leptonic B+l+ l \040decays}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.10}{Fully Leptonic B+l+ l- l+ l \040decays}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.11}{B + \040+- + \040decay model}{chapter.2}% 18
+\BOOKMARK [0][-]{chapter.3}{The LHCb detector}{}% 19
+\BOOKMARK [1][-]{section.3.1}{LHCb Layout }{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.2}{VErtex LOcator }{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.3}{Tracking System }{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.1}{Tracking Algorithms }{section.3.3}% 23
+\BOOKMARK [1][-]{section.3.4}{Ring Imaging Detectors }{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.5}{RICH Reconstruction and Performance }{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.5.1}{RICH performance }{section.3.5}% 26
+\BOOKMARK [1][-]{section.3.6}{Calorimetry }{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.7}{Muon Stations }{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.7.1}{Muon Identification }{section.3.7}% 29
+\BOOKMARK [2][-]{subsection.3.7.2}{Muon Performance }{section.3.7}% 30
+\BOOKMARK [1][-]{section.3.8}{Trigger }{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.9}{Simulation }{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.9.1}{Differences in Simulation And Data ULRIK - not fully finished}{section.3.9}% 33
+\BOOKMARK [0][-]{chapter.4}{Handling of trimuon correlations at LHCb}{}% 34
+\BOOKMARK [1][-]{section.4.1}{Muon PID variables }{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.1.1}{Binary Muon PID variables }{section.4.1}% 36
+\BOOKMARK [2][-]{subsection.4.1.2}{Muon PID variables based on sharing hits }{section.4.1}% 37
+\BOOKMARK [2][-]{subsection.4.1.3}{Muon PID variables based on regression techniques }{section.4.1}% 38
+\BOOKMARK [1][-]{section.4.2}{Clones }{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.3}{Probability of K/ misidentification at LHCb }{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.3.1}{Specific control sample for K/ misid rates }{section.4.3}% 41
+\BOOKMARK [2][-]{subsection.4.3.2}{Selection for B0 J/\(+ -\) K* }{section.4.3}% 42
+\BOOKMARK [2][-]{subsection.4.3.3}{Fitting Strategy for B0 J/\(+ -\) K* decay }{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.4}{Results of B0 J/\(+ -\) K* control sample for K/ misid rates }{section.4.3}% 44
+\BOOKMARK [0][-]{chapter.5}{Discovering \(Setting Limit for\) B + \040+- + \040at LHCb}{}% 45
+\BOOKMARK [1][-]{section.5.1}{Topology of the B + \040+- + \040decay at LHCb ULRIK}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.2}{Sources of Backgrounds ULRIK}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.3}{Analysis strategy }{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.4}{Samples ULRIK}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.4.1}{Data Samples ULRIK}{section.5.4}% 50
+\BOOKMARK [2][-]{subsection.5.4.2}{Simulation Samples ULRIK}{section.5.4}% 51
+\BOOKMARK [1][-]{section.5.5}{Preselection for B + \040+- + ULRIK}{chapter.5}% 52
+\BOOKMARK [1][-]{section.5.6}{Trigger Selection ULRIK}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.7}{q2 Selection ULRIK}{chapter.5}% 54
+\BOOKMARK [1][-]{section.5.8}{Further Selection ULRIK}{chapter.5}% 55
+\BOOKMARK [2][-]{subsection.5.8.1}{General Features of Multivariate Selections ULRIK}{section.5.8}% 56
+\BOOKMARK [2][-]{subsection.5.8.2}{The Isolation Boosted Decision Tree ULRIK}{section.5.8}% 57
+\BOOKMARK [2][-]{subsection.5.8.3}{The Combinatorial Boosted Decision Tree ULRIK}{section.5.8}% 58
+\BOOKMARK [2][-]{subsection.5.8.4}{The Misid Boosted Decision Tree ULRIK}{section.5.8}% 59
+\BOOKMARK [2][-]{subsection.5.8.5}{Fitting Region Selection}{section.5.8}% 60
+\BOOKMARK [2][-]{subsection.5.8.6}{Further PID Selection ULRIK}{section.5.8}% 61
+\BOOKMARK [1][-]{section.5.9}{Normalisation channel ULRIK}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.10}{Fractional Corrected Mass Error \(FCME\) Window Split ULRIK}{chapter.5}% 63
+\BOOKMARK [0][-]{chapter.6}{ Mass fits and efficiencies}{}% 64
+\BOOKMARK [1][-]{section.6.1}{Efficiency Ratio}{chapter.6}% 65
+\BOOKMARK [1][-]{section.6.2}{Summary of Efficiencies}{chapter.6}% 66
+\BOOKMARK [2][-]{subsection.6.2.1}{Detector Acceptance Efficiency \(GEN\)}{section.6.2}% 67
+\BOOKMARK [2][-]{subsection.6.2.2}{Reconstruction Efficiency \(REC\)}{section.6.2}% 68
+\BOOKMARK [2][-]{subsection.6.2.3}{Trigger Efficiency \(TRG\)}{section.6.2}% 69
+\BOOKMARK [2][-]{subsection.6.2.4}{Offline Selection \(OFF\)}{section.6.2}% 70
+\BOOKMARK [2][-]{subsection.6.2.5}{Combinatorial BDT and Misid BDT efficiency}{section.6.2}% 71
+\BOOKMARK [2][-]{subsection.6.2.6}{Fitting Range Efficiency \(FR\)}{section.6.2}% 72
+\BOOKMARK [2][-]{subsection.6.2.7}{PID Efficiencies \(PID\)}{section.6.2}% 73
+\BOOKMARK [1][-]{section.6.3}{Mass Fits}{chapter.6}% 74
+\BOOKMARK [2][-]{subsection.6.3.1}{Normalisation Channel Fit}{section.6.3}% 75
+\BOOKMARK [2][-]{subsection.6.3.2}{Signal Channel Fit}{section.6.3}% 76
+\BOOKMARK [2][-]{subsection.6.3.3}{Signal Data Fit}{section.6.3}% 77
+\BOOKMARK [0][-]{chapter.7}{Results}{}% 78
+\BOOKMARK [0][-]{chapter.7}{Bibliography}{}% 79
+\BOOKMARK [0][-]{chapter*.107}{Appendices}{}% 80
+\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 81
+\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 82
+\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 83
+\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 84
+\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 85
+\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 86
