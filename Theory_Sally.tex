@@ -1,11 +1,11 @@
 \chapter{Theory}
 %\subsection{Introduction to Mixing Phenomenology}
-\textit{The Standard Model is without question the most powerful and tested model of particle physics. It describes and predicts many phenomena very well even though we know that there are several shortcomings such as gravity inclusion or dark matter candidate, which could lead potentially to unified theory. Furthermore, fine-tuning of some parameters in the Standard Model such as Higgs mass, where parameters get exactly the right value to produce required behaviour, beg questions if there is some symmetry in the model building that is missing. In this chapter theoretical basis of the Standard Model is discussed which is then followed by experimental and theoretical consideration of fully leptonic decays.}
+\textit{The Standard Model is without question the most powerful and tested theory of particle physics. It describes and predicts many phenomena very well even though the theory is not including any explanation for the nature of dark matter and it doesn't make any attempt to describe gravity in a quantum field theory framework. Furthermore, fine-tuning of some parameters in the Standard Model such as the Higgs mass, where parameters get exactly the right value to produce required behaviour, beg questions if there is some symmetry in the model building that is missing. In this chapter, the theoretical basis of the Standard Model is discussed and is then followed by experimental and theoretical consideration of fully leptonic decays.}
 
 
 
 \section{Review of the Standard Model}
-The Standard Model (\gls{SM}) of particle physics is to-the-date the most accurate model describing the buildings blocks of matter, particles, and their interactions via forces. In particular \gls{SM} describes all the fundamental forces but gravity: electromagnetic, strong nuclear, and weak nuclear force. It is a quantum field theory (\gls{QFT}) whereby the dynamics of the system is captured by the most general renormalisable Lagrangian density that is invariant under gauge symmetry. \gls{QFT} considers particles to be an excited states of an underlying field, also known as quanta. In the \gls{SM} particles and forces are the results of interactions between scalar, vector and spinor fields. In general there are two sets of particles: force-carrying particles also known as bosons, which have integer spin and are quanta of the scalar and vector fields. More specifically, there is the Higgs boson, the only elementary scalar boson in the \gls{SM}, and vector bosons: gluons, $W^{\pm}$, Z and $\gamma$. Secondly, there are the non-force carrying particles, which are known under name fermions, quanta of spinor fields. Unlike bosons they carry half-integer spin. These can be further classified into two elementary families of particles: quarks, which cannot be observed alone and leptons which can be detected on their own. Out of all of these fundamental particles, those that have mass acquire it by the most famous symmetry-breaking mechanism - Higgs mechanism.
+The Standard Model (\gls{SM}) of particle physics is currently the most accurate model describing the buildings blocks of matter, particles, and their interactions via forces. In particular the \gls{SM} describes all the fundamental forces but gravity. It is a quantum field theory (\gls{QFT}) whereby the dynamics of the system is captured by the most general renormalisable Lagrangian density that is invariant under gauge symmetry. \gls{QFT} considers particles to be excited states of an underlying field, also known as quanta. In the \gls{SM}, particles and forces are the results of interactions between scalar, vector and spinor fields. In general there are two sets of particles. The first set are force-carrying particles also known as bosons, which have integer spin and are quanta of the scalar and vector fields. More specifically, there is the Higgs boson, the only elementary scalar boson in the \gls{SM}, and vector bosons: gluons, $W^{\pm}$, Z and $\gamma$. Secondly, there are the non-force carrying particles, which are fermions, quanta of spinor fields. Unlike bosons they carry half-integer spin. These can be further classified into two elementary families of particles: quarks, which cannot be observed alone and leptons which can be detected on their own. Out of all of these fundamental particles, those that have mass acquire it by the Higgs mechanism.
 
 %Quarks are affected by all three fundamental forces. They come in six different \textit{flavours} and they carry fractional charge as seen in~\autoref{nonlin}.
 
@@ -17,46 +17,38 @@ The Standard Model (\gls{SM}) of particle physics is to-the-date the most accura
 Generation & Flavour & Charge & Constituent Mass \\ [0.5ex]\hline% inserts table 
 %heading 
 \hline % inserts single horizontal line 
-1st & up  \textit{u}& +2/3 & ~300 \mevcc \\ % inserting body of the table 
-1st & down \textit{d}& -1/3 &  ~300 \mevcc \\[1ex]
-2nd & charm \textit{c}& +2/3 &  ~1.5 \gevcc\\ 
-2nd & strange \textit{s}& -1/3 &  ~500 \mevcc\\[1ex]
-3rd & top \textit{t}& +2/3 &  ~175 \gevcc \\ 
-3rd & bottom \textit{b}& -1/3 & ~ 5 \gevcc \\ [1ex] % [1ex] adds vertical space 
+1st & up  \textit{u}& +2/3 & $2.2\bfrac{+0.6}{-0.4}$ \mev \\ % inserting body of the table 
+1st & down \textit{d}& -1/3 & $4.7\bfrac{+0.5}{-0.4}$ \mev \\[1ex]
+2nd & charm \textit{c}& +2/3 & $1.28\pm0.03$\gev\\ 
+2nd & strange \textit{s}& -1/3 &  $96\bfrac{+8}{-4}$ \mev\\[1ex]
+3rd & top \textit{t}& +2/3 &  $173.1\pm0.6$ \gev \\ 
+3rd & bottom \textit{b}& -1/3 & $4.18\bfrac{+0.4}{-0.3}\gev$ \\ [1ex] % [1ex] adds vertical space 
 \hline %inserts single line 
 \end{tabular} 
-\caption{Quarks and their properties.} 
+\caption{Quarks and their properties such as flavour, charge and mass. Flavour is a property which distinguishes different species of quarks. One such property iscurrent quark mass which is the mass of the quark itself. The masses are summarized in \cite{Patrignani:2016xqp}.} 
 \label{nonlin} % is used to refer this table in the text 
 \end{table} 
 
-Quarks are affected by all three fundamental forces. They come in six different \textit{flavours} and they carry fractional charge as seen in~\autoref{nonlin}. The reason why quarks are not observed alone is due to their confinement within hadrons, which is an artefact of strong interaction acting on quarks. This can be understood within the framework of \gls{QFT} theory by observing evolution of the coupling strength $g$ as a function of energy scale, also known as $\beta$ function.
-The $\beta$-function for a coupling constant $g$ in the \gls{SM} to the two loop contribution takes the following form:
-\begin{equation}
-\beta_g = \mu {{d g}\over d \mu} = {1\over16\pi^2} \beta_g^{(1)}
-+ {1\over(16\pi^2)^2} \beta_g^{(2)},
-\end{equation}
-where $\beta_g^{(1)},~ \beta_g^{(2)}$ denote the one-loop and two-loop
-contributions respectively, and $\mu$ is the energy scale. For the strong interaction, unlike electromagnetic and weak interaction, $\beta_g$ is negative. For low energies as $\mu \rightarrow 0$ the coupling is very high and hence quarks cannot be observed on their own, \textit{confinement}. On the other hand as $\mu \rightarrow \infty$, or at high energies, the coupling gets small, particles get decoupled, which is known as \textit{asymptotic freedom}. 
+Quarks are affected by all three fundamental forces. They come in six different \textit{flavours} and they carry fractional charge as seen in~\autoref{nonlin}. 
 
-There are also 12 leptons in total. Unlike quarks they are not affected by strong force but also come along in three generations with increasing mass: electrons, muons and taus. They have their equivalent antiparticles and corresponding neutrinos. Much of this thesis is dedicated to the study of the muons or antimuons and their neutrinos. 
 
-In the rest of the chapter, \gls{SM} formulation is introduced starting with the principle of local gauge invariance explained in~\autoref{build}. Strong and electroweak sector are described in ~\autoref{qcd} and~\autoref{weak} and the necessary process of mass generation in the \gls{SM}, Higgs mechanism, is covered in~\autoref{higgs}. Effect on the electroweak sector is then described in~\autoref{mass} resulting in the quark mixing matrix detailed in~\autoref{ckm}. Following sections (~\autoref{lnudecays},~\autoref{lnugamma},~\autoref{mydecay}) then discuss the theoretical and experimental status of fully leptonic decays, which are sensitive to elements of the quark mixing matrix. Finally discussion about decay model used for the search of \Bmumumu is covered in~\autoref{mydecay}.  
+In the rest of the chapter, the \gls{SM} formulation is introduced starting with the principle of local gauge invariance explained in~\autoref{build}. The strong and electroweak sectors are described in ~\autoref{qcd} and~\autoref{weak} and the necessary process of mass generation in the \gls{SM}, the Higgs mechanism, is covered in~\autoref{higgs}. The effect of the Higgs mechanism on the electroweak sector is then described in~\autoref{mass} resulting in the quark mixing matrix detailed in~\autoref{ckm}. Following sections then discuss the theoretical and experimental status of fully leptonic decays, which are sensitive to elements of the quark mixing matrix. Finally a discussion about decay model used for the search of \Bmumumu is covered in~\autoref{mydecay}.  
 
-\section{The Principle of Standard Model Building}
+\section{The principle of Standard Model building}
 \label{build}
-In more mathematical terminology, the \gls{SM} is a theory that respects SU(3)$\otimes$SU(2)$\otimes$U(1) symmetries. In this section the form of the Lagrangian density of the \gls{SM} is motivated. Throughout it is assumed that $\hbar=1$, $c=1$. The Dirac Lagrangian for spin-$\frac{1}{2}$ non-interacting or free field $\psi$ (spinor field) for a particle with mass $m$ can be written as: 
+In more mathematical terminology, the \gls{SM} is a theory that respects SU(3)$\otimes$SU(2)$\otimes$U(1) symmetries. In this section the form of the Lagrangian density of the \gls{SM} is motivated. Throughout it is assumed that $\hbar=1$, $c=1$. The Dirac Lagrangian for a spin-$\frac{1}{2}$ non-interacting or free field $\psi$ (spinor field) for a particle with mass $m$ can be written as 
 \begin{equation}
-\mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi.
+\mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi,
 \label{eq:lag_first}
 \end{equation}
 
-\noindent where $\gamma^{\mu}$ are $4\times 4$ Dirac matrices and $\mu\in\{0,1,2,3\}$. By using Euler-Lagrange equation in the relativistic theory
+\noindent where $\gamma^{\mu}$ are $4\times 4$ Dirac matrices and $\mu\in\{0,1,2,3\}$. By using the Euler-Lagrange equation in the relativistic theory
 
 \begin{equation}
 	\partial_{\mu}\Big(\frac{\partial{\mathcal{L}}}{\partial(\partial_{\mu}\psi_{i})} \Big) =\frac{\partial \mathcal{L}}{\partial\psi_{i}}
 \label{eq:lag_first}
 \end{equation}
-for $\overline\psi$ in~\autoref{eq:lag_first} following equation 
+for $\overline\psi$ in~\autoref{eq:lag_first} the equation 
 
 \begin{equation}
  i\gamma^{\mu}\partial_{\mu}\psi - m\psi = 0
@@ -64,7 +56,7 @@ for $\overline\psi$ in~\autoref{eq:lag_first} following equation
 \end{equation}
 can be retrieved. This is the Dirac equation of motion.
 
-The Dirac Lagrangian in~\autoref{eq:lag_first} stays the same under global phase transformation: $\psi \rightarrow e^{i\phi}\psi$ and $\overline\psi \rightarrow e^{-i\phi}\overline\psi$. However, under local phase transformation, where $\phi$ is a function of $x^{\mu}$, this is not the case anymore. In this case
+The Dirac Lagrangian in~\autoref{eq:lag_first} stays the same under a global phase transformation: $\psi \rightarrow e^{i\phi}\psi$ and $\overline\psi \rightarrow e^{-i\phi}\overline\psi$. However, under local phase transformation, where $\phi$ is a function of $x^{\mu}$, this is not the case any more. In this case
 \begin{equation}
 \mathcal{L} \rightarrow \mathcal{L}- (\partial_{\mu}\phi) \overline{\psi}\gamma^{\mu}\psi.
 \label{eq:notinv}
@@ -76,22 +68,22 @@ By requiring local gauge invariance for the Lagrangian, it is necessary to add a
 	\mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi - q\overline{\psi}\gamma^{\mu}\psi A_{\mu}
 \label{eq:lag_sec}
 \end{equation}
-stays invariant under local phase transformation. That is good, however, there is a penalty for introducing a new vector field $A_{\mu}$ which interacts with spinor field $\psi$ as can be seen in the last part of~\autoref{eq:lag_sec}. It is now necessary to also introduce that is a non-interacting term for $A_{\mu}$.
+stays invariant under a local phase transformation. That is good, however, there is a penalty for introducing a new vector field $A_{\mu}$ which interacts with the spinor field $\psi$ as can be seen in the last part of~\autoref{eq:lag_sec}. It is now necessary to also introduce a non-interacting term for $A_{\mu}$.
 
-The Lagrangian for non-interacting vector field for a particle with mass $m_{A}$ with the field strength $F^{\mu\nu}=\partial^{u}A^{\nu} - \partial^{\nu}A^{u}$ is
+The Lagrangian for the non-interacting vector field for a particle with mass $m_{A}$ and field strength $F^{\mu\nu}=\partial^{u}A^{\nu} - \partial^{\nu}A^{u}$ is
 \begin{equation}
 \mathcal{L}= -\frac{1}{16\pi} F^{\mu\nu}F_{\mu\nu} + \frac{1}{8\pi}m_{A}^{2}A^{\mu}A_{\mu}.
 \end{equation}
 
-In order not to spoil the local gauge invariance the $m_{A}=0$. Hence the full Dirac Lagrangian with local phase invariance introduces massless vector field $A^{\mu}$ yields
+In order not to spoil the local gauge invariance, it i required that $m_{A}=0$. Hence the full Dirac Lagrangian with local phase invariance introduces a massless vector field $A^{\mu}$ and is of the form
 
 \begin{equation}
 	\mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi - q\overline{\psi}\gamma^{\mu}\psi A_{\mu} -\frac{1}{16\pi} F^{\mu\nu}F_{\mu\nu},
 \label{eq:lag_thir}
 \end{equation}
-which can be recognized as the Lagrangian for quantum electrodynamics (\gls{QED}), whereby the electrons and positrons (quanta of spinor field) are interacting with photons (quanta of vector field). In other words, $A_{\mu}$ is electromagnetic potential and $q=e$, the current density is hence $J^{\mu}=e\overline{\psi}\gamma^{\mu}\psi$. This represents $U(1)_{EM}$ part of the SM.
+which can be recognized as the Lagrangian for quantum electrodynamics (\gls{QED}), whereby the electrons and positrons (quanta of spinor field) are interacting with photons (quanta of vector field). In other words, $A_{\mu}$ is the electromagnetic potential and $q=e$, the current density is hence $J^{\mu}=e\overline{\psi}\gamma^{\mu}\psi$. This represents the $U(1)_{EM}$ part of the SM.
 
-To upgrade from global invariance of the non-interacting Lagrangian in~\autoref{eq:lag_first} to local invariance one can also achieve it in one step be defining \textit{covariant derivative}
+Upgrading from global invariance of the non-interacting Lagrangian in~\autoref{eq:lag_first} to local invariance in one step can be achieved by defining \textit{covariant derivative}
 \begin{equation}
 	\mathcal{D}_{\mu} = \partial_{\mu}+ iqA_{\mu},
 \end{equation}
@@ -99,36 +91,45 @@ where the secret ingredient is to transform the partial derivative in the same w
 
 \section{Quantum Chromodynamics}
 \label{qcd}
-Requirement of gauge invariance under local transformation is a powerful tool and it is used throughout the \gls{SM} building. In this section the development of Lagrangian for Quantum chromodynamics (\gls{QCD}) is explained. \gls{QCD} describes strong interactions or nuclear binding forces and makes use of quarks ($q$) whereby most of the time they are observed to be bound either in pairs - mesons ($q\bar{q}$) - or triplets - baryons ($qqq$). The interactions between quarks and gluons are described by $SU(3)_{C}$ gauge group. The conserving charge associated with strong force is known as color, hence the subscript $C$. It was experimentally established that there are 3 colors and borrowing from color theory used by painters these colors are red, blue and green. The quark carries color and antiquark anticolor making mesons and baryons colorless. There are 8 quanta of strong interactions known under name gluons.
+To require gauge invariance under a local transformation is a powerful tool and it is used throughout the \gls{SM} building. In this section the development of Lagrangian for Quantum chromodynamics (\gls{QCD}) is explained. \gls{QCD} describes strong interactions or nuclear binding forces and makes use of quarks ($q$) whereby most of the time they are observed to be bound either in pairs - mesons ($q\bar{q}$) - or triplets - baryons ($qqq$). The interactions between quarks and gluons are described by the $SU(3)_{C}$ gauge group. The conserving charge associated with the strong force is known as color, hence the subscript $C$. It was experimentally established that there are 3 colors and borrowing from color theory used by painters these colors are red, blue and green. The quark carries color and antiquark anticolor making mesons and baryons colorless. There are 8 quanta of strong interactions known under the name gluons.
 
-With these constraints and by requiring the free Lagrangian to be invariant under local $SU(3)$ transformation similarly to the \gls{QED} case, one obtains again \textit{covariant derivative}
+With these constraints, and by requiring the free Lagrangian to be invariant under local $SU(3)$ transformation similarly to the \gls{QED} case, \textit{covariant derivative}
 
 \begin{equation}
-\mathcal{D}_{\mu} = \partial_{\mu} - ig_{s}\frac{\lambda^{a}}{2}G^{a}_{\mu},
+\mathcal{D}_{\mu} = \partial_{\mu} - ig_{s}\frac{\lambda^{a}}{2}G^{a}_{\mu}
 \end{equation}
-that respects $SU(3)$ symmetry, where $\lambda^{a}$ are Gell-Mann matrices, $a\in\{1..8\}$ (8 possible gluons), $g_{s}$ is the strong coupling. The field strength for the gluon field is defined as $G_{a}^{\mu\nu}=\partial^{u}G_{a}^{\nu} - \partial^{\nu}G_{a}^{u} + g_{s}f^{abc}G_{b}^{\mu}G_{c}^{\nu}$, where $f^{abc}$ are so-called structure constants which satisfy the following commutation relation:
+ that respects $SU(3)$ symmetry is obtained. $\lambda^{a}$ are Gell-Mann matrices, $a\in\{1..8\}$ (8 possible gluons) and $g_{s}$ is the strong coupling. The field strength for the gluon field is defined as $G_{a}^{\mu\nu}=\partial^{u}G_{a}^{\nu} - \partial^{\nu}G_{a}^{u} + g_{s}f^{abc}G_{b}^{\mu}G_{c}^{\nu}$, where $f^{abc}$ are so-called structure constants which satisfy the following commutation relation:
 
 \begin{equation}
 	\Big[\frac{\lambda^{a}}{2},\frac{\lambda^{b}}{2}\Big] = if^{abc}\frac{\lambda^{c}}{2}.
 \end{equation}
 
-As compared to \gls{QED} field strength, there is an additional term involving gluon fields themselves, causing cubic and quartic gluon interactions, which were not present before.
+As compared to the \gls{QED} field strength, there is an additional term involving gluon fields themselves, causing cubic and quartic gluon interactions, which were not present before.
 
+Another interesting behaviour of strong interaction is that the quarks are not observed alone. This is due \textit{confinement} which can be understood within the framework of \gls{QFT} theory by observing evolution of the coupling strength $g$ as a function of energy scale, also known as $\beta$ function.
+The $\beta$-function for a coupling constant $g$ in the \gls{SM} to the two loop contribution takes the following form:
+\begin{equation}
+\beta_g = \mu {{d g}\over d \mu} = {1\over16\pi^2} \beta_g^{(1)}
++ {1\over(16\pi^2)^2} \beta_g^{(2)},
+\end{equation}
+where $\beta_g^{(1)},~ \beta_g^{(2)}$ denote the one-loop and two-loop
+contributions respectively, and $\mu$ is the energy scale. For the strong interaction, unlike electromagnetic and weak interaction, $\beta_g$ is negative. For low energies as $\mu \rightarrow 0$ the coupling is very high and hence quarks cannot be observed on their own, \textit{confinement}. On the other hand as $\mu \rightarrow \infty$, or at high energies, the coupling gets small, particles get decoupled, which is known as \textit{asymptotic freedom}. 
 
-Then the full Lagrangian density for the strong interaction reads as:
+The full Lagrangian density for the strong interaction reads as:
 
 \begin{equation}
 	\mathcal{L}_{\gls{QCD}} = i\overline{\psi}\gamma^{\mu}\mathcal{D}_{\mu}\psi - m\overline{\psi}\psi -\frac{1}{4} G_{a}^{\mu\nu}G^{a}_{\mu\nu} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi + g_{s}\overline{\psi}\gamma^{\mu}\frac{\lambda^{a}}{2}\psi G^{a}_{\mu} -\frac{1}{4} G_{a}^{\mu\nu}G^{a}_{\mu\nu},
 \label{eq:lag_fourth}
 \end{equation}
-where the interaction between quarks and gluons is encoded in the third term of~\autoref{eq:lag_fourth}.
+where the interaction between quarks and gluons is encoded in the third term.
 
 
 \section{Electroweak unification}
 \label{weak}
-The idea behind unification of weak and electromagnetic interactions is very powerful, as it has to accommodate for forces that act with very different strength with force-carrying particles that are both massive ($W^{\pm}$,$Z$) and massless ($\gamma$). Furthermore $W^{\pm}$ only couple to left-handed particles, whereas $Z^{0}$ couple to both left and right-handed particles. Furthermore, electromagnetic vertex factor is purely vectorial($\gamma^{\mu}$) whereas $W^{\pm}$ coupling has both axial and vector components: ($\gamma^{\mu}(1-\gamma^{5})$), where $\gamma^{5}=i\times\gamma^{0}\times\gamma^{1}\times\gamma^{2}\times\gamma^{3}$. This last issue can be solved by absorption of $1-\gamma^{5}$ into a spinor field itself.
-
-In this way one can decompose the spinor field into left-handed and right-handed (chiral) spinor components
+The idea behind unification of weak and electromagnetic interactions is very powerful, as it has to accommodate for forces that act with very different strength with force-carrying particles that are both massive ($W^{\pm}$,$Z$) and massless ($\gamma$). Furthermore $W^{\pm}$ bosons only couple to left-handed particles, whereas the $Z^{0}$ boson couple to both left and right-handed particles. 
+%Furthermore, electromagnetic vertex factor is purely vectorial($\gamma^{\mu}$) whereas $W^{\pm}$ coupling has both axial and vector components: ($\gamma^{\mu}(1-\gamma^{5})$), where $\gamma^{5}=i\times\gamma^{0}\times\gamma^{1}\times\gamma^{2}\times\gamma^{3}$. This last issue can be solved by absorption of $1-\gamma^{5}$ into a spinor field itself.
+%In this way
+The spinor field can be decomposed \mybox{CONTINUE} into left-handed and right-handed (chiral) spinor components
 \begin{equation}
 	\psi=\psi_{L}+\psi_{R} = P_{L}\psi + P_{R}\psi,
 \end{equation}
