@@ -17,6 +17,24 @@
   \textup{\uppercase\expandafter{\romannumeral#1}}%
 }
 \newcommand*{\mybox}[1]{\framebox{#1}}
+%\newcommand{\myboxcol}[2]{{\color{#1}\fbox{\normalcolor#2}}}
+\newcommand*{\colorboxed}{}
+\def\colorboxed#1#{%
+  \colorboxedAux{#1}%
+}
+\newcommand*{\colorboxedAux}[3]{%
+  % #1: optional argument for color model
+  % #2: color specification
+  % #3: formula
+  \begingroup
+    \colorlet{cb@saved}{.}%
+    \color#1{#2}%
+    \boxed{%
+      \color{cb@saved}%
+      #3%
+    }%
+  \endgroup
+}
 
 \usepackage{float}
 %\usepackage{fancyhdr}

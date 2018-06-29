@@ -37,6 +37,26 @@ C.~Jarlskog, \ifthenelse{\boolean{articletitles}}{\emph{{Commutator of the
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{utfit}
+UTfit Collaboration, M.~B. et~al.\,
+  \href{http://www.utfit.org/UTfit/ResultsSummer2016SM}{JHEP 10 (2006) 081,
+  [hep-ph/0606167]}, updated results and plots as of summer 2016\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Charles:2004jd}
+CKMfitter Group, J.~Charles {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Results as of up to ICHEP 2016,
+  updated results and plots available at: http://ckmfitter.in2p3.fr}},
+  }{}\href{http://dx.doi.org/10.1140/epjc/s2005-02169-1}{Eur.\ Phys.\ J.\
+  \textbf{C41} (2005), no.~1 1},
+  \href{http://arxiv.org/abs/hep-ph/0406184}{{\normalfont\ttfamily
+  arXiv:hep-ph/0406184}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{Hou:1992sy}
 W.-S. Hou, \ifthenelse{\boolean{articletitles}}{\emph{{Enhanced charged Higgs
   boson effects in B- ---> tau anti-neutrino, mu anti-neutrino and b ---> tau
@@ -67,18 +87,6 @@ B.~A. Dobrescu and A.~S. Kronfeld,
   Lett.\  \textbf{100} (2008) 241802},
   \href{http://arxiv.org/abs/0803.0512}{{\normalfont\ttfamily
   arXiv:0803.0512}}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem{Charles:2004jd}
-CKMfitter Group, J.~Charles {\em et~al.},
-  \ifthenelse{\boolean{articletitles}}{\emph{{Results as of up to ICHEP 2016,
-  updated results and plots available at: http://ckmfitter.in2p3.fr}},
-  }{}\href{http://dx.doi.org/10.1140/epjc/s2005-02169-1}{Eur.\ Phys.\ J.\
-  \textbf{C41} (2005), no.~1 1},
-  \href{http://arxiv.org/abs/hep-ph/0406184}{{\normalfont\ttfamily
-  arXiv:hep-ph/0406184}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

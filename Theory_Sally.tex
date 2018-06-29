@@ -129,13 +129,22 @@ where the interaction between quarks and gluons is encoded in the third term.
 The idea behind unification of weak and electromagnetic interactions is very powerful, as it has to accommodate for forces that act with very different strength with force-carrying particles that are both massive ($W^{\pm}$,$Z$) and massless ($\gamma$). Furthermore $W^{\pm}$ bosons only couple to left-handed particles, whereas the $Z^{0}$ boson couple to both left and right-handed particles. 
 %Furthermore, electromagnetic vertex factor is purely vectorial($\gamma^{\mu}$) whereas $W^{\pm}$ coupling has both axial and vector components: ($\gamma^{\mu}(1-\gamma^{5})$), where $\gamma^{5}=i\times\gamma^{0}\times\gamma^{1}\times\gamma^{2}\times\gamma^{3}$. This last issue can be solved by absorption of $1-\gamma^{5}$ into a spinor field itself.
 %In this way
-The spinor field can be decomposed \mybox{CONTINUE} into left-handed and right-handed (chiral) spinor components
+To aid with the situation, the spinor field can be decomposed into left-handed and right-handed (chiral) spinor components
 \begin{equation}
 	\psi=\psi_{L}+\psi_{R} = P_{L}\psi + P_{R}\psi,
 \end{equation}
 where $P_{L} =\frac{1-\gamma^{5}}{2}$ and $P_{R}=\frac{1-\gamma^{5}}{2}$ are known to be projection operators. By calling these operators left-handed and right-handed, there is a misconception that $\psi_{L}$ is a helicity eigenstate, but this is only true given the particle in question is massless. These spinors are known to have chirality - known as left or right-handedness. Helicity is rather a projection of the spin on the direction of the momentum.
 
-As the quarks and leptons can couple within the generation exchanging $W^{\pm}$ this motivates left-handed isospin doublets where for the first generation of fermions:
+The spinor field decomposition then have influence on electromagnetic and weak currents as well as fermion mass term. Firstly the fermion mass term mixes both left handed and right handed spinors as 
+
+\begin{equation}
+	m\overline{\psi}\psi=m(\overline{\psi_{R}}\psi_{L} + \overline{\psi_{L}}\psi_{R}).
+\label{eq:mixingpsi}
+\end{equation}	
+On the other hand, the electromagnetic current is not mixing the left and right handed components, since $\overline{\psi}\gamma^{\mu}\psi=\overline{\psi_{R}}\gamma^{\mu}\psi_{R} + \overline{\psi_{L}}\gamma^{\mu}\psi_{R}$. Finally weak charged current only acts on left-handed fermions as $\frac{1}{2}\overline{\psi}\gamma^{\mu}(1-\gamma_{5})\psi = \overline{\psi_{L}}\gamma^{\mu}\gamma_{L}$.   
+
+
+Another observation is that the charged weak interaction only couples leptons within the three generations. This motivates left-handed isospin doublets where for the first generation of fermions:
 
 \begin{equation}
 %\begin{split}
@@ -151,23 +160,24 @@ and right-handed isospin singlets for up-type quarks, down-type quarks and charg
 	l_{R}=(e_{R},\mu_{R},\tau_{R}).
 	\label{eq:defsin}
 \end{equation}
-The simplest group with doublet representation is SU(2) and in combination with the electromagnetic interaction forms $SU(2)_{L} \otimes U(1)_{Y}$. The conserving charges are inter-related by equation
+The simplest group with doublet representation is SU(2) and in combination with the electromagnetic interaction forms $SU(2)_{L} \otimes U(1)_{Y}$. The conserving charges are inter-related 
 
 \begin{equation}
-Q=I^{3} + \frac{1}{2}Y
+Q=I^{3} + \frac{1}{2}Y,
 \end{equation}
 where $I$ refers to weak isospin, $Y$ refers to weak hypercharge, and $Q$ is electric charge.
 
-Again by assuming gauge invariance under local transformation \textit{covariant derivative} of $SU(2)_{L}\otimes U(1)_{Y}$
+Again by assuming gauge invariance under local transformation the \textit{covariant derivative} of $SU(2)_{L}\otimes U(1)_{Y}$ is 
 
 \begin{equation}
-	D_{\mu} = \partial_{\mu} + i\frac{g}{2}W_{\mu}^{i} \frac{\sigma^{i}}{2} - i \frac{g'}{2}B_{\mu} 
+	D_{\mu} = \partial_{\mu} + i\frac{g}{2}W_{\mu}^{i} \frac{\sigma^{i}}{2} - i \frac{g'}{2}B_{\mu}. 
 \label{eq:covdev}
 \end{equation}
-is obtained. Here $\sigma^{i}$ are Pauli matrices, $g,g'$ are the weak and strong couplings and $W_{\mu}^{i}$ where $i\in\{1,2,3\}$ and $B_{\mu}$ are the vector fields that should be corresponding to $W^{\pm},Z^{0},\gamma$.
+
+Here $\sigma^{i}$ are Pauli matrices, $g,g'$ are the electroweak couplings and $W_{\mu}^{i}$ where $i\in\{1,2,3\}$ and $B_{\mu}$ are the vector fields that should be corresponding to $W^{\pm},Z^{0},\gamma$.
 The field strengths are defined as $B^{\mu\nu}=\partial^{u}B^{\nu} - \partial^{\nu}B^{u}$ and $W^{i}_{\mu\nu} = \partial^{\mu}W^{i}_{\nu} - \partial^{\nu}W^{i}_{\mu}+ g\epsilon^{ijk}W_{\mu}^{j}W_{\nu}^{k}$.
 
-The real charged bosons corresponding to $W^{\pm}$ arise as linear combinations of $W^{i}_{\mu}$, for $i\in(1,2)$ in the following way
+The real charged bosons corresponding to $W^{\pm}$ arise as linear combinations of $W^{i}_{\mu}$, for $i\in(1,2)$ as
 \begin{equation}
 \begin{split}
 W^{\pm}_{\mu} = \frac{1}{\sqrt{2}}(W^{1}_{\mu}\mp iW^{2}_{\mu}),
@@ -186,7 +196,7 @@ The neutral bosons are obtained using $W_{\mu}^{3}$ and $B_{\mu}$ in a similar f
 \begin{equation}
 	A_{\mu}= B_{\mu}cos\theta_{W}+W^{3}_{\mu}sin\theta_{W},
 \end{equation}
-where $\theta_{W}$ angle is known as weak mixing angle and can be determined experimentally from masses of $Z$ and $W^{\pm}$ by the relation
+where $\theta_{W}$ angle is known as weak mixing angle and can be determined experimentally from the masses of the $Z$ and $W^{\pm}$ bosons by the relation
 $cos\theta_{W} = \frac{M_{W}}{M_{Z}}$. So far, however, there was no consideration of how bosons or fermions for that matter become massive which will be covered in the next section.
 
 The full Lagrangian of electroweak theory then consists of the kinetic part
@@ -194,7 +204,7 @@ The full Lagrangian of electroweak theory then consists of the kinetic part
 \mathcal{L}_{kin}=  -\frac{1}{4} B^{\mu\nu}B_{\mu\nu} -\frac{1}{4} W_{i}^{\mu\nu}W^{i}_{\mu\nu}
 \end{equation}
 where for $W_{i}^{\mu\nu}$ like in \gls{QCD} there is cubic and quartic self interaction amongst the gauge fields. Then there are interactions between the quark/lepton fields and the gauge bosons where it is conventional to split this into two categories according to the charge of gauge bosons.
-This is what gives rise to charged and neutral current for electroweak interactions. So employing the physical gauge boson representation, charged current Lagrangian $\mathcal{L}_{CC}$ and neutral current Lagrangian $\mathcal{L}_{NC}$ for one family of fermions reads as
+This is what gives rise to charged and neutral currents for the electroweak interactions. So employing the physical gauge boson representation, charged current Lagrangian $\mathcal{L}_{CC}$ and neutral current Lagrangian $\mathcal{L}_{NC}$ for one family of fermions reads as
 \begin{equation}
 	\mathcal{L}_{CC}= - \frac{g}{2\sqrt{2}}\Big[W_{\mu}^{\dagger}\big[\overline{\nu}\gamma^{\mu}(1-\gamma_{5})l + \overline{u}\gamma^{\mu}(1-\gamma_{5})d\big] + h.c\Big], 
 \label{eq:LC}
@@ -204,40 +214,41 @@ This is what gives rise to charged and neutral current for electroweak interacti
 	\mathcal{L}_{NC}= - g sin\theta_{W}(\overline{l}\gamma^{\mu}l)A_{\mu} - \frac{g}{2cos\theta_{W}}\sum_{\psi=\nu,l} \overline{\psi_{i}}\gamma^{\mu}(g^{i}_{V} - g^{i}_{A}\gamma_{5})\psi_{i}Z_{\mu}
 \label{eq:NC}
 \end{equation}
-where the famous (V-A) structure of weak charged current can be seen. The first part of $\mathcal{L}_{NC}$ represents known electromagnetic interaction $e=gsin\theta_{W}$. 
+where the famous (V-A) structure of the weak charged current can be seen. The first part of $\mathcal{L}_{NC}$ represents known electromagnetic interaction $e=gsin\theta_{W}$. 
 
-If the field is considered to be under U(1) charge then it was shown that this gauge field was invariant in the QED case. However under SU(2) there is a transformation whereby $l_{L}$ is transformed into $\nu_{L}$. In this case, the Lagrangian for the fermion mass field breaks the local gauge invariance and for this reason and as well to give the mass to the gauge bosons Higgs mechanism is introduced.
+If the field is considered to be under U(1) charge then it was shown that this gauge field was invariant in the QED case. However under SU(2), only left-handed fields transform and hence for the fermionic mass term, which mixes right-handed and left-handed terms as shown in~\autoref{eq:mixingpsi} breaks the gauge invariance.
+%there is a transformation whereby $l_{L}$ is transformed into $\nu_{L}$.
+For this very reason and also to give mass to the gauge bosons the Higgs mechanism is introduced.
 
-\section{Higgs Mechanism}
+\section{The Higgs Mechanism}
 \label{higgs}
-Higgs mechanism for both the fermions and gauge bosons allow to obtain mass by a process known as spontaneous symmetry breaking by introduction of new scalar field with potential $V$ into the model. Let $\phi$ be a doublet of complex scalar fields where
+The Higgs mechanism introduce a new scalar field with potential $V$ into the model. Through the process known as spontaneous symmetry breaking it allows fermions and gauge bosons to have a mass term in their Lagrangians while retaining gauge invariance. Let $\phi$ be a doublet of complex scalar fields where
 
 \begin{equation}
 \phi = \binom{\phi^{+}}{\phi^{0}},
 \end{equation}
-where $\phi^{+} = \frac{\phi_{1} + i{\phi_{2}}}{\sqrt{2}}$ and $\phi^{0} = \frac{\phi_{3} + i{\phi_{4}}}{\sqrt{2}}$ so that $\phi^{\dagger}\phi = \frac{\phi_{1}^{2} + \phi_{2}^{2} + \phi_{3}^{2} + \phi_{4}^{2}}{2}$. Lagrangian for this field is then
+where $\phi^{+} = \frac{\phi_{1} + i{\phi_{2}}}{\sqrt{2}}$ and $\phi^{0} = \frac{\phi_{3} + i{\phi_{4}}}{\sqrt{2}}$ so that $\phi^{\dagger}\phi = \frac{\phi_{1}^{2} + \phi_{2}^{2} + \phi_{3}^{2} + \phi_{4}^{2}}{2}$.  The Lagrangian for this field is then
 
 \begin{equation}
 	\mathcal{L}_{Higgs} = (D_{\mu}\phi)^{\dagger}(D^{\mu}\phi) + V = (D_{\mu}\phi)^{\dagger}(D^{\mu}\phi) - \mu^{2}\phi^{\dagger}\phi - \lambda (\phi^{\dagger}\phi)^{2},
 \end{equation}
-where $D_{\mu}$ is given in~\autoref{eq:covdev}, and $V$ is the famous Mexican hat potential where x-axis is $\phi_{1}$, y-axis is $\phi_{2}$ where. So that there is possibility of ground state it is required that $\lambda>0$.
+where $D_{\mu}$ is given in~\autoref{eq:covdev}, and $V$ is the famous Mexican hat potential where the x-axis is $\phi_{1}$ and the y-axis is $\phi_{2}$. It is required that $\lambda>0$ to have a ground state.
 
 By finding the ground state - or the stable minimum - of this potential with $\mu^{2}<0$, one gets infinite number of this minima such that
 \begin{equation}
 	\phi\phi^{\dagger}=\frac{-\mu^{2}}{2\lambda}=\frac{v^{2}}{2}.
 \end{equation}
-This is the same as saying that the minimum is independent of direction as it lies on the circle of minima. As the minimum is usually known as vacuum, $v$ is known to be vacuum expectation value. By choosing a particular minimum one fixes direction and the symmetry of $SU(2)\otimes U(1)$ is spontaneously broken, meaning that the overall theory is symmetrical but the ground state exhibits antisymmetry. In this case, direction $\phi=\frac{1}{\sqrt{2}}\binom{0}{v}$ is chosen. Detailing both real and imaginary part of the fields the direction can be translated so that $\phi_{3}=\frac{v}{2}$ $\phi_{1}=\phi_{2}=\phi_{4}=0$. This allows for generation of three massive bosons $W^{\pm}$ and $Z^{0}$ and massless $\gamma$ of the electroweak theory. By fluctuating the field around minima 
+This is the same as saying that the minimum is independent of direction as it lies on the circle of minima. As the minimum is usually known as vacuum, $v$ is called vacuum expectation value. By choosing a particular minimum one fixes the direction and the symmetry of $SU(2)\otimes U(1)$ is spontaneously broken, meaning that the overall theory is symmetrical but the ground state exhibits antisymmetry. By convention, the direction $\phi=\frac{1}{\sqrt{2}}\binom{0}{v}$ is chosen. Detailing both real and imaginary part of the fields the direction can be translated so that $\phi_{3}=\frac{v}{2}$ $\phi_{1}=\phi_{2}=\phi_{4}=0$. This allows for generation of three massive bosons $W^{\pm}$ and $Z^{0}$ and massless $\gamma$ of the electroweak theory. The Higgs boson itself arises as an excited quanta around the minimum 
 
 \begin{equation}
-\phi=\frac{1}{\sqrt{2}}\binom{0}{v+H},
+\phi=\frac{1}{\sqrt{2}}\binom{0}{v+H}.
 \label{eq:ref}
 \end{equation}
-the so well-studied Higgs boson is created.
 
 
 \section{Fermion mass generation}
 \label{mass}
-Moreover, introducing an additional scalar doublet into the model fixes the broken gauge symmetry for fermionic mass as it is possible to construct the fermion-scalar interaction Lagrangian that is gauge invariant, usually denoted as Yukawa Lagrangian $\mathcal{L}_{Y}$. It is made up of the leptonic part and the quark part:
+Moreover, introducing an additional scalar doublet into the model fixes the broken gauge symmetry for fermionic mass mentioned in~\autoref{eq:mixingpsi} as it is possible to construct the fermion-scalar interaction Lagrangian that is gauge invariant, usually denoted as Yukawa Lagrangian $\mathcal{L}_{Y}$. It is made up of the leptonic part and the quark part:
 
 \begin{equation}
 	\mathcal{L}_{Y}= \mathcal{L}_{L} + \mathcal{L}_{Q}.
@@ -257,7 +268,7 @@ where h.c stands for Hermitian conjugate, $i,j$ are the generations, $y^{q}$ are
 	\mathcal{L}_{L}= \frac{g_{l}v}{\sqrt{2}}(\overline{l}_{L}l_{R} + \overline{l}_{R}l_{L}) + \frac{g_{l}}{\sqrt{2}}(\overline{l}_{L} l_{R}+\overline{l}_{R} l_{L})H = m_{l}(\overline{l}_{L}l_{R} + \overline{l}_{R}l_{L})(1+\frac{H}{v}),
         \label{eq:SSB3}
 \end{equation}
-where the mass term is then defined $m_{l}=\frac{g_{l}v}{\sqrt{2}}$. In a similar way for quarks,
+where the mass term is then defined as $m_{l}=\frac{g_{l}v}{\sqrt{2}}$. In a similar way for quarks,
 
 
 \begin{equation}
@@ -265,26 +276,26 @@ where the mass term is then defined $m_{l}=\frac{g_{l}v}{\sqrt{2}}$. In a simila
 	\label{eq:SSB4}
 \end{equation}
 where the quark masses are grouped into $3\times3$ complex matrices of up-type quark (down-type quark) $M^{u}_{ij}=\frac{v}{\sqrt{2}}y_{ij}^{u}$ ($M^{d}_{ij}=\frac{v}{\sqrt{2}}y_{ij}^{d}$).
-So in conclusion before the spontaneous breakdown of the electroweak symmetry, all quarks and leptons are massless. Once the Higgs scalar field acquires a vacuum expectation value implying broken symmetry, quarks and leptons acquire mass. It is possible then to decompose a complex matrix into two distinguishable unitary and one diagonal matrix. The mass matrices can be diagonalised by unitary transformations $U_{uL}$ and $ U_{dL}$ in the following way:
+So in conclusion before the spontaneous breakdown of the electroweak symmetry, all quarks and leptons are massless. Once the Higgs scalar field acquires a vacuum expectation value implying a broken symmetry, quarks and leptons acquire mass. It is possible then to decompose a complex matrix into two distinguishable unitary and one diagonal matrix. The mass matrices can be diagonalised by unitary transformations $U_{uL}$ and $ U_{dL}$ in the following way:
 \begin{equation}
 \begin{split}
 	\mathcal{M}_{u} = U^{\dagger}_{uL}M^{u}U_{uR} = Diag\{m_{u},m_{c},m_{t}\},
 \\
 	\mathcal{M}_{d} = U^{\dagger}_{dL}M^{d}U_{dR} = Diag\{m_{d},m_{s},m_{b}\}.
 \end{split}
+	\label{eq:unit}
 \end{equation}
 
 This way of diagonalising mass matrices is the most general case of a weak basis transformation which transforms a system to different basis without altering the physics. Such transformation is equivalent to changing quark fields from the basis of flavour eigenstates to that of mass eigenstates.
-In particular for $q\in(u,d)$, 
-
+In particular for $q\in(u,d)$
 
 \begin{equation}
 \begin{split}
-q'_{L} \equiv U_{qL} q_{L}
+q'_{L} \equiv U_{qL} q_{L},
 \\
-q'_{R} \equiv U_{qR} q_{R}
+q'_{R} \equiv U_{qR} q_{R}.
 \end{split}
-\end{equation},
+\end{equation}
 
 This change into the mass eigenstate basis does not affect most of the Lagrangian. More specifically, there will be no change to the $L_{NC}$ in~\autoref{eq:NC} when expressed in mass eigenstates (hence at tree-level there are no flavour changing neutral-currents in the \gls{SM}), however, charged current $L_{CC}$ in~\autoref{eq:LC} is affected. Due to the diagonalisation of the mass matrices $L_{CC}$ now includes non diagonal couplings for the current as seen in the $L_{CC}$ for all three fermion generations:
 
@@ -292,7 +303,7 @@ This change into the mass eigenstate basis does not affect most of the Lagrangia
 	\mathcal{L}_{CC}= - \frac{g}{2\sqrt{2}}\Big[W^{\dagger}_{\mu}\big[\sum_{l}\overline{\nu}\gamma^{\mu}(1-\gamma_{5})l + \sum_{ij}\overline{u_{i}}\gamma^{\mu}(1-\gamma_{5})V_{ij}d_{j}\big] + h.c\Big], 
 \label{eq:LC}
 \end{equation}
-In this equation there is a new term $V_{ij}=V_{CKM}= U_{uL} U_{dL}^\dag$ which is the Cabibbo-Kobayashi-Maskawa (CKM) mixing matrix. In the \gls{SM} there is an assumption that $V^{\dagger}_{CKM}V_{CKM}=1$, or that \gls{CKM} mixing matrix is unitary.
+In this equation there is a new term $V_{ij}=V_{CKM}= U_{uL} U_{dL}^\dag$ which is the Cabibbo-Kobayashi-Maskawa (CKM) mixing matrix. From~\autoref{eq:unit} it follows that $V^{\dagger}_{CKM}V_{CKM}=1$, or that \gls{CKM} mixing matrix is unitary by assuming that only the charged current via $W$ will lead to a transition from the up-quark to down-type quark sector. Therefore the CKM matrix elements provide the probabilities of how a $W^{\pm}$ bosons decay.
  
 
 %\begin{equation}\label{weakcurr}
@@ -302,9 +313,9 @@ In this equation there is a new term $V_{ij}=V_{CKM}= U_{uL} U_{dL}^\dag$ which 
 
 
 
-\section{Quark Mixing Matrix}
+\section{ The Quark Mixing Matrix}
 \label{ckm}
-As mentioned above, from transformation of mass matrices via two unitary matrices one obtains the \gls{CKM} matrix which exhibits a strong hierarchy in the size of the matrix elements of the quark mixing matrix, which is still an unsolved puzzle. From the previous discussion the quark mixing matrix is a $3 \times 3$ complex unitary matrix yielding 18 parameters to start with. Unitarity of the \gls{CKM} matrix implies that matrix elements are orthonormal, reducing the count of free parameters to 9. Further, 5 out of 6 quark phases can be absorbed into the redefinition of the quark field, cutting the number of parameters down to 4 parameters, three quark mixing angles and one CP violating phase. There are many different parametrisations which are all mathematically equivalent to the \gls{CKM} matrix, but the standard parametrisation of the \gls{CKM} matrix for flavour mixing is the following:
+As mentioned above, from the transformation of the mass matrix using two unitary matrices one obtains the \gls{CKM} matrix which exhibits a strong hierarchy in the size of the matrix elements. From the previous discussion the quark mixing matrix is a $3 \times 3$ complex unitary matrix yielding 18 parameters to start with. Unitarity of the \gls{CKM} matrix implies that matrix elements are orthonormal, reducing the count of free parameters to 9. Further, 5 out of 6 quark phases can be absorbed into the redefinition of the quark field, cutting the number of parameters down to 4 parameters, three quark mixing angles and one CP violating phase. There are many different parametrisations which are all mathematically equivalent to the \gls{CKM} matrix, but the standard parametrisation of the \gls{CKM} matrix for flavour mixing is the following:
 
 \begin{align}
 V_{\rm CKM} &=  \begin{pmatrix}   V_{ud} & V_{us} & V_{ub} \cr
@@ -353,26 +364,26 @@ Dividing this constraint by $V_{cd}V^*_{cb}$ and using relation of $\bar{\rho}$ 
 the constraint can be pictorially represented in the $\bar{\rho}$ and $\bar{\eta}$ plane as in~\autoref{fig:unitr}.
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{theory/triangle2.eps}
+\includegraphics[width=0.5\textwidth]{theory/unitarity.eps}
 \caption{Unitarity triangle in a complex plane.}
 \label{fig:unitr}
 \end{figure}
+The area of the six different triangles are half of the Jarlskog invariant \textit{J}, a quantifier of CP violation, which is defined as $\rm{Im}[V_{ij}V_{kl}V^*_{il}V^*_{kj}]$ \cite{Jarlskog:1985ht}. It is interesting to notice that the \gls{SM} with its parameters may or may not violate CP. Only after measuring the parameter it is possible to determine the CP non-conservation. \textit{J} vanishes only if the mixing angle $\theta_{ij} = \{0 , \pi/2\}$; $\delta = \{0 , \pi\}$. So measurements of \textit{J} allows to verify that the \gls{CKM} matrix is complex and hence different mixing for quarks and anti-quarks is obtained, providing theoretical grounding for CP violation.% although \gls{SM} CP violation is not big enough to explain the matter dominated universe.
 
-The area of these triangles are half of the Jarlskog invariant \textit{J}, a quantifier of CP violation, which is defined as $Im[V_{ij}V_{kl}V^*_{il}V^*_{kj}]$ \cite{Jarlskog:1985ht}. It is interesting to notice that the \gls{SM} with its parameters may or may not violate CP. Only after measuring the parameter it is possible to determine the CP non-conservation. \textit{J} vanishes only if mixing angle $\theta_{ij} = \{0 , \pi/2\}$; $\delta = \{0 , \pi\}$. So measurements of \textit{J} allows to verify that the \gls{CKM} matrix is complex and hence different mixing for quarks and anti-quarks is obtained, providing theoretical grounding for CP violation, although \gls{SM} CP violation is not big enough to explain the matter dominated universe.
-
-The \gls{CKM} matrix elements which comprises of magnitudes and phases can be determined in different ways but the most precise option employs a global fit to
-all available measurements (as seen in~\autoref{fig:unifit}) while imposing the \gls{SM} constraints such as the unitarity of \gls{CKM} matrix. Hence, the most precise measurement of the \gls{CKM} matrix magnitudes \mybox{export 2018 citation PDG} to-date is 
-\begin{equation}|V_{\rm CKM}| = \begin{pmatrix}0.97446 \pm 0.00010 & 0.22452 \pm 0.00044  & \circledimp{0.00365\pm 0.00012} \cr
+The \gls{CKM} matrix elements which comprises of magnitudes and phases can be determined in different ways but the most precise option employs a global fit to all available measurements (as seen in~\autoref{fig:unifit}) while imposing the \gls{SM} constraints such as the unitarity of \gls{CKM} matrix. Hence, the most precise measurement of the \gls{CKM} matrix magnitudes \mybox{export 2018 citation PDG} to-date is 
+\begin{equation}|V_{\rm CKM}| = \begin{pmatrix}0.97446 \pm 0.00010 & 0.22452 \pm 0.00044  & \colorboxed{green}{0.00365\pm 0.00012} \cr
 	0.22438 \pm 0.00044 &  0.97359 \bfrac{+0.00010}{-0.00011} & 0.04214\pm 0.00076 \cr
 0.00896 \bfrac{+0.00024}{-0.00023} & 0.04133 \pm 0.00074 &  0.999105 \pm 0.000032 \cr \end{pmatrix},
 \end{equation}
-with non-zero Jarlskog invariant $J=(3.18\pm0.15)\times 10^{-5}$. Highlighted is the result for magnitude of the $V_{ub}$ matrix element $|V_{ub}|$ which is the element with highest fractional uncertainty on its value. Therefore precise measurement of this element is very important and was the original motivation for analysis of \Bmumumu. Moreover, as displayed in~\autoref{fig:unifit}, the measurement of $|V_{ub}|$ (green circle) together with $sin(2\beta)$ measurement (blue band) constrain apex of the triangle. This means that they indirectly test the unitarity of the \gls{CKM} matrix, one of the fundamental assumptions of the \gls{SM}.
+with non-zero Jarlskog invariant $J=(3.18\pm0.15)\times 10^{-5}$. Highlighted is the result for magnitude of the $V_{ub}$ matrix element $|V_{ub}|$ which is the element with highest fractional uncertainty on its value. Therefore precise measurement of this element is very important and was the original motivation for the analysis of \Bmumumu. Moreover, as displayed in~\autoref{fig:unifit}, the measurement of $|V_{ub}|$ (green circle) together with $\sin(2\beta)$ measurement (blue band) constrain the apex of the triangle. This means that these two measurements together with other measuremnts test the unitarity of the \gls{CKM} matrix, one of the fundamental assumptions of the \gls{SM}.
 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{theory/rhoeta_large_lol.eps}
-\caption{Different experimental measurements that constrain the \gls{CKM} matrix elements together with the fit result.}
+%\includegraphics[width=0.7\textwidth]{theory/rhoeta_large_lol.eps}
+\includegraphics[width=0.5\textwidth]{theory/rhoeta-fullfit-sm.eps}\put(-30,100){(a)}
+\includegraphics[width=0.5\textwidth]{theory/rhoeta_large_lol.eps}\put(-30,100){(b)}
+	\caption{Different experimental measurements that constrain the \gls{CKM} matrix elements together with the fit result from two collaborations (a) UTFit and (b) CKMFitter as of summer 2016. This figures are taken from \cite{utfit} and \cite{Charles:2004jd}.}
 \label{fig:unifit}
 \end{figure}
 

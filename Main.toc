@@ -9,9 +9,9 @@
 \contentsline {section}{\numberline {2.2}The principle of Standard Model building}{26}{section.2.2}
 \contentsline {section}{\numberline {2.3}Quantum Chromodynamics}{28}{section.2.3}
 \contentsline {section}{\numberline {2.4}Electroweak unification}{29}{section.2.4}
-\contentsline {section}{\numberline {2.5}Higgs Mechanism}{32}{section.2.5}
+\contentsline {section}{\numberline {2.5}The Higgs Mechanism}{32}{section.2.5}
 \contentsline {section}{\numberline {2.6}Fermion mass generation}{33}{section.2.6}
-\contentsline {section}{\numberline {2.7}Quark Mixing Matrix}{35}{section.2.7}
+\contentsline {section}{\numberline {2.7} The Quark Mixing Matrix}{35}{section.2.7}
 \contentsline {section}{\numberline {2.8}Fully Leptonic \mb {P^{+}\rightarrow l^{+} \nu _{l}} decays}{39}{section.2.8}
 \contentsline {section}{\numberline {2.9}Fully Leptonic \mb {B^{+}\rightarrow l^{+} \nu _{l} \gamma } decays}{42}{section.2.9}
 \contentsline {section}{\numberline {2.10}Fully Leptonic \mb {B^{+}\rightarrow l^{+} l^{-} l^{+} \nu _{l}} decays}{43}{section.2.10}
