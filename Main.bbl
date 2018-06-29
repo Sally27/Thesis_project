@@ -37,10 +37,13 @@ C.~Jarlskog, \ifthenelse{\boolean{articletitles}}{\emph{{Commutator of the
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem{utfit}
-UTfit Collaboration, M.~B. et~al.\,
-  \href{http://www.utfit.org/UTfit/ResultsSummer2016SM}{JHEP 10 (2006) 081,
-  [hep-ph/0606167]}, updated results and plots as of summer 2016\relax
+\bibitem{Bona:2006ah}
+UTfit, M.~Bona {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Results as of summer 2016,
+  updated results and plots available at: http:utfit.org/UTfit/WebHome}},
+  }{}\href{http://dx.doi.org/10.1088/1126-6708/2006/10/081}{JHEP \textbf{10}
+  (2006) 081}, \href{http://arxiv.org/abs/hep-ph/0606167}{{\normalfont\ttfamily
+  arXiv:hep-ph/0606167}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

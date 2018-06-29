@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  29 JUN 2018 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  29 JUN 2018 16:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5784,13 +5784,13 @@ Missing character: There is no “ in font jkpmn7t!
 Missing character: There is no Î in font jkpmn7t!
 Missing character: There is no ³ in font jkpmn7t!
  [153]
-Overfull \hbox (43.67137pt too wide) in paragraph at lines 245--253
+Overfull \hbox (43.67137pt too wide) in paragraph at lines 248--256
 \T1/jkptt/m/n/12 https://lhcb.web.cern.ch/lhcb/speakersbureau/html/bb$[]$produc
 tionangles.html\T1/jkp/m/n/12 (-20) ,
  []
 
 
-Overfull \hbox (380.1717pt too wide) in paragraph at lines 291--296
+Overfull \hbox (380.1717pt too wide) in paragraph at lines 294--299
 []\T1/jkp/m/it/12 (-20) Image of the lu-mi-nosty overview from \T1/jkptt/m/n/12
  https://lbgroups.cern.ch/online/operationsplots/index$[]$files/integratedlumil
 hcbtime$[]$yearlycumul.png\T1/jkp/m/n/12 (-20) ,
@@ -5800,7 +5800,7 @@ hcbtime$[]$yearlycumul.png\T1/jkp/m/n/12 (-20) ,
 
 ]
 Appendix A.
-(./Appendix_BDT.tex <figs/BDT.png, id=6886, 892.08281pt x 407.27156pt>
+(./Appendix_BDT.tex <figs/BDT.png, id=6887, 892.08281pt x 407.27156pt>
 File: figs/BDT.png Graphic file (type png)
 
 <use figs/BDT.png>
@@ -5840,8 +5840,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 420.
  ) 
 Here is how much of TeX's memory you used:
  43229 strings out of 494946
- 822986 string characters out of 6180981
- 963439 words of memory out of 5000000
+ 823004 string characters out of 6180981
+ 963451 words of memory out of 5000000
  44505 multiletter control sequences out of 15000+600000
  287308 words of font info for 719 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -5871,10 +5871,10 @@ t/fonts/type1/public/kpfonts/jkpsyc.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/kpfonts/jkpttbn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/kpfonts/jkpttmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb>
-Output written on Main.pdf (166 pages, 5389710 bytes).
+Output written on Main.pdf (166 pages, 5389753 bytes).
 PDF statistics:
- 7126 PDF objects out of 7423 (max. 8388607)
- 4326 compressed objects within 44 object streams
+ 7127 PDF objects out of 7423 (max. 8388607)
+ 4327 compressed objects within 44 object streams
  557 named destinations out of 1000 (max. 500000)
  94520 words of extra memory for PDF output out of 106986 (max. 10000000)
 
