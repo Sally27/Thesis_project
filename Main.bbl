@@ -60,6 +60,16 @@ CKMfitter Group, J.~Charles {\em et~al.},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Marciano:1988vm}
+W.~J. Marciano and A.~Sirlin,
+  \ifthenelse{\boolean{articletitles}}{\emph{{Electroweak Radiative Corrections
+  to tau Decay}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.61.1815}{Phys.\ Rev.\ Lett.\
+  \textbf{61} (1988) 1815}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{Hou:1992sy}
 W.-S. Hou, \ifthenelse{\boolean{articletitles}}{\emph{{Enhanced charged Higgs
   boson effects in B- ---> tau anti-neutrino, mu anti-neutrino and b ---> tau
@@ -90,6 +100,18 @@ B.~A. Dobrescu and A.~S. Kronfeld,
   Lett.\  \textbf{100} (2008) 241802},
   \href{http://arxiv.org/abs/0803.0512}{{\normalfont\ttfamily
   arXiv:0803.0512}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Arbey:2017gmh}
+A.~Arbey, F.~Mahmoudi, O.~Stal, and T.~Stefaniak,
+  \ifthenelse{\boolean{articletitles}}{\emph{{Status of the Charged Higgs Boson
+  in Two Higgs Doublet Models}},
+  }{}\href{http://dx.doi.org/10.1140/epjc/s10052-018-5651-1}{Eur.\ Phys.\ J.\
+  \textbf{C78} (2018), no.~3 182},
+  \href{http://arxiv.org/abs/1706.07414}{{\normalfont\ttfamily
+  arXiv:1706.07414}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

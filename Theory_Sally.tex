@@ -1,6 +1,7 @@
 \chapter{Theory}
+\label{stheory}
 %\subsection{Introduction to Mixing Phenomenology}
-\textit{The Standard Model is without question the most powerful and tested theory of particle physics. It describes and predicts many phenomena very well even though the theory is not including any explanation for the nature of dark matter and it doesn't make any attempt to describe gravity in a quantum field theory framework. Furthermore, fine-tuning of some parameters in the Standard Model such as the Higgs mass, where parameters get exactly the right value to produce required behaviour, beg questions if there is some symmetry in the model building that is missing. In this chapter, the theoretical basis of the Standard Model is discussed and is then followed by experimental and theoretical consideration of fully leptonic decays.}
+\textit{The Standard Model is without question the most powerful and tested theory of particle physics. It describes and predicts many phenomena very well even though as discussed in previous chapter it fails to address few known issues. In this chapter, the theoretical basis of the Standard Model is first laid out which is then followed by experimental and theoretical consideration of fully leptonic decays.}
 
 
 
@@ -30,6 +31,8 @@ Generation & Flavour & Charge & Constituent Mass \\ [0.5ex]\hline% inserts table
 \end{table} 
 
 Quarks are affected by all three fundamental forces. They come in six different \textit{flavours} and they carry fractional charge as seen in~\autoref{nonlin}. 
+
+There are also 12 leptons in total. Unlike quarks they are not affected by the strong force but also come along in three generations with increasing mass: electrons, muons and taus. They all have their antiparticles and corresponding neutrinos. Much of this thesis is dedicated to the study of the muons or antimuons and their neutrinos. 
 
 
 In the rest of the chapter, the \gls{SM} formulation is introduced starting with the principle of local gauge invariance explained in~\autoref{build}. The strong and electroweak sectors are described in ~\autoref{qcd} and~\autoref{weak} and the necessary process of mass generation in the \gls{SM}, the Higgs mechanism, is covered in~\autoref{higgs}. The effect of the Higgs mechanism on the electroweak sector is then described in~\autoref{mass} resulting in the quark mixing matrix detailed in~\autoref{ckm}. Following sections then discuss the theoretical and experimental status of fully leptonic decays, which are sensitive to elements of the quark mixing matrix. Finally a discussion about decay model used for the search of \Bmumumu is covered in~\autoref{mydecay}.  
@@ -62,7 +65,7 @@ The Dirac Lagrangian in~\autoref{eq:lag_first} stays the same under a global pha
 \label{eq:notinv}
 \end{equation}
 
-By requiring local gauge invariance for the Lagrangian, it is necessary to add a term to counteract the left-over term in~\autoref{eq:notinv}. Let $\lambda=-\frac{\phi(x)}{q}$ and let $A_{\mu}$ be some new (vector) field which transforms as $A_{\mu} \rightarrow \partial_{\mu}\lambda$ then the following Lagrangian
+By requiring local gauge invariance for the Lagrangian, it is necessary to add a term to counteract the left-over term in~\autoref{eq:notinv}. Let $\lambda=-\frac{\phi(x)}{q}$ and let $A_{\mu}$ be some new (vector) field which transforms as $A_{\mu} \rightarrow A_{\mu} + \partial_{\mu}\lambda$ then the following Lagrangian
 
 \begin{equation}
 	\mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi - q\overline{\psi}\gamma^{\mu}\psi A_{\mu}
@@ -375,15 +378,16 @@ The \gls{CKM} matrix elements which comprises of magnitudes and phases can be de
 	0.22438 \pm 0.00044 &  0.97359 \bfrac{+0.00010}{-0.00011} & 0.04214\pm 0.00076 \cr
 0.00896 \bfrac{+0.00024}{-0.00023} & 0.04133 \pm 0.00074 &  0.999105 \pm 0.000032 \cr \end{pmatrix},
 \end{equation}
-with non-zero Jarlskog invariant $J=(3.18\pm0.15)\times 10^{-5}$. Highlighted is the result for magnitude of the $V_{ub}$ matrix element $|V_{ub}|$ which is the element with highest fractional uncertainty on its value. Therefore precise measurement of this element is very important and was the original motivation for the analysis of \Bmumumu. Moreover, as displayed in~\autoref{fig:unifit}, the measurement of $|V_{ub}|$ (green circle) together with $\sin(2\beta)$ measurement (blue band) constrain the apex of the triangle. This means that these two measurements together with other measuremnts test the unitarity of the \gls{CKM} matrix, one of the fundamental assumptions of the \gls{SM}.
+with non-zero Jarlskog invariant $J=(3.18\pm0.15)\times 10^{-5}$. Highlighted is the result for magnitude of the $V_{ub}$ matrix element $|V_{ub}|$ which is the element with highest fractional uncertainty on its value. Therefore precise measurement of this element is very important and was the original motivation for the analysis of \Bmumumu. Moreover, as displayed in~\autoref{fig:unifit}(a)(b), the measurement of $|V_{ub}|$ (orange circle)(green circle) together with $\sin(2\beta)$ measurement (green band)(blue band) constrain the apex of the triangle. This means that these two measurements together with other measuremnts test the unitarity of the \gls{CKM} matrix, one of the fundamental assumptions of the \gls{SM}.
 
 
 \begin{figure}[h]
 \centering
 %\includegraphics[width=0.7\textwidth]{theory/rhoeta_large_lol.eps}
-\includegraphics[width=0.5\textwidth]{theory/rhoeta-fullfit-sm.eps}\put(-30,100){(a)}
-\includegraphics[width=0.5\textwidth]{theory/rhoeta_large_lol.eps}\put(-30,100){(b)}
-	\caption{Different experimental measurements that constrain the \gls{CKM} matrix elements together with the fit result from two collaborations (a) UTFit and (b) CKMFitter as of summer 2016. This figures are taken from \cite{Bona:2006ah} and \cite{Charles:2004jd}.}
+\vspace*{-1.5cm}\includegraphics[width=0.65\textwidth]{theory/rhoeta-fullfit-sm.eps}\put(30,130){(a)}
+\newline
+\hspace*{-1.7cm}\includegraphics[width=0.65\textwidth]{theory/rhoeta_large_lol.eps}\put(30,130){(b)}
+\caption{Different experimental measurements that constrain the \gls{CKM} matrix elements together with the fit results from two collaborations (a) UTFit and (b) CKMFitter as of summer 2016. This figures are taken from \cite{Bona:2006ah} and \cite{Charles:2004jd}. There is a good agreement between the two different results.}
 \label{fig:unifit}
 \end{figure}
 
@@ -391,16 +395,14 @@ with non-zero Jarlskog invariant $J=(3.18\pm0.15)\times 10^{-5}$. Highlighted is
 \section{Fully Leptonic \mb{P^{+}\rightarrow l^{+} \nu_{l}} decays}
 \label{lnudecays}
 %This text is based on a summary provided by PDG on Leptonic Decays of Charged Pseudoscalar Mesons.
-Purely leptonic decays that proceed by annihilation-type diagrams of pseudoscalar mesons ($P$) are of great interest for flavour physicists because they allow to make:
+Purely leptonic decays that proceed via annihilation-type diagrams of pseudoscalar mesons ($P$) are of great interest for flavour physicists because they allow to make:
 \begin{itemize}
-\item measurements of the \gls{CKM} matrix elements,
-\item measurements of leptonic decay constants,
-\item measurements of the new physics effects.
+\item either measurements of the \gls{CKM} matrix elements,
+\item or measurements of leptonic decay constants,
+\item or measurements of new physics effects.
 \end{itemize}
 
-
-
-First two types of measurements are possible because the decay rates of $P^{+}\rightarrow l^{+} \nu_{l}$ decays are sensitive to the product of the appropriate \gls{CKM} matrix element ($V_{q_{1}q_{2}}$ where $q_{1}$ and $q_{2}$ are constituent quarks of the pseudoscalar meson) and decay constant $f_{P}$, related parameter arising from the strong interaction. In more detail, the decay width of fully leptonic decay of a pseudoscalar meson in the \gls{SM} to the lowest order can expressed as 
+The first two types of measurements are possible because the decay rates of $P^{+}\rightarrow l^{+} \nu_{l}$ decays are sensitive to the product of the appropriate \gls{CKM} matrix element ($V_{q_{1}q_{2}}$ where $q_{1}$ and $q_{2}$ are constituent quarks of the pseudoscalar meson) and decay constant $f_{P}$, related parameter arising from the strong interaction. In more detail, the decay width of a fully leptonic decay of a pseudoscalar meson in the \gls{SM} to the lowest order can expressed as 
 
 \begin{equation}
 %\label{eqn:br} 
@@ -413,10 +415,18 @@ First two types of measurements are possible because the decay rates of $P^{+}\r
 \end{equation}
 where
 $G_F$ is the Fermi constant,
-$m^{}_{P^{+}}$ and $m_{l^{+}}$ are the pseudoscalar meson and lepton masses, respectively,
-$\tau_{P^{+}}$ is the $P^{+}$ lifetime.
+$m^{}_{P^{+}}$ and $m_{l^{+}}$ are the pseudoscalar meson and lepton masses, respectively. This decay width can be compared to that of $\tau \rightarrow l\nu \bar{\nu}$\cite{Marciano:1988vm}
 
-So in order to measure \gls{CKM} matrix amplitude, knowledge of $f_{P}$ must be inferred. $f_{P}$ can be calculated using lattice \gls{QCD} techniques and together with experimental determination of the decay rates provides provide a way to determine relevant amplitude squared of the relevant \gls{CKM} matrix element. More conventionally, \gls{CKM} magnitudes are determined from semileptonic decays, but in this case the sensitivity to different type of current is given. In purely leptonic decays axial-vector flavour-changing currents ($q_{1}\gamma_{\mu}\gamma_{5}q_{2}$) are probed as opposed to vector current ($q_{1}\gamma_{\mu}q_{2}$) in semileptonic case.
+
+\begin{equation}
+%\label{eqn:br} 
+\Gamma(\tau \rightarrow {l} \nu \bar{\nu})=
+	\frac{G^{2}_{l\tau} m^{5}_{\tau}}{192\pi^{3}}\left[1-f\big(\frac{m^{2}_{l'}}{{m^{2}_{\tau}}}\big)\right],
+\label{eqn:tauonic} 
+\end{equation}
+where $G_{l\tau}$, is relevant Fermi constant. In this case $ f(x) = 1  8x - 8x^{3} + x^{4} + 12x^{2}log(x)$ represents correction due to finite lepton mass in final state. Corrections arising from the $W$ propagator effects are negligible for this decay and are not considered here and nor are radiative corrections so that only the lowest order contributions are considered. As compared to~\autoref{eqn:dw} the decay width is significantly higher. 
+
+So in order to measure the \gls{CKM} matrix amplitude, knowledge of $f_{P}$ must be inferred. $f_{P}$ can be calculated using the lattice \gls{QCD} techniques and together with experimental determination of the decay rates provides provide a way to determine relevant amplitude squared of the relevant \gls{CKM} matrix element assuming there is no contribution from new physics (new physics). More conventionally, \gls{CKM} magnitudes are determined from semileptonic decays, but in this case the sensitivity to a different type of current is given \mybox{this is in pdg i dont understand why is it wrong}. In purely leptonic decays axial-vector flavour-changing currents ($q_{1}\gamma_{\mu}\gamma_{5}q_{2}$) are probed as opposed to vector current ($q_{1}\gamma_{\mu}q_{2}$) in semileptonic case.
 
 Vice versa, assuming unitarity of \gls{CKM} triangle and experimental determination of relevant $V_{q_{1}q_{2}}$ one can obtain experimental determination of the decay constants and compare it with theoretical prediction.
 
@@ -437,33 +447,32 @@ where
 \begin{equation}
 	r_H=[1-\tan^2\beta(m^{2}_{B^{+}}/m^{2}_{H^{+}})]^2.
 \end{equation}
+Here $\tan\beta = \frac{v_{2}}{v_{1}}$, where $v_{i}$ are the vacuum expectation values for the Higgs doublets. In order to have enhancing effect for the rate of $B^{+}\rightarrow l^{+}\nu$ decay (to have $r_{H}>1$), $\tan\beta/m_{H^{\pm}}> 0.27 \gev^{-1}$. The experimental limit already present strong lower bound on $M_{H\pm}>600\gev$\cite{Arbey:2017gmh} making most of the parameter space in $\tan\beta$ and $m_{H^{\pm}}$ satisfying the enhancing condition to be above $0.27 \gev^{-1}$.
 
-Here $\tan\beta = \frac{v_{2}}{v_{1}}$, where $v_{i}$ are the vacuum expectation values for the Higgs doublets. In order to have enhancing effect for the rate of $B^{+}\rightarrow l^{+}\nu$ decay (to have $r_{H}>1$), $\tan\beta/H^{\pm}> 0.27 \gev^{-1}$.
+Given current tensions arising in flavour physics searches, especially concerning lepton non-universality, ratio of rates between $P\rightarrow\tau\nu$,$P\rightarrow\mu\nu$ and $P\rightarrow e\nu$ should be measured. In the ratios the decay constant $f_{P}$ cancels out making such measurements a good tool for lepton universality tests.
 
-Given current tensions arising in flavour physics searches, especially concerning lepton non-universality, ratio of rates between $P\rightarrow\tau\nu$,$P\rightarrow\mu\nu$ and $P\rightarrow e\nu$ should be measured. In the ratios the decay constant $f_{P}$ cancels out making such measurements good tool for lepton universality tests.
-
-As seen in~\autoref{eqn:dw}, purely leptonic final state going through $P\rightarrow W^{*}\rightarrow l \nu$ is suppressed by $m^{2}_{l}$, also known as helicity suppression. This suppression occurs as a result of angular momentum conservation. In case of $B^{+}\rightarrow l^{+} \nu$, $B^{+}$ is a spin-0 particle and hence its decay products have to have spin 0 combined, or in other words, be anti-aligned. Neutrinos in the \gls{SM} are always produced left-handed. As the spin of the antilepton and the neutrino should be anti-aligned, antilepton also needs to be left-handed (to have negative helicity). However, the weak current only couples to right-handed antiparticles. Therefore, the antilepton has to be boosted in order to have different helicity. For massless particles such helicity flip is not possible making this decay impossible. The lighter the lepton the larger the velocity and hence higher boost is necessary, making decays to lighter leptons rarer even though they have bigger kinematic phase space available.
+As seen in~\autoref{eqn:dw}, a purely leptonic final state going through $P\rightarrow W^{*}\rightarrow l \nu$ is suppressed by $m^{2}_{l}$, also known as helicity suppression. This suppression occurs as a result of angular momentum conservation. In case of $B^{+}\rightarrow l^{+} \nu$, the $B^{+}$ is a spin-0 particle and hence its decay products should have spin 0 combined, or in other words, be anti-aligned. Neutrinos in the \gls{SM} are always produced left-handed. As the spin of the antilepton and the neutrino should be anti-aligned, the antilepton also needs to be left-handed (to have negative helicity). However, the weak current only couples to right-handed antiparticles. Therefore, the antilepton has to be boosted in order to have different helicity. For massless particles such a helicity flip is not possible making this decay impossible. The lighter the lepton the larger the velocity and hence higher boost is necessary, making decays to lighter leptons rarer even though they have bigger kinematic phase space available.
 
 %https://www.physicsforums.com/threads/helicity-and-suppression.804600/
-The latest experimental measurements for rates of these measurements have been performed by $B$ factories, finding evidence for $B^{+}\rightarrow \tau^{+}\nu$ and first sign of $B^{+}\rightarrow \mu^{+}\nu$ as seen in~\autoref{tab:sum}. These results are to be compared with \gls{SM} prediction $\mathcal{B}(B^{+}\rightarrow \tau^{+}\nu) = (0.82+0.03-0.02)\times10^{-4}$\cite{Charles:2004jd} which is obtained by using unitarity-constrained $V_{ub}$ value aggregated from other measurements and lattice calculations of $f_{B}$. Quite substantial statistical as well as systematical errors show the difficulty of this type of measurements. 
+Concentraing on decays where pseudoscalar of interest is $B^{\pm}$, the latest experimental measurements for rates of $B^{+}\rightarrow l \nu$ decays have been performed by $B$ factories, finding evidence for $B^{+}\rightarrow \tau^{+}\nu$ and first sign of $B^{+}\rightarrow \mu^{+}\nu$ as seen in~\autoref{tab:sum}. These results are to be compared with the \gls{SM} prediction $\mathcal{B}(B^{+}\rightarrow \tau^{+}\nu) = (0.82+0.03-0.02)\times10^{-4}$\cite{Charles:2004jd} which is obtained by using the unitarity-constrained $V_{ub}$ value aggregated from other measurements and lattice calculations of $f_{B}$. %Quite substantial statistical as well as systematical errors show the difficulty of this type of measurements. 
 
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{ l l l l H c H} \hline
-	Process &Experiment & Tag &${\mathcal{B}}$ ($\times$ $10^{-4}$) & Published & Significance ($\sigma$) & {$|V_{ub}|f_{B^+}$ (MeV)} \hfill\\
+	Process &Experiment & Tag &${\mathcal{B}}$ & Published & Significance ($\sigma$) & {$|V_{ub}|f_{B^+}$ (MeV)} \hfill\\
 \hline\\[-2.5ex]
-	$B^{+}\rightarrow \tau^{+}\nu$	&Belle~\cite{Adachi:2012mm}&Hadronic&$0.72^{+0.27}_{-0.25}\pm0.11$  & 2013 & 3.0 \\ 
-$B^{+}\rightarrow \tau^{+}\nu$	&Belle~\cite{Kronenbitter:2015kls}&Semileptonic&$1.25\pm0.28\pm0.27$ & 2015 & 3.8 \\
-$B^{+}\rightarrow \tau^{+}\nu$	&Belle~\cite{Kronenbitter:2015kls}&Average&$0.91 \pm 0.22$ & 2015 & 4.6 \\\hline\\[-2.5ex]
-$B^{+}\rightarrow \tau^{+}\nu$	&BaBar~\cite{Lees:2012ju} & Hadronic & $1.83\,^{+0.53}_{-0.49}\pm0.24$ & 2012 & 3.8 \\ 
-$B^{+}\rightarrow \tau^{+}\nu$	&BaBar~\cite{Aubert:2009wt} & Semileptonic & $1.7\pm 0.8\pm 0.2$ & 2010 & 2.3\\ 
-$B^{+}\rightarrow \tau^{+}\nu$	&BaBar~\cite{Lees:2012ju} & Average & $1.79 \pm 0.48$ & 2012 & - & $1.01\pm 0.14$  \\ \hline
-$B^{+}\rightarrow \mu^{+}\nu$ & Belle~\cite{Sibidanov:2017vph} & Untagged& $(6.46\pm2.22\pm 1.60)\times 10^{-3}$ & 2017 & 2.4 &\\
+	$B^{+}\rightarrow \tau^{+}\nu$	&Belle~\cite{Adachi:2012mm}&Hadronic&$(0.72^{+0.27}_{-0.25}\pm0.11)\times10^{-4}$  & 2013 & 3.0 \\ 
+	$B^{+}\rightarrow \tau^{+}\nu$	&Belle~\cite{Kronenbitter:2015kls}&Semileptonic&$(1.25\pm0.28\pm0.27)\times10^{-4}$ & 2015 & 3.8 \\
+	$B^{+}\rightarrow \tau^{+}\nu$	&Belle~\cite{Kronenbitter:2015kls}&Average&$(0.91 \pm 0.22)\times10^{-4}$ & 2015 & 4.6 \\\hline\\[-2.5ex]
+	$B^{+}\rightarrow \tau^{+}\nu$	&BaBar~\cite{Lees:2012ju} & Hadronic & $(1.83\,^{+0.53}_{-0.49}\pm0.24)\times10^{-4}$ & 2012 & 3.8 \\ 
+	$B^{+}\rightarrow \tau^{+}\nu$	&BaBar~\cite{Aubert:2009wt} & Semileptonic & $(1.7\pm 0.8\pm 0.2)\times10^{-4}$ & 2010 & 2.3\\ 
+	$B^{+}\rightarrow \tau^{+}\nu$	&BaBar~\cite{Lees:2012ju} & Average & $(1.79 \pm 0.48)\times 10^{-4}$ & 2012 & - & $1.01\pm 0.14$  \\ \hline
+$B^{+}\rightarrow \mu^{+}\nu$ & Belle~\cite{Sibidanov:2017vph} & Untagged& $(6.46\pm2.22\pm 1.60)\times 10^{-7}$ & 2017 & 2.4 &\\
 %        & Our average & &$1.06\pm0.20$&$0.77\pm0.07$ & & \\
 \hline
 \end{tabular}
 \end{center}
-\caption{Experimental summary of searches for $B^{+}\rightarrow l^{+}\nu$.}
+\caption{Experimental summary of searches for $B^{+}\rightarrow l^{+}\nu$. Tag Hadronic/Semileptonic/Untagged refers to different way data is selected in Belle and BaBar factories.}
 \label{tab:sum}
 \end{table}
 
@@ -474,27 +483,29 @@ With helicity suppressed rates and very limited signature in the detector (one c
 \label{lnugamma}
 The helicity suppression can be lifted by considering the decay with an additional photon radiated from the $B^{+}$ meson, at the cost of the electromagnetic suppression with coupling constant $\alpha_{em}$. Consequently, the branching fraction for radiative decays can be comparable or even larger than the corresponding fraction for purely leptonic decays. It has been shown that $R^{\mu}_{B}=\frac{\Gamma(B\rightarrow \mu \nu \gamma)}{\Gamma(B\rightarrow \mu \nu)}\approx(1-20)$ making $\mathcal{B}(B\rightarrow \mu \nu \gamma)\approx(10^{-7}-10^{-6})$ \cite{Burdman:1994ip}.
 
-As compared to photonless decays the amplitude of the decay will have contribution from both axial-vector weak current as well as vector current.
+As compared to photonless decays, the amplitude of the decay will havea contribution from both the axial-vector weak current as well as the vector current.
 The differential decay width with $\frac{1}{m_{b}}$ and radiative corrections
-at next-to-leading logarithmic order calculated in\cite{Beneke:2011nf} is given by the following formula:
+at next-to-leading logarithmic order calculated in\cite{Beneke:2011nf} is given by
 \begin{equation}
-\frac{d\Gamma}{dE_{\gamma}} = \frac{\alpha_{em}G^{2}_{F}|V_{ub}|^{2}}{48 \pi^{2}}m_{B}^{4}(1 - x_{\gamma})x_{\gamma}^{3}[F_A^{2} + F_V^{2}]
+\frac{d\Gamma}{dE_{\gamma}} = \frac{\alpha_{em}G^{2}_{F}|V_{ub}|^{2}}{48 \pi^{2}}m_{B}^{4}(1 - x_{\gamma})x_{\gamma}^{3}[F_A^{2} + F_V^{2}],
 \end{equation}
- where $x_{\gamma} = 2E_{\gamma}/m_{B}$, $F_A$ is axial form factor and $F_V$  is vector form factor defined as
+ where $x_{\gamma} = 2E_{\gamma}/m_{B}$, $F_A$ is the axial form factor and $F_V$  is the vector form factor defined as
 \begin{equation}
 F_{V}(E_{\gamma}) = \frac{Q_{u}m_{B}f_{B}}{2E_{\gamma}\lambda_{B}(\mu)} R(E_{\gamma}, \mu) + [\xi(E_\gamma) +  \frac{Q_{u}m_{B}f_{B}}{(2E_{\gamma})^{2}} + \frac{Q_{b}m_{B}f_{B}}{2E_{\gamma}m_{b}}],
+\label{eq:top1}
 \end{equation}
 
 \begin{equation}
 F_{A}(E_{\gamma}) = \frac{Q_{u}m_{B}f_{B}}{2E_{\gamma}\lambda_{B}(\mu)} R(E_{\gamma}, \mu) + [\xi(E_\gamma) -  \frac{Q_{u}m_{B}f_{B}}{(2E_{\gamma})^{2}} - \frac{Q_{b}m_{B}f_{B}}{2E_{\gamma}m_{b}} + \frac{Q_{l}f_{B}}{E_{\gamma}}].
+\label{eq:top2}
 \end{equation}
 Here $Q_{l},Q_{u},Q_{b}$ are the charges of the lepton, up quark, and
 bottom quark, respectively, and $R(E_{\gamma}, \mu)$ is a radiative correction
 calculated at the energy scale $\mu$ %that equals one at tree level.
-and $m_{b}$ is the mass of $b$ quark.
+and $m_{b}$ is the mass of the $b$ quark.
 
-The term not in squared brackets represents the leading-power contribution in the heavy-quark expansion. Note that this term
-is the same for the vector and axial form factor. The terms in square brackets are $\frac{1}{m_{b}}$ power corrections relative to the leading term. Further corrections have been discussed in~\cite{Wang:2016beq}.
+The first term in~\autoref{eq:top1} and ~\autoref{eq:top2} represents the leading-power contribution in the heavy-quark expansion. Note that this term
+is the same for the vector and axial form factor. The second terms are $\frac{1}{m_{b}}$ power corrections relative to the leading term. Further corrections have been discussed in~\cite{Wang:2016beq}.
 
 
 
@@ -507,9 +518,10 @@ Recent measurement of the radiative $B^{+} \rightarrow l^{+} \nu_{l} \gamma$, wh
 
 In LHCb, the most optimal approach due to the detector capabilities is to measure this kind of decay by decaying the photon into pair of muons, see~\autoref{fig:myfeyn}(a). If the naive expectation of only taking into account photon conversion into two muons is adopted, then the expected branching fraction for this analysis is $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_{\mu}) \approx 10^{-8}$. However, such estimate is not correct because there are other contributions to the total decay rate as shown in the first theoretical prediction for $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_{\mu})$ in \cite{Danilina:2017bcn} based on Vector Meson Dominance (VMD) model. This theoretical prediction yields $\mathcal{B}(B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_{\mu}) \approx 1\times 10^{-7}$ and the rest of this section is a short summary of this publication.
 
-VMD model was formulated to describe the interaction between photon and hadrons before quantum chromodynamics was formulated. It is an approximative model where photon is treated to be made of both purely electromagnetic component and vector meson component. This idea originates in the fact that both photon and vector mesons have the same quantum numbers $J^{PC} = 1^{-\ -}$ and if two particles have the same quantum numbers then they mix (the state which commutes with the Hamiltonian is a superposition of all such states). Therefore there is mixing between $\gamma$ and vector mesons.
+ The VMD model was formulated to describe the interaction between photons and hadrons before quantum chromodynamics was formulated. It is an approximative model where the photon is treated to be made of both purely electromagnetic component and vector meson component. This idea originates in the fact that both photon and vector mesons have the same quantum numbers $J^{PC} = 1^{-\ -}$ and if two particles have the same quantum numbers then they mix %(the state which commutes with the Hamiltonian is a superposition of all such states). 
+ Therefore, there is mixing between photons and vector mesons.
 
-As mentioned previously, there are different contributions to the amplitude of the $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$. Using VMD model, it is no surprising that the biggest contribution arises the photon emission from the valence $u$-quark of the $B$ meson. In this case, contribution from $\rho(770)$ and $\omega(782)$ resonances are included in the calculation. Secondly, contribution of photon emission from the $b$-quark is studied, effectively creating excited $B^{+}$, $B^{+*}$ intermediate resonance state. Thirdly, photon can be emitted from the final-state lepton, process known as Bremsstrahlung. All these different contributions to the decay amplitude are shown in \autoref{fig:myfeyn}. To obtain the total amplitude, sum of the matrix elements of the three contributions is calculated in the limit where $m_{l}$ is set to zero.
+As mentioned previously, there are different contributions to the amplitude of the $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$. Using the VMD model, it is not surprising that the biggest contribution arises from the photon emission from the valence $u$-quark of the $B$ meson. In this case, the contribution from the $\rho(770)$ and $\omega(782)$ resonances are included in the calculation. Secondly, the contribution of photon emission from the $b$-quark is studied, effectively creating excited $B^{+}$, $B^{+*}$ intermediate resonance state. Thirdly, the photon can be emitted from the final-state lepton, a process known as Bremsstrahlung. All these different contributions to the decay amplitude are shown in \autoref{fig:myfeyn}. To obtain the total amplitude, the sum of the matrix elements of the three contributions is calculated in the limit where $m_{l}$ is set to zero.
 
 
 \begin{figure}[ht]
@@ -526,15 +538,15 @@ As mentioned previously, there are different contributions to the amplitude of t
 
 In this publication the amplitude of $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$ is estimated by calculating $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} e^{+} \nu)$ amplitude first and then adding a negative interference term that arises due to the identical fermions in the final state doubling the number of possible diagrams. The numerical calculation yields $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} e^{+} \nu) \approx 1.3 \times 10^{-7}$ and $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu) \approx 1.0 \times 10^{-7}$. 
 
-\section{\mb{\Bmumumu} decay model}
+\section{The \mb{\Bmumumu} decay model}
 \label{simulation}
-As the search for \Bmumumu decay is first of its kind, simulation that describes this type of decay was not available. 
+As the search for the \Bmumumu decay is the first of its kind, a simulation that describes this type of decay was not available. 
 
-For any decay, it is possible to use phase space model, \textit{PHSP}, which only takes into account the kinematic constraints of the decay without taking into account any input from theoretical considerations as the matrix element is constant. This is not satisfactory for decays where there are intermediate virtual photons or vector mesons resonances.
+For any decay, it is possible to use phase space model, \textit{PHSP}, which only takes into account the kinematic constraints of the decay without taking into account any input from theoretical considerations as the matrix element is constant. This is not satisfactory for decays where there are intermediate virtual photons or vector meson resonances.
 
-Following decay model is developed to take into the account more correct behaviour of the decay shown in~\autoref{fig:myfeyn}.
+ The following decay model is developed to take into account a more correct behaviour of the decay as shown in~\autoref{fig:myfeyn}.
 
-The decay proceeds through a virtual $W$ decaying to $\mu^{+} \nu$ and a virtual photon decaying to a muon pair. This has similar structure to $\B^{+} \rightarrow (K^{*+}) \mu^{+} \mu^{-}$ decay, where the $K^{*+}$ can take the role of the virtual $W$ decay. By using the \textit{BTOSLLBALL} model\cite{Ali:1999mm}, traditionally used for $B^{+} \rightarrow (K^{*+}) l^{+} l^{-}$ decays, but modifying properties of the $K^{*+}$ to those of virtual $W$ (having mass of 0.1 \gevcc and width 50 \gev), it is possible to obtain good approximation to the correct features of the decay. This is visible in~\autoref{fig:mcgeneration}, where there is a characteristic photon pole for low $q(\mu^{+},\mu^{-})$, invariant mass of the opposite muon pair, and flat distribution for $K^{*}(\mu^{+}, \nu_{\mu}) $, invariant mass of the muon and neutrino pair. This decay model will be further referred to as SALLY's (\mybox{can I do this?}) model. 
+The decay proceeds through a virtual $W$ decaying to $\mu^{+} \nu$ and a virtual photon decaying to a muon pair. This has similar structure to $\B^{+} \rightarrow (K^{*+}) \mu^{+} \mu^{-}$ decay, where the $K^{*+}$ can take the role of the virtual $W$ decay. By using the \textit{BTOSLLBALL} model\cite{Ali:1999mm}, traditionally used for $B^{+} \rightarrow (K^{*+}) l^{+} l^{-}$ decays, but modifying properties of the $K^{*+}$ to those of virtual $W$ (having mass of 0.1 \gevcc and width 50 \gev), it is possible to obtain a good approximation to the correct features of the decay. This is visible in~\autoref{fig:mcgeneration}, where there is a characteristic photon pole for low $q(\mu^{+},\mu^{-})$, invariant mass of the opposite muon pair, and flat distribution for $K^{*}(\mu^{+}, \nu_{\mu}) $, invariant mass of the muon and neutrino pair. This decay model will be further referred to as SALLY's (\mybox{can I do this?}) model. 
 
 
 
