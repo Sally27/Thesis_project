@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  8 JUL 2018 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  22 JUL 2018 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2267,170 +2267,180 @@ Underfull \hbox (badness 10000) in alignment at lines 17--25
 ge.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 ...rline {3}The LHCb detector}{49}{chapter.3}
+l.19 ...rline {3}The LHCb detector}{50}{chapter.3}
                                                    [1
 
 ] [2]
-Overfull \hbox (1.01994pt too wide) detected at line 49
+Overfull \hbox (1.01994pt too wide) detected at line 48
  []\T1/jkp/m/n/12 100
+ []
+
+
+Overfull \hbox (1.01994pt too wide) detected at line 49
+ []\T1/jkp/m/n/12 101
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 50
- []\T1/jkp/m/n/12 100
+ []\T1/jkp/m/n/12 101
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 51
- []\T1/jkp/m/n/12 100
+ []\T1/jkp/m/n/12 101
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 52
- []\T1/jkp/m/n/12 103
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 53
  []\T1/jkp/m/n/12 104
  []
 
 
-Overfull \hbox (1.01994pt too wide) detected at line 54
- []\T1/jkp/m/n/12 106
+Overfull \hbox (1.01994pt too wide) detected at line 53
+ []\T1/jkp/m/n/12 105
  []
 
 
-Overfull \hbox (1.01994pt too wide) detected at line 55
+Overfull \hbox (1.01994pt too wide) detected at line 54
  []\T1/jkp/m/n/12 107
  []
 
 
-Overfull \hbox (1.01994pt too wide) detected at line 56
+Overfull \hbox (1.01994pt too wide) detected at line 55
  []\T1/jkp/m/n/12 108
  []
 
 
-Overfull \hbox (1.01994pt too wide) detected at line 57
+Overfull \hbox (1.01994pt too wide) detected at line 56
  []\T1/jkp/m/n/12 109
  []
 
 
+Overfull \hbox (1.01994pt too wide) detected at line 57
+ []\T1/jkp/m/n/12 110
+ []
+
+
 Overfull \hbox (1.01994pt too wide) detected at line 58
- []\T1/jkp/m/n/12 111
+ []\T1/jkp/m/n/12 112
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 59
- []\T1/jkp/m/n/12 113
+ []\T1/jkp/m/n/12 114
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 60
- []\T1/jkp/m/n/12 115
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 61
  []\T1/jkp/m/n/12 116
  []
 
 
-Overfull \hbox (1.01994pt too wide) detected at line 62
- []\T1/jkp/m/n/12 120
+Overfull \hbox (1.01994pt too wide) detected at line 61
+ []\T1/jkp/m/n/12 117
  []
 
 
-Overfull \hbox (1.01994pt too wide) detected at line 63
+Overfull \hbox (1.01994pt too wide) detected at line 62
  []\T1/jkp/m/n/12 121
  []
 
 
+Overfull \hbox (1.01994pt too wide) detected at line 63
+ []\T1/jkp/m/n/12 122
+ []
+
+
 Overfull \hbox (1.01994pt too wide) detected at line 65
- []\T1/jkp/m/n/12 123
+ []\T1/jkp/m/n/12 124
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 66
- []\T1/jkp/m/n/12 125
+ []\T1/jkp/m/n/12 126
  []
 
 
-Overfull \hbox (1.01994pt too wide) detected at line 68
- []\T1/jkp/m/n/12 129
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 69
+Overfull \hbox (1.01994pt too wide) detected at line 67
  []\T1/jkp/m/n/12 131
  []
 
 
+Overfull \hbox (1.01994pt too wide) detected at line 69
+ []\T1/jkp/m/n/12 134
+ []
+
+
 Overfull \hbox (1.01994pt too wide) detected at line 70
- []\T1/jkp/m/n/12 133
+ []\T1/jkp/m/n/12 136
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 71
- []\T1/jkp/m/n/12 134
+ []\T1/jkp/m/n/12 138
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 72
- []\T1/jkp/m/n/12 134
+ []\T1/jkp/m/n/12 139
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 73
- []\T1/jkp/m/n/12 135
+ []\T1/jkp/m/n/12 139
  []
 
 [3]
 Overfull \hbox (1.01994pt too wide) detected at line 74
- []\T1/jkp/m/n/12 137
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 75
  []\T1/jkp/m/n/12 140
  []
 
 
+Overfull \hbox (1.01994pt too wide) detected at line 75
+ []\T1/jkp/m/n/12 142
+ []
+
+
 Overfull \hbox (1.01994pt too wide) detected at line 76
- []\T1/jkp/m/n/12 141
+ []\T1/jkp/m/n/12 145
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 77
- []\T1/jkp/m/n/12 142
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 78
- []\T1/jkp/m/n/12 142
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 83
  []\T1/jkp/m/n/12 146
  []
 
 
-Overfull \hbox (1.01994pt too wide) detected at line 88
- []\T1/jkp/m/n/12 156
+Overfull \hbox (1.01994pt too wide) detected at line 78
+ []\T1/jkp/m/n/12 147
  []
 
 
-Overfull \hbox (1.01994pt too wide) detected at line 95
- []\T1/jkp/m/n/12 172
+Overfull \hbox (1.01994pt too wide) detected at line 79
+ []\T1/jkp/m/n/12 147
+ []
+
+
+Overfull \hbox (1.01994pt too wide) detected at line 84
+ []\T1/jkp/m/n/12 151
+ []
+
+
+Overfull \hbox (1.01994pt too wide) detected at line 89
+ []\T1/jkp/m/n/12 161
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 96
- []\T1/jkp/m/n/12 173
+ []\T1/jkp/m/n/12 177
  []
 
-LaTeX Font Info:    Try loading font information for T1+jkptt on input line 97.
+
+Overfull \hbox (1.01994pt too wide) detected at line 97
+ []\T1/jkp/m/n/12 178
+ []
+
+LaTeX Font Info:    Try loading font information for T1+jkptt on input line 98.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/t1jkptt.fd
 File: t1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for T1/jkptt.
@@ -2440,8 +2450,8 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (1.01994pt too wide) detected at line 97
- []\T1/jkp/m/n/12 173
+Overfull \hbox (1.01994pt too wide) detected at line 98
+ []\T1/jkp/m/n/12 178
  []
 
 )
@@ -2460,102 +2470,102 @@ Overfull \hbox (1.01994pt too wide) detected at line 97
 
 ] [8] [9] [10] [11]
 Overfull \hbox (1.01994pt too wide) detected at line 42
- []\T1/jkp/m/n/12 102
+ []\T1/jkp/m/n/12 103
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 43
- []\T1/jkp/m/n/12 106
+ []\T1/jkp/m/n/12 107
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 44
- []\T1/jkp/m/n/12 109
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 45
  []\T1/jkp/m/n/12 110
  []
 
 
-Overfull \hbox (1.01994pt too wide) detected at line 46
+Overfull \hbox (1.01994pt too wide) detected at line 45
  []\T1/jkp/m/n/12 111
  []
 
 
+Overfull \hbox (1.01994pt too wide) detected at line 46
+ []\T1/jkp/m/n/12 112
+ []
+
+
 Overfull \hbox (1.01994pt too wide) detected at line 47
- []\T1/jkp/m/n/12 113
+ []\T1/jkp/m/n/12 114
  []
 
 [12]
 Overfull \hbox (1.01994pt too wide) detected at line 48
- []\T1/jkp/m/n/12 114
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 49
  []\T1/jkp/m/n/12 115
  []
 
 
-Overfull \hbox (1.01994pt too wide) detected at line 50
+Overfull \hbox (1.01994pt too wide) detected at line 49
  []\T1/jkp/m/n/12 116
  []
 
 
+Overfull \hbox (1.01994pt too wide) detected at line 50
+ []\T1/jkp/m/n/12 117
+ []
+
+
 Overfull \hbox (1.01994pt too wide) detected at line 51
- []\T1/jkp/m/n/12 117
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 52
- []\T1/jkp/m/n/12 117
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 53
  []\T1/jkp/m/n/12 118
  []
 
 
-Overfull \hbox (1.01994pt too wide) detected at line 54
+Overfull \hbox (1.01994pt too wide) detected at line 52
+ []\T1/jkp/m/n/12 118
+ []
+
+
+Overfull \hbox (1.01994pt too wide) detected at line 53
  []\T1/jkp/m/n/12 119
  []
 
 
+Overfull \hbox (1.01994pt too wide) detected at line 54
+ []\T1/jkp/m/n/12 120
+ []
+
+
 Overfull \hbox (1.01994pt too wide) detected at line 55
- []\T1/jkp/m/n/12 122
+ []\T1/jkp/m/n/12 123
  []
 
 [13]
 Overfull \hbox (1.01994pt too wide) detected at line 57
- []\T1/jkp/m/n/12 124
+ []\T1/jkp/m/n/12 125
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 58
- []\T1/jkp/m/n/12 126
+ []\T1/jkp/m/n/12 127
+ []
+
+
+Overfull \hbox (1.01994pt too wide) detected at line 59
+ []\T1/jkp/m/n/12 130
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 60
- []\T1/jkp/m/n/12 133
+ []\T1/jkp/m/n/12 131
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 61
- []\T1/jkp/m/n/12 139
+ []\T1/jkp/m/n/12 133
  []
 
-
-Overfull \hbox (1.01994pt too wide) detected at line 62
- []\T1/jkp/m/n/12 140
- []
-
-
+[14]
 Overfull \hbox (1.01994pt too wide) detected at line 63
- []\T1/jkp/m/n/12 141
+ []\T1/jkp/m/n/12 138
  []
 
 
@@ -2568,31 +2578,46 @@ Overfull \hbox (1.01994pt too wide) detected at line 65
  []\T1/jkp/m/n/12 145
  []
 
-[14]
+
 Overfull \hbox (1.01994pt too wide) detected at line 66
- []\T1/jkp/m/n/12 149
+ []\T1/jkp/m/n/12 146
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 67
- []\T1/jkp/m/n/12 152
+ []\T1/jkp/m/n/12 149
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 68
- []\T1/jkp/m/n/12 155
+ []\T1/jkp/m/n/12 150
+ []
+
+
+Overfull \hbox (1.01994pt too wide) detected at line 69
+ []\T1/jkp/m/n/12 154
+ []
+
+[15]
+Overfull \hbox (1.01994pt too wide) detected at line 70
+ []\T1/jkp/m/n/12 157
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 71
- []\T1/jkp/m/n/12 168
+ []\T1/jkp/m/n/12 160
+ []
+
+
+Overfull \hbox (1.01994pt too wide) detected at line 74
+ []\T1/jkp/m/n/12 173
  []
 
 )
 \tf@lof=\write9
 \openout9 = `Main.lof'.
 
- [15] (./Main.lot
+ [16] (./Main.lot
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
  [][] [][][]\T1/jkp/m/n/12 (+20) Experimental sum-mary of searches for $\OML/jk
 p/m/it/12 B[] \OMS/jkp/m/n/12 ! \OML/jkp/m/it/12 l[]^^W$\T1/jkp/m/n/12 (+20) . 
@@ -2607,123 +2632,123 @@ data is
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 13
- []\T1/jkp/m/n/12 101
+ []\T1/jkp/m/n/12 102
  []
 
-[16
+[17
 
 
 ]
 Overfull \hbox (1.01994pt too wide) detected at line 14
- []\T1/jkp/m/n/12 104
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 15
  []\T1/jkp/m/n/12 105
  []
 
 
+Overfull \hbox (1.01994pt too wide) detected at line 15
+ []\T1/jkp/m/n/12 106
+ []
+
+
 Overfull \hbox (1.01994pt too wide) detected at line 16
- []\T1/jkp/m/n/12 107
+ []\T1/jkp/m/n/12 108
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 17
- []\T1/jkp/m/n/12 107
+ []\T1/jkp/m/n/12 108
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 18
- []\T1/jkp/m/n/12 109
+ []\T1/jkp/m/n/12 110
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 19
- []\T1/jkp/m/n/12 120
+ []\T1/jkp/m/n/12 121
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 21
- []\T1/jkp/m/n/12 127
+ []\T1/jkp/m/n/12 128
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 23
- []\T1/jkp/m/n/12 130
+ []\T1/jkp/m/n/12 135
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 24
- []\T1/jkp/m/n/12 131
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 25
  []\T1/jkp/m/n/12 136
  []
 
 
-Overfull \hbox (1.01994pt too wide) detected at line 26
- []\T1/jkp/m/n/12 137
+Overfull \hbox (1.01994pt too wide) detected at line 25
+ []\T1/jkp/m/n/12 141
  []
 
-[17]
-Overfull \hbox (1.01994pt too wide) detected at line 27
+
+Overfull \hbox (1.01994pt too wide) detected at line 26
  []\T1/jkp/m/n/12 142
+ []
+
+[18]
+Overfull \hbox (1.01994pt too wide) detected at line 27
+ []\T1/jkp/m/n/12 147
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 28
- []\T1/jkp/m/n/12 142
+ []\T1/jkp/m/n/12 147
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 29
- []\T1/jkp/m/n/12 145
+ []\T1/jkp/m/n/12 150
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 30
- []\T1/jkp/m/n/12 146
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 31
- []\T1/jkp/m/n/12 148
- []
-
-
-Overfull \hbox (1.01994pt too wide) detected at line 32
  []\T1/jkp/m/n/12 151
  []
 
 
+Overfull \hbox (1.01994pt too wide) detected at line 31
+ []\T1/jkp/m/n/12 153
+ []
+
+
+Overfull \hbox (1.01994pt too wide) detected at line 32
+ []\T1/jkp/m/n/12 156
+ []
+
+
 Overfull \hbox (1.01994pt too wide) detected at line 33
- []\T1/jkp/m/n/12 154
+ []\T1/jkp/m/n/12 159
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 34
- []\T1/jkp/m/n/12 157
+ []\T1/jkp/m/n/12 162
  []
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 35
- []\T1/jkp/m/n/12 158
+ []\T1/jkp/m/n/12 163
  []
 
 )
 \tf@lot=\write10
 \openout10 = `Main.lot'.
 
- [18] (./Main.gls [19
+ [19] (./Main.gls [20
 
 
 
-] [20] [21]) [22] (./introduction_sally.tex
+] [21] [22]) [23] (./introduction_sally.tex
 Chapter 1.
-[23
+[24
 
 
 
@@ -2734,18 +2759,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24]
+[25]
 Chapter 2.
-[25
+[26
 
 ]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[26]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2768,17 +2786,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [29]
 
-Package amsmath Warning: Foreign command \over;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 115.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [30]
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 115.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2828,6 +2846,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [37]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]
 Package epstopdf Info: Source file: <./figs/theory/unitarity.eps>
 (epstopdf)                    date: 2018-06-29 16:21:17
 (epstopdf)                    size: 175833 bytes
@@ -2840,7 +2865,7 @@ s-converted-to.pdf ./figs/theory/unitarity.eps>
 (epstopdf)             \includegraphics on input line 370.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figs/theory/unitarity-eps-converted-to.pdf, id=1279, 404.51125pt x 216.81pt>
+<./figs/theory/unitarity-eps-converted-to.pdf, id=1314, 404.51125pt x 216.81pt>
 File: ./figs/theory/unitarity-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figs/theory/unitarity-eps-converted-to.pdf>
 Package pdftex.def Info: ./figs/theory/unitarity-eps-converted-to.pdf used on i
@@ -2853,7 +2878,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38 <./figs/theory/unitarity-eps-converted-to.pdf>]
+[39 <./figs/theory/unitarity-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./figs/theory/rhoeta-fullfit-sm.eps>
 (epstopdf)                    date: 2018-06-29 16:52:58
 (epstopdf)                    size: 110272 bytes
@@ -2866,7 +2891,7 @@ it-sm-eps-converted-to.pdf ./figs/theory/rhoeta-fullfit-sm.eps>
 (epstopdf)             \includegraphics on input line 387.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figs/theory/rhoeta-fullfit-sm-eps-converted-to.pdf, id=1319, 569.12625pt x 5
+<./figs/theory/rhoeta-fullfit-sm-eps-converted-to.pdf, id=1354, 569.12625pt x 5
 46.04pt>
 File: ./figs/theory/rhoeta-fullfit-sm-eps-converted-to.pdf Graphic file (type p
 df)
@@ -2886,7 +2911,7 @@ _lol-eps-converted-to.pdf ./figs/theory/rhoeta_large_lol.eps>
 (epstopdf)             \includegraphics on input line 389.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figs/theory/rhoeta_large_lol-eps-converted-to.pdf, id=1320, 569.12625pt x 56
+<./figs/theory/rhoeta_large_lol-eps-converted-to.pdf, id=1355, 569.12625pt x 56
 8.1225pt>
 File: ./figs/theory/rhoeta_large_lol-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -2907,14 +2932,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39]
+[40]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40 <./figs/theory/rhoeta-fullfit-sm-eps-converted-to.pdf> <./figs/theory/rhoet
+[41 <./figs/theory/rhoeta-fullfit-sm-eps-converted-to.pdf> <./figs/theory/rhoet
 a_large_lol-eps-converted-to.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2950,7 +2975,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41
+[42
 
 ]
 
@@ -2959,7 +2984,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42]
+[43]
 Overfull \hbox (4.70862pt too wide) in paragraph at lines 461--474
  [] 
  []
@@ -2983,7 +3008,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43]
+[44]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 482.
@@ -3022,7 +3047,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44]
+[45]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 516.
@@ -3065,7 +3090,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45]
+[46]
 Package epstopdf Info: Source file: <./figs/theory/nik_1figure.eps>
 (epstopdf)                    date: 2018-06-10 22:32:42
 (epstopdf)                    size: 173151 bytes
@@ -3078,7 +3103,7 @@ eps-converted-to.pdf ./figs/theory/nik_1figure.eps>
 (epstopdf)             \includegraphics on input line 529.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figs/theory/nik_1figure-eps-converted-to.pdf, id=1442, 451.6875pt x 259.9712
+<./figs/theory/nik_1figure-eps-converted-to.pdf, id=1477, 451.6875pt x 259.9712
 5pt>
 File: ./figs/theory/nik_1figure-eps-converted-to.pdf Graphic file (type pdf)
  <use ./figs/theory/nik_1figure-eps-converted-to.pdf>
@@ -3097,7 +3122,7 @@ eps-converted-to.pdf ./figs/theory/nik_2figure.eps>
 (epstopdf)             \includegraphics on input line 530.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figs/theory/nik_2figure-eps-converted-to.pdf, id=1443, 451.6875pt x 259.9712
+<./figs/theory/nik_2figure-eps-converted-to.pdf, id=1478, 451.6875pt x 259.9712
 5pt>
 File: ./figs/theory/nik_2figure-eps-converted-to.pdf Graphic file (type pdf)
  <use ./figs/theory/nik_2figure-eps-converted-to.pdf>
@@ -3116,7 +3141,7 @@ eps-converted-to.pdf ./figs/theory/nik_3figure.eps>
 (epstopdf)             \includegraphics on input line 532.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figs/theory/nik_3figure-eps-converted-to.pdf, id=1444, 301.125pt x 206.7725p
+<./figs/theory/nik_3figure-eps-converted-to.pdf, id=1479, 301.125pt x 206.7725p
 t>
 File: ./figs/theory/nik_3figure-eps-converted-to.pdf Graphic file (type pdf)
  <use ./figs/theory/nik_3figure-eps-converted-to.pdf>
@@ -3130,7 +3155,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46]
+[47]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 541.
@@ -3186,9 +3211,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47 <./figs/theory/nik_1figure-eps-converted-to.pdf> <./figs/theory/nik_2figure
+[48 <./figs/theory/nik_1figure-eps-converted-to.pdf> <./figs/theory/nik_2figure
 -eps-converted-to.pdf> <./figs/theory/nik_3figure-eps-converted-to.pdf>]
-<./figs/./sel/reporttry_new.pdf, id=1484, 569.12625pt x 546.04pt>
+<./figs/./sel/reporttry_new.pdf, id=1521, 569.12625pt x 546.04pt>
 File: ./figs/./sel/reporttry_new.pdf Graphic file (type pdf)
 
 <use ./figs/./sel/reporttry_new.pdf>
@@ -3196,7 +3221,7 @@ Package pdftex.def Info: ./figs/./sel/reporttry_new.pdf used on input line 557.
 
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
-<./figs/./sel/reporttrialqpres_new.pdf, id=1485, 569.12625pt x 546.04pt>
+<./figs/./sel/reporttrialqpres_new.pdf, id=1522, 569.12625pt x 546.04pt>
 File: ./figs/./sel/reporttrialqpres_new.pdf Graphic file (type pdf)
 
 <use ./figs/./sel/reporttrialqpres_new.pdf>
@@ -3210,22 +3235,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[48 <./figs/./sel/reporttry_new.pdf, page is rotated 90 degrees> <./figs/./sel/
+[49 <./figs/./sel/reporttry_new.pdf, page is rotated 90 degrees> <./figs/./sel/
 reporttrialqpres_new.pdf, page is rotated 90 degrees>]
 Chapter 3.
-<figs/detector/AccComplex.png, id=1585, 346.896pt x 245.9589pt>
+<figs/detector/AccComplex.png, id=1620, 346.896pt x 245.9589pt>
 File: figs/detector/AccComplex.png Graphic file (type png)
 
 <use figs/detector/AccComplex.png>
 Package pdftex.def Info: figs/detector/AccComplex.png used on input line 10.
 (pdftex.def)             Requested size: 346.89514pt x 245.95828pt.
- [49
+ [50
 
 ]
 
 pdfTeX warning: pdflatex (file ./figs/detector/lhcbdet.pdf): PDF inclusion: fou
 nd PDF version <1.6>, but at most version <1.5> allowed
-<figs/detector/lhcbdet.pdf, id=1599, 1643.13875pt x 1156.32pt>
+<figs/detector/lhcbdet.pdf, id=1634, 1643.13875pt x 1156.32pt>
 File: figs/detector/lhcbdet.pdf Graphic file (type pdf)
 
 <use figs/detector/lhcbdet.pdf>
@@ -3238,15 +3263,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[50 <./figs/detector/AccComplex.png>]
-<figs/detector/Acceptance.pdf, id=1616, 569.12625pt x 552.0625pt>
+[51 <./figs/detector/AccComplex.png>]
+<figs/detector/Acceptance.pdf, id=1651, 569.12625pt x 552.0625pt>
 File: figs/detector/Acceptance.pdf Graphic file (type pdf)
 
 <use figs/detector/Acceptance.pdf>
 Package pdftex.def Info: figs/detector/Acceptance.pdf used on input line 38.
 (pdftex.def)             Requested size: 227.64647pt x 220.82108pt.
 
-<figs/detector/ProbInt.png, id=1617, 449.42906pt x 437.38406pt>
+<figs/detector/ProbInt.png, id=1652, 449.42906pt x 437.38406pt>
 File: figs/detector/ProbInt.png Graphic file (type png)
 
 <use figs/detector/ProbInt.png>
@@ -3259,26 +3284,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51 <./figs/detector/lhcbdet.pdf>]
+[52 <./figs/detector/lhcbdet.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52 <./figs/detector/Acceptance.pdf, page is rotated 90 degrees> <./figs/detect
+[53 <./figs/detector/Acceptance.pdf, page is rotated 90 degrees> <./figs/detect
 or/ProbInt.png (PNG copy)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/detector/intlumi.png, id=1706, 748.7975pt x 473.77pt>
+<figs/detector/intlumi.png, id=1741, 748.7975pt x 473.77pt>
 File: figs/detector/intlumi.png Graphic file (type png)
 
 <use figs/detector/intlumi.png>
 Package pdftex.def Info: figs/detector/intlumi.png used on input line 91.
 (pdftex.def)             Requested size: 227.62204pt x 144.01889pt.
 
-<figs/detector/lumicompare.png, id=1707, 1126.2075pt x 733.23938pt>
+<figs/detector/lumicompare.png, id=1742, 1126.2075pt x 733.23938pt>
 File: figs/detector/lumicompare.png Graphic file (type png)
 
 <use figs/detector/lumicompare.png>
@@ -3291,14 +3316,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[53]
+[54]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[54] <figs/detector/veloOverview.png, id=1743, 3639.56459pt x 2729.67345pt>
+[55] <figs/detector/veloOverview.png, id=1778, 3639.56459pt x 2729.67345pt>
 File: figs/detector/veloOverview.png Graphic file (type png)
 
 <use figs/detector/veloOverview.png>
@@ -3315,14 +3340,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[55 <./figs/detector/intlumi.png> <./figs/detector/lumicompare.png>]
+[56 <./figs/detector/intlumi.png> <./figs/detector/lumicompare.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[56 <./figs/detector/veloOverview.png>]
+[57 <./figs/detector/veloOverview.png>]
 Package epstopdf Info: Source file: <figs/detector/IPresmhm.eps>
 (epstopdf)                    date: 2018-01-23 12:38:14
 (epstopdf)                    size: 170571 bytes
@@ -3335,7 +3360,7 @@ f>
 (epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/detector/IPresmhm-eps-converted-to.pdf, id=1764, 1151.30125pt x 735.74875
+<figs/detector/IPresmhm-eps-converted-to.pdf, id=1799, 1151.30125pt x 735.74875
 pt>
 File: figs/detector/IPresmhm-eps-converted-to.pdf Graphic file (type pdf)
  <use figs/detector/IPresmhm-eps-converted-to.pdf>
@@ -3353,7 +3378,7 @@ nverted-to.pdf figs/detector/PVres.eps>
 (epstopdf)             \includegraphics on input line 127.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/detector/PVres-eps-converted-to.pdf, id=1765, 1170.3725pt x 800.9925pt>
+<figs/detector/PVres-eps-converted-to.pdf, id=1800, 1170.3725pt x 800.9925pt>
 File: figs/detector/PVres-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/detector/PVres-eps-converted-to.pdf>
@@ -3367,9 +3392,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[57 <./figs/detector/IPresmhm-eps-converted-to.pdf> <./figs/detector/PVres-eps-
+[58 <./figs/detector/IPresmhm-eps-converted-to.pdf> <./figs/detector/PVres-eps-
 converted-to.pdf>]
-<figs/detector/trackingsystem.jpg, id=1839, 317.185pt x 300.12125pt>
+<figs/detector/trackingsystem.jpg, id=1875, 317.185pt x 300.12125pt>
 File: figs/detector/trackingsystem.jpg Graphic file (type jpg)
 
 <use figs/detector/trackingsystem.jpg>
@@ -3377,7 +3402,7 @@ Package pdftex.def Info: figs/detector/trackingsystem.jpg used on input line 14
 4.
 (pdftex.def)             Requested size: 159.3382pt x 150.77007pt.
 
-<figs/detector/tracktype.png, id=1840, 608.2725pt x 288.07625pt>
+<figs/detector/tracktype.png, id=1876, 608.2725pt x 288.07625pt>
 File: figs/detector/tracktype.png Graphic file (type png)
 
 <use figs/detector/tracktype.png>
@@ -3390,8 +3415,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[58 <./figs/detector/trackingsystem.jpg> <./figs/detector/tracktype.png>]
-<figs/detector/momresolution.png, id=1869, 845.1575pt x 597.23125pt>
+[59 <./figs/detector/trackingsystem.jpg> <./figs/detector/tracktype.png>]
+<figs/detector/momresolution.png, id=1905, 845.1575pt x 597.23125pt>
 File: figs/detector/momresolution.png Graphic file (type png)
 
 <use figs/detector/momresolution.png>
@@ -3408,14 +3433,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[59]
+[60]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[60 <./figs/detector/momresolution.png>]
+[61 <./figs/detector/momresolution.png>]
 Package epstopdf Info: Source file: <figs/detector/richres1.eps>
 (epstopdf)                    date: 2018-01-12 15:54:26
 (epstopdf)                    size: 161419 bytes
@@ -3428,7 +3453,7 @@ f>
 (epstopdf)             \includegraphics on input line 188.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/detector/richres1-eps-converted-to.pdf, id=1900, 964.60374pt x 751.80875p
+<figs/detector/richres1-eps-converted-to.pdf, id=1935, 964.60374pt x 751.80875p
 t>
 File: figs/detector/richres1-eps-converted-to.pdf Graphic file (type pdf)
  <use figs/detector/richres1-eps-converted-to.pdf>
@@ -3447,7 +3472,7 @@ f>
 (epstopdf)             \includegraphics on input line 189.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/detector/mechrich-eps-converted-to.pdf, id=1901, 434.62375pt x 525.965pt>
+<figs/detector/mechrich-eps-converted-to.pdf, id=1936, 434.62375pt x 525.965pt>
 File: figs/detector/mechrich-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/detector/mechrich-eps-converted-to.pdf>
 Package pdftex.def Info: figs/detector/mechrich-eps-converted-to.pdf used on in
@@ -3460,7 +3485,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[61 <./figs/detector/richres1-eps-converted-to.pdf> <./figs/detector/mechrich-e
+[62 <./figs/detector/richres1-eps-converted-to.pdf> <./figs/detector/mechrich-e
 ps-converted-to.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3468,14 +3493,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[62] <figs/detector/D0mass.png, id=1963, 569.12625pt x 385.44pt>
+[63] <figs/detector/D0mass.png, id=1998, 569.12625pt x 385.44pt>
 File: figs/detector/D0mass.png Graphic file (type png)
 
 <use figs/detector/D0mass.png>
 Package pdftex.def Info: figs/detector/D0mass.png used on input line 216.
 (pdftex.def)             Requested size: 239.00035pt x 161.86604pt.
 
-<figs/detector/RICHperfdata.png, id=1964, 569.12625pt x 403.5075pt>
+<figs/detector/RICHperfdata.png, id=1999, 569.12625pt x 403.5075pt>
 File: figs/detector/RICHperfdata.png Graphic file (type png)
 
 <use figs/detector/RICHperfdata.png>
@@ -3487,14 +3512,14 @@ Overfull \hbox (11.37831pt too wide) in paragraph at lines 216--218
  [][][] 
  []
 
-<figs/detector/b2hhnopid.png, id=1972, 569.12625pt x 385.44pt>
+<figs/detector/b2hhnopid.png, id=2007, 569.12625pt x 385.44pt>
 File: figs/detector/b2hhnopid.png Graphic file (type png)
 
 <use figs/detector/b2hhnopid.png>
 Package pdftex.def Info: figs/detector/b2hhnopid.png used on input line 226.
 (pdftex.def)             Requested size: 227.62204pt x 154.15562pt.
 
-<figs/detector/b2hhpid.png, id=1973, 583.17876pt x 396.48125pt>
+<figs/detector/b2hhpid.png, id=2008, 583.17876pt x 396.48125pt>
 File: figs/detector/b2hhpid.png Graphic file (type png)
 
 <use figs/detector/b2hhpid.png>
@@ -3510,15 +3535,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[63 <./figs/detector/D0mass.png> <./figs/detector/RICHperfdata.png>]
+[64 <./figs/detector/D0mass.png> <./figs/detector/RICHperfdata.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[64 <./figs/detector/b2hhnopid.png> <./figs/detector/b2hhpid.png>]
-<figs/detector/CaloGran.png, id=2000, 1103.62312pt x 326.72063pt>
+[65 <./figs/detector/b2hhnopid.png> <./figs/detector/b2hhpid.png>]
+<figs/detector/CaloGran.png, id=2036, 1103.62312pt x 326.72063pt>
 File: figs/detector/CaloGran.png Graphic file (type png)
 
 <use figs/detector/CaloGran.png>
@@ -3531,8 +3556,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[65 <./figs/detector/CaloGran.png (PNG copy)>]
-<figs/detector/MuonGran.png, id=2019, 508.90125pt x 281.55188pt>
+[66 <./figs/detector/CaloGran.png (PNG copy)>]
+<figs/detector/MuonGran.png, id=2056, 508.90125pt x 281.55188pt>
 File: figs/detector/MuonGran.png Graphic file (type png)
 
 <use figs/detector/MuonGran.png>
@@ -3548,14 +3573,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[66]
+[67]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[67 <./figs/detector/MuonGran.png (PNG copy)>]
+[68 <./figs/detector/MuonGran.png (PNG copy)>]
 Package epstopdf Info: Source file: <figs/detector/MuonPIDIsMuon.eps>
 (epstopdf)                    date: 2018-01-16 18:10:46
 (epstopdf)                    size: 239474 bytes
@@ -3568,7 +3593,7 @@ n-eps-converted-to.pdf figs/detector/MuonPIDIsMuon.eps>
 (epstopdf)             \includegraphics on input line 309.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/detector/MuonPIDIsMuon-eps-converted-to.pdf, id=2041, 864.22874pt x 771.8
+<figs/detector/MuonPIDIsMuon-eps-converted-to.pdf, id=2076, 864.22874pt x 771.8
 8374pt>
 File: figs/detector/MuonPIDIsMuon-eps-converted-to.pdf Graphic file (type pdf)
  <use figs/detector/MuonPIDIsMuon-eps-converted-to.pdf>
@@ -3585,14 +3610,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[68]
+[69]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[69 <./figs/detector/MuonPIDIsMuon-eps-converted-to.pdf>]
+[70 <./figs/detector/MuonPIDIsMuon-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/detector/L0performance.eps>
 (epstopdf)                    date: 2018-01-20 19:09:20
 (epstopdf)                    size: 122481 bytes
@@ -3605,7 +3630,7 @@ e-eps-converted-to.pdf figs/detector/L0performance.eps>
 (epstopdf)             \includegraphics on input line 326.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/detector/L0performance-eps-converted-to.pdf, id=2066, 1087.06125pt x 401.
+<figs/detector/L0performance-eps-converted-to.pdf, id=2101, 1087.06125pt x 401.
 5pt>
 File: figs/detector/L0performance-eps-converted-to.pdf Graphic file (type pdf)
  <use figs/detector/L0performance-eps-converted-to.pdf>
@@ -3619,7 +3644,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[70 <./figs/detector/L0performance-eps-converted-to.pdf>]
+[71 <./figs/detector/L0performance-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/detector/HLT1performance.eps>
 (epstopdf)                    date: 2018-01-20 19:31:33
 (epstopdf)                    size: 123370 bytes
@@ -3632,7 +3657,7 @@ nce-eps-converted-to.pdf figs/detector/HLT1performance.eps>
 (epstopdf)             \includegraphics on input line 338.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/detector/HLT1performance-eps-converted-to.pdf, id=2097, 1062.97125pt x 39
+<figs/detector/HLT1performance-eps-converted-to.pdf, id=2132, 1062.97125pt x 39
 3.47pt>
 File: figs/detector/HLT1performance-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -3647,8 +3672,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[71 <./figs/detector/HLT1performance-eps-converted-to.pdf>]
-<figs/detector/LHCb_Trigger_RunIAlg.pdf, id=2122, 451.6875pt x 687.56876pt>
+[72 <./figs/detector/HLT1performance-eps-converted-to.pdf>]
+<figs/detector/LHCb_Trigger_RunIAlg.pdf, id=2159, 451.6875pt x 687.56876pt>
 File: figs/detector/LHCb_Trigger_RunIAlg.pdf Graphic file (type pdf)
 
 <use figs/detector/LHCb_Trigger_RunIAlg.pdf>
@@ -3656,7 +3681,7 @@ Package pdftex.def Info: figs/detector/LHCb_Trigger_RunIAlg.pdf used on input l
 ine 354.
 (pdftex.def)             Requested size: 227.62204pt x 346.50081pt.
 
-<figs/detector/LHCb_Trigger_RunII.pdf, id=2123, 451.6875pt x 687.56876pt>
+<figs/detector/LHCb_Trigger_RunII.pdf, id=2160, 451.6875pt x 687.56876pt>
 File: figs/detector/LHCb_Trigger_RunII.pdf Graphic file (type pdf)
 
 <use figs/detector/LHCb_Trigger_RunII.pdf>
@@ -3673,14 +3698,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[72]
+[73]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[73 <./figs/detector/LHCb_Trigger_RunIAlg.pdf> <./figs/detector/LHCb_Trigger_Ru
+[74 <./figs/detector/LHCb_Trigger_RunIAlg.pdf> <./figs/detector/LHCb_Trigger_Ru
 nII.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 373--373
 []\T1/jkp/b/n/14.4 Differences in Sim-u-la-tion And Data
@@ -3700,7 +3725,7 @@ Package epstopdf Info: Source file: <figs/detector/IPres.eps>
 nverted-to.pdf figs/detector/IPres.eps>
 (epstopdf)             \includegraphics on input line 381.
 Package epstopdf Info: Output file is already uptodate.
-<figs/detector/IPres-eps-converted-to.pdf, id=2200, 1117.17375pt x 754.82pt>
+<figs/detector/IPres-eps-converted-to.pdf, id=2235, 1117.17375pt x 754.82pt>
 File: figs/detector/IPres-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/detector/IPres-eps-converted-to.pdf>
@@ -3719,7 +3744,7 @@ ps-converted-to.pdf figs/detector/IPresAngle.eps>
 (epstopdf)             \includegraphics on input line 382.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/detector/IPresAngle-eps-converted-to.pdf, id=2201, 1028.84375pt x 627.343
+<figs/detector/IPresAngle-eps-converted-to.pdf, id=2236, 1028.84375pt x 627.343
 75pt>
 File: figs/detector/IPresAngle-eps-converted-to.pdf Graphic file (type pdf)
  <use figs/detector/IPresAngle-eps-converted-to.pdf>
@@ -3736,19 +3761,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[74]) (./PIDchap.tex
+[75]) (./PIDchap.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[75 <./figs/detector/IPres-eps-converted-to.pdf> <./figs/detector/IPresAngle-ep
+[76 <./figs/detector/IPres-eps-converted-to.pdf> <./figs/detector/IPresAngle-ep
 s-converted-to.pdf>]
 Chapter 4.
-[76
+[77
 
-] <figs/trimuon/pad.png, id=2246, 566.86781pt x 309.40594pt>
+] <figs/trimuon/pad.png, id=2282, 566.86781pt x 309.40594pt>
 File: figs/trimuon/pad.png Graphic file (type png)
 
 <use figs/trimuon/pad.png>
@@ -3764,15 +3789,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[77]
+[78]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[78 <./figs/trimuon/pad.png (PNG copy)>]
-<./figs/trimuon/plotvariablewantlogtruemu1_nSharedJPSIKMC.pdf, id=2263, 569.126
+[79 <./figs/trimuon/pad.png (PNG copy)>]
+<./figs/trimuon/plotvariablewantlogtruemu1_nSharedJPSIKMC.pdf, id=2299, 569.126
 25pt x 467.7475pt>
 File: ./figs/trimuon/plotvariablewantlogtruemu1_nSharedJPSIKMC.pdf Graphic file
  (type pdf)
@@ -3782,7 +3807,7 @@ Package pdftex.def Info: ./figs/trimuon/plotvariablewantlogtruemu1_nSharedJPSIK
 MC.pdf used on input line 61.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
-<./figs/trimuon/plotvariablewantlogtruemu1_nSharedJPSIKDATA.pdf, id=2264, 569.1
+<./figs/trimuon/plotvariablewantlogtruemu1_nSharedJPSIKDATA.pdf, id=2300, 569.1
 2625pt x 467.7475pt>
 File: ./figs/trimuon/plotvariablewantlogtruemu1_nSharedJPSIKDATA.pdf Graphic fi
 le (type pdf)
@@ -3796,7 +3821,7 @@ DATA.pdf used on input line 62.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<./figs/trimuon/final_pretty_2016_pion.pdf, id=2267, 569.12625pt x 386.44376pt>
+<./figs/trimuon/final_pretty_2016_pion.pdf, id=2303, 569.12625pt x 386.44376pt>
 File: ./figs/trimuon/final_pretty_2016_pion.pdf Graphic file (type pdf)
 <use ./figs/trimuon/final_pretty_2016_pion.pdf>
 Package pdftex.def Info: ./figs/trimuon/final_pretty_2016_pion.pdf used on inpu
@@ -3812,14 +3837,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[79]
+[80]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[80 <./figs/trimuon/plotvariablewantlogtruemu1_nSharedJPSIKMC.pdf, page is rota
+[81 <./figs/trimuon/plotvariablewantlogtruemu1_nSharedJPSIKMC.pdf, page is rota
 ted 90 degrees> <./figs/trimuon/plotvariablewantlogtruemu1_nSharedJPSIKDATA.pdf
 , page is rotated 90 degrees>]
 
@@ -3828,8 +3853,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[81 <./figs/trimuon/final_pretty_2016_pion.pdf, page is rotated 90 degrees>]
-<./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_VisibleCorrM.pdf, id=2414
+[82 <./figs/trimuon/final_pretty_2016_pion.pdf, page is rotated 90 degrees>]
+<./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_VisibleCorrM.pdf, id=2449
 , 569.12625pt x 408.52625pt>
 File: ./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_VisibleCorrM.pdf Gra
 phic file (type pdf)
@@ -3839,7 +3864,7 @@ Package pdftex.def Info: ./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_V
 isibleCorrM.pdf used on input line 90.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
-<./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_CorrM.pdf, id=2415, 569.1
+<./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_CorrM.pdf, id=2450, 569.1
 2625pt x 408.52625pt>
 File: ./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_CorrM.pdf Graphic fi
 le (type pdf)
@@ -3855,10 +3880,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[82 <./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_VisibleCorrM.pdf, pag
+[83 <./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_VisibleCorrM.pdf, pag
 e is rotated 90 degrees> <./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_
 CorrM.pdf, page is rotated 90 degrees>]
-<./figs/trimuon/VertexInfoClone.pdf, id=2515, 569.12625pt x 408.52625pt>
+<./figs/trimuon/VertexInfoClone.pdf, id=2550, 569.12625pt x 408.52625pt>
 File: ./figs/trimuon/VertexInfoClone.pdf Graphic file (type pdf)
 
 <use ./figs/trimuon/VertexInfoClone.pdf>
@@ -3866,7 +3891,7 @@ Package pdftex.def Info: ./figs/trimuon/VertexInfoClone.pdf used on input line
 111.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
-<./figs/trimuon/VertexInfoNoClone.pdf, id=2516, 569.12625pt x 408.52625pt>
+<./figs/trimuon/VertexInfoNoClone.pdf, id=2551, 569.12625pt x 408.52625pt>
 File: ./figs/trimuon/VertexInfoNoClone.pdf Graphic file (type pdf)
 
 <use ./figs/trimuon/VertexInfoNoClone.pdf>
@@ -3874,7 +3899,7 @@ Package pdftex.def Info: ./figs/trimuon/VertexInfoNoClone.pdf used on input lin
 e 112.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
-<./figs/trimuon/OTxandyClone.pdf, id=2519, 569.12625pt x 408.52625pt>
+<./figs/trimuon/OTxandyClone.pdf, id=2554, 569.12625pt x 408.52625pt>
 File: ./figs/trimuon/OTxandyClone.pdf Graphic file (type pdf)
 
 <use ./figs/trimuon/OTxandyClone.pdf>
@@ -3882,7 +3907,7 @@ Package pdftex.def Info: ./figs/trimuon/OTxandyClone.pdf used on input line 121
 .
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
-<./figs/trimuon/OTxandyNoClone.pdf, id=2520, 569.12625pt x 408.52625pt>
+<./figs/trimuon/OTxandyNoClone.pdf, id=2555, 569.12625pt x 408.52625pt>
 File: ./figs/trimuon/OTxandyNoClone.pdf Graphic file (type pdf)
 
 <use ./figs/trimuon/OTxandyNoClone.pdf>
@@ -3896,12 +3921,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[83 <./figs/trimuon/VertexInfoClone.pdf, page is rotated 90 degrees> <./figs/tr
+[84 <./figs/trimuon/VertexInfoClone.pdf, page is rotated 90 degrees> <./figs/tr
 imuon/VertexInfoNoClone.pdf, page is rotated 90 degrees> <./figs/trimuon/OTxand
 yClone.pdf, page is rotated 90 degrees> <./figs/trimuon/OTxandyNoClone.pdf, pag
 e is rotated 90 degrees>]
 <./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_BplusDiraclone.pd
-f, id=2714, 569.12625pt x 408.52625pt>
+f, id=2751, 569.12625pt x 408.52625pt>
 File: ./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_BplusDiraclo
 ne.pdf Graphic file (type pdf)
 
@@ -3912,7 +3937,7 @@ neFILE_BplusDiraclone.pdf used on input line 145.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
 <./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_BplusDiranoclone.
-pdf, id=2715, 569.12625pt x 408.52625pt>
+pdf, id=2752, 569.12625pt x 408.52625pt>
 File: ./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_BplusDiranoc
 lone.pdf Graphic file (type pdf)
 
@@ -3928,11 +3953,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[84 <./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_BplusDiraclon
+[85 <./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_BplusDiraclon
 e.pdf, page is rotated 90 degrees> <./figs/trimuon/compnice_even_nicer_ONLY_STA
 CKED_HIST_oneFILE_BplusDiranoclone.pdf, page is rotated 90 degrees>]
 <./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_sumnSharedclone.p
-df, id=2819, 569.12625pt x 408.52625pt>
+df, id=2854, 569.12625pt x 408.52625pt>
 File: ./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_sumnSharedcl
 one.pdf Graphic file (type pdf)
 
@@ -3943,7 +3968,7 @@ neFILE_sumnSharedclone.pdf used on input line 169.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
 <./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_sumnSharednoclone
-.pdf, id=2820, 569.12625pt x 408.52625pt>
+.pdf, id=2855, 569.12625pt x 408.52625pt>
 File: ./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_sumnSharedno
 clone.pdf Graphic file (type pdf)
 
@@ -3999,7 +4024,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[85 <./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_sumnSharedclo
+[86 <./figs/trimuon/compnice_even_nicer_ONLY_STACKED_HIST_oneFILE_sumnSharedclo
 ne.pdf, page is rotated 90 degrees> <./figs/trimuon/compnice_even_nicer_ONLY_ST
 ACKED_HIST_oneFILE_sumnSharednoclone.pdf, page is rotated 90 degrees>]
 
@@ -4107,13 +4132,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[86]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [87]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -4122,8 +4140,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [88]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[89]
 <figs/trimuon/jpsikst/2011/plotJpsiKstFitLogyPretty_nicecolor_2011_KAONMISID.pd
-f, id=2946, 569.12625pt x 546.04pt>
+f, id=2981, 569.12625pt x 546.04pt>
 File: figs/trimuon/jpsikst/2011/plotJpsiKstFitLogyPretty_nicecolor_2011_KAONMIS
 ID.pdf Graphic file (type pdf)
 
@@ -4134,7 +4159,7 @@ ecolor_2011_KAONMISID.pdf used on input line 293.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <figs/trimuon/jpsikst/2011/plotJpsiKstFitLogyPretty_nicecolor_2011_PIONMISID.pd
-f, id=2947, 569.12625pt x 546.04pt>
+f, id=2982, 569.12625pt x 546.04pt>
 File: figs/trimuon/jpsikst/2011/plotJpsiKstFitLogyPretty_nicecolor_2011_PIONMIS
 ID.pdf Graphic file (type pdf)
 
@@ -4145,7 +4170,7 @@ ecolor_2011_PIONMISID.pdf used on input line 294.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <figs/trimuon/jpsikst/2012/plotJpsiKstFitLogyPretty_nicecolor_2012_KAONMISID.pd
-f, id=2948, 569.12625pt x 546.04pt>
+f, id=2983, 569.12625pt x 546.04pt>
 File: figs/trimuon/jpsikst/2012/plotJpsiKstFitLogyPretty_nicecolor_2012_KAONMIS
 ID.pdf Graphic file (type pdf)
 
@@ -4156,7 +4181,7 @@ ecolor_2012_KAONMISID.pdf used on input line 296.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <figs/trimuon/jpsikst/2012/plotJpsiKstFitLogyPretty_nicecolor_2012_PIONMISID.pd
-f, id=2949, 569.12625pt x 546.04pt>
+f, id=2984, 569.12625pt x 546.04pt>
 File: figs/trimuon/jpsikst/2012/plotJpsiKstFitLogyPretty_nicecolor_2012_PIONMIS
 ID.pdf Graphic file (type pdf)
 
@@ -4167,7 +4192,7 @@ ecolor_2012_PIONMISID.pdf used on input line 297.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <figs/trimuon/jpsikst/2016/plotJpsiKstFitLogyPretty_nicecolor_2016_KAONMISID.pd
-f, id=2950, 569.12625pt x 546.04pt>
+f, id=2985, 569.12625pt x 546.04pt>
 File: figs/trimuon/jpsikst/2016/plotJpsiKstFitLogyPretty_nicecolor_2016_KAONMIS
 ID.pdf Graphic file (type pdf)
 
@@ -4178,7 +4203,7 @@ ecolor_2016_KAONMISID.pdf used on input line 299.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <figs/trimuon/jpsikst/2016/plotJpsiKstFitLogyPretty_nicecolor_2016_PIONMISID.pd
-f, id=2951, 569.12625pt x 546.04pt>
+f, id=2986, 569.12625pt x 546.04pt>
 File: figs/trimuon/jpsikst/2016/plotJpsiKstFitLogyPretty_nicecolor_2016_PIONMIS
 ID.pdf Graphic file (type pdf)
 
@@ -4194,7 +4219,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[89]
+[90]
 Overfull \vbox (112.32433pt too high) has occurred while \output is active []
 
 
@@ -4204,7 +4229,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[90 <./figs/trimuon/jpsikst/2011/plotJpsiKstFitLogyPretty_nicecolor_2011_KAONMI
+[91 <./figs/trimuon/jpsikst/2011/plotJpsiKstFitLogyPretty_nicecolor_2011_KAONMI
 SID.pdf, page is rotated 90 degrees> <./figs/trimuon/jpsikst/2011/plotJpsiKstFi
 tLogyPretty_nicecolor_2011_PIONMISID.pdf, page is rotated 90 degrees> <./figs/t
 rimuon/jpsikst/2012/plotJpsiKstFitLogyPretty_nicecolor_2012_KAONMISID.pdf, page
@@ -4282,7 +4307,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 <figs/trimuon/jpsikst/2012/Visualize_Weights_PionMisid_2012_small_thesis.pdf, i
-d=3224, 569.12625pt x 385.44pt>
+d=3259, 569.12625pt x 385.44pt>
 File: figs/trimuon/jpsikst/2012/Visualize_Weights_PionMisid_2012_small_thesis.p
 df Graphic file (type pdf)
 
@@ -4292,7 +4317,7 @@ Package pdftex.def Info: figs/trimuon/jpsikst/2012/Visualize_Weights_PionMisid_
 2012_small_thesis.pdf used on input line 347.
 (pdftex.def)             Requested size: 227.62204pt x 154.15562pt.
 
-<figs/trimuon/jpsikst/2012/Visualize_Ratios_PionMisid_small_thesis.pdf, id=3225
+<figs/trimuon/jpsikst/2012/Visualize_Ratios_PionMisid_small_thesis.pdf, id=3260
 , 569.12625pt x 408.52625pt>
 File: figs/trimuon/jpsikst/2012/Visualize_Ratios_PionMisid_small_thesis.pdf Gra
 phic file (type pdf)
@@ -4303,7 +4328,7 @@ mall_thesis.pdf used on input line 350.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
 <figs/trimuon/jpsikst/2012/Visualize_Weights_PionMisid_2012_small_thesis_legend
-.pdf, id=3226, 569.12625pt x 50.1875pt>
+.pdf, id=3261, 569.12625pt x 50.1875pt>
 File: figs/trimuon/jpsikst/2012/Visualize_Weights_PionMisid_2012_small_thesis_l
 egend.pdf Graphic file (type pdf)
 
@@ -4322,16 +4347,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[91]
+[92]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[92]
+[93]
 <figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2012_small_thesis.pdf, i
-d=3239, 569.12625pt x 385.44pt>
+d=3274, 569.12625pt x 385.44pt>
 File: figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2012_small_thesis.p
 df Graphic file (type pdf)
 
@@ -4341,7 +4366,7 @@ Package pdftex.def Info: figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_
 2012_small_thesis.pdf used on input line 371.
 (pdftex.def)             Requested size: 227.62204pt x 154.15562pt.
 
-<figs/trimuon/jpsikst/2012/Visualize_Ratios_KaonMisid_small_thesis.pdf, id=3240
+<figs/trimuon/jpsikst/2012/Visualize_Ratios_KaonMisid_small_thesis.pdf, id=3275
 , 569.12625pt x 408.52625pt>
 File: figs/trimuon/jpsikst/2012/Visualize_Ratios_KaonMisid_small_thesis.pdf Gra
 phic file (type pdf)
@@ -4352,7 +4377,7 @@ mall_thesis.pdf used on input line 374.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
 <figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2012_small_thesis_legend
-.pdf, id=3241, 569.12625pt x 50.1875pt>
+.pdf, id=3276, 569.12625pt x 50.1875pt>
 File: figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2012_small_thesis_l
 egend.pdf Graphic file (type pdf)
 
@@ -4367,7 +4392,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 <figs/trimuon/jpsikst/2016/Visualize_Weights_PionMisid_2016_small_thesis.pdf, i
-d=3246, 569.12625pt x 385.44pt>
+d=3281, 569.12625pt x 385.44pt>
 File: figs/trimuon/jpsikst/2016/Visualize_Weights_PionMisid_2016_small_thesis.p
 df Graphic file (type pdf)
 
@@ -4378,7 +4403,7 @@ Package pdftex.def Info: figs/trimuon/jpsikst/2016/Visualize_Weights_PionMisid_
 (pdftex.def)             Requested size: 227.62204pt x 154.15562pt.
 
 <figs/trimuon/jpsikst/2016/Visualize_Ratios_PionMisid_2016_small_thesis.pdf, id
-=3247, 569.12625pt x 408.52625pt>
+=3282, 569.12625pt x 408.52625pt>
 File: figs/trimuon/jpsikst/2016/Visualize_Ratios_PionMisid_2016_small_thesis.pd
 f Graphic file (type pdf)
 
@@ -4389,7 +4414,7 @@ Package pdftex.def Info: figs/trimuon/jpsikst/2016/Visualize_Ratios_PionMisid_2
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
 <figs/trimuon/jpsikst/2016/Visualize_Weights_PionMisid_2016_small_thesis_legend
-.pdf, id=3248, 569.12625pt x 50.1875pt>
+.pdf, id=3283, 569.12625pt x 50.1875pt>
 File: figs/trimuon/jpsikst/2016/Visualize_Weights_PionMisid_2016_small_thesis_l
 egend.pdf Graphic file (type pdf)
 
@@ -4404,7 +4429,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 <figs/trimuon/jpsikst/2016/Visualize_Weights_KaonMisid_2016_small_thesis.pdf, i
-d=3249, 569.12625pt x 385.44pt>
+d=3284, 569.12625pt x 385.44pt>
 File: figs/trimuon/jpsikst/2016/Visualize_Weights_KaonMisid_2016_small_thesis.p
 df Graphic file (type pdf)
 
@@ -4415,7 +4440,7 @@ Package pdftex.def Info: figs/trimuon/jpsikst/2016/Visualize_Weights_KaonMisid_
 (pdftex.def)             Requested size: 227.62204pt x 154.15562pt.
 
 <figs/trimuon/jpsikst/2016/Visualize_Ratios_2016_KaonMisid_small_thesis.pdf, id
-=3250, 569.12625pt x 408.52625pt>
+=3285, 569.12625pt x 408.52625pt>
 File: figs/trimuon/jpsikst/2016/Visualize_Ratios_2016_KaonMisid_small_thesis.pd
 f Graphic file (type pdf)
 
@@ -4426,7 +4451,7 @@ sid_small_thesis.pdf used on input line 408.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
 <figs/trimuon/jpsikst/2016/Visualize_Weights_KaonMisid_2016_small_thesis_legend
-.pdf, id=3251, 569.12625pt x 50.1875pt>
+.pdf, id=3286, 569.12625pt x 50.1875pt>
 File: figs/trimuon/jpsikst/2016/Visualize_Weights_KaonMisid_2016_small_thesis_l
 egend.pdf Graphic file (type pdf)
 
@@ -4446,13 +4471,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[93 <./figs/trimuon/jpsikst/2012/Visualize_Weights_PionMisid_2012_small_thesis.
+[94 <./figs/trimuon/jpsikst/2012/Visualize_Weights_PionMisid_2012_small_thesis.
 pdf, page is rotated 90 degrees> <./figs/trimuon/jpsikst/2012/Visualize_Ratios_
 PionMisid_small_thesis.pdf, page is rotated 90 degrees> <./figs/trimuon/jpsikst
 /2012/Visualize_Weights_PionMisid_2012_small_thesis_legend.pdf, page is rotated
  90 degrees>]
 
-LaTeX Warning: Text page 94 contains only floats.
+LaTeX Warning: Text page 95 contains only floats.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -4460,7 +4485,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[94 <./figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2012_small_thesis.
+[95 <./figs/trimuon/jpsikst/2012/Visualize_Weights_KaonMisid_2012_small_thesis.
 pdf, page is rotated 90 degrees> <./figs/trimuon/jpsikst/2012/Visualize_Ratios_
 KaonMisid_small_thesis.pdf, page is rotated 90 degrees> <./figs/trimuon/jpsikst
 /2012/Visualize_Weights_KaonMisid_2012_small_thesis_legend.pdf, page is rotated
@@ -4475,7 +4500,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[95 <./figs/trimuon/jpsikst/2016/Visualize_Weights_KaonMisid_2016_small_thesis.
+[96 <./figs/trimuon/jpsikst/2016/Visualize_Weights_KaonMisid_2016_small_thesis.
 pdf, page is rotated 90 degrees> <./figs/trimuon/jpsikst/2016/Visualize_Ratios_
 2016_KaonMisid_small_thesis.pdf, page is rotated 90 degrees> <./figs/trimuon/jp
 sikst/2016/Visualize_Weights_KaonMisid_2016_small_thesis_legend.pdf, page is ro
@@ -4578,14 +4603,14 @@ Package epstopdf Info: Source file: <figs/sel/DecReco_fin.eps>
 onverted-to.pdf figs/sel/DecReco_fin.eps>
 (epstopdf)             \includegraphics on input line 13.
 Package epstopdf Info: Output file is already uptodate.
-<figs/sel/DecReco_fin-eps-converted-to.pdf, id=3787, 365.365pt x 120.45pt>
+<figs/sel/DecReco_fin-eps-converted-to.pdf, id=3824, 365.365pt x 120.45pt>
 File: figs/sel/DecReco_fin-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/sel/DecReco_fin-eps-converted-to.pdf>
 Package pdftex.def Info: figs/sel/DecReco_fin-eps-converted-to.pdf used on inpu
 t line 13.
 (pdftex.def)             Requested size: 364.19664pt x 120.07108pt.
- [96
+ [97
 
 ]
 
@@ -4594,7 +4619,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[97 <./figs/sel/DecReco_fin-eps-converted-to.pdf>]
+[98 <./figs/sel/DecReco_fin-eps-converted-to.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 93.
@@ -4605,7 +4630,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[98]
+[99]
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
 []\T1/jkp/m/n/12 (+20) Decays that pro-ceed via hadronic res-o-nances such as $
 \OML/jkp/m/it/12 B[] \OMS/jkp/m/n/12 !
@@ -4624,7 +4649,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[99]
+[100]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 115.
@@ -4646,14 +4671,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[100]
+[101]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[101]
+[102]
 File: ./figs/./sel/reporttry_new.pdf Graphic file (type pdf)
  <use ./figs/./sel/reporttry_new.pdf>
 Package pdftex.def Info: ./figs/./sel/reporttry_new.pdf used on input line 177.
@@ -4717,7 +4742,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[102]
+[103]
 Overfull \hbox (10.24721pt too wide) in paragraph at lines 212--212
 []|$[]$|  
  []
@@ -4733,7 +4758,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[103]
+[104]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 234.
@@ -4747,14 +4772,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[104]
+[105]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[105]
+[106]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 264.
@@ -4771,7 +4796,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 264.
 
-<./figs/./sel/scatterplotiatko_qmin.pdf, id=3922, 569.12625pt x 408.52625pt>
+<./figs/./sel/scatterplotiatko_qmin.pdf, id=3957, 569.12625pt x 408.52625pt>
 File: ./figs/./sel/scatterplotiatko_qmin.pdf Graphic file (type pdf)
 
 <use ./figs/./sel/scatterplotiatko_qmin.pdf>
@@ -4779,7 +4804,7 @@ Package pdftex.def Info: ./figs/./sel/scatterplotiatko_qmin.pdf used on input l
 ine 273.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
-<./figs/./sel/scatterplotiatko_qmin_combidata.pdf, id=3923, 569.12625pt x 408.5
+<./figs/./sel/scatterplotiatko_qmin_combidata.pdf, id=3958, 569.12625pt x 408.5
 2625pt>
 File: ./figs/./sel/scatterplotiatko_qmin_combidata.pdf Graphic file (type pdf)
  <use ./figs/./sel/scatterplotiatko_qmin_combidata.pdf>
@@ -4796,7 +4821,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[106 <./figs/./sel/scatterplotiatko_qmin.pdf, page is rotated 90 degrees> <./fi
+[107 <./figs/./sel/scatterplotiatko_qmin.pdf, page is rotated 90 degrees> <./fi
 gs/./sel/scatterplotiatko_qmin_combidata.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -4808,7 +4833,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[107]
+[108]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 328.
@@ -4819,7 +4844,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[108]
+[109]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 353.
@@ -4836,7 +4861,7 @@ f>
 (epstopdf)             \includegraphics on input line 358.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figs/./sel/Isolation-eps-converted-to.pdf, id=4046, 383.4325pt x 141.52875pt
+<./figs/./sel/Isolation-eps-converted-to.pdf, id=4082, 383.4325pt x 141.52875pt
 >
 File: ./figs/./sel/Isolation-eps-converted-to.pdf Graphic file (type pdf)
  <use ./figs/./sel/Isolation-eps-converted-to.pdf>
@@ -4855,7 +4880,7 @@ nal-eps-converted-to.pdf ./figs/./sel/Isolation_Signal.eps>
 (epstopdf)             \includegraphics on input line 360.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figs/./sel/Isolation_Signal-eps-converted-to.pdf, id=4047, 383.4325pt x 106.
+<./figs/./sel/Isolation_Signal-eps-converted-to.pdf, id=4083, 383.4325pt x 106.
 3975pt>
 File: ./figs/./sel/Isolation_Signal-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -4870,10 +4895,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[109 <./figs/./sel/Isolation-eps-converted-to.pdf> <./figs/./sel/Isolation_Sign
+[110 <./figs/./sel/Isolation-eps-converted-to.pdf> <./figs/./sel/Isolation_Sign
 al-eps-converted-to.pdf>]
 <./figs/./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22012.pdf, 
-id=4077, 569.12625pt x 467.7475pt>
+id=4112, 569.12625pt x 467.7475pt>
 File: ./figs/./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22012.
 pdf Graphic file (type pdf)
 
@@ -4884,7 +4909,7 @@ eightsbeforeq22012.pdf used on input line 382.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22016.pdf, 
-id=4078, 569.12625pt x 467.7475pt>
+id=4113, 569.12625pt x 467.7475pt>
 File: ./figs/./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22016.
 pdf Graphic file (type pdf)
 
@@ -4904,10 +4929,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[110 <./figs/./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22012.
+[111 <./figs/./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22012.
 pdf, page is rotated 90 degrees> <./figs/./sel/Thesis_variableBplus_pmu_ISOLATI
 ON_BDT1_weightsbeforeq22016.pdf, page is rotated 90 degrees>]
-<./figs/./sel/Scaled_nice_FOM_Run1.pdf, id=4174, 569.12625pt x 467.7475pt>
+<./figs/./sel/Scaled_nice_FOM_Run1.pdf, id=4209, 569.12625pt x 467.7475pt>
 File: ./figs/./sel/Scaled_nice_FOM_Run1.pdf Graphic file (type pdf)
 
 <use ./figs/./sel/Scaled_nice_FOM_Run1.pdf>
@@ -4915,7 +4940,7 @@ Package pdftex.def Info: ./figs/./sel/Scaled_nice_FOM_Run1.pdf used on input li
 ne 405.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
-<./figs/./sel/Scaled_nice_FOM_2016.pdf, id=4175, 569.12625pt x 467.7475pt>
+<./figs/./sel/Scaled_nice_FOM_2016.pdf, id=4210, 569.12625pt x 467.7475pt>
 File: ./figs/./sel/Scaled_nice_FOM_2016.pdf Graphic file (type pdf)
 
 <use ./figs/./sel/Scaled_nice_FOM_2016.pdf>
@@ -4929,9 +4954,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[111 <./figs/./sel/Scaled_nice_FOM_Run1.pdf, page is rotated 90 degrees> <./fig
+[112 <./figs/./sel/Scaled_nice_FOM_Run1.pdf, page is rotated 90 degrees> <./fig
 s/./sel/Scaled_nice_FOM_2016.pdf, page is rotated 90 degrees>]
-<./figs/./sel/final_comparison_from_root_combi_2.pdf, id=4269, 569.12625pt x 32
+<./figs/./sel/final_comparison_from_root_combi_2.pdf, id=4304, 569.12625pt x 32
 3.2075pt>
 File: ./figs/./sel/final_comparison_from_root_combi_2.pdf Graphic file (type pd
 f)
@@ -4941,7 +4966,7 @@ ed on input line 419.
 (pdftex.def)             Requested size: 318.66946pt x 180.98016pt.
 
 <./figs/./sel/combi/plotvariableBplus_pmu_ISOLATION_BDT1_weightsNICEDISMIX.pdf,
- id=4276, 569.12625pt x 467.7475pt>
+ id=4311, 569.12625pt x 467.7475pt>
 File: ./figs/./sel/combi/plotvariableBplus_pmu_ISOLATION_BDT1_weightsNICEDISMIX
 .pdf Graphic file (type pdf)
 
@@ -4951,7 +4976,7 @@ Package pdftex.def Info: ./figs/./sel/combi/plotvariableBplus_pmu_ISOLATION_BDT
 1_weightsNICEDISMIX.pdf used on input line 433.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
-<./figs/./sel/combi/plotvariableBplus_ENDVERTEX_CHI2NICEDISMIX.pdf, id=4277, 56
+<./figs/./sel/combi/plotvariableBplus_ENDVERTEX_CHI2NICEDISMIX.pdf, id=4312, 56
 9.12625pt x 467.7475pt>
 File: ./figs/./sel/combi/plotvariableBplus_ENDVERTEX_CHI2NICEDISMIX.pdf Graphic
  file (type pdf)
@@ -4961,7 +4986,7 @@ Package pdftex.def Info: ./figs/./sel/combi/plotvariableBplus_ENDVERTEX_CHI2NIC
 EDISMIX.pdf used on input line 434.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
-<./figs/./sel/combi/plotvariableB_PTNICEDISMIX.pdf, id=4278, 569.12625pt x 467.
+<./figs/./sel/combi/plotvariableB_PTNICEDISMIX.pdf, id=4313, 569.12625pt x 467.
 7475pt>
 File: ./figs/./sel/combi/plotvariableB_PTNICEDISMIX.pdf Graphic file (type pdf)
 
@@ -4970,7 +4995,7 @@ Package pdftex.def Info: ./figs/./sel/combi/plotvariableB_PTNICEDISMIX.pdf used
  on input line 436.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
-<./figs/./sel/combi/plotvariablemu1_MINIPCHI2NICEDISMIX.pdf, id=4279, 569.12625
+<./figs/./sel/combi/plotvariablemu1_MINIPCHI2NICEDISMIX.pdf, id=4314, 569.12625
 pt x 467.7475pt>
 File: ./figs/./sel/combi/plotvariablemu1_MINIPCHI2NICEDISMIX.pdf Graphic file (
 type pdf)
@@ -4982,7 +5007,7 @@ Package pdftex.def Info: ./figs/./sel/combi/plotvariablemu1_MINIPCHI2NICEDISMIX
 
 <./figs/./sel/CombiBDT_ProfileX_of_Bplus_Corrected_Mass_vs_MCSig2016_288888335_
 vs_DATACombi2016NTrees60_MinNodeSize2_MaxDepth3_SeparationTypeGiniIndex_PruneMe
-thodNoPruning_DoPreselection_nice.pdf, id=4281, 569.12625pt x 217.81375pt>
+thodNoPruning_DoPreselection_nice.pdf, id=4316, 569.12625pt x 217.81375pt>
 File: ./figs/./sel/CombiBDT_ProfileX_of_Bplus_Corrected_Mass_vs_MCSig2016_28888
 8335_vs_DATACombi2016NTrees60_MinNodeSize2_MaxDepth3_SeparationTypeGiniIndex_Pr
 uneMethodNoPruning_DoPreselection_nice.pdf Graphic file (type pdf)
@@ -5006,9 +5031,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[112]
+[113]
 <./figs/./sel/true_Misid_CompareTrainOnBothRun1and2016__COMPAREroccurvesDIFFERE
-NTtrainings.pdf, id=4288, 569.12625pt x 297.11pt>
+NTtrainings.pdf, id=4323, 569.12625pt x 297.11pt>
 File: ./figs/./sel/true_Misid_CompareTrainOnBothRun1and2016__COMPAREroccurvesDI
 FFERENTtrainings.pdf Graphic file (type pdf)
 
@@ -5018,7 +5043,7 @@ Package pdftex.def Info: ./figs/./sel/true_Misid_CompareTrainOnBothRun1and2016_
 _COMPAREroccurvesDIFFERENTtrainings.pdf used on input line 460.
 (pdftex.def)             Requested size: 409.71689pt x 213.9009pt.
 
-<./figs/./sel/misid/Scaled_nice_FOM_Run1.pdf, id=4292, 569.12625pt x 467.7475pt
+<./figs/./sel/misid/Scaled_nice_FOM_Run1.pdf, id=4327, 569.12625pt x 467.7475pt
 >
 File: ./figs/./sel/misid/Scaled_nice_FOM_Run1.pdf Graphic file (type pdf)
  <use ./figs/./sel/misid/Scaled_nice_FOM_Run1.pdf>
@@ -5026,7 +5051,7 @@ Package pdftex.def Info: ./figs/./sel/misid/Scaled_nice_FOM_Run1.pdf used on in
 put line 470.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
-<./figs/./sel/misid/Scaled_nice_FOM_2016.pdf, id=4293, 569.12625pt x 467.7475pt
+<./figs/./sel/misid/Scaled_nice_FOM_2016.pdf, id=4328, 569.12625pt x 467.7475pt
 >
 File: ./figs/./sel/misid/Scaled_nice_FOM_2016.pdf Graphic file (type pdf)
  <use ./figs/./sel/misid/Scaled_nice_FOM_2016.pdf>
@@ -5040,9 +5065,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[113 <./figs/./sel/final_comparison_from_root_combi_2.pdf, page is rotated 90 d
+[114 <./figs/./sel/final_comparison_from_root_combi_2.pdf, page is rotated 90 d
 egrees>]
-<./figs/./sel/plotMisidFitPretty_Run1.pdf, id=4342, 569.12625pt x 546.04pt>
+<./figs/./sel/plotMisidFitPretty_Run1.pdf, id=4378, 569.12625pt x 546.04pt>
 File: ./figs/./sel/plotMisidFitPretty_Run1.pdf Graphic file (type pdf)
 
 <use ./figs/./sel/plotMisidFitPretty_Run1.pdf>
@@ -5050,7 +5075,7 @@ Package pdftex.def Info: ./figs/./sel/plotMisidFitPretty_Run1.pdf used on input
  line 481.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
-<./figs/./sel/plotMisidFitPretty_2016.pdf, id=4343, 569.12625pt x 546.04pt>
+<./figs/./sel/plotMisidFitPretty_2016.pdf, id=4379, 569.12625pt x 546.04pt>
 File: ./figs/./sel/plotMisidFitPretty_2016.pdf Graphic file (type pdf)
 
 <use ./figs/./sel/plotMisidFitPretty_2016.pdf>
@@ -5058,7 +5083,7 @@ Package pdftex.def Info: ./figs/./sel/plotMisidFitPretty_2016.pdf used on input
  line 482.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
-<./figs/./sel/CutEfficiency_Bplus_Corrected_MassMisid_nice.pdf, id=4345, 569.12
+<./figs/./sel/CutEfficiency_Bplus_Corrected_MassMisid_nice.pdf, id=4381, 569.12
 625pt x 232.87pt>
 File: ./figs/./sel/CutEfficiency_Bplus_Corrected_MassMisid_nice.pdf Graphic fil
 e (type pdf)
@@ -5074,12 +5099,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[114 <./figs/./sel/combi/plotvariableBplus_pmu_ISOLATION_BDT1_weightsNICEDISMIX
+[115 <./figs/./sel/combi/plotvariableBplus_pmu_ISOLATION_BDT1_weightsNICEDISMIX
 .pdf, page is rotated 90 degrees> <./figs/./sel/combi/plotvariableBplus_ENDVERT
 EX_CHI2NICEDISMIX.pdf, page is rotated 90 degrees> <./figs/./sel/combi/plotvari
 ableB_PTNICEDISMIX.pdf, page is rotated 90 degrees> <./figs/./sel/combi/plotvar
 iablemu1_MINIPCHI2NICEDISMIX.pdf, page is rotated 90 degrees>]
-<./figs/./sel/misid/plotvariablemu3_PTNICEDISMIX.pdf, id=4527, 569.12625pt x 46
+<./figs/./sel/misid/plotvariablemu3_PTNICEDISMIX.pdf, id=4562, 569.12625pt x 46
 7.7475pt>
 File: ./figs/./sel/misid/plotvariablemu3_PTNICEDISMIX.pdf Graphic file (type pd
 f)
@@ -5088,7 +5113,7 @@ Package pdftex.def Info: ./figs/./sel/misid/plotvariablemu3_PTNICEDISMIX.pdf us
 ed on input line 504.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
-<./figs/./sel/misid/plotvariablemu3_PNICEDISMIX.pdf, id=4528, 569.12625pt x 467
+<./figs/./sel/misid/plotvariablemu3_PNICEDISMIX.pdf, id=4563, 569.12625pt x 467
 .7475pt>
 File: ./figs/./sel/misid/plotvariablemu3_PNICEDISMIX.pdf Graphic file (type pdf
 )
@@ -5097,7 +5122,7 @@ Package pdftex.def Info: ./figs/./sel/misid/plotvariablemu3_PNICEDISMIX.pdf use
 d on input line 505.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
-<./figs/./sel/misid/plotvariablemu3_MINIPCHI2NICEDISMIX.pdf, id=4529, 569.12625
+<./figs/./sel/misid/plotvariablemu3_MINIPCHI2NICEDISMIX.pdf, id=4564, 569.12625
 pt x 467.7475pt>
 File: ./figs/./sel/misid/plotvariablemu3_MINIPCHI2NICEDISMIX.pdf Graphic file (
 type pdf)
@@ -5107,7 +5132,7 @@ Package pdftex.def Info: ./figs/./sel/misid/plotvariablemu3_MINIPCHI2NICEDISMIX
 .pdf used on input line 507.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
-<./figs/./sel/misid/plotvariablemu1_PTNICEDISMIX.pdf, id=4530, 569.12625pt x 46
+<./figs/./sel/misid/plotvariablemu1_PTNICEDISMIX.pdf, id=4565, 569.12625pt x 46
 7.7475pt>
 File: ./figs/./sel/misid/plotvariablemu1_PTNICEDISMIX.pdf Graphic file (type pd
 f)
@@ -5116,7 +5141,7 @@ Package pdftex.def Info: ./figs/./sel/misid/plotvariablemu1_PTNICEDISMIX.pdf us
 ed on input line 508.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
-<./figs/./sel/misid/plotvariablemu2_PTNICEDISMIX.pdf, id=4531, 569.12625pt x 46
+<./figs/./sel/misid/plotvariablemu2_PTNICEDISMIX.pdf, id=4566, 569.12625pt x 46
 7.7475pt>
 File: ./figs/./sel/misid/plotvariablemu2_PTNICEDISMIX.pdf Graphic file (type pd
 f)
@@ -5125,7 +5150,7 @@ Package pdftex.def Info: ./figs/./sel/misid/plotvariablemu2_PTNICEDISMIX.pdf us
 ed on input line 510.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
-<./figs/./sel/misid/plotvariablemu2_PNICEDISMIX.pdf, id=4532, 569.12625pt x 467
+<./figs/./sel/misid/plotvariablemu2_PNICEDISMIX.pdf, id=4567, 569.12625pt x 467
 .7475pt>
 File: ./figs/./sel/misid/plotvariablemu2_PNICEDISMIX.pdf Graphic file (type pdf
 )
@@ -5148,7 +5173,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[115 <./figs/./sel/CombiBDT_ProfileX_of_Bplus_Corrected_Mass_vs_MCSig2016_28888
+[116 <./figs/./sel/CombiBDT_ProfileX_of_Bplus_Corrected_Mass_vs_MCSig2016_28888
 8335_vs_DATACombi2016NTrees60_MinNodeSize2_MaxDepth3_SeparationTypeGiniIndex_Pr
 uneMethodNoPruning_DoPreselection_nice.pdf, page is rotated 90 degrees>]
 
@@ -5157,7 +5182,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[116 <./figs/./sel/true_Misid_CompareTrainOnBothRun1and2016__COMPAREroccurvesDI
+[117 <./figs/./sel/true_Misid_CompareTrainOnBothRun1and2016__COMPAREroccurvesDI
 FFERENTtrainings.pdf, page is rotated 90 degrees>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -5165,7 +5190,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[117 <./figs/./sel/misid/Scaled_nice_FOM_Run1.pdf, page is rotated 90 degrees> 
+[118 <./figs/./sel/misid/Scaled_nice_FOM_Run1.pdf, page is rotated 90 degrees> 
 <./figs/./sel/misid/Scaled_nice_FOM_2016.pdf, page is rotated 90 degrees> <./fi
 gs/./sel/plotMisidFitPretty_Run1.pdf, page is rotated 90 degrees> <./figs/./sel
 /plotMisidFitPretty_2016.pdf, page is rotated 90 degrees>]
@@ -5175,7 +5200,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[118 <./figs/./sel/CutEfficiency_Bplus_Corrected_MassMisid_nice.pdf, page is ro
+[119 <./figs/./sel/CutEfficiency_Bplus_Corrected_MassMisid_nice.pdf, page is ro
 tated 90 degrees>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -5183,7 +5208,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[119 <./figs/./sel/misid/plotvariablemu3_PTNICEDISMIX.pdf, page is rotated 90 d
+[120 <./figs/./sel/misid/plotvariablemu3_PTNICEDISMIX.pdf, page is rotated 90 d
 egrees> <./figs/./sel/misid/plotvariablemu3_PNICEDISMIX.pdf, page is rotated 90
  degrees> <./figs/./sel/misid/plotvariablemu3_MINIPCHI2NICEDISMIX.pdf, page is 
 rotated 90 degrees> <./figs/./sel/misid/plotvariablemu1_PTNICEDISMIX.pdf, page 
@@ -5218,21 +5243,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[120
+[121
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 582.
 
-<./figs/sel/trial2012.pdf, id=5142, 569.12625pt x 408.52625pt>
+<./figs/sel/trial2012.pdf, id=5177, 569.12625pt x 408.52625pt>
 File: ./figs/sel/trial2012.pdf Graphic file (type pdf)
 
 <use ./figs/sel/trial2012.pdf>
 Package pdftex.def Info: ./figs/sel/trial2012.pdf used on input line 594.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
-<./figs/sel/trial2016.pdf, id=5143, 569.12625pt x 408.52625pt>
+<./figs/sel/trial2016.pdf, id=5178, 569.12625pt x 408.52625pt>
 File: ./figs/sel/trial2016.pdf Graphic file (type pdf)
 
 <use ./figs/sel/trial2016.pdf>
@@ -5245,20 +5270,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[121]) (./Background.tex
+[122]) (./Background.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[122 <./figs/sel/trial2012.pdf, page is rotated 90 degrees> <./figs/sel/trial20
+[123 <./figs/sel/trial2012.pdf, page is rotated 90 degrees> <./figs/sel/trial20
 16.pdf, page is rotated 90 degrees>]
 Chapter 6.
-[123
+[124
 
 ]
-<./figs/bkg/combi/nicenewANAcombiUMSB_WITHPULL_new.pdf, id=5248, 569.12625pt x 
+<./figs/bkg/combi/nicenewANAcombiUMSB_WITHPULL_new.pdf, id=5283, 569.12625pt x 
 631.35875pt>
 File: ./figs/bkg/combi/nicenewANAcombiUMSB_WITHPULL_new.pdf Graphic file (type 
 pdf)
@@ -5267,7 +5292,7 @@ Package pdftex.def Info: ./figs/bkg/combi/nicenewANAcombiUMSB_WITHPULL_new.pdf
 used on input line 14.
 (pdftex.def)             Requested size: 150.23137pt x 166.65417pt.
 
-<./figs/bkg/combi/nicenewANAcombi3same_WITHPULL_new.pdf, id=5249, 569.12625pt x
+<./figs/bkg/combi/nicenewANAcombi3same_WITHPULL_new.pdf, id=5284, 569.12625pt x
  631.35875pt>
 File: ./figs/bkg/combi/nicenewANAcombi3same_WITHPULL_new.pdf Graphic file (type
  pdf)
@@ -5276,7 +5301,7 @@ Package pdftex.def Info: ./figs/bkg/combi/nicenewANAcombi3same_WITHPULL_new.pdf
  used on input line 15.
 (pdftex.def)             Requested size: 150.23137pt x 166.65417pt.
 
-<./figs/bkg/combi/nicenewANAcombi_WITHPULL_new.pdf, id=5250, 569.12625pt x 631.
+<./figs/bkg/combi/nicenewANAcombi_WITHPULL_new.pdf, id=5285, 569.12625pt x 631.
 35875pt>
 File: ./figs/bkg/combi/nicenewANAcombi_WITHPULL_new.pdf Graphic file (type pdf)
 
@@ -5291,7 +5316,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[124 <./figs/bkg/combi/nicenewANAcombiUMSB_WITHPULL_new.pdf> <./figs/bkg/combi/
+[125 <./figs/bkg/combi/nicenewANAcombiUMSB_WITHPULL_new.pdf> <./figs/bkg/combi/
 nicenewANAcombi3same_WITHPULL_new.pdf> <./figs/bkg/combi/nicenewANAcombi_WITHPU
 LL_new.pdf>]
 
@@ -5300,7 +5325,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[125]
+[126]
 Package epstopdf Info: Source file: <./figs/bkg/misid/misid_att_3.eps>
 (epstopdf)                    date: 2018-07-08 16:22:23
 (epstopdf)                    size: 87703 bytes
@@ -5313,7 +5338,7 @@ _3-eps-converted-to.pdf ./figs/bkg/misid/misid_att_3.eps>
 (epstopdf)             \includegraphics on input line 39.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figs/bkg/misid/misid_att_3-eps-converted-to.pdf, id=5398, 452.69125pt x 378.
+<./figs/bkg/misid/misid_att_3-eps-converted-to.pdf, id=5434, 452.69125pt x 378.
 41376pt>
 File: ./figs/bkg/misid/misid_att_3-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -5328,19 +5353,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[126 <./figs/bkg/misid/misid_att_3-eps-converted-to.pdf>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[127]
-
-LaTeX Warning: Reference `fig:misidtemp' on page 128 undefined on input line 13
-2.
-
-) (./Efficiency.tex
+[127 <./figs/bkg/misid/misid_att_3-eps-converted-to.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -5348,8 +5361,136 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [128]
+<./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23MuNu_M
+isidSS_Run1_mu3isNotMuon_mu3inMuonAcc_trigger_Jpsi_mu1nShared_mu2nShared_qmincu
+t_KaonPID__NEW.pdf, id=5467, 569.12625pt x 217.81375pt>
+File: ./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23M
+uNu_MisidSS_Run1_mu3isNotMuon_mu3inMuonAcc_trigger_Jpsi_mu1nShared_mu2nShared_q
+mincut_KaonPID__NEW.pdf Graphic file (type pdf)
+
+<use ./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23Mu
+Nu_MisidSS_Run1_mu3isNotMuon_mu3inMuonAcc_trigger_Jpsi_mu1nShared_mu2nShared_qm
+incut_KaonPID__NEW.pdf>
+Package pdftex.def Info: ./figs//bkg/misid/example/compare_misid_modifiedandcut
+nSharednewData_B23MuNu_MisidSS_Run1_mu3isNotMuon_mu3inMuonAcc_trigger_Jpsi_mu1n
+Shared_mu2nShared_qmincut_KaonPID__NEW.pdf used on input line 136.
+(pdftex.def)             Requested size: 409.71689pt x 156.81247pt.
+
+<./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23MuNu_M
+isidSS_Run1_mu3isNotMuon_mu3inMuonAcc_trigger_Jpsi_mu1nShared_mu2nShared_qmincu
+t_PionPID__NEW.pdf, id=5468, 569.12625pt x 217.81375pt>
+File: ./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23M
+uNu_MisidSS_Run1_mu3isNotMuon_mu3inMuonAcc_trigger_Jpsi_mu1nShared_mu2nShared_q
+mincut_PionPID__NEW.pdf Graphic file (type pdf)
+
+<use ./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23Mu
+Nu_MisidSS_Run1_mu3isNotMuon_mu3inMuonAcc_trigger_Jpsi_mu1nShared_mu2nShared_qm
+incut_PionPID__NEW.pdf>
+Package pdftex.def Info: ./figs//bkg/misid/example/compare_misid_modifiedandcut
+nSharednewData_B23MuNu_MisidSS_Run1_mu3isNotMuon_mu3inMuonAcc_trigger_Jpsi_mu1n
+Shared_mu2nShared_qmincut_PionPID__NEW.pdf used on input line 138.
+(pdftex.def)             Requested size: 409.71689pt x 156.81247pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[129]
+<./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23MuNu_M
+isidOS_Run1_mu2isNotMuon_mu2inMuonAcc_trigger_mu1nShared_mu3nShared_qmincut_Kao
+nPID__NEW.pdf, id=5477, 569.12625pt x 217.81375pt>
+File: ./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23M
+uNu_MisidOS_Run1_mu2isNotMuon_mu2inMuonAcc_trigger_mu1nShared_mu3nShared_qmincu
+t_KaonPID__NEW.pdf Graphic file (type pdf)
+
+<use ./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23Mu
+Nu_MisidOS_Run1_mu2isNotMuon_mu2inMuonAcc_trigger_mu1nShared_mu3nShared_qmincut
+_KaonPID__NEW.pdf>
+Package pdftex.def Info: ./figs//bkg/misid/example/compare_misid_modifiedandcut
+nSharednewData_B23MuNu_MisidOS_Run1_mu2isNotMuon_mu2inMuonAcc_trigger_mu1nShare
+d_mu3nShared_qmincut_KaonPID__NEW.pdf used on input line 154.
+(pdftex.def)             Requested size: 409.71689pt x 156.81247pt.
+
+<./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23MuNu_M
+isidOS_Run1_mu2isNotMuon_mu2inMuonAcc_trigger_mu1nShared_mu3nShared_qmincut_Pio
+nPID__NEW.pdf, id=5478, 569.12625pt x 217.81375pt>
+File: ./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23M
+uNu_MisidOS_Run1_mu2isNotMuon_mu2inMuonAcc_trigger_mu1nShared_mu3nShared_qmincu
+t_PionPID__NEW.pdf Graphic file (type pdf)
+
+<use ./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23Mu
+Nu_MisidOS_Run1_mu2isNotMuon_mu2inMuonAcc_trigger_mu1nShared_mu3nShared_qmincut
+_PionPID__NEW.pdf>
+Package pdftex.def Info: ./figs//bkg/misid/example/compare_misid_modifiedandcut
+nSharednewData_B23MuNu_MisidOS_Run1_mu2isNotMuon_mu2inMuonAcc_trigger_mu1nShare
+d_mu3nShared_qmincut_PionPID__NEW.pdf used on input line 156.
+(pdftex.def)             Requested size: 409.71689pt x 156.81247pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[130 <./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23M
+uNu_MisidSS_Run1_mu3isNotMuon_mu3inMuonAcc_trigger_Jpsi_mu1nShared_mu2nShared_q
+mincut_KaonPID__NEW.pdf, page is rotated 90 degrees> <./figs//bkg/misid/example
+/compare_misid_modifiedandcutnSharednewData_B23MuNu_MisidSS_Run1_mu3isNotMuon_m
+u3inMuonAcc_trigger_Jpsi_mu1nShared_mu2nShared_qmincut_PionPID__NEW.pdf, page i
+s rotated 90 degrees>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[131 <./figs//bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23M
+uNu_MisidOS_Run1_mu2isNotMuon_mu2inMuonAcc_trigger_mu1nShared_mu3nShared_qmincu
+t_KaonPID__NEW.pdf, page is rotated 90 degrees> <./figs//bkg/misid/example/comp
+are_misid_modifiedandcutnSharednewData_B23MuNu_MisidOS_Run1_mu2isNotMuon_mu2inM
+uonAcc_trigger_mu1nShared_mu3nShared_qmincut_PionPID__NEW.pdf, page is rotated 
+90 degrees>]
+<./figs/bkg/pr/variableBplus_Corrected_MassPartRecoScaled2012_0_102_supernice.p
+df, id=5665, 569.12625pt x 467.7475pt>
+File: ./figs/bkg/pr/variableBplus_Corrected_MassPartRecoScaled2012_0_102_supern
+ice.pdf Graphic file (type pdf)
+
+<use ./figs/bkg/pr/variableBplus_Corrected_MassPartRecoScaled2012_0_102_superni
+ce.pdf>
+Package pdftex.def Info: ./figs/bkg/pr/variableBplus_Corrected_MassPartRecoScal
+ed2012_0_102_supernice.pdf used on input line 176.
+(pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
+
+<./figs/bkg/pr/SelectionEfficiency_invmu1andmu2_PARTRECOMC_special.pdf, id=5666
+, 569.12625pt x 546.04pt>
+File: ./figs/bkg/pr/SelectionEfficiency_invmu1andmu2_PARTRECOMC_special.pdf Gra
+phic file (type pdf)
+
+<use ./figs/bkg/pr/SelectionEfficiency_invmu1andmu2_PARTRECOMC_special.pdf>
+Package pdftex.def Info: ./figs/bkg/pr/SelectionEfficiency_invmu1andmu2_PARTREC
+OMC_special.pdf used on input line 177.
+(pdftex.def)             Requested size: 213.96527pt x 205.2894pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[132]) (./Efficiency.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[133 <./figs/bkg/pr/variableBplus_Corrected_MassPartRecoScaled2012_0_102_supern
+ice.pdf, page is rotated 90 degrees> <./figs/bkg/pr/SelectionEfficiency_invmu1a
+ndmu2_PARTRECOMC_special.pdf, page is rotated 90 degrees>]
 Chapter 7.
-[129
+[134
 
 ]
 
@@ -5358,16 +5499,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[130]
+[135]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[131]
+[136]
 <./figs/efficiency/effiratio/Plot_ALL_Efficiencies_Ratio_Overview_Pretty.pdf, i
-d=5467, 569.12625pt x 385.44pt>
+d=5794, 569.12625pt x 385.44pt>
 File: ./figs/efficiency/effiratio/Plot_ALL_Efficiencies_Ratio_Overview_Pretty.p
 df Graphic file (type pdf)
 
@@ -5383,14 +5524,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[132]
+[137]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[133 <./figs/efficiency/effiratio/Plot_ALL_Efficiencies_Ratio_Overview_Pretty.p
+[138 <./figs/efficiency/effiratio/Plot_ALL_Efficiencies_Ratio_Overview_Pretty.p
 df, page is rotated 90 degrees>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -5398,7 +5539,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[134]
+[139]
 Overfull \hbox (27.45439pt too wide) in paragraph at lines 250--276
  [] 
  []
@@ -5409,16 +5550,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[135]
+[140]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[136]
+[141]
 
-LaTeX Warning: Reference `ab:effsumarry' on page 137 undefined on input line 37
+LaTeX Warning: Reference `ab:effsumarry' on page 142 undefined on input line 37
 1.
 
 
@@ -5427,9 +5568,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[137]
+[142]
 <./figs/efficiency/plot_shapes_before_combibdt_forefficiency/plotvariableCombiB
-DTNICEFOREFF.pdf, id=5564, 569.12625pt x 467.7475pt>
+DTNICEFOREFF.pdf, id=5891, 569.12625pt x 467.7475pt>
 File: ./figs/efficiency/plot_shapes_before_combibdt_forefficiency/plotvariableC
 ombiBDTNICEFOREFF.pdf Graphic file (type pdf)
 
@@ -5440,7 +5581,7 @@ iency/plotvariableCombiBDTNICEFOREFF.pdf used on input line 395.
 (pdftex.def)             Requested size: 204.85844pt x 168.36755pt.
 
 <./figs/efficiency/plot_shapes_before_combibdt_forefficiency/plotvariableB_PTNI
-CEFOREFF.pdf, id=5565, 569.12625pt x 467.7475pt>
+CEFOREFF.pdf, id=5892, 569.12625pt x 467.7475pt>
 File: ./figs/efficiency/plot_shapes_before_combibdt_forefficiency/plotvariableB
 _PTNICEFOREFF.pdf Graphic file (type pdf)
 
@@ -5451,7 +5592,7 @@ iency/plotvariableB_PTNICEFOREFF.pdf used on input line 396.
 (pdftex.def)             Requested size: 204.85844pt x 168.36755pt.
 
 <./figs/efficiency/plot_shapes_before_combibdt_forefficiency/plotvariablemu3_PT
-NICEFOREFF.pdf, id=5566, 569.12625pt x 467.7475pt>
+NICEFOREFF.pdf, id=5893, 569.12625pt x 467.7475pt>
 File: ./figs/efficiency/plot_shapes_before_combibdt_forefficiency/plotvariablem
 u3_PTNICEFOREFF.pdf Graphic file (type pdf)
 
@@ -5462,7 +5603,7 @@ iency/plotvariablemu3_PTNICEFOREFF.pdf used on input line 398.
 (pdftex.def)             Requested size: 204.85844pt x 168.36755pt.
 
 <./figs/efficiency/plot_shapes_before_combibdt_forefficiency/plotvariablemu3_PN
-ICEFOREFF.pdf, id=5567, 569.12625pt x 467.7475pt>
+ICEFOREFF.pdf, id=5894, 569.12625pt x 467.7475pt>
 File: ./figs/efficiency/plot_shapes_before_combibdt_forefficiency/plotvariablem
 u3_PNICEFOREFF.pdf Graphic file (type pdf)
 
@@ -5478,9 +5619,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[138]
+[143]
 <./figs/efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariableMisidB
-DTNICEFOREFF.pdf, id=5574, 569.12625pt x 467.7475pt>
+DTNICEFOREFF.pdf, id=5900, 569.12625pt x 467.7475pt>
 File: ./figs/efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariableM
 isidBDTNICEFOREFF.pdf Graphic file (type pdf)
 
@@ -5491,7 +5632,7 @@ iency/plotvariableMisidBDTNICEFOREFF.pdf used on input line 406.
 (pdftex.def)             Requested size: 204.85844pt x 168.36755pt.
 
 <./figs/efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariableB_PTNI
-CEFOREFF.pdf, id=5575, 569.12625pt x 467.7475pt>
+CEFOREFF.pdf, id=5901, 569.12625pt x 467.7475pt>
 File: ./figs/efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariableB
 _PTNICEFOREFF.pdf Graphic file (type pdf)
 
@@ -5502,7 +5643,7 @@ iency/plotvariableB_PTNICEFOREFF.pdf used on input line 407.
 (pdftex.def)             Requested size: 204.85844pt x 168.36755pt.
 
 <./figs/efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariablemu2_MI
-NIPCHI2NICEFOREFF.pdf, id=5576, 569.12625pt x 467.7475pt>
+NIPCHI2NICEFOREFF.pdf, id=5902, 569.12625pt x 467.7475pt>
 File: ./figs/efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariablem
 u2_MINIPCHI2NICEFOREFF.pdf Graphic file (type pdf)
 
@@ -5513,7 +5654,7 @@ iency/plotvariablemu2_MINIPCHI2NICEFOREFF.pdf used on input line 409.
 (pdftex.def)             Requested size: 204.85844pt x 168.36755pt.
 
 <./figs/efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariablemu3_PN
-ICEFOREFF.pdf, id=5577, 569.12625pt x 467.7475pt>
+ICEFOREFF.pdf, id=5903, 569.12625pt x 467.7475pt>
 File: ./figs/efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariablem
 u3_PNICEFOREFF.pdf Graphic file (type pdf)
 
@@ -5529,7 +5670,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[139 <./figs/efficiency/plot_shapes_before_combibdt_forefficiency/plotvariableC
+[144 <./figs/efficiency/plot_shapes_before_combibdt_forefficiency/plotvariableC
 ombiBDTNICEFOREFF.pdf, page is rotated 90 degrees> <./figs/efficiency/plot_shap
 es_before_combibdt_forefficiency/plotvariableB_PTNICEFOREFF.pdf, page is rotate
 d 90 degrees> <./figs/efficiency/plot_shapes_before_combibdt_forefficiency/plot
@@ -5542,14 +5683,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[140 <./figs/efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariableM
+[145 <./figs/efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariableM
 isidBDTNICEFOREFF.pdf, page is rotated 90 degrees> <./figs/efficiency/plot_shap
 es_before_misidbdt_forefficiency/plotvariableB_PTNICEFOREFF.pdf, page is rotate
 d 90 degrees> <./figs/efficiency/plot_shapes_before_misidbdt_forefficiency/plot
 variablemu2_MINIPCHI2NICEFOREFF.pdf, page is rotated 90 degrees> <./figs/effici
 ency/plot_shapes_before_misidbdt_forefficiency/plotvariablemu3_PNICEFOREFF.pdf,
  page is rotated 90 degrees>]
-<./figs/efficiency/plot_shapes_fittingregion/plotvariableB_MMMIX.pdf, id=5936, 
+<./figs/efficiency/plot_shapes_fittingregion/plotvariableB_MMMIX.pdf, id=6262, 
 569.12625pt x 467.7475pt>
 File: ./figs/efficiency/plot_shapes_fittingregion/plotvariableB_MMMIX.pdf Graph
 ic file (type pdf)
@@ -5559,8 +5700,8 @@ Package pdftex.def Info: ./figs/efficiency/plot_shapes_fittingregion/plotvariab
 leB_MMMIX.pdf used on input line 421.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
-<./figs/efficiency/plot_shapes_fittingregion/plotvariableLogyB_MMMIX.pdf, id=59
-37, 569.12625pt x 467.7475pt>
+<./figs/efficiency/plot_shapes_fittingregion/plotvariableLogyB_MMMIX.pdf, id=62
+63, 569.12625pt x 467.7475pt>
 File: ./figs/efficiency/plot_shapes_fittingregion/plotvariableLogyB_MMMIX.pdf G
 raphic file (type pdf)
 
@@ -5579,7 +5720,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[141 <./figs/efficiency/plot_shapes_fittingregion/plotvariableB_MMMIX.pdf, page
+[146 <./figs/efficiency/plot_shapes_fittingregion/plotvariableB_MMMIX.pdf, page
  is rotated 90 degrees> <./figs/efficiency/plot_shapes_fittingregion/plotvariab
 leLogyB_MMMIX.pdf, page is rotated 90 degrees>]
 
@@ -5588,9 +5729,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[142]
-<./figs/./efficiency/controlchannelfits/controlsigmcnofcmeRun1nolog.pdf, id=604
-2, 569.12625pt x 408.52625pt>
+[147]
+<./figs/./efficiency/controlchannelfits/controlsigmcnofcmeRun1nolog.pdf, id=636
+9, 569.12625pt x 408.52625pt>
 File: ./figs/./efficiency/controlchannelfits/controlsigmcnofcmeRun1nolog.pdf Gr
 aphic file (type pdf)
 
@@ -5599,7 +5740,7 @@ Package pdftex.def Info: ./figs/./efficiency/controlchannelfits/controlsigmcnof
 cmeRun1nolog.pdf used on input line 516.
 (pdftex.def)             Requested size: 204.85844pt x 147.05063pt.
 
-<./figs/./efficiency/controlchannelfits/controlsigmcnofcmeRun1log.pdf, id=6043,
+<./figs/./efficiency/controlchannelfits/controlsigmcnofcmeRun1log.pdf, id=6370,
  569.12625pt x 408.52625pt>
 File: ./figs/./efficiency/controlchannelfits/controlsigmcnofcmeRun1log.pdf Grap
 hic file (type pdf)
@@ -5610,7 +5751,7 @@ cmeRun1log.pdf used on input line 517.
 (pdftex.def)             Requested size: 204.85844pt x 147.05063pt.
 
 <./figs/./efficiency/controlchannelfits/controlpimumumcnofcmeRun1nolog.pdf, id=
-6044, 569.12625pt x 408.52625pt>
+6371, 569.12625pt x 408.52625pt>
 File: ./figs/./efficiency/controlchannelfits/controlpimumumcnofcmeRun1nolog.pdf
  Graphic file (type pdf)
 
@@ -5619,8 +5760,8 @@ Package pdftex.def Info: ./figs/./efficiency/controlchannelfits/controlpimumumc
 nofcmeRun1nolog.pdf used on input line 520.
 (pdftex.def)             Requested size: 204.85844pt x 147.05063pt.
 
-<./figs/./efficiency/controlchannelfits/controlpimumumcnofcmeRun1log.pdf, id=60
-45, 569.12625pt x 408.52625pt>
+<./figs/./efficiency/controlchannelfits/controlpimumumcnofcmeRun1log.pdf, id=63
+72, 569.12625pt x 408.52625pt>
 File: ./figs/./efficiency/controlchannelfits/controlpimumumcnofcmeRun1log.pdf G
 raphic file (type pdf)
 
@@ -5635,12 +5776,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[143]
+[148]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<./figs/./efficiency/controlchannelfits/controlnofcmeRun1.pdf, id=6056, 569.126
+<./figs/./efficiency/controlchannelfits/controlnofcmeRun1.pdf, id=6383, 569.126
 25pt x 546.04pt>
 File: ./figs/./efficiency/controlchannelfits/controlnofcmeRun1.pdf Graphic file
  (type pdf)
@@ -5650,7 +5791,7 @@ Package pdftex.def Info: ./figs/./efficiency/controlchannelfits/controlnofcmeRu
 n1.pdf used on input line 571.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
-<./figs/./efficiency/controlchannelfits/controlnofcme2016.pdf, id=6057, 569.126
+<./figs/./efficiency/controlchannelfits/controlnofcme2016.pdf, id=6384, 569.126
 25pt x 546.04pt>
 File: ./figs/./efficiency/controlchannelfits/controlnofcme2016.pdf Graphic file
  (type pdf)
@@ -5660,7 +5801,7 @@ Package pdftex.def Info: ./figs/./efficiency/controlchannelfits/controlnofcme20
 16.pdf used on input line 572.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
-<./figs/./efficiency/controlchannelfits/controllowhfcmeRun1.pdf, id=6058, 569.1
+<./figs/./efficiency/controlchannelfits/controllowhfcmeRun1.pdf, id=6385, 569.1
 2625pt x 546.04pt>
 File: ./figs/./efficiency/controlchannelfits/controllowhfcmeRun1.pdf Graphic fi
 le (type pdf)
@@ -5670,7 +5811,7 @@ Package pdftex.def Info: ./figs/./efficiency/controlchannelfits/controllowhfcme
 Run1.pdf used on input line 574.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
-<./figs/./efficiency/controlchannelfits/controllowfcme2016.pdf, id=6059, 569.12
+<./figs/./efficiency/controlchannelfits/controllowfcme2016.pdf, id=6386, 569.12
 625pt x 546.04pt>
 File: ./figs/./efficiency/controlchannelfits/controllowfcme2016.pdf Graphic fil
 e (type pdf)
@@ -5680,7 +5821,7 @@ Package pdftex.def Info: ./figs/./efficiency/controlchannelfits/controllowfcme2
 016.pdf used on input line 575.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
-<./figs/./efficiency/controlchannelfits/controlhighfcmeRun1.pdf, id=6060, 569.1
+<./figs/./efficiency/controlchannelfits/controlhighfcmeRun1.pdf, id=6387, 569.1
 2625pt x 546.04pt>
 File: ./figs/./efficiency/controlchannelfits/controlhighfcmeRun1.pdf Graphic fi
 le (type pdf)
@@ -5690,7 +5831,7 @@ Package pdftex.def Info: ./figs/./efficiency/controlchannelfits/controlhighfcme
 Run1.pdf used on input line 577.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
-<./figs/./efficiency/controlchannelfits/controlhighfcme2016.pdf, id=6061, 569.1
+<./figs/./efficiency/controlchannelfits/controlhighfcme2016.pdf, id=6388, 569.1
 2625pt x 546.04pt>
 File: ./figs/./efficiency/controlchannelfits/controlhighfcme2016.pdf Graphic fi
 le (type pdf)
@@ -5706,7 +5847,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[144 <./figs/./efficiency/controlchannelfits/controlsigmcnofcmeRun1nolog.pdf, p
+[149 <./figs/./efficiency/controlchannelfits/controlsigmcnofcmeRun1nolog.pdf, p
 age is rotated 90 degrees> <./figs/./efficiency/controlchannelfits/controlsigmc
 nofcmeRun1log.pdf, page is rotated 90 degrees> <./figs/./efficiency/controlchan
 nelfits/controlpimumumcnofcmeRun1nolog.pdf, page is rotated 90 degrees> <./figs
@@ -5721,7 +5862,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[145 <./figs/./efficiency/controlchannelfits/controlnofcmeRun1.pdf, page is rot
+[150 <./figs/./efficiency/controlchannelfits/controlnofcmeRun1.pdf, page is rot
 ated 90 degrees> <./figs/./efficiency/controlchannelfits/controlnofcme2016.pdf,
  page is rotated 90 degrees> <./figs/./efficiency/controlchannelfits/controllow
 hfcmeRun1.pdf, page is rotated 90 degrees> <./figs/./efficiency/controlchannelf
@@ -5735,7 +5876,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[146]
+[151]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -5745,8 +5886,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[147]
-<./figs/./efficiency/signalfits/signalmc/sigmcnofcmeRun1nolog.pdf, id=6529, 569
+[152]
+<./figs/./efficiency/signalfits/signalmc/sigmcnofcmeRun1nolog.pdf, id=6855, 569
 .12625pt x 408.52625pt>
 File: ./figs/./efficiency/signalfits/signalmc/sigmcnofcmeRun1nolog.pdf Graphic 
 file (type pdf)
@@ -5756,7 +5897,7 @@ Package pdftex.def Info: ./figs/./efficiency/signalfits/signalmc/sigmcnofcmeRun
 1nolog.pdf used on input line 686.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
-<./figs/./efficiency/signalfits/signalmc/sigmclowfcmeRun1nolog.pdf, id=6530, 56
+<./figs/./efficiency/signalfits/signalmc/sigmclowfcmeRun1nolog.pdf, id=6856, 56
 9.12625pt x 408.52625pt>
 File: ./figs/./efficiency/signalfits/signalmc/sigmclowfcmeRun1nolog.pdf Graphic
  file (type pdf)
@@ -5766,7 +5907,7 @@ Package pdftex.def Info: ./figs/./efficiency/signalfits/signalmc/sigmclowfcmeRu
 n1nolog.pdf used on input line 688.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
-<./figs/./efficiency/signalfits/signalmc/sigmchighfcmeRun1nolog.pdf, id=6531, 5
+<./figs/./efficiency/signalfits/signalmc/sigmchighfcmeRun1nolog.pdf, id=6857, 5
 69.12625pt x 408.52625pt>
 File: ./figs/./efficiency/signalfits/signalmc/sigmchighfcmeRun1nolog.pdf Graphi
 c file (type pdf)
@@ -5782,9 +5923,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[148]
+[153]
 
-LaTeX Warning: Reference `PartRecoCon' on page 149 undefined on input line 696.
+LaTeX Warning: Reference `PartRecoCon' on page 154 undefined on input line 696.
 
 
 
@@ -5793,12 +5934,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[149 <./figs/./efficiency/signalfits/signalmc/sigmcnofcmeRun1nolog.pdf, page is
+[154 <./figs/./efficiency/signalfits/signalmc/sigmcnofcmeRun1nolog.pdf, page is
  rotated 90 degrees> <./figs/./efficiency/signalfits/signalmc/sigmclowfcmeRun1n
 olog.pdf, page is rotated 90 degrees> <./figs/./efficiency/signalfits/signalmc/
 sigmchighfcmeRun1nolog.pdf, page is rotated 90 degrees>]
 
-LaTeX Warning: Reference `PartRecoCon' on page 150 undefined on input line 712.
+LaTeX Warning: Reference `PartRecoCon' on page 155 undefined on input line 712.
 
 
 
@@ -5807,8 +5948,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[150]
-<./figs/./efficiency/signalfits/partrecomc/simprnofcmeRun1nolog.pdf, id=6688, 5
+[155]
+<./figs/./efficiency/signalfits/partrecomc/simprnofcmeRun1nolog.pdf, id=7013, 5
 69.12625pt x 408.52625pt>
 File: ./figs/./efficiency/signalfits/partrecomc/simprnofcmeRun1nolog.pdf Graphi
 c file (type pdf)
@@ -5818,7 +5959,7 @@ Package pdftex.def Info: ./figs/./efficiency/signalfits/partrecomc/simprnofcmeR
 un1nolog.pdf used on input line 762.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
-<./figs/./efficiency/signalfits/partrecomc/simprlowfcmeRun1nolog.pdf, id=6689, 
+<./figs/./efficiency/signalfits/partrecomc/simprlowfcmeRun1nolog.pdf, id=7014, 
 569.12625pt x 408.52625pt>
 File: ./figs/./efficiency/signalfits/partrecomc/simprlowfcmeRun1nolog.pdf Graph
 ic file (type pdf)
@@ -5828,7 +5969,7 @@ Package pdftex.def Info: ./figs/./efficiency/signalfits/partrecomc/simprlowfcme
 Run1nolog.pdf used on input line 764.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
-<./figs/./efficiency/signalfits/partrecomc/simprhighfcmeRun1nolog.pdf, id=6690,
+<./figs/./efficiency/signalfits/partrecomc/simprhighfcmeRun1nolog.pdf, id=7015,
  569.12625pt x 408.52625pt>
 File: ./figs/./efficiency/signalfits/partrecomc/simprhighfcmeRun1nolog.pdf Grap
 hic file (type pdf)
@@ -5844,14 +5985,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[151]
+[156]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[152 <./figs/./efficiency/signalfits/partrecomc/simprnofcmeRun1nolog.pdf, page 
+[157 <./figs/./efficiency/signalfits/partrecomc/simprnofcmeRun1nolog.pdf, page 
 is rotated 90 degrees> <./figs/./efficiency/signalfits/partrecomc/simprlowfcmeR
 un1nolog.pdf, page is rotated 90 degrees> <./figs/./efficiency/signalfits/partr
 ecomc/simprhighfcmeRun1nolog.pdf, page is rotated 90 degrees>]
@@ -5861,8 +6002,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[153]
-<./figs/./efficiency/signalfits/misiddata/misiddatanofcmeRun1nolog.pdf, id=6843
+[158]
+<./figs/./efficiency/signalfits/misiddata/misiddatanofcmeRun1nolog.pdf, id=7169
 , 569.12625pt x 408.52625pt>
 File: ./figs/./efficiency/signalfits/misiddata/misiddatanofcmeRun1nolog.pdf Gra
 phic file (type pdf)
@@ -5872,8 +6013,8 @@ Package pdftex.def Info: ./figs/./efficiency/signalfits/misiddata/misiddatanofc
 meRun1nolog.pdf used on input line 813.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
-<./figs/./efficiency/signalfits/misiddata/misiddatalowfcmeRun1nolog.pdf, id=684
-4, 569.12625pt x 408.52625pt>
+<./figs/./efficiency/signalfits/misiddata/misiddatalowfcmeRun1nolog.pdf, id=717
+0, 569.12625pt x 408.52625pt>
 File: ./figs/./efficiency/signalfits/misiddata/misiddatalowfcmeRun1nolog.pdf Gr
 aphic file (type pdf)
 
@@ -5882,8 +6023,8 @@ Package pdftex.def Info: ./figs/./efficiency/signalfits/misiddata/misiddatalowf
 cmeRun1nolog.pdf used on input line 815.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
-<./figs/./efficiency/signalfits/misiddata/misiddatahighfcmeRun1nolog.pdf, id=68
-45, 569.12625pt x 408.52625pt>
+<./figs/./efficiency/signalfits/misiddata/misiddatahighfcmeRun1nolog.pdf, id=71
+71, 569.12625pt x 408.52625pt>
 File: ./figs/./efficiency/signalfits/misiddata/misiddatahighfcmeRun1nolog.pdf G
 raphic file (type pdf)
 
@@ -5898,25 +6039,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[154]
+[159]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[155 <./figs/./efficiency/signalfits/misiddata/misiddatanofcmeRun1nolog.pdf, pa
+[160 <./figs/./efficiency/signalfits/misiddata/misiddatanofcmeRun1nolog.pdf, pa
 ge is rotated 90 degrees> <./figs/./efficiency/signalfits/misiddata/misiddatalo
 wfcmeRun1nolog.pdf, page is rotated 90 degrees> <./figs/./efficiency/signalfits
 /misiddata/misiddatahighfcmeRun1nolog.pdf, page is rotated 90 degrees>]
 
-LaTeX Warning: Reference `fig:sigfit' on page 156 undefined on input line 834.
+LaTeX Warning: Reference `fig:sigfit' on page 161 undefined on input line 834.
 
 
-LaTeX Warning: Reference `eq:sesrun1' on page 156 undefined on input line 846.
+LaTeX Warning: Reference `eq:sesrun1' on page 161 undefined on input line 846.
 
 
-LaTeX Warning: Reference `eq:ses2016' on page 156 undefined on input line 846.
+LaTeX Warning: Reference `eq:ses2016' on page 161 undefined on input line 846.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -5924,7 +6065,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[156]
+[161]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -5935,18 +6076,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[157]
+[162]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[158]
+[163]
 Chapter 8.
-) [159
+) [164
 
-] (./Main.bbl [160
+] (./Main.bbl [165
 
 
 ]
@@ -5963,7 +6104,7 @@ Missing character: There is no „ in font jkpmn7t!
 Missing character: There is no “ in font jkpmn7t!
 Missing character: There is no Î in font jkpmn7t!
 Missing character: There is no ³ in font jkpmn7t!
- [161]
+ [166]
 Overfull \hbox (43.67137pt too wide) in paragraph at lines 270--278
 \T1/jkptt/m/n/12 https://lhcb.web.cern.ch/lhcb/speakersbureau/html/bb$[]$produc
 tionangles.html\T1/jkp/m/n/12 (-20) ,
@@ -5976,11 +6117,11 @@ Overfull \hbox (380.1717pt too wide) in paragraph at lines 316--321
 hcbtime$[]$yearlycumul.png\T1/jkp/m/n/12 (-20) ,
  []
 
-[162] [163] [164]) [165] [166
+[167] [168] [169]) [170] [171
 
 ]
 Appendix A.
-(./Appendix_BDT.tex <figs/BDT.png, id=7141, 892.08281pt x 407.27156pt>
+(./Appendix_BDT.tex <figs/BDT.png, id=7466, 892.08281pt x 407.27156pt>
 File: figs/BDT.png Graphic file (type png)
 
 <use figs/BDT.png>
@@ -5991,24 +6132,24 @@ Overfull \hbox (169.20963pt too wide) in paragraph at lines 12--13
  [][] 
  []
 
-[167
+[172
 
-] [168 <./figs/BDT.png>]) [169]
+] [173 <./figs/BDT.png>]) [174]
 Appendix B.
-(./Appendix_splot.tex [170
+(./Appendix_splot.tex [175
 
-]) [171]
+]) [176]
 Appendix C.
-(./Appendix_PDFs.tex [172
+(./Appendix_PDFs.tex [177
 
-]) [173]
+]) [178]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
  (./Main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 421.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: A7CD2DF9081D2B21137B27B16CF9CC53;6555.
+(rerunfilecheck)             Checksum: 2693FD0FD6379F941FA45BD1915BF661;6636.
 
 
 LaTeX Warning: There were undefined references.
@@ -6019,10 +6160,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 421.
  ) 
 Here is how much of TeX's memory you used:
- 43304 strings out of 494946
- 824763 string characters out of 6180981
- 965367 words of memory out of 5000000
- 44541 multiletter control sequences out of 15000+600000
+ 43350 strings out of 494946
+ 829160 string characters out of 6180981
+ 970651 words of memory out of 5000000
+ 44568 multiletter control sequences out of 15000+600000
  287670 words of font info for 722 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,16n,77p,10372b,1025s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -6053,10 +6194,10 @@ e1/public/kpfonts/jkpsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 kpfonts/jkpttbn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts
 /jkpttmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb>
-Output written on Main.pdf (174 pages, 5480134 bytes).
+Output written on Main.pdf (179 pages, 5613487 bytes).
 PDF statistics:
- 7386 PDF objects out of 7423 (max. 8388607)
- 4496 compressed objects within 45 object streams
- 581 named destinations out of 1000 (max. 500000)
- 94564 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 7714 PDF objects out of 8907 (max. 8388607)
+ 4661 compressed objects within 47 object streams
+ 590 named destinations out of 1000 (max. 500000)
+ 94602 words of extra memory for PDF output out of 106986 (max. 10000000)
 

@@ -64,26 +64,27 @@
 \BOOKMARK [0][-]{chapter.6}{Background Studies}{}% 64
 \BOOKMARK [1][-]{section.6.1}{Combinatorial Background}{chapter.6}% 65
 \BOOKMARK [2][-]{subsection.6.1.1}{MisID type background}{section.6.1}% 66
-\BOOKMARK [0][-]{chapter.7}{ Mass fits and efficiencies}{}% 67
-\BOOKMARK [1][-]{section.7.1}{Efficiency Ratio}{chapter.7}% 68
-\BOOKMARK [1][-]{section.7.2}{Summary of Efficiencies}{chapter.7}% 69
-\BOOKMARK [2][-]{subsection.7.2.1}{Detector Acceptance Efficiency \(GEN\)}{section.7.2}% 70
-\BOOKMARK [2][-]{subsection.7.2.2}{Reconstruction Efficiency \(REC\)}{section.7.2}% 71
-\BOOKMARK [2][-]{subsection.7.2.3}{Trigger Efficiency \(TRG\)}{section.7.2}% 72
-\BOOKMARK [2][-]{subsection.7.2.4}{Offline Selection \(OFF\)}{section.7.2}% 73
-\BOOKMARK [2][-]{subsection.7.2.5}{Combinatorial BDT and Misid BDT efficiency}{section.7.2}% 74
-\BOOKMARK [2][-]{subsection.7.2.6}{Fitting Range Efficiency \(FR\)}{section.7.2}% 75
-\BOOKMARK [2][-]{subsection.7.2.7}{PID Efficiencies \(PID\)}{section.7.2}% 76
-\BOOKMARK [1][-]{section.7.3}{Mass Fits}{chapter.7}% 77
-\BOOKMARK [2][-]{subsection.7.3.1}{Normalisation Channel Fit}{section.7.3}% 78
-\BOOKMARK [2][-]{subsection.7.3.2}{Signal Channel Fit}{section.7.3}% 79
-\BOOKMARK [2][-]{subsection.7.3.3}{Signal Data Fit}{section.7.3}% 80
-\BOOKMARK [0][-]{chapter.8}{Results}{}% 81
-\BOOKMARK [0][-]{chapter.8}{Bibliography}{}% 82
-\BOOKMARK [0][-]{chapter*.110}{Appendices}{}% 83
-\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 84
-\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 85
-\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 86
-\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 87
-\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 88
-\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 89
+\BOOKMARK [1][-]{section.6.2}{Partially Reconstructed Background}{chapter.6}% 67
+\BOOKMARK [0][-]{chapter.7}{ Mass fits and efficiencies}{}% 68
+\BOOKMARK [1][-]{section.7.1}{Efficiency Ratio}{chapter.7}% 69
+\BOOKMARK [1][-]{section.7.2}{Summary of Efficiencies}{chapter.7}% 70
+\BOOKMARK [2][-]{subsection.7.2.1}{Detector Acceptance Efficiency \(GEN\)}{section.7.2}% 71
+\BOOKMARK [2][-]{subsection.7.2.2}{Reconstruction Efficiency \(REC\)}{section.7.2}% 72
+\BOOKMARK [2][-]{subsection.7.2.3}{Trigger Efficiency \(TRG\)}{section.7.2}% 73
+\BOOKMARK [2][-]{subsection.7.2.4}{Offline Selection \(OFF\)}{section.7.2}% 74
+\BOOKMARK [2][-]{subsection.7.2.5}{Combinatorial BDT and Misid BDT efficiency}{section.7.2}% 75
+\BOOKMARK [2][-]{subsection.7.2.6}{Fitting Range Efficiency \(FR\)}{section.7.2}% 76
+\BOOKMARK [2][-]{subsection.7.2.7}{PID Efficiencies \(PID\)}{section.7.2}% 77
+\BOOKMARK [1][-]{section.7.3}{Mass Fits}{chapter.7}% 78
+\BOOKMARK [2][-]{subsection.7.3.1}{Normalisation Channel Fit}{section.7.3}% 79
+\BOOKMARK [2][-]{subsection.7.3.2}{Signal Channel Fit}{section.7.3}% 80
+\BOOKMARK [2][-]{subsection.7.3.3}{Signal Data Fit}{section.7.3}% 81
+\BOOKMARK [0][-]{chapter.8}{Results}{}% 82
+\BOOKMARK [0][-]{chapter.8}{Bibliography}{}% 83
+\BOOKMARK [0][-]{chapter*.113}{Appendices}{}% 84
+\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 85
+\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 86
+\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 87
+\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 88
+\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 89
+\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 90

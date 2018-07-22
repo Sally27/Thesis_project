@@ -1,97 +1,98 @@
 \contentsline {chapter}{Declaration of originality}{5}{section*.2}
 \contentsline {chapter}{Copyright declaration}{6}{section*.4}
 \contentsline {chapter}{List of Figures}{7}{section*.7}
-\contentsline {chapter}{List of Tables}{16}{section*.9}
-\contentsline {chapter}{List of abbreviations and definitions}{19}{section*.11}
-\contentsline {chapter}{\numberline {1}Introduction}{23}{chapter.1}
-\contentsline {chapter}{\numberline {2}Theory}{25}{chapter.2}
-\contentsline {section}{\numberline {2.1}Review of the Standard Model}{25}{section.2.1}
-\contentsline {section}{\numberline {2.2}The principle of Standard Model building}{27}{section.2.2}
-\contentsline {section}{\numberline {2.3}Quantum Chromodynamics}{29}{section.2.3}
-\contentsline {section}{\numberline {2.4}Electroweak unification}{30}{section.2.4}
-\contentsline {section}{\numberline {2.5}The Higgs Mechanism}{33}{section.2.5}
-\contentsline {section}{\numberline {2.6}Fermion mass generation}{34}{section.2.6}
-\contentsline {section}{\numberline {2.7} The Quark Mixing Matrix}{36}{section.2.7}
-\contentsline {section}{\numberline {2.8}Fully Leptonic \mb {P^{+}\rightarrow l^{+} \nu _{l}} decays}{41}{section.2.8}
-\contentsline {section}{\numberline {2.9}Fully Leptonic \mb {B^{+}\rightarrow l^{+} \nu _{l} \gamma } decays}{44}{section.2.9}
-\contentsline {section}{\numberline {2.10}Fully Leptonic \mb {B^{+}\rightarrow l^{+} l^{-} l^{+} \nu _{l}} decays}{45}{section.2.10}
-\contentsline {section}{\numberline {2.11}The \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } decay model}{47}{section.2.11}
-\contentsline {chapter}{\numberline {3}The LHCb detector}{49}{chapter.3}
-\contentsline {section}{\numberline {3.1}LHCb Layout }{50}{section.3.1}
-\contentsline {section}{\numberline {3.2}VErtex LOcator }{55}{section.3.2}
-\contentsline {section}{\numberline {3.3}Tracking System }{57}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Tracking Algorithms }{58}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Ring Imaging Detectors }{60}{section.3.4}
-\contentsline {section}{\numberline {3.5}RICH Reconstruction and Performance }{62}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}RICH performance }{62}{subsection.3.5.1}
-\contentsline {section}{\numberline {3.6}Calorimetry }{64}{section.3.6}
-\contentsline {section}{\numberline {3.7}Muon Stations }{65}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Muon Identification }{66}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Muon Performance }{68}{subsection.3.7.2}
-\contentsline {section}{\numberline {3.8}Trigger }{69}{section.3.8}
-\contentsline {section}{\numberline {3.9}Simulation }{73}{section.3.9}
-\contentsline {subsection}{\numberline {3.9.1}Differences in Simulation And Data \framebox {ULRIK - not fully finished}}{74}{subsection.3.9.1}
-\contentsline {chapter}{\numberline {4}Handling of trimuon correlations at LHCb}{76}{chapter.4}
-\contentsline {section}{\numberline {4.1}Muon PID variables }{76}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Binary Muon PID variables }{77}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Muon PID variables based on sharing hits }{77}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Muon PID variables based on regression techniques }{80}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Clones}{81}{section.4.2}
-\contentsline {section}{\numberline {4.3}Probability of \mb {K/\pi \rightarrow \mu } misidentification at LHCb }{85}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Specific control sample for \mb {K/\pi \rightarrow \mu } misid rates }{86}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Selection for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} }{86}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Fitting Strategy for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} decay }{86}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Results of \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} control sample for \mb {K/\pi \rightarrow \mu } misid rates }{91}{subsection.4.3.4}
-\contentsline {chapter}{\numberline {5}Discovering (Setting Limit for) \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{96}{chapter.5}
-\contentsline {section}{\numberline {5.1}Topology of the \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace decay at LHCb \framebox {ULRIK}}{96}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sources of Backgrounds \framebox {ULRIK}}{98}{section.5.2}
-\contentsline {section}{\numberline {5.3}Analysis strategy }{99}{section.5.3}
-\contentsline {section}{\numberline {5.4}Samples \framebox {ULRIK}}{100}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Data Samples \framebox {ULRIK}}{100}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Simulation Samples \framebox {ULRIK}}{100}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Preselection for \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace \framebox {ULRIK}}{103}{section.5.5}
-\contentsline {section}{\numberline {5.6}Trigger Selection \framebox {ULRIK}}{104}{section.5.6}
-\contentsline {section}{\numberline {5.7}$q^{2}$ Selection \framebox {ULRIK}}{106}{section.5.7}
-\contentsline {section}{\numberline {5.8}Further Selection \framebox {ULRIK}}{107}{section.5.8}
-\contentsline {subsection}{\numberline {5.8.1}General Features of Multivariate Selections \framebox {ULRIK}}{108}{subsection.5.8.1}
-\contentsline {subsection}{\numberline {5.8.2}The Isolation Boosted Decision Tree \framebox {ULRIK}}{109}{subsection.5.8.2}
-\contentsline {subsection}{\numberline {5.8.3}The Combinatorial Boosted Decision Tree \framebox {ULRIK}}{111}{subsection.5.8.3}
-\contentsline {subsection}{\numberline {5.8.4}The Misid Boosted Decision Tree \framebox {ULRIK}}{113}{subsection.5.8.4}
-\contentsline {subsection}{\numberline {5.8.5}Fitting Region Selection}{115}{subsection.5.8.5}
-\contentsline {subsection}{\numberline {5.8.6}Further \gls {PID} Selection \framebox {ULRIK}}{116}{subsection.5.8.6}
-\contentsline {section}{\numberline {5.9}Normalisation channel \framebox {ULRIK}}{120}{section.5.9}
-\contentsline {section}{\numberline {5.10}Fractional Corrected Mass Error (FCME) Window Split \framebox {ULRIK}}{121}{section.5.10}
-\contentsline {chapter}{\numberline {6}Background Studies}{123}{chapter.6}
-\contentsline {section}{\numberline {6.1}Combinatorial Background}{123}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}MisID type background}{125}{subsection.6.1.1}
-\contentsline {chapter}{\numberline {7} Mass fits and efficiencies}{129}{chapter.7}
-\contentsline {section}{\numberline {7.1}Efficiency Ratio}{129}{section.7.1}
-\contentsline {section}{\numberline {7.2}Summary of Efficiencies}{131}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Detector Acceptance Efficiency (GEN)}{133}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Reconstruction Efficiency (REC)}{134}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Trigger Efficiency (TRG)}{134}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}Offline Selection (OFF)}{135}{subsection.7.2.4}
-\contentsline {subsection}{\numberline {7.2.5}Combinatorial BDT and Misid BDT efficiency}{137}{subsection.7.2.5}
-\contentsline {subsection}{\numberline {7.2.6}Fitting Range Efficiency (FR)}{140}{subsection.7.2.6}
-\contentsline {subsection}{\numberline {7.2.7}\gls {PID} Efficiencies (PID)}{141}{subsection.7.2.7}
-\contentsline {section}{\numberline {7.3}Mass Fits}{142}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Normalisation Channel Fit}{142}{subsection.7.3.1}
-\contentsline {subsubsection}{Signal}{143}{section*.90}
-\contentsline {subsubsection}{\mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {(\ensuremath {{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\psi }\xspace \mskip 2mu}}}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}}\xspace }\xspace ){\ensuremath {{\ensuremath {\ensuremath {\pi }\xspace }}\xspace ^+}}\xspace }}\xspace \xspace } Background}{143}{section*.91}
-\contentsline {subsubsection}{Combinatorial Background}{143}{section*.93}
-\contentsline {subsubsection}{Fit to \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {(\ensuremath {{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\psi }\xspace \mskip 2mu}}}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}}\xspace }\xspace ){\ensuremath {{\ensuremath {\ensuremath {K}\xspace }}\xspace ^+}}\xspace }}\xspace \xspace } Data}{144}{section*.95}
-\contentsline {subsection}{\numberline {7.3.2}Signal Channel Fit}{146}{subsection.7.3.2}
-\contentsline {subsubsection}{Signal}{147}{section*.98}
-\contentsline {subsubsection}{Partially Reconstructed Background}{149}{section*.101}
-\contentsline {subsubsection}{MisID background}{152}{section*.104}
-\contentsline {subsubsection}{Combinatorial Background}{155}{section*.107}
-\contentsline {subsection}{\numberline {7.3.3}Signal Data Fit}{156}{subsection.7.3.3}
-\contentsline {chapter}{\numberline {8}Results}{159}{chapter.8}
-\contentsline {chapter}{Bibliography}{160}{chapter.8}
-\contentsline {chapter}{Appendices}{167}{chapter*.110}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{167}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{170}{appendix.B}
-\contentsline {chapter}{\numberline {C}Fitting functions}{172}{appendix.C}
-\contentsline {section}{\numberline {C.1}Crystal Ball function}{172}{section.C.1}
-\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{173}{section.C.2}
-\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{173}{section.C.3}
+\contentsline {chapter}{List of Tables}{17}{section*.9}
+\contentsline {chapter}{List of abbreviations and definitions}{20}{section*.11}
+\contentsline {chapter}{\numberline {1}Introduction}{24}{chapter.1}
+\contentsline {chapter}{\numberline {2}Theory}{26}{chapter.2}
+\contentsline {section}{\numberline {2.1}Review of the Standard Model}{26}{section.2.1}
+\contentsline {section}{\numberline {2.2}The principle of Standard Model building}{28}{section.2.2}
+\contentsline {section}{\numberline {2.3}Quantum Chromodynamics}{30}{section.2.3}
+\contentsline {section}{\numberline {2.4}Electroweak unification}{31}{section.2.4}
+\contentsline {section}{\numberline {2.5}The Higgs Mechanism}{34}{section.2.5}
+\contentsline {section}{\numberline {2.6}Fermion mass generation}{35}{section.2.6}
+\contentsline {section}{\numberline {2.7} The Quark Mixing Matrix}{37}{section.2.7}
+\contentsline {section}{\numberline {2.8}Fully Leptonic \mb {P^{+}\rightarrow l^{+} \nu _{l}} decays}{42}{section.2.8}
+\contentsline {section}{\numberline {2.9}Fully Leptonic \mb {B^{+}\rightarrow l^{+} \nu _{l} \gamma } decays}{45}{section.2.9}
+\contentsline {section}{\numberline {2.10}Fully Leptonic \mb {B^{+}\rightarrow l^{+} l^{-} l^{+} \nu _{l}} decays}{46}{section.2.10}
+\contentsline {section}{\numberline {2.11}The \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } decay model}{48}{section.2.11}
+\contentsline {chapter}{\numberline {3}The LHCb detector}{50}{chapter.3}
+\contentsline {section}{\numberline {3.1}LHCb Layout }{51}{section.3.1}
+\contentsline {section}{\numberline {3.2}VErtex LOcator }{56}{section.3.2}
+\contentsline {section}{\numberline {3.3}Tracking System }{58}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Tracking Algorithms }{59}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Ring Imaging Detectors }{61}{section.3.4}
+\contentsline {section}{\numberline {3.5}RICH Reconstruction and Performance }{63}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}RICH performance }{63}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.6}Calorimetry }{65}{section.3.6}
+\contentsline {section}{\numberline {3.7}Muon Stations }{66}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Muon Identification }{67}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Muon Performance }{69}{subsection.3.7.2}
+\contentsline {section}{\numberline {3.8}Trigger }{70}{section.3.8}
+\contentsline {section}{\numberline {3.9}Simulation }{74}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Differences in Simulation And Data \framebox {ULRIK - not fully finished}}{75}{subsection.3.9.1}
+\contentsline {chapter}{\numberline {4}Handling of trimuon correlations at LHCb}{77}{chapter.4}
+\contentsline {section}{\numberline {4.1}Muon PID variables }{77}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Binary Muon PID variables }{78}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Muon PID variables based on sharing hits }{78}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Muon PID variables based on regression techniques }{81}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Clones}{82}{section.4.2}
+\contentsline {section}{\numberline {4.3}Probability of \mb {K/\pi \rightarrow \mu } misidentification at LHCb }{86}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Specific control sample for \mb {K/\pi \rightarrow \mu } misid rates }{87}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Selection for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} }{87}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Fitting Strategy for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} decay }{87}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Results of \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} control sample for \mb {K/\pi \rightarrow \mu } misid rates }{92}{subsection.4.3.4}
+\contentsline {chapter}{\numberline {5}Discovering (Setting Limit for) \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{97}{chapter.5}
+\contentsline {section}{\numberline {5.1}Topology of the \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace decay at LHCb \framebox {ULRIK}}{97}{section.5.1}
+\contentsline {section}{\numberline {5.2}Sources of Backgrounds \framebox {ULRIK}}{99}{section.5.2}
+\contentsline {section}{\numberline {5.3}Analysis strategy }{100}{section.5.3}
+\contentsline {section}{\numberline {5.4}Samples \framebox {ULRIK}}{101}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Data Samples \framebox {ULRIK}}{101}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Simulation Samples \framebox {ULRIK}}{101}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Preselection for \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace \framebox {ULRIK}}{104}{section.5.5}
+\contentsline {section}{\numberline {5.6}Trigger Selection \framebox {ULRIK}}{105}{section.5.6}
+\contentsline {section}{\numberline {5.7}$q^{2}$ Selection \framebox {ULRIK}}{107}{section.5.7}
+\contentsline {section}{\numberline {5.8}Further Selection \framebox {ULRIK}}{108}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}General Features of Multivariate Selections \framebox {ULRIK}}{109}{subsection.5.8.1}
+\contentsline {subsection}{\numberline {5.8.2}The Isolation Boosted Decision Tree \framebox {ULRIK}}{110}{subsection.5.8.2}
+\contentsline {subsection}{\numberline {5.8.3}The Combinatorial Boosted Decision Tree \framebox {ULRIK}}{112}{subsection.5.8.3}
+\contentsline {subsection}{\numberline {5.8.4}The Misid Boosted Decision Tree \framebox {ULRIK}}{114}{subsection.5.8.4}
+\contentsline {subsection}{\numberline {5.8.5}Fitting Region Selection}{116}{subsection.5.8.5}
+\contentsline {subsection}{\numberline {5.8.6}Further \gls {PID} Selection \framebox {ULRIK}}{117}{subsection.5.8.6}
+\contentsline {section}{\numberline {5.9}Normalisation channel \framebox {ULRIK}}{121}{section.5.9}
+\contentsline {section}{\numberline {5.10}Fractional Corrected Mass Error (FCME) Window Split \framebox {ULRIK}}{122}{section.5.10}
+\contentsline {chapter}{\numberline {6}Background Studies}{124}{chapter.6}
+\contentsline {section}{\numberline {6.1}Combinatorial Background}{124}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}MisID type background}{126}{subsection.6.1.1}
+\contentsline {section}{\numberline {6.2}Partially Reconstructed Background}{131}{section.6.2}
+\contentsline {chapter}{\numberline {7} Mass fits and efficiencies}{134}{chapter.7}
+\contentsline {section}{\numberline {7.1}Efficiency Ratio}{134}{section.7.1}
+\contentsline {section}{\numberline {7.2}Summary of Efficiencies}{136}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Detector Acceptance Efficiency (GEN)}{138}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Reconstruction Efficiency (REC)}{139}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Trigger Efficiency (TRG)}{139}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Offline Selection (OFF)}{140}{subsection.7.2.4}
+\contentsline {subsection}{\numberline {7.2.5}Combinatorial BDT and Misid BDT efficiency}{142}{subsection.7.2.5}
+\contentsline {subsection}{\numberline {7.2.6}Fitting Range Efficiency (FR)}{145}{subsection.7.2.6}
+\contentsline {subsection}{\numberline {7.2.7}\gls {PID} Efficiencies (PID)}{146}{subsection.7.2.7}
+\contentsline {section}{\numberline {7.3}Mass Fits}{147}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Normalisation Channel Fit}{147}{subsection.7.3.1}
+\contentsline {subsubsection}{Signal}{148}{section*.93}
+\contentsline {subsubsection}{\mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {(\ensuremath {{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\psi }\xspace \mskip 2mu}}}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}}\xspace }\xspace ){\ensuremath {{\ensuremath {\ensuremath {\pi }\xspace }}\xspace ^+}}\xspace }}\xspace \xspace } Background}{148}{section*.94}
+\contentsline {subsubsection}{Combinatorial Background}{148}{section*.96}
+\contentsline {subsubsection}{Fit to \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {(\ensuremath {{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\psi }\xspace \mskip 2mu}}}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}}\xspace }\xspace ){\ensuremath {{\ensuremath {\ensuremath {K}\xspace }}\xspace ^+}}\xspace }}\xspace \xspace } Data}{149}{section*.98}
+\contentsline {subsection}{\numberline {7.3.2}Signal Channel Fit}{151}{subsection.7.3.2}
+\contentsline {subsubsection}{Signal}{152}{section*.101}
+\contentsline {subsubsection}{Partially Reconstructed Background}{154}{section*.104}
+\contentsline {subsubsection}{MisID background}{157}{section*.107}
+\contentsline {subsubsection}{Combinatorial Background}{160}{section*.110}
+\contentsline {subsection}{\numberline {7.3.3}Signal Data Fit}{161}{subsection.7.3.3}
+\contentsline {chapter}{\numberline {8}Results}{164}{chapter.8}
+\contentsline {chapter}{Bibliography}{165}{chapter.8}
+\contentsline {chapter}{Appendices}{172}{chapter*.113}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{172}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{175}{appendix.B}
+\contentsline {chapter}{\numberline {C}Fitting functions}{177}{appendix.C}
+\contentsline {section}{\numberline {C.1}Crystal Ball function}{177}{section.C.1}
+\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{178}{section.C.2}
+\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{178}{section.C.3}
