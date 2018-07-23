@@ -1,4 +1,4 @@
-\chapter{ Mass fits and efficiencies}
+\chapter{Mass fits and efficiencies}
 \label{chap:masandef}
 
 \textit{ To be able to translate observed signal events into branching fraction estimate,  the normalisation channel
@@ -492,11 +492,12 @@ The PID efficiency is higher for normalisation channel with all PID requiremnts 
 \end{table}
 
 
-
+\newpage
 \section{Mass Fits}
+	In this section, firstly parametrisation together with the fit to normalisation channel is described in~\autoref{normfit}. This is followed by the signal fit parametrisation outlined in~\autoref{Fit} resulting in blinded and non-blinded data fits described in~\autoref{fitsens}.
 
 \subsection{Normalisation Channel Fit}
-
+\label{normfit}
 
 The obtain the \bjpsimumuk yield of Run \Rn{1} and Run \Rn{2}, an unbinned extended maximum likelihood fit to the invariant $\mu^{+} \mu^{-} K^{+}$ data distribution in each respective year is performed. In order to perform the fit, three different contributions to these mass spectrums are considered. 
 %The \bjpsimumuk decays are very often studies at LHCb and in this particular case, there will be three components to the fit.
@@ -577,7 +578,6 @@ The $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ signal yield 
 \includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlhighfcmeRun1.pdf}\put(-50,133){(e)}%
 \includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlhighfcme2016.pdf}\put(-50,133){(f)}
 \caption{Fit results in logharithmic scale to (a) Run \Rn{1} (b) Run \Rn{2} $\mu^{+} \mu^{-} K^{+}$ mass spectrum with no fractional corrected mass split, (c)(d) low FCME bin, (e)(f)high FCME bin.}
-%\vspace*{-1.0cm}
 \label{fig:run1jpsikfitnofcme}
 \end{figure}
 
@@ -614,7 +614,7 @@ A simultaneous unbinned maximum likelihood fit to the $\mu^{+} \mu^{-} \mu^{+}$ 
 Shapes and yields used for different components of the signal corrected mass fits will be described in this sections.
 Components are constrained using either by using data driven methods or simulated samples.
 
-Throughout the analysis there was a \textbf{blinding procedure} in place where the signal region $4500\mevcc <M_{B_{corr}}<5500\mevcc$ was blinded. \mybox{\color{red} Sally once unblinded delete} Hence in data plots in this region is omitted. In blinded unbinned likelihood fit, the shapes and yields are extrapolated to the blinded region in order to asses sensitivity, summarized in Section ~\ref{fitsens}. Once given permission to unblind unbinned likelihood fit to full data will be perfomed with signal yield floating and mean $\mu_{sig}$ and width $\sigma_{sig}$ constrained from simulation.
+Throughout the analysis there was a \textbf{blinding procedure} in place where the signal region $4500\mevcc <M_{B_{corr}}<5500\mevcc$ was blinded. Hence in the blinded data fits this region is omitted. In this blinded unbinned likelihood fit to the data, the shapes and yields are extrapolated to the blinded region in order to asses sensitivity, summarized in ~\autoref{fitsens}\mybox{\color{red} sensitivity}. Upon unblinding unbinned likelihood fit to full data is perfomed with signal yield floating and mean $\mu_{sig}$ and width $\sigma_{sig}$ constrained from simulation.
 
 \subsubsection{Signal}
 The full fit to Run \Rn{1} and Run \Rn{2} data requires the signal shape knowledge for combined dataset. This is obtained fromRun \Rn{1} and Run \Rn{2} signal simulation \textit{cocktail}. The cocktail is created after full selection by assigning event-by-event weights, \textit{$w^{i}$}, which capture the differences between Run \Rn{1} and Run \Rn{2} simulation, that ware not considered by full selection.
@@ -641,14 +641,17 @@ w^{2012} \times N^{2012} + w^{2016} \times N^{2016} = N^{2012} + N^{2016},
 
 These constraints yield following value for event-by-event (or rather yearly) weights
 
+
 \begin{equation}
-w^{2012}= \frac{N^{2012}+N^{2016}}{N^{2012}+ \frac{n^{2016}}{n^{2012}}}=0.93,
+w^{2012}= \frac{N^{2012}+N^{2016}}{N^{2012}\times(1.0+\frac{n^{2016}}{n^{2012}})}=0.931
 \end{equation}
 
 
 \begin{equation}
-w^{2016}= \frac{N^{2016}+N^{2012}}{N^{2016}+ \frac{n^{2012}}{n^{2016}}}=1.09,
+w^{2016}= \frac{N^{2016}+N^{2012}}{N^{2016}\times(1.0+ \frac{n^{2012}}{n^{2016}})}=1.073,
 \end{equation}
+
+
 
 where $N^{2012},N^{2016}$ number of events at \textit{generator level}, $\mathcal{L}^{2012},\mathcal{L}^{2016}$ are integrated luminosities, and $\sigma^{2012}_{pp \rightarrow b \overline{b}}, \sigma^{2016}_{pp \rightarrow b \overline{b}}$ are cross-sections in a given year. $N^{2012},N^{2016}$ number of events at \textit{generator level} is obtained by dividing number of reconstructed events $N_{REC}$ by the reconstruction efficiency $\varepsilon_{REC}$ (see~\autoref{tab:effsumarry}). Values for these variables are summarized in ~\autoref{tab:MCweightNOFCME}.
 
@@ -668,7 +671,7 @@ $\mathcal{L}$ & 2968 $\rm{pb^{-1}}$ & 1612 $\rm{pb^{-1}}$ \\
 $\sigma_{pp \rightarrow b \overline{b}}$ & 1 & 2  \\
 \bottomrule
 \end{tabular}
-\caption{Signal MC weights used to create cocktail of mixed 2012+2016 MC.}
+	\caption{Signal simulation weights used to create cocktail of mixed Run \Rn{1} (2012) and Run \Rn{2} (2016) cocktail. The cross-sections listed here are not absolute numbers, but rather relative as only its ratio matters.}
 \label{tab:MCweightNOFCME}
 \end{table}
 
@@ -695,7 +698,7 @@ After obtaining combined Run \Rn{1} and \Rn{2} signal \textit{cocktail}, fit to 
 
 \subsubsection{Partially Reconstructed Background}
 \label{finfitpr}
-Partially reconstructed backgrounds are still non-negligible after full selection chain as shown in \mybox{\color{red} sally reference when written}. In order to account for the contribution of the partially reconstructed backgrounds in the final signal fit, contaminating yield needs to be estimated and shape needs to be modelled. Simulation sample for partially reconstructed background that originates through $D^{0}$ was described in Section ~\ref{PartRecoCon} \mybox{\color{red} sally reference when written} is used for both the yield estimate and shape modelling.
+Partially reconstructed backgrounds are still non-negligible after full selection chain. In order to account for the contribution of the partially reconstructed backgrounds in the final signal fit, contaminating yield needs to be estimated and shape needs to be modelled. Simulation sample for partially reconstructed background that originates through $D^{0}$ was described in~\autoref{partrecobak} is used for both the yield estimate and shape modelling.
 
 In order to get estimate for the yield of these partially reconstructed decays, \bjpsimumuk decays can be used as normalisation. Normalising to \bjpsimumuk decay channel following relationship must hold 
 %This sample passed all of the selection and total selection efficiency $\varepsilon_{total}$ is listed in ~\autoref{tab:prsum}. \label{partdetailed} The Table~\ref{tab:partrecotabapp} in Appendix~\ref{partdetailed} details the efficiencies in individual steps of selection. 
@@ -711,7 +714,7 @@ where $\varepsilon^{x}$ is total selection efficiency of $x$ channel, $N_{x}$ is
 $N_{\bjpsimumuk}$ is was obtained from~\autoref{tab:normchannelyields}. $\mathcal{B}(\pr)$ is obtained by amalgamating $\mathcal{B}(D^{0} \rightarrow K^+ \pi^- \mu^+ \mu^{-}) = (4.17\pm0.12\pm0.40)\times 10^{-6}$\cite{Aaij:2015hva} and $\mathcal{B}(B^{+} \rightarrow D l^{+} \nu X) = (9.8 \pm 0.7)\times 10^{-2}$ \cite{Patrignani:2016xqp} yielding $\mathcal{B}(\pr) \approx (4.10\pm0.50)\times 10 ^{-7 }$. $B^+ \rightarrow (J/\psi \rightarrow \mu^+ \mu^{-}) K^{+}$ branching fraction is obtained with the same approach: multiplying $\mathcal{B}(B^{+} \rightarrow J/\psi K^{+})$ = (1.026$\pm 0.031)\times 10^{-3}$\cite{Patrignani:2016xqp} and $\mathcal{B}(J/\psi \rightarrow \mu^{-} \mu^{+})$ = (5.961 $\pm0.0033) \times 10^{-2}$\cite{Patrignani:2016xqp} yielding $\mathcal{B}(\bjpsimumuk)=(6.12\pm0.19)\times 10^{-5}$.
 
 %This simulation sample all of the selection and total selection efficiency $\varepsilon_{total}$ is listed in ~\autoref{tab:prsum}. 
-All the relevant total selection efficiencies are obtained from the full simulation sample and are shown in~\autoref{tab:prsum}. Due to the usage of a proxy simulation for this partially reconstructed decays (using a pion rather than a muon in one case), as described in Section ~\ref{PartRecoCon} \mybox{\color{red} sally reference when written}, trigger efficiency $\varepsilon_{TRG}$ cannot be obtained from simulation for partially reconstructed decays, because the \texttt{HLT2} trigger (see~\autoref{tab:triggersel}) would make positive decision only either because of finding dimuon pair or two or three-body decays, hence the trigger ratio $\frac{\varepsilon^{\pr}_{TRG}}{\varepsilon^{\bjpsimumuk}_{TRG}}$ 
+All the relevant total selection efficiencies are obtained from the full simulation sample and are shown in~\autoref{tab:prsum}. Due to the usage of a proxy simulation for this partially reconstructed decays (using a pion rather than a muon in one case), as discussed in~\autoref{partrecobak}, trigger efficiency $\varepsilon_{TRG}$ cannot be obtained from simulation for partially reconstructed decays, because the \texttt{HLT2} trigger (see~\autoref{tab:triggersel}) would make positive decision only either because of finding dimuon pair or two or three-body decays, hence the trigger ratio $\frac{\varepsilon^{\pr}_{TRG}}{\varepsilon^{\bjpsimumuk}_{TRG}}$ 
 is assumed to be 1, which is rather a conservative estimate (overestimate) but makes sure that other partially reconstructed backgrounds are accounted for. Other efficiency that was not accounted for because of the same reason is PID efficiency, $\varepsilon_{PID}$.
 Moreover as this proxy simulation was not accesible for Run \Rn{2}, the same ratio of efficiencies as in Run \Rn{1} is used.
 
@@ -772,7 +775,7 @@ The shape is best described with sum of two Crystal Ball functions, more in~\aut
 
 \subsubsection{MisID background}
 \label{misidfitstrat}
-The level and the shape of misID background is determined by fitting the misID data samples obtained using the method described in Section ~\ref{misidprocedure} \mybox{\color{red} sally ref}. A binned $\chi^{2}$ fit is used to extract the shape and yields parameters. The reason for usage of the binned $\chi^{2}$ fit is that the misID samples are low-statistics weighted samples and the shape and yield needs be propagated to the final data fit while preserving the fit parameter correlations. Since there is prescale factor of 1\% at stripping level, to obtain the correct yield, the final number needs to be multiplied by to counteract the prescale.
+The level and the shape of misID background is determined by fitting the misID data samples obtained using the method described in~\autoref{misidprocedure}. A binned $\chi^{2}$ fit is used to extract the shape and yields parameters. The reason for usage of the binned $\chi^{2}$ fit is that the misID samples are low-statistics weighted samples and the shape and yield needs be propagated to the final data fit while preserving the fit parameter correlations. Since there is prescale factor of 1\% at stripping level, to obtain the correct yield, the final number needs to be multiplied by to counteract the prescale.
 
 The misID weights obtained from kinematically binned \bjpsikst samples (see ~\autoref{extraction}) have uncertainties associated with them as shown in ~\autoref{fig:JpsiKnew},~\autoref{fig:JpsiKaonnew},~\autoref{fig:JpsiPionnew2016},~\autoref{fig:JpsiKaonnew2016}. These uncertainties are accounted for in the fit by Gaussian variation of the weights within the uncertainty in a given kinematic bin of $p,\eta$ for each particle species and then folded in to the misID calculation. In this case 100 variations were used. Each variation results in different template for misID shape. This misID template is then subsequently binned in 15 bins of corrected mass. From each corrected mass bin, mean $\mu_{var}$ and error $\sigma_{var}$ from gaussianly distributed number of misID events is obtained. 
 
@@ -827,13 +830,60 @@ Signal data fit so far includes components for signal component, partially recon
 \subsection{Signal Data Fit}
 \label{fitsens}
 
-There are two types of fits that are performed to signal data. Firstly, \textbf{blinded signal data fit} is performed in order to evaluate the expected sensitivity and is only fitted to blinded signal data. Secondly \textbf{full signal data fit} is performed to perform the measurement of the branching fraction/setting limit.
+There are two types of fits that are performed to signal data. Firstly, \textbf{blinded signal data fit} is performed in order to evaluate the expected sensitivity and is only fitted to blinded signal data. Secondly \textbf{full signal data fit} is performed to perform the measurement for setting the limit on the $\mathcal{B}(\Bmumumu)$.
+
+\textbf{Signal fit model}
+The full signal fit model described by probability density function (PDF) consists of all the mentioned components. There are two types of fit models that are used to fit data: non-simultaneous and simultaneous fit model, where the latter is the one which is used for limit setting. Moreover there are two types of hypotheses that needs to be established: one where there is a presence of signal, also known as signal+background hypothesis model, $f(s+b)$ defined as
+\begin{equation}
+f(s+b)= N^{sig}\times f^{sig} + N^{misID}f^{misID} + N^{PartReco}f^{PartReco} + N^{combi} \times f^{combi}
+	\label{eq:fullhypo}
+\end{equation} 
+and background only hypothesis, which is the same as $f(s+b)$ but with $\mathcal{B}(\Bmumumu)=0$. In~\autoref{eq:fullhypo}, $N^{sig}=N(\Bmumumu)$ in the observed number of signal events which are related to the branching fraction using normalisation channel in a following way:
+\begin{equation}
+{\mathcal{B}(\Bmumumu)}=\alpha \times N(\Bmumumu)
+\end{equation}
+\begin{equation}
+	=\underbrace{\frac{\mathcal{B}(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}) \times \epsilon_{B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}}}{N(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}) \times \epsilon_{B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu}}}_{\text{$\alpha$}} \times N(B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu),
+\end{equation}
+\begin{equation}
+	=\underbrace{\frac{\mathcal{B}(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+})}{N(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}) \times  R_{FCME}}}_{\text{$\alpha$}} \times N(B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu),
+\end{equation}
+where $N_{(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+})}$ and $N_{B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu}$, $\alpha$ is known as $\textit{single event sensitivity}$, $R_{FCME}$ is the relevant efficiency ratio detailed in~\autoref{EfficiencySummary}. Hence for Run \Rn{1} and Run \Rn{2} altogether for non-simultaneous fit $N^{sig}$ is a function of six parameters $N^{sig}(R^{21}_{FCME},R^{26}_{FCME},N^{Run \Rn{1}}(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}),N^{Run \Rn{2}}(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}), \mathcal{B}(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}),\mathcal{B}(\Bmumumu))$. In  simultaneous case $R^{21}_{FCME}$,$R^{26}_{FCME}$, $N^{Run \Rn{1}}(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+})$ and $N^{Run \Rn{2}}(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+})$ is further split into $\sigma_{lowFCME}$ and $\sigma_{highFCME}$ bins.
+
+$N^{PartReco}$ is obtained in the same way.
 
 
 \textbf{Blinded signal data fit}.
-In order to be able to get the expected sensitivity for this search a simultaneous unbinned maximum likelihood extended fit to the blinded data of corrected mass after the full selection in two bins of FCME is performed. As a crosscheck, also fit with no FCME split is done. The summary of the components for the signal data fita, their modelling and constraints are shown in~\autoref{tab:floatingparsummary}. Most of the parameters of the fit are fixed and if they are not fixed their range is allowed to be within $\pm5\sigma$. Error propagation from the parametrisations of different components is dealt with by using two types of constraints: gaussian constraints and multivariate gaussian constraints. The gaussian constraint, \textit{gaussian}, when imposed has central value of the fitted parameter and as width the error of the fitted parameter. Multivariate gaussian constraint, \textit{mvg\_gaussian}, is generalisation of gaussian constraint to higher dimensions and is used for misID parametrisation as the correlations between parameters' errors need to be propagated to the signal fit.
+In order to be able to get the expected sensitivity for this search a simultaneous unbinned maximum likelihood extended fit to the blinded data of corrected mass after the full selection in two bins of FCME is performed. As a crosscheck, also fit with no FCME split is done. The summary of all the components adding to the total probability density function (PDF) for the signal data fit, their modelling and constraints are shown in~\autoref{tab:floatingparsummary}. There are two PDFs that are used for sensitivity studies: signal+background PDF $f(s+b)$ defined as 
+\begin{equation}
+f(s+b)= N^{sig}\times f^{sig} + N^{misID}f^{misID} + N^{PartReco}f^{PartReco} + N^{combi} \times f^{combi}
+\end{equation}
+and background only PDF, which is the same as $f(s+b)$ but with $\mathcal{B}(\Bmumumu)=0$.
 
-The fit to blinded data after all selection and with modelling of its components is shown in Figure~\ref{fig:sigfit} for all categories of FCME. As the signal region is blinded, the fit model for now is reduced by the signal shape, which leaves background-only model. Number of expected background events, $N_b$, is then obtained by integrating the total background PDF (misid PDF + partreco PDF + combinatorial PDF) in the signal region.
+Most of the parameters of the fit are fixed and if they are not fixed their range is allowed to be within $\pm5\sigma$. Error propagation from the parametrisations of different components is dealt with by using two types of constraints: gaussian constraints and multivariate gaussian constraints. The gaussian constraint, \textit{gaussian}, when imposed has central value of the fitted parameter and as width the error of the fitted parameter. Multivariate gaussian constraint, \textit{mvg\_gaussian}, is generalisation of gaussian constraint to higher dimensions and is used for misID parametrisation as the correlations between parameters' errors need to be propagated to the signal fit.
+
+The fit to blinded data after all selection and with modelling of its components is shown in~\autoref{fig:sigfitpretty} for all categories of FCME. As the signal region is blinded, the fit model for now is reduced by the signal shape, which leaves background-only model. The total  Number of expected background events, $N_b$, is then obtained by integrating the total background PDF (misid PDF + partreco PDF + combinatorial PDF) in the signal region. Number of signal events is obtained from the fit and can be translated into branching fraction $\alpha=\frac{\mathcal{B}(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}) \times \epsilon_{B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}}}{N_{(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+})} \times \epsilon_{B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu}}$
+
+\begin{equation}
+\mathcal{B}(B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu) = \alpha \times N_{B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu}
+\end{equation}
+\begin{equation}
+=\underbrace{\frac{\mathcal{B}(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}) \times \epsilon_{B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}}}{N_{(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+})} \times \epsilon_{B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu}}}_{\text{$\alpha$}} \times N_{B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu},
+ \end{equation}
+where $N_{(B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+})}$ and $N_{B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu}$
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{./efficiency/blindedfits/probnnmu035probmu35plotB23MuNuFitPretty_chi2_reallynice.pdf}\put(-30,100){(a)}%
+\newline
+\includegraphics[width=0.5\linewidth]{./efficiency/blindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_reallynice.pdf}\put(-30,100){(b)}%
+\includegraphics[width=0.5\linewidth]{./efficiency/blindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_reallynice.pdf}\put(-30,100){(c)}%
+\caption{(a) Unbinned maximum likelihood fit to the blinded data in one bin of FCME. Simultaneous unbinned maximum likelihood fit to blinded data after full selection chain in two bins of FCME, with (b) fit to $\sigma_{low}$ bin, (c) $\sigma_{high}$ bin.}
+\label{fig:sigfitpretty}
+\end{figure}
+
 
 
 \begin{table}[H]
@@ -884,39 +934,6 @@ The fit to blinded data after all selection and with modelling of its components
 \caption{For all floating variables the range is constrained within $\pm 5 \sigma$. $N^{\{\rm{Run \Rn{1}, \Rn{2}}\}}_{sig}=\frac{\mathcal{B}}{\alpha^{\{\rm{Run \Rn{1}, \Rn{2}}\}}}$.}
 \label{tab:floatingparsummary}
 \end{table}
-
-
-\begin{table}[h]
-\centering
-\begin{tabular}{ l l  l }
-\toprule
-	Fit Parameter & Value & Status  \\ \midrule
-\multicolumn{3}{c}{Yields} \\ \midrule
-N$_{\bjpsimumuk}$ (Signal)  &  free \\
-N$_{\bjpsimumupi}$ & free\\
-N$_{Combinatorial}$ & free\\
-\midrule
-	\multicolumn{2}{c}{Signal Shape Parameters (double-sided Ipatia)} \\
-\midrule
-	$\mu^{IP}_{\bjpsimumuk}$ & constrained from signal MC\\
-	$\sigma^{IP}_{\bjpsimumuk}$ & constrained from signal MC\\
-Others & fixed from MC\\
-\midrule
-     \multicolumn{2}{c}{\bjpsimumupi Shape Parameters (double-sided Crystal Ball)} \\
-\midrule
-	$\mu^{CB}_{\bjpsimumupi}$ & constrained from signal MC\\
-	$\sigma^{CB}_{\bjpsimumupi}$ & constrained from signal MC\\
-Others & fixed from MC \\
-\midrule
-	\multicolumn{2}{c}{Combinatorial Shape Parameters}  \\
-\midrule
-exponential par.  & free\\
-\bottomrule
-\end{tabular}
-\caption{Summary of the fit parameters and individual component constraints for the fit to \bjpsimumuk decays.}
-\label{tab:floatingparsummarynorm}
-\end{table}
-
 
 
 %\section{Efficiency Ratio}

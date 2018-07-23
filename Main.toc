@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {2.4}Electroweak unification}{32}{section.2.4}
 \contentsline {section}{\numberline {2.5}The Higgs Mechanism}{35}{section.2.5}
 \contentsline {section}{\numberline {2.6}Fermion mass generation}{36}{section.2.6}
-\contentsline {section}{\numberline {2.7} The Quark Mixing Matrix}{38}{section.2.7}
+\contentsline {section}{\numberline {2.7}The Quark Mixing Matrix}{38}{section.2.7}
 \contentsline {section}{\numberline {2.8}Fully Leptonic \mb {P^{+}\rightarrow l^{+} \nu _{l}} decays}{43}{section.2.8}
 \contentsline {section}{\numberline {2.9}Fully Leptonic \mb {B^{+}\rightarrow l^{+} \nu _{l} \gamma } decays}{46}{section.2.9}
 \contentsline {section}{\numberline {2.10}Fully Leptonic \mb {B^{+}\rightarrow l^{+} l^{-} l^{+} \nu _{l}} decays}{47}{section.2.10}
@@ -64,39 +64,39 @@
 \contentsline {chapter}{\numberline {6}Background Studies}{125}{chapter.6}
 \contentsline {section}{\numberline {6.1}Combinatorial Background}{125}{section.6.1}
 \contentsline {section}{\numberline {6.2}MisID type background}{127}{section.6.2}
-\contentsline {section}{\numberline {6.3}Partially Reconstructed Background}{132}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Partially Reconstructed Backgrounds, where $D^{0} \rightarrow \eta / \eta ' X,$ where $\eta / \eta ' \rightarrow \mu \mu \gamma $}{134}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Partially Reconstructed $B \rightarrow \eta (') V$ Backgrounds}{135}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Rare and resonant $B^{+} \rightarrow \pi ^{+} / K^{+} \mu ^{-} \mu ^{+}$ backgrounds}{136}{section.6.4}
-\contentsline {section}{\numberline {6.5}Summary}{137}{section.6.5}
-\contentsline {chapter}{\numberline {7} Mass fits and efficiencies}{138}{chapter.7}
-\contentsline {section}{\numberline {7.1}Efficiency Ratio}{138}{section.7.1}
-\contentsline {section}{\numberline {7.2}Summary of Efficiencies}{140}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Detector Acceptance Efficiency (GEN)}{142}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Reconstruction Efficiency (REC)}{143}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Trigger Efficiency (TRG)}{143}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}Offline Selection (OFF)}{144}{subsection.7.2.4}
-\contentsline {subsection}{\numberline {7.2.5}Combinatorial BDT and Misid BDT efficiency}{146}{subsection.7.2.5}
-\contentsline {subsection}{\numberline {7.2.6}Fitting Range Efficiency (FR)}{149}{subsection.7.2.6}
-\contentsline {subsection}{\numberline {7.2.7}\gls {PID} Efficiencies (PID)}{150}{subsection.7.2.7}
-\contentsline {section}{\numberline {7.3}Mass Fits}{151}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Normalisation Channel Fit}{151}{subsection.7.3.1}
-\contentsline {subsubsection}{Signal}{152}{section*.95}
-\contentsline {subsubsection}{\mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {(\ensuremath {{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\psi }\xspace \mskip 2mu}}}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}}\xspace }\xspace ){\ensuremath {{\ensuremath {\ensuremath {\pi }\xspace }}\xspace ^+}}\xspace }}\xspace \xspace } Background}{152}{section*.96}
-\contentsline {subsubsection}{Combinatorial Background}{152}{section*.98}
-\contentsline {subsubsection}{Fit to \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {(\ensuremath {{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\psi }\xspace \mskip 2mu}}}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}}\xspace }\xspace ){\ensuremath {{\ensuremath {\ensuremath {K}\xspace }}\xspace ^+}}\xspace }}\xspace \xspace } Data}{153}{section*.100}
-\contentsline {subsection}{\numberline {7.3.2}Signal Channel Fit}{155}{subsection.7.3.2}
-\contentsline {subsubsection}{Signal}{156}{section*.103}
-\contentsline {subsubsection}{Partially Reconstructed Background}{158}{section*.106}
-\contentsline {subsubsection}{MisID background}{161}{section*.109}
-\contentsline {subsubsection}{Combinatorial Background}{164}{section*.112}
-\contentsline {subsection}{\numberline {7.3.3}Signal Data Fit}{165}{subsection.7.3.3}
-\contentsline {chapter}{\numberline {8}Results}{168}{chapter.8}
-\contentsline {chapter}{Bibliography}{169}{chapter.8}
-\contentsline {chapter}{Appendices}{176}{chapter*.115}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{176}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{179}{appendix.B}
-\contentsline {chapter}{\numberline {C}Fitting functions}{181}{appendix.C}
-\contentsline {section}{\numberline {C.1}Crystal Ball function}{181}{section.C.1}
-\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{182}{section.C.2}
-\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{182}{section.C.3}
+\contentsline {section}{\numberline {6.3}Partially Reconstructed Background}{133}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Partially Reconstructed Backgrounds, where $D^{0} \rightarrow \eta / \eta ' X,$ where $\eta / \eta ' \rightarrow \mu \mu \gamma $}{135}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Partially Reconstructed $B \rightarrow \eta (') V$ Backgrounds}{136}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Rare and resonant $B^{+} \rightarrow \pi ^{+} / K^{+} \mu ^{-} \mu ^{+}$ backgrounds}{137}{section.6.4}
+\contentsline {section}{\numberline {6.5}Summary}{138}{section.6.5}
+\contentsline {chapter}{\numberline {7}Mass fits and efficiencies}{139}{chapter.7}
+\contentsline {section}{\numberline {7.1}Efficiency Ratio}{139}{section.7.1}
+\contentsline {section}{\numberline {7.2}Summary of Efficiencies}{141}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Detector Acceptance Efficiency (GEN)}{143}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Reconstruction Efficiency (REC)}{144}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Trigger Efficiency (TRG)}{144}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Offline Selection (OFF)}{145}{subsection.7.2.4}
+\contentsline {subsection}{\numberline {7.2.5}Combinatorial BDT and Misid BDT efficiency}{147}{subsection.7.2.5}
+\contentsline {subsection}{\numberline {7.2.6}Fitting Range Efficiency (FR)}{150}{subsection.7.2.6}
+\contentsline {subsection}{\numberline {7.2.7}\gls {PID} Efficiencies (PID)}{151}{subsection.7.2.7}
+\contentsline {section}{\numberline {7.3}Mass Fits}{153}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Normalisation Channel Fit}{153}{subsection.7.3.1}
+\contentsline {subsubsection}{Signal}{153}{section*.95}
+\contentsline {subsubsection}{\mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {(\ensuremath {{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\psi }\xspace \mskip 2mu}}}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}}\xspace }\xspace ){\ensuremath {{\ensuremath {\ensuremath {\pi }\xspace }}\xspace ^+}}\xspace }}\xspace \xspace } Background}{153}{section*.96}
+\contentsline {subsubsection}{Combinatorial Background}{154}{section*.98}
+\contentsline {subsubsection}{Fit to \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {(\ensuremath {{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\psi }\xspace \mskip 2mu}}}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}}\xspace }\xspace ){\ensuremath {{\ensuremath {\ensuremath {K}\xspace }}\xspace ^+}}\xspace }}\xspace \xspace } Data}{155}{section*.100}
+\contentsline {subsection}{\numberline {7.3.2}Signal Channel Fit}{157}{subsection.7.3.2}
+\contentsline {subsubsection}{Signal}{158}{section*.103}
+\contentsline {subsubsection}{Partially Reconstructed Background}{160}{section*.106}
+\contentsline {subsubsection}{MisID background}{163}{section*.109}
+\contentsline {subsubsection}{Combinatorial Background}{166}{section*.112}
+\contentsline {subsection}{\numberline {7.3.3}Signal Data Fit}{167}{subsection.7.3.3}
+\contentsline {chapter}{\numberline {8}Results}{172}{chapter.8}
+\contentsline {chapter}{Bibliography}{173}{chapter.8}
+\contentsline {chapter}{Appendices}{180}{chapter*.115}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{180}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{183}{appendix.B}
+\contentsline {chapter}{\numberline {C}Fitting functions}{185}{appendix.C}
+\contentsline {section}{\numberline {C.1}Crystal Ball function}{185}{section.C.1}
+\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{186}{section.C.2}
+\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{186}{section.C.3}
