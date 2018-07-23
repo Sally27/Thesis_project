@@ -1,13 +1,14 @@
 \chapter{Background Studies}
 \label{chap:back}
 
-\textit{The decay \Bmumumu is a fully leptonic decay with good potential for eliminating many types of the backgrounds. In this chapter parametrisation and estimations for all considered backgrounds are sketched. A quick summary of all backgrounds that past the stringent selection were provided in~\autoref{bkgquick}.}
+\textit{The decay \Bmumumu is a fully leptonic decay with good potential for eliminating many types of the backgrounds. In this chapter parametrisation and estimations for all considered backgrounds are sketched. A quick summary of all backgrounds that passed the stringent selection were provided in~\autoref{bkgquick}.}
+
 
 
 \section{Combinatorial Background}
-Combinatorial background comes around as a random combination of tracks from different $b$-decay chains.  The usual method at \gls{LHCb} of estimating the amount and the shape of this background include extrapolation from the upper mass data sideband to the signal region. In this case the upper mass sideband is defined as $M_{\rm{B_{corr}}} > 5500 \mevcc$ and the signal region is defined to be $ 4500 \mevcc <M_{\rm{B_{corr}}} < 5500 \mevcc$. The characteristic shape for this background can be described by exponential function up to certain point, where this point is the primary discusion of this section. Since tight selection resulted in low-statistics data samples the extrapolation from upper mass sideband introduces a big uncertainty on the exponential constant and cannot be used to estimate the correct shape and yield of this background. What can be done, however, is to assume the exponential shape for combinatorial component and let the exponential constant be a floating parameter in the data fit. This method for estimation of the combinatorial component will be re-explained in data mass fits\mybox{SALLY:maybe reference}. In the rest of this section exponential parametrisation of this background between $4000 \mevcc <M_{\rm{B_{corr}}} < 7000 \mevcc$ is motivated. This is important as the final fitting region was chosen in such a way as to make sure that combinatorial background is exponential in this entire fitting region. 
+Combinatorial background comes around as a random combination of tracks from different $b$-decay chains. The usual method at \gls{LHCb} of estimating the amount and the shape of this background include extrapolation from the upper mass data sideband to the signal region. In this case the upper mass sideband is defined as $M_{\rm{B_{corr}}} > 5500 \mevcc$ and the signal region is defined to be $ 4500 \mevcc <M_{\rm{B_{corr}}} < 5500 \mevcc$. The characteristic shape for this background can be described by exponential function up to certain point, where this point is the primary discusion of this section. Since tight selection resulted in low-statistics data samples the extrapolation from upper mass sideband introduces a big uncertainty on the exponential constant and cannot be used to estimate the correct shape and yield of this background. What can be done, however, is to assume the exponential shape for combinatorial component and let the exponential constant be a floating parameter in the data fit. This method for estimation of the combinatorial component will be re-explained in data mass fits\mybox{SALLY:maybe reference}. In the rest of this section exponential parametrisation of this background between $4000 \mevcc <M_{\rm{B_{corr}}} < 7000 \mevcc$ is motivated. This is important as the final fitting region was chosen in such a way as to make sure that combinatorial background is exponential in this entire fitting region. 
 
-Apart from the nominal upper mass data sideband sample, two other samples are analysed as proxies for this type of background. Despite the fact that these samples are also scarcely populated they are studied altogether to determine in which mass regions the combinatorial background can be considered exponential. Firstly, same sign data sample was studies (the same one as in~\autoref{cloniatkos}), where this sample consists of $\mu^{+} \mu^{+} \mu^{+} \nu$ events passing all selection up to MVA selection to have sufficient statistics. Secondly an inclusive $b\bar{b}$ simulation sample consisting of events where two muons with $p > 3$ \gevc are required to be present together with a third muon that hae passed through all the stripping selection. This exponential component stops rising at low $M_{\rm{B_{corr}}}$ in all samples. As seen in~\autoref{fig:bbarcombi}(a)(c), the drop appears at $M_{\rm{B_{corr}}} = 4000 \mevcc$. Hence the choice of fitting region $4000 \mevcc<M_{\rm{B_{corr}}}<7000\mevcc$.
+Apart from the nominal upper mass data sideband sample, two other samples are analysed as proxies for this type of background. Despite the fact that these samples are also scarcely populated they are studied altogether to determine in which mass regions the combinatorial background can be considered exponential. Firstly, same sign data sample was studies (the same one as in~\autoref{cloniatkos}), where this sample consists of $\mu^{+} \mu^{+} \mu^{+} \nu$ events passing all selection up to MVA selection to have sufficient statistics. Secondly an inclusive $b\bar{b}$ simulation sample consisting of events where two muons with $p > 3$ \gevc are required to be present together with a third muon that have passed through all the stripping selection. This exponential component stops rising at low $M_{\rm{B_{corr}}}$ in all samples. As seen in~\autoref{fig:bbarcombi}(a)(c), the drop appears at $M_{\rm{B_{corr}}} = 4000 \mevcc$. Hence the choice of fitting region $4000 \mevcc<M_{\rm{B_{corr}}}<7000\mevcc$.
 
 \begin{figure}[H]
 \center
@@ -18,14 +19,14 @@ Apart from the nominal upper mass data sideband sample, two other samples are an
 \label{fig:bbarcombi}
 \end{figure}
 
-This background is heavily supressed with dedicated MVA selection described in~\autoref{CombiBDTsel}.
+This background is heavily suppressed with dedicated MVA selection described in~\autoref{CombiBDTsel}.
 
 
-\subsection{MisID type background}
+\section{MisID type background}
 \label{misidprocedure}
 MisID background is one of the most prominent backgrounds that is expected to be present. This type of background proceeds mostly via cascade decays, where $B^{+} \rightarrow (\overline{D^{0}} \rightarrow h X \mu^{-} \nu) \mu^{+} \nu$ and then $h\in[K^{+},\pi^{+}]$ are misidentified as muons. The contributions from decays where two muons are correctly identified as muons and third track is consistent with proton passing all the selection is also considered, however it will be shown that this contribution is very limited. 
 
-As discussed in~\autoref{bkgquick} there are two possibilites for the charge for the misidentified background. In one case the sign of the misidentified particle agrees with the sign of the mother $B$, \textit{SS misID} background. The opposite case is denoted as \textit{OS misID} decays. These two types of backgrounds are studied using data-driven method described below. Finally, also double misID employing same data-driven methods was studied, where there are two hadrons misidentfied as muons, however, the double misID contribution proved to be insignificant.
+As discussed in~\autoref{bkgquick} there are two possibilities for the charge for the misidentified background. In one case the sign of the misidentified particle agrees with the sign of the mother $B$, \textit{SS misID} background. The opposite case is denoted as \textit{OS misID} decays. These two types of backgrounds are studied using data-driven method described below. Finally, also double misID employing same data-driven methods was studied, where there are two hadrons misidentfied as muons, however, the double misID contribution proved to be insignificant.
 
 
 To determine the amount and the shape of the misID background, data sample with the same selection as for the signal sample is obtained with one marginal difference - \textbf{no \gls{PID} cut} on one muon, either positive or negative. As the muon misID rate is different for pions and kaons~\cite{LHCb-DP-2013-001}, the species of the hadron, $h$ must be determined at first. The strategy for this purpose is to isolate the hadron into separate hadron \gls{PID} regions, and to determine the cross-feed of one region into the other. For this, an iterative procedure as shown in \autoref{fig:misidproc} is applied. It splits the misidentified data sample into three \gls{PID} regions, where the hadron candidate is consistent with the kaon, pion and proton hypotheses. For this procedure, probabilities of identifying a given species with given \gls{PID} requirement are taken from dedicated control samples in data. The \gls{PID} performance is highly dependant on kinematic properties of the misidentified particle and hence the estimation is performed in bins of momentum $p$ and pseudorapidity $\eta$.
@@ -140,7 +141,7 @@ Examples of misID distributions with unweighted, weighted by probability with no
 %\includegraphics[width = 0.9\textwidth]{/bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23MuNu_MisidOS_Run1_mu2isNotMuon_mu2inMuonAcc_trigger_mu1nShared_mu3nShared_qmincut_KaonPID__NEW.pdf}\put(-300,133){(e)}\put(-50,133){(f)}
 %\newline
 %\includegraphics[width = 0.9\textwidth]{/bkg/misid/example/compare_misid_modifiedandcutnSharednewData_B23MuNu_MisidOS_Run1_mu2isNotMuon_mu2inMuonAcc_trigger_mu1nShared_mu3nShared_qmincut_PionPID__NEW.pdf}\put(-300,133){(g)}\put(-50,133){(h)}
-\caption{Examples of distributions where misID procedure is applied to obtain yields and shapes for Run \Rn{1} before misID BDT was applied. On the left, unweighted misID distributions (black), weighted with no crossfeed misID distributions (blue) and weighted misID distributions with crossfeed (red) for (a) kaon SS (c) pion SS . On the right, only weighted misID distributions for Run \Rn{1} (b) kaon SS (d) pion SS are shown together with the yield estimates.  These shapes are obtained after combinatorial BDT was applied, but before MisidBDT was applied. Total yields need to be multiplied by 100 to counteract the prescale that was applied on this data.}
+\caption{Examples of distributions where misID procedure is applied to obtain yields and shapes for Run \Rn{1} before misID BDT was applied. On the left, unweighted misID distributions (black), weighted with no crossfeed misID distributions (blue) and weighted misID distributions with crossfeed (red) for (a) kaon SS (c) pion SS . On the right, only weighted misID distributions for Run \Rn{1} (b) kaon SS (d) pion SS are shown together with the yield estimates. These shapes are obtained after combinatorial BDT was applied, but before MisidBDT was applied. Total yields need to be multiplied by 100 to counteract the prescale that was applied on this data.}
 \label{fig:misidtemp}
 \end{figure}
 
@@ -166,7 +167,7 @@ In order to estimate both the shape and the size of the partially reconstructed 
 
 The shape of this background is investigated with inclusive simulation samples containing also higher excited resonances of $D^{*0}, D_{2}^{*0}$, and so on. This simulation has one imperfection: it has two charged pions rather than muons coming from the $D^{0}$ decay, which are reconstructed as signal. In this study the effect of missing particles on the corrected mass shape is investigated hence these two pions become good proxies for the muons given the muon and pion have very similar mass. The only problem that could arise is if the selection efficiency was not constant as a function of the dipion mass, $M(\pi^{+}\pi^{-})$, as this would lead to shaping of the background, potentially underestimating the contributions from the resonant $\omega$ and $\rho$ region, which are present with the two muons. 
 
-For this reason all muon cuts from selection apart from the \gls{PID} are also applied to pions. Relative efficiency ratios including all the efficiencies after MVA stage are obtained, where for signal the total selection efficiency is $\epsilon^{tot}_{sig}=(0.263 \pm 0.003) \%$ and for partially reconstructed background $\epsilon^{tot}_{bkg}=0.068 \pm 0.001\%$. Assuming the branching fractions for $\mathcal{B}(\Bmumumu ) = 1\times10^{-8}$ and for $\mathcal{B}(\pr ) = (4.10\pm0.50)\times10^{-7}$, relative contamination between signal and partially reconstructed background results in~\autoref{fig:expectedinter}(a). 
+For this reason all muon cuts from selection apart from the \gls{PID} are also applied to pions. Relative efficiency ratios including all the efficiencies after MVA stage are obtained, where for signal the total selection efficiency is $\varepsilon^{total}_{\Bmumumu}=(0.263 \pm 0.003) \%$ and for partially reconstructed background $\epsilon^{total}_{\pr}=0.068 \pm 0.001\%$. Assuming the branching fractions for $\mathcal{B}(\Bmumumu ) = 1\times10^{-8}$ and for $\mathcal{B}(\pr ) = (4.10\pm0.50)\times10^{-7}$, relative contamination between signal and partially reconstructed background results in~\autoref{fig:expectedinter}(a). 
 
 To check the fact that there is no dangerous shaping of the background using this particular proxy simulation sample the full selection efficiency in bins of dipion mass is plotted. The efficiency flatness shown in~\autoref{fig:expectedinter}(b) means that this selection does not have model dependence and hence it is safe to use for shape estimates for the partially reconstructed backgrounds.
 %not exact because of minq contamination
@@ -175,12 +176,99 @@ To check the fact that there is no dangerous shaping of the background using thi
 \centering
 \includegraphics[width = 0.5\textwidth]{bkg/pr/variableBplus_Corrected_MassPartRecoScaled2012_0_102_supernice.pdf}\put(-50,70){(a)}
 \includegraphics[width = 0.47\textwidth]{bkg/pr/SelectionEfficiency_invmu1andmu2_PARTRECOMC_special.pdf}\put(-50,70){(b)}
-	\caption{(a) Signal and partially recosntructed background distributions scaled to their expected ratio after full MVA selection assuming following branching fractions: $\mathcal{B}(\Bmumumu ) = 1\times10^{-8}$ and $\mathcal{B}(\pr ) = (4.10\pm0.50)\times10^{-7}$. (b) Full selection efficiency as a function of invariant mass of the proxy pions is constant.}
+	\caption{(a) Signal and partially reconstructed background distributions scaled to their expected ratio after full MVA selection assuming following branching fractions: $\mathcal{B}(\Bmumumu ) = 1\times10^{-8}$ and $\mathcal{B}(\pr ) = (4.10\pm0.50)\times10^{-7}$. (b) Full selection efficiency as a function of invariant mass of the proxy pions is constant.}
 \label{fig:expectedinter}
 \end{figure}
 
 
-The most powerful part of selection that eliminates this part of the background is isolation as partially reconstructed background usually has more tracks. In the final fit, normalisation with respect to \bjpsimumuk is used. 
+The most powerful part of selection that eliminates this part of the background is isolation as partially reconstructed background decay had usually has more tracks. In order to estimated contamination in the final fit, normalisation with respect to \bjpsimumuk is used as shown in~\autoref{finfitpr}.
+
+\subsection{Partially Reconstructed Backgrounds, where $D^{0} \rightarrow \eta / \eta' X,$ where $\eta / \eta' \rightarrow \mu \mu \gamma$}
+\label{etasec}
+In the previous partially reconstructed sample, the background that proceed via $\eta/\eta'$ from $D$ resonance is not considered, as it is not part of the inclusive simulation. The selection efficiency of such decays is expected to have very similar values as in the partially reconstructed sample proxy, because the reconstructed particles are the same.
+
+In this section, the total estimate for the branching fraction of partially reconstructed backgrounds proceeding via $\eta/\eta'$ from $D$ resonances is computed. Full inclusive rate $\mathcal{B} (D^{0} \rightarrow \eta / \eta' X)$ is $ \sim 10 \%)$. However, the most relevant decay chains are the ones where the mass of the missed particle is small. This is because if only light particle is missed, the shape of corrected mass of partially reconstructed background comes closest to the signal region. Such decay chains are considered in~\autoref{tab:etacont}.
+
+It can be seen that total cumulative contribution is much smaller then the one considered with $D^{0}\rightarrow K^{+} \pi^{-} \mu^{+} \mu^{-}$, where $\mathcal{B}(D^0 \rightarrow K \pi^+ \mu^{+} \mu^{-}) = (4.17\pm0.12 \rm{(stat)}\pm 0.40 \rm{(syst)})\times 10^{-6}$\cite{Aaij:2015hva}. No further consideration hence is necessary for this type of decay.
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{ l | c | c }
+
+\hline
+	Process & $\mathcal{B}$ & Contribution to $\mathcal{B}(D^{0} \rightarrow (\eta / \eta'\rightarrow \mu \mu \gamma) X)$ \\
+\hline
+
+$\mathcal{B}(\eta \rightarrow \mu \mu \gamma)$ & $(3.10\pm0.40)\times 10 ^{-4 }$ & -  \\
+$\mathcal{B}(\eta' \rightarrow \mu \mu \gamma)$ & $(1.08\pm0.27)\times 10 ^{-4 }$ & -  \\
+\hline
+$\mathcal{B}(D^{0} \rightarrow \eta' \pi^{0})$ & $(9.10\pm1.40)\times 10 ^{-4 }$ & $(9.80\pm2.90)\times 10 ^{-8 }$ \\
+$\mathcal{B}(D^{0} \rightarrow \eta' \pi^{+} \pi^{-})$ & $(4.50\pm1.70)\times 10 ^{-4 }$ & $(4.90\pm2.20)\times 10 ^{-8 }$ \\
+$\mathcal{B}(D^{0} \rightarrow 2\eta )$ & $(1.70\pm0.02)\times 10 ^{-3 }$ & $(5.30\pm0.70)\times 10 ^{-7 }$ \\
+$\mathcal{B}(D^{0} \rightarrow 2\eta )$ & $(1.70\pm0.02)\times 10 ^{-3 }$ & $(5.30\pm0.70)\times 10 ^{-7 }$ \\
+$\mathcal{B}(D^{0} \rightarrow \underline{\eta} \eta' )$ & $(1.06\pm0.27)\times 10 ^{-3 }$ & $(3.30\pm0.90)\times 10 ^{-7 }$ \\
+$\mathcal{B}(D^{0} \rightarrow \eta \underline{\eta}' )$ & $(1.06\pm0.27)\times 10 ^{-3 }$ & $(1.10\pm0.40)\times 10 ^{-7 }$ \\
+$\mathcal{B}(D^{0} \rightarrow \eta \phi)$ & $(1.40\pm0.50)\times 10 ^{-4 }$ & $(4.30\pm1.60)\times 10 ^{-8 }$ \\
+\hline
+Total &  - &$(1.69\pm0.15)\times 10 ^{-6 }$ \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Contribution to total $D^{0} \rightarrow (\eta / \eta'\rightarrow \mu \mu \gamma) X$ rate made from all the considered decays above. In total, this cumulative contribution is approximately three times smaller than $D^{0}\rightarrow K^{+} \pi^{-} \mu^{+} \mu^{-}$. All the branching fractions are obtained from \cite{Patrignani:2016xqp}.}
+\label{tab:etacont}
+\end{table}
+
+\subsection{Partially Reconstructed $B \rightarrow \eta (') V$ Backgrounds}
+The backgrounds with $\eta(')$ resonances from partially reconstructed decays that proceed via $D$ were considered in previous~\autoref{etasec}. In this section backgrounds with $\eta(')$ along with vector resonances $\omega$/$\rho$ coming directly from $B$ are estimated. The total branching fractions for these processes are listed in~\autoref{tab:ed} and since they are very small this type of background is discarded and will not be considered further.
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{ l | c }
+\hline
+Process & $\mathcal{B}$  \\
+\hline
+$\mathcal{B}(B^{0} \rightarrow \omega \eta')$ & $(1.00\pm0.50)\times 10 ^{-6 }$ \\
+$\mathcal{B}(B^{0} \rightarrow \rho \eta')$ &  $<$$5 \times 10 ^{-7}$  \\
+$\mathcal{B}(B^{0} \rightarrow  \omega  \eta )$ & $(9.00\pm4.00)\times 10 ^{-7 }$ \\
+$\mathcal{B}(B^{0} \rightarrow \rho \eta )$ & $<$ $5 \times 10 ^{-7}$   \\
+\hline
+$\mathcal{B}(\eta \rightarrow \mu \mu \gamma)$ & $(3.10\pm0.40)\times 10 ^{-4 }$ \\
+$\mathcal{B}(\eta' \rightarrow \mu \mu \gamma)$ & $(1.08\pm0.27)\times 10 ^{-4 }$  \\
+\hline
+$\mathcal{B}(\rho \rightarrow \mu \mu)$ & $(4.55\pm0.28)\times 10 ^{-5 }$  \\
+$\mathcal{B}(\omega \rightarrow \mu \mu)$ & $(9.00\pm3.10)\times 10 ^{-5 }$  \\
+\hline
+$\mathcal{B}(B^{0} \rightarrow (\omega \rightarrow \mu \mu) (\eta \rightarrow \mu \mu \gamma))$ &$(7.10\pm1.00)\times 10 ^{-15 }$ \\
+$\mathcal{B}(B^{0} \rightarrow (\omega \rightarrow \mu \mu) (\eta'\rightarrow \mu \mu \gamma))$ &$(2.50\pm0.60)\times 10 ^{-15 }$ \\
+$\mathcal{B}(B^{0} \rightarrow (\rho \rightarrow \mu \mu) (\eta \rightarrow \mu \mu \gamma))$ & $<$$(2.50\pm1.40)\times 10 ^{-14 }$ \\
+$\mathcal{B}(B^{0} \rightarrow (\rho \rightarrow \mu \mu) (\eta'\rightarrow \mu \mu \gamma))$ & $<$$(1.00\pm0.60)\times 10 ^{-14 }$ \\
+\hline
+Total  & $ <$ $(4.50\pm1.60)\times 10 ^{-14 }$ \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Different and total contribution to $B^{0} \rightarrow \eta(') \rho(\omega)$. All the branchings fraction are obtained from \cite{Patrignani:2016xqp}.}
+\label{tab:ed}
+\end{table}
 
 
+\section{Rare and resonant $B^{+} \rightarrow \pi^{+} / K^{+} \mu^{-} \mu^{+}$ backgrounds}
+The resonant backgrounds  arising through $B^{+} \rightarrow (J/\psi \rightarrow \mu^{-} \mu^{+}) X^{+}$ and $B^{+} \rightarrow (\psi(2S) \rightarrow \mu^{-} \mu^{+}) X^{+}$ decay chains are eliminated because of the $c\bar{c}$ veto as discussed in~\autoref{qsqchoice}.
+
+It is, however, necessary to evaluate the impact of the rare equivalent of this background, namely \bmumupi decay. This particular background can cause problem as it peaks just under the corrected mass of $B$. For the same rare decay but with kaon instead, \bmumuk, the mass is expected to be shifted away from this peak because of the higher particle mass.
+
+In order to establish the severity of this background, \bmumupi simulation for Run \Rn{1} and Run \Rn{2} is reconstructed where the muon mass hypothesis is used for the pion track candidate. Then the same selection as in the signal case is applied. The expected number of \bmumupi decays after all selection in a given Run can be calculated by normalising to \bjpsimumuk decays
+
+\begin{equation}
+	N(\bmumupi)= \frac{N(\bjpsimumuk)}{} \times \frac{\varepsilon^{total}_{\bmumupi}}{\varepsilon^{total}_{\bjpsimumuk}} \times \frac{\mathcal{B}(\bmumupi)}{\mathcal{B}(\bjpsimumuk)}.
+\end{equation}
+
+%info foun in /vols/lhcb/ss4314/final_tuples_analyser_PO_AND_UE/mc/pimumu_mc/normalize_to_jpsik/bin
+%why reco factor of 100?
+
+
+In this equation the following branching fractions are used: $\mathcal{B}(\bmumupi)=1.79\pm0.23\times 10^{-8}$\cite{Patrignani:2016xqp} and $\mathcal{B}(\bjpsimumuk)=(6.12\pm0.19)\times10^{-5}$) obtained by multiplying $\mathcal{B}(B^{+} \rightarrow J/\psi K^{+}) = (1.026\pm 0.031)\times 10^{-3}$\cite{Patrignani:2016xqp} and $\mathcal{B}(J/\psi \rightarrow \mu^{-} \mu^{+}) = (5.961 \pm0.003) \times 10^{-2}$\cite{Patrignani:2016xqp}. The total selection efficiencies without \gls{PID} are $\varepsilon^{total}_{\bmumupi}=(7.03 \pm 1.13)\times 10^{-6}$ and $\varepsilon^{total}_{\bjpsimumuk}=(5.8\pm0.01)\times10^{-3}$ where the reconstruction and combinatorial BDT efficiency is much lower for the \bmumupi mode. Using the yields obtained in~\autoref{tab:normchannelyields} results in 0.06 (0.03) \bmumupi events expected in Run \Rn{1} (\Rn{2}) which is negligible given that there are $\sim$ 17 expected signal events with $\mathcal{B}(\Bmumumu)=1\times 10^{-8}$. Hence no further action for this background is taken.
+
+\section{Summary}
+In conclusion, in this section different backgrounds that could be of potential threat to signal were studied. From all considered backgrounds only combinatorial, misID and partially reconstructed backgrounds have considerable contribution after all the selection and hence need to be modelled. Exact contribution of these three backgrounds is shown in~\autoref{Fit}.
 
