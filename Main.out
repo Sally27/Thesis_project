@@ -85,12 +85,15 @@
 \BOOKMARK [2][-]{subsection.7.3.3}{Signal Channel Parametrisation}{section.7.3}% 85
 \BOOKMARK [2][-]{subsection.7.3.4}{Signal Data Fits}{section.7.3}% 86
 \BOOKMARK [2][-]{subsection.7.3.5}{Blinded Data Fits}{section.7.3}% 87
-\BOOKMARK [0][-]{chapter.8}{Results}{}% 88
-\BOOKMARK [0][-]{chapter.8}{Bibliography}{}% 89
-\BOOKMARK [0][-]{chapter*.117}{Appendices}{}% 90
-\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 91
-\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 92
-\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 93
-\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 94
-\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 95
-\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 96
+\BOOKMARK [2][-]{subsection.7.3.6}{Signal fit systematic effects}{section.7.3}% 88
+\BOOKMARK [2][-]{subsection.7.3.7}{Expected Sensitivity}{section.7.3}% 89
+\BOOKMARK [2][-]{subsection.7.3.8}{Unblinded Data Fits}{section.7.3}% 90
+\BOOKMARK [0][-]{chapter.8}{Results}{}% 91
+\BOOKMARK [0][-]{chapter.8}{Bibliography}{}% 92
+\BOOKMARK [0][-]{chapter*.125}{Appendices}{}% 93
+\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 94
+\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 95
+\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 96
+\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 97
+\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 98
+\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 99

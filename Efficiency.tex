@@ -1191,3 +1191,187 @@ The maximum unbinned likelihood fit to blinded signal data after all selection i
 \caption{For all constrained variables the range is set to be within $\pm 5 \sigma$.}
 \label{tab:floatingparsummary}
 \end{table}
+
+\subsection{Signal fit systematic effects}
+Systematics studies are performed in order to account for possible shortcomings of the methods used. The summary of systematic uncertainties is summarized in \autoref{tab:systematicsummary}. The aim of this search is to either measure or set the limit on the $\mathcal{B}(\Bmumumu)$. In the~\autoref{tab:systematicsummary}, the first two systematics are directly related to the knowledge of the normalisation branching fraction.
+
+\subsubsection{Signal Decay Model}
+Then the largest systematic uncertainty arises due to the choice of decay model for the signal channel.
+The nominal signal model creates a photon pole, increasing the branching fraction in the low invariant dimuon mass region.
+The associated systematic uncertainty is estimated by replacing this decay model with one determined purely by phase-space, yielding a $4.6\%$ systematic uncertainty on the efficiency ratio. In the data fits this uncertainty directly incorporated into efficiency ratios, $R_{FCME}$, by adding it in quadrature to the statistical error. 
+
+\subsubsection{Trigger}
+The second most important systematic effect related to the efficiency ratio is due to incorrect modelling of the trigger in simulation.
+This uncertainty is assigned by comparing the difference between the trigger efficiency of \bjpsik decays in simulation and data,
+yielding a $3.5\%$ systematic uncertainty.
+
+The trigger efficiency is calculated using \texttt{TISTOS method}, whereby the events that are \gls{TIS} and \gls{TOS} are assumed to be independent. Hence, the efficiency
+for selection of \gls{TOS} candidates hence can be calculated by
+
+\begin{equation}
+\varepsilon_{TOS} = \frac{N_{TIS\&TOS}}{N_{TIS}}.
+\label{eq:tistos}
+\end{equation}
+In~\autoref{eq:tistos} $N_{TIS\&TOS}$ is the number of $TIS$ and $TOS$ events passing the trigger requirement and $N_{TIS}$ is the number of \gls{TIS} events which passed the trigger requirement.
+
+
+One difference between the signal and the normalisation channels is that the kaon in the decay \bjpsik can interact with the detector
+at a probability proportional to the amount of material traversed. The uncertainty on this amount of material leads to a 2\% systematic
+uncertainty, which follows the procedure outlined in Ref.~\cite{LHCb-DP-2013-002}.
+
+Another source of systematic uncertainty is caused by differences in the $B^{+}$ production kinematics in the simulation.
+Correction weights are calculated using \bjpsik and the difference in the relative efficiency between the signal and the
+normalisation channels is assigned as a systematic uncertainty.
+
+Other smaller systematic uncertainties are assigned due to a small fit bias due to the low amount of data available,
+the finite size of the simulation and the branching fraction of the decay $\jpsi \to \mumu$.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{ l | c  c | c  }
+\hline
+Systematic source & Run \Rn{1}/\% &  Run \Rn{2}/\% & Error Overall \\ \hline
+\hline
+$\mathcal{B}(J/\psi \rightarrow \mu^{+} \mu^{-})$ & 0.6 & 0.6 & 0.6\\
+$\mathcal{B}(B^{+} \rightarrow  J/\psi K^{+})$ & 3.0 & 3.0 & 3.0\\
+\hline
+Signal Decay Model & 4.6 & 4.6 & 4.6\\
+Trigger Data/Sim & 5.1 & 1.3& 3.2\\
+Trigger \texttt{HLT2} &  -  &  1.5& 1.5\\
+Kaon interaction probability &  2.0  &  2.0& 2.0\\
+Kinematic Reweighting & 1.0 & 2.0 &1.5\\
+Simulation Statistics & 1.3 & 0.7 & 0.8 \\
+Fit bias & 1.0 & 1.0 & 1.0  \\
+ \hline
+ \hline
+ Total & 8.0 & 6.6 & \textbf{7.1} \\
+ \hline
+Statistical source & Run 1/\% & 2016/\% & Error Overall \\ \hline
+ \hline
+Error on $B^{+} \rightarrow J/\psi K^{+}$ yield & 0.3 & 0.3 & 0.2\\
+ \hline
+\end{tabular}
+\caption{Summary of systematic uncertainties.}
+\label{tab:systematicsummary}
+\end{table}
+
+The largest systematic uncertainty arises due to the choice of decay model for the signal channel.
+The nominal signal model creates a photon pole, increasing the branching fraction in the low invariant dimuon mass region.
+The associated systematic uncertainty is estimated
+by replacing this decay model with one determined purely by phase-space, yielding a $4.5\%$ systematic uncertainty.
+
+The second most important systematic effect related to the efficiency ratio is due to incorrect modelling of the trigger in simulation.
+This uncertainty is assigned by comparing the difference between the trigger efficiency of \bjpsik decays in simulation and data,
+yielding a $3.5\%$ systematic uncertainty.
+
+One difference between the signal and the normalisation channels is that the kaon in the decay \bjpsik can interact with the detector
+at a probability proportional to the amount of material traversed. The uncertainty on this amount of material leads to a 2\% systematic
+uncertainty, which follows the procedure outlined in Ref.~\cite{LHCb-DP-2013-002}.
+
+Another source of systematic uncertainty is caused by differences in the $B^{+}$ production kinematics in the simulation.
+Correction weights are calculated using \bjpsik and the difference in the relative efficiency between the signal and the
+normalisation channels is assigned as a systematic uncertainty.
+
+Other smaller systematic uncertainties are assigned due to a small fit bias due to the low amount of data available,
+the finite size of the simulation and the branching fraction of the decay $\jpsi \to \mumu$.
+
+
+
+
+\subsection{Expected Sensitivity}
+
+
+
+
+
+\subsection{Unblinded Data Fits}
+\label{unblindeddatafit}
+After full strategy was reviewed the signal datasets were unblinded, observing no significant signal. The simultaneous unbinned extended maximum likelihood fit to all the data was performed. As expected with no excess signal, background-only hypothesis fit described the data very well, which can be seen in~\autoref{fig:sigfit_unblinded_bkgonly}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{./efficiency/unblindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_simPdfsig_with_0_reallynice.pdf}\put(-30,100){(a)}%
+\includegraphics[width=0.5\linewidth]{./efficiency/unblindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_simPdfsig_with_0_reallynice.pdf}\put(-30,100){(b)}%
+\caption{Simultaneous unbinned extended maximum likelihood fit to unblinded data after full selection chain in two bins of FCME and with $\mathcal{B}=0$, with (b) fit to $\sigma_{low}$ bin, (c) $\sigma_{high}$ bin.}
+\label{fig:sigfit_unblinded_bkgonly}
+\end{figure}
+
+In order to perform fit with signal and background hypothesis good range of the $\mathcal{B}$ needs to be established in order to aid the fit convergence. This is done the maximizing the log likelihood values for different values of $\mathcal{B}$, also known as profiling the $\mathcal{B}$. The results of the profiling can be seen in~\autoref{fig:prof}. This shows that the minimum is at $\mathcal{B}\sim-2.0\times10^{-8}$, hence the fit prefers negative values of $\mathcal{B}$. 
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.45\linewidth]{./efficiency/unblindedfits/MyOwnProfileLL.pdf}%
+\caption{Minimized -log likelihood value at different $\mathcal{B}$.}
+\label{fig:prof}
+\end{figure}
+
+The simultaneous unbinned extended maximum likelihood fit to all the data with signal+background hypothesis (with the $\mathcal{B}$ floating) can be seen in~\autoref{fig:sigfit_unblinded} converging at value of $\mathcal{B}=-1.78\times10^{-8}$. This hence represents a downward fluctuation. The full list of all free and constrained parameters in the fit with its values are shown in~\autoref{tab:floatingparsummary_fit}. This fit results then can be translated into yields in all the fitting range and specifically blinded region by integrating the resulting PDF in a relevant region as shown in~\autoref{tab:yieldiatkos}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{./efficiency/unblindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf}\put(-30,100){(a)}%
+\includegraphics[width=0.5\linewidth]{./efficiency/unblindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf}\put(-30,100){(b)}%
+\caption{Simultaneous unbinned maximum likelihood fit to unblinded data after full selection chain in two bins of FCME, with (b) fit to $\sigma_{low}$ bin, (c) $\sigma_{high}$ bin.}
+\label{fig:sigfit_unblinded}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{| l  l | }
+\hline
+Fit Parameter & Value  \\ \hline
+$ \mathcal{B}(\Bmumumu) $ & $-(1.78 \pm 0.936)\times 10^{-8}$ \\
+$ \mathcal{B}(\bjpsimumuk) $ & $(6.11 \pm 0.185)\times 10^{-5}$ \\
+$ \mathcal{B}(\pr) $ & $(4.12 \pm 0.5)\times 10^{-7}$ \\
+$ \mu_{misID_{high}} $ & $4100 \pm 123$ \\
+$ \mu_{misID_{low}} $ & $4330 \pm 56$ \\
+$ \sigma_{misID_{high}} $ & $619 \pm 56$ \\
+$ \sigma_{misID_{low}} $ & $401 \pm 29.9$ \\
+$ R^{26}_{high}(\Bmumumu) $ & $1.97 \pm 0.0788$ \\
+$ R^{26}_{low}(\Bmumumu) $ & $3.31 \pm 0.1$ \\
+$ R^{21}_{high}(\pr) $ & $0.0397 \pm 0.00116$ \\
+$ R^{21}_{low}(\pr) $ & $0.0271 \pm 0.000794$ \\
+$ R^{21}_{high}(\Bmumumu) $ & $1.96 \pm 0.131$ \\
+$ R^{21}_{low}(\Bmumumu) $ & $3.15 \pm 0.233$ \\
+$ N(\bjpsimumuk)^{2016}_{high} $ & $29800 \pm 173$ \\
+$ N(\bjpsimumuk)^{2016}_{low} $ & $64700 \pm 254$ \\
+$ N(\bjpsimumuk)^{Run 1}_{high} $ & $64100 \pm 253$ \\
+$ N(\bjpsimumuk)^{Run 1}_{low} $ & $109000 \pm 331$ \\
+$ N^{scaled}_{misID_{high}} $ & $278 \pm 15.2$ \\
+$ N^{scaled}_{misID_{low}} $ & $331 \pm 16.3$ \\
+$ \beta_{high} $ & $-0.00183 \pm 9.19\times 10^{-5}$ \\
+$ \beta_{low} $ & $-0.00226 \pm 0.000129$ \\
+$ N_{combi_{high}} $ & $620 \pm 34.3$ \\
+$ N_{combi_{low}} $ & $531 \pm 35.4$ \\
+\hline
+\end{tabular}
+\caption{Fit results for all floating variables in the unblinded data fit. The $\mathcal{B}(\Bmumumu) =-1.78\times 10^{-8}$. Variables $R^{S}_{K}$ are the efficiency ratios obtained by normalising the decays to \bjpsimumuk decays where $S$ stands for stripping and $K$ for the FCME. $N^{scaled}_{misID_{K}}$ is the number of misID events, $N_{combi_{K}}$ is the number of combinatorial events, $\beta_{K}$ is the exponential constant, $\mu_{misID_{K}}$ and $\sigma_{misID_{K}}$ are the mean and the $\sigma$ of the CB function.}
+\label{tab:floatingparsummary_fit}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{| l | c | c |}
+\hline
+Component &  All ($4-7 \gevcc$) & Signal region ($4.5-5.5\gevcc$)  \\
+\hline
+$N_{misID_{low}}$  &  331 & 139 \\
+$N_{sig_{low}}$  & -15.8  & -14.4 \\
+$N_{combi_{low}}$  & 531 & 154 \\
+$N_{partreco_{low}}$  & 31.8 & 6.39 \\
+\hline
+$N_{misID_{high}}$  &  279 & 122 \\
+$N_{sig_{high}}$  &-14.0 & -11.0  \\
+$N_{combi_{high}}$  & 620 & 209 \\
+$N_{partreco_{high}}$ & 25.1 & 5.17 \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Resulting yields for different components from the corrected mass fit with $\mathcal{B}(\Bmumumu) =-1.78\times 10^{-8}$.}
+\label{tab:yieldiatkos}
+\end{table}
+
+
