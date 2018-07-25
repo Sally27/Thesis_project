@@ -1134,6 +1134,119 @@ As the strenght of the signal is not a priori known there are two types of hypot
 
 There are two types of signal datasets as mentioned in~\autoref{Strategy}. Firstly, there is \textbf{blinded signal data} to which the simultaneous and non-simultaneous fits are performed in order to evaluate the expected sensitivity. Since these datasets are blinded only mass regions $4000{\mevcc}<M_{\rm{B_{corr}}}<{4500\mevcc}$ and $5500{\mevcc}<M_{\rm{B_{corr}}}<{7000\mevcc}$ are visible in the fits. These fits are shown in~\autoref{blindeddatafit}. Secondly fits to \textbf{full signal data} are performed and these are used in order to set the limit on the $\mathcal{B}(\Bmumumu)$. In these fits full mass spectrum is visible.
 
+\subsection{Signal Fit Systematics}
+Systematics studies are performed in order to account for possible shortcomings of the methods used in order to measure $\mathcal{B}(\Bmumumu)$. The summary of systematic uncertainties is provided in \autoref{tab:systematicsummary}. Most of this systematic uncertainties directly affect efficiency ratio between signal and normalisation channel. In that case, fits account for this uncertainty directly by incorporating the uncertainty into efficiency ratios by adding them in quadrature to the statistical error. For the simultaneous fit these uncertainties are assumed to be $100\%$ correlated between the bins of FCME.
+
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{ l | c  c | c  }
+\hline
+Systematic source & Run \Rn{1}/\% &  Run \Rn{2}/\% & Error Overall \\ \hline
+\hline
+$\mathcal{B}(J/\psi \rightarrow \mu^{+} \mu^{-})$ & 0.6 & 0.6 & 0.6\\
+$\mathcal{B}(B^{+} \rightarrow  J/\psi K^{+})$ & 3.0 & 3.0 & 3.0\\
+\hline
+Signal Decay Model & 4.6 & 4.6 & 4.6\\
+Trigger Data/Sim & 5.1 & 1.3& 3.2\\
+Trigger \texttt{HLT2} &  -  &  1.5& 1.5\\
+Kaon interaction probability &  2.0  &  2.0& 2.0\\
+Kinematic Reweighting & 1.0 & 2.0 &1.5\\
+Simulation Statistics & 1.3 & 0.7 & 0.8 \\
+Fit bias & 1.0 & 1.0 & 1.0  \\
+ \hline
+ \hline
+ Total & 8.0 & 6.6 & \textbf{7.1} \\
+ \hline
+Statistical source & Run 1/\% & 2016/\% & Error Overall \\ \hline
+ \hline
+Error on $B^{+} \rightarrow J/\psi K^{+}$ yield & 0.3 & 0.3 & 0.2\\
+ \hline
+\end{tabular}
+\caption{Summary of systematic uncertainties.}
+\label{tab:systematicsummary}
+\end{table}
+
+
+
+
+\subsubsection{Signal Decay Model}
+Then the largest systematic uncertainty arises due to the choice of decay model for the signal channel.
+The nominal signal model creates a photon pole, increasing the branching fraction in the low invariant dimuon mass region.
+The associated systematic uncertainty is estimated by replacing this decay model with one determined purely by phase-space and by comparing the selection efficiencies, resulting in $4.6\%$ systematic uncertainty on the efficiency ratio. % In the data fits this uncertainty directly incorporated into efficiency ratios, $R_{FCME}$, by adding it in quadrature to the statistical error. 
+
+\subsubsection{Trigger}
+The second most important systematic effect affecting the efficiency ratio is due to incorrect modelling of the trigger in simulation. This can be split into two effects:
+ the efficiency difference between used simulation and data and incorrect emulation of \texttt{HLT2} on the simulation in 2016 as only one \texttt{TCK} was considered for this trigger selection. This uncertainty is assigned by comparing the difference between the trigger efficiency of \bjpsimumuk decays in simulation and data using \texttt{TISTOS method}.
+
+\texttt{TISTOS method} allows measuring the trigger efficiency, whereby the events that are \gls{TIS} and \gls{TOS} are assumed to be independent. Hence, the efficiency
+for selection of \gls{TOS} candidates can be calculated by
+
+\begin{equation}
+\varepsilon_{TOS} = \frac{N_{TIS\&TOS}}{N_{TIS}}.
+\label{eq:tistos}
+\end{equation}
+In~\autoref{eq:tistos} $N_{TIS\&TOS}$ is the number of \gls{TIS} and \gls{TOS} events passing the trigger requirement and $N_{TIS}$ is the number of \gls{TIS} events which passed the trigger requirement.
+
+The efficiency difference of the full trigger chain between \bjpsik decays in used simulation and \textit{Sweighted} data is $3.2\%$. Incorrect emulation of \texttt{HLT2}, which is calculted by comparing \texttt{HLT2} trigger efficiency of the chosen TCK simulation and all the \textit{Sweighted} data, yields $1.5\%$. Altogether the incorrect modelling of the trigger in simulation results in $3.5\%$ systematic uncertainty.
+
+\subsubsection{Kaon Interaction Probability}
+One difference between the signal and the normalisation channels that can have effect on the efficiencies is that the kaon in the decay \bjpsimumuk can interact with the detector at a probability proportional to the amount of material traversed. The uncertainty on this amount of material leads to a 2\% systematic
+uncertainty, which follows the procedure outlined in Ref.~\cite{LHCb-DP-2013-002}.
+
+\subsubsection{Kinematic Reweighting}
+Another source of systematic uncertainty is caused by differences in the $B^{+}$ production kinematics in the simulation. Corrected variables are momentum, $p$, transverse momentum $p_{T}$ and vertex $\chi^{2}$ of $B$. The kinematic weights in a given kinematic bin are calculated using normalised histograms of \bjpsimumuk data, and normalized \bjpsimumuk simulation in a following way
+\begin{equation}
+w_{(bin)} =  \frac{w_{\bjpsimumuk data,bin}}{w_{\bjpsimumuk simulation,bin}}.
+\end{equation}
+Obtained correction weights are then applied to correct both \bjpsimumuk, \Bmumumu simulation. The difference between uncorrected and kinematically corrected efficiency ratios is assigned as a systematic uncertainty yielding $1.5\%$ systematic uncertainty on the efficiency ratios.
+
+\subsubsection{Signal fit bias and coverage}
+In this section systematic uncertainty due to signal bias is evaluated. The pull is calculated using pseudo-experiments where the data is generated for signal branching fraction $\mathcal{B}= 1.0\times 10^{-8}$ corresponding to $\approx$ 17 signal events for Run \Rn{1} and \Rn{2} data.
+These pseudo-datasets are then re-fitted with floating $\mathcal{B}$ and corresponding number of fitted signal events is obtained. The pull is defined as the difference between number of fitted signal events and the number events that pseudo-experiment was created with, divided by the error on the number of signal events given by the fit:
+\begin{equation}
+\frac{N^{orig}_{sig}-N^{fit}_{sig}}{\sigma^{fit}}.
+\end{equation}
+
+The pull distributions then can be fitted with gaussian function and the fit bias is calculated as a shift of the mean from the 0. The overcoverage/undecoverage of the fit is established by shift of the standard deviation of the gaussian function from 1.
+
+For this study 10000 pseudo-experiments were created testing the bias and coverage of both the extended non-simultaneous fit and extended simultaneous fit and the pull distributions can be seen in ~\autoref{fig:SignalBias}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{./efficiency/systematics/signalbias/notsim.pdf}\put(-50,60){(a)}
+\includegraphics[width=0.5\linewidth]{./efficiency/systematics/signalbias/sim.pdf}\put(-50,60){(b)}
+%\newline
+%\includegraphics[width=0.5\linewidth]{./systematics/signalbias/SignalError_signal_numoftoys_10000_injectsig1e-08.pdf}\put(-50,60){(c)}
+\caption{(a) Non-simultaneous fit, (b) simultaneous fit pulls.}
+%\vspace*{-1.0cm}
+\label{fig:SignalBias}
+\end{figure}
+
+As it can be seen, for non-simultaneous fit there is overcoverage of 4 $\%$ but since the statistical error is of the order of 100$\%$ this is insignificant.
+The bias shows 8$\%$ preference for lower signal yields, and hence this will be added as a systematic uncertainty.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{| l | l | l | l | l |}
+\hline
+        Fit & $\mathcal{B}$ & Statistical Error & Overcoverage & Bias \\
+\hline
+        Not Simultaneous  & $1.0\times 10^{-8}$ & $\approx$ 100\% & 4\% & 8\%   \\
+        Simultaneous  & $1.0\times 10^{-8}$ & $\approx$ 100\% & 6\% & 1\%   \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Signal bias estimate from 10 000 pseudo-experiments for both simultaneous and not simultaneous fit.}
+\label{tab:biassum}
+\end{table}
+
+
+\subsubsection{Others}
+Other smaller systematic uncertainties are assigned due to the finite size of the simulation and the branching fraction of the decay $\jpsi \to \mumu$ and \bjpsik.
+
+
+
 \subsection{Blinded Data Fits}
 \label{blindeddatafit}
 In order to be able to get the expected sensitivity for this search a simultaneous unbinned maximum likelihood extended fit to the blinded data of corrected mass after the full selection in two bins of FCME is performed. As a crosscheck, also non-simultaneous fit with no FCME split is done. The summary of all the components adding to the total PDF for the blinded signal data fit, their modelling and constraints are shown in~\autoref{tab:floatingparsummary}.
@@ -1192,96 +1305,27 @@ The maximum unbinned likelihood fit to blinded signal data after all selection i
 \label{tab:floatingparsummary}
 \end{table}
 
-\subsection{Signal fit systematic effects}
-Systematics studies are performed in order to account for possible shortcomings of the methods used. The summary of systematic uncertainties is summarized in \autoref{tab:systematicsummary}. The aim of this search is to either measure or set the limit on the $\mathcal{B}(\Bmumumu)$. In the~\autoref{tab:systematicsummary}, the first two systematics are directly related to the knowledge of the normalisation branching fraction.
-
-\subsubsection{Signal Decay Model}
-Then the largest systematic uncertainty arises due to the choice of decay model for the signal channel.
-The nominal signal model creates a photon pole, increasing the branching fraction in the low invariant dimuon mass region.
-The associated systematic uncertainty is estimated by replacing this decay model with one determined purely by phase-space, yielding a $4.6\%$ systematic uncertainty on the efficiency ratio. In the data fits this uncertainty directly incorporated into efficiency ratios, $R_{FCME}$, by adding it in quadrature to the statistical error. 
-
-\subsubsection{Trigger}
-The second most important systematic effect related to the efficiency ratio is due to incorrect modelling of the trigger in simulation.
-This uncertainty is assigned by comparing the difference between the trigger efficiency of \bjpsik decays in simulation and data,
-yielding a $3.5\%$ systematic uncertainty.
-
-The trigger efficiency is calculated using \texttt{TISTOS method}, whereby the events that are \gls{TIS} and \gls{TOS} are assumed to be independent. Hence, the efficiency
-for selection of \gls{TOS} candidates hence can be calculated by
-
-\begin{equation}
-\varepsilon_{TOS} = \frac{N_{TIS\&TOS}}{N_{TIS}}.
-\label{eq:tistos}
-\end{equation}
-In~\autoref{eq:tistos} $N_{TIS\&TOS}$ is the number of $TIS$ and $TOS$ events passing the trigger requirement and $N_{TIS}$ is the number of \gls{TIS} events which passed the trigger requirement.
-
-
-One difference between the signal and the normalisation channels is that the kaon in the decay \bjpsik can interact with the detector
-at a probability proportional to the amount of material traversed. The uncertainty on this amount of material leads to a 2\% systematic
-uncertainty, which follows the procedure outlined in Ref.~\cite{LHCb-DP-2013-002}.
-
-Another source of systematic uncertainty is caused by differences in the $B^{+}$ production kinematics in the simulation.
-Correction weights are calculated using \bjpsik and the difference in the relative efficiency between the signal and the
-normalisation channels is assigned as a systematic uncertainty.
-
-Other smaller systematic uncertainties are assigned due to a small fit bias due to the low amount of data available,
-the finite size of the simulation and the branching fraction of the decay $\jpsi \to \mumu$.
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{ l | c  c | c  }
-\hline
-Systematic source & Run \Rn{1}/\% &  Run \Rn{2}/\% & Error Overall \\ \hline
-\hline
-$\mathcal{B}(J/\psi \rightarrow \mu^{+} \mu^{-})$ & 0.6 & 0.6 & 0.6\\
-$\mathcal{B}(B^{+} \rightarrow  J/\psi K^{+})$ & 3.0 & 3.0 & 3.0\\
-\hline
-Signal Decay Model & 4.6 & 4.6 & 4.6\\
-Trigger Data/Sim & 5.1 & 1.3& 3.2\\
-Trigger \texttt{HLT2} &  -  &  1.5& 1.5\\
-Kaon interaction probability &  2.0  &  2.0& 2.0\\
-Kinematic Reweighting & 1.0 & 2.0 &1.5\\
-Simulation Statistics & 1.3 & 0.7 & 0.8 \\
-Fit bias & 1.0 & 1.0 & 1.0  \\
- \hline
- \hline
- Total & 8.0 & 6.6 & \textbf{7.1} \\
- \hline
-Statistical source & Run 1/\% & 2016/\% & Error Overall \\ \hline
- \hline
-Error on $B^{+} \rightarrow J/\psi K^{+}$ yield & 0.3 & 0.3 & 0.2\\
- \hline
-\end{tabular}
-\caption{Summary of systematic uncertainties.}
-\label{tab:systematicsummary}
-\end{table}
-
-The largest systematic uncertainty arises due to the choice of decay model for the signal channel.
-The nominal signal model creates a photon pole, increasing the branching fraction in the low invariant dimuon mass region.
-The associated systematic uncertainty is estimated
-by replacing this decay model with one determined purely by phase-space, yielding a $4.5\%$ systematic uncertainty.
-
-The second most important systematic effect related to the efficiency ratio is due to incorrect modelling of the trigger in simulation.
-This uncertainty is assigned by comparing the difference between the trigger efficiency of \bjpsik decays in simulation and data,
-yielding a $3.5\%$ systematic uncertainty.
-
-One difference between the signal and the normalisation channels is that the kaon in the decay \bjpsik can interact with the detector
-at a probability proportional to the amount of material traversed. The uncertainty on this amount of material leads to a 2\% systematic
-uncertainty, which follows the procedure outlined in Ref.~\cite{LHCb-DP-2013-002}.
-
-Another source of systematic uncertainty is caused by differences in the $B^{+}$ production kinematics in the simulation.
-Correction weights are calculated using \bjpsik and the difference in the relative efficiency between the signal and the
-normalisation channels is assigned as a systematic uncertainty.
-
-Other smaller systematic uncertainties are assigned due to a small fit bias due to the low amount of data available,
-the finite size of the simulation and the branching fraction of the decay $\jpsi \to \mumu$.
-
-
 
 
 \subsection{Expected Sensitivity}
+\label{sensitivity}
+The $CL_{s}$ method\cite{Read:2002hq} is used to produce expected upper limits from the blinded fit results, where extrapolation to the signal region is performed. This means that for a given branching fraction assumption $\mathcal{B}$:
+\begin{itemize}
+%\item Likelihood ratio $-2 log \frac {\mathcal{L}(s+b)}{\mathcal{L}(b)}$ is calculated, where $\mathcal{L}(s+b)$ is the likelihood function under signal and background hypothesis and $\mathcal{L}(b)$ is likelihood under background only hypothesis. 
+\item 1000 pseudo datasets with no signal injected are generated (background only hypothesis) and are denoted as data$_{bkg}$.
+\item 1000 pseudo datasets with a given signal branching fraction hypothesis injected are generated (signal+background hypothesis) and are denoted as data$_{sig}$.
+\item Likelihood ratio $-2 log \frac {\mathcal{L}(s+b)}{\mathcal{L}(b)}$ is defined, where $\mathcal{L}(s+b)$ is the likelihood function under signal and background hypothesis and $\mathcal{L}(b)$ is likelihood under background only hypothesis. 
+\item Fits with background only hypothesis and signal+background hypothesis are performed to both data$_{bkg}$ and data$_{sig}$. By extracting the likelihood ratio from these fits likelihood ratio distributions for signal, $\Delta LL_{sig}$, and background, $\Delta LL_{bkg}$, are obtained.  
+%\item Fit background hypothesis and signal+background hypothesis pdfs to both bkg$\_$data and sig$\_$data
+%\item Extract bkg$\_\Delta$LL distribution for test statistics and sig$\_\Delta$LL for test statistics under signal+background hypothesis
+\item The median of background $\Delta LL_{bkg}$ is identified.
+\item $CL_{b}$ is calculated by integrating $\Delta LL_{bkg}$ from the tail of the distribution to this median. In this case, $CL_{b}$ represents the probability to obtain a result less compatible with the signal than the observed one in the background-only hypothesis.
+\item $CL_{s+b}$ is calculated by integrating  $\Delta LL_{sig}$ from the tail to this median. $CL_{s+b}$ then represents the probability to obtain a result which is less compatible with the signal than the observed result, assuming the signal+background hypothesis.
+\item $CL_{s}$ then can be calculated as $CL_{s+b}$/$CL_b$.
+\end{itemize}
 
 
+The expected exclusion limits are shown in~\autoref{fig:clsfit}.
 
 
 

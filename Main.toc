@@ -94,18 +94,22 @@
 \contentsline {subsubsection}{Signal fit models}{171}{section*.112}
 \contentsline {subsubsection}{Signal fit model hypotheses}{171}{section*.113}
 \contentsline {subsubsection}{Signal data types}{171}{section*.114}
-\contentsline {subsection}{\numberline {7.3.5}Blinded Data Fits}{172}{subsection.7.3.5}
-\contentsline {subsection}{\numberline {7.3.6}Signal fit systematic effects}{175}{subsection.7.3.6}
-\contentsline {subsubsection}{Signal Decay Model}{175}{section*.117}
-\contentsline {subsubsection}{Trigger}{175}{section*.118}
-\contentsline {subsection}{\numberline {7.3.7}Expected Sensitivity}{177}{subsection.7.3.7}
-\contentsline {subsection}{\numberline {7.3.8}Unblinded Data Fits}{177}{subsection.7.3.8}
-\contentsline {chapter}{\numberline {8}Results}{182}{chapter.8}
-\contentsline {chapter}{Bibliography}{183}{chapter.8}
-\contentsline {chapter}{Appendices}{190}{chapter*.125}
-\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{190}{appendix.A}
-\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{193}{appendix.B}
-\contentsline {chapter}{\numberline {C}Fitting functions}{195}{appendix.C}
-\contentsline {section}{\numberline {C.1}Crystal Ball function}{195}{section.C.1}
-\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{196}{section.C.2}
-\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{196}{section.C.3}
+\contentsline {subsection}{\numberline {7.3.5}Signal Fit Systematics}{172}{subsection.7.3.5}
+\contentsline {subsubsection}{Signal Decay Model}{173}{section*.116}
+\contentsline {subsubsection}{Trigger}{173}{section*.117}
+\contentsline {subsubsection}{Kaon Interaction Probability}{174}{section*.118}
+\contentsline {subsubsection}{Kinematic Reweighting}{174}{section*.119}
+\contentsline {subsubsection}{Signal fit bias and coverage}{175}{section*.120}
+\contentsline {subsubsection}{Others}{176}{section*.123}
+\contentsline {subsection}{\numberline {7.3.6}Blinded Data Fits}{177}{subsection.7.3.6}
+\contentsline {subsection}{\numberline {7.3.7}Expected Sensitivity}{180}{subsection.7.3.7}
+\contentsline {subsection}{\numberline {7.3.8}Unblinded Data Fits}{181}{subsection.7.3.8}
+\contentsline {chapter}{\numberline {8}Results}{186}{chapter.8}
+\contentsline {chapter}{Bibliography}{187}{chapter.8}
+\contentsline {chapter}{Appendices}{194}{chapter*.131}
+\contentsline {chapter}{\numberline {A}Boosted Decision Trees}{194}{appendix.A}
+\contentsline {chapter}{\numberline {B}The \unhbox \voidb@x \hbox {\em sPlot}\xspace technique}{197}{appendix.B}
+\contentsline {chapter}{\numberline {C}Fitting functions}{199}{appendix.C}
+\contentsline {section}{\numberline {C.1}Crystal Ball function}{199}{section.C.1}
+\contentsline {section}{\numberline {C.2}Double-sided Ipatia function}{200}{section.C.2}
+\contentsline {section}{\numberline {C.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{200}{section.C.3}
