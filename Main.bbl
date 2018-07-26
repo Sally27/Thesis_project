@@ -378,15 +378,6 @@ R.~Hierk, M.~Merk, M.~Needham, and R.~Van~der Eijk,
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem{Forty:1999sg}
-LHCb, R.~Forty, \ifthenelse{\boolean{articletitles}}{\emph{{RICH pattern
-  recognition for LHCb}},
-  }{}\href{http://dx.doi.org/10.1016/S0168-9002(99)00310-1}{Nucl.\ Instrum.\
-  Meth.\  \textbf{A433} (1999) 257}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
 \bibitem{LHCb-DP-2012-003}
 M.~Adinolfi {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Performance of the \lhcb RICH
@@ -399,13 +390,24 @@ M.~Adinolfi {\em et~al.},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem{LHCb-PAPER-2012-002}
-LHCb collaboration, R.~Aaij {\em et~al.},
-  \ifthenelse{\boolean{articletitles}}{\emph{{Measurement of $\bquark$-hadron
-  branching fractions for two-body decays into charmless charged hadrons}},
-  }{}\href{http://dx.doi.org/10.1007/JHEP10(2012)037}{JHEP \textbf{10} (2012)
-  037}, \href{http://arxiv.org/abs/1206.2794}{{\normalfont\ttfamily
-  arXiv:1206.2794}}\relax
+\bibitem{Forty:1999sg}
+LHCb, R.~Forty, \ifthenelse{\boolean{articletitles}}{\emph{{RICH pattern
+  recognition for LHCb}},
+  }{}\href{http://dx.doi.org/10.1016/S0168-9002(99)00310-1}{Nucl.\ Instrum.\
+  Meth.\  \textbf{A433} (1999) 257}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2017vad}
+LHCb, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Measurement of the
+  $B^0_s\to\mu^+\mu^-$ branching fraction and effective lifetime and search for
+  $B^0\to\mu^+\mu^-$ decays}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.118.191801}{Phys.\ Rev.\
+  Lett.\  \textbf{118} (2017), no.~19 191801},
+  \href{http://arxiv.org/abs/1703.05747}{{\normalfont\ttfamily
+  arXiv:1703.05747}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

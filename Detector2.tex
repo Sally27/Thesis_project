@@ -101,7 +101,7 @@ In the following sections, a brief discussion of the different subdetectors, sho
 
 \section{VErtex LOcator }
 \label{velosys}
-The closest detector around the collision point is VErtex LOcator (\Gls{VELO}). This silicon-strip based detector, that extends 1 \m along the beam axis, is primarily used to distinguish signal-like events from prompt background. The typical differing property of a $B$ hadron decay includes large impact parameter (\Gls{IP}), the minimal distance between the track and primary vertex, in addition to significantly higher transverse momentum, $p_{T}$. Therefore, the main tasks of this subdetector include finding: 
+The subdetector closest to the collision point is the VErtex LOcator (\Gls{VELO}). This silicon-strip based detector, that extends 1 \m along the beam axis, is primarily used to distinguish signal-like events from prompt background. The typical differing property of a $b$-hadron decay includes large impact parameter (\Gls{IP}), the minimal distance between the track and a  primary vertex, in addition to significantly higher transverse momentum, $p_{T}$. Therefore, the main tasks of this subdetector is to find: 
 \begin{itemize}
 \item primary vertices positions
 \item secondary vertices of short-lived particles (heavy quark hadrons)
@@ -113,11 +113,11 @@ The closest detector around the collision point is VErtex LOcator (\Gls{VELO}). 
 	\centering
 	\includegraphics[width = 0.75\textwidth]{figs/detector/veloOverview.png}
         %\includegraphics[width = 0.5\textwidth]{figs/detector/lumicompare.png}
-	\caption{ Schematic plot of \Gls{VELO} detector configuration along the beam pipe showing the layout as well as positions while in stable beams (discs have slight overlap) and injection. Figure taken from \cite{det_paper}.}
+	\caption{Schematic plot of the \Gls{VELO} detector configuration along the beam pipe showing the layout as well as positions while in stable beams (discs have slight overlap) and injection. Figure taken from \cite{det_paper}.}
 	\label{fig:veloover}
 \end{figure}
 
-The detector consists of two sets of 21 silicon modules positioned around the beam pipe, where each module has 2 types of half-moon-shaped discs as seen in \autoref{fig:veloover}. In the first type, the strips are arranged to provide radial information ($R$), whereas the second type provides azimuthal ($\phi$) information. As $pp$ interaction point brings high radiation dose for this detector, the first sensitive strip starts only at a distance of 8 \mm once stable beams are declared. Throughout the beam injection, when the beam radius may be larger, the two sets are moved away 3 \cm perpendicularly from the interaction point. For the $R$ sensor, the individual module's strip pitch, distance between two strips, varies from 38 $\mum$ to 102 $\mum$ away from the beam pipe, so that the hit occupancy is roughly even as a function of distance away from the beam pipe. Each \Gls{VELO} half is kept within an aluminium welded box causing material overlap once stable beams are declared. These boxes then create their own vacuum which is different to the nominal \gls{LHC} vacuum in order to protect the detector from any electromagnetic interference with the beam. 
+The detector consists of two sets of 21 silicon modules positioned around the beam pipe, where each module has 2 types of half-moon-shaped discs as seen in \autoref{fig:veloover}. In the first type, the strips are arranged to provide radial information ($R$), whereas the second type provides azimuthal ($\phi$) information. As $pp$ collisions bring high dose of radiation to this detector, the first sensitive strip starts at a distance of 8 \mm once stable beams are declared. Throughout the beam injection, when the beam radius may be larger, the two sets are moved 3 \cm away, perpendicular to the beam axis. For the $R$ sensor, the individual module's strip pitch, distance between two strips, varies from 38 $\mum$ to 102 $\mum$ away from the beam pipe, so that the hit occupancy is roughly even as a function of distance away from the beam pipe. Each \Gls{VELO} half is kept within an aluminium welded box causing material overlap once stable beams are declared. These boxes then create their own vacuum which is separated from the nominal \gls{LHC} vacuum in order to protect the detector from any electromagnetic interference with the beam. 
 
 This setup brings outstanding hit resolution (4-40$\mum$), which in turn allows for very high \gls{IP} and very good primary vertex (\gls{PV}) resolution, as seen in \autoref{fig:veloIPres}. This is indispensable not only in order to perform the precise measurements of $B$ and $D$ lifetimes, but also to resolve oscillations caused by $B^{0}_{s}-\bar{B}^{0}_{s}$ mixing occurring at 3 trillion \hz rate.
 
@@ -132,62 +132,65 @@ This setup brings outstanding hit resolution (4-40$\mum$), which in turn allows 
 
 \section{Tracking System }
 \label{tracksys}
-In addition to tracking information provided by \Gls{VELO}, the trajectories of charged particles are monitored by series of tracking subdetectors. The main task of these tracking subdetectors is to provide efficient reconstruction and precise measurement of particle's momentum. There are four tracking stations apart from \Gls{VELO}: Tracker Turicensis (\Gls{TT}), positioned upstream from magnet, and  \Gls{Tstation} tracking stations on the other side from the magnet. The 10 \m dipole magnet with $\approx$ 4 Tm integrated field provides enough strength to bend charged particles with $p$ of 200 $\gev/c^{2}$.      
+In addition to tracking information provided by the \Gls{VELO}, the trajectories of charged particles are measured by a series of tracking subdetectors. The main task of these tracking subdetectors is to provide efficient reconstruction and precise measurement of a particle's momentum. There are four tracking stations apart from \Gls{VELO}: Tracker Turicensis (\Gls{TT}), positioned upstream from the magnet, and the \Gls{Tstation} tracking stations on the other side from the magnet. The 10 \m dipole magnet with $\approx$ 4 Tm integrated field provides strength to bend charged particles in horizontal plane.
+%with $p$ of 200 $\gev/c^{2}$.      
 
- Two different detection technologies are used in these trackers reflecting the nature of track occupancy as function of distance from beam pipe. The tracker's part close to the beam pipe, \Gls{TT} station together with central region of \Gls{Tstation}, also known as Inner Tracker (\Gls{IT}), expects higher occupancy and makes use of the silicon microstrip detection mechanism. The outer part of \Gls{Tstation} stations, also known as Outer Tracker (\Gls{OT}), is made of a straw-tube detectors. Straw-tube detector measures the hit position by measuring the drift-time of ionized electrons. Use of the two technologies are seen in \autoref{fig:tracktype}. 
+ Two different detection technologies are used in these trackers reflecting the nature of track occupancy as a function of polar angle. The tracker's part at small polar angles, \Gls{TT} station together with central region of \Gls{Tstation}, also known as Inner Tracker (\Gls{IT}), expects higher occupancy and makes use of the silicon microstrip detection mechanism. The outer part of \Gls{Tstation} stations, also known as the Outer Tracker (\Gls{OT}), is made of a straw-tube detectors. Straw tubes measure the trajectory of the track by measuring the drift-time of ionized electrons. Use of the two technologies is illustrated in \autoref{fig:tracktype}. 
 
-\subsection{Tracking Algorithms }
-Different particles will leave different footprint in the detector. Charged particles will form tracks. Depending on presence of hits in individual subdetectors, they are grouped into several categories, visualized in \autoref{fig:tracktype}.
+\subsection{Tracking Algorithms} 
+Different types of particles will leave different footprints in the detector. Charged particles will form tracks. Depending on presence of hits in individual subdetectors, they are grouped into several categories, visualized in \autoref{fig:tracktype}.
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width = 0.35\textwidth]{figs/detector/trackingsystem.jpg}%
 	\includegraphics[width = 0.6\textwidth]{figs/detector/tracktype.png}
-	\caption{ Visualisation of use of different technology with silicon technology in violet and straw-tube technology in cyan. The Figure was obtained in \cite{OT}(left). Track types visualisation depending on which track stations provided hits. For the study of \Bmumumu decays only \gls{longtrack}s are considered as muons will travel to the end of the detector leaving the hits all along. Figure is taken from \cite{LHCb-DP-2013-002} (right).}
+	\caption{ Visualisation of use of different technology with silicon technology in violet and straw-tube technology in cyan. The Figure was obtained in \cite{OT}(left). Track types visualisation depending on which track stations provided hits. For the study of \Bmumumu decays, only \gls{longtrack}s are considered as muons will travel to the end of the detector leaving the hits all along. Figure is taken from \cite{LHCb-DP-2013-002} (right).}
 	\label{fig:tracktype}
 \end{figure}
 
 %http://iopscience.iop.org/article/10.1088/1748-0221/3/08/S08005/pdf
 %https://twiki.cern.ch/twiki/bin/view/LHCb/TrackingEffAbsLength /secondary interactions - hadronic int.
 
-Most of the physics analyses use \gls{longtrack}s, tracks leaving hits in \Gls{VELO} and \Gls{Tstation}, as they give most precise momenta estimates.
-VELO tracks leave hits only in $R$ and $\Phi$ sensor, but not in any other tracking stations. VELO tracks are formed by particles which must have left \Gls{LHCb} acceptance or they come from particles produced backwards and hence are useful for \gls{PV} reconstruction. Upstream tracks are formed by tracks leaving hits in \Gls{VELO} and \gls{TT} only. These are usually low momentum particles, which are bent out \Gls{LHCb} acceptance while traversing the magnet. Long-lived particles such as $\Lambda$ or $K^{0}_{s}$ will only decay outside of the \Gls{VELO} acceptance and hence will produce no hits until \Gls{TT} and \Gls{Tstation} forming downstream tracks. T-track is track type that only have hits in \Gls{Tstation}. Again this could be due to presence of long-lived particles or due to secondary interactions in the detector.   
+Most of the physics analyses at \gls{LHCb}, as it is the case for the search of \Bmumumu, use only \gls{longtrack}s, tracks leaving hits in the \Gls{VELO} and \Gls{Tstation}, as they give most precise momenta measurements. There are also other types of tracks as indicated in~\autoref{fig:tracktype} but they are rarely used.
+%VELO tracks leave hits only in $R$ and $\Phi$ sensor, but not in any other tracking stations. VELO tracks are formed by particles which must have left \Gls{LHCb} acceptance or they come from particles produced backwards and hence are useful for \gls{PV} reconstruction. Upstream tracks are formed by tracks leaving hits in \Gls{VELO} and \gls{TT} only. These are usually low momentum particles, which are bent out \Gls{LHCb} acceptance while traversing the magnet. Long-lived particles such as $\Lambda$ or $K^{0}_{s}$ will only decay outside of the \Gls{VELO} acceptance and hence will produce no hits until \Gls{TT} and \Gls{Tstation} forming downstream tracks. T-track is track type that only have hits in \Gls{Tstation}. Again this could be due to presence of long-lived particles or due to secondary interactions in the detector.   
 
-In general, the track reconstruction software starts with \textit{pattern recognition}, where several hits in one part of a tracking subdetector are identified and form \textit{track seeds}, which are then extrapolated and combined with hits in other tracking subdetector provided this subdetector sits in low magnetic field. The long track candidates are formed and fitted with a Kalman filter\cite{Hierk:684697}, where because of the material present in the detector, corrections for energy losses as well as multiple scattering are incorporated.
+In general, the track reconstruction software starts with \textit{pattern recognition}, where several hits in one part of a tracking subdetector are identified and form \textit{track seeds}, which are then extrapolated and combined with hits in other tracking subdetectors. The long track candidates are formed and fitted with a Kalman filter\cite{Hierk:684697}, where, because of the material present in the detector, corrections for energy losses as well as multiple scattering are incorporated.
 
-Sometimes \textit{pattern recognition} may combine random hits into a track, \textit{ghost track}, or several tracks could be made out of same hits, \textit{clone track}. Presence of these tracks are heavily suppressed with different techniques - such as establishing ghost probability (\Gls{pgh2})- variable based on the output of neural network combining track $\chi^{2}$, quality of the track, and missing hits in the subdetectors.
+In \gls{LHCb} there are types of tracks which are not real the trajectories of charged particles.
+Sometimes \textit{pattern recognition} may combine random hits into a track, which is known as \textit{ghost track}. On the other hand, it could also happen that several tracks are sharing the same hits, known also as \textit{clone tracks}. The presence of these types of tracks are suppressed through the use of a neural network based variable (\Gls{pgh2}), which relies on $\chi^{2}$ of the track fit, and information about missing hits along the trajectory to calculate its value.
+%Presence of these tracks are heavily suppressed with different techniques - such as establishing ghost probability (\Gls{pgh2})- variable based on the output of neural network combining track $\chi^{2}$, quality of the track, and missing hits in the subdetectors.
 
-Uncertainty on mass is one of the crucial parameters to minimize as it provides opportunity for high precision measurements by better separations from backgrounds. It strongly correlates with momentum resolution that is obtained using tracking. Resulting relative momentum uncertainty (0.5-1.1\%) on \gls{longtrack}s using $J/\psi \rightarrow \mu^{+} \mu^{-}$ using \textit{tag and probe} can be seen in \autoref{fig:momres}. It varies logarithmically with increasing momentum.
+When searching for a $b$-hadron decay, the mass of a candidate can be calculated from the 4-momenta of the decay products. Uncertainty on this mass is one of the crucial parameters to minimize as it enables a better separation between the identified signal and background. It strongly correlates with momentum resolution that is obtained using tracking system. Resulting relative momentum uncertainty (0.5-1.1\%) on \gls{longtrack}s using $J/\psi \rightarrow \mu^{+} \mu^{-}$ data can be seen in \autoref{fig:momres}. It varies logarithmically with increasing momentum.
 
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width = 0.6\textwidth]{figs/detector/momresolution.png}
-	\caption{Momentum resolution of \gls{longtrack}s measured using \textit{tag and probe} method at \gls{LHCb}. The decay channel $J/\psi^{+} \rightarrow \mu^{+} \mu^{-}$ is analysed.}
+	\caption{Momentum resolution of \gls{longtrack}s measured at \gls{LHCb}. The decay channel $J/\psi^{+} \rightarrow \mu^{+} \mu^{-}$ is analysed for this purpose. The figure is taken from \cite{LHCb-DP-2014-002}.}
 	\label{fig:momres}
 \end{figure}
 
 \section{Ring Imaging Detectors }
 \label{richsec}
-Particle identification, \Gls{PID}, at \Gls{LHCb} relies heavily on two dedicated Ring Imaging subdetectors, \gls{RICH}. These detectors take advantage of the phenomena, emission of Cerenkov light, which happens when a charged particle travels through a medium at a speed faster than the phase velocity of light in that medium. This cone of light is emitted at an angle $\theta$ with respect to the charged particle's trajectory. Using the knowledge of refractive index of the medium, $n$, and momentum $p$ that is measured using tracking, mass $m$ of the particle can be obtained through:
+Particle identification, \Gls{PID}, at \Gls{LHCb} relies heavily on two dedicated Ring Imaging subdetectors, \gls{RICH}. These detectors take advantage of the emission of Cerenkov light, which happens when a charged particle travels through a medium at a speed faster than the phase velocity of light in that medium. This cone of light is emitted at an angle $\theta$ with respect to the charged particle's trajectory. Using the knowledge of refractive index of the medium, $n$, and momentum $p$ that is measured using tracking system, the mass $m$ of the particle can be obtained through:
 
 \begin{equation}
 	\cos\theta_{c} =  \frac{\sqrt{m^{2} + p^{2}}}{pn}.
 \end{equation}
 
-As the momentum and mass are intrinsic properties of passing particle, the momentum identification range is limited by the choice of medium, also known as radiator. For very low-momentum particle, as $\cos\theta_{c} \rightarrow 1$, the particle is not producing any Cerenkov light cone. At the very high momentum, as $\cos\theta_{c} \rightarrow 1/n$, there is saturation point as all species of particles will emit the light at the same Cherenkov angle, hence all the discriminating power will be lost.
+As the momentum is not an intrinsic property of a passing particle, the momentum identification range is limited by the choice of medium, also known as radiator. For very low-momentum particle, as $\cos\theta_{c} \rightarrow 1$ ($p=\sqrt{\frac{m^{2}}{n^{2}-1}}$), the particle is not producing any Cerenkov light cone. At the very high momentum, as $\cos\theta_{c} \rightarrow 1/n$, there is saturation point as all species of particles will emit the light at the same Cherenkov angle, hence all the discriminating power will be lost.
 
-Low momentum (2-60 \gev) particles are identified in the upstream \gls{RICH1} detector and high momentum particles (15-100) \gev are analyzed downstream in \gls{RICH2}. \gls{RICH1} covers $\pm$ 25-300 mrad in x-z plane, $\pm$ 250 mrad in the x-y plane, using either gaseous Aerogel ($n=1.03$) and $C_{4}F_{10}$ ($n = 1.0014$) as radiators. \gls{RICH2} has more limited acceptance of $\pm$15-120 mrad in x-y plane and $\pm$100 mrad in x-z plane and uses $CF_{4}$ as radiator, with lower $n=1.0005$. The discrimination power between different particles can be seen \autoref{fig:richres}. 
+Low momentum (2-60 \gev) particles are identified in the upstream \gls{RICH1} detector and high momentum particles (15-100) \gev are analyzed downstream in \gls{RICH2}. \gls{RICH1} covers angular acceptance of 25-300 mrad using $\rm{C_{4}F_{10}}$ ($n = 1.0014$) as radiator. \gls{RICH2} has more limited acceptance of 15-120 mrad and uses $\rm{CF_{4}}$ as radiator, with lower $n=1.0005$. The discrimination power between different particles can be seen \autoref{fig:richres}. 
 
 
-Both \gls{RICH1} and \gls{RICH2} use set of spherical primary mirrors to guide the photons onto the flat secondary mirrors which are then further focused into Cerenkov rings onto the surface of Hybrid Photon Multipliers, (\Gls{HPD}). The schematic view of a particle passing through \gls{RICH1} can be also be seen in \autoref{fig:richres}. 
+Both \gls{RICH1} and \gls{RICH2} use set of spherical primary mirrors to guide the photons onto the flat secondary mirrors which are then further focused into Cerenkov rings on the surface of a plane of Hybrid Photon Multipliers, (\Gls{HPD}). The schematic view of a particle passing through \gls{RICH1} can be seen in \autoref{fig:richres}. 
 
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width = 0.55\textwidth]{figs/detector/richres1.eps}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/richres2.eps}%
 	\includegraphics[width = 0.4\textwidth]{figs/detector/mechrich.eps}%
-	\caption{Separation power for different species of particles in momentum-Cerenkov angle plane (left). Schematic diagram of \gls{RICH1} layout (right). Both figures are taken from \cite{det_paper}.}
+	\caption{Separation power for different species of particles in momentum-Cerenkov angle plane for $\rm{C_{4}F_{10}}$ radiator (left). Figure taken from \cite{LHCb-DP-2012-003}.  Schematic diagram of \gls{RICH1} layout (right). Figure taken from \cite{det_paper}.}
 	\label{fig:richres}
 \end{figure}
 
@@ -195,18 +198,18 @@ Both \gls{RICH1} and \gls{RICH2} use set of spherical primary mirrors to guide t
 In order to establish species of particles for each track, the Cerenkov angle is combined with the track momentum measured by tracking. In practice, however, as \Gls{RICH} detectors operate in high track density environment, many Cerenkov rings will be overlapping and hence a complex pattern recognition algorithm is deployed \cite{Forty:1999sg}. 
 
 
-For each event, the \Gls{RICH} computes full event likelihood that is consistent with assigning pion mass hypothesis for all tracks given the observed hit distribution read out by \Gls{HPD}. The algorithm then iterates through all other possible particle species, ($e, \mu, \pi, K,$ proton, deuteron), assigning new full event likelihood for a given track, having all other hypotheses fixed. The mass hypothesis with the highest full event likelihood is assigned to the track and this process is repeated for all the tracks in the event, until no improvement is found. 
+For each event, the \Gls{RICH} computes a full event likelihood that is consistent with assigning a pion mass hypothesis to all tracks given the observed hit distribution read out by the \Gls{HPD}s. The algorithm then iterates through all other possible particle species, ($e, \mu, \pi, K,$ proton, deuteron), assigning a new full event likelihood for a given track, having all other hypotheses fixed. The mass hypothesis with the highest full event likelihood is assigned to the track and this process is repeated for all the tracks in the event, until no improvement is found. 
 
-Results of this algorithm provide likelihood variables, $DLL{x}$, that quantify the strength of the chosen species hypothesis against pion hypothesis,
+Results of this algorithm provide likelihood variables, $\rm{\textrm{DLL{x}}}$, that quantify the strength of the chosen species hypothesis against pion hypothesis,
 \begin{equation}
-	DLL{x} = log(\mathcal{L})_{x} - log(\mathcal{L})_{\pi} \quad  x\in{e, \mu, K, proton, deuteron}.
+	\textrm{\textrm{DLL{x}}} = log(\mathcal{L})_{x} - log(\mathcal{L})_{\pi} \quad  x\in{e, \mu, K, \rm{proton, deuteron}}.
 \end{equation}
 
-By calculating $DLL{x_{1}} - DLL{x_{2}}$, one can obtain discriminative strength between any two species.
+By calculating $\rm{DLL{x_{1}} - DLL{x_{2}}}$, one can obtain discriminative strength between any two species.
 
 \subsection{RICH performance }
 \label{RICHperf}
-In order to measure the performance of the \Gls{PID} computed by \gls{RICH}, populous calibration samples with very little background contamination are required. In order not to bias results, these samples have no \Gls{PID} constraints themselves and are reconstructed solely using kinematic information. For studies of pion/kaon efficiencies, $D^{*+} \to D^{0}(\kaon^{-}\pip)\pip$ backround-substracted samples are used, whereby the daughter tracks of $D^{0}$ become proxies for evaluation. The probability of correctly identifying kaon given certain constraint on $DLL{K}$, identification efficiency (\Gls{ID}), and probability of mistakenly swapping pion identification, \Gls{misID} efficiency, are summarized in \autoref{fig:richperf}. Identification probabilities of $\approx$ 85\% with misIDentification rate of $\approx$ 3\% provide invaluable discriminating separation between kaon and pion.
+In order to measure the performance of the \Gls{PID} computed by a \gls{RICH}, populous calibration samples with very little background contamination are required. In order not to bias results, these samples have no \Gls{PID} constraints themselves and are reconstructed solely using kinematic information. For studies of pion/kaon efficiencies, $D^{*+} \to D^{0}(\kaon^{-}\pip)\pip$ backround-substracted samples are used, whereby the daughter tracks of $D^{0}$ become proxies for the evaluation. The probability of correctly identifying a kaon given a certain constraint on $\textrm{DLL{K}}$, identification efficiency (\Gls{ID}), and probability of mistakenly swapping pion identification, \gls{misID} efficiency, are summarized in \autoref{fig:richperf}. Identification probabilities of $\approx$ 85\% with \gls{misID} rate of $\approx$ 3\% provide invaluable discriminating separation between kaon and pion.
 
 
 
@@ -215,37 +218,37 @@ In order to measure the performance of the \Gls{PID} computed by \gls{RICH}, pop
 	\centering
 	\includegraphics[width = 0.525\textwidth]{figs/detector/D0mass.png}%
 	\includegraphics[width = 0.5\textwidth]{figs/detector/RICHperfdata.png}%
-	\caption{Invariant mass distribution of $D^{0}$ data sample (in black) overlaid with fit to both background and signal (in blue) (left). An example of kaon \Gls{ID} (red) and \Gls{misID} (black) efficiency as a function of momentum under two PID hypotheses, $DLL{K} > 0$ (empty)  and $DLL{K} > 5$ (filled) (right). Both figures are taken from \cite{LHCb-DP-2012-003}.}
+	\caption{Invariant mass distribution of $D^{0}$ data sample (in black) overlaid with fit to both background and signal (in blue) (left). An example of kaon \Gls{ID} (red) and \Gls{misID} (black) efficiency as a function of momentum under two PID hypotheses, $\textrm{DLL{K}} > 0$ (empty)  and $\textrm{DLL{K}} > 5$ (filled) (right). Both figures are taken from \cite{LHCb-DP-2012-003}.}
 	\label{fig:richperf}
 \end{figure}
 
-In search for $B^{0}$ and $B^{0}_{s}$ decaying to $h^{+}h^{-}$, where $h\in K, \pi$, $\pi^{+} \pi^{-}$ invariant mass spectra with and without PID $DLL{x}$ requirements can be seen in \autoref{fig:richnice}. These plots clearly demonstrate increase in sensitivity searching for $B^{0} \rightarrow \pi^{+} \pi^{-}$ signal amongst other components. 
+%In search for $B^{0}$ and $B^{0}_{s}$ decaying to $h^{+}h^{-}$, where $h\in K, \pi$, $\pi^{+} \pi^{-}$ invariant mass spectra with and without PID $\textrm{DLL{x}}$ requirements can be seen in \autoref{fig:richnice}. These plots clearly demonstrate increase in sensitivity searching for $B^{0} \rightarrow \pi^{+} \pi^{-}$ signal amongst other components. 
 
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhnopid.png}%
-	\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
-	\caption{ $\pi^{+} \pi^{-}$ invariant mass distributions obtained using kinematic constraints only (left) and also using PID constraints (right) in order to isolate $B^{0} \rightarrow \pi^{+} \pi^{-}$ peak. This figure is taken from \cite{LHCb-PAPER-2012-002}. }  
-	\label{fig:richnice}
-\end{figure}
+%\begin{figure}[!h]
+%	\centering
+%	\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhnopid.png}%
+%	\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
+%	\caption{ $\pi^{+} \pi^{-}$ invariant mass distributions obtained using kinematic constraints only (left) and also using PID constraints (right) in order to isolate $B^{0} \rightarrow \pi^{+} \pi^{-}$ peak. This figure is taken from \cite{LHCb-PAPER-2012-002}. }  
+%	\label{fig:richnice}
+%\end{figure}
 
 
 \section{Calorimetry }
 \label{calosys}
-As many other particle physics detectors, \Gls{LHCb} is equipped with series of subdetectors providing separation and \Gls{PID} tool for electrons, pions and photons. This separation is achieved because different particles interact at different distances, producing differently shaped showers of light. This part of detector is not only integral to the way \Gls{LHCb} trigger system works but it also provides precise measurement of energies of these objects.
-All the subcomponents discussed here operate on the same principle. The light from the scintillating material is guided to photomultiplier tubes by wavelength shifting fibres.
+As many other particle physics detectors, \Gls{LHCb} is equipped with series of subdetectors providing separation between electrons, pions and photons. This separation is achieved because different particles interact at differently with the material, producing differently shaped showers. This part of detector is not only integral to the way \Gls{LHCb} trigger system works but it also provides a measurement of energies of these objects.
+All the subcomponents discussed here operate on the same principle. Passing particles through the material emit light. The light from the scintillating material, which is created by absorbing the energy of the passing particle and reemit iting in form of light, is guided to photomultiplier tubes by wavelength shifting fibres.
 
-Electrons, pions and photons firstly encounter two planes of scintillating tiles: Scintillating Pad Detector (\Gls{SPD}), Preshower Detector (\Gls{PRS}) intersected by a wall of lead. The \Gls{SPD} senses the passage of charged particles whereas neutral particles will not be affected, distinguishing electrons from photons. The wall of lead initiates the electromagnetic shower, where photons are converted into electron-positron pairs, depositing sizable energy in the \Gls{PRS} allowing electron/pion separation. 
+Electrons, pions and photons firstly encounter two planes of scintillating tiles: Scintillating Pad Detector (\Gls{SPD}), Preshower Detector (\Gls{PRS}) intersected by a wall of lead. The \Gls{SPD} senses the passage of charged particles as they emit light whereas neutral particles do not, making this subdetector distinguish between electrons from photons.\mybox{\color{red} Is this ok now?} The wall of lead initiates the electromagnetic shower, where photons are converted into electron-positron pairs, depositing sizable energy in the \Gls{PRS} allowing electron/pion separation. 
 
-The following Electromagnetic Calorimeter (\Gls{ECAL}) is based on sampling shashlik-type technology, where scintillating tiles are alternated by lead plates measuring the energy deposit of electromagnetic showers. As the best energy resolution requires full energy deposit of energetic photons along the \Gls{ECAL}, the thickness is equivalent to 25 radiation lengths. The resulting resolution of \Gls{ECAL} is $\frac{\sigma_{E}}{E} = \frac{10\%}{\sqrt{E}} \oplus 1\%$, where $E$ is in \gev.
+The Electromagnetic Calorimeter (\Gls{ECAL}) in \gls{LHCb} is based on a sampling shashlik-type technology, where scintillating tiles are alternated by lead plates measuring the energy deposit of electromagnetic showers. As the best energy resolution requires full energy deposit of energetic photons along the \Gls{ECAL}, the thickness is equivalent to 25 radiation lengths. The resulting resolution of the \Gls{ECAL} is $\frac{\sigma_{E}}{E} = \frac{10\%}{\sqrt{E}} \oplus 1\%$, where $E$ is in \gev.
 
-On the other hand, \Gls{HCAL} sandwiches iron instead of lead as the absorber with thickness of 5.6 interaction length only, achieving resolution of $\frac{\sigma_{E}}{E} = \frac{70\%}{\sqrt{E}} \oplus 10\%$ in beam tests. This poorer resolution however fulfils the requirements necessary for the main purpose of this detector, hadron trigger. Away from beampipe the granularity of cells is coarser to mirror the track occupancy as seen in \autoref{fig:CaloGran}. 
+On the other hand, the Hadronic Calorimeter \Gls{HCAL} sandwiches iron instead of lead as the absorber with thickness of 5.6 interaction length only, achieving a resolution of $\frac{\sigma_{E}}{E} = \frac{70\%}{\sqrt{E}} \oplus 10\%$ in beam tests. This poorer resolution however fulfils the requirements necessary for the main purpose of this detector, which is the hadron trigger. Away from the beampipe the granularity of cells is coarser to mirror the track occupancy as seen in \autoref{fig:CaloGran}. 
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width = 1.0\textwidth]{figs/detector/CaloGran.png}%
 	%\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
-	\caption{Granularity of \Gls{ECAL} (left) and \Gls{HCAL} (right) detectors. The figure was taken from \cite{det_paper}. }  
+	\caption{Granularity of \Gls{ECAL} (left) and \Gls{HCAL} (right) detectors. This is just a quarter view and that the black region is where the beam pipe is located. The figure was taken from \cite{det_paper}. }  
 	\label{fig:CaloGran}
 \end{figure}
 
@@ -254,13 +257,15 @@ On the other hand, \Gls{HCAL} sandwiches iron instead of lead as the absorber wi
 
 \section{Muon Stations }
 \label{muonsys}
-Muons are considered to be of fundamental importance to many flagship analyses by \Gls{LHCb}, such as the search for the rare $\B^{0}_{s} \rightarrow \mu^{+} \mu^{-}$ decay . Analysis of \Bmumumu of course relies heavily on good performance of this part of detector. Muon stations are positioned at the end of the detector, taking advantage of the low probability of interaction of muon previously in the detector.
+Muons are considered to be of fundamental importance to many flagship analyses by \Gls{LHCb}, such as the search for the rare $\B^{0}_{s} \rightarrow \mu^{+} \mu^{-}$ decay\cite{Aaij:2017vad}. Analysis of \Bmumumu of course relies heavily on good performance of this part of detector. Muon stations are positioned at the end of the detector, taking advantage of the fact that muons penetrate material better than any other particle type. 
 
-\Gls{LHCb}'s five rectangular muon stations \Gls{muonstation} are positioned before and after calorimetry system, with first station M1 upstream of the \Gls{SPD}, and four stations (M2-M5) downstream of \Gls{HCAL} as shown in \autoref{fig:MuonGran}. The M1 station consists of 12 sets of three gas electron 
-multiplier foils (triple-GEMs) in the region closest to the beam pipe, resisting the highest dose of radiation due to the highest particle flux. Its main use lies in improving the $p_{T}$ resolution by $\approx$ 10\%. M2-M5 station each consist of 276 multi-wire proportional chambers (\Gls{MWPCs}) filled with  $\rm{Ar-CO2-CF4}$ gas mixture. They are interlayed with 0.8\m iron walls, to provide stopping target to all particles, other than muons with momentum higher than $6$ \gev/c. In order to ease the accessibility, like in \Gls{VELO}, all the stations are split into two independent mechanical sides, also known A and C side.
+\Gls{LHCb}'s five rectangular muon stations \Gls{muonstation} are positioned before and after calorimetry system, with first station M1 upstream of the \Gls{SPD}\mybox{\color{red} have to check if M1 is on}, and four stations (M2-M5) downstream of \Gls{HCAL} as shown in \autoref{fig:MuonGran}. The M1 station consists of 12 sets of three gas electron 
+multiplier foils (triple-GEMs) in the region closest to the beam pipe, resisting the highest dose of radiation due to the highest particle flux. Its main use lies in improving the $p_{T}$ resolution by $\approx$ 10\% mybox{\color{red} have to check if M1 is on}. The M2-M5 stations each consist of 276 multi-wire proportional chambers (\Gls{MWPCs}) filled with an $\rm{Ar-CO2-CF4}$ gas mixture. They are interlayered with 0.8\m iron walls, to provide a stopping target for all particles, other than muons with momentum higher than $6$ \gev/c.
 
-Each station is then further segmented into four increasingly larger regions away from the beam, R1 to R4.
- All the regions were constructed to cover the same acceptance, keeping the track occupancy constant across the station. The granularity of the readout is higher in the horizontal plane to take advantage of magnet's horizontal bending plane.
+%In order to ease the accessibility, like in \Gls{VELO}, all the stations are split into two independent mechanical sides, also known A and C side.
+
+Each half of a muon station is segmented into four increasingly larger regions away from the beam, R1 to R4.
+ All the regions were constructed to cover the same acceptance, keeping the track occupancy constant across the station. The granularity of the readout is higher in the horizontal plane to take advantage of the magnet's horizontal bending plane.
 
 
 
@@ -273,15 +278,15 @@ Each station is then further segmented into four increasingly larger regions awa
 	\label{fig:MuonGran}
 \end{figure}
 
-Both GEM and \Gls{MWPCs} operate on a same principle. In each station, position in the $x-y$ plane is determined by ionizing electrons that come from muons passing through the detector, which are then attracted either to the closest anode mesh or wire mesh. The trigger is fired if the corresponding rectangular region in each station registered positive binary decision. This means the efficiency of each station must be $\geq$99\% to give overall 95\% trigger efficiency. Geometrical layout covers $\approx$ 20\% muons originating in semileptonic $b$ decays.
+Both GEM and \Gls{MWPCs} operate on a same principle. In each station, position in the $x-y$ plane is determined by ionizing electrons that come from muons passing through the detector, which are then attracted either to the closest anode mesh or wire mesh. The trigger is fired if the corresponding rectangular region in each station registered a positive binary decision. This means the efficiency of each station must be $\geq$99\% to give overall 95\% trigger efficiency. Geometrical layout covers $\approx$ 20\% muons originating in semileptonic $b$ decays.\mybox{\color{red}CERN-THESIS-2012-025.pdf from puig, i have to invedtigate}
 
 
 \subsection{Muon Identification }
 \label{muonID}
 Apart from triggering events with high enough $p_{T}$ muons, muon stations provide necessary PID information for muon analyses. Offline variables mostly used for muon ID by analysts are
 \begin{itemize}
-	\item{\textbf{IsMuon}: Boolean decision of muon candidates with momentum-dependent categorisation. Long tracks with $p>3$\gev/c are extrapolated to muon stations yielding $x-y$ coordinates in $M2-M5$, considering only tracks within acceptance. For each station, search for the hit information within elliptical area defined by momentum, field of interest (\Gls{FOI}), is performed. The hit requirements are summarized in \autoref{tab:ismuontab}.}
-	\item{\textbf{muDLL}: Difference in log likelihoods computed using muon and non-muon hypothesis. These hypotheses are based on the proximity/distance $D^{2}$ of the track extrapolation into the muon stations and corresponding closest sensed hits in those stations. Muon-like particle will tend to have sharper distribution in $D^{2}$ as compared to other species. Protons were chosen to be the other species for the calibration purposes. They give broader distribution as they originate either as punch-through protons (protons coming from showers not fully contained in \gls{HCAL}), protons having coincident hit position to true muon, and random hits.}
+	\item{\textbf{IsMuon}: Boolean decision of muon candidates with momentum-dependent categorisation. Long tracks with $p>3$\gev/c are extrapolated to muon stations yielding $x-y$ coordinates in $M2-M5$, considering only tracks within acceptance. For each station, a search for hit information within an elliptical area defined by momentum, a field of interest (\Gls{FOI}), is performed. The hit requirements are summarized in \autoref{tab:ismuontab}.}
+	\item{\textbf{muDLL}: Difference in log likelihoods computed using muon and non-muon hypothesis. These hypotheses are based on the proximity/distance $D^{2}$ of the track extrapolation into the muon stations and corresponding closest sensed hits in those stations. Muon-like particle will tend to have sharper distribution in $D^{2}$ as compared to other species. Protons were chosen to be the other species for the calibration purposes. They give a broader distribution as they originate either as punch-through protons (protons coming from showers not fully contained in the \gls{HCAL}), protons having coincident hit position to a true muon, or random hits.}
 	\item{\textbf{DLLmu}}:  For each track global likelihood is produced, by combination of muon and non-muon likelihood from \textbf{muDLL}, with the \Gls{RICH} different mass hypothesis likelihoods, and calorimetry likelihood exploiting the energy deposits information. Like in \Gls{RICH} likelihoods, the default hypothesis corresponds to separation between muon and pion hypothesis.    
 
 \end{itemize}
@@ -301,9 +306,9 @@ Apart from triggering events with high enough $p_{T}$ muons, muon stations provi
 	\label{tab:ismuontab}
 \end{table}   
 
-\subsection{Muon Performance }
+\subsection{Muon Identification Performance}
 \label{muonperf}
-As in hadron performance measurements, muon ID is determined using high statistics decay channel $J/\psi \rightarrow \mu^{+} \mu^{-}$ using \textit{tag and probe} method. MisID rates of kaon and pion are computed using the same decay channels, which were used for identification of hadrons, $D^{*+} \to D^{0}(\kaon^{-}\pip)\pip$. The summary of \texttt{IsMuon} \Gls{ID} and misID rates are presented in \autoref{fig:MuonID}. Very high ID rate (above 90\%) for relatively low misID probability (below 10\%) is key to analyses with muons in a final state. But the least performing are the low $p_{T}$ muons where the identification suffers because these muons can end up outside of the \gls{LHCb} acceptance and misID rates for kaon and pions are significantly higher in low momenta region as the dominant process causing this are prompt muons from decay-in-flight.   
+As for hadron performance measurements, the muon ID performance is determined using the high statistics decay channel $J/\psi \rightarrow \mu^{+} \mu^{-}$ with a \textit{tag and probe} method. MisID rates of kaons and pions are computed using the same decay channels, which were used for identification of hadrons, $D^{*+} \to D^{0}(\kaon^{-}\pip)\pip$. The summary of \texttt{IsMuon} \Gls{ID} and misID rates are presented in \autoref{fig:MuonID}. Very high ID rate (above 90\%) for relatively low misID probability (below 10\%) is key to analyses with muons in a final state. But the least performing are the low $p_{T}$ muons where the identification suffers because these muons can end up outside of the \gls{LHCb} acceptance and misID rates for kaon and pions are significantly higher in low momenta region as the dominant process causing this are muons from decay-in-flight.   
 
 \begin{figure}[!h]
 	\includegraphics[width = 1.0\textwidth]{figs/detector/MuonPIDIsMuon.eps}%
@@ -314,23 +319,23 @@ As in hadron performance measurements, muon ID is determined using high statisti
 
 \section{Trigger }
 \label{triggerchap}
-Nowadays, big-data physics experiments have to make decisions on what kind of data they want to keep. The choice of interesting events is performed by series of decisions, which is cumulatively known as trigger. \Gls{LHCb} trigger system was build around constraints posed by the run conditions, read-out capabilities and available disk space. In Run \Rn{1} and Run \Rn{2} \gls{LHCb} has at its disposal the multistage trigger consisting of hardware-based level 0 trigger (\Gls{L0}) and software-based high level trigger (\Gls{HLT}).
+Big-data physics experiments have to make decisions on what kind of data they want to keep. The choice of interesting events is performed by a series of decisions, which is cumulatively known as trigger. \Gls{LHCb} trigger system was build around constraints posed by the run conditions, read-out capabilities and available disk space. In Run \Rn{1} and Run \Rn{2} \gls{LHCb} has at its disposal the multistage trigger consisting of hardware-based level 0 trigger (\Gls{L0}) and software-based high level trigger (\Gls{HLT}).
 
-In the end, selected events have their trigger decisions categorized by different type.  An event where signal candidate caused the trigger to fire is known to be Trigger on Signal (\Gls{TOS}). An event where it is non-signal like particle causing the trigger decision to occur, Trigger Independent of Signal (\Gls{TIS}) is used. Finally, if only by combination of signal particle together with other particle's properties in the event produce affirmative decision, then these events are categorized as \Gls{TIS} $\&$ \Gls{TOS} = \Gls{TISTOS}.
+In the end, selected events have their trigger decisions categorized. An event where the signal candidate caused the trigger to fire is known to be Trigger on Signal (\Gls{TOS}). An event where it is a non-signal like particle causing the trigger decision to occur, Trigger Independent of Signal (\Gls{TIS}) is used. Finally, if only by a combination of signal particle(s) together with other particle's properties in the event produce an affirmative decision, then these events are categorized as \Gls{TIS} $\&$ \Gls{TOS} = \Gls{TISTOS}.
 
-\Gls{L0} reduces the rate of data from 40 \mhz to 1 \mhz by employing five trigger decisions, also known as lines. First three lines make decision using calorimeter information about the transverse energy, $E_{T}$, whether it is photon, electron or hadron causing the shower energy deposit. Two other lines are reading out information from the muon system by looking for transverse momentum, $p_{T}$, of muon and dimuon (two muon tracks) objects. Efficiencies of L0 muon triggers are evaluated using $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ decays. Hadron trigger efficiency in different decay channels can be seen in \autoref{fig:L0Perf}. 
+\Gls{L0} reduces the rate of data from 40 \mhz to 1 \mhz by employing five trigger decisions, also known as lines. First three lines make decision using calorimeter information about the transverse energy, $E_{T}$, whether it is photon, electron or hadron causing the shower energy deposit. Two other lines are reading out information from the muon system by looking for transverse momentum, $p_{T}$, of muon and dimuon (two muon tracks) objects. Efficiencies of the L0 muon triggers are evaluated using $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ decays. Hadron trigger efficiency in different decay channels can be seen in \autoref{fig:L0Perf}. 
 
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width = 1.0\textwidth]{figs/detector/L0performance.eps}%
 	%\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
-	\caption{ \Gls{TOS} efficiency as a function of $p_{T}$ for muon-based decisions (left).         \Gls{TOS} efficiency for different decays using L0 hadron trigger lines. This figure is taken from \cite{LHCb-DP-2012-002}. }  
+	\caption{ \Gls{TOS} efficiency as a function of $p_{T}$ for muon-based decisions (left).         \Gls{TOS} efficiency for different decays using L0 hadron trigger lines (right). This figure is taken from \cite{LHCb-DP-2012-002}. }  
 	\label{fig:L0Perf}
 \end{figure}
 
 
-Software-based \Gls{HLT} then further reduces the rate from 1 \mhz down to $40-80$ \khz which can be safely stored to disk. The first stage of the \Gls{HLT}, (\Gls{HLT1}), performs limited track reconstruction and hence makes decision based on the presence of charged tracks in the event. \Gls{HLT1} uses \Gls{VELO} hits to reconstructs \Gls{PV}s and \Gls{VELO} trakcs by using 3D pattern recognition. As \Gls{LHCb}'s primary mission is to study decays of hadrons containing $b$ and $c$ quark, \Gls{HLT1} will make decision based on the track segments being displaced (having high \Gls{IP}) with respect to the \Gls{PV}. For events selected by the $L0Muon$, an attempt is made to match the \Gls{VELO} tracks to hits observed in the vertical plane in the muon chambers due to magnet bending plane. By computing the track $\chi^2$, the potential muon track candidates are selected. Finally, the \Gls{VELO} tracks and muon tracks are extrapolated into the \Gls{OT} or \Gls{IT} trackers, allowing for so called \textit{forward tracking}, whereby $p$ and $p_{T}$ requirements are imposed to reduce processing time. Each track is then fitted with fast Kalman filter providing the $\chi^2$ of the fit. The corresponding performance of \Gls{HLT1} trigger lines are shown in \autoref{fig:Hlt1Perf}.
+Software-based \Gls{HLT} then further reduces the rate from 1 \mhz down to $5$ \khz which can be recorded to long-term storage. The first stage of the \Gls{HLT}, (\Gls{HLT1}), performs limited track reconstruction and hence makes a decision based on the presence of charged particles in the event. \Gls{HLT1} uses \Gls{VELO} hits to reconstruct \Gls{PV}s and \Gls{VELO} tracks by using 3D pattern recognition. As \Gls{LHCb}'s primary mission is to study decays of hadrons containing $b$ and $c$ quark, \Gls{HLT1} will make decision based on the track segments being displaced (having high \Gls{IP}) with respect to the \Gls{PV}. For events selected by the $L0Muon$, an attempt is made to match the \Gls{VELO} tracks to hits observed in the vertical plane in the muon chambers, where the magnetic field of the dipole will not make them bend. By computing the track $\chi^2$, the potential muon track candidates are selected. Finally, the \Gls{VELO} tracks and muon tracks are extrapolated into the \Gls{OT} or \Gls{IT} trackers, allowing for so called \textit{forward tracking}, whereby $p$ and $p_{T}$ requirements are imposed to reduce processing time. Each track is then fitted with  a fast Kalman filter providing the $\chi^2$ of the fit. The corresponding performance of \Gls{HLT1} trigger lines are shown in \autoref{fig:Hlt1Perf}.
 
 
 \begin{figure}[!h]

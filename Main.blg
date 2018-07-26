@@ -10,36 +10,36 @@ Database file #4: LHCb-DP.bib
 Database file #5: LHCb-TDR.bib
 You've used 61 entries,
             2909 wiz_defined-function locations,
-            1124 strings with 17331 characters,
-and the built_in function-call counts, 273167 in all, are:
-= -- 29855
+            1123 strings with 17306 characters,
+and the built_in function-call counts, 273763 in all, are:
+= -- 29921
 > -- 488
 < -- 2
-+ -- 1825
++ -- 1830
 - -- 116
-* -- 27820
-:= -- 33591
+* -- 27887
+:= -- 33657
 add.period$ -- 61
 call.type$ -- 61
 change.case$ -- 60
 chr.to.int$ -- 0
 cite$ -- 61
 duplicate$ -- 4349
-empty$ -- 28833
+empty$ -- 28898
 format.name$ -- 116
-if$ -- 59630
+if$ -- 59764
 int.to.chr$ -- 0
 int.to.str$ -- 61
 missing$ -- 285
 newline$ -- 377
 num.names$ -- 55
-pop$ -- 1051
+pop$ -- 1050
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 444
+skip$ -- 447
 stack$ -- 0
-substring$ -- 81325
+substring$ -- 81515
 swap$ -- 3
 text.length$ -- 124
 text.prefix$ -- 0
@@ -48,4 +48,4 @@ type$ -- 0
 warning$ -- 0
 while$ -- 1559
 width$ -- 63
-write$ -- 951
+write$ -- 952

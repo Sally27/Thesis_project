@@ -20,14 +20,14 @@
 \BOOKMARK [1][-]{section.3.1}{LHCb Layout }{chapter.3}% 20
 \BOOKMARK [1][-]{section.3.2}{VErtex LOcator }{chapter.3}% 21
 \BOOKMARK [1][-]{section.3.3}{Tracking System }{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.1}{Tracking Algorithms }{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.1}{Tracking Algorithms}{section.3.3}% 23
 \BOOKMARK [1][-]{section.3.4}{Ring Imaging Detectors }{chapter.3}% 24
 \BOOKMARK [1][-]{section.3.5}{RICH Reconstruction and Performance }{chapter.3}% 25
 \BOOKMARK [2][-]{subsection.3.5.1}{RICH performance }{section.3.5}% 26
 \BOOKMARK [1][-]{section.3.6}{Calorimetry }{chapter.3}% 27
 \BOOKMARK [1][-]{section.3.7}{Muon Stations }{chapter.3}% 28
 \BOOKMARK [2][-]{subsection.3.7.1}{Muon Identification }{section.3.7}% 29
-\BOOKMARK [2][-]{subsection.3.7.2}{Muon Performance }{section.3.7}% 30
+\BOOKMARK [2][-]{subsection.3.7.2}{Muon Identification Performance}{section.3.7}% 30
 \BOOKMARK [1][-]{section.3.8}{Trigger }{chapter.3}% 31
 \BOOKMARK [1][-]{section.3.9}{Simulation }{chapter.3}% 32
 \BOOKMARK [2][-]{subsection.3.9.1}{Differences in Simulation And Data ULRIK - not fully finished}{section.3.9}% 33
@@ -93,7 +93,7 @@
 \BOOKMARK [1][-]{section.8.2}{Conclusion}{chapter.8}% 93
 \BOOKMARK [1][-]{section.8.3}{Outlook}{chapter.8}% 94
 \BOOKMARK [0][-]{section.8.3}{Bibliography}{}% 95
-\BOOKMARK [0][-]{chapter*.135}{Appendices}{}% 96
+\BOOKMARK [0][-]{chapter*.134}{Appendices}{}% 96
 \BOOKMARK [0][-]{appendix.A}{Fitting functions}{}% 97
 \BOOKMARK [1][-]{section.A.1}{Crystal Ball function}{appendix.A}% 98
 \BOOKMARK [1][-]{section.A.2}{Double-sided Ipatia function}{appendix.A}% 99
