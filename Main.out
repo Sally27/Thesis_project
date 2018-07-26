@@ -89,11 +89,12 @@
 \BOOKMARK [2][-]{subsection.7.3.7}{Expected Sensitivity}{section.7.3}% 89
 \BOOKMARK [2][-]{subsection.7.3.8}{Unblinded Data Fits}{section.7.3}% 90
 \BOOKMARK [0][-]{chapter.8}{Results}{}% 91
-\BOOKMARK [0][-]{chapter.8}{Bibliography}{}% 92
-\BOOKMARK [0][-]{chapter*.131}{Appendices}{}% 93
-\BOOKMARK [0][-]{appendix.A}{Boosted Decision Trees}{}% 94
-\BOOKMARK [0][-]{appendix.B}{The sPlot technique}{}% 95
-\BOOKMARK [0][-]{appendix.C}{Fitting functions}{}% 96
-\BOOKMARK [1][-]{section.C.1}{Crystal Ball function}{appendix.C}% 97
-\BOOKMARK [1][-]{section.C.2}{Double-sided Ipatia function}{appendix.C}% 98
-\BOOKMARK [1][-]{section.C.3}{Rookeys function from ROOFIT package}{appendix.C}% 99
+\BOOKMARK [1][-]{section.8.1}{Limit Setting}{chapter.8}% 92
+\BOOKMARK [1][-]{section.8.2}{Conclusion}{chapter.8}% 93
+\BOOKMARK [1][-]{section.8.3}{Outlook}{chapter.8}% 94
+\BOOKMARK [0][-]{section.8.3}{Bibliography}{}% 95
+\BOOKMARK [0][-]{chapter*.135}{Appendices}{}% 96
+\BOOKMARK [0][-]{appendix.A}{Fitting functions}{}% 97
+\BOOKMARK [1][-]{section.A.1}{Crystal Ball function}{appendix.A}% 98
+\BOOKMARK [1][-]{section.A.2}{Double-sided Ipatia function}{appendix.A}% 99
+\BOOKMARK [1][-]{section.A.3}{Rookeys function from ROOFIT package}{appendix.A}% 100

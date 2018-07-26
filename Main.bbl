@@ -219,11 +219,12 @@ Belle, A.~Heller {\em et~al.},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem{Danilina:2017bcn}
-A.~Danilina and N.~Nikitin, \ifthenelse{\boolean{articletitles}}{\emph{{Rare
-  four-leptonic B-decays with light leptons in the final state in the Standard
-  Model}}, }{}\href{http://dx.doi.org/10.1051/epjconf/201715803005}{EPJ Web
-  Conf.\  \textbf{158} (2017) 03005}\relax
+\bibitem{Danilina:2018uzr}
+A.~V. Danilina and N.~V. Nikitin,
+  \ifthenelse{\boolean{articletitles}}{\emph{{Four-Leptonic Decays of Charged
+  and Neutral $B$ Mesons within the Standard Model}},
+  }{}\href{http://dx.doi.org/10.1134/S1063778818030092}{Phys.\ Atom.\ Nucl.\
+  \textbf{81} (2018), no.~3 347}, [Yad. Fiz.81,no.3,331(2018)]\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
