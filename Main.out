@@ -30,7 +30,7 @@
 \BOOKMARK [2][-]{subsection.3.7.2}{Muon Identification Performance}{section.3.7}% 30
 \BOOKMARK [1][-]{section.3.8}{Trigger }{chapter.3}% 31
 \BOOKMARK [1][-]{section.3.9}{Simulation }{chapter.3}% 32
-\BOOKMARK [2][-]{subsection.3.9.1}{Differences in Simulation And Data ULRIK - not fully finished}{section.3.9}% 33
+\BOOKMARK [2][-]{subsection.3.9.1}{Differences in Simulation And Data ULRIK}{section.3.9}% 33
 \BOOKMARK [0][-]{chapter.4}{Handling of trimuon correlations at LHCb}{}% 34
 \BOOKMARK [1][-]{section.4.1}{Muon PID variables }{chapter.4}% 35
 \BOOKMARK [2][-]{subsection.4.1.1}{Binary Muon PID variables }{section.4.1}% 36
@@ -43,24 +43,24 @@
 \BOOKMARK [2][-]{subsection.4.3.3}{Fitting Strategy for B0 J/\(+ -\) K* decay }{section.4.3}% 43
 \BOOKMARK [2][-]{subsection.4.3.4}{Results of B0 J/\(+ -\) K* control sample for K/ misid rates }{section.4.3}% 44
 \BOOKMARK [0][-]{chapter.5}{Discovering \(Setting Limit for\) B + \040+- + \040at LHCb}{}% 45
-\BOOKMARK [1][-]{section.5.1}{Topology of the B + \040+- + \040decay at LHCb ULRIK}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.2}{Sources of Backgrounds ULRIK}{chapter.5}% 47
-\BOOKMARK [1][-]{section.5.3}{Analysis strategy }{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.4}{Samples ULRIK}{chapter.5}% 49
-\BOOKMARK [2][-]{subsection.5.4.1}{Data Samples ULRIK}{section.5.4}% 50
-\BOOKMARK [2][-]{subsection.5.4.2}{Simulation Samples ULRIK}{section.5.4}% 51
-\BOOKMARK [1][-]{section.5.5}{Preselection for B + \040+- + ULRIK}{chapter.5}% 52
-\BOOKMARK [1][-]{section.5.6}{Trigger Selection ULRIK}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.7}{q2 Selection ULRIK}{chapter.5}% 54
-\BOOKMARK [1][-]{section.5.8}{Further Selection ULRIK}{chapter.5}% 55
-\BOOKMARK [2][-]{subsection.5.8.1}{General Features of Multivariate Selections ULRIK}{section.5.8}% 56
-\BOOKMARK [2][-]{subsection.5.8.2}{The Isolation Boosted Decision Tree ULRIK}{section.5.8}% 57
-\BOOKMARK [2][-]{subsection.5.8.3}{The Combinatorial Boosted Decision Tree ULRIK}{section.5.8}% 58
-\BOOKMARK [2][-]{subsection.5.8.4}{The Misid Boosted Decision Tree ULRIK}{section.5.8}% 59
+\BOOKMARK [1][-]{section.5.1}{Topology of the B + \040+- + \040decay at LHCb}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.2}{Sources of Backgrounds}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.3}{Analysis strategy}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.4}{Samples}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.4.1}{Data Samples}{section.5.4}% 50
+\BOOKMARK [2][-]{subsection.5.4.2}{Simulation Samples}{section.5.4}% 51
+\BOOKMARK [1][-]{section.5.5}{Preselection for B + \040+- + }{chapter.5}% 52
+\BOOKMARK [1][-]{section.5.6}{Trigger Selection}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.7}{q2 Selection}{chapter.5}% 54
+\BOOKMARK [1][-]{section.5.8}{Further Selection}{chapter.5}% 55
+\BOOKMARK [2][-]{subsection.5.8.1}{General Features of Multivariate Selections}{section.5.8}% 56
+\BOOKMARK [2][-]{subsection.5.8.2}{The Isolation Boosted Decision Tree}{section.5.8}% 57
+\BOOKMARK [2][-]{subsection.5.8.3}{The Combinatorial Boosted Decision Tree}{section.5.8}% 58
+\BOOKMARK [2][-]{subsection.5.8.4}{The Misid Boosted Decision Tree}{section.5.8}% 59
 \BOOKMARK [2][-]{subsection.5.8.5}{Fitting Region Selection}{section.5.8}% 60
-\BOOKMARK [2][-]{subsection.5.8.6}{Further PID Selection ULRIK}{section.5.8}% 61
-\BOOKMARK [1][-]{section.5.9}{Normalisation channel ULRIK}{chapter.5}% 62
-\BOOKMARK [1][-]{section.5.10}{Fractional Corrected Mass Error \(FCME\) Window Split ULRIK}{chapter.5}% 63
+\BOOKMARK [2][-]{subsection.5.8.6}{Further PID Selection}{section.5.8}% 61
+\BOOKMARK [1][-]{section.5.9}{Normalisation channel}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.10}{Fractional Corrected Mass Error \(FCME\) Window Split}{chapter.5}% 63
 \BOOKMARK [0][-]{chapter.6}{Background Studies}{}% 64
 \BOOKMARK [1][-]{section.6.1}{Combinatorial Background}{chapter.6}% 65
 \BOOKMARK [1][-]{section.6.2}{MisID type background}{chapter.6}% 66
@@ -93,7 +93,7 @@
 \BOOKMARK [1][-]{section.8.2}{Conclusion}{chapter.8}% 93
 \BOOKMARK [1][-]{section.8.3}{Outlook}{chapter.8}% 94
 \BOOKMARK [0][-]{section.8.3}{Bibliography}{}% 95
-\BOOKMARK [0][-]{chapter*.134}{Appendices}{}% 96
+\BOOKMARK [0][-]{chapter*.133}{Appendices}{}% 96
 \BOOKMARK [0][-]{appendix.A}{Fitting functions}{}% 97
 \BOOKMARK [1][-]{section.A.1}{Crystal Ball function}{appendix.A}% 98
 \BOOKMARK [1][-]{section.A.2}{Double-sided Ipatia function}{appendix.A}% 99

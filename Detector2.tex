@@ -123,8 +123,8 @@ This setup brings outstanding hit resolution (4-40$\mum$), which in turn allows 
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width = 0.5\textwidth]{figs/detector/IPresmhm.eps}%
-        \includegraphics[width = 0.5\textwidth]{figs/detector/PVres.eps}
+	\includegraphics[width = 0.5\textwidth]{figs/detector/IPRes-Vs-P-CompareIPxIPy-2012.pdf}%
+        \includegraphics[width = 0.5\textwidth]{figs/detector/ResXY_1PV_2011Data.pdf}
 	\caption{Two key variables which quantify performance of the \Gls{VELO} detector. \Gls{IP} resolution which is worse for low momentum tracks (left) and \Gls{PV} resolution dependent on the number of tracks forming the primary vertex $N$ (right). Figures taken from \cite{LHCbVELOGroup:2014uea}.}
 	\label{fig:veloIPres}
 \end{figure}
@@ -165,7 +165,7 @@ When searching for a $b$-hadron decay, the mass of a candidate can be calculated
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width = 0.6\textwidth]{figs/detector/momresolution.png}
+	\includegraphics[width = 0.6\textwidth]{figs/detector/Fig17.pdf}
 	\caption{Momentum resolution of \gls{longtrack}s measured at \gls{LHCb}. The decay channel $J/\psi^{+} \rightarrow \mu^{+} \mu^{-}$ is analysed for this purpose. The figure is taken from \cite{LHCb-DP-2014-002}.}
 	\label{fig:momres}
 \end{figure}
@@ -188,7 +188,7 @@ Both \gls{RICH1} and \gls{RICH2} use set of spherical primary mirrors to guide t
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width = 0.5\textwidth]{figs/detector/richres2.eps}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/CKAnglevsMom_NoTheory_jun2011-01.eps}%
 	\includegraphics[width = 0.4\textwidth]{figs/detector/mechrich.eps}%
 	\caption{Separation power for different species of particles in momentum-Cerenkov angle plane for $\rm{C_{4}F_{10}}$ radiator (left). Figure taken from \cite{LHCb-DP-2012-003}.  Schematic diagram of \gls{RICH1} layout (right). Figure taken from \cite{det_paper}.}
 	\label{fig:richres}
@@ -216,8 +216,8 @@ In order to measure the performance of the \Gls{PID} computed by a \gls{RICH}, p
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width = 0.525\textwidth]{figs/detector/D0mass.png}%
-	\includegraphics[width = 0.5\textwidth]{figs/detector/RICHperfdata.png}%
+	\includegraphics[width = 0.525\textwidth]{figs/detector/D0_Mass.eps}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/KandPi_2_K.eps}%
 	\caption{Invariant mass distribution of $D^{0}$ data sample (in black) overlaid with fit to both background and signal (in blue) (left). An example of kaon \Gls{ID} (red) and \Gls{misID} (black) efficiency as a function of momentum under two PID hypotheses, $\textrm{DLL{K}} > 0$ (empty)  and $\textrm{DLL{K}} > 5$ (filled) (right). Both figures are taken from \cite{LHCb-DP-2012-003}.}
 	\label{fig:richperf}
 \end{figure}
@@ -272,7 +272,7 @@ Each half of a muon station is segmented into four increasingly larger regions a
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width = 1.0\textwidth]{figs/detector/MuonGran.png}%
+	\includegraphics[width = 1.0\textwidth]{figs/detector/sideview.pdf}%
 	%\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
 	\caption{(a) Layout of the muon detector x-z plane and (b) x-y plane. This figure is taken from \cite{LHCb-DP-2012-002}. }  
 	\label{fig:MuonGran}
@@ -311,7 +311,11 @@ Apart from triggering events with high enough $p_{T}$ muons, muon stations provi
 As for hadron performance measurements, the muon ID performance is determined using the high statistics decay channel $J/\psi \rightarrow \mu^{+} \mu^{-}$ with a \textit{tag and probe} method. MisID rates of kaons and pions are computed using the same decay channels, which were used for identification of hadrons, $D^{*+} \to D^{0}(\kaon^{-}\pip)\pip$. The summary of \texttt{IsMuon} \Gls{ID} and misID rates are presented in \autoref{fig:MuonID}. Very high ID rate (above 90\%) for relatively low misID probability (below 10\%) is key to analyses with muons in a final state. But the least performing are the low $p_{T}$ muons where the identification suffers because these muons can end up outside of the \gls{LHCb} acceptance and misID rates for kaon and pions are significantly higher in low momenta region as the dominant process causing this are muons from decay-in-flight.   
 
 \begin{figure}[!h]
-	\includegraphics[width = 1.0\textwidth]{figs/detector/MuonPIDIsMuon.eps}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/dllFit_mu_IMvsPvsPt.pdf}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/dllFit_P_IMvsPvsPt.pdf}%
+       \newline
+	\includegraphics[width = 0.5\textwidth]{figs/detector/dllFit_pi_IMvsPvsPt.pdf}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/dllFit_ka_IMvsPvsPt.pdf}%
 	\caption{(a) Probability of correctly identifying muons as a function of momentum $p$ in the bins of $p_{T}$ for $J/\psi \rightarrow \mu^{+} \mu^{-}$ with \texttt{IsMuon} constraint. (c) Probability of incorrectly identifying pion (b) proton and (d) kaon as muon with \texttt{IsMuon}. This figure is taken from \cite{LHCb-DP-2013-001}. }  
 	\label{fig:MuonID}
 \end{figure}
@@ -328,9 +332,10 @@ In the end, selected events have their trigger decisions categorized. An event w
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width = 1.0\textwidth]{figs/detector/L0performance.eps}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/Fig1_L0MuonEff_PT.pdf}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/Fig21_L0Hadron_PT.pdf}%
 	%\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
-	\caption{ \Gls{TOS} efficiency as a function of $p_{T}$ for muon-based decisions (left).         \Gls{TOS} efficiency for different decays using L0 hadron trigger lines (right). This figure is taken from \cite{LHCb-DP-2012-002}. }  
+	\caption{ \Gls{TOS} efficiency as a function of $p_{T}$ for muon-based decisions (left).         \Gls{TOS} efficiency for different decays using L0 hadron trigger lines (right). This figure is taken from \cite{Albrecht:2013fba}. }  
 	\label{fig:L0Perf}
 \end{figure}
 
@@ -340,18 +345,18 @@ Software-based \Gls{HLT} then further reduces the rate from 1 \mhz down to $5$ \
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width = 1.0\textwidth]{figs/detector/HLT1performance.eps}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/Fig5_Hlt1TrackAllL0_PT.pdf}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/Fig3_Hlt1MuonEff_PT.pdf}%
 	%\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
 	\caption{ \Gls{HLT1} efficiencies of the corresponding triggers using the same proxy as in \autoref{fig:L0Perf}.  This figure is taken from \cite{Albrecht:2013fba}. }  
 	\label{fig:Hlt1Perf}
 \end{figure}
 
-The second stage \Gls{HLT2} reduces the rate to 5 \khz that can be safely written to disk. \Gls{HLT2} consists of a series of decisions based on a full reconstruction of either groups of decays or specific decay modes. \textit{Topological triggers} exploit the vertex and track information (topology) of $b$-hadron decays. By employing multivariate techniques 2,3 or 4-body decays away from \Gls{PV} are reconstructed. To account for decays where final state particle is not fully reconstructed, corrected mass serves as an input variable in the the \Gls{BDT}. Dedicated lines are also written to reconstruct muon and dimuon channels allowing for both prompt $J/\psi$ and $B\rightarrow J/\psi X$ studies. Finally \textit{Exclusive triggers} concentrating on selecting events with $c\bar{c}$ do selection very similar to the offline selection but without \Gls{PID} cuts and with \textit{prescales}, only allowed in a certain fraction of events, is applied.
+The second stage \Gls{HLT2} reduces the rate to 5 \khz that can be safely written to disk. \Gls{HLT2} consists of a series of decisions based on a full reconstruction of either groups of decays or specific decay modes. \textit{Topological triggers} exploit the vertex and track information (topology) of $b$-hadron decays. By employing multivariate techniques 2-,3- or 4-body decays that are well separated from the \Gls{PV} are reconstructed. To account for decays where a final state particle is not fully reconstructed, the corrected mass (will be defined in~\autoref{eq:corrm}) serves as an input variable in the the \Gls{BDT}. Dedicated lines are also written to reconstruct muon and dimuon channels allowing for both prompt $J/\psi$ and $B\rightarrow J/\psi X$ studies. Finally \textit{Exclusive triggers} concentrate on selecting events with $D$ mesons. They perform selection which is very similar to the offline selection but without \Gls{PID} cuts.% and with \textit{prescales} required, where only a certain fraction of events is allowed to pass through.
 
 
 
-Between the Run \Rn{1} and Run \Rn{2} period there has been a change in how the software trigger operates, which can be seen in \autoref{fig:TriggerChange}. As more timing budget was introduced for both \Gls{HLT1} and \Gls{HLT2}, \Gls{LHCb} took advantage in upgrading the trigger system by introducing update of calibration and alignment constants of the relevant subdetectors before the data is sent to permanent disk. \textit{Online reconstruction}, defined as being produced at trigger farm, became the same as the \textit{offline reconstruction}, defined as reconstruction made when data reached the permanent disk. Hence, there is enhancement of available information, such as the \Gls{PID} in the \Gls{HLT}, which can be then used at the trigger level. 
-(Shall I Mention Turbo?).
+Between the Run \Rn{1} and Run \Rn{2} period there has been a change in how the software trigger operates, which can be seen in \autoref{fig:TriggerChange}. As more computing resources were introduced for both \Gls{HLT1} and \Gls{HLT2}, \Gls{LHCb} took advantage in upgrading the trigger system by introducing an update of calibration and alignment constants of the relevant subdetectors before the data is sent to permanent disk. \textit{Online reconstruction}, defined as being produced at the trigger farm, became the same as the \textit{offline reconstruction}, defined as reconstruction made when data reached the permanent disk. Hence, there is enhancement of available information, such as the \Gls{PID} in the \Gls{HLT}, which can be then used at the trigger level. 
 
 
 \begin{figure}[!h]
@@ -359,23 +364,23 @@ Between the Run \Rn{1} and Run \Rn{2} period there has been a change in how the 
 	\includegraphics[width = 0.5\textwidth]{figs/detector/LHCb_Trigger_RunIAlg.pdf}%
 	\includegraphics[width = 0.5\textwidth]{figs/detector/LHCb_Trigger_RunII.pdf}%
 	%\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
-	\caption{Trigger scheme differences between Run \Rn{1} and Run \Rn{2}. Figures obtained from \cite{triggerscheme}}  
+	\caption{Trigger scheme differences between Run \Rn{1} and Run \Rn{2}. Figures obtained from \cite{triggerscheme}.}  
 	\label{fig:TriggerChange}
 \end{figure}
 
 
 \section{Simulation }
 \label{simulationchap}
-In order to optimise the event selections, extract efficiencies and model the backgrounds, a full Monte Carlo Simulation \Gls{MC} can be produced starting from simulation of the $pp$ collision to detector readout of the decay of interest  produced. 
-The $pp$ collisions within \Gls{LHCb} configuration \cite{Belyaev:2011zza} are simulated with Pythia 6.4 \cite{pythia6} and Pythia 8.1 \cite{pythia8}. \Gls{LHCb} specific settings are mostly related to running conditions: luminosity, number of collisions per bunch crossing as well as contamination from other bunches, \textit{spill-over}. 
+In order to optimise the event selections, determine efficiencies and model the backgrounds, a full Monte Carlo Simulation \Gls{MC} can be produced starting from simulation of the $pp$ collision to detector readout of the decay of interest produced. 
+The $pp$ collisions within the \Gls{LHCb} configuration \cite{Belyaev:2011zza} are simulated with Pythia 6.4 \cite{pythia6} and Pythia 8.1 \cite{pythia8}. \Gls{LHCb} specific settings are mostly related to running conditions: luminosity, number of collisions per bunch crossing as well as contamination from other bunches, \textit{spill-over}. 
 
-In the $pp$ collision, the $b$ and $c$ production mechanisms are simulated and then the following $b\bar{b}$ or $c\bar{c}$ pair is hadronized into hadrons of interest. In this thesis and the analysis presented, \Bp is the hadron of interest. Hadrons are then further decayed using EVTGEN \cite{Lange:2001uf} into the chosen decay products. In this stage, different physics models or inputs from theory can be configured. At the same time some initial CPU-friendly selection is established, usually requiring the hadrons to be contained within the forward detector's acceptance.
-In order to account for the effects of \Gls{QED} radiative corrections, PHOTOS \cite{photos} algorithm can be used. All of this combined establishes \textit{generator-level simulation} of LHCb.
+In the $pp$ collision, the $b$ and $c$ production mechanisms are simulated and then the following $b\bar{b}$ or $c\bar{c}$ pair is hadronized into hadrons of interest. In this thesis and the analysis presented, the \Bp meson is the hadron of interest. Hadrons are then further decayed using EVTGEN \cite{Lange:2001uf} into the chosen decay products. At this stage, different physics models or inputs from theory can be configured. % At the same time some initial CPU-friendly selection is established, usually requiring the hadrons to be contained within the forward detector's acceptance.
+In order to account for the effects of \Gls{QED} radiative corrections, the PHOTOS \cite{photos} algorithm can be used. All of this combined establishes \textit{the generator-level simulation} of LHCb.
 
 
-In the next phase, \textit{detector simulation}, the interactions of the all the particles with the detector, transport, as well as detector's response are simulated using the C++ GEANT4 toolkit \cite{Geant4},\cite{Agostinelli:2002hh}. \Gls{LHCb}'s interface to GEANT4 is detailed in \cite{Clemencic:2011zza}. 
+In the next phase, \textit{detector simulation}, the interactions of the all the particles with the detector, transport, as well as detector's response are simulated using the C++ GEANT4 toolkit \cite{Geant4},\cite{Agostinelli:2002hh}. \Gls{LHCb}'s interface to GEANT4 is detailed in Ref\cite{Clemencic:2011zza}. 
 
-\subsection{Differences in Simulation And Data \mybox{ULRIK - not fully finished}}
+\subsection{Differences in Simulation And Data \mybox{ULRIK}}
 \label{detpid}
 Despite the complexity and best intention of the \Gls{LHCb} simulation, there are several shortcomings that require correction treatment.
 The most affected variables necessary for physics analyses that one needs to consider are \Gls{IP} resolution, track reconstruction efficiencies, \Gls{PID} variables and track occupancy.
@@ -384,8 +389,8 @@ The \Gls{IP} resolution shows better trend in the simulation then in the data du
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width = 0.5\textwidth]{figs/detector/IPres.eps}%
-	\includegraphics[width = 0.5\textwidth]{figs/detector/IPresAngle.eps}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/IPXRes-Vs-InversePT-Compare2012DataToMC.pdf}%
+	\includegraphics[width = 0.5\textwidth]{figs/detector/IPXRes-Vs-Phi-Compare2011DataToMC.pdf}%
 	\caption{\Gls{IP} resolution in x-direction comparing the data and simulation output for 2012 data-taking period (left). \Gls{IP} resolution in x-direction comparing the data and simulation output for 2011 data-taking period as a function of angle, $\phi$ (right). This figures are taken from \cite{LHCbVELOGroup:2014uea}. }  
 	\label{fig:IPRES}
 \end{figure}

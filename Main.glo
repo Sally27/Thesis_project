@@ -318,7 +318,7 @@
 \glossaryentry{SV?\glossentry{SV}|setentrycounter[]{page}\glsnumberformat}{100}
 \glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{101}
 \glossaryentry{SV?\glossentry{SV}|setentrycounter[]{page}\glsnumberformat}{101}
-\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{104}
+\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{105}
 \glossaryentry{IP?\glossentry{IP}|setentrycounter[]{page}\glsnumberformat}{106}
 \glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{106}
 \glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{106}
@@ -327,78 +327,78 @@
 \glossaryentry{FD $\mathbold {\chisq }$?\glossentry{fdchi2}|setentrycounter[]{page}\glsnumberformat}{106}
 \glossaryentry{Track $\mathbold {\chisq /\rm {ndof}}$?\glossentry{trackchi2ndof}|setentrycounter[]{page}\glsnumberformat}{106}
 \glossaryentry{P$\mathbold {_{ghost}}$?\glossentry{pgh2}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{SV?\glossentry{SV}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{Cos$(\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{Track $\mathbold {\chisq /\rm {ndof}}$?\glossentry{trackchi2ndof}|setentrycounter[]{page}\glsnumberformat}{107}
 \glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{107}
-\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{107}
-\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{107}
-\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{107}
-\glossaryentry{SV?\glossentry{SV}|setentrycounter[]{page}\glsnumberformat}{107}
 \glossaryentry{Cos$(\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{107}
-\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{Track $\mathbold {\chisq /\rm {ndof}}$?\glossentry{trackchi2ndof}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{Cos$(\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{FD $\mathbold {\chisq }$?\glossentry{fdchi2}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{L0?\glossentry{L0}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{HLT1?\glossentry{HLT1}|setentrycounter[]{page}\glsnumberformat}{108}
+\glossaryentry{FD $\mathbold {\chisq }$?\glossentry{fdchi2}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{L0?\glossentry{L0}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{HLT1?\glossentry{HLT1}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{HLT2?\glossentry{HLT2}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{108}
+\glossaryentry{$\mathbold {IP\chisq }$?\glossentry{ipchi2}|setentrycounter[]{page}\glsnumberformat}{108}
 \glossaryentry{HLT2?\glossentry{HLT2}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{109}
-\glossaryentry{$\mathbold {IP\chisq }$?\glossentry{ipchi2}|setentrycounter[]{page}\glsnumberformat}{109}
-\glossaryentry{HLT2?\glossentry{HLT2}|setentrycounter[]{page}\glsnumberformat}{109}
-\glossaryentry{$\mathbold {IP\chisq }$?\glossentry{ipchi2}|setentrycounter[]{page}\glsnumberformat}{109}
-\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{113}
-\glossaryentry{Cos$(\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{113}
-\glossaryentry{FD $\mathbold {\chisq }$?\glossentry{fdchi2}|setentrycounter[]{page}\glsnumberformat}{113}
-\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{113}
-\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{113}
-\glossaryentry{Track $\mathbold {\chisq /\rm {ndof}}$?\glossentry{trackchi2ndof}|setentrycounter[]{page}\glsnumberformat}{114}
-\glossaryentry{P$\mathbold {_{ghost}}$?\glossentry{pgh2}|setentrycounter[]{page}\glsnumberformat}{114}
-\glossaryentry{$\mathbold {IP\chisq }$?\glossentry{ipchi2}|setentrycounter[]{page}\glsnumberformat}{114}
-\glossaryentry{SV?\glossentry{SV}|setentrycounter[]{page}\glsnumberformat}{114}
-\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{114}
-\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{116}
-\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{116}
-\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{116}
-\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{116}
-\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{119}
-\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{119}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{120}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{120}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{120}
-\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{124}
+\glossaryentry{$\mathbold {IP\chisq }$?\glossentry{ipchi2}|setentrycounter[]{page}\glsnumberformat}{108}
+\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{112}
+\glossaryentry{Cos$(\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{112}
+\glossaryentry{FD $\mathbold {\chisq }$?\glossentry{fdchi2}|setentrycounter[]{page}\glsnumberformat}{112}
+\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{112}
+\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{112}
+\glossaryentry{Track $\mathbold {\chisq /\rm {ndof}}$?\glossentry{trackchi2ndof}|setentrycounter[]{page}\glsnumberformat}{113}
+\glossaryentry{P$\mathbold {_{ghost}}$?\glossentry{pgh2}|setentrycounter[]{page}\glsnumberformat}{113}
+\glossaryentry{$\mathbold {IP\chisq }$?\glossentry{ipchi2}|setentrycounter[]{page}\glsnumberformat}{113}
+\glossaryentry{SV?\glossentry{SV}|setentrycounter[]{page}\glsnumberformat}{113}
+\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{113}
+\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{115}
+\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{115}
+\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{115}
+\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{115}
+\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{118}
+\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{118}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{119}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{119}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{119}
+\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{123}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{123}
+\glossaryentry{Track $\mathbold {\chisq /\rm {ndof}}$?\glossentry{trackchi2ndof}|setentrycounter[]{page}\glsnumberformat}{123}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{123}
+\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{123}
+\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{123}
 \glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{124}
-\glossaryentry{Track $\mathbold {\chisq /\rm {ndof}}$?\glossentry{trackchi2ndof}|setentrycounter[]{page}\glsnumberformat}{124}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{124}
-\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{124}
-\glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{124}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{125}
-\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{127}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{130}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{130}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{130}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{130}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{130}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{130}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{136}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{146}
-\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{146}
-\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{147}
+\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{126}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{129}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{129}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{129}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{129}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{129}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{129}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{135}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{145}
+\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{145}
+\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{146}
+\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{146}
+\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{146}
+\glossaryentry{P$\mathbold {_{ghost}}$?\glossentry{pgh2}|setentrycounter[]{page}\glsnumberformat}{147}
 \glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{147}
-\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{147}
-\glossaryentry{P$\mathbold {_{ghost}}$?\glossentry{pgh2}|setentrycounter[]{page}\glsnumberformat}{148}
-\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{148}
-\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{150}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{153}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{153}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{155}
-\glossaryentry{TIS?\glossentry{TIS}|setentrycounter[]{page}\glsnumberformat}{174}
-\glossaryentry{TOS?\glossentry{TOS}|setentrycounter[]{page}\glsnumberformat}{174}
-\glossaryentry{TOS?\glossentry{TOS}|setentrycounter[]{page}\glsnumberformat}{174}
-\glossaryentry{TIS?\glossentry{TIS}|setentrycounter[]{page}\glsnumberformat}{174}
-\glossaryentry{TOS?\glossentry{TOS}|setentrycounter[]{page}\glsnumberformat}{174}
-\glossaryentry{TIS?\glossentry{TIS}|setentrycounter[]{page}\glsnumberformat}{174}
-\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{189}
-\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{197}
-\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{197}
+\glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{149}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{152}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{152}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{154}
+\glossaryentry{TIS?\glossentry{TIS}|setentrycounter[]{page}\glsnumberformat}{173}
+\glossaryentry{TOS?\glossentry{TOS}|setentrycounter[]{page}\glsnumberformat}{173}
+\glossaryentry{TOS?\glossentry{TOS}|setentrycounter[]{page}\glsnumberformat}{173}
+\glossaryentry{TIS?\glossentry{TIS}|setentrycounter[]{page}\glsnumberformat}{173}
+\glossaryentry{TOS?\glossentry{TOS}|setentrycounter[]{page}\glsnumberformat}{173}
+\glossaryentry{TIS?\glossentry{TIS}|setentrycounter[]{page}\glsnumberformat}{173}
+\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{188}
+\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{196}
+\glossaryentry{CB?\glossentry{CB}|setentrycounter[]{page}\glsnumberformat}{196}
