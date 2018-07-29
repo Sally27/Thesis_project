@@ -46,56 +46,54 @@
 \BOOKMARK [1][-]{section.5.1}{Topology of the B + \040+- + \040decay at LHCb}{chapter.5}% 46
 \BOOKMARK [1][-]{section.5.2}{Sources of Backgrounds}{chapter.5}% 47
 \BOOKMARK [1][-]{section.5.3}{Analysis strategy}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.4}{Samples}{chapter.5}% 49
-\BOOKMARK [2][-]{subsection.5.4.1}{Data Samples}{section.5.4}% 50
-\BOOKMARK [2][-]{subsection.5.4.2}{Simulation Samples}{section.5.4}% 51
-\BOOKMARK [1][-]{section.5.5}{Preselection}{chapter.5}% 52
-\BOOKMARK [1][-]{section.5.6}{Trigger Selection}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.7}{q2 Selection}{chapter.5}% 54
-\BOOKMARK [1][-]{section.5.8}{Further Selection}{chapter.5}% 55
-\BOOKMARK [2][-]{subsection.5.8.1}{General Features of Multivariate Selections}{section.5.8}% 56
-\BOOKMARK [2][-]{subsection.5.8.2}{The Isolation Boosted Decision Tree}{section.5.8}% 57
-\BOOKMARK [2][-]{subsection.5.8.3}{The Combinatorial Boosted Decision Tree}{section.5.8}% 58
-\BOOKMARK [2][-]{subsection.5.8.4}{The Misid Boosted Decision Tree}{section.5.8}% 59
-\BOOKMARK [2][-]{subsection.5.8.5}{Fitting Region Selection}{section.5.8}% 60
-\BOOKMARK [2][-]{subsection.5.8.6}{Further PID Selection}{section.5.8}% 61
-\BOOKMARK [1][-]{section.5.9}{Normalisation channel}{chapter.5}% 62
-\BOOKMARK [1][-]{section.5.10}{Fractional Corrected Mass Error \(FCME\) Window Split}{chapter.5}% 63
-\BOOKMARK [0][-]{chapter.6}{Background Studies}{}% 64
-\BOOKMARK [1][-]{section.6.1}{Combinatorial Background}{chapter.6}% 65
-\BOOKMARK [1][-]{section.6.2}{MisID type background}{chapter.6}% 66
-\BOOKMARK [1][-]{section.6.3}{Partially Reconstructed Background}{chapter.6}% 67
-\BOOKMARK [2][-]{subsection.6.3.1}{Partially Reconstructed Backgrounds, where D0 / ' X, and / ' }{section.6.3}% 68
-\BOOKMARK [2][-]{subsection.6.3.2}{Partially Reconstructed B \('\) V Backgrounds}{section.6.3}% 69
-\BOOKMARK [1][-]{section.6.4}{Rare and resonant B+ + / K+ - + backgrounds}{chapter.6}% 70
-\BOOKMARK [1][-]{section.6.5}{Summary}{chapter.6}% 71
-\BOOKMARK [0][-]{chapter.7}{Mass fits and efficiencies}{}% 72
-\BOOKMARK [1][-]{section.7.1}{Efficiency Ratio}{chapter.7}% 73
-\BOOKMARK [1][-]{section.7.2}{Summary of Efficiencies}{chapter.7}% 74
-\BOOKMARK [2][-]{subsection.7.2.1}{Detector Acceptance Efficiency \(GEN\)}{section.7.2}% 75
-\BOOKMARK [2][-]{subsection.7.2.2}{Reconstruction Efficiency \(REC\)}{section.7.2}% 76
-\BOOKMARK [2][-]{subsection.7.2.3}{Trigger Efficiency \(TRG\)}{section.7.2}% 77
-\BOOKMARK [2][-]{subsection.7.2.4}{Offline Selection \(OFF\)}{section.7.2}% 78
-\BOOKMARK [2][-]{subsection.7.2.5}{Combinatorial BDT and Misid BDT efficiency}{section.7.2}% 79
-\BOOKMARK [2][-]{subsection.7.2.6}{Fitting Range Efficiency \(FR\)}{section.7.2}% 80
-\BOOKMARK [2][-]{subsection.7.2.7}{PID Efficiencies \(PID\)}{section.7.2}% 81
-\BOOKMARK [1][-]{section.7.3}{Mass Fits}{chapter.7}% 82
-\BOOKMARK [2][-]{subsection.7.3.1}{Normalisation Channel Parametrisation}{section.7.3}% 83
-\BOOKMARK [2][-]{subsection.7.3.2}{Normalisation Fit}{section.7.3}% 84
-\BOOKMARK [2][-]{subsection.7.3.3}{Signal Channel Parametrisation}{section.7.3}% 85
-\BOOKMARK [2][-]{subsection.7.3.4}{Signal Data Fits}{section.7.3}% 86
-\BOOKMARK [2][-]{subsection.7.3.5}{Signal Fit Systematics}{section.7.3}% 87
-\BOOKMARK [2][-]{subsection.7.3.6}{Blinded Data Fits}{section.7.3}% 88
-\BOOKMARK [2][-]{subsection.7.3.7}{Expected Sensitivity}{section.7.3}% 89
-\BOOKMARK [2][-]{subsection.7.3.8}{Unblinded Data Fits}{section.7.3}% 90
-\BOOKMARK [0][-]{chapter.8}{Results}{}% 91
-\BOOKMARK [1][-]{section.8.1}{Limit Setting}{chapter.8}% 92
-\BOOKMARK [1][-]{section.8.2}{Conclusion}{chapter.8}% 93
-\BOOKMARK [1][-]{section.8.3}{Outlook}{chapter.8}% 94
-\BOOKMARK [0][-]{section.8.3}{Bibliography}{}% 95
-\BOOKMARK [0][-]{chapter*.133}{Appendices}{}% 96
-\BOOKMARK [0][-]{appendix.A}{Fitting functions}{}% 97
-\BOOKMARK [1][-]{section.A.1}{Crystal Ball function}{appendix.A}% 98
-\BOOKMARK [1][-]{section.A.2}{Double-sided Ipatia function}{appendix.A}% 99
-\BOOKMARK [1][-]{section.A.3}{Rookeys function from ROOFIT package}{appendix.A}% 100
-\BOOKMARK [0][-]{appendix.B}{License}{}% 101
+\BOOKMARK [1][-]{section.5.4}{Signal Simulation Samples}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.5}{Preselection}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.6}{Trigger Selection}{chapter.5}% 51
+\BOOKMARK [1][-]{section.5.7}{q2 Selection}{chapter.5}% 52
+\BOOKMARK [1][-]{section.5.8}{Further Selection}{chapter.5}% 53
+\BOOKMARK [2][-]{subsection.5.8.1}{General Features of Multivariate Selections}{section.5.8}% 54
+\BOOKMARK [2][-]{subsection.5.8.2}{The Isolation Boosted Decision Tree}{section.5.8}% 55
+\BOOKMARK [2][-]{subsection.5.8.3}{The Combinatorial Boosted Decision Tree}{section.5.8}% 56
+\BOOKMARK [2][-]{subsection.5.8.4}{The Misid Boosted Decision Tree}{section.5.8}% 57
+\BOOKMARK [2][-]{subsection.5.8.5}{Fitting Region Selection}{section.5.8}% 58
+\BOOKMARK [2][-]{subsection.5.8.6}{Further PID Selection}{section.5.8}% 59
+\BOOKMARK [1][-]{section.5.9}{Normalisation channel}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.10}{Fractional Corrected Mass Error \(FCME\) Window Split}{chapter.5}% 61
+\BOOKMARK [0][-]{chapter.6}{Background Studies}{}% 62
+\BOOKMARK [1][-]{section.6.1}{Combinatorial Background}{chapter.6}% 63
+\BOOKMARK [1][-]{section.6.2}{MisID type background}{chapter.6}% 64
+\BOOKMARK [1][-]{section.6.3}{Partially Reconstructed Background}{chapter.6}% 65
+\BOOKMARK [2][-]{subsection.6.3.1}{Partially Reconstructed Backgrounds, where D0 / ' X, and / ' }{section.6.3}% 66
+\BOOKMARK [2][-]{subsection.6.3.2}{Partially Reconstructed B \('\) V Backgrounds}{section.6.3}% 67
+\BOOKMARK [1][-]{section.6.4}{Rare and resonant B+ + / K+ - + backgrounds}{chapter.6}% 68
+\BOOKMARK [1][-]{section.6.5}{Summary}{chapter.6}% 69
+\BOOKMARK [0][-]{chapter.7}{Mass fits and efficiencies}{}% 70
+\BOOKMARK [1][-]{section.7.1}{Efficiency Ratio}{chapter.7}% 71
+\BOOKMARK [1][-]{section.7.2}{Summary of Efficiencies}{chapter.7}% 72
+\BOOKMARK [2][-]{subsection.7.2.1}{Detector Acceptance Efficiency \(GEN\)}{section.7.2}% 73
+\BOOKMARK [2][-]{subsection.7.2.2}{Reconstruction Efficiency \(REC\)}{section.7.2}% 74
+\BOOKMARK [2][-]{subsection.7.2.3}{Trigger Efficiency \(TRG\)}{section.7.2}% 75
+\BOOKMARK [2][-]{subsection.7.2.4}{Offline Selection \(OFF\)}{section.7.2}% 76
+\BOOKMARK [2][-]{subsection.7.2.5}{Combinatorial BDT and Misid BDT efficiency}{section.7.2}% 77
+\BOOKMARK [2][-]{subsection.7.2.6}{Fitting Range Efficiency \(FR\)}{section.7.2}% 78
+\BOOKMARK [2][-]{subsection.7.2.7}{PID Efficiencies \(PID\)}{section.7.2}% 79
+\BOOKMARK [1][-]{section.7.3}{Mass Fits}{chapter.7}% 80
+\BOOKMARK [2][-]{subsection.7.3.1}{Normalisation Channel Parametrisation}{section.7.3}% 81
+\BOOKMARK [2][-]{subsection.7.3.2}{Normalisation Fit}{section.7.3}% 82
+\BOOKMARK [2][-]{subsection.7.3.3}{Signal Channel Parametrisation}{section.7.3}% 83
+\BOOKMARK [2][-]{subsection.7.3.4}{Signal Data Fits}{section.7.3}% 84
+\BOOKMARK [2][-]{subsection.7.3.5}{Signal Fit Systematics}{section.7.3}% 85
+\BOOKMARK [2][-]{subsection.7.3.6}{Blinded Data Fits}{section.7.3}% 86
+\BOOKMARK [2][-]{subsection.7.3.7}{Expected Sensitivity}{section.7.3}% 87
+\BOOKMARK [2][-]{subsection.7.3.8}{Unblinded Data Fits}{section.7.3}% 88
+\BOOKMARK [0][-]{chapter.8}{Results}{}% 89
+\BOOKMARK [1][-]{section.8.1}{Limit Setting}{chapter.8}% 90
+\BOOKMARK [1][-]{section.8.2}{Conclusion}{chapter.8}% 91
+\BOOKMARK [1][-]{section.8.3}{Outlook}{chapter.8}% 92
+\BOOKMARK [0][-]{section.8.3}{Bibliography}{}% 93
+\BOOKMARK [0][-]{chapter*.133}{Appendices}{}% 94
+\BOOKMARK [0][-]{appendix.A}{Fitting functions}{}% 95
+\BOOKMARK [1][-]{section.A.1}{Crystal Ball function}{appendix.A}% 96
+\BOOKMARK [1][-]{section.A.2}{Double-sided Ipatia function}{appendix.A}% 97
+\BOOKMARK [1][-]{section.A.3}{Rookeys function from ROOFIT package}{appendix.A}% 98
+\BOOKMARK [0][-]{appendix.B}{License}{}% 99

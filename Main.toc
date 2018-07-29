@@ -46,12 +46,10 @@
 \contentsline {section}{\numberline {5.1}Topology of the \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } decay at LHCb}{100}{section.5.1}
 \contentsline {section}{\numberline {5.2}Sources of Backgrounds}{103}{section.5.2}
 \contentsline {section}{\numberline {5.3}Analysis strategy}{104}{section.5.3}
-\contentsline {section}{\numberline {5.4}Samples}{105}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Data Samples}{105}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Simulation Samples}{105}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.4}Signal Simulation Samples}{105}{section.5.4}
 \contentsline {section}{\numberline {5.5}Preselection}{106}{section.5.5}
 \contentsline {section}{\numberline {5.6}Trigger Selection}{108}{section.5.6}
-\contentsline {section}{\numberline {5.7}$q^{2}$ Selection}{110}{section.5.7}
+\contentsline {section}{\numberline {5.7}\mb {q^{2}} Selection}{110}{section.5.7}
 \contentsline {section}{\numberline {5.8}Further Selection}{111}{section.5.8}
 \contentsline {subsection}{\numberline {5.8.1}General Features of Multivariate Selections}{111}{subsection.5.8.1}
 \contentsline {subsection}{\numberline {5.8.2}The Isolation Boosted Decision Tree}{113}{subsection.5.8.2}

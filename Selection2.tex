@@ -1,35 +1,36 @@
 \chapter{Looking for \mb{\Bmumumu} decays at LHCb}
 \label{chap:sel}
 
-\textit{LHCb's flagship analyses contain several muons in the final state coming from differently flavoured $B$ mesons. Despite being in this category, search for \Bmumumu is limited by the rareness of its occurrence as well as different backgrounds that can mimic its signature in the detector. Moreover, presence of invisible neutrino does induce uncertainties into reconstruction. The following~\autoref{chap:sel} concentrates on data selection which reduces background contamination. Also, normalisation channel  selection is discussed. In the end, a trick to improve sensitivity is introduced.}
+\textit{One of the LHCb's flagship analyses contain several muons in the final state coming from differently flavoured $B$ mesons, such as search for $B_{s}^{0}\rightarrow \mu^{+} \mu^{-}$. Despite being in this category, the search for the \Bmumumu is limited by the rareness of its occurrence as well as the different backgrounds that can mimic its signature in the detector. Moreover, presence of of the invisible neutrino in the decay induces uncertainties into the reconstruction. This chapter concentrates on data selection which reduces background contamination. Also, normalisation channel selection is discussed. In the end, a method to improve sensitivity is introduced.}
+
 
 
 \section{Topology of the \mb{\Bmumumu} decay at LHCb}
 
-Upon hadronisation from $b\bar{b}$ pair a \Bpm particle will travel less than a centimetre in the laboratory frame of reference before it decays. This allows reconstruction of a primary vertex \gls{PV} and its decay vertex \gls{SV}. By joining these vertices, the direction as well as flight distance (\gls{FD}), can be established. In order to infer information about the kinematic properties of \Bpm, the decay products are studied. All three muons are used to reconstruct the visible four-momentum. By conservation of momentum with respects to the direction of the flight of \Bpm, the neutrino is assigned all missing momentum transverse to the direction of the flight of the \Bpm meson. A schematic diagram of the decay topology can be seen in~\autoref{fig:sigtopolog}.
+Upon hadronisation from a $b\bar{b}$ pair, a \Bpm particle will travel around a centimetre in the laboratory frame of reference before it decays. This allows reconstruction of a primary vertex \gls{PV} and its decay vertex \gls{SV}. By joining these vertices, the direction as well as flight distance \gls{FD}, can be established. In order to infer information about the kinematic properties of \Bpm meson, the decay products are studied. All three muons are used to reconstruct the visible four-momentum. By conservation of momentum, %with respects to the direction of the flight of \Bpm,
+the neutrino is assigned all missing momentum transverse to the direction of the flight of the \Bpm meson. A schematic diagram of the decay topology can be seen in~\autoref{fig:sigtopolog}.
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width = 0.8\textwidth]{figs/sel/DecReco_fin.eps}
-	\caption{Schematic view of the \Bmumumu decay. All charged tracks (in filled-blue) are combined into four-vector representing the visible part of the decay (semi filled-blue). Information about invisible neutrino (semi filled-red) are deduced from the conservation of momentum with respect to the direction of the flight of the \Bpm meson.}% Neglecting momentum component parallel to the direction of flight for neutrino, transverse component of momentum is given.}
+	\caption{Schematic view of the \Bmumumu decay. All charged particle tracks (in solid-blue) are combined into a four-vector representing the visible part of the decay (dashed-blue). Information about the invisible neutrino (dashed-red) are deduced from the conservation of momentum with respect to the direction of the flight of the \Bpm meson.}% Neglecting momentum component parallel to the direction of flight for neutrino, transverse component of momentum is given.}
 	\label{fig:sigtopolog}
 \end{figure}
 
-Combining all information allows for reconstruction of the \emph{corrected mass} that plays similar role to invariant mass in fully reconstructed decays. Invariant mass is usually used in \gls{LHCb} as the distribution from which the yield of a signal decay is determined through a fit. This particular quantity is used as it distinguishes well signal and background shapes with minimal modelling assumptions.
+Combining all information allows for reconstruction of the \emph{corrected mass} that plays a similar role to invariant mass in fully reconstructed decays. Invariant mass is usually used in \gls{LHCb} as the distribution from which the yield of a signal decay is determined through a fit. This particular quantity is used as it distinguishes well signal and background shapes with minimal modelling assumptions.
 
-\emph{Corrected mass} is defined as
+The \emph{Corrected mass} is defined as
 
 \begin{equation}
 	M_{corr} = \sqrt{{M}^{2} + |p^{2}_{T}|} + |p_{T}|,
 \label{eq:corrm}        
 \end{equation}	
-where the $M^{2}$ is the invariant visible mass squared and $p^{2}_{T}$ is the missing momentum squared transverse to the direction of the $B^{+}$ meson flight. The corrected mass of the \Bpm meson will be denoted as $M_{B_{corr}}$.
-
+where the $M^{2}$ is the invariant visible mass squared and $p^{2}_{T}$ is the missing momentum squared transverse to the direction of the $B^{+}$ meson flight. The corrected mass of the \Bpm meson will be denoted as $M_{B_{corr}}$. The $M_corr$ is equal to the true mass if the missing part of the decay has zero mass and has no momentum along the $\Bpm$ flight direction. Otherwise, $M_corr$ is below the $\Bpm$ mass.
 %\begin{equation}
 %M_{B_{corr}} = \sqrt{M_{\mu^{+} \mu^{-} \mu^{+}}^{2} + |p_{T}|} + |p_{T}|,
 %\end{equation}	
 
-$M_{corr}$ can be thought of as the minimal correction to the visible mass to account for the missing neutrino information. The resolution on the \textit{corrected mass} hence becomes a critical quantity that needs to be understood. As the method of reconstruction of corrected mass relies heavily on the knowledge of the \Bpm meson flight direction, the resolution of \gls{PV} position and \gls{SV} vertex is crucial. Let $\vec{{x}}_{PV}=\{x_{PV},y_{PV},z_{PV}\}$, $\vec{{x}}_{SV}=\{x_{SV},y_{SV},z_{SV}\} $ be \gls{PV} and \gls{SV} vertex position and $\vec{p}=\{p_{x},p_{y},p_{z}\}$ be the visible trimuon momentum. Then the missing transverse momentum to the direction of the flight $p_{T}$ (momentum of the neutrino) as shown in~\cite{Egede:1694339} is
+$M_{corr}$ can be thought of as the minimal correction to the visible mass to account for the missing neutrino information. The resolution on the \textit{corrected mass} (the uncertainty of this quantity) hence becomes a critical quantity that needs to be understood. As the method of reconstruction of corrected mass relies heavily on the knowledge of the \Bpm meson flight direction, the resolution of \gls{PV} position and \gls{SV} vertex is crucial. Let $\vec{{x}}_{PV}=\{x_{PV},y_{PV},z_{PV}\}$, $\vec{{x}}_{SV}=\{x_{SV},y_{SV},z_{SV}\} $ be \gls{PV} and \gls{SV} vertex position and $\vec{p}=\{p_{x},p_{y},p_{z}\}$ be the visible trimuon momentum. Then the missing transverse momentum to the direction of the flight $p_{T}$ (momentum of the neutrino) as shown in~\cite{Egede:1694339} is
 
 
 \begin{equation}
@@ -46,7 +47,7 @@ In general in order to propagate error on $f(x,y,z)$, where $x,y,z$ are independ
 	\langle f^{2}-\langle f \rangle^{2} \rangle  &=  \langle f(x+\delta x, y+\delta y, z+\delta z)^{2} - f(\langle x \rangle, \langle y \rangle, \langle z \rangle)^{2} \rangle \\
 \end{aligned}
 \end{equation}
-Using first order Taylor expansion of variance and rewriting into the matrix form:
+Using a first order Taylor expansion of variance and rewriting it into matrix form gives
 
 \begin{equation}
 \begin{aligned}
@@ -61,13 +62,13 @@ Using first order Taylor expansion of variance and rewriting into the matrix for
 	        \delta z \delta x & \delta z \delta y & {\delta z}^{2}  \\
        \end{bmatrix}
        \begin{bmatrix}
-		\frac{\partial{f}}{\partial{x}} \\ \frac{\partial{f}}{\partial{y}} \\\frac{\partial{f}}{\partial{z}} \\
+		\frac{\partial{f}}{\partial{x}} \\ \frac{\partial{f}}{\partial{y}} \\\frac{\partial{f}}{\partial{z}}. \\
        \end{bmatrix}
 \end{aligned}
 \end{equation}
 In this formalism let $f$ is the \emph{corrected mass} and $x,y,z$ are variables on which \emph{corrected mass} depends. Using~\autoref{eq:corrm}, these independent variables are visible mass four-vector, $p_{3\mu}=\{E,p_{x},p_{y},p_{z}\}$, and missing $p_{T}$ (defined in~\autoref{eq:ptmis}), which in turn depends on $\vec{p}$, $\vec{x_{PV}}$ and $\vec{x_{SV}}$.
 
-In this case, let $x=\vec{{x}}_{PV}$, $y=\vec{{x}}_{SV}$, $z=p_{3\mu}$ and \rm{COV} being the covariance matrix, the error (square root of variance) on \emph{corrected mass}, $\delta_{corrm}$ is calculated as
+With $x=\vec{{x}}_{PV}$, $y=\vec{{x}}_{SV}$, $z=p_{3\mu}$ and \rm{COV} being the covariance matrix, the error (square root of variance) on the \emph{corrected mass}, $\delta_{corrm}$ is
 %\begin{equation}
 %\begin{aligned}
 %       \nabla^{T}_{x_{PV}} \rm{C_{x_{PV}}} \nabla_{x_{PV}} + \nabla^{T}_{x_{SV}} \rm{C_{x_{SV}}} \nabla_{x_{SV}} + \nabla^{T}_{p} \rm{C_{p}} \nabla_{p}
@@ -84,34 +85,33 @@ In this case, let $x=\vec{{x}}_{PV}$, $y=\vec{{x}}_{SV}$, $z=p_{3\mu}$ and \rm{C
 	\delta_{corrm} = \sqrt{ \langle f^{2}-\langle f \rangle^{2} \rangle} = \sqrt{\nabla^{T}_{x_{PV}} \mathrm{COV}_{x_{PV}} \nabla_{x_{PV}} + \nabla^{T}_{x_{SV}} \mathrm{COV}_{x_{SV}} \nabla_{x_{SV}} + \nabla^{T}_{p_{3\mu}} \mathrm{COV}_{p_{3\mu}} \nabla_{p_{3\mu}}}. 
 \end{aligned}
 \end{equation}
-
 It was shown in~\cite{Egede:1694339} that the $\delta_{corrm}$ is mostly dominated by vertex position terms.
 %which can be calculated analytically (method used for all the plots) or using numerical approximation of first derivative of \textit{finite differences}.
 
 \section{Sources of Backgrounds}
 \label{bkgquick}
-The largest background that looks similar to signal comes from \textit{cascade decays}, where the semileptonic $b \rightarrow c \rightarrow s$ or $\bar{b} \rightarrow \bar{c} \rightarrow \bar{s}$ transitions occur. A typical example of this type of background in hadronic terms is $B^{+} \rightarrow (\bar{D}^{0} \rightarrow (K^{+} \rightarrow \mu^{-} \nu) \mu^{+} \nu$), where the $K^{+}$ meson is subsequently misidentified as muon. Because the $K^{+}$ meson is misidentified as a muon, this type of background is denoted as misID background.
+The largest background that looks similar to signal comes from \textit{cascade decays}, where the semileptonic $b \rightarrow c \rightarrow s$ or $\bar{b} \rightarrow \bar{c} \rightarrow \bar{s}$ transitions occur. A typical example of this type of background in hadronic terms is $B^{+} \rightarrow (\bar{D}^{0} \rightarrow (K^{+} \rightarrow \mu^{-} \nu)\ \mu^{+} \nu$), where the $K^{+}$ meson is subsequently misidentified as muon. Because the $K^{+}$ meson is misidentified as a muon, this type of background is denoted as misID background.
 
-All background sources that contain at least one misidentified particle are categorized as misID. If the sign of the misidentified particle agrees with the sign of the mother \Bpm, it belongs to the same sign misID background (\textit{SS misID}) background. In the event where opposite sign particle to the mother \Bpm is misidentified, this background will be referred to as (\textit{OS misID}) background. \textit{OS misID} background is expected to have smaller rate as the misidentified particle would have to proceed via decays with additional particles.
+All background sources that contain at least one misidentified particle are categorized as misID. If the sign of the misidentified particle agrees with the sign of the mother \Bpm, it belongs to the same sign misID background (\textit{SS misID}) background. In the event where a particle with the opposite sign to the mother $\Bpm$ meson is misidentified, this background will be referred to as (\textit{OS misID}) background. \textit{OS misID} background is expected to have a smaller rate as the misidentified particle would have to proceed via decays with additional particles.
 
-As the hadronisation of a $b\bar{b}$ pair leads to the creation of two $b$ hadrons, each with they own decay chain, it is possible to mix up the decay products of the two to create a single fake signal candidate. This type of background is denoted combinatorial background.
+As the hadronisation of a $b\bar{b}$ pair leads to the creation of two-$b$ hadrons, each with they own decay chain, it is possible to mix up the decay products of the two to create a single fake signal candidate. This type of background is known as combinatorial background.
 
-Then presence of a neutrino in a final state allows for certain uncertainty regarding the information of the fourth decay product. If some of the tracks of the decays are not reconstructed, either because they are neutral, or they are charged but with too low momentum to be found by the tracking algorithm, it means that the missing information may be attributed to the neutrino. \textit{Missing tracks} will hence create partially reconstructed background. Some of the most dangerous are ${B^{+} \rightarrow D \mu^{+} \nu}$ type partially reconstructed backgrounds where $D^0 \rightarrow K^- \pi^+ \mu^{+} \mu^{-}$.
+Then presence of a neutrino in a final state introduces uncertainty regarding the information of the fourth decay product. If some of the tracks of the decays are not reconstructed, either because they are neutral, or they are charged but with too low momentum to be found by the tracking algorithm, it means that the missing information may be attributed to the neutrino. \textit{Missing tracks} will hence create partially reconstructed background. Some of the most dangerous are ${B^{+} \rightarrow D \mu^{+} \nu}$ type partially reconstructed backgrounds, where $D^0 \rightarrow K^- \pi^+ \mu^{+} \mu^{-}$.
 
 Decays that proceed via hadronic resonances such as $B^{+} \rightarrow \rho/\omega \mu^{+} \nu$, followed by $\rho/\omega \rightarrow \mu^{+} \mu^{-}$ are part of signal as mentioned in~\autoref{mydecay}.
 
-More about all of these backgrounds and others that proved not to pass the stringent selection explained below are discussed in~\autoref{chap:back}.
+Detailed information concerning these types of backgrounds are discussed in~\autoref{chap:back}.
 
 \section{Analysis strategy}
 \label{Strategy}
 
-The analysis of the $\Bmumumu$ decay is divided into several different parts; signal selection, optimisation, normalisation, fitting and limit setting. Throughout this document, charge conjugates of the decays are assumed unless stated otherwise. Results presented are based on the analysis of the full 3 fb$^{-1}$ Run \Rn{1} dataset as well $\approx$ 1.7 fb$^{-1}$ Run \Rn{2} data from 2016. Data from 2015 is not used due to the very high $p_{T}$ threshold for the muon triggers used during that year, resulting in a very low signal efficiency. Additionally the search will be conducted in a particular min$q$ = $\sqrt{min(q^{2}(\mu_{1}^{+},\mu^{-}), q^2(\mu^{-},\mu_{2}^{+}))}$ region, described in~\autoref{qsqchoice}. To reconstruct the mass of the $B^{+}$ but accounting for the missing information about the neutrino~\autoref{eq:corrm} is used. 
+The analysis of the $\Bmumumu$ decay is divided into several different parts; signal selection, optimisation, normalisation, fitting and limit setting. Throughout this document, charge conjugates of the decays are assumed unless stated otherwise. Results presented are based on the analysis of the full 3 fb$^{-1}$ Run \Rn{1} dataset as well $\approx$ 1.7 fb$^{-1}$ Run \Rn{2} data from 2016. Data from 2015 is not used due to the very high $p_{T}$ threshold for the muon triggers used during that year, resulting in a very low signal efficiency. Additionally the search will be conducted in a particular $minq$ = $\sqrt{min(q^{2}(\mu_{1}^{+},\mu^{-}), q^2(\mu^{-},\mu_{2}^{+}))}$ region, described in~\autoref{qsqchoice}.  
 
 
-To perform the search for $\Bmumumu$, a specific preselection was applied to form potential signal candidates as described in~\autoref{preselection}. A simulation sample that mimics the decay of the $\Bmumumu$ was created, as mentioned in~\autoref{simulation}. This simulation together with the background proxies discussed in~\autoref{chap:back} are used to further develop discriminating selection that would maximize the signal to background ratio. All the rest of this chapter is dedicated to this discriminating selection. For more details about signal simulation samples see~\autoref{samples}.
+To perform the search for $\Bmumumu$, a specific preselection was applied to form potential signal candidates as described in~\autoref{preselection}. A simulation sample that mimics the decay of the $\Bmumumu$ was created, as mentioned in~\autoref{simulation}. This simulation together with the background proxies discussed in~\autoref{chap:back} are used to further develop discriminating selection that would maximize the signal to background ratio. Most of the rest of this chapter is dedicated to this discriminating selection. For more details about signal simulation samples see~\autoref{SimulationSamples}.
 
 
-After all the selection, the $\Bmumumu$ decays are normalised to the $\bjpsimumuk$ decays, where the selection for the normalisation channel is kept as similar as possible to that of the signal channel to minimize the amount of systematics on the resulting relative efficiencies between these two channels. These efficencies are computed in~\autoref{EfficiencyRatio}. The fit to $\bjpsimumuk$ data is described in~\autoref{normfit}. The ratio of these efficiencies, together with results of the normalisation channel fit are used to parametrise the expected signal yield, which can be found in~\autoref{sigpara}.
+After all the selection, the $\Bmumumu$ decays are normalised to the $\bjpsimumuk$ decays, where the selection for the normalisation channel, detailed in~\autoref{nchannel}, is kept as similar as possible to that of the signal channel to minimize the amount of systematics on the resulting relative efficiencies between these two channels. The relative efficencies are computed in~\autoref{EfficiencyRatio}. The fit to $\bjpsimumuk$ data is described in~\autoref{normfit}. The relative efficiencies, results of the normalisation channel fit and the branching fraction of \bjpsimumuk are used to parametrise the expected signal yield, as described in~\autoref{sigpara}.
 
 
 
@@ -119,7 +119,7 @@ Throughout the analysis there was a blinding procedure put in place for this sea
 
 
 
-In~\autoref{fitsens}, two fitting strategies for the signal data are described. One is more sensitive than another, where the fitting strategy that provides the best sensitivity makes use of simultaneous fit to two bins of resolution, increasing signal separation from background. More information about this can be found in~\autoref{split}. Both fitting strategies were applied on blinded signal datasets in order to compute the expected exclusion limit on the branching fraction, which is summarised in~\autoref{sensitivity}. The simultaneous fit has indeed better sensitivity. Systematic uncertainties that are affecting this measurement are presented in~\autoref{systematics}.
+In~\autoref{fitsens}, two fitting strategies for the signal data are described. One is more sensitive than another, where the fitting strategy that provides the best sensitivity makes use of simultaneous fit to two bins of resolution, increasing signal separation from background. More information about this split can be found in~\autoref{split}. Both fitting strategies were applied on blinded signal datasets in order to compute the expected exclusion limit on the branching fraction, shown in~\autoref{sensitivity}. Systematic uncertainties that are affecting this measurement are presented in~\autoref{systematics}.
 
 
 Upon unblinding, no significant signal was observed and stringent limit $\mathcal{B}(\Bmumumu) < 1.4\times 10^{-8}$ at $95\%$ confidence level was set using $CL_{s}$ method with simultaneous fit. All information about the result as well as the implication can be found in~\autoref{chap:Results}.% This result does not confirm the prediction for the decay branching fraction\cite{Danilina:2017bcn}\cite{Danilina:2018uzr}, where $\mathcal{B}(\Bmumumu) \approx 1.3\times 10^{-7}$.
@@ -133,15 +133,15 @@ Upon unblinding, no significant signal was observed and stringent limit $\mathca
 
 
 
-\section{Samples}
-\label{samples}
-\subsection{Data Samples}
-
-Results presented in this thesis are based on the analysis of the full 3 fb$^{-1}$ Run \Rn{1} dataset at $\sqrt{s}={7},{8}$ \tev and 1.7 fb$^{-1}$ Run \Rn{2} data at $\sqrt{s}=13$\tev.
-
-\subsection{Simulation Samples}
+\section{Signal Simulation Samples}
 \label{SimulationSamples}
-For signal simulation three different decay models, which were described in~\autoref{simulation}, were used for different purposes summarized in~\autoref{tab:MCPPass}.
+%\subsection{Data Samples}
+
+%Results presented in this thesis are based on the analysis of the full 3 fb$^{-1}$ Run \Rn{1} dataset at $\sqrt{s}={7},{8}$ \tev and 1.7 fb$^{-1}$ Run \Rn{2} data at $\sqrt{s}=13$\tev.
+
+%\subsection{Simulation Samples}
+%\label{SimulationSamples}
+For signal simulation three different decay models are used for different purposes summarized in~\autoref{tab:MCPPass}. The physics rationale behind these models was discussed in~\autoref{simulation}.
 
 \begin{table}[h!]
 	\begin{center}
@@ -159,7 +159,7 @@ For signal simulation three different decay models, which were described in~\aut
 			$B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu$ & 2012 & Pythia 6.4\cite{pythia6} & INSP & 25000 & \textit{generator-level}\\
 			$B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu$ & 2012 & Pythia 8.1\cite{pythia8} & INSP & 25000 & \textit{generator-level}\\ \hline
 
-                         \multicolumn{6}{c}{Simulation used for cross-checking of minq$^{2}$ selection} \\ \hline 
+                         \multicolumn{6}{c}{Simulation used for cross-checking of $minq$ selection} \\ \hline 
 
 			$B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu$ & 2012 & Pythia 6.4\cite{pythia6} & NIKI & 25000 & \textit{generator-level}\\ %\hline
 			%			\hline
@@ -182,12 +182,12 @@ For signal simulation three different decay models, which were described in~\aut
 			\bottomrule
 		\end{tabular}
 	\end{center}
-	\caption{Summary of signal simulation samples used in this analysis with different decay models. In all cases the daughters of \Bpm are required to be within \gls{LHCb} acceptance. All of this samples are mixture under two magnetic polarity conditions.}
+	\caption{Summary of signal simulation samples used in this analysis with different decay models. In all cases, the daughters of the \Bpm meson are required to be within the \gls{LHCb} acceptance. All of these samples are mixture under two magnetic polarity conditions.}
 	\label{tab:MCPPass}
 \end{table}
 
 
-The \textit{INSP} model is used as default model for shapes in mass fits and efficiency calculations. The \textit{PHSP} is used for alternative efficiency calculations. Finally \textit{NIKI} model is used mainly for validation purposes.
+The \textit{INSP} model is used as default model for mass fit shapes and efficiency calculations. The \textit{PHSP} is used for alternative efficiency calculations. Finally \textit{NIKI} model is mainly used for validation purposes.
 %\mybox{Sally: move it to theory and check ulrik's comment} In order to produce simulation with a decay model which is more representative of the spin structure involved, the following strategy is adapted. In this simulation approach, the decay proceeds as follows: \Bpm decays into \Wpm and a pair of opposite sign muons and then \Wp is decayed to $\mu^{+} \nu$. \textit{BTOSLLBALL} model\cite{Ali:1999mm}, traditionally used for $\B \rightarrow (K,K^{*}) l^{+} l^{-}$ decay, with the form factor calculations can be used to simulate $\Bpm \rightarrow \Wpm l^{+} l^{-}$ decay. After that, \Wp is decayed to $\mu^{+} \nu$ using \textit{PHSP}. For semileptonic $b \rightarrow s l^{+} l^{-}$ transitions, there is a characteristic photon pole for low $q(\mu^{+},\mu^{-})$, invariant mass of the opposite muon pair, and flat distribution for $K^{*}(\mu^{+}, \nu_{\mu}) $, invariant mass of the muon and neutrino pair. In order to achieve this, a new pseudo-particle is introduced to EVTGEN with specific properties, $K^{*}(\mu^{+}, \nu_{\mu})$, and the best output can be seen to be for a particle $K^{*}(\mu^{+}, \nu_{\mu})$ with mass to be set to $0.1 \text{GeV/c}^{2}$, and width, corresponding to $\tau= 1.3\times10^{-17}$ nanoseconds as can be seen in~\autoref{fig:mcgeneration}. This procedure was also applied for the charge conjugate case. 
 
 %This model is denoted as \textit{INSP} and is used as default in mass fits and efficiency calculations.
@@ -217,14 +217,14 @@ Firstly, all three muon tracks are required to have a significant \gls{IP} with 
 
 Each muon track is required to have good track $\chi^{2}$ per number of degrees of freedom of the fit (\texttt{ndof}), (\gls{trackchi2ndof}), as well as low \gls{pgh2}. This removes spurious tracks as well as tracks with low quality.
 
-Each muon candidate is also identified with initial basic \gls{PID} variables. Firstly muons are chosen due to their signature in the muons stations with the binary \texttt{isMuon} decision. Secondly, muons candidates are chosen such that it is more likely that the candidate is a muon than a pion or kaon using global DLLmu variables defined in~\autoref{muonID}. This reduces the background from misidentified muons.
+Each muon candidate is also identified with initial basic \gls{PID} variables. Firstly muons are chosen due to their signature in the muons stations with the binary \texttt{isMuon} decision. Secondly, muon candidates are chosen such that it is more likely that the candidate is a muon than a pion or kaon using global DLLmu variables defined in~\autoref{muonID}. This reduces the background from misidentified muons.
 
 In order to only select events which are compatible with the three muons originating from the same point in the space, (\gls{vertexchi2ndof}), the $\chi^{2}$ of the trimuon vertex per degree of freedom fit is required to be small. This decreases the contamination from \textit{cascade decays} where the particle with the $c$ quark content from $b \rightarrow \underline{c} \rightarrow s$, such as $D$, would have non-negligible lifetime leading to higher \gls{vertexchi2ndof}. 
 
-Requiring that \Bp direction points in the same direction as the line from \gls{PV} to \gls{SV}, (\gls{DIRA} - which measures the angle between these two vectors), is close to unity translates into a well reconstructed event, which minimizes combinatorial background, where random track makes this pointing worse. Putting bounds on the mass window, whether it is \textit{visible} or \textit{corrected} mass, also suppresses combinatorial events. % This is because of on average higher momentum combinatorial muon.  
+Requirement that \Bp direction points in the same direction as the line from \gls{PV} to \gls{SV} is done by making sure that \gls{DIRA}, angle between the two vectors, is close to unity. This translates into a well reconstructed event, which minimizes combinatorial background, where the random track makes this pointing worse. The missing neutrino Putting bounds on the mass window, whether it is \textit{visible} or \textit{corrected} mass, also suppresses combinatorial events. % This is because of on average higher momentum combinatorial muon.  
 
 
-\begin{table}%[H]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{l c l }
     \toprule
@@ -253,7 +253,7 @@ Requiring that \Bp direction points in the same direction as the line from \gls{
 \end{table}
 
 \section{Trigger Selection}
-In order to obtain triggered data, $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_\mu$ candidates are required to pass a certain set of trigger decisions at \gls{L0}, \gls{HLT1} and \gls{HLT2} levels summarized in~\autoref{tab:triggersel}. It can be noted that the decision is applied at the mother \Bpm level. In particular, \texttt{Bplus$\_$L0MuonDecision$\_$TOS decision}, means that one of the muons from \Bpm in an event has triggered and made a positive decision.
+In order to obtain triggered data, $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_\mu$ candidates are required to pass a certain set of trigger decisions at \gls{L0}, \gls{HLT1} and \gls{HLT2} levels summarized in~\autoref{tab:triggersel}. It can be noted that the decision is applied at the mother \Bpm level. In particular, positive \texttt{Bplus$\_$L0MuonDecision$\_$TOS} decision means that one of the muons from \Bpm in an event triggered $\texttt{L0Muon}$.
 
 \begin{table}[h!]
 \begin{center}
@@ -280,12 +280,12 @@ As discussed in~\autoref{triggerchap} \texttt{L0MuonDecision} decides on whether
 
 \texttt{Hlt1TrackMuonDecision} accepts events where at least one identified muon muon has to pass thresholds on \gls{ipchi2}, $p_{T}$ and $p$. This favours muons arising from $b$- and $c$-hadron decays. There has to be at least one muon (\texttt{isMuon==true}) in its final state with certain kinematic thresholds on $p$ and $p_{T}$. For example, in 2011 the identified muons that triggered positive decision had to have $p$ above 8 \gevc \cite{Aaij:2012me}.
 
-At \gls{HLT2} level, the candidates are reqiured to pass through at least one of the four decisions. \texttt{Hlt2TopoMu[2,3]BodyBBDTDecision} belong to the \textit{topological triggers} category with an extra requirement of a particle in a candidate being idendified by \texttt{isMuon} decision. \texttt{Hlt2DiMuonDetachedDecision} and \texttt{Hlt2DiMuonDetachedHeavyDecision} reconstruct decays with two muons in a final state. The two lines differ in that they are optimised for heavy and light dimuon pairs respectively. For example, \texttt{Hlt2DiMuonDetachedDecision} accepts events with dimuon $p_{T}$ above 1.5 \gevc and with mass above 1 \gevcc, whereas  \texttt{Hlt2DiMuonDetachedHeavyDecision} accepts dimuon pairs with any $p_{T}$ but above 2.95 \gevcc in mass. The reason why these lines are called detached are because individual muons are required to have high \gls{ipchi2}.
+At \gls{HLT2} level, the candidates are required to pass through at least one of the four decisions. \texttt{Hlt2TopoMu[2,3]BodyBBDTDecision} belong to the \textit{topological triggers} category with an extra requirement of a particle in a candidate being idendified by \texttt{isMuon} decision. \texttt{Hlt2DiMuonDetachedDecision} and \texttt{Hlt2DiMuonDetachedHeavyDecision} reconstruct decays with two muons in a final state. The two lines differ in that they are optimised for heavy and light dimuon pairs respectively. For example, \texttt{Hlt2DiMuonDetachedDecision} accepts events with dimuon $p_{T}$ above 1.5 \gevc and with mass above 1 \gevcc, whereas  \texttt{Hlt2DiMuonDetachedHeavyDecision} accepts dimuon pairs with any $p_{T}$ but above 2.95 \gevcc in mass. The reason why these lines are called detached are because individual muons are required to have high \gls{ipchi2}.
 
-\section{$q^{2}$ Selection}
+\section{\mb{q^{2}} Selection}
 \label{qsqchoice}
 In the \Bmumumu decay, two pairs of opposite sign muons can be formed, namely $q^2(\mu_1,\mu_2)$ and $q^2(\mu_2,\mu_3)$ where $\mu_1=\mu^{+} , \mu_2=\mu^{-}, \mu_3=\mu^{+} $.
-From the two invariant mass squared pairs one can define, $minq^2 = min[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$ and $maxq^{2} = max[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$. This measurement is made in region where $\sqrt{minq^{2}}={minq<980}$ \mevcc for two reasons: most of the contributions to the amplitude of the decay is below this value and combinatorial background is greatly reduced if $minq^{2}<1$ (\gevcc)$^{2}$, see~\autoref{fig:qsqsel}.
+From the two invariant mass squared pairs one can define, $minq^2 = min[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$ and $maxq^{2} = max[q^{2}(\mu_1,\mu_2), q^2(\mu_2,\mu_3)]$. This measurement is made in region where $minq=\sqrt{minq^{2}}<980$ \mevcc for two reasons: most of the contributions to the amplitude of the decay is below this value and combinatorial background is greatly reduced if $minq<1\gevcc$, see~\autoref{fig:qsqsel}.
 
 In order to remove backgrounds that proceed via resonant $J/\psi$ and $\Psi(2S)$ contributions, vetoes in invariant mass are placed in the corresponding regions, see~\autoref{tab:vetoes} for more details.
 
@@ -315,7 +315,7 @@ In order to remove backgrounds that proceed via resonant $J/\psi$ and $\Psi(2S)$
 
 \section{Further Selection}
 
-Further selection was performed as seen in~\autoref{tab:OfflineSelection}. This selection further suppresses backgrounds but is different to what is described above as it requires a different treatment in Run \Rn{1} and Run \Rn{2} due to the different definitions of variables as seen in~\autoref{bugs}. 
+Further selection is performed with the executive summary in~\autoref{tab:OfflineSelection}. This selection aims to further suppress backgrounds with different treatment in Run \Rn{1} and Run \Rn{2} due to the different definitions of variables, which was shown in~\autoref{bugs}. The sections below comment on the more exact features of this further selection. 
 
 \begin{table}[h!]
 %\small
@@ -342,21 +342,21 @@ Further selection was performed as seen in~\autoref{tab:OfflineSelection}. This 
 %      Clean & Min Dimuon & min $q^{2}(\mu^{+},\mu^{-})$ $<$ 960400 MeV$^{2}$/c$^{4}$  & min $q^{2}(\mu^{+},\mu^{-})$ $<$ 960400 MeV$^{2}$/c$^{4}$ \\ \hline
       \end{tabular}
 \end{center}
-\caption{Offline selection performed after stripping. Differences can be seen between Run \Rn{1} and Run \Rn{2} datasets. \texttt{FOM} is defined int~\autoref{eq:punzifom}.}
+	\caption{Offline selection performed after \textit{stripping}. Differences can be seen between Run \Rn{1} and Run \Rn{2} datasets. \texttt{FOM} is defined int~\autoref{eq:punzifom}.}
 \label{tab:OfflineSelection}
 \end{table}
 
-The sections below comment on the more exact features of this further selection. 
+%The sections below comment on the more exact features of this further selection. 
 
 	\subsection{General Features of Multivariate Selections}
 
 All the multivariate classifiers in the search for \Bmumumu decay use TMVA's \cite{Speckmayer:2010zz} implementation of Boosted Decision Tree (BDT) with the \texttt{AdaBoost} algorithm. The multivariate selections used in the search for \Bmumumu decay are the isolation BDT detailed in~\autoref{isolationvar}, combinatorial BDT detailed in~\autoref{CombiBDTsel} and misid BDT detailed in~\autoref{misidbdt}.
 
-The rationale for these selections is the following. As the background study of inclusive $b\bar{b}$ simulation sample shows that there will be two dominating backgrounds, combinatorial background and misID background. In order to reduce these backgrounds, two consecutive multivariate classifiers are used. The first multivariate classifier is developed to remove efficiently combinatorial background and a second multivariate classifier will help to control the contamination from misID decays. As one of the key variables that provide the greatest separation power in these two multivariate classifiers is another BDT output, the isolation BDT.
+The rationale for these selections is the following. Background characterisation study of inclusive $b\bar{b}$ simulation shows that there will be two dominating backgrounds, combinatorial background and misID background. In order to reduce these backgrounds, two consecutive multivariate classifiers are used. The first multivariate classifier is developed to remove efficiently combinatorial background and a second multivariate classifier will help to control the contamination from misID decays. One of the key variables that provide the greatest separation power in these two multivariate classifiers is another BDT output, the isolation BDT.
 
 Cross-validation is one of the useful methods used within MVAs which improves the chance of good performance of the predictive model on an independent dataset. In this way, biases due to simple sample split into training and testing subsample, could be overcome. In general, it helps also with overfitting when the model of the classifier is sensitive to fluctuations.  The cross-validation method used in both combinatorial BDT and misid BDT is known as the \textit{k-folding} technique \cite{kfold}. 
 
-In particular, both background and signal samples are randomly split into $k$ similar size subsamples. Then the BDT is trained on the $k-1$ signal/background subsamples, which are subsequently tested on the remaining last subsamples. This process is repeated $k$-times for all possible combinations, hence the name of cross-validation. In the last step, the results for all the sample are produced by amalgamating the values obtained from the tested $k$ subsamples. In the combinatorial and misid BDT, the number of folds used is $k$=10. Both of the BDT classifiers the same set of variables listed in~\autoref{tab:vars}.
+In particular, both background and signal samples are randomly split into $k$ similar size subsamples. Then the BDT is trained on the $k-1$ signal/background subsamples, which are subsequently tested on the remaining last subsamples. This process is repeated $k$-times for all possible combinations, hence the name of cross-validation. In the last step, the results for all the sample are produced by amalgamating the values obtained from the tested $k$ subsamples. In the combinatorial and misid BDT, there are 10 folds used. Both of the BDT classifiers use the same set of variables listed in~\autoref{tab:vars}.
 
 \begin{table}[h!]
 \begin{center}
@@ -384,21 +384,19 @@ $B^{+}$ \gls{vertexchi2ndof} & \gls{minipchi2} of all three muons  & Isolation v
 	\caption{An example of decay topology for (a) background and (b) signal.}
 \label{fig:isolation1}
 %\vspace*{-1.0cm}
-\end{figure}
-	
-	
-The vast majority of the backgrounds that share the possibility of contaminating \Bmumumu signal have one property in common: they have more tracks associated with the decay. It is hence possible to use multivariate analysis (MVA) techniques to establish how \textit{isolated} the signal trimuon vertex is as compared to background trimuon vertex as seen in~\autoref{fig:isolation1}.
+\end{figure}	
+\noindent The vast majority of the backgrounds that share the possibility of contaminating \Bmumumu signal have one property in common: they have more tracks associated with the decay. It is hence possible to use multivariate analysis (MVA) techniques to establish how \textit{isolated} the signal trimuon vertex is as compared to a background trimuon vertex as seen in~\autoref{fig:isolation1}.
 	
 %	In an event, for both signal and misidentified background there is a possibility that neutral particles, charged tracks or even a combination of both cases had not been reconstructed in the given vertex.
 
-The isolation quality of the vertex is determined with BDT. This regression algorithm classifies the event to be more signal-like or background-like according to different track and vertex properties, the \textit{isolation variables}.
+The isolation quality of the vertex is determined with a BDT. This regression algorithm classifies the event to be more signal-like or background-like according to different track and vertex properties, the \textit{isolation variables}.
 
 
-The signal proxy for the isolation BDT was trained and tested with $\Lambda^{0}_{b}\rightarrow p \mu^{-} \bar{\nu}$ simulation sample, where all tracks apart from the $p \mu^{-}$ signal tracks are taken into the account. The background sample was formed with $\Lambda^{0}_{b} \rightarrow (\Lambda_{c} \rightarrow p) \mu^{-} \bar{\nu}$ tracks, also disregarding the $p \mu^{-}$ tracks. The isolation BDT is based on the weights obtained from these samples, which are computed in \cite{Aaij:2015bfa}, and are a result of other's people work. These weights are however then applied parametrically on \Bmumumu signal and background proxies, as they share similar topology with respect to isolation properties.
+The signal proxy for the isolation BDT was trained and tested with a $\Lambda^{0}_{b}\rightarrow p \mu^{-} \bar{\nu}$ simulation sample, where all tracks apart from the $p \mu^{-}$ signal tracks are taken into account. The background sample was formed with $\Lambda^{0}_{b} \rightarrow (\Lambda_{c} \rightarrow p) \mu^{-} \bar{\nu}$ tracks, also disregarding the $p \mu^{-}$ tracks. The isolation BDT is based on the weights obtained from these samples, which are computed in \cite{Aaij:2015bfa}, and are a result of other's people work. These weights are however then applied parametrically on \Bmumumu signal and background proxies, as they share similar topology with respect to isolation properties. In other words, track density is different between signal and background. 
 
 The \textit{isolation variables} include track $p_T$, the opening angle between track's momentum and momentum of the combined signal/background visible system, the \gls{trackchi2ndof}, the ghost probability of the track \gls{pgh2}, \gls{ipchi2} of the track with respect to signal/background \gls{SV} and \gls{PV}.
 
-The Isolation BDT response peaks between -1 and 0 for isolated tracks (signal-like) and between 0 and 1 for non-isolated tracks (background-like). The output of this BDT can be seen in~\autoref{fig:isolation} for both types. Backgrounds shown include combinatorial background and misID type background. In the analysis, there is no explicit selection on this variable, but it is used as one of the input variables for the combinatorial and misid BDTs.
+The Isolation BDT response peaks between -1 and 0 for isolated tracks (signal-like) and between 0 and 1 for non-isolated tracks (background-like). The output of this BDT for both types is shown in~\autoref{fig:isolation}. Backgrounds shown include combinatorial background and misID type background. In the analysis, there is no explicit selection on this variable, but it is used as one of the input variables for the combinatorial and misid BDTs.
 
 \begin{figure}[ht]
 \centering
@@ -419,28 +417,27 @@ As the branching fraction and hence the number of signal events is unknown, the 
 	\texttt{FOM}=\frac{\varepsilon_{S}}{\sqrt{B}+\sigma/2},
 	\label{eq:punzifom}
 \end{equation}
-
-where $\varepsilon_{S}$ is the signal efficiency of the selection and $B$ refers to the number of background candidates, $\sigma$ is the significance. %In this case, the significance of 3$\sigma$ is used. The advantage of this \texttt{FOM} to more conventional one is that is it insensitive to the knowledge of exact number of signal events, which is the case as the branching fraction is unknown.
+where $\varepsilon_{S}$ is the signal efficiency of the selection, $B$ refers to the number of background candidates and $\sigma$ is the significance. %In this case, the significance of 3$\sigma$ is used. The advantage of this \texttt{FOM} to more conventional one is that is it insensitive to the knowledge of exact number of signal events, which is the case as the branching fraction is unknown.
 In this case, the significance 3$\sigma$ is used, but it was checked that there is no change to optimal working point if it is varied to $5\sigma$, as seen in~\autoref{fig:punzifom}.
 
 \begin{figure}[ht]
 \centering
 	\includegraphics[width=0.5\linewidth]{./sel/Scaled_nice_FOM_Run1.pdf}%
 	\includegraphics[width=0.5\linewidth]{./sel/Scaled_nice_FOM_2016.pdf}%
-	\caption{ Punzi \texttt{FOM} have the optimum working point at 0.47 for Run \Rn{1} and 0.54 for Run \Rn{2} as seen in both figures with a violet line for $\sigma=3$ and $\sigma=5$.}
+	\caption{ Punzi \texttt{FOM} shows the optimum working point at 0.47 for Run \Rn{1} and 0.54 for Run \Rn{2} as seen in both figures with a violet line for $\sigma=3$ and $\sigma=5$. This \texttt{FOM} is for Combinatorial BDTs.}
 \label{fig:punzifom}
 \end{figure}
 
 
-The \texttt{FOM} is computed in the mass region, $4.5\gevcc <M_{B_{corr}} <5.5$ \gevcc, which also known as a blinded region. To estimate the number of background candidates in the blinded region, the final fit strategy described in~\autoref{fitsens} is used to fit the data, yielding around $10000$ in Run \Rn{1}, and $9000$ combinatorial candidates in Run \Rn{2}. The yields are extracted from fits to data integrating the combinatorial part of the total background P.D.F in the blinded region.
+The \texttt{FOM} is computed in the blinded mass region, $4.5\gevcc <M_{B_{corr}} <5.5$ \gevcc. To estimate the number of background candidates in the blinded region, the final fit strategy described in~\autoref{fitsens} is used to fit the data, yielding around $10000$ in Run \Rn{1}, and $9000$ combinatorial candidates in Run \Rn{2}. The yields are extracted from blinded fits to data by integrating the combinatorial part of the total background probability density function (PDF) in the blinded region.
 
-In order to accommodate different offline selections between Run \Rn{1} and Run \Rn{2}, separate BDTs are trained for different Runs. Combined training of all of the datasets was also performed but it does not lead to any improvement. Results of the comparison between separate and combined training can be seen in ~\autoref{fig:separatetraining}. Different intrinsic properties (such as the number of trees used) and variables (such as two-particle vertices) have been explored to see whether improvement in discrimination of the BDT can be achieved but the configuration here proves to be the most optimal.
+In order to accommodate different selections between Run \Rn{1} and Run \Rn{2}, separate BDTs are trained for different Runs. Combined training of all of the datasets was also performed but it does not lead to any improvement in background rejection. Results of the comparison between separate and combined training can be seen in ~\autoref{fig:separatetraining}. Different intrinsic properties (such as the number of trees used) and variables (such as two-particle vertices) have been explored but no improvement in discrimination of the BDT was achieved.
 
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.7\linewidth]{./sel/final_comparison_from_root_combi_2.pdf}
-	\caption{Comparison of separate and combined training samples and performance on different datasets. Two vertical violet lines represent optimal points in the signal efficiency, for Run \Rn{1} (0.47) and for 2016 (0.34) where the working point of the two BDTs are chosen. Separate training provides greater rejection power in 2016. In Run \Rn{1} training on both datasets provides comparable performance for given optimal signal efficiency. Taking into the account the fact that offline selection slightly differs for 2016, it is advantageous to keep training separately.}
+\includegraphics[width=0.8\linewidth]{./sel/final_comparison_from_root_combi_2.pdf}
+	\caption{Comparison of separate and combined training samples and performance on different datasets. Two vertical violet lines represent optimal points in the signal efficiency, for Run \Rn{1} (0.47) and for 2016 (0.34) where the working point of the two BDTs are chosen. Separate training provides greater rejection power in 2016. In Run \Rn{1} training on both datasets provides comparable performance for given optimal signal efficiency. Taking into the account the fact that selection slightly differs for 2016, it is advantageous to keep the BDTs separate.}
 %\vspace*{-1.0cm}
 \label{fig:separatetraining}
 \end{figure}
@@ -448,7 +445,7 @@ In order to accommodate different offline selections between Run \Rn{1} and Run 
 
 
 
-In both Combinatorial BDTs, the most discriminating variables are the isolation variable~\autoref{isolationvar}, $B^{+}$ \gls{vertexchi2ndof}, \gls{minipchi2} of the muons and $p_{T}$ of $B^{+}$. Combinatorial muon comes more from somewhere else in the event and hence its \gls{minipchi2} is worse as compared to the signal, making $B^{+}$ \gls{vertexchi2ndof} worse. Moreover, as this combinatorial muon comes from somewhere else, other tracks may accompany it making the isolation variable a good discriminant. The combinatorial muon also tends to have higher momentum and hence $p_{T}$ of $B^{+}$ is higher. Distributions for these different variables can be seen in~\autoref{fig:discombi}. 
+In both Combinatorial BDTs, the most discriminating variables are the isolation variable (described in~\autoref{isolationvar}), $B^{+}$ \gls{vertexchi2ndof}, \gls{minipchi2} of the muons and $p_{T}$ of $B^{+}$. Combinatorial muon comes more from somewhere else in the event and hence its \gls{minipchi2} is worse as compared to the signal, making $B^{+}$ \gls{vertexchi2ndof} worse. Moreover, as this combinatorial muon comes from somewhere else, other tracks may accompany it making the isolation variable a good discriminant. The combinatorial muon also tends to have higher momentum and hence $p_{T}$ of the $B^{+}$ is higher. Distributions for these different variables can be seen in~\autoref{fig:discombi}. 
 
 
 \begin{figure}[ht]
@@ -463,7 +460,7 @@ In both Combinatorial BDTs, the most discriminating variables are the isolation 
 \end{figure}
 
 
-It is also important that there is no skewing of the mass distribution for the background as this could lead later to modelling issues with these different background components. This was checked by looking at the behaviour of BDT output in different bins of $M_{B_{corr}}$. If the BDT value stays flat then the background will not be skewed, which is the case for Run \Rn{2} as seen~\autoref{fig:flatnessofcombibdt}. This is also the case in Run \Rn{1}. 
+It is also important that there is no skewing of the mass distribution for the background as this could lead later to modelling issues with these different background components. This was checked by looking at the behaviour of BDT output in different bins of $M_{B_{corr}}$. If the BDT value stays flat then the background will not be skewed, which is the case for Run \Rn{2} as seen in~\autoref{fig:flatnessofcombibdt}. This is also the case for Run \Rn{1}. 
 
 
 \begin{figure}[ht]

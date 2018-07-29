@@ -276,6 +276,9 @@
 \glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{85}
 \glossaryentry{SV?\glossentry{SV}|setentrycounter[]{page}\glsnumberformat}{86}
 \glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{SV?\glossentry{SV}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{FD?\glossentry{FD}|setentrycounter[]{page}\glsnumberformat}{86}
 \glossaryentry{OT?\glossentry{OT}|setentrycounter[]{page}\glsnumberformat}{86}
 \glossaryentry{VELO?\glossentry{VELO}|setentrycounter[]{page}\glsnumberformat}{86}
 \glossaryentry{OT?\glossentry{OT}|setentrycounter[]{page}\glsnumberformat}{86}
@@ -335,7 +338,7 @@
 \glossaryentry{HLT1?\glossentry{HLT1}|setentrycounter[]{page}\glsnumberformat}{108}
 \glossaryentry{HLT2?\glossentry{HLT2}|setentrycounter[]{page}\glsnumberformat}{108}
 \glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{108}
+\glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{109}
 \glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{109}
 \glossaryentry{$\mathbold {IP\chisq }$?\glossentry{ipchi2}|setentrycounter[]{page}\glsnumberformat}{109}
 \glossaryentry{HLT2?\glossentry{HLT2}|setentrycounter[]{page}\glsnumberformat}{109}
