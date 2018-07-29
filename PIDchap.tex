@@ -196,6 +196,7 @@ Data samples for each year of data taking were obtained from \textit{stripping l
 \begin{table}[h!]
 \begin{center}
 \begin{tabular}{ l  l }
+\toprule
 Idea  & Cut  \\ \hline
 ID $K^{*}$ & $|$ m(K$\pi$) - m$_{PDG}(K^{∗}_{0})$ $|$ $ <100$ \mevcc \\
 Compatible with \texttt{PIDCalib} \color{red} kin comparison with pidcalib \color{black} &  for K,$\pi$ , p$_{T} > 250$ \mevc\\
@@ -210,7 +211,7 @@ ID pion & DLLK $<$ 0 DLLp $<$ 0 and \texttt{IsMuon==0}\\
 \hline
 For pion misID rates: & \\
 ID kaon & DLLK $>$ 0 and DLLK-DLLp $>$ 0 and \texttt{IsMuon==0} \\
-\hline
+\bottomrule
 \end{tabular}
 \end{center}
 \caption{Offline selection for $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ decay.}
@@ -236,35 +237,35 @@ The mass of the $J/\psi$ was \textit{constrained} to its nominal mass, procedure
 
 In order to obtain $K/\pi$ misid probabilities an unbinned maximum likelihood fit to $\mu^{+} \mu^{-} \pi^{+} K^{-}$ mass between 5150 - 5450 \mevcc was performed. This fit with parameters listed in \autoref{tab:floatingparsummarylol} give the yield of all the components. 
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
-\begin{tabular}{ l  l   }
+\begin{tabular}{ l  l }\toprule
 Fit Parameter & Status  \\ \hline
 	\multicolumn{2}{c}{Yields} \\ \hline
-N$_{B^{0} \rightarrow J/\psi K^{*}}$ (Signal)  &  free \\
-N$_{K \pi swaps}$ & free\\
-N$_{\Lambda_{b} \rightarrow J/\psi K^{-} p}$ & free\\
-N$_{B_{s} \rightarrow J/\psi K^{*}}$ & free \\
-N$_{Combinatorial}$ & free\\
+$N_{B^{0} \rightarrow J/\psi K^{*}}$ (Signal)  &  Free \\
+$N_{K \pi swaps}$ & Free\\
+$N_{\Lambda_{b} \rightarrow J/\psi K^{-} p}$ & Free\\
+$N_{B_{s} \rightarrow J/\psi K^{*}}$ & Free \\
+$N_{Combinatorial}$ & Free\\
 \hline
 	\multicolumn{2}{c}{Signal Shape Parameters} \\
 \hline
-$\mu_{B^{0} \rightarrow J/\psi K^{*}}$ & constrained from signal MC\\
-$\sigma_{B^{0} \rightarrow J/\psi K^{*}}$ & constrained from signal MC\\
+$\mu_{B^{0} \rightarrow J/\psi K^{*}}$ & Constrained from signal MC\\
+$\sigma_{B^{0} \rightarrow J/\psi K^{*}}$ & Constrained from signal MC\\
 Others & fixed from MC\\
 \hline
-$K\ \pi\ swaps$ Shape Parameters & fixed from MC \\
+$K\ \pi\ swaps$ Shape Parameters & Fixed from MC \\
 \hline
-$\Lambda_{b} \rightarrow J/\psi K^{-} p$ Shape Parameters & fixed from MC \\
+$\Lambda_{b} \rightarrow J/\psi K^{-} p$ Shape Parameters & Fixed from MC \\
 \hline
 	\multicolumn{2}{c}{${B_{s} \rightarrow J/\psi K^{*}}$ Shape Parameters} \\
 $\mu_{B_{s} \rightarrow J/\psi K^{*}}$ & Offset by $\mu_{B^{0} \rightarrow J/\psi K^{*}}$ \\
-Others & fixed from signal MC \\
+Others & Fixed from signal MC \\
 \hline
 	\multicolumn{2}{c}{Combinatorial Shape Parameters}  \\
 \hline
-exponential par.  & free\\
-\hline
+exponential par.  & Free\\
+\bottomrule
 \end{tabular}
 \caption{Summary of the fit parameters and individual component constraints for $B^{0} \rightarrow J/\psi K^{*}$ fit.}
 \label{tab:floatingparsummarylol}
@@ -309,10 +310,11 @@ for purposes of the \Bmumumu analysis \textit{sWeight} values will be used. Fits
 \color{black}
 
 \begin{table}[h!]
-\small
+%\small
 \begin{center}
-\begin{tabular}{ l  l  l  l  l  l }
-	$p$ range [\mevc] & $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$  & $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}(\rightarrow \underline{K^{+} \pi^{-}})$  & Ratio  \\ \hline
+\begin{tabular}{ l  H  H  c   }\toprule
+	$p$ range [\mevc] & $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$  & $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}(\rightarrow \underline{K^{+} \pi^{-}})$  & $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}(\rightarrow \underline{K^{+} \pi^{-}})/D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$  \\	
+\hline
 3000 - 6000 &   0.77$\pm$0.0016 & 0.83$\pm$0.0047 & 1.1$\pm$0.0065 \\
 6000 - 9300 &   0.93$\pm$0.00030 & 0.95$\pm$0.0019 & 1.0$\pm$0.0020 \\
 9300 - 10000 &  0.96$\pm$0.00037 & 0.97$\pm$0.0031 & 1.0$\pm$0.0033 \\
@@ -326,8 +328,7 @@ for purposes of the \Bmumumu analysis \textit{sWeight} values will be used. Fits
 40000 - 60000 &  0.97$\pm$7.5e-05 & 0.95$\pm$0.0021 & 1.0$\pm$0.0022 \\
 60000 - 70000 &  0.96$\pm$0.00016 & 0.96$\pm$0.0043 & 1.0$\pm$0.0046 \\
 70000 - 100000 &  0.95$\pm$0.00013 & 0.94$\pm$0.0044 & 0.99$\pm$0.0046 \\
-\hline
-
+\bottomrule
 \end{tabular}
 \end{center}
 	\caption{\color{red} It is necesarry as this is unrelated to following figures  \color{black}\texttt{K$\_$InMuonAcc==1.0} shows the interpolation of $K$ tracks into muon chambers. It can be seen that both samples agree with each other very well, meaning that measured misid rate is done for the same fraction of considered tracks. This measurement is done in a pseudorapidity region $1.5<\eta<5.0$.}

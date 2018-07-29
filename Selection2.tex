@@ -231,9 +231,8 @@ Requiring that \Bp direction points in the same direction as the line from \gls{
 
 \begin{table}%[H]
 \begin{center}
-\begin{tabular}{l|c l }
-
-    \hline
+\begin{tabular}{l c l }
+    \toprule
      Candidate & Stripping Selection \\ \hline
 
 	muon & \gls{minipchi2} $> 9$ &  \rdelim\}{3}{1cm}[\ track] \\
@@ -250,7 +249,7 @@ Requiring that \Bp direction points in the same direction as the line from \gls{
 	combination & \gls{fdchi2} $> 50$\\
 	combination & \gls{vertexchi2ndof} $< 4$ \\
 	combination & $0\ \mevcc\ <\ M_B\ <\ 7500\ \mevcc$ \\
-	combination & $2500\ \mevcc\ <\ M_{B_{corr}}\ <\ 10000\ \mevcc $\\ \hline
+	combination & $2500\ \mevcc\ <\ M_{B_{corr}}\ <\ 10000\ \mevcc $\\ \bottomrule
      \end{tabular}
 
 \end{center}
@@ -263,7 +262,7 @@ In order to obtain triggered data, $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \n
 
 \begin{table}[h!]
 \begin{center}
-	\begin{tabular}{ l l}%l | l | }
+	\begin{tabular}{ l l}\toprule%l | l | }
 Trigger Selection  \\ %& 2011 & 2012 & 2016 \\
 \hline
 		\texttt{Bplus$\_$L0MuonDecision$\_$TOS} \\ %& 0.915 & 0.895 & 0.74 \\
@@ -275,7 +274,7 @@ Trigger Selection  \\ %& 2011 & 2012 & 2016 \\
 		\texttt{Bplus$\_$Hlt2TopoMu3BodyBBDTDecision$\_$TOS} \\ % & 0.677 & 0.76 & 0.886* \\
 		\texttt{Bplus$\_$Hlt2DiMuonDetachedDecision$\_$TOS} \\ % & 0.809 & 0.769 & 0.988 \\
 		\texttt{Bplus$\_$Hlt2DiMuonDetachedHeavyDecision$\_$TOS} \\ % & 0.94 & 0.929 & 0.99 \\
-\hline
+\bottomrule
 \end{tabular}
 \end{center}
 	\caption{Trigger selection applied on both signal and normalisation samples.}
@@ -308,11 +307,11 @@ In order to remove backgrounds that proceed via resonant $J/\psi$ and $\Psi(2S)$
 
 \begin{table}[h!]
 \begin{center}
-\begin{tabular}{l c c}
+\begin{tabular}{l c c}\toprule
 	Veto & $q$ [\mevcc]  \\ \hline
         J/$\psi$  & !(2946.0 $<$ $q$ $<$ 3176.0)  \\
 	$\Psi$(2S) &  !(3586.0 $<$ $q$  $<$ 3766.0)  \\
-        \hline
+        \bottomrule
 \end{tabular}
 \end{center}
 \caption{Vetoes for $J/\psi$ and $\Psi(2S)$ resonances. As $minq< 980 \mevcc$, these vetoes apply to $maxq$ combination only. }
@@ -324,29 +323,31 @@ In order to remove backgrounds that proceed via resonant $J/\psi$ and $\Psi(2S)$
 Further selection was performed as seen in \autoref{tab:OfflineSelection}. This selection further suppresses backgrounds but is different to what is described above as it requires a different treatment in Run \Rn{1} and Run \Rn{2} due to the different definitions of variables as seen in \autoref{bugs}. 
 
 \begin{table}[h!]
-\small
+%\small
 \begin{center}
-\begin{tabular}{l l c c}
+\begin{tabular}{l c c c}\toprule
 
 %    \begin{tabular}{ | l | c |  } %p{7cm}|}
       Idea & Object & Run \Rn{1} Selection & Run \Rn{2} Selection \\ \hline
       Clean & Muon & - & \texttt{IsMuonTight==1.0}\\
       Clone and ghost & Muon & \texttt{Nshared==0} & \texttt{Nshared<2} \\
-      \multicolumn{4}{c}{discussed in \autoref{bugs}} \\
-      Fit Region & $B$ & $4000 <M_{B_{corr}}<7000\mevcc$ & $4000<M_{B_{corr}}<7000\mevcc$ \\
-      \multicolumn{4}{c}{discussed in \autoref{fittingsel}} \\
-      Bkg Removal & event & Combinatorial BDT selection & Combinatorial BDT selection \\    
-      \multicolumn{4}{c}{discussed in \autoref{CombiBDTsel}} \\
-      Bkg Removal & event & Misid BDT selection & Misid BDT selection \\
-      \multicolumn{4}{c}{discussed in \autoref{misidbdt}} \\
-	Optimize \texttt{FOM} & Muon & \texttt{Probnnmu}>0.35 & \texttt{Probnnmu}>0.35 \\
-      \multicolumn{4}{c}{discussed in \autoref{furtherpid}} \\
-	\multicolumn{4}{c}{(\texttt{FOM}  defined ~\autoref{eq:punzifom})} \\
-      \hline
+       & & in \autoref{bugs} & \\
+      Fit Region & $B$ & $4000 <M_{B_{corr}}<7000\mevcc$ & Same as Run \Rn{1} \\
+       & &  in \autoref{fittingsel} & \\
+      Bkg Removal & event & Combinatorial BDT & Combinatorial BDT \\    
+       &  & selection &  selection \\    
+       &  & in \autoref{CombiBDTsel} & \\
+      Bkg Removal & event & Misid BDT & Misid BDT \\
+	&  & selection &  selection   \\    
+	& &  in \autoref{misidbdt} & \\
+	Optimize \texttt{FOM} & Muon & \texttt{Probnnmu}>0.35 & Same as Run \Rn{1} \\
+        & & in \autoref{furtherpid} & \\
+%	\multicolumn{4}{c}{(\texttt{FOM}  defined ~\autoref{eq:punzifom})} \\
+      \bottomrule
 %      Clean & Min Dimuon & min $q^{2}(\mu^{+},\mu^{-})$ $<$ 960400 MeV$^{2}$/c$^{4}$  & min $q^{2}(\mu^{+},\mu^{-})$ $<$ 960400 MeV$^{2}$/c$^{4}$ \\ \hline
       \end{tabular}
 \end{center}
-\caption{Offline selection performed after stripping. Differences can be seen between Run \Rn{1} and Run \Rn{2} datasets.}
+\caption{Offline selection performed after stripping. Differences can be seen between Run \Rn{1} and Run \Rn{2} datasets. \texttt{FOM} is defined int~\autoref{eq:punzifom}.}
 \label{tab:OfflineSelection}
 \end{table}
 
@@ -573,7 +574,7 @@ Firstly, the preselection stream from which this sample is taken has different r
 \begin{center}
 \begin{tabular}{l|c l }
 
-    \hline
+    \toprule
      Candidate & Stripping Selection \\ \hline
 
 	muon & $p_{T} >$ 500 \mev \\ 
@@ -591,7 +592,7 @@ Firstly, the preselection stream from which this sample is taken has different r
 
 	combination & \gls{vertexchi2ndof} $< 10$ \\
 	combination & $5150\ \mevcc\ <\ M_B\ <\ 5450\ \mevcc$ \\
-	combination & $B$ lifetime > 0.2 ps \\ \hline
+	combination & $B$ lifetime > 0.2 ps \\ \bottomrule
      \end{tabular}
 
 \end{center}

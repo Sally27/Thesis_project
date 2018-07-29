@@ -15,16 +15,16 @@ Overall selection efficiency for signal, $\varepsilon^{s}$, and normalisation, $
 
 \begin{table}[H]
 \centering
-\small
-\hspace*{-0.5cm}\begin{tabular}{| l | l | l |}
-\hline
+%\small
+\hspace*{-0.5cm}\begin{tabular}{ l  l  l }
+\toprule
 Component & Method  \\ \hline
 	$\varepsilon_{GEN}$, $\varepsilon_{REC}$ & \Rn{1}  \\
 	$\varepsilon_{TRG}$, $\varepsilon_{OFF}$, $\varepsilon_{BDTs}$, $\varepsilon_{FR}$  & \Rn{2} \\
 	$\varepsilon_{PID}$ & \Rn{3} \\
-\hline
+\bottomrule
  \end{tabular}
- \caption{Method of obtaining efficiencies. Most of these efficiencies are evaluated using simulation, however, TRG and PID efficiencies are evaluted using data and/or simulation techniques.}
+ \caption{Method of obtaining efficiencies. Most of these efficiencies are evaluated using simulation, however, TRG and PID efficiencies are evaluated using data and/or simulation techniques.}
 \label{tab:signaleffsummary}
 \end{table}
 
@@ -92,7 +92,7 @@ The summary of individual efficiencies together with total efficiency, which is 
 %\toprule
 
 
-        \hline
+        \toprule
 \multicolumn{1}{l|}{} & \multicolumn{4}{c|}{$ B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu$} & \multicolumn{4}{c}{$B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$} \\
 	Efficiency & \multicolumn{2}{c}{2012} & \multicolumn{2}{c|}{2016} & \multicolumn{2}{c}{2012} & \multicolumn{2}{c}{2016} \\
 
@@ -114,11 +114,11 @@ $\varepsilon_{total}$ & 0.1581& 0.0020 & 0.1182& 0.0008 & 0.3974& 0.0011 & 0.320
 
 	
 	
-	\hline
+	\bottomrule
 %\bottomrule
 \end{tabular}
 \end{center}
-	\caption{Summary of individual simulation and/or data efficiencies in \% necessary for \textit{single event sensitivity} for signal and normalisation channel. Efficiency values for 2016 are TCK-weighted averaged efficiencies, which will be explained in \autoref{trigef}. The errors considered are of statistical nature, computed using binomial error.}
+	\caption{Summary of individual simulation and/or data efficiencies in \% necessary for the relative efficiency between the signal and normalisation channel. Efficiency values for 2016 are TCK-weighted averaged efficiencies, which will be explained in \autoref{trigef}. The errors considered are of statistical nature, computed using binomial error.}
 \label{tab:effsumarry}
 \end{table}
 
@@ -204,7 +204,7 @@ The hierarchy of generator level efficiencies $\varepsilon^{s}_{GEN} > \varepsil
 \subsection{Reconstruction Efficiency (REC)}
 The reconstruction efficiency is calculated on simulated events which have passed the detector acceptance. For signal, this efficiency consists of reconstruction and stripping, detailed in~\autoref{tab:stripcutsB}. For normalisation it consists from reconstruction, stripping, \textbf{and on the top} signal stripping is applied. This is done so that selections in normalisation and signal channel are kept as similar as possible and the fact that the signal selection has tighter cuts as explained in \autoref{nchannel}. However, it should be noted that reconstruction efficiency reflects stripping selection \textbf{without the PID cuts} for both signal and normalisation. This is because \gls{PID} is badly modelled in simulation and hence will be accounted for separately and at the end of the selection chain.
 
-The hierarchy of reconstruction level efficiencies $\varepsilon^{s}_{REC} < \varepsilon^{n}_{REC}$ is also expected as many variables in a signal stripping are based on alignment of the mother $B$ with its daugthers. For fully reconstructed normalisation channel this is expected to be the case, whereas for not fully reconstructed decays alignment requiremnts make selection tighter. 
+The hierarchy of reconstruction level efficiencies $\varepsilon^{s}_{REC} < \varepsilon^{n}_{REC}$ is also expected as many variables in a signal stripping are based on alignment of the mother $B$ with its daughters. For fully reconstructed normalisation channel this is expected to be the case, whereas for not fully reconstructed decays alignment requirements make selection tighter. 
 
 %  \begin{table}[H]
 %                \begin{center}
@@ -232,42 +232,42 @@ The hierarchy of reconstruction level efficiencies $\varepsilon^{s}_{REC} < \var
  
 Therefore if default TCK for simulation is representative for the whole considered dataset then the efficiency can be extracted directly from the simulation produced, which is the case for the Run \Rn{1} data.
 
-However in Run \Rn{2} the trigger thresholds have been changing often resulting in 16 different TCKs with very different $p$, $p_{T}$ thresholds, see Table ~\autoref{tab:2016MC} for full detail. In the third column, luminosity proportion for 2016 is given. It can be seen that the default simulation in 2016 (corresponding to TCK decimal key 288888335) only represents around 35\% of the data. For this reason, the trigger efficiencies for 2016 data have been obtained by emulation of the trigger on simulation for \texttt{L0} and \texttt{HLT1} level for each individual TCK, creating 16 TCK-based simulations.  This trigger emulation to extract efficiencies was tested with the default trigger configuation (TCK 288888335) to validate the emulation and the correct efficiencies have been recovered. It should be noted that small differences arise from difference between \textit{offline} and \texttt{HLT1} container for \gls{PV}s which stores the information about \gls{minipchi2} as the \gls{PV} finding-algorithm is different, but these have neglgible effect. \mybox{mentioning this just for reproducibility, but maybe not necessary}.
+However in Run \Rn{2} the trigger thresholds have been changing often resulting in 16 different TCKs with very different $p$, $p_{T}$ thresholds, see Table ~\autoref{tab:2016MC} for full detail. In the third column, luminosity proportion for 2016 is given. It can be seen that the default simulation in 2016 (corresponding to TCK decimal key 288888335) only represents around 35\% of the data. For this reason, the trigger efficiencies for 2016 data have been obtained by emulation of the trigger on simulation for \texttt{L0} and \texttt{HLT1} level for each individual TCK, creating 16 TCK-based simulations.  This trigger emulation to extract efficiencies was tested with the default trigger configuration (TCK 288888335) to validate the emulation and the correct efficiencies have been recovered. It should be noted that small differences arise from difference between \textit{offline} and \texttt{HLT1} container for \gls{PV}s which stores the information about \gls{minipchi2} as the \gls{PV} finding-algorithm is different, but these have negligible effect. \mybox{mentioning this just for reproducibility, but maybe not necessary}.
 %Therefore the emulation will not be exact, however, the effect is very small as it seems to be only resolution that will slightly shift the distribution, see figure ~\autoref{fig:hlt1shortcoming} 
 
-In order to obtain the average efficiency for Run \Rn{2}, the 16 TCK efficiencies are weighted by the proportion of luminosity corresponding to the integrated luminosity for a given TCK over the full 2016 integrated luminosity. The integrated luminosity per TCK was extracted by looking at API version of the LHCb rundatabase. 
+In order to obtain the average efficiency for Run \Rn{2}, the 16 TCK efficiencies are weighted by the proportion of luminosity corresponding to the integrated luminosity for a given TCK over the full 2016 integrated luminosity. The integrated luminosity per TCK was extracted by looking at API version of the \gls{LHCb} run database. 
 
 The full trigger luminosity for Run \Rn{2} is calculated by averaging the luminosity-weighted efficiencies, as seen in ~\autoref{tab:L0andHLT1Calib}. This averaged efficiency is going to be given as a final efficiency for 2016 from now on.  
 
 
 \begin{table}
 	\begin{center}
-\footnotesize
-      \begin{tabular}{l l l l | l l l l | l l }
+		%\small
+      \begin{tabular}{l H l l | l l l l | l l }\toprule
       \multicolumn{4}{c |}{ } & \multicolumn{4}{c|}{\texttt{HLT1TrackMuon}} & \multicolumn{2}{c}{\texttt{L0Muon}}\\ \hline
-	      TCK dec & TCK hex & \%$\mathcal{L}$ & $\mathcal{L}$ & \gls{pgh2} & $p_{\mu}$ & $p_T(\mu)$ & \gls{minipchi2} & $SPD_{mult}$ & $p_T(\mu)$\\% & $sum_{ET}$\\
-	      &  & \% & $\textrm{pb}^{-1}$ & & [\mev] & [\mev] &  & & [\mev] \\% & $sum_{ET}$\\
-      \multicolumn{10}{c}{\textbf{2016 MD} $0.859656\,\textrm{fb}^{-1}$} \\
-      287905280 & 0x11291600 & $0.769$ & $12.74$  & $-$ & 6.0 & 0.91 & 10        & 450  & 14 \\% &  $-$\\
-      287905283 & 0x11291603 & $2.11$ & $35.01$  & $-$ & 6.0 & 0.91 & 10         & 450  & 23 \\% &  $-$ \\
-      287905284 & 0x11291604 & $1.50$ &  $24.78$  & $-$ & 6.0 & 0.91 & 10        & 450  & 27 \\% & $-$ \\
-      287905285 & 0x11291605 & $4.73$ &   $78.42$   & $-$ & 6.0 & 0.91 & 10      & 450 & 31 \\% & $-$ \\
-      288822793 & 0x11371609 & $4.35$   &  $72.14$ & 0.2 & 6.0 & 1.1  & 35       & 450  & 27 \\% & $-$ \\
-      288822798 & 0x1137160e & $1.37$  &  $22.756$ & 0.2 & 6.0 & 1.1  & 35       & 450  & 27 \\% & $-$ \\
-      288888329 & 0x11381609 & $0.414$  &  $6.86$  & 0.2 & 6.0 & 1.1  & 35       & 450 & 31 \\% & $-$ \\
-      288888334 & 0x1138160e & $1.912$  &  $31.70$  & 0.2 & 6.0 & 1.1  & 35      & 450 & 31 \\% & $-$ \\
-      288888335 & 0x1138160f & $34.7$  &  $575.25$  & 0.2 & 6.0 & 1.1  & 35  & 450 & 37 \\% & $-$ \\
-      \multicolumn{10}{c}{\textbf{2016 MU} $0.798156\,\textrm{fb}^{-1}$} \\
-      288495113 & 0x11321609 & $6.45$ &  $107.00$   &  $-$ & 6.0 & 0.91 & 10 & 450 & 27 \\% & $-$   \\
-      288626185 & 0x11341609 & $7.12$ &  $118.06$  &  $-$ & 6.0 & 0.91 & 10 & 450 & 27 \\% & $-$    \\
-      288691721 & 0x11351609 &  $1.42$ &  $23.46$   &  0.2 & 6.0 & 1.1  & 35  & 450 & 27 \\% & $-$  \\
-      288757257 & 0x11361609 & $25.0$ &  $414.62$   &  0.2 & 6.0 & 1.1  & 35 & 450 & 27  \\% & $-$   \\
-      288888337 & 0x11381611 & $ 2.66$ &  $44.13$  &  0.2 & 6.0 & 1.1  & 35  & 450 & 31 \\% & $-$   \\
-      288888338 & 0x11381612 & $5.41$ &  $89.75$  &  0.2 & 6.0 & 1.1  & 35  & 450 & 33 \\% & $-$    \\
-      288888339 & 0x11381613 & $0.0685$ &  $1.136$  &  0.2 & 6.0 & 1.1  & 35  & 450 & 27 \\% & 1000 \\
-      \multicolumn{10}{c}{\textbf{MC Default}} \\
+	      TCK dec & TCK hex & \%$\mathcal{L}$ & $\mathcal{L}$ & \gls{pgh2} & $p_{\mu}$ & $p_T(\mu)$ & \gls{minipchi2} & $SPD$ & $p_T(\mu)$\\% & $sum_{ET}$\\
+	      &  & \% & $\textrm{pb}^{-1}$ & & [\mev] & [\mev] &  & & [\mev] \\ \hline% & $sum_{ET}$\\
+      \multicolumn{10}{c}{\textbf{2016 MD} $0.86\,\textrm{fb}^{-1}$} \\ \hline 
+      287905280 & 0x11291600 & $0.8$ & $12.7$  & $-$ & 6.0 & 0.91 & 10        & 450  & 14 \\% &  $-$\\
+      287905283 & 0x11291603 & $2.1$ & $35.0$  & $-$ & 6.0 & 0.91 & 10         & 450  & 23 \\% &  $-$ \\
+      287905284 & 0x11291604 & $1.5$ &  $24.8$  & $-$ & 6.0 & 0.91 & 10        & 450  & 27 \\% & $-$ \\
+      287905285 & 0x11291605 & $4.7$ &   $78.4$   & $-$ & 6.0 & 0.91 & 10      & 450 & 31 \\% & $-$ \\
+      288822793 & 0x11371609 & $4.4$   &  $72.1$ & 0.2 & 6.0 & 1.1  & 35       & 450  & 27 \\% & $-$ \\
+      288822798 & 0x1137160e & $1.4$  &  $22.8$ & 0.2 & 6.0 & 1.1  & 35       & 450  & 27 \\% & $-$ \\
+      288888329 & 0x11381609 & $0.4$  &  $6.9$  & 0.2 & 6.0 & 1.1  & 35       & 450 & 31 \\% & $-$ \\
+      288888334 & 0x1138160e & $2.0$  &  $31.7$  & 0.2 & 6.0 & 1.1  & 35      & 450 & 31 \\% & $-$ \\
+      288888335 & 0x1138160f & $34.7$  &  $575.3$  & 0.2 & 6.0 & 1.1  & 35  & 450 & 37 \\ \hline% & $-$ \\
+      \multicolumn{10}{c}{\textbf{2016 MU} $0.80\,\textrm{fb}^{-1}$} \\ \hline
+      288495113 & 0x11321609 & $6.5$ &  $107.0$   &  $-$ & 6.0 & 0.91 & 10 & 450 & 27 \\% & $-$   \\
+      288626185 & 0x11341609 & $7.1$ &  $118.1$  &  $-$ & 6.0 & 0.91 & 10 & 450 & 27 \\% & $-$    \\
+      288691721 & 0x11351609 &  $1.4$ &  $23.5$   &  0.2 & 6.0 & 1.1  & 35  & 450 & 27 \\% & $-$  \\
+      288757257 & 0x11361609 & $25.0$ &  $414.6$   &  0.2 & 6.0 & 1.1  & 35 & 450 & 27  \\% & $-$   \\
+      288888337 & 0x11381611 & $ 2.7$ &  $44.1$  &  0.2 & 6.0 & 1.1  & 35  & 450 & 31 \\% & $-$   \\
+      288888338 & 0x11381612 & $5.4$ &  $89.8$  &  0.2 & 6.0 & 1.1  & 35  & 450 & 33 \\% & $-$    \\
+      288888339 & 0x11381613 & $0.1$ &  $1.1$  &  0.2 & 6.0 & 1.1  & 35  & 450 & 27 \\ \hline% & 1000 \\
+      \multicolumn{10}{c}{\textbf{MC Default}} \\ \hline
       1362630159 & 0x5138160f & $-$  & $-$   & 0.2 & 6.0 & 1.1  & 35 & 450 & 37\\% &  157\\
-
+     \bottomrule
    \end{tabular}
 \caption{Summary of 16 different TCKs listing properties of candidates necessary to pass \texttt{L0} and \texttt{HLT1} selection in 2016. In the final row, the default configuration for 2016 is shown and it corresponds to 288888335 TCK.}
 \label{tab:2016MC}
@@ -291,10 +291,10 @@ For the \texttt{HLT2} level, there were no significant changes of thresholds and
 %This trigger emulation to extract efficiencies was tested with the default trigger configuation to validate the emulation and the correct efficiencies have been recovered. TCK dependent efficiecy breakdown for signal and normalisation channel can be seen in Table ~\autoref{tab:L0andHLT1Calib}. In order to obtain the average efficiency for Stripping 26, these efficiencies are weighted by the \% of lumi for which this luminosity was ran on. These numbers have been obtained by looking at API version of the rundatabase where one can obtain luminosity per TCK.
 
 
-\begin{table}[ht]
-\footnotesize
+\begin{table}[H]
+%\small
 \begin{center}
-\begin{tabular}{ l |  c  c  c | c  c  c }
+\begin{tabular}{ l |  c  c  c | c  c  c }\toprule
 	\multicolumn{1}{c|}{} & \multicolumn{3}{c|}{\Bmumumu } & \multicolumn{3}{c}{\bjpsimumuk} \\ \hline
  TCK & $\varepsilon_{L0}$ & $\varepsilon_{HLT1}$ & $\varepsilon_{HLT2}$ & $\varepsilon_{L0}$ & $\varepsilon_{HLT1}$ & $\varepsilon_{HLT2}$ \\
 \hline
@@ -316,10 +316,10 @@ For the \texttt{HLT2} level, there were no significant changes of thresholds and
 288888339 & 0.89 & 0.957 & 0.877 & 0.864 & 0.94 & 0.968 \\
 \hline
 Weighted efficiency & 0.876 & 0.967 & 0.884 & 0.849 & 0.953 & 0.978 \\
-\hline
+\bottomrule
 \end{tabular}
 \end{center}
-\caption{Efficiencies of 2016 trigger emulation on MC. Depending on TCK, the efficiencies vary up 10\% for \texttt{L0} level for signal MC and up to 5\% for normalisation TCK. This is important as \textit{single event sensitivity} is sensitive to the ratio of these two efficiencies. This configuration is discribing correctly only 35\% data with high $p_{T}$ threshold.}
+\caption{Efficiencies of 2016 trigger emulation on MC. Depending on TCK, the efficiencies vary up 10\% for \texttt{L0} level for signal MC and up to 5\% for normalisation TCK. This is important as \textit{single event sensitivity} is sensitive to the ratio of these two efficiencies. This configuration is describing correctly only 35\% data with high $p_{T}$ threshold.}
 \label{tab:L0andHLT1Calib}
 \end{table}
 
@@ -364,7 +364,7 @@ In this section offline efficiencies are discussed. These include $J/\psi$ and $
 %\end{table}
 
 \subsection{Combinatorial BDT and Misid BDT efficiency}
- Efficiencies of MVA selection are also evaluated on simulation samples. These efficiencies are obtained using samples that passed (GEN), (REC), (TRG) and (OFF) cuts. Specific MVA for combinatorial background suppression (see ~\autoref{CombiBDTsel}) and misID background suppression (see ~\autoref{misidbdt}) are applied to the simulation samples. As the optimisation led to different BDTs depending on the data-taking period, these are then applied parametrically to relevant simulation samples. The results were listed in \autoref{ab:effsumarry}.
+ Efficiencies of MVA selection are also evaluated on simulation samples. These efficiencies are obtained using samples that passed (GEN), (REC), (TRG) and (OFF) cuts. Specific MVA for combinatorial background suppression (see ~\autoref{CombiBDTsel}) and misID background suppression (see ~\autoref{misidbdt}) are applied to the simulation samples. As the optimisation led to different BDTs depending on the data-taking period, these are then applied parametrically to relevant simulation samples. The efficency results were listed in \autoref{tab:effsumarry}.
 
 For Misid and Combinatorial BDT selection, normalisation \bjpsimumuk channel retains more signal than the \Bmumumu channel. This is due to the kaon/muon $p$ and $p_{T}$ kinematics difference as seen in ~\autoref{fig:reason1} and ~\autoref{fig:reason2}, where the kaon track is generally harder than the muon track. Kaon reconstruction efficiency is worse than muon reconstruction efficiency because about 11\% of the kaons cannot be reconstructed due to hadronic interactions that occur before the last T station~\cite{LHCb-DP-2013-002}, implying that the $p_{T}$ of $B$ is on average harder for normalisation channel. As these two quantities are high in BDT importance ranking as mentioned in \autoref{CombiBDTsel}, this makes normalisation MC more efficient. In Misid BDT selection, again the kinematics of $B$ and the \gls{minipchi2} of the oppositely charged muon to $B$ is more signal like than signal.
 
@@ -416,7 +416,7 @@ As discussed in~\autoref{fittingsel} and in~\autoref{combiback}, fitting region 
 \center
 \includegraphics[width = 0.5\textwidth]{efficiency/plot_shapes_fittingregion/plotvariableB_MMMIX.pdf}\put(-110,133){(a)}%
 \includegraphics[width = 0.5\textwidth]{efficiency/plot_shapes_fittingregion/plotvariableLogyB_MMMIX.pdf}\put(-110,133){(b)}%
-\caption{(a) Visible mass of normalisation and signal simulation. It can be seen that normalisation previous preselection has a sharp cut around $B$ visible mass leading to much higher fitting region efficiency. (b) The corresponding logharitmic version of plot (a).}
+\caption{(a) Visible mass of normalisation and signal simulation. It can be seen that normalisation previous preselection has a sharp cut around $B$ visible mass leading to much higher fitting region efficiency. (b) The corresponding logarithmic version of plot (a).}
 \label{fig:reasonfitrange}
 \end{figure}
 
@@ -439,14 +439,14 @@ As discussed in~\autoref{fittingsel} and in~\autoref{combiback}, fitting region 
 \label{PIDaff}
 As \gls{PID} variables are not correctly modelled in simulation, mentioned in~\autoref{simulationchap}, data-driven approach of extracting PID efficiency is taken. To not introduce any biases in previous steps, especially in multivariate selection, PID efficiencies are evaluated at the end of the selection chain with \texttt{PIDCalib} package data samples.
 
-The PID efficiency is higher for normalisation channel with all PID requiremnts givne in~\autoref{tab:PIDselectionNorm} compared to signal provided in~\autoref{tab:PIDselection} due to weaker PID requirement on kaon as compared to muons.
+The PID efficiency is higher for normalisation channel with all PID requirements given in~\autoref{tab:PIDselectionNorm} compared to signal provided in~\autoref{tab:PIDselection} due to weaker PID requirement on kaon as compared to muons.
 
 \begin{table}[H]
 \begin{center}
-\begin{tabular}{l c c}
+\begin{tabular}{l c c}\toprule
 
 %    \begin{tabular}{ | l | c | } %p{7cm}|}
-    species  & 2012 PID Simulation & 2016 PID Simulation\\ \hline
+    Species  & 2012 PID Simulation & 2016 PID Simulation\\ \hline
     muon &  $\Delta LL(\mu - \pi) > 0$ & $\Delta LL(\mu - \pi) > 0$ \\
     muon &  $\Delta LL(\mu - K) > 0$ & $\Delta LL(\mu - K) > 0$ \\
     muon &   - & \texttt{IsMuonTight==1.0}\\
@@ -455,9 +455,8 @@ The PID efficiency is higher for normalisation channel with all PID requiremnts 
      \hline
    $\varepsilon_{PID}$   & 0.631$\pm$ 0.005 & 0.623$\pm$0.006 \\
 
-     \hline
+     \bottomrule
       \end{tabular}
-
 \end{center}
 \caption{Signal simulation efficiency using \texttt{PIDCalib} efficiencies.}
 \label{tab:PIDselection}
@@ -465,10 +464,10 @@ The PID efficiency is higher for normalisation channel with all PID requiremnts 
 
 \begin{table}[H]
 \begin{center}
-\begin{tabular}{l c c}
+\begin{tabular}{l c c}\toprule
 
 %    \begin{tabular}{ | l | c | } %p{7cm}|}
-    species  &2012 PID Simulation & 2016 PID Simulation\\ \hline
+    Species  &2012 PID Simulation & 2016 PID Simulation\\ \hline
     muon &  $\Delta LL(\mu - \pi) > 0$ & $\Delta LL(\mu - \pi) > 0$ \\
     muon & $\Delta LL(\mu - K) > 0$ & $\Delta LL(\mu - K) > 0$ \\
     muon &  - & \texttt{IsMuonTight==1.0}\\
@@ -479,7 +478,7 @@ The PID efficiency is higher for normalisation channel with all PID requiremnts 
      \hline
     $\varepsilon_{PID}$ &0.685$\pm$ 0.001 & 0.656$\pm$0.001  \\
 
-     \hline
+     \bottomrule
       \end{tabular}
 
 \end{center}
@@ -490,7 +489,7 @@ The PID efficiency is higher for normalisation channel with all PID requiremnts 
 
 \newpage
 \section{Mass Fits}
-In this section, firstly parametrisation of the normalisation channel is shown in~\autoref{normparam}. The fit to normalisation channel using the full fit model is described in~\autoref{normfit}. This is followed by the signal fit parametrisation outlined in~\autoref{Fit} resulting in blinded and non-blinded data fits described in~\autoref{fitsens}.
+In this section, firstly parametrisation of the normalisation channel is shown in~\autoref{normparam}. The fit to normalisation channel using the full fit model is described in~\autoref{normfit}. This is followed by the signal fit parametrisation outlined in~\autoref{sigpara} resulting in blinded and non-blinded data fits described in~\autoref{fitsens}.
 
 \subsection{Normalisation Channel Parametrisation}
 \label{normparam}
@@ -607,14 +606,14 @@ The $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ signal yield 
 \newline
 \includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlhighfcmeRun1.pdf}\put(-50,133){(e)}%
 \includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlhighfcme2016.pdf}\put(-50,133){(f)}
-\caption{Fit results in logharithmic scale to (a) Run \Rn{1} (b) Run \Rn{2} $\mu^{+} \mu^{-} K^{+}$ mass spectrum with no fractional corrected mass split, (c)(d) low FCME bin, (e)(f)high FCME bin.}
+\caption{Fit results in logarithmic scale to (a) Run \Rn{1} (b) Run \Rn{2} $\mu^{+} \mu^{-} K^{+}$ mass spectrum with no fractional corrected mass split, (c)(d) low FCME bin, (e)(f)high FCME bin.}
 \label{fig:run1jpsikfitnofcme}
 \end{figure}
 
 
 
 
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{ l  l  l  l }
 \toprule
@@ -641,7 +640,7 @@ To fit the signal data the default fitting strategy is to use a simultaneous unb
 
 
 \subsubsection{Signal}
-The full fit to Run \Rn{1} and Run \Rn{2} data requires the signal shape knowledge for combined dataset. This is obtained fromRun \Rn{1} and Run \Rn{2} signal simulation \textit{cocktail}. The cocktail is created after full selection by assigning event-by-event weights, \textit{$w^{i}$}, which capture the differences between Run \Rn{1} and Run \Rn{2} simulation, that ware not considered by full selection.
+The full fit to Run \Rn{1} and Run \Rn{2} data requires the signal shape knowledge for combined dataset. This is obtained from Run \Rn{1} and Run \Rn{2} signal simulation \textit{cocktail}. The cocktail is created after full selection by assigning event-by-event weights, \textit{$w^{i}$}, which capture the differences between Run \Rn{1} and Run \Rn{2} simulation, that ware not considered by full selection.
 
 Firstly, weights that reflect the expected difference due to increased luminosity are computed. To obtain these signal weights, following conditions must be satisfied
 
@@ -729,7 +728,7 @@ After obtaining combined Run \Rn{1} and \Rn{2} signal \textit{cocktail}, fit to 
 \end{split}
 \label{eq:sigeq}
 \end{equation}
-where  $\varepsilon^{x}$ is total selection efficiency of $x$ channel, $N_{x}$ is number of $x$ decays, $\mathcal{B}(x)$ is the branching fraction of decay $x$, $R_{FCME}$ is the relevant efficiency ratio between two decays detailed in~\autoref{EfficiencySummary} and finally $\alpha$ is the \textit{single event sensitivity}, variable which desribes the sensitivity for the search. Hence for Run \Rn{1} and Run \Rn{2} altogether for non-simultaneous fit $N^{sig}$ is a function of six parameters $N^{sig}(R^{21}_{FCME},R^{26}_{FCME},N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\Bmumumu))$. In simultaneous case $R^{21}_{FCME}$,$R^{26}_{FCME}$, $N^{Run\ \Rn{1}}(\bjpsimumuk)$ and $N^{Run\ \Rn{2}}(\bjpsimumuk) K^{+})$ is further split into $\sigma_{lowFCME}$ and $\sigma_{highFCME}$ bins, resulting in 10 parameters for $N^{sig}$ in the fit.
+where  $\varepsilon^{x}$ is total selection efficiency of $x$ channel, $N_{x}$ is number of $x$ decays, $\mathcal{B}(x)$ is the branching fraction of decay $x$, $R_{FCME}$ is the relevant efficiency ratio between two decays detailed in~\autoref{EfficiencySummary} and finally $\alpha$ is the \textit{single event sensitivity}, variable which describes the sensitivity for the search. Hence for Run \Rn{1} and Run \Rn{2} altogether for non-simultaneous fit $N^{sig}$ is a function of six parameters $N^{sig}(R^{21}_{FCME},R^{26}_{FCME},N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\Bmumumu))$. In simultaneous case $R^{21}_{FCME}$,$R^{26}_{FCME}$, $N^{Run\ \Rn{1}}(\bjpsimumuk)$ and $N^{Run\ \Rn{2}}(\bjpsimumuk) K^{+})$ is further split into $\sigma_{lowFCME}$ and $\sigma_{highFCME}$ bins, resulting in 10 parameters for $N^{sig}$ in the fit.
 
 
 
@@ -776,7 +775,6 @@ The summary of expected yield is summarized in~\autoref{tab:prsum}. For the non-
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{ l  l  l }
-\hline
 \toprule
 Properties & Run \Rn{1} & Run \Rn{2}  \\
 \midrule
@@ -830,11 +828,11 @@ The binned $\chi^{2}$ fits using Crystal Ball function to different bins of FCME
 
 
 \begin{table}[H]
-\small
+%\small
 \begin{center}
 \begin{tabular}{ l  l  l  l  l  }
 \toprule
-Sample & Region & PID & weight & Cummulative  \\
+Sample & Region & PID & weight & Cumulative  \\
  &  &  &  & misID count \\
 \midrule
 Run \Rn{1} \textit{SS misID} & Kaon-region & Run \Rn{1} PID & crossfeedweight & 198 \\
@@ -852,7 +850,7 @@ Run \Rn{2} \textit{OS misID} & Proton-region &  & no-crossfeedweight & 619 \\
 \bottomrule
 \end{tabular}
 \end{center}
-	\caption{The final misid template is constructed by summing the contribution from Run \Rn{1} and \Rn{2} kaon, pion and proton-like regions for both \textit{SS} and \textit{OS misID} contributions. The last column adds cummulatively the contributions with respect to the previous row. }
+	\caption{The final misid template is constructed by summing the contribution from Run \Rn{1} and \Rn{2} kaon, pion and proton-like regions for both \textit{SS} and \textit{OS misID} contributions. The last column adds cumulatively the contributions with respect to the previous row. }
 \label{tab:misidtabcummu}
 \end{table}
 
@@ -862,13 +860,13 @@ Run \Rn{2} \textit{OS misID} & Proton-region &  & no-crossfeedweight & 619 \\
 \newline
 \includegraphics[width=0.5\linewidth]{./efficiency/signalfits/misiddata/misiddatalowfcmeRun1nolog.pdf}\put(-30,60){(b)}%
 \includegraphics[width=0.5\linewidth]{./efficiency/signalfits/misiddata/misiddatahighfcmeRun1nolog.pdf}\put(-30,60){(c)}%
-	\caption{Binned $\chi^{2}$ to misid template with no FCME split (b) Low FCME (c) High FCME. In high FCME bin, the distibution of misid is pollutes signal window more than in the low FCME bin. Both full weight error $\sigma_{tot}$ and partial weight error $\sigma_{par}$ can be seen.}
+	\caption{Binned $\chi^{2}$ fit to the misID templates with no FCME split (b) Low FCME (c) High FCME. In high FCME bin, the distribution of misID is pollutes signal window more than in the low FCME bin. Both full weight error $\sigma_{tot}$ and partial weight error $\sigma_{par}$ can be seen.}
 %\vspace*{-1.0cm}
 \label{fig:MisidFinalFit}
 \end{figure}
 
 \subsubsection{Combinatorial Background}
-Signal data fit so far includes components for signal component, partially reconstructed background component, and misid background component. The only component left to estimate is the contamination of combinatorial background. To model the combinatorial component exponential function is left floating and fit to data, which was motivated in~\autoref{combiback}. Hence \textbf{the shape}, $f^{Combi}$, has one(two) parameter(s) for non-simultaneous(simultaneous) fit, which is the exponential constant. And \textbf{the yield}, $N^{Combi}$, is also parametrised just with one (two) parameter(s) for non-simultaneous (simultaneous) fit.
+Signal data fit so far includes components for signal component, partially reconstructed background component, and misID background component. The only component left to estimate is the contamination of combinatorial background. To model the combinatorial component exponential function is left floating and fit to data, which was motivated in~\autoref{combiback}. Hence \textbf{the shape}, $f^{Combi}$, has one(two) parameter(s) for non-simultaneous(simultaneous) fit, which is the exponential constant. And \textbf{the yield}, $N^{Combi}$, is also parametrised just with one (two) parameter(s) for non-simultaneous (simultaneous) fit.
 
 %\subsection{Signal Data Fit}
 %\label{fitsens}
@@ -1128,7 +1126,7 @@ where $\sigma$ is the bin of fractional corrected mass. The shared parameters in
 %sim 56 param.
 
 \subsubsection{Signal fit model hypotheses}
-As the strenght of the signal is not a priori known there are two types of hypotheses that are established: one where there is a presence of signal, also known as signal+background hypothesis model which takes exactly form of~\autoref{eq:fullhypo} and then background only hypothesis, where $\mathcal{B}(\Bmumumu)=0 \rightarrow N^{sig}=0$.
+As the strength of the signal is not a priori known there are two types of hypotheses that are established: one where there is a presence of signal, also known as signal+background hypothesis model which takes exactly form of~\autoref{eq:fullhypo} and then background only hypothesis, where $\mathcal{B}(\Bmumumu)=0 \rightarrow N^{sig}=0$.
 
 \subsubsection{Signal data types}
 
@@ -1141,11 +1139,11 @@ Systematics studies are performed in order to account for possible shortcomings 
 
 \begin{table}[H]
 \centering
-\small
-\begin{tabular}{ l | c  c | c  }
-\hline
+%\small
+\begin{tabular}{ l  c  c  c  }
+\toprule
 Systematic source & Run \Rn{1}/\% &  Run \Rn{2}/\% & Error Overall \\ \hline
-\hline
+
 $\mathcal{B}(J/\psi \rightarrow \mu^{+} \mu^{-})$ & 0.6 & 0.6 & 0.6\\
 $\mathcal{B}(B^{+} \rightarrow  J/\psi K^{+})$ & 3.0 & 3.0 & 3.0\\
 \hline
@@ -1157,13 +1155,11 @@ Kinematic Reweighting & 1.0 & 2.0 &1.5\\
 Simulation Statistics & 1.3 & 0.7 & 0.8 \\
 Fit bias & 1.0 & 1.0 & 1.0  \\
  \hline
- \hline
  Total & 8.0 & 6.6 & \textbf{7.1} \\
  \hline
 Statistical source & Run 1/\% & 2016/\% & Error Overall \\ \hline
- \hline
 Error on $B^{+} \rightarrow J/\psi K^{+}$ yield & 0.3 & 0.3 & 0.2\\
- \hline
+ \bottomrule
 \end{tabular}
 \caption{Summary of systematic uncertainties.}
 \label{tab:systematicsummary}
@@ -1190,7 +1186,7 @@ for selection of \gls{TOS} candidates can be calculated by
 \end{equation}
 In~\autoref{eq:tistos} $N_{TIS\&TOS}$ is the number of \gls{TIS} and \gls{TOS} events passing the trigger requirement and $N_{TIS}$ is the number of \gls{TIS} events which passed the trigger requirement.
 
-The efficiency difference of the full trigger chain between \bjpsik decays in used simulation and \textit{Sweighted} data is $3.2\%$. Incorrect emulation of \texttt{HLT2}, which is calculted by comparing \texttt{HLT2} trigger efficiency of the chosen TCK simulation and all the \textit{Sweighted} data, yields $1.5\%$. Altogether the incorrect modelling of the trigger in simulation results in $3.5\%$ systematic uncertainty.
+The efficiency difference of the full trigger chain between \bjpsik decays in used simulation and \textit{Sweighted} data is $3.2\%$. Incorrect emulation of \texttt{HLT2}, which is calculated by comparing \texttt{HLT2} trigger efficiency of the chosen TCK simulation and all the \textit{Sweighted} data, yields $1.5\%$. Altogether the incorrect modelling of the trigger in simulation results in $3.5\%$ systematic uncertainty.
 
 \subsubsection{Kaon Interaction Probability}
 One difference between the signal and the normalisation channels that can have effect on the efficiencies is that the kaon in the decay \bjpsimumuk can interact with the detector at a probability proportional to the amount of material traversed. The uncertainty on this amount of material leads to a 2\% systematic
@@ -1229,13 +1225,13 @@ The bias shows 8$\%$ preference for lower signal yields, and hence this will be 
 
 \begin{table}[H]
 \begin{center}
-\begin{tabular}{| l | l | l | l | l |}
-\hline
+\begin{tabular}{ l  l  l  l  l }
+\toprule
         Fit & $\mathcal{B}$ & Statistical Error & Overcoverage & Bias \\
 \hline
         Not Simultaneous  & $1.0\times 10^{-8}$ & $\approx$ 100\% & 4\% & 8\%   \\
         Simultaneous  & $1.0\times 10^{-8}$ & $\approx$ 100\% & 6\% & 1\%   \\
-\hline
+\bottomrule
 \end{tabular}
 \end{center}
 \caption{Signal bias estimate from 10 000 pseudo-experiments for both simultaneous and not simultaneous fit.}
@@ -1270,39 +1266,39 @@ The maximum unbinned likelihood fit to blinded signal data after all selection i
 
 \begin{table}[H]
 \centering
-\small
+%\small
 \begin{tabular}{l l l H  H  H  l  l  }
 \toprule
 	&Fit Parameter & Status & $\sigma_{NOFCME}$ & $\sigma_{LowFCME}$ & $\sigma_{HighFCME}$  & Constraint & Obtained in  \\ \midrule
 
-        &\multicolumn{7}{c}{Yields} \\ \midrule 
+%        &\multicolumn{7}{c}{Yields} \\ \midrule 
 %	& $N^{sig}$& Free & depend $\mathcal{B}$ & depend $\mathcal{B}$  & depend $\mathcal{B}$ & - & ~\autoref{eq:sigeq} \\ \midrule
         \ldelim\{{6}{0.3cm}[$N^{sig}$]& $ \mathcal{B}(\Bmumumu)$ & Free & & & & - & This Fit  \\  
-	&	$ \mathcal{B}(\bjpsimumuk) $ & Constrained & & & & gaussian & ~\autoref{eq:normeq} \\  
-	&	$ R^{21}_{FCME}(\Bmumumu) $ & Constrained & & & & gaussian & ~\autoref{eq:nofcmeer}\\%/~\autoref{eq:allfcmeer} \\  
-	&	$ R^{26}_{FCME}(\Bmumumu) $ & Constrained & & & & gaussian & ~\autoref{eq:nofcmeer}\\%/~\autoref{eq:allfcmeer}  \\  
-	&	$ N(\bjpsimumuk)^{Run \Rn{1}}_{FCME} $ & Constrained & & & &  gaussian & ~\autoref{tab:normchannelyields} \\  
-	&	$ N(\bjpsimumuk)^{Run \Rn{2}}_{FCME} $ & Constrained & & & &  gaussian & ~\autoref{tab:normchannelyields} \\ \midrule 
-%	&	$N^{PR}$ & Constrained & 58.6$\pm$5.56& 32$\pm$3.05 & 25.3$\pm$2.49 &  gaussian &  ~\autoref{tab:prsum} \\ \midrule
-	\ldelim\{{5}{0.7cm}[$N^{PR}$]&	$ \mathcal{B}(\pr) $ & Constrained & & & & gaussian & ~\autoref{tab:prsum} \\  
-	&	$ \mathcal{B}(\bjpsimumuk) $ & Constrained & & & & gaussian & ~\autoref{eq:normeq} \\  
-	&	$ R^{21}_{FCME}(\pr) $ & Constrained & & & & gaussian & ~\autoref{tab:prsum} \\  
-	&	$ N(\bjpsimumuk)^{Run \Rn{1}}_{FCME} $ & Constrained & & & Constrained & gaussian & ~\autoref{tab:normchannelyields} \\  
-	&	$ N(\bjpsimumuk)^{Run \Rn{2}}_{FCME} $ & Constrained & & & Constrained & gaussian & ~\autoref{tab:normchannelyields} \\ \midrule 
-	&	$N^{Misid}$ & Constrained & 606 $\pm$26.8& 322 $\pm$16.9&  277 $\pm$15.5 & mvg$\_$gaussian  & ~\autoref{fig:MisidFinalFit}\\
-	&	$N^{Combi}$ & Free & - & - & - & - &  This fit  \\
+	&	$ \mathcal{B}(\bjpsimumuk) $ & Cnstr. & & & & gaus. & ~\autoref{eq:normeq} \\  
+	&	$ R^{21}_{FCME}(\Bmumumu) $ & Cnstr. & & & & gaus. & ~\autoref{eq:nofcmeer}\\%/~\autoref{eq:allfcmeer} \\  
+	&	$ R^{26}_{FCME}(\Bmumumu) $ & Cnstr. & & & & gaus. & ~\autoref{eq:nofcmeer}\\%/~\autoref{eq:allfcmeer}  \\  
+	&	$ N(\bjpsimumuk)^{Run \Rn{1}}_{FCME} $ & Cnstr. & & & &  gaus. & ~\autoref{tab:normchannelyields} \\  
+	&	$ N(\bjpsimumuk)^{Run \Rn{2}}_{FCME} $ & Cnstr. & & & &  gaus. & ~\autoref{tab:normchannelyields} \\ \midrule 
+%	&	$N^{PR}$ & Cnstr. & 58.6$\pm$5.56& 32$\pm$3.05 & 25.3$\pm$2.49 &  gaus. &  ~\autoref{tab:prsum} \\ \midrule
+	\ldelim\{{5}{0.7cm}[$N^{PR}$]&	$ \mathcal{B}(\pr) $ & Cnstr. & & & & gaus. & ~\autoref{tab:prsum} \\  
+	&	$ \mathcal{B}(\bjpsimumuk) $ & Cnstr. & & & & gaus. & ~\autoref{eq:normeq} \\  
+	&	$ R^{21}_{FCME}(\pr) $ & Cnstr. & & & & gaus. & ~\autoref{tab:prsum} \\  
+	&	$ N(\bjpsimumuk)^{Run \Rn{1}}_{FCME} $ & Cnstr. & & & Cnstr. & gaus. & ~\autoref{tab:normchannelyields} \\  
+	&	$ N(\bjpsimumuk)^{Run \Rn{2}}_{FCME} $ & Cnstr. & & & Cnstr. & gaus. & ~\autoref{tab:normchannelyields} \\ \midrule 
+	&	$N^{Misid}$ & Cnstr. & 606 $\pm$26.8& 322 $\pm$16.9&  277 $\pm$15.5 & mvg$\_$gaus.  & ~\autoref{fig:MisidFinalFit}\\
+	&	$N^{Combi}$ & Free & - & - & - & - &  This fit  \\ \hline
 	&	\multicolumn{7}{c}{MisID Shape Parameters (Crystal Ball function)} \\ \midrule
-	&	$\mu_{misid}$ & Constrained  & 4130 $\pm$150 & 4240 $\pm$74.7 & 4090 $\pm$143 & mvg$\_$gaussian  & ~\autoref{fig:MisidFinalFit}\\
-	&	$\sigma_{misid}$ & Constrained & 566 $\pm$62 & 447 $\pm$35.9& 637 $\pm$61.9  & mvg$\_$gaussian   & ~\autoref{fig:MisidFinalFit}\\ 
-	&	Others & Fixed & \multicolumn{5}{c}{fixed to values seen in~\autoref{fig:MisidFinalFit}}\\ \midrule
+	&	$\mu_{misid}$ & Cnstr.  & 4130 $\pm$150 & 4240 $\pm$74.7 & 4090 $\pm$143 & mvg$\_$gaus.  & ~\autoref{fig:MisidFinalFit}\\
+	&	$\sigma_{misid}$ & Cnstr. & 566 $\pm$62 & 447 $\pm$35.9& 637 $\pm$61.9  & mvg$\_$gaus.   & ~\autoref{fig:MisidFinalFit}\\ 
+	&	Others & Fixed & \multicolumn{4}{c}{}& {~\autoref{fig:MisidFinalFit}}\\ \midrule
 	&	\multicolumn{7}{c}{PartReco Shape Parameters (sum of two Crystal Ball functions)} \\ \midrule
-	&	All & Fixed & \multicolumn{5}{c}{fixed to values seen in~\autoref{fig:PRFit}} \\ \midrule
+	&	All & Fixed & \multicolumn{4}{c}{} & {~\autoref{fig:PRFit}} \\ \midrule
 	&	\multicolumn{7}{c}{Signal Shape Parameters (Double-sided Crystal Ball function)} \\ \midrule
-	&	All & Fixed & \multicolumn{5}{c}{fixed to values seen in~\autoref{fig:MCSignalFit}} \\ \midrule
+	&	All & Fixed & \multicolumn{4}{c}{} & {~\autoref{fig:MCSignalFit}} \\ \midrule
 	&	\multicolumn{7}{c}{Combinatorial Shape Parameters (exponential function)} \\ \midrule 
 	&	$\beta$ & Free & - & -& - & - & This fit \\ \bottomrule
 \end{tabular}
-\caption{For all constrained variables the range is set to be within $\pm 5 \sigma$.}
+\caption{For all constrained variables the range is set to be within $\pm 5 \sigma$. Cnstr. stands for constrained variables, gaus. for gaussian constraint and mvg\_gaus. multivariate gaussian constraint. }
 \label{tab:floatingparsummary}
 \end{table}
 
@@ -1310,36 +1306,62 @@ The maximum unbinned likelihood fit to blinded signal data after all selection i
 
 \subsection{Expected Sensitivity}
 \label{sensitivity}
-The $CL_{s}$ method\cite{Read:2002hq} is used to produce expected upper limits from the blinded fit results, where extrapolation to the signal region is performed. This means that for a given branching fraction assumption $\mathcal{B}$:
-\begin{itemize}
-%\item Likelihood ratio $-2 log \frac {\mathcal{L}(s+b)}{\mathcal{L}(b)}$ is calculated, where $\mathcal{L}(s+b)$ is the likelihood function under signal and background hypothesis and $\mathcal{L}(b)$ is likelihood under background only hypothesis. 
-\item 1000 pseudo datasets with no signal injected are generated (background only hypothesis) and are denoted as data$_{bkg}$.
-\item 1000 pseudo datasets with a given signal branching fraction hypothesis injected are generated (signal+background hypothesis) and are denoted as data$_{sig}$.
-\item Likelihood ratio $-2 log \frac {\mathcal{L}(s+b)}{\mathcal{L}(b)}$ is defined, where $\mathcal{L}(s+b)$ is the likelihood function under signal and background hypothesis and $\mathcal{L}(b)$ is likelihood under background only hypothesis. 
-\item Fits with background only hypothesis and signal+background hypothesis are performed to both data$_{bkg}$ and data$_{sig}$. By extracting the likelihood ratio from these fits likelihood ratio distributions for signal, $\Delta LL_{sig}$, and background, $\Delta LL_{bkg}$, are obtained.  
-%\item Fit background hypothesis and signal+background hypothesis pdfs to both bkg$\_$data and sig$\_$data
-%\item Extract bkg$\_\Delta$LL distribution for test statistics and sig$\_\Delta$LL for test statistics under signal+background hypothesis
-\item The median of background $\Delta LL_{bkg}$ is identified.
-\item $CL_{b}$ is calculated by integrating $\Delta LL_{bkg}$ from the tail of the distribution to this median. In this case, $CL_{b}$ represents the probability to obtain a result less compatible with the signal than the observed one in the background-only hypothesis.
-\item $CL_{s+b}$ is calculated by integrating  $\Delta LL_{sig}$ from the tail to this median. $CL_{s+b}$ then represents the probability to obtain a result which is less compatible with the signal than the observed result, assuming the signal+background hypothesis.
-\item $CL_{s}$ then can be calculated as $CL_{s+b}$/$CL_b$.
-\end{itemize}
+The $CL_{s}$ method\cite{Read:2002hq} is used to produce expected upper limits from the blinded data fits. This is possible thanks to the fact that this method is based on generation of the pseudo-datasets with different signal hypothesis. Therefore it only requires the resulting PDFs of the blinded fits (simultaneous and non-simultaneous) with which pseudo-datasets can be produced.
+
+Systematic uncertainties directly influence the relative efficiencies between signal and normalisation channel. They can be therefore added as gaussian constraints on the relevant efficiency ratio. The expected exclusion limits are then computed and summarized in~\autoref{tab:explimits}. Partial systematics only include systematics related to branching fractions, whereas full systematics include all the effects from~\autoref{tab:systematicsummary}. In simultaneous fit these effects are assumed to be 100\% correlated between the two bins of fractional corrected mass, but uncorrelated between themselves. As expected, the limit weakens with addition of systematics. On the other hand there is an increase in expected limit by $20\%$ obtained with the use of the simultaneous fit compared to the non-simultaneous fit with the full systematics included. Addition of Run \Rn{2} data also improved the expected sensitivity of the search. 
+%are used to generate two types of pseudo-datasets: background-only pseudo-datasets, and signal+background pseudo-datasets at different assumptions of the branching fractions. After this both types of pseudo-datasets are fitted with signal+background hypothesis and background hypothesis. Ratio of likelihoods, where the test statistics, ratio of likelihoods, for both bacgkround pseudo-datasets and signal ps
+
+%This means that for a given branching fraction assumption $\mathcal{B}$:
+%\begin{itemize}
+%%\item Likelihood ratio $-2 log \frac {\mathcal{L}(s+b)}{\mathcal{L}(b)}$ is calculated, where $\mathcal{L}(s+b)$ is the likelihood function under signal and background hypothesis and $\mathcal{L}(b)$ is likelihood under background only hypothesis. 
+%\item 1000 pseudo datasets with no signal injected are generated (background only hypothesis) and are denoted as data$_{bkg}$.
+%\item 1000 pseudo datasets with a given signal branching fraction hypothesis injected are generated (signal+background hypothesis) and are denoted as data$_{sig}$.
+%\item Likelihood ratio $-2 log \frac {\mathcal{L}(s+b)}{\mathcal{L}(b)}$ is defined, where $\mathcal{L}(s+b)$ is the likelihood function under signal and background hypothesis and $\mathcal{L}(b)$ is likelihood under background only hypothesis. 
+%\item Fits with background only hypothesis and signal+background hypothesis are performed to both data$_{bkg}$ and data$_{sig}$. By extracting the likelihood ratio from these fits likelihood ratio distributions for signal, $\Delta LL_{sig}$, and background, $\Delta LL_{bkg}$, are obtained.  
+%%\item Fit background hypothesis and signal+background hypothesis pdfs to both bkg$\_$data and sig$\_$data
+%%\item Extract bkg$\_\Delta$LL distribution for test statistics and sig$\_\Delta$LL for test statistics under signal+background hypothesis
+%\item The median of background $\Delta LL_{bkg}$ is identified.
+%\item $CL_{b}$ is calculated by integrating $\Delta LL_{bkg}$ from the tail of the distribution to this median. In this case, $CL_{b}$ represents the probability to obtain a result less compatible with the signal than the observed one in the background-only hypothesis.
+%\item $CL_{s+b}$ is calculated by integrating  $\Delta LL_{sig}$ from the tail to this median. $CL_{s+b}$ then represents the probability to obtain a result which is less compatible with the signal than the observed result, assuming the signal+background hypothesis.
+%\item $CL_{s}$ then can be calculated as $CL_{s+b}$/$CL_b$.
+%\end{itemize}
 
 
-The expected exclusion limits are shown in~\autoref{fig:clsfit}.
-\begin{figure}[H]
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.5\linewidth]{./efficiency/expe_sensitivity/Run1onlySim_partial.pdf}\put(-75,30){(a) 3.25$\times$10$^{-8}$}%
+%\includegraphics[width=0.5\linewidth]{./efficiency/expe_sensitivity/Run1onlySim_full.pdf}\put(-75,30){(b) 3.5$\times$10$^{-8}$}
+%\newline
+%\includegraphics[width=0.5\linewidth]{./efficiency/expe_sensitivity/AllNotSim_partial.pdf}\put(-75,30){(c) 3.00$\times$10$^{-8}$}%
+%\includegraphics[width=0.5\linewidth]{./efficiency/expe_sensitivity/AllNotSim_full.pdf}\put(-75,30){(d) 3.25$\times$10$^{-8}$}
+%\newline
+%\includegraphics[width=0.5\linewidth]{./efficiency/expe_sensitivity/AllSim_partial.pdf}\put(-75,30){(e) 2.5$\times$10$^{-8}$}%
+%\includegraphics[width=0.5\linewidth]{./efficiency/expe_sensitivity/AllSim_full.pdf}\put(-75,30){(f) 2.75$\times$10$^{-8}$}
+%\caption{Expected 90\% (blue horizontal line) 95\% (red horizontal line) CL exclusion limits for full Run 1 data with simultaneous fit (a) with partial systematics and all statistical error constraints and (b) full systematics. Expected 90\% (blue horizontal line) 95\% (red horizontal line) CL exclusion limits for full Run 1 and 2016 data with non-simultaneous fit (c) with partial systematics and all statistical error constraints and (d) full systematics. And finally expected 90\% (blue horizontal line) 95\% (red horizontal line) CL exclusion limits for full Run 1 and 2016 data with simultaneous fit (e) with partial systematics and all statistical error constraints and (f) full systematics As expected full systematics sensitivity always yields slightly worse limits.}
+%\label{fig:clsfit}
+%\end{figure}
+%
+
+
+\begin{table}[H]
 \centering
-\includegraphics[width=0.5\linewidth]{./efficiency/expe_sensitivity/Run1onlySim_partial.pdf}\put(-75,30){(a) 3.25$\times$10$^{-8}$}%
-\includegraphics[width=0.5\linewidth]{./efficiency/expe_sensitivity/Run1onlySim_full.pdf}\put(-75,30){(b) 3.5$\times$10$^{-8}$}
-\newline
-\includegraphics[width=0.5\linewidth]{./efficiency/expe_sensitivity/AllNotSim_partial.pdf}\put(-75,30){(c) 3.00$\times$10$^{-8}$}%
-\includegraphics[width=0.5\linewidth]{./efficiency/expe_sensitivity/AllNotSim_full.pdf}\put(-75,30){(d) 3.25$\times$10$^{-8}$}
-\newline
-\includegraphics[width=0.5\linewidth]{./efficiency/expe_sensitivity/AllSim_partial.pdf}\put(-75,30){(e) 2.5$\times$10$^{-8}$}%
-\includegraphics[width=0.5\linewidth]{./efficiency/expe_sensitivity/AllSim_full.pdf}\put(-75,30){(f) 2.75$\times$10$^{-8}$}
-\caption{Expected 90\% (blue horizontal line) 95\% (red horizontal line) CL exclusion limits for full Run 1 data with simultaneous fit (a) with partial systematics and all statistical error constraints and (b) full systematics. Expected 90\% (blue horizontal line) 95\% (red horizontal line) CL exclusion limits for full Run 1 and 2016 data with non-simultaneous fit (c) with partial systematics and all statistical error constraints and (d) full systematics. And finally expected 90\% (blue horizontal line) 95\% (red horizontal line) CL exclusion limits for full Run 1 and 2016 data with simultaneous fit (e) with partial systematics and all statistical error constraints and (f) full systematics As expected full systematics sensitivity always yields slightly worse limits.}
-\label{fig:clsfit}
-\end{figure}
+%\small
+\begin{tabular}{ l  l  l  l  l  }
+\toprule
+CI & Data & Systematics & Fit Type & Value  \\ \hline
+Expected $95\%$ CL & Run \Rn{1} & Partial & Simultaneous & $ 3.3\times 10^{-8}$ \\
+Expected $95\%$ CL & Run \Rn{1} & Full & Simultaneous &$ 3.5\times 10^{-8}$ \\
+Expected $95\%$ CL & Run \Rn{1} and \Rn{2} & Partial & Non-simultaneous & $ 3.0\times 10^{-8}$ \\
+Expected $95\%$ CL & Run \Rn{1} and \Rn{2} &  Full & Non-simultaneous &$ 3.3\times 10^{-8}$ \\
+Expected $95\%$ CL & Run \Rn{1} and \Rn{2} & Partial & Simultaneous & $ 2.5\times 10^{-8}$ \\
+Expected $95\%$ CL & Run \Rn{1} and \Rn{2} &  Full & Simultaneous &$ 2.8\times 10^{-8}$ \\
+\bottomrule
+\end{tabular}
+\caption{Resulting exclusion limits with simultaneous fit.}
+\label{tab:explimits}
+\end{table}
+
+
 
 
 \subsection{Unblinded Data Fits}
@@ -1359,12 +1381,12 @@ In order to perform fit with signal and background hypothesis good range of the 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.45\linewidth]{./efficiency/unblindedfits/MyOwnProfileLL.pdf}%
+\includegraphics[width=0.6\linewidth]{./efficiency/unblindedfits/MyOwnProfileLL.pdf}%
 \caption{Minimized -log likelihood value at different $\mathcal{B}$.}
 \label{fig:prof}
 \end{figure}
 
-The simultaneous unbinned extended maximum likelihood fit to all the data with signal+background hypothesis (with the $\mathcal{B}$ floating) can be seen in~\autoref{fig:sigfit_unblinded} converging at value of $\mathcal{B}=-1.78\times10^{-8}$. This hence represents a downward fluctuation. The full list of all free and constrained parameters in the fit with its values are shown in~\autoref{tab:floatingparsummary_fit}. This fit results then can be translated into yields in all the fitting range and specifically blinded region by integrating the resulting PDF in a relevant region as shown in~\autoref{tab:yieldiatkos}.
+The simultaneous unbinned extended maximum likelihood fit to all the data with signal+background hypothesis is given in~\autoref{fig:sigfit_unblinded}, converging at value of $\mathcal{B}=-1.78\times10^{-8}$. This hence represents negative yield fluctuation. The full list of all free and constrained parameters' values obtained in this fit is shown in~\autoref{tab:floatingparsummary_fit}. This fit results then can be translated into yields in all the fitting range and specifically blinded region by integrating the resulting PDF in a relevant region as shown in~\autoref{tab:yieldiatkos}.
 
 \begin{figure}[H]
 \centering
@@ -1376,9 +1398,9 @@ The simultaneous unbinned extended maximum likelihood fit to all the data with s
 
 \begin{table}[H]
 \centering
-\small
-\begin{tabular}{| l  l | }
-\hline
+%\small
+\begin{tabular}{ l  l  }
+\toprule
 Fit Parameter & Value  \\ \hline
 $ \mathcal{B}(\Bmumumu) $ & $-(1.78 \pm 0.936)\times 10^{-8}$ \\
 $ \mathcal{B}(\bjpsimumuk) $ & $(6.11 \pm 0.185)\times 10^{-5}$ \\
@@ -1403,7 +1425,7 @@ $ \beta_{high} $ & $-0.00183 \pm 9.19\times 10^{-5}$ \\
 $ \beta_{low} $ & $-0.00226 \pm 0.000129$ \\
 $ N_{combi_{high}} $ & $620 \pm 34.3$ \\
 $ N_{combi_{low}} $ & $531 \pm 35.4$ \\
-\hline
+\bottomrule
 \end{tabular}
 \caption{Fit results for all floating variables in the unblinded data fit. The $\mathcal{B}(\Bmumumu) =-1.78\times 10^{-8}$. Variables $R^{S}_{K}$ are the efficiency ratios obtained by normalising the decays to \bjpsimumuk decays where $S$ stands for stripping and $K$ for the FCME. $N^{scaled}_{misID_{K}}$ is the number of misID events, $N_{combi_{K}}$ is the number of combinatorial events, $\beta_{K}$ is the exponential constant, $\mu_{misID_{K}}$ and $\sigma_{misID_{K}}$ are the mean and the $\sigma$ of the CB function.}
 \label{tab:floatingparsummary_fit}
@@ -1411,8 +1433,8 @@ $ N_{combi_{low}} $ & $531 \pm 35.4$ \\
 
 \begin{table}[H]
 \begin{center}
-\begin{tabular}{| l | c | c |}
-\hline
+\begin{tabular}{ l  c  c }
+\toprule
 Component &  All ($4-7 \gevcc$) & Signal region ($4.5-5.5\gevcc$)  \\
 \hline
 $N_{misID_{low}}$  &  331 & 139 \\
@@ -1424,7 +1446,7 @@ $N_{misID_{high}}$  &  279 & 122 \\
 $N_{sig_{high}}$  &-14.0 & -11.0  \\
 $N_{combi_{high}}$  & 620 & 209 \\
 $N_{partreco_{high}}$ & 25.1 & 5.17 \\
-\hline
+\bottomrule
 \end{tabular}
 \end{center}
 \caption{Resulting yields for different components from the corrected mass fit with $\mathcal{B}(\Bmumumu) =-1.78\times 10^{-8}$.}

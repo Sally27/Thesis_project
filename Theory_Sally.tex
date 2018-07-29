@@ -10,25 +10,27 @@ The Standard Model (\gls{SM}) of particle physics is currently the most accurate
 
 %Quarks are affected by all three fundamental forces. They come in six different \textit{flavours} and they carry fractional charge as seen in~\autoref{nonlin}.
 
-\begin{table} 
-
+\begin{table}
 \centering % used for centering table 
-\begin{tabular}{|c|c|c|c|} % centered columns (4 columns) 
-\hline %inserts double horizontal lines 
+\begin{tabular}{c c c c} % centered columns (4 columns) 
+\toprule %inserts double horizontal lines 
 Generation & Flavour & Charge & Constituent Mass \\ [0.5ex]\hline% inserts table 
 %heading 
-\hline % inserts single horizontal line 
+% inserts single horizontal line 
 1st & up  \textit{u}& +2/3 & $2.2\bfrac{+0.6}{-0.4}$ \mev \\ % inserting body of the table 
 1st & down \textit{d}& -1/3 & $4.7\bfrac{+0.5}{-0.4}$ \mev \\[1ex]
-2nd & charm \textit{c}& +2/3 & $1.28\pm0.03$\gev\\ 
+2nd & charm \textit{c}& +2/3 & $1.28\pm0.03$\gev\\
 2nd & strange \textit{s}& -1/3 &  $96\bfrac{+8}{-4}$ \mev\\[1ex]
-3rd & top \textit{t}& +2/3 &  $173.1\pm0.6$ \gev \\ 
+3rd & top \textit{t}& +2/3 &  $173.1\pm0.6$ \gev \\
 3rd & bottom \textit{b}& -1/3 & $4.18\bfrac{+0.4}{-0.3}\gev$ \\ [1ex] % [1ex] adds vertical space 
-\hline %inserts single line 
-\end{tabular} 
-\caption{Quarks and their properties such as flavour, charge and mass. Flavour is a property which distinguishes different species of quarks. One such property iscurrent quark mass which is the mass of the quark itself. The masses are summarized in \cite{Patrignani:2016xqp}.} 
+\bottomrule %inserts single line 
+\end{tabular}
+\caption{Quarks and their properties such as flavour, charge and mass. Flavour is a property which distinguishes different species of quarks. One such property iscurrent quark mass which is the mass of the quark itself. The masses are summarized in \cite{Patrignani:2016xqp}.}
 \label{nonlin} % is used to refer this table in the text 
-\end{table} 
+\end{table}
+
+
+
 
 Quarks are affected by all three fundamental forces. They come in six different \textit{flavours} and they carry fractional charge as seen in~\autoref{nonlin}. 
 
@@ -456,25 +458,28 @@ As seen in~\autoref{eqn:dw}, a purely leptonic final state going through $P\righ
 %https://www.physicsforums.com/threads/helicity-and-suppression.804600/
 Concentraing on decays where pseudoscalar of interest is $B^{\pm}$, the latest experimental measurements for rates of $B^{+}\rightarrow l \nu$ decays have been performed by $B$ factories, finding evidence for $B^{+}\rightarrow \tau^{+}\nu$ and first sign of $B^{+}\rightarrow \mu^{+}\nu$ as seen in~\autoref{tab:sum}. These results are to be compared with the \gls{SM} prediction $\mathcal{B}(B^{+}\rightarrow \tau^{+}\nu) = (0.82+0.03-0.02)\times10^{-4}$\cite{Charles:2004jd} which is obtained by using the unitarity-constrained $V_{ub}$ value aggregated from other measurements and lattice calculations of $f_{B}$. %Quite substantial statistical as well as systematical errors show the difficulty of this type of measurements. 
 
+
 \begin{table}[ht]
 \begin{center}
-\begin{tabular}{ l l l l H c H} \hline
-	Process &Experiment & Tag &${\mathcal{B}}$ & Published & Significance ($\sigma$) & {$|V_{ub}|f_{B^+}$ (MeV)} \hfill\\
+\begin{tabular}{ l l l l H c H} \toprule
+        Process &Experiment & Tag &${\mathcal{B}}$ & Published & Significance ($\sigma$) & {$|V_{ub}|f_{B^+}$ (MeV)} \hfill\\
 \hline\\[-2.5ex]
-	$B^{+}\rightarrow \tau^{+}\nu$	&Belle~\cite{Adachi:2012mm}&Hadronic&$(0.72^{+0.27}_{-0.25}\pm0.11)\times10^{-4}$  & 2013 & 3.0 \\ 
-	$B^{+}\rightarrow \tau^{+}\nu$	&Belle~\cite{Kronenbitter:2015kls}&Semileptonic&$(1.25\pm0.28\pm0.27)\times10^{-4}$ & 2015 & 3.8 \\
-	$B^{+}\rightarrow \tau^{+}\nu$	&Belle~\cite{Kronenbitter:2015kls}&Average&$(0.91 \pm 0.22)\times10^{-4}$ & 2015 & 4.6 \\\hline\\[-2.5ex]
-	$B^{+}\rightarrow \tau^{+}\nu$	&BaBar~\cite{Lees:2012ju} & Hadronic & $(1.83\,^{+0.53}_{-0.49}\pm0.24)\times10^{-4}$ & 2012 & 3.8 \\ 
-	$B^{+}\rightarrow \tau^{+}\nu$	&BaBar~\cite{Aubert:2009wt} & Semileptonic & $(1.7\pm 0.8\pm 0.2)\times10^{-4}$ & 2010 & 2.3\\ 
-	$B^{+}\rightarrow \tau^{+}\nu$	&BaBar~\cite{Lees:2012ju} & Average & $(1.79 \pm 0.48)\times 10^{-4}$ & 2012 & - & $1.01\pm 0.14$  \\ \hline
+        $B^{+}\rightarrow \tau^{+}\nu$  &Belle~\cite{Adachi:2012mm}&Hadronic&$(0.72^{+0.27}_{-0.25}\pm0.11)\times10^{-4}$  & 2013 & 3.0 \\
+        $B^{+}\rightarrow \tau^{+}\nu$  &Belle~\cite{Kronenbitter:2015kls}&Semileptonic&$(1.25\pm0.28\pm0.27)\times10^{-4}$ & 2015 & 3.8 \\
+        $B^{+}\rightarrow \tau^{+}\nu$  &Belle~\cite{Kronenbitter:2015kls}&Average&$(0.91 \pm 0.22)\times10^{-4}$ & 2015 & 4.6 \\\hline\\[-2.5ex]
+        $B^{+}\rightarrow \tau^{+}\nu$  &BaBar~\cite{Lees:2012ju} & Hadronic & $(1.83\,^{+0.53}_{-0.49}\pm0.24)\times10^{-4}$ & 2012 & 3.8 \\
+        $B^{+}\rightarrow \tau^{+}\nu$  &BaBar~\cite{Aubert:2009wt} & Semileptonic & $(1.7\pm 0.8\pm 0.2)\times10^{-4}$ & 2010 & 2.3\\
+        $B^{+}\rightarrow \tau^{+}\nu$  &BaBar~\cite{Lees:2012ju} & Average & $(1.79 \pm 0.48)\times 10^{-4}$ & 2012 & - & $1.01\pm 0.14$  \\ \hline
 $B^{+}\rightarrow \mu^{+}\nu$ & Belle~\cite{Sibidanov:2017vph} & Untagged& $(6.46\pm2.22\pm 1.60)\times 10^{-7}$ & 2017 & 2.4 &\\
 %        & Our average & &$1.06\pm0.20$&$0.77\pm0.07$ & & \\
-\hline
+\bottomrule
 \end{tabular}
 \end{center}
-\caption{Experimental summary of searches for $B^{+}\rightarrow l^{+}\nu$. Tag Hadronic/Semileptonic/Untagged refers to different way data is selected in Belle and BaBar factories.}
+\caption{Experimental summary of searches for $B^{+}\rightarrow l^{+}\nu$ that inspired from \cite{Patrignani:2016xqp}. Tag Hadronic/Semileptonic/Untagged refers to different way data is selected in Belle and BaBar factories.}
 \label{tab:sum}
 \end{table}
+
+
 
 
 With helicity suppressed rates and very limited signature in the detector (one charged track for muons and electron, more charged tracks for taus, but also more missing energy depending on the reconstruction channel) searching for such decays is still very challenging. In order to make measurements of the same kind (CKM precision measurements, decay constants measurements, new physics searches), fully leptonic decays with photons can be considered.   
