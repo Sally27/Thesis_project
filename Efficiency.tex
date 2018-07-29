@@ -31,7 +31,7 @@ Component & Method  \\ \hline
 The three methods for signal efficiency determination are listed:
 
 \begin{itemize}
-	\item Method \Rn{1} - The first two efficiencies, $\varepsilon_{GEN}$, $\varepsilon_{REC}$, for signal are obtained using privately generated simulation from \autoref{tab:MCPPass} using
+	\item Method \Rn{1} - The first two efficiencies, $\varepsilon_{GEN}$, $\varepsilon_{REC}$, for signal are obtained using privately generated simulation from~\autoref{tab:MCPPass} using
 
 \begin{equation}
 {\varepsilon_{GEN,minq^{2}}}\times {\varepsilon_{REC,minq^{2}}}= \frac{N_{in\_acc,minq^{2}}}{N_{generated,minq^{2}}}\times \frac{N_{REC,minq^{2}}}{N_{in\_acc,minq^{2}}},
@@ -42,7 +42,7 @@ N_{in\_acc,minq^{2}} = N_{in\_acc} \times \varepsilon_{minq^{2}}.
 \label{eq:number}
 \end{equation}
 
-In Equation ~\autoref{eq:number}, $\varepsilon_{minq^{2}}$ is obtained by dividing number of generated events in \textit{generator-level} simulation (mentioned in \autoref{tab:MCPPass}) with minq$^2$ condition imposed, $N_{generated,minq^{2}}$, to total number of generated events, $N_{generated}$. $N_{in\_acc}$ is the number of events in \textit{generator-level+detector} simulation before reconstruction, $N_{REC,minq^{2}}$ is the number of events after reconstruction with minq$^2$ condition.
+In Equation ~\autoref{eq:number}, $\varepsilon_{minq^{2}}$ is obtained by dividing number of generated events in \textit{generator-level} simulation (mentioned in~\autoref{tab:MCPPass}) with minq$^2$ condition imposed, $N_{generated,minq^{2}}$, to total number of generated events, $N_{generated}$. $N_{in\_acc}$ is the number of events in \textit{generator-level+detector} simulation before reconstruction, $N_{REC,minq^{2}}$ is the number of events after reconstruction with minq$^2$ condition.
 \item Method \Rn{2} - Divide number of events that passed the selection by total number of events prior to this particular selection step.
 \item Method \Rn{3} - Data-driven approach using \texttt{PIDCalib} package explained in~\autoref{simulationchap} of determining PID efficiency is used.
 \end{itemize}
@@ -77,7 +77,7 @@ Having all the individual efficiencies the relative efficiency with no FCME spli
 \section{Summary of Efficiencies}
 \label{EfficiencySummary}
 
-The summary of individual efficiencies together with total efficiency, which is calculated for signal using nominator of \autoref{eq:notsplitted} and for normalisation denominator of \autoref{eq:notsplitted}, is given in \autoref{tab:effsumarry}.
+The summary of individual efficiencies together with total efficiency, which is calculated for signal using nominator of~\autoref{eq:notsplitted} and for normalisation denominator of~\autoref{eq:notsplitted}, is given in~\autoref{tab:effsumarry}.
 %taken from /vols/lhcb/ss4314/tablesforana/efficiencyratios/2016/SesFUMSB_NOTsimultaneous_full_Error/plot_interesting/bin/*OK*per*tex
 \begin{table}[H]
 \begin{center}
@@ -118,12 +118,12 @@ $\varepsilon_{total}$ & 0.1581& 0.0020 & 0.1182& 0.0008 & 0.3974& 0.0011 & 0.320
 %\bottomrule
 \end{tabular}
 \end{center}
-	\caption{Summary of individual simulation and/or data efficiencies in \% necessary for the relative efficiency between the signal and normalisation channel. Efficiency values for 2016 are TCK-weighted averaged efficiencies, which will be explained in \autoref{trigef}. The errors considered are of statistical nature, computed using binomial error.}
+	\caption{Summary of individual simulation and/or data efficiencies in \% necessary for the relative efficiency between the signal and normalisation channel. Efficiency values for 2016 are TCK-weighted averaged efficiencies, which will be explained in~\autoref{trigef}. The errors considered are of statistical nature, computed using binomial error.}
 \label{tab:effsumarry}
 \end{table}
 
 
-Hence resulting values for relative no fractional corrected mass split efficiency ratios defined in \autoref{eq:notsplitted} are
+Hence resulting values for relative no fractional corrected mass split efficiency ratios defined in~\autoref{eq:notsplitted} are
 
 \begin{equation}
 \begin{aligned}
@@ -202,7 +202,7 @@ The hierarchy of generator level efficiencies $\varepsilon^{s}_{GEN} > \varepsil
 %        \end{table}
 
 \subsection{Reconstruction Efficiency (REC)}
-The reconstruction efficiency is calculated on simulated events which have passed the detector acceptance. For signal, this efficiency consists of reconstruction and stripping, detailed in~\autoref{tab:stripcutsB}. For normalisation it consists from reconstruction, stripping, \textbf{and on the top} signal stripping is applied. This is done so that selections in normalisation and signal channel are kept as similar as possible and the fact that the signal selection has tighter cuts as explained in \autoref{nchannel}. However, it should be noted that reconstruction efficiency reflects stripping selection \textbf{without the PID cuts} for both signal and normalisation. This is because \gls{PID} is badly modelled in simulation and hence will be accounted for separately and at the end of the selection chain.
+The reconstruction efficiency is calculated on simulated events which have passed the detector acceptance. For signal, this efficiency consists of reconstruction and stripping, detailed in~\autoref{tab:stripcutsB}. For normalisation it consists from reconstruction, stripping, \textbf{and on the top} signal stripping is applied. This is done so that selections in normalisation and signal channel are kept as similar as possible and the fact that the signal selection has tighter cuts as explained in~\autoref{nchannel}. However, it should be noted that reconstruction efficiency reflects stripping selection \textbf{without the PID cuts} for both signal and normalisation. This is because \gls{PID} is badly modelled in simulation and hence will be accounted for separately and at the end of the selection chain.
 
 The hierarchy of reconstruction level efficiencies $\varepsilon^{s}_{REC} < \varepsilon^{n}_{REC}$ is also expected as many variables in a signal stripping are based on alignment of the mother $B$ with its daughters. For fully reconstructed normalisation channel this is expected to be the case, whereas for not fully reconstructed decays alignment requirements make selection tighter. 
 
@@ -364,9 +364,9 @@ In this section offline efficiencies are discussed. These include $J/\psi$ and $
 %\end{table}
 
 \subsection{Combinatorial BDT and Misid BDT efficiency}
- Efficiencies of MVA selection are also evaluated on simulation samples. These efficiencies are obtained using samples that passed (GEN), (REC), (TRG) and (OFF) cuts. Specific MVA for combinatorial background suppression (see ~\autoref{CombiBDTsel}) and misID background suppression (see ~\autoref{misidbdt}) are applied to the simulation samples. As the optimisation led to different BDTs depending on the data-taking period, these are then applied parametrically to relevant simulation samples. The efficency results were listed in \autoref{tab:effsumarry}.
+ Efficiencies of MVA selection are also evaluated on simulation samples. These efficiencies are obtained using samples that passed (GEN), (REC), (TRG) and (OFF) cuts. Specific MVA for combinatorial background suppression (see ~\autoref{CombiBDTsel}) and misID background suppression (see ~\autoref{misidbdt}) are applied to the simulation samples. As the optimisation led to different BDTs depending on the data-taking period, these are then applied parametrically to relevant simulation samples. The efficency results were listed in~\autoref{tab:effsumarry}.
 
-For Misid and Combinatorial BDT selection, normalisation \bjpsimumuk channel retains more signal than the \Bmumumu channel. This is due to the kaon/muon $p$ and $p_{T}$ kinematics difference as seen in ~\autoref{fig:reason1} and ~\autoref{fig:reason2}, where the kaon track is generally harder than the muon track. Kaon reconstruction efficiency is worse than muon reconstruction efficiency because about 11\% of the kaons cannot be reconstructed due to hadronic interactions that occur before the last T station~\cite{LHCb-DP-2013-002}, implying that the $p_{T}$ of $B$ is on average harder for normalisation channel. As these two quantities are high in BDT importance ranking as mentioned in \autoref{CombiBDTsel}, this makes normalisation MC more efficient. In Misid BDT selection, again the kinematics of $B$ and the \gls{minipchi2} of the oppositely charged muon to $B$ is more signal like than signal.
+For Misid and Combinatorial BDT selection, normalisation \bjpsimumuk channel retains more signal than the \Bmumumu channel. This is due to the kaon/muon $p$ and $p_{T}$ kinematics difference as seen in ~\autoref{fig:reason1} and ~\autoref{fig:reason2}, where the kaon track is generally harder than the muon track. Kaon reconstruction efficiency is worse than muon reconstruction efficiency because about 11\% of the kaons cannot be reconstructed due to hadronic interactions that occur before the last T station~\cite{LHCb-DP-2013-002}, implying that the $p_{T}$ of $B$ is on average harder for normalisation channel. As these two quantities are high in BDT importance ranking as mentioned in~\autoref{CombiBDTsel}, this makes normalisation MC more efficient. In Misid BDT selection, again the kinematics of $B$ and the \gls{minipchi2} of the oppositely charged muon to $B$ is more signal like than signal.
 
 %\begin{table}[H]
 %\begin{center}
@@ -876,7 +876,7 @@ Signal data fit so far includes components for signal component, partially recon
 %
 %\subsection{Signal Channel Fit}
 %\label{Fit}
-%A simultaneous unbinned maximum likelihood fit to the $\mu^{+} \mu^{-} \mu^{+}$ corrected mass spectrum to combined Run \Rn{1} and \Rn{2} dataset after the full selection in two bins of fractional corrected mass error is performed. As the corrected mass error have a dependence on resolution as mentioned in \autoref{split}, this split will increase sensitivity. Shapes and yields used for different components of the signal corrected mass fits will be described in this sections. As it will be shown, the components are constrained using either by using data driven methods or simulated samples. As non-simultaneous fit is used as a cross-check its parametrisation is described as well.
+%A simultaneous unbinned maximum likelihood fit to the $\mu^{+} \mu^{-} \mu^{+}$ corrected mass spectrum to combined Run \Rn{1} and \Rn{2} dataset after the full selection in two bins of fractional corrected mass error is performed. As the corrected mass error have a dependence on resolution as mentioned in~\autoref{split}, this split will increase sensitivity. Shapes and yields used for different components of the signal corrected mass fits will be described in this sections. As it will be shown, the components are constrained using either by using data driven methods or simulated samples. As non-simultaneous fit is used as a cross-check its parametrisation is described as well.
 %
 %Throughout the analysis there was a \textbf{blinding procedure} in place where the signal region $4500\mevcc <M_{B_{corr}}<5500\mevcc$ was blinded. Hence in the blinded data fits this region is omitted. In this blinded unbinned likelihood fit to the data, the shapes and yields are extrapolated to the blinded region in order to asses sensitivity, summarized in ~\autoref{fitsens}\mybox{\color{red} sensitivity}. Upon unblinding unbinned likelihood fit to full data is perfomed with signal yield floating and mean $\mu_{sig}$ and width $\sigma_{sig}$ constrained from simulation.
 %
@@ -1134,7 +1134,7 @@ There are two types of signal datasets as mentioned in~\autoref{Strategy}. First
 
 \subsection{Signal Fit Systematics}
 \label{systematics}
-Systematics studies are performed in order to account for possible shortcomings of the methods used in order to measure $\mathcal{B}(\Bmumumu)$. The summary of systematic uncertainties is provided in \autoref{tab:systematicsummary}. Most of this systematic uncertainties directly affect efficiency ratio between signal and normalisation channel. In that case, fits account for this uncertainty directly by incorporating the uncertainty into efficiency ratios by adding them in quadrature to the statistical error. For the simultaneous fit these uncertainties are assumed to be $100\%$ correlated between the bins of FCME.
+Systematics studies are performed in order to account for possible shortcomings of the methods used in order to measure $\mathcal{B}(\Bmumumu)$. The summary of systematic uncertainties is provided in~\autoref{tab:systematicsummary}. Most of this systematic uncertainties directly affect efficiency ratio between signal and normalisation channel. In that case, fits account for this uncertainty directly by incorporating the uncertainty into efficiency ratios by adding them in quadrature to the statistical error. For the simultaneous fit these uncertainties are assumed to be $100\%$ correlated between the bins of FCME.
 
 
 \begin{table}[H]

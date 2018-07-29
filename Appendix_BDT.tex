@@ -6,7 +6,7 @@ Many rare decay analyses make extensive use of BDTs and they are important in th
 
 A decision tree, in the context of data mining, is a supervised machine learning method which allows for the prediction of the value of a target variable based on several input variables. In particle physics, the purpose of the decision tree is to classify an event as being either signal or background, based on the event's input variables. The input variables, $\left\{x_{i}\right\}$, are various physics parameters. % and in the case of the HLT include the minimum $P_{T}$  and mass of the particle.
 % and $IP_{\chi2}$ (where the $IP_{\chi2}$ is the difference in the $\chi2$ of the fit to the PV when the track whose $IP_{\chi2}$ is being measured is added and then removed)
-Each cut point in the tree is referred to as a node and the final nodes are referred to as leaves. A very simple example is shown in \autoref{fig:BDT}. The purity, $P$, of a leaf refers to the fraction of the weight of a leaf due to signal events, e.g. if a leaf had 20 signal events and 15 background events it would have a purity of 0.75. If a leaf has a purity larger than 0.5 it is deemed to correspond to signal and if lower, to background.
+Each cut point in the tree is referred to as a node and the final nodes are referred to as leaves. A very simple example is shown in~\autoref{fig:BDT}. The purity, $P$, of a leaf refers to the fraction of the weight of a leaf due to signal events, e.g. if a leaf had 20 signal events and 15 background events it would have a purity of 0.75. If a leaf has a purity larger than 0.5 it is deemed to correspond to signal and if lower, to background.
 \begin{figure}
   \centering
   \includegraphics[scale = 0.7]{figs/BDT.png}
@@ -20,7 +20,7 @@ A decision tree is constructed by a process called training. For this, samples o
 Gini  = \sum^{n}_{i = 1} W_{i} P(1 - P),
 \end{equation}
 where $W_{i}$ is weight of the $i^{th}$ event, which would generally be unity for the case of a non-boosted decision tree. 
-The cutting point is then found by maximising the separation, $\Delta$, between the Gini index of the parent node and the combined Gini index of the child nodes, as given in \autoref{eq:diffgini} 
+The cutting point is then found by maximising the separation, $\Delta$, between the Gini index of the parent node and the combined Gini index of the child nodes, as given in~\autoref{eq:diffgini} 
 \begin{equation}
  \Delta =   Gini_{parent} - Gini_{child_{1}} - Gini_{child_{2}}.
   \label{eq:diffgini}

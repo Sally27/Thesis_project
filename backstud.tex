@@ -29,7 +29,7 @@ $\varepsilon^{PID}$ & Using \texttt{PIDCalib} \\
 \label{tab:signaleffsummary}
 \end{table}
 
-The first two efficiencies for signal and normalisation are obtained using privately generated simulation from \autoref{tab:MCPPass}
+The first two efficiencies for signal and normalisation are obtained using privately generated simulation from~\autoref{tab:MCPPass}
 
 \begin{equation}
 {\varepsilon^{GEN,minq^{2}}}\times {\varepsilon^{REC,minq^{2}}}= \frac{N^{in\_acc,minq^{2}}}{N^{generated,minq^{2}}}\times \frac{N^{REC,minq^{2}}}{N^{in\_acc,minq^{2}}}
@@ -40,7 +40,7 @@ N^{in\_acc,minq^{2}} = N^{in\_acc} \times \varepsilon_{minq^{2}}
 \label{eq:number}
 \end{equation}
 
-In Equation ~\ref{eq:number}, $\varepsilon_{minq^{2}}$ is obtained by dividing number of generated events in \textit{generator-level} simulation (mentioned in \autoref{tab:MCPPass}) with minq$^2$ condition imposed, $N^{generated,minq^{2}}$, to total number of generated events, $N^{generated}$. $N^{in\_acc}$ is the number of events in \textit{generator-level+detector} simulation before reconstruction, $N^{REC,minq^{2}}$ is the number of events after reconstruction with minq$^2$ condition.
+In Equation ~\ref{eq:number}, $\varepsilon_{minq^{2}}$ is obtained by dividing number of generated events in \textit{generator-level} simulation (mentioned in~\autoref{tab:MCPPass}) with minq$^2$ condition imposed, $N^{generated,minq^{2}}$, to total number of generated events, $N^{generated}$. $N^{in\_acc}$ is the number of events in \textit{generator-level+detector} simulation before reconstruction, $N^{REC,minq^{2}}$ is the number of events after reconstruction with minq$^2$ condition.
 
 Hence the relative efficiency, $R^{\{21,26\}}(\varepsilon)$, is calculated 
 
@@ -105,7 +105,7 @@ For charged particles detector acceptance efficiency describes the fraction of d
         \end{table}
 
 \subsection{Reconstruction Efficiency (REC)}
-The reconstruction efficiency is calculated on simulated events which have passed the detector acceptance. For signal, this efficiency consists of reconstruction, stripping. For normalisation it consists from reconstruction, stripping, \textbf{and on the top} signal stripping is applied. This is done so that selections in normalisation and signal channel are kept as similar as possible and the fact that the signal selection has tighter cuts as explained in \autoref{nchannel}.
+The reconstruction efficiency is calculated on simulated events which have passed the detector acceptance. For signal, this efficiency consists of reconstruction, stripping. For normalisation it consists from reconstruction, stripping, \textbf{and on the top} signal stripping is applied. This is done so that selections in normalisation and signal channel are kept as similar as possible and the fact that the signal selection has tighter cuts as explained in~\autoref{nchannel}.
 
 However, it should be noted that reconstruction efficiency reflects stripping selection \textbf{without the PID cuts} for both signal and normalisation. This is because \gls{PID} is badly modelled in simulation and hence will be accounted for separately.
 
@@ -266,9 +266,9 @@ $\varepsilon_{c\bar{c}}$ & 2016  &0.883 & N/A \\
 \end{table}
 
 \subsection{Combinatorial BDT and Misid BDT efficiency}
- Efficiencies of MVA selection are also evaluated on simulation samples. These efficiencies are obtained using samples that passed (GEN), (REC) and (OFF) cuts. Specific MVA for combinatorial background suppression (see ~\autoref{CombiBDTsel}) and misid background suppression ( ~\autoref{misidbdt}) are applied to the simulation samples. As the optimisation led to different BDTs depending on the data-taking period, these are then applied parametrically to relevant simulation samples. The results are listed in \autoref{tab:CombinatorialBDT2012}.
+ Efficiencies of MVA selection are also evaluated on simulation samples. These efficiencies are obtained using samples that passed (GEN), (REC) and (OFF) cuts. Specific MVA for combinatorial background suppression (see ~\autoref{CombiBDTsel}) and misid background suppression ( ~\autoref{misidbdt}) are applied to the simulation samples. As the optimisation led to different BDTs depending on the data-taking period, these are then applied parametrically to relevant simulation samples. The results are listed in~\autoref{tab:CombinatorialBDT2012}.
 
-For Misid and Combinatorial BDT selection, normalisation $B^{+} \rightarrow J/\psi K^{+}$ channel retains more signal. This is due to the kaon/muon $p$ and $p_{T}$ kinematics difference. It is also true that since kaon reconstruction efficiency is worse, it implies that the $p_{T}$ of $B$ is on average harder for normalisation channel. As these two quantities are high in BDT importance ranking as mentioned in \autoref{CombiBDTsel}, this makes normalisation MC more efficient. In Misid BDT selection, again the kinematics of $B$ and the \gls{minipchi2} of the oppositely charged muon to $B$ is more signal like than signal. \mybox{SALLY-PLOTS}.
+For Misid and Combinatorial BDT selection, normalisation $B^{+} \rightarrow J/\psi K^{+}$ channel retains more signal. This is due to the kaon/muon $p$ and $p_{T}$ kinematics difference. It is also true that since kaon reconstruction efficiency is worse, it implies that the $p_{T}$ of $B$ is on average harder for normalisation channel. As these two quantities are high in BDT importance ranking as mentioned in~\autoref{CombiBDTsel}, this makes normalisation MC more efficient. In Misid BDT selection, again the kinematics of $B$ and the \gls{minipchi2} of the oppositely charged muon to $B$ is more signal like than signal. \mybox{SALLY-PLOTS}.
 
 \begin{table}[H]
 \begin{center}
