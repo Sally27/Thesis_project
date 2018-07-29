@@ -38,18 +38,18 @@
 \BOOKMARK [2][-]{subsection.4.1.3}{Muon PID variables based on regression techniques }{section.4.1}% 38
 \BOOKMARK [1][-]{section.4.2}{Clones}{chapter.4}% 39
 \BOOKMARK [1][-]{section.4.3}{Probability of K/ misidentification at LHCb }{chapter.4}% 40
-\BOOKMARK [2][-]{subsection.4.3.1}{Specific control sample for K/ misid rates }{section.4.3}% 41
+\BOOKMARK [2][-]{subsection.4.3.1}{Specific control sample for K/ misID rates }{section.4.3}% 41
 \BOOKMARK [2][-]{subsection.4.3.2}{Selection for B0 J/\(+ -\) K* }{section.4.3}% 42
 \BOOKMARK [2][-]{subsection.4.3.3}{Fitting Strategy for B0 J/\(+ -\) K* decay }{section.4.3}% 43
-\BOOKMARK [2][-]{subsection.4.3.4}{Results of B0 J/\(+ -\) K* control sample for K/ misid rates }{section.4.3}% 44
-\BOOKMARK [0][-]{chapter.5}{Discovering \(Setting Limit for\) B + \040+- + \040at LHCb}{}% 45
+\BOOKMARK [2][-]{subsection.4.3.4}{Results of B0 J/\(+ -\) K* control sample for K/ misID rates }{section.4.3}% 44
+\BOOKMARK [0][-]{chapter.5}{Looking for B + \040+- + \040decays at LHCb}{}% 45
 \BOOKMARK [1][-]{section.5.1}{Topology of the B + \040+- + \040decay at LHCb}{chapter.5}% 46
 \BOOKMARK [1][-]{section.5.2}{Sources of Backgrounds}{chapter.5}% 47
 \BOOKMARK [1][-]{section.5.3}{Analysis strategy}{chapter.5}% 48
 \BOOKMARK [1][-]{section.5.4}{Samples}{chapter.5}% 49
 \BOOKMARK [2][-]{subsection.5.4.1}{Data Samples}{section.5.4}% 50
 \BOOKMARK [2][-]{subsection.5.4.2}{Simulation Samples}{section.5.4}% 51
-\BOOKMARK [1][-]{section.5.5}{Preselection for B + \040+- + }{chapter.5}% 52
+\BOOKMARK [1][-]{section.5.5}{Preselection}{chapter.5}% 52
 \BOOKMARK [1][-]{section.5.6}{Trigger Selection}{chapter.5}% 53
 \BOOKMARK [1][-]{section.5.7}{q2 Selection}{chapter.5}% 54
 \BOOKMARK [1][-]{section.5.8}{Further Selection}{chapter.5}% 55
@@ -65,7 +65,7 @@
 \BOOKMARK [1][-]{section.6.1}{Combinatorial Background}{chapter.6}% 65
 \BOOKMARK [1][-]{section.6.2}{MisID type background}{chapter.6}% 66
 \BOOKMARK [1][-]{section.6.3}{Partially Reconstructed Background}{chapter.6}% 67
-\BOOKMARK [2][-]{subsection.6.3.1}{Partially Reconstructed Backgrounds, where D0 / ' X, where / ' }{section.6.3}% 68
+\BOOKMARK [2][-]{subsection.6.3.1}{Partially Reconstructed Backgrounds, where D0 / ' X, and / ' }{section.6.3}% 68
 \BOOKMARK [2][-]{subsection.6.3.2}{Partially Reconstructed B \('\) V Backgrounds}{section.6.3}% 69
 \BOOKMARK [1][-]{section.6.4}{Rare and resonant B+ + / K+ - + backgrounds}{chapter.6}% 70
 \BOOKMARK [1][-]{section.6.5}{Summary}{chapter.6}% 71
@@ -98,3 +98,4 @@
 \BOOKMARK [1][-]{section.A.1}{Crystal Ball function}{appendix.A}% 98
 \BOOKMARK [1][-]{section.A.2}{Double-sided Ipatia function}{appendix.A}% 99
 \BOOKMARK [1][-]{section.A.3}{Rookeys function from ROOFIT package}{appendix.A}% 100
+\BOOKMARK [0][-]{appendix.B}{License}{}% 101

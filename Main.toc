@@ -38,18 +38,18 @@
 \contentsline {subsection}{\numberline {4.1.3}Muon PID variables based on regression techniques }{82}{subsection.4.1.3}
 \contentsline {section}{\numberline {4.2}Clones}{83}{section.4.2}
 \contentsline {section}{\numberline {4.3}Probability of \mb {K/\pi \rightarrow \mu } misidentification at LHCb }{87}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Specific control sample for \mb {K/\pi \rightarrow \mu } misid rates }{88}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Specific control sample for \mb {K/\pi \rightarrow \mu } misID rates }{88}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Selection for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} }{88}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Fitting Strategy for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} decay }{88}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Results of \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} control sample for \mb {K/\pi \rightarrow \mu } misid rates }{93}{subsection.4.3.4}
-\contentsline {chapter}{\numberline {5}Discovering (Setting Limit for) \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace at LHCb}{98}{chapter.5}
-\contentsline {section}{\numberline {5.1}Topology of the \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace decay at LHCb}{98}{section.5.1}
+\contentsline {subsection}{\numberline {4.3.4}Results of \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} control sample for \mb {K/\pi \rightarrow \mu } misID rates }{93}{subsection.4.3.4}
+\contentsline {chapter}{\numberline {5}Looking for \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } decays at LHCb}{98}{chapter.5}
+\contentsline {section}{\numberline {5.1}Topology of the \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } decay at LHCb}{98}{section.5.1}
 \contentsline {section}{\numberline {5.2}Sources of Backgrounds}{100}{section.5.2}
 \contentsline {section}{\numberline {5.3}Analysis strategy}{102}{section.5.3}
 \contentsline {section}{\numberline {5.4}Samples}{103}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}Data Samples}{103}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Simulation Samples}{103}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Preselection for \ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace }{104}{section.5.5}
+\contentsline {section}{\numberline {5.5}Preselection}{104}{section.5.5}
 \contentsline {section}{\numberline {5.6}Trigger Selection}{106}{section.5.6}
 \contentsline {section}{\numberline {5.7}$q^{2}$ Selection}{108}{section.5.7}
 \contentsline {section}{\numberline {5.8}Further Selection}{109}{section.5.8}
@@ -65,9 +65,9 @@
 \contentsline {section}{\numberline {6.1}Combinatorial Background}{125}{section.6.1}
 \contentsline {section}{\numberline {6.2}MisID type background}{127}{section.6.2}
 \contentsline {section}{\numberline {6.3}Partially Reconstructed Background}{133}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Partially Reconstructed Backgrounds, where $D^{0} \rightarrow \eta / \eta ' X,$ where $\eta / \eta ' \rightarrow \mu \mu \gamma $}{135}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Partially Reconstructed $B \rightarrow \eta (') V$ Backgrounds}{136}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Rare and resonant $B^{+} \rightarrow \pi ^{+} / K^{+} \mu ^{-} \mu ^{+}$ backgrounds}{137}{section.6.4}
+\contentsline {subsection}{\numberline {6.3.1}Partially Reconstructed Backgrounds, where \mb {D^{0} \rightarrow \eta / \eta ' X}, and \mb {\eta / \eta ' \rightarrow \mu \mu \gamma }}{135}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Partially Reconstructed \mb {B \rightarrow \eta (') V} Backgrounds}{136}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Rare and resonant \mb {B^{+} \rightarrow \pi ^{+} / K^{+} \mu ^{-} \mu ^{+}} backgrounds}{137}{section.6.4}
 \contentsline {section}{\numberline {6.5}Summary}{138}{section.6.5}
 \contentsline {chapter}{\numberline {7}Mass fits and efficiencies}{139}{chapter.7}
 \contentsline {section}{\numberline {7.1}Efficiency Ratio}{139}{section.7.1}
@@ -114,3 +114,4 @@
 \contentsline {section}{\numberline {A.1}Crystal Ball function}{196}{section.A.1}
 \contentsline {section}{\numberline {A.2}Double-sided Ipatia function}{197}{section.A.2}
 \contentsline {section}{\numberline {A.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{197}{section.A.3}
+\contentsline {chapter}{\numberline {B}License}{198}{appendix.B}

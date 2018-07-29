@@ -256,6 +256,15 @@ A.~Ali, P.~Ball, L.~T. Handoko, and G.~Hiller,
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Raven:2007zi}
+G.~Raven, \ifthenelse{\boolean{articletitles}}{\emph{{LHCb: Status and
+  prospects}},
+  }{}\href{http://dx.doi.org/10.1016/j.nuclphysbps.2006.09.019}{Nucl.\ Phys.\
+  Proc.\ Suppl.\  \textbf{163} (2007) 153}, [,153(2007)]\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{pythia8}
 T.~Sjostrand, S.~Mrenna, and P.~Z. Skands,
   \ifthenelse{\boolean{articletitles}}{\emph{{A Brief Introduction to PYTHIA
@@ -272,15 +281,6 @@ LHCb collaboration, \ifthenelse{\boolean{articletitles}}{\emph{Image of the
   acceptance of using simulation taken from
   \rm{\texttt{https://lhcb.web.cern.ch/lhcb/speakersbureau/html/bb$\_$productionangles.html}}},
   }{} Accessed in 2017\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem{Raven:2007zi}
-G.~Raven, \ifthenelse{\boolean{articletitles}}{\emph{{LHCb: Status and
-  prospects}},
-  }{}\href{http://dx.doi.org/10.1016/j.nuclphysbps.2006.09.019}{Nucl.\ Phys.\
-  Proc.\ Suppl.\  \textbf{163} (2007) 153}, [,153(2007)]\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -345,15 +345,6 @@ R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{Performance
   }{}\href{http://dx.doi.org/10.1088/1748-0221/9/09/P09007}{JINST \textbf{9}
   (2014) 09007}, \href{http://arxiv.org/abs/1405.7808}{{\normalfont\ttfamily
   arXiv:1405.7808}}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem{OT}
-\ifthenelse{\boolean{articletitles}}{\emph{{Image of the Tracker System taken
-  from
-  \href{https://lhcb-public.web.cern.ch/lhcb-public/en/Detector/Trackers2-en.html}{the
-  LHCb public web page}}}, }{} Accessed in 2017\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

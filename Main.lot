@@ -8,7 +8,7 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Offline selection for $B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}$ decay.\relax }}{89}{table.caption.46}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Summary of the fit parameters and individual component constraints for $B^{0} \rightarrow J/\psi K^{*}$ fit.\relax }}{90}{table.caption.47}
-\contentsline {table}{\numberline {4.3}{\ignorespaces \color {red} It is necesarry as this is unrelated to following figures \color {black}\texttt {K$\_$InMuonAcc==1.0} shows the interpolation of $K$ tracks into muon chambers. It can be seen that both samples agree with each other very well, meaning that measured misid rate is done for the same fraction of considered tracks. This measurement is done in a pseudorapidity region $1.5<\eta <5.0$.\relax }}{94}{table.caption.49}
+\contentsline {table}{\numberline {4.3}{\ignorespaces \color {red} It is necesarry as this is unrelated to following figures \color {black}\texttt {K$\_$InMuonAcc==1.0} shows the interpolation of $K$ tracks into muon chambers. It can be seen that both samples agree with each other very well, meaning that measured misID rate is done for the same fraction of considered tracks. This measurement is done in a pseudorapidity region $1.5<\eta <5.0$.\relax }}{94}{table.caption.49}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Summary of signal simulation samples used in this analysis with different decay models. In all cases the daughters of {\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^\pm }}\xspace are required to be within \gls {LHCb} acceptance. All of this samples are mixture under magnetic polarity up and magnetic polarity down conditions. The \textit {INSP} model was desribed in\nobreakspace {}\autoref {simulation}.\relax }}{104}{table.caption.55}
 \contentsline {table}{\numberline {5.2}{\ignorespaces Selection of events based on muon and the $B^{+}$ candidate requirements. \textit {Stripping selection} for the signal decay $B^{+} \rightarrow \mu ^{+} \mu ^{-} \mu ^{+} \nu _\mu $ is the same for both Run1 and 2016 data.\relax }}{106}{table.caption.56}
@@ -41,4 +41,5 @@
 \contentsline {table}{\numberline {7.17}{\ignorespaces Resulting yields for different components from the corrected mass fit with $\mathcal {B}(\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace ) =-1.78\times 10^{-8}$.\relax }}{184}{table.caption.129}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {8.1}{\ignorespaces Resulting exclusion limits with simultaneous fit.\relax }}{186}{table.caption.131}
+\addvspace {10\p@ }
 \addvspace {10\p@ }
