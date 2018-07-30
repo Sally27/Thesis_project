@@ -19,15 +19,17 @@ the neutrino is assigned all missing momentum transverse to the direction of the
 
 Combining all information allows for reconstruction of the \emph{corrected mass} that plays a similar role to invariant mass in fully reconstructed decays. Invariant mass is usually used in \gls{LHCb} as the distribution from which the yield of a signal decay is determined through a fit. This particular quantity is used as it distinguishes well signal and background shapes with minimal modelling assumptions.
 
+
+
 The \emph{Corrected mass} is defined as
 
 \begin{equation}
-	M_{corr} = \sqrt{{M}^{2} + |p^{2}_{T}|} + |p_{T}|,
+	M_{\mathrm{corr}} = \sqrt{{M}^{2} + |p^{2}_{T}|} + |p_{T}|,
 \label{eq:corrm}        
 \end{equation}	
-where the $M^{2}$ is the invariant visible mass squared and $p^{2}_{T}$ is the missing momentum squared transverse to the direction of the $B^{+}$ meson flight. The corrected mass of the \Bpm meson will be denoted as $M_{B_{corr}}$. The $M_corr$ is equal to the true mass if the missing part of the decay has zero mass and has no momentum along the $\Bpm$ flight direction. Otherwise, $M_corr$ is below the $\Bpm$ mass.
+where the $M^{2}$ is the invariant visible mass squared and $p^{2}_{T}$ is the missing momentum squared transverse to the direction of the $B^{+}$ meson flight. The corrected mass of the \Bpm meson will be denoted as $M_{\mathrm{B_{corr}}}$. The $M_corr$ is equal to the true mass if the missing part of the decay has zero mass and has no momentum along the $\Bpm$ flight direction. Otherwise, $M_{\mathrm{corr}}$ is below the $\Bpm$ mass.
 %\begin{equation}
-%M_{B_{corr}} = \sqrt{M_{\mu^{+} \mu^{-} \mu^{+}}^{2} + |p_{T}|} + |p_{T}|,
+%M_rm{{B_{corr}}} = \sqrt{M_{\mu^{+} \mu^{-} \mu^{+}}^{2} + |p_{T}|} + |p_{T}|,
 %\end{equation}	
 
 $M_{corr}$ can be thought of as the minimal correction to the visible mass to account for the missing neutrino information. The resolution on the \textit{corrected mass} (the uncertainty of this quantity) hence becomes a critical quantity that needs to be understood. As the method of reconstruction of corrected mass relies heavily on the knowledge of the \Bpm meson flight direction, the resolution of \gls{PV} position and \gls{SV} vertex is crucial. Let $\vec{{x}}_{PV}=\{x_{PV},y_{PV},z_{PV}\}$, $\vec{{x}}_{SV}=\{x_{SV},y_{SV},z_{SV}\} $ be \gls{PV} and \gls{SV} vertex position and $\vec{p}=\{p_{x},p_{y},p_{z}\}$ be the visible trimuon momentum. Then the missing transverse momentum to the direction of the flight $p_{T}$ (momentum of the neutrino) as shown in~\cite{Egede:1694339} is
@@ -82,7 +84,7 @@ With $x=\vec{{x}}_{PV}$, $y=\vec{{x}}_{SV}$, $z=p_{3\mu}$ and \rm{COV} being the
 
 \begin{equation}
 \begin{aligned}
-	\delta_{corrm} = \sqrt{ \langle f^{2}-\langle f \rangle^{2} \rangle} = \sqrt{\nabla^{T}_{x_{PV}} \mathrm{COV}_{x_{PV}} \nabla_{x_{PV}} + \nabla^{T}_{x_{SV}} \mathrm{COV}_{x_{SV}} \nabla_{x_{SV}} + \nabla^{T}_{p_{3\mu}} \mathrm{COV}_{p_{3\mu}} \nabla_{p_{3\mu}}}. 
+	\delta_{corrm} = \sqrt{ \langle f^{2}-\langle f \rangle^{2} \rangle} = \sqrt{\nabla^{T}_{x_{PV}} {\mathrm{COV}}_{x_{PV}} \nabla_{x_{PV}} + \nabla^{T}_{x_{SV}} {\mathrm{COV}}_{x_{SV}} \nabla_{x_{SV}} + \nabla^{T}_{p_{3\mu}} {\mathrm{COV}}_{p_{3\mu}} \nabla_{p_{3\mu}}}. 
 \end{aligned}
 \end{equation}
 It was shown in~\cite{Egede:1694339} that the $\delta_{corrm}$ is mostly dominated by vertex position terms.
@@ -244,7 +246,7 @@ Requirement that \Bp direction points in the same direction as the line from \gl
 	combination & \gls{fdchi2} $> 50$\\
 	combination & \gls{vertexchi2ndof} $< 4$ \\
 	combination & $0\ \mevcc\ <\ M_B\ <\ 7500\ \mevcc$ \\
-	combination & $2500\ \mevcc\ <\ M_{B_{corr}}\ <\ 10000\ \mevcc $\\ \bottomrule
+	combination & $2500\ \mevcc\ <\ M_{\mathrm{B_{corr}}}\ <\ 10000\ \mevcc $\\ \bottomrule
      \end{tabular}
 
 \end{center}
@@ -327,7 +329,7 @@ Further selection is performed with the executive summary in~\autoref{tab:Offlin
       Clean & Muon & - & \texttt{IsMuonTight==1.0}\\
       Clone and ghost & Muon & \texttt{Nshared==0} & \texttt{Nshared<2} \\
        & & in~\autoref{bugs} & \\
-      Fit Region & $B$ & $4000 <M_{B_{corr}}<7000\mevcc$ & Same as Run \Rn{1} \\
+      Fit Region & $B$ & $4000 <M_{\mathrm{B_{corr}}}<7000\mevcc$ & Same as Run \Rn{1} \\
        & &  in~\autoref{fittingsel} & \\
       Bkg Removal & event & Combinatorial BDT & Combinatorial BDT \\    
        &  & selection &  selection \\    
@@ -410,7 +412,7 @@ The Isolation BDT response peaks between -1 and 0 for isolated tracks (signal-li
 \subsection{The Combinatorial Boosted Decision Tree}
 \label{CombiBDTsel}
 One of the most prominent backgrounds is combinatorial background and to reduce its contamination while keeping the signal efficiency as high as possible, a combinatorial BDT is trained.
-To obtain the combinatorial BDT discriminant, a simulated sample for signal and the upper mass sideband data sample ($M_{B_{corr}}>5.5$ \gevcc) for background are used. These samples passed through the preselection, trigger, $q^{2}$ selection stages and are using the input variables mentioned in~\autoref{tab:vars}.
+To obtain the combinatorial BDT discriminant, a simulated sample for signal and the upper mass sideband data sample ($M_{\mathrm{B_{corr}}}>5.5$ \gevcc) for background are used. These samples passed through the preselection, trigger, $q^{2}$ selection stages and are using the input variables mentioned in~\autoref{tab:vars}.
 
 As the branching fraction and hence the number of signal events is unknown, the metric known as the Punzi figure of merit \texttt{(FOM)} \cite{Punzi:2003bu}, is used to find an optimal working point. It is defined as
 
@@ -430,7 +432,7 @@ In this case, the significance 3$\sigma$ is used, but it was checked that there 
 \end{figure}
 
 
-The \texttt{FOM} is computed in the blinded mass region, $4.5\gevcc <M_{B_{corr}} <5.5$ \gevcc. To estimate the number of background candidates in the blinded region, the final fit strategy described in~\autoref{fitsens} is used to fit the data, yielding around $10000$ in Run \Rn{1}, and $9000$ combinatorial candidates in Run \Rn{2}. The yields are extracted from blinded fits to data by integrating the combinatorial part of the total background probability density function (PDF) in the blinded region.
+The \texttt{FOM} is computed in the blinded mass region, $4.5\gevcc <M_{\mathrm{B_{corr}}} <5.5$ \gevcc. To estimate the number of background candidates in the blinded region, the final fit strategy described in~\autoref{fitsens} is used to fit the data, yielding around $10000$ in Run \Rn{1}, and $9000$ combinatorial candidates in Run \Rn{2}. The yields are extracted from blinded fits to data by integrating the combinatorial part of the total background probability density function (PDF) in the blinded region.
 
 In order to accommodate different selections between Run \Rn{1} and Run \Rn{2}, separate BDTs are trained for different Runs. Combined training of all of the datasets was also performed but it does not lead to any improvement in background rejection. Results of the comparison between separate and combined training can be seen in ~\autoref{fig:separatetraining}. Different intrinsic properties (such as the number of trees used) and variables (such as two-particle vertices) have been explored but no improvement in discrimination of the BDT was achieved.
 
@@ -461,13 +463,13 @@ In both Combinatorial BDTs, the most discriminating variables are the isolation 
 \end{figure}
 
 
-It is also important that there is no skewing of the mass distribution for the background as this could lead later to modelling issues with these different background components. This was checked by looking at the behaviour of BDT output in different bins of $M_{B_{corr}}$. If the BDT value stays flat then the background will not be skewed, which is the case for Run \Rn{2} as seen in~\autoref{fig:flatnessofcombibdt}. This is also the case for Run \Rn{1}. 
+It is also important that there is no skewing of the mass distribution for the background as this could lead later to modelling issues with these different background components. This was checked by looking at the behaviour of BDT output in different bins of $M_{\mathrm{B_{corr}}}$. If the BDT value stays flat then the background will not be skewed, which is the case for Run \Rn{2} as seen in~\autoref{fig:flatnessofcombibdt}. This is also the case for Run \Rn{1}. 
 
 
 \begin{figure}[ht]
 \centering
 	\includegraphics[width=1.0\linewidth]{./sel/CombiBDT_ProfileX_of_Bplus_Corrected_Mass_vs_MCSig2016_288888335_vs_DATACombi2016NTrees60_MinNodeSize2_MaxDepth3_SeparationTypeGiniIndex_PruneMethodNoPruning_DoPreselection_nice.pdf}
-	\caption{Study of linear correlation between BDT output and $M_{B_{corr}}$ and BDT value for each bin of $M_{B_{corr}}$ in 2016 shows that the Combinatorial BDT is relatively flat as a function $M_{B_{corr}}$. The right plot shows the mean and uncertainty on the mean of the 2016 Combinatorial BDT in bins of the $M_{B_{corr}}$.\mybox{Sally: Error do rms instead of the standard error}.}
+	\caption{Study of linear correlation between BDT output and $M_{\mathrm{B_{corr}}}$ and BDT value for each bin of $M_{\mathrm{B_{corr}}}$ in 2016 shows that the Combinatorial BDT is relatively flat as a function $M_{\mathrm{B_{corr}}}$. The right plot shows the mean and uncertainty on the mean of the 2016 Combinatorial BDT in bins of the $M_{\mathrm{B_{corr}}}$.\mybox{Sally: Error do rms instead of the standard error}.}
 \label{fig:flatnessofcombibdt}
 \end{figure}
 
@@ -537,7 +539,7 @@ The most powerful variables that distinguish the signal from misID background ar
 \subsection{Fitting Region Selection}
 \label{fittingsel}
 
-Because the signal mass distribution is expected to be in a more narrow window around the $B^{+}$ peak in corrected mass and the exponential description of combinatorial background is not correct below $4000$ \mevcc, as will be shown in~\autoref{combiback}, the fitting region selection in which the measurement will be made is $4000$ \mevcc $<M_{B_{corr}}<$ $7000$ \mevcc.
+Because the signal mass distribution is expected to be in a more narrow window around the $B^{+}$ peak in corrected mass and the exponential description of combinatorial background is not correct below $4000$ \mevcc, as will be shown in~\autoref{combiback}, the fitting region selection in which the measurement will be made is $4000$ \mevcc $<M_{\mathrm{B_{corr}}}<$ $7000$ \mevcc.
 
 \subsection{Further \gls{PID} Selection}
 \label{furtherpid}
@@ -550,7 +552,7 @@ For each PID hypothesis, the Punzi \texttt{FOM} was calculated. In both cases, i
 
 
 %\section{Multiple Candidates}
-%After all the selection performed, in blinded datasets, $M_{B_{corr}}<4500$ \mevcc and $M_{B_{corr}}>5500$ \mevcc there is very few candidates left: $683$ in Run \Rn{1} and $505$ in \Rn{2} and no multiple candidates are seen.
+%After all the selection performed, in blinded datasets, $M_rm{{B_{corr}}}<4500$ \mevcc and $M_rm{{B_{corr}}}>5500$ \mevcc there is very few candidates left: $683$ in Run \Rn{1} and $505$ in \Rn{2} and no multiple candidates are seen.
 
 
 
@@ -604,7 +606,7 @@ And finally the kaon candidates are required to have \gls{PID} criteria consiste
 \label{split}
 In order to increase sensitivity, but not to decrease statistics as all the previous selection leads to a low-statistics regime, it was decided that the fitting procedure for the final fit will be in two bins of the estimated fractional corrected mass error (FCME), defined as
 \begin{equation}
-	\sigma_{\rm{\{lowFCME,highFCME\}}} = \frac{\delta}{M_{B_{corr}}},
+	\sigma_{\rm{\{lowFCME,highFCME\}}} = \frac{\delta}{M_{\mathrm{B_{corr}}}},
 \label{eq:fraccormerr}
 \end{equation}
 
@@ -625,8 +627,8 @@ Numerically this corresponds to
 \begin{equation}
 \sigma_{\rm{\{lowFCME,highFCME\}}}=
    \begin{dcases}
-	   \sigma_{\rm{lowFCME}} &\text{if  }  \frac{\delta}{M_{B_{corr}}} < 0.0225,\\
-	  \sigma_{\rm{highFCME}} &\text{if  }  \frac{\delta}{M_{B_{corr}}} > 0.0225. 
+	   \sigma_{\rm{lowFCME}} &\text{if  }  \frac{\delta}{M_{\mathrm{B_{corr}}}} < 0.0225,\\
+	  \sigma_{\rm{highFCME}} &\text{if  }  \frac{\delta}{M_{\mathrm{B_{corr}}}} > 0.0225. 
    \end{dcases}
 \label{eq:impsplit}
 \end{equation}

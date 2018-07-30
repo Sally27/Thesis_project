@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  30 JUL 2018 02:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  30 JUL 2018 03:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4756,12 +4756,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [106]
-Overfull \hbox (10.24721pt too wide) in paragraph at lines 233--233
+Overfull \hbox (10.24721pt too wide) in paragraph at lines 235--235
 []|$[]$|  
  []
 
 
-Overfull \hbox (3.93523pt too wide) in paragraph at lines 238--238
+Overfull \hbox (3.93523pt too wide) in paragraph at lines 240--240
 []|$[]$|  
  []
 
@@ -4784,15 +4784,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [108]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 285.
+(hyperref)                removing `math shift' on input line 287.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 285.
+(hyperref)                removing `superscript' on input line 287.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 285.
+(hyperref)                removing `math shift' on input line 287.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -4806,7 +4806,7 @@ File: ./figs/./sel/scatterplotiatko_qmin.pdf Graphic file (type pdf)
 
 <use ./figs/./sel/scatterplotiatko_qmin.pdf>
 Package pdftex.def Info: ./figs/./sel/scatterplotiatko_qmin.pdf used on input l
-ine 294.
+ine 296.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
 <./figs/./sel/scatterplotiatko_qmin_combidata.pdf, id=4682, 569.12625pt x 408.5
@@ -4814,7 +4814,7 @@ ine 294.
 File: ./figs/./sel/scatterplotiatko_qmin_combidata.pdf Graphic file (type pdf)
  <use ./figs/./sel/scatterplotiatko_qmin_combidata.pdf>
 Package pdftex.def Info: ./figs/./sel/scatterplotiatko_qmin_combidata.pdf used 
-on input line 295.
+on input line 297.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
 
@@ -4854,7 +4854,7 @@ f>
 (epstopdf)                    size: 7775 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figs/./sel/Isolation-eps
 -converted-to.pdf ./figs/./sel/Isolation.eps>
-(epstopdf)             \includegraphics on input line 381.
+(epstopdf)             \includegraphics on input line 383.
 Package epstopdf Info: Output file is already uptodate.
 
 <./figs/./sel/Isolation-eps-converted-to.pdf, id=4804, 383.4325pt x 141.52875pt
@@ -4862,7 +4862,7 @@ Package epstopdf Info: Output file is already uptodate.
 File: ./figs/./sel/Isolation-eps-converted-to.pdf Graphic file (type pdf)
  <use ./figs/./sel/Isolation-eps-converted-to.pdf>
 Package pdftex.def Info: ./figs/./sel/Isolation-eps-converted-to.pdf used on in
-put line 381.
+put line 383.
 (pdftex.def)             Requested size: 204.85844pt x 75.6167pt.
 Package epstopdf Info: Source file: <./figs/./sel/Isolation_Signal.eps>
 (epstopdf)                    date: 2018-02-15 15:59:08
@@ -4873,7 +4873,7 @@ d-to.pdf>
 (epstopdf)                    size: 7247 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figs/./sel/Isolation_Sig
 nal-eps-converted-to.pdf ./figs/./sel/Isolation_Signal.eps>
-(epstopdf)             \includegraphics on input line 383.
+(epstopdf)             \includegraphics on input line 385.
 Package epstopdf Info: Output file is already uptodate.
 
 <./figs/./sel/Isolation_Signal-eps-converted-to.pdf, id=4805, 383.4325pt x 106.
@@ -4882,7 +4882,7 @@ File: ./figs/./sel/Isolation_Signal-eps-converted-to.pdf Graphic file (type pdf
 )
  <use ./figs/./sel/Isolation_Signal-eps-converted-to.pdf>
 Package pdftex.def Info: ./figs/./sel/Isolation_Signal-eps-converted-to.pdf use
-d on input line 383.
+d on input line 385.
 (pdftex.def)             Requested size: 204.85844pt x 56.8466pt.
 
 
@@ -4901,7 +4901,7 @@ pdf Graphic file (type pdf)
 <use ./figs/./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22012.p
 df>
 Package pdftex.def Info: ./figs/./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_w
-eightsbeforeq22012.pdf used on input line 404.
+eightsbeforeq22012.pdf used on input line 406.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22016.pdf, 
@@ -4912,7 +4912,7 @@ pdf Graphic file (type pdf)
 <use ./figs/./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22016.p
 df>
 Package pdftex.def Info: ./figs/./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_w
-eightsbeforeq22016.pdf used on input line 405.
+eightsbeforeq22016.pdf used on input line 407.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 
@@ -4929,7 +4929,7 @@ File: ./figs/./sel/Scaled_nice_FOM_Run1.pdf Graphic file (type pdf)
 
 <use ./figs/./sel/Scaled_nice_FOM_Run1.pdf>
 Package pdftex.def Info: ./figs/./sel/Scaled_nice_FOM_Run1.pdf used on input li
-ne 426.
+ne 428.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/Scaled_nice_FOM_2016.pdf, id=4933, 569.12625pt x 467.7475pt>
@@ -4937,7 +4937,7 @@ File: ./figs/./sel/Scaled_nice_FOM_2016.pdf Graphic file (type pdf)
 
 <use ./figs/./sel/Scaled_nice_FOM_2016.pdf>
 Package pdftex.def Info: ./figs/./sel/Scaled_nice_FOM_2016.pdf used on input li
-ne 427.
+ne 429.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/final_comparison_from_root_combi_2.pdf, id=4936, 569.12625pt x 32
@@ -4946,7 +4946,7 @@ File: ./figs/./sel/final_comparison_from_root_combi_2.pdf Graphic file (type pd
 f)
  <use ./figs/./sel/final_comparison_from_root_combi_2.pdf>
 Package pdftex.def Info: ./figs/./sel/final_comparison_from_root_combi_2.pdf us
-ed on input line 440.
+ed on input line 442.
 (pdftex.def)             Requested size: 364.19664pt x 206.8373pt.
 
 
@@ -4964,7 +4964,7 @@ File: ./figs/./sel/combi/plotvariableBplus_pmu_ISOLATION_BDT1_weightsNICEDISMIX
 <use ./figs/./sel/combi/plotvariableBplus_pmu_ISOLATION_BDT1_weightsNICEDISMIX.
 pdf>
 Package pdftex.def Info: ./figs/./sel/combi/plotvariableBplus_pmu_ISOLATION_BDT
-1_weightsNICEDISMIX.pdf used on input line 454.
+1_weightsNICEDISMIX.pdf used on input line 456.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/combi/plotvariableBplus_ENDVERTEX_CHI2NICEDISMIX.pdf, id=4949, 56
@@ -4974,7 +4974,7 @@ File: ./figs/./sel/combi/plotvariableBplus_ENDVERTEX_CHI2NICEDISMIX.pdf Graphic
 
 <use ./figs/./sel/combi/plotvariableBplus_ENDVERTEX_CHI2NICEDISMIX.pdf>
 Package pdftex.def Info: ./figs/./sel/combi/plotvariableBplus_ENDVERTEX_CHI2NIC
-EDISMIX.pdf used on input line 455.
+EDISMIX.pdf used on input line 457.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/combi/plotvariableB_PTNICEDISMIX.pdf, id=4950, 569.12625pt x 467.
@@ -4983,7 +4983,7 @@ File: ./figs/./sel/combi/plotvariableB_PTNICEDISMIX.pdf Graphic file (type pdf)
 
  <use ./figs/./sel/combi/plotvariableB_PTNICEDISMIX.pdf>
 Package pdftex.def Info: ./figs/./sel/combi/plotvariableB_PTNICEDISMIX.pdf used
- on input line 457.
+ on input line 459.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/combi/plotvariablemu1_MINIPCHI2NICEDISMIX.pdf, id=4951, 569.12625
@@ -4993,7 +4993,7 @@ type pdf)
 
 <use ./figs/./sel/combi/plotvariablemu1_MINIPCHI2NICEDISMIX.pdf>
 Package pdftex.def Info: ./figs/./sel/combi/plotvariablemu1_MINIPCHI2NICEDISMIX
-.pdf used on input line 458.
+.pdf used on input line 460.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/CombiBDT_ProfileX_of_Bplus_Corrected_Mass_vs_MCSig2016_288888335_
@@ -5009,7 +5009,7 @@ neMethodNoPruning_DoPreselection_nice.pdf>
 Package pdftex.def Info: ./figs/./sel/CombiBDT_ProfileX_of_Bplus_Corrected_Mass
 _vs_MCSig2016_288888335_vs_DATACombi2016NTrees60_MinNodeSize2_MaxDepth3_Separat
 ionTypeGiniIndex_PruneMethodNoPruning_DoPreselection_nice.pdf used on input lin
-e 469.
+e 471.
 (pdftex.def)             Requested size: 455.24408pt x 174.23793pt.
 
 
@@ -5028,7 +5028,7 @@ FFERENTtrainings.pdf Graphic file (type pdf)
 <use ./figs/./sel/true_Misid_CompareTrainOnBothRun1and2016__COMPAREroccurvesDIF
 FERENTtrainings.pdf>
 Package pdftex.def Info: ./figs/./sel/true_Misid_CompareTrainOnBothRun1and2016_
-_COMPAREroccurvesDIFFERENTtrainings.pdf used on input line 481.
+_COMPAREroccurvesDIFFERENTtrainings.pdf used on input line 483.
 (pdftex.def)             Requested size: 409.71689pt x 213.9009pt.
 
 
@@ -5044,7 +5044,7 @@ egrees>]
 File: ./figs/./sel/misid/Scaled_nice_FOM_Run1.pdf Graphic file (type pdf)
  <use ./figs/./sel/misid/Scaled_nice_FOM_Run1.pdf>
 Package pdftex.def Info: ./figs/./sel/misid/Scaled_nice_FOM_Run1.pdf used on in
-put line 491.
+put line 493.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/misid/Scaled_nice_FOM_2016.pdf, id=5100, 569.12625pt x 467.7475pt
@@ -5052,7 +5052,7 @@ put line 491.
 File: ./figs/./sel/misid/Scaled_nice_FOM_2016.pdf Graphic file (type pdf)
  <use ./figs/./sel/misid/Scaled_nice_FOM_2016.pdf>
 Package pdftex.def Info: ./figs/./sel/misid/Scaled_nice_FOM_2016.pdf used on in
-put line 492.
+put line 494.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/plotMisidFitPretty_Run1.pdf, id=5103, 569.12625pt x 546.04pt>
@@ -5060,7 +5060,7 @@ File: ./figs/./sel/plotMisidFitPretty_Run1.pdf Graphic file (type pdf)
 
 <use ./figs/./sel/plotMisidFitPretty_Run1.pdf>
 Package pdftex.def Info: ./figs/./sel/plotMisidFitPretty_Run1.pdf used on input
- line 502.
+ line 504.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <./figs/./sel/plotMisidFitPretty_2016.pdf, id=5104, 569.12625pt x 546.04pt>
@@ -5068,7 +5068,7 @@ File: ./figs/./sel/plotMisidFitPretty_2016.pdf Graphic file (type pdf)
 
 <use ./figs/./sel/plotMisidFitPretty_2016.pdf>
 Package pdftex.def Info: ./figs/./sel/plotMisidFitPretty_2016.pdf used on input
- line 503.
+ line 505.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 
@@ -5089,7 +5089,7 @@ e (type pdf)
 
 <use ./figs/./sel/CutEfficiency_Bplus_Corrected_MassMisid_nice.pdf>
 Package pdftex.def Info: ./figs/./sel/CutEfficiency_Bplus_Corrected_MassMisid_n
-ice.pdf used on input line 515.
+ice.pdf used on input line 517.
 (pdftex.def)             Requested size: 409.71689pt x 167.65204pt.
 
 <./figs/./sel/misid/plotvariablemu3_PTNICEDISMIX.pdf, id=5287, 569.12625pt x 46
@@ -5098,7 +5098,7 @@ File: ./figs/./sel/misid/plotvariablemu3_PTNICEDISMIX.pdf Graphic file (type pd
 f)
  <use ./figs/./sel/misid/plotvariablemu3_PTNICEDISMIX.pdf>
 Package pdftex.def Info: ./figs/./sel/misid/plotvariablemu3_PTNICEDISMIX.pdf us
-ed on input line 525.
+ed on input line 527.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/misid/plotvariablemu3_PNICEDISMIX.pdf, id=5288, 569.12625pt x 467
@@ -5107,7 +5107,7 @@ File: ./figs/./sel/misid/plotvariablemu3_PNICEDISMIX.pdf Graphic file (type pdf
 )
  <use ./figs/./sel/misid/plotvariablemu3_PNICEDISMIX.pdf>
 Package pdftex.def Info: ./figs/./sel/misid/plotvariablemu3_PNICEDISMIX.pdf use
-d on input line 526.
+d on input line 528.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/misid/plotvariablemu3_MINIPCHI2NICEDISMIX.pdf, id=5289, 569.12625
@@ -5117,7 +5117,7 @@ type pdf)
 
 <use ./figs/./sel/misid/plotvariablemu3_MINIPCHI2NICEDISMIX.pdf>
 Package pdftex.def Info: ./figs/./sel/misid/plotvariablemu3_MINIPCHI2NICEDISMIX
-.pdf used on input line 528.
+.pdf used on input line 530.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/misid/plotvariablemu1_PTNICEDISMIX.pdf, id=5290, 569.12625pt x 46
@@ -5126,7 +5126,7 @@ File: ./figs/./sel/misid/plotvariablemu1_PTNICEDISMIX.pdf Graphic file (type pd
 f)
  <use ./figs/./sel/misid/plotvariablemu1_PTNICEDISMIX.pdf>
 Package pdftex.def Info: ./figs/./sel/misid/plotvariablemu1_PTNICEDISMIX.pdf us
-ed on input line 529.
+ed on input line 531.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/misid/plotvariablemu2_PTNICEDISMIX.pdf, id=5291, 569.12625pt x 46
@@ -5135,7 +5135,7 @@ File: ./figs/./sel/misid/plotvariablemu2_PTNICEDISMIX.pdf Graphic file (type pd
 f)
  <use ./figs/./sel/misid/plotvariablemu2_PTNICEDISMIX.pdf>
 Package pdftex.def Info: ./figs/./sel/misid/plotvariablemu2_PTNICEDISMIX.pdf us
-ed on input line 531.
+ed on input line 533.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 <./figs/./sel/misid/plotvariablemu2_PNICEDISMIX.pdf, id=5292, 569.12625pt x 467
@@ -5144,7 +5144,7 @@ File: ./figs/./sel/misid/plotvariablemu2_PNICEDISMIX.pdf Graphic file (type pdf
 )
  <use ./figs/./sel/misid/plotvariablemu2_PNICEDISMIX.pdf>
 Package pdftex.def Info: ./figs/./sel/misid/plotvariablemu2_PNICEDISMIX.pdf use
-d on input line 532.
+d on input line 534.
 (pdftex.def)             Requested size: 227.62204pt x 187.07426pt.
 
 
@@ -5158,7 +5158,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 uneMethodNoPruning_DoPreselection_nice.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 542.
+(hyperref)                removing `\gls' on input line 544.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -5199,21 +5199,21 @@ rotated 90 degrees> <./figs/./sel/misid/plotvariablemu1_PTNICEDISMIX.pdf, page
 is rotated 90 degrees> <./figs/./sel/misid/plotvariablemu2_PTNICEDISMIX.pdf, pa
 ge is rotated 90 degrees> <./figs/./sel/misid/plotvariablemu2_PNICEDISMIX.pdf, 
 page is rotated 90 degrees>]
-Overfull \hbox (2.59123pt too wide) in paragraph at lines 576--576
+Overfull \hbox (2.59123pt too wide) in paragraph at lines 578--578
 []|$[]$|  
  []
 
 
-Overfull \vbox (2.736pt too high) detected at line 576
+Overfull \vbox (2.736pt too high) detected at line 578
  []
 
 
-Overfull \hbox (2.59123pt too wide) in paragraph at lines 580--580
+Overfull \hbox (2.59123pt too wide) in paragraph at lines 582--582
 []|$[]$|  
  []
 
 
-Overfull \vbox (2.736pt too high) detected at line 580
+Overfull \vbox (2.736pt too high) detected at line 582
  []
 
 
@@ -5228,14 +5228,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: ./figs/sel/trial2012.pdf Graphic file (type pdf)
 
 <use ./figs/sel/trial2012.pdf>
-Package pdftex.def Info: ./figs/sel/trial2012.pdf used on input line 615.
+Package pdftex.def Info: ./figs/sel/trial2012.pdf used on input line 617.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
 <./figs/sel/trial2016.pdf, id=5903, 569.12625pt x 408.52625pt>
 File: ./figs/sel/trial2016.pdf Graphic file (type pdf)
 
 <use ./figs/sel/trial2016.pdf>
-Package pdftex.def Info: ./figs/sel/trial2016.pdf used on input line 616.
+Package pdftex.def Info: ./figs/sel/trial2016.pdf used on input line 618.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
 
@@ -6553,7 +6553,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 423.
 Here is how much of TeX's memory you used:
  43389 strings out of 494946
  834811 string characters out of 6180981
- 974346 words of memory out of 5000000
+ 975358 words of memory out of 5000000
  44598 multiletter control sequences out of 15000+600000
  221397 words of font info for 643 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -6585,7 +6585,7 @@ fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/texlive/texmf-dist/fonts/type1
 fonts/jkpttbn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/j
 kpttmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb>
-Output written on Main.pdf (202 pages, 6245570 bytes).
+Output written on Main.pdf (202 pages, 6245456 bytes).
 PDF statistics:
  9225 PDF objects out of 10688 (max. 8388607)
  5569 compressed objects within 56 object streams
