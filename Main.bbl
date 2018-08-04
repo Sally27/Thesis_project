@@ -8,6 +8,16 @@
 \mciteSetBstSublistLabelBeginEnd{\mcitemaxwidthsubitemform\space}
 {\relax}{\relax}
 
+\bibitem{Danilina:2018uzr}
+A.~V. Danilina and N.~V. Nikitin,
+  \ifthenelse{\boolean{articletitles}}{\emph{{Four-Leptonic Decays of Charged
+  and Neutral $B$ Mesons within the Standard Model}},
+  }{}\href{http://dx.doi.org/10.1134/S1063778818030092}{Phys.\ Atom.\ Nucl.\
+  \textbf{81} (2018), no.~3 347}, [Yad. Fiz.81,no.3,331(2018)]\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{Patrignani:2016xqp}
 Particle Data Group, C.~Patrignani {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Review of Particle Physics}},
@@ -215,16 +225,6 @@ Belle, A.~Heller {\em et~al.},
    \textbf{D91} (2015), no.~11 112009},
   \href{http://arxiv.org/abs/1504.05831}{{\normalfont\ttfamily
   arXiv:1504.05831}}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem{Danilina:2018uzr}
-A.~V. Danilina and N.~V. Nikitin,
-  \ifthenelse{\boolean{articletitles}}{\emph{{Four-Leptonic Decays of Charged
-  and Neutral $B$ Mesons within the Standard Model}},
-  }{}\href{http://dx.doi.org/10.1134/S1063778818030092}{Phys.\ Atom.\ Nucl.\
-  \textbf{81} (2018), no.~3 347}, [Yad. Fiz.81,no.3,331(2018)]\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

@@ -32,7 +32,7 @@ where the $M^{2}$ is the invariant visible mass squared and $p^{2}_{T}$ is the m
 %M_rm{{B_{corr}}} = \sqrt{M_{\mu^{+} \mu^{-} \mu^{+}}^{2} + |p_{T}|} + |p_{T}|,
 %\end{equation}	
 
-$M_{corr}$ can be thought of as the minimal correction to the visible mass to account for the missing neutrino information. The resolution on the \textit{corrected mass} (the uncertainty of this quantity) hence becomes a critical quantity that needs to be understood. As the method of reconstruction of corrected mass relies heavily on the knowledge of the \Bpm meson flight direction, the resolution of \gls{PV} position and \gls{SV} vertex is crucial. Let $\vec{{x}}_{PV}=\{x_{PV},y_{PV},z_{PV}\}$, $\vec{{x}}_{SV}=\{x_{SV},y_{SV},z_{SV}\} $ be \gls{PV} and \gls{SV} vertex position and $\vec{p}=\{p_{x},p_{y},p_{z}\}$ be the visible trimuon momentum. Then the missing transverse momentum to the direction of the flight $p_{T}$ (momentum of the neutrino) as shown in~\cite{Egede:1694339} is
+$M_{\mathrm{corr}}$ can be thought of as the minimal correction to the visible mass to account for the missing neutrino information. The resolution on the \textit{corrected mass} (the uncertainty of this quantity) hence becomes a critical quantity that needs to be understood. As the method of reconstruction of corrected mass relies heavily on the knowledge of the \Bpm meson flight direction, the resolution of \gls{PV} position and \gls{SV} vertex is crucial. Let $\vec{{x}}_{PV}=\{x_{PV},y_{PV},z_{PV}\}$, $\vec{{x}}_{SV}=\{x_{SV},y_{SV},z_{SV}\} $ be \gls{PV} and \gls{SV} vertex position and $\vec{p}=\{p_{x},p_{y},p_{z}\}$ be the visible trimuon momentum. Then the missing transverse momentum to the direction of the flight $p_{T}$ (momentum of the neutrino) as shown in~\cite{Egede:1694339} is
 
 
 \begin{equation}
@@ -70,7 +70,7 @@ Using a first order Taylor expansion of variance and rewriting it into matrix fo
 \end{equation}
 In this formalism let $f$ is the \emph{corrected mass} and $x,y,z$ are variables on which \emph{corrected mass} depends. Using~\autoref{eq:corrm}, these independent variables are visible mass four-vector, $p_{3\mu}=\{E,p_{x},p_{y},p_{z}\}$, and missing $p_{T}$ (defined in~\autoref{eq:ptmis}), which in turn depends on $\vec{p}$, $\vec{x_{PV}}$ and $\vec{x_{SV}}$.
 
-With $x=\vec{{x}}_{PV}$, $y=\vec{{x}}_{SV}$, $z=p_{3\mu}$ and \rm{COV} being the covariance matrix, the error (square root of variance) on the \emph{corrected mass}, $\delta_{corrm}$ is
+With $x=\vec{{x}}_{PV}$, $y=\vec{{x}}_{SV}$, $z=p_{3\mu}$ and \rm{COV} being the covariance matrix, the error (square root of variance) on the \emph{corrected mass}, $\delta_\mathrm{{corr}}$ is
 %\begin{equation}
 %\begin{aligned}
 %       \nabla^{T}_{x_{PV}} \rm{C_{x_{PV}}} \nabla_{x_{PV}} + \nabla^{T}_{x_{SV}} \rm{C_{x_{SV}}} \nabla_{x_{SV}} + \nabla^{T}_{p} \rm{C_{p}} \nabla_{p}
@@ -79,15 +79,15 @@ With $x=\vec{{x}}_{PV}$, $y=\vec{{x}}_{SV}$, $z=p_{3\mu}$ and \rm{COV} being the
 %
 %where \rm{C} is the covariance matrix.
 %
-%In conclusion in order to calculate error on \textit{corrected mass}, $\delta_{corrm}$
+%In conclusion in order to calculate error on \textit{corrected mass}, $\delta_\mathrm{{corr}}$
 
 
 \begin{equation}
 \begin{aligned}
-	\delta_{corrm} = \sqrt{ \langle f^{2}-\langle f \rangle^{2} \rangle} = \sqrt{\nabla^{T}_{x_{PV}} {\mathrm{COV}}_{x_{PV}} \nabla_{x_{PV}} + \nabla^{T}_{x_{SV}} {\mathrm{COV}}_{x_{SV}} \nabla_{x_{SV}} + \nabla^{T}_{p_{3\mu}} {\mathrm{COV}}_{p_{3\mu}} \nabla_{p_{3\mu}}}. 
+	\delta_\mathrm{{corr}} = \sqrt{ \langle f^{2}-\langle f \rangle^{2} \rangle} = \sqrt{\nabla^{T}_{x_{PV}} {\mathrm{COV}}_{x_{PV}} \nabla_{x_{PV}} + \nabla^{T}_{x_{SV}} {\mathrm{COV}}_{x_{SV}} \nabla_{x_{SV}} + \nabla^{T}_{p_{3\mu}} {\mathrm{COV}}_{p_{3\mu}} \nabla_{p_{3\mu}}}. 
 \end{aligned}
 \end{equation}
-It was shown in~\cite{Egede:1694339} that the $\delta_{corrm}$ is mostly dominated by vertex position terms.
+It was shown in~\cite{Egede:1694339} that the $\delta_\mathrm{{corr}}$ is mostly dominated by vertex position terms.
 %which can be calculated analytically (method used for all the plots) or using numerical approximation of first derivative of \textit{finite differences}.
 
 \section{Sources of Backgrounds}
@@ -606,17 +606,17 @@ And finally the kaon candidates are required to have \gls{PID} criteria consiste
 \label{split}
 In order to increase sensitivity, but not to decrease statistics as all the previous selection leads to a low-statistics regime, it was decided that the fitting procedure for the final fit will be in two bins of the estimated fractional corrected mass error (FCME), defined as
 \begin{equation}
-	\sigma_{\rm{\{lowFCME,highFCME\}}} = \frac{\delta}{M_{\mathrm{B_{corr}}}},
+	\sigma_{\rm{\{lowFCME,highFCME\}}} = \frac{\delta_\mathrm{{corr}}}{M_{\mathrm{B_{corr}}}},
 \label{eq:fraccormerr}
 \end{equation}
 
 
-where $\delta$ is the corrected mass error. Because the corrected mass error has clear dependence on resolution (see ~\autoref{fig:resolution}), this split will divide the data into two bins of resolution increasing the sensitivity for observation.
+where $\delta_\mathrm{{corr}}$ is the corrected mass error. Because the corrected mass error has clear dependence on resolution (see ~\autoref{fig:resolution}), this split will divide the data into two bins of resolution increasing the sensitivity for observation as shown in~\autoref{fig:resofit}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\linewidth]{sel/trial2012.pdf}\put(-100,133){(a)}
 \includegraphics[width=0.5\linewidth]{sel/trial2016.pdf}\put(-100,133){(b)}
-\caption{ (a) The resolution of 2012 signal simulation in bins of the estimated corrected mass error $\delta$. (b) The resolution of 2016 signal simulation in bins of corrected mass error $\delta$. }
+\caption{ (a) The resolution of 2012 signal simulation in bins of the estimated corrected mass error $\delta_\mathrm{{corr}}$. (b) The resolution of 2016 signal simulation in bins of corrected mass error $\delta_\mathrm{{corr}}$. }
 \label{fig:resolution}
 %\vspace*{-1.0cm}
 \end{figure}
@@ -627,10 +627,24 @@ Numerically this corresponds to
 \begin{equation}
 \sigma_{\rm{\{lowFCME,highFCME\}}}=
    \begin{dcases}
-	   \sigma_{\rm{lowFCME}} &\text{if  }  \frac{\delta}{M_{\mathrm{B_{corr}}}} < 0.0225,\\
-	  \sigma_{\rm{highFCME}} &\text{if  }  \frac{\delta}{M_{\mathrm{B_{corr}}}} > 0.0225. 
+	   \sigma_{\rm{lowFCME}} &\text{if  }  \frac{\delta_\mathrm{{corr}}}{M_{\mathrm{B_{corr}}}} < 0.0225,\\
+	  \sigma_{\rm{highFCME}} &\text{if  }  \frac{\delta_\mathrm{{corr}}}{M_{\mathrm{B_{corr}}}} > 0.0225. 
    \end{dcases}
 \label{eq:impsplit}
 \end{equation}
+
+\begin{figure}[H]
+\centering
+        \includegraphics[width=0.60\linewidth]{./sel/niceplots_sig.pdf}
+        \caption{Templates for signal and misidentified background
+          shapes in high and low fractional corrected mass
+          uncertainty. It can be seen how a low uncertainty on the
+          corrected mass corresponds to data with better mass
+          resolution. The shape of the misidentification template is
+          obtained from a control sample while the signal template is
+          obtained from simulation. These templates are constructed after all selection was applied.}
+\label{fig:resofit}
+\end{figure}
+
 
 However, in order to look at the consistency of this two bin strategy also one bin of fractional corrected mass error strategy is performed and will be denoted as $\sigma_{\rm{NOFCME}}$.

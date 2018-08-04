@@ -4,14 +4,14 @@
 \textit{ To be able to translate observed signal events into branching fraction estimate,  the normalisation channel
 of \bjpsimumuk is used. Both, for signal and normalisation
 channel the absolute efficiencies, luminosity, the b-quark cross-section or fragmentation fractions will
-cancel. There are, however, efficiencies that will not cancel and will be necessary for the final limit setting procedure. In this section, methods of obtaining efficiencies of selection for normalisation and signal channel are described as well as efficiencies themselves.}
+cancel. There are, however, efficiencies that will not cancel and will be necessary for the final limit setting procedure. In this section, methods of obtaining efficiencies of selection for normalisation and signal channel are described. Later, fitting procedure is outlined.}
 
 
 \section{Efficiency Ratio}
 \label{EfficiencyRatio}
 
-As this measurement is performed in a particular min$q^{2}$ region, discussed in ~\autoref{qsqchoice}, all signal efficiencies are calculated with the min$q^{2}$ selection imposed. 
-Overall selection efficiency for signal, $\varepsilon^{s}$, and normalisation, $\varepsilon^{n}$, includes contributions from the detector acceptance efficiency labelled (GEN); the reconstruction selection efficiency (REC); the offline selection efficiency comprising of trigger (TRG), $J/\psi$ and $\Psi(2S)$ veto (OFF), MVA based selection efficiency (CombiBDT and MisidBDT); fitting region selection efficiency (FR); the efficiency of the PID requirement (PID). The summary of method used to extract signal efficiency is shown in Table ~\autoref{tab:signaleffsummary}. For normalisation channel, there is no $minq^2$ region selection and hence full (\textit{generator-level+detector}) simulation is used everywhere apart from $\varepsilon_{GEN}$, \textit{generator-level}.
+As this measurement is performed in a particular $minq$ region, discussed in ~\autoref{qsqchoice}, all signal efficiencies are calculated with the $minq$ selection imposed. 
+Overall selection efficiency for signal, $\varepsilon^{s}$, and normalisation, $\varepsilon^{n}$, includes contributions from the detector acceptance efficiency labelled (GEN); the reconstruction selection efficiency (REC); the offline selection efficiency comprising of trigger (TRG), $J/\psi$ and $\Psi(2S)$ veto (OFF), MVA based selection efficiency (CombiBDT and MisidBDT); fitting region selection efficiency (FR); the efficiency of the PID requirement (PID). The summary of method used to extract signal efficiency is shown in Table ~\autoref{tab:signaleffsummary}. For normalisation channel, there is no $minq$ region selection and hence full (\textit{generator-level+detector}) simulation is used everywhere apart from $\varepsilon_{GEN}$, \textit{generator-level}.
 
 \begin{table}[H]
 \centering
@@ -34,15 +34,15 @@ The three methods for signal efficiency determination are listed:
 	\item Method \Rn{1} - The first two efficiencies, $\varepsilon_{GEN}$, $\varepsilon_{REC}$, for signal are obtained using privately generated simulation from~\autoref{tab:MCPPass} using
 
 \begin{equation}
-{\varepsilon_{GEN,minq^{2}}}\times {\varepsilon_{REC,minq^{2}}}= \frac{N_{in\_acc,minq^{2}}}{N_{generated,minq^{2}}}\times \frac{N_{REC,minq^{2}}}{N_{in\_acc,minq^{2}}},
+{\varepsilon_{GEN,minq}}\times {\varepsilon_{REC,minq}}= \frac{N_{in\_acc,minq}}{N_{generated,minq}}\times \frac{N_{REC,minq}}{N_{in\_acc,minq}},
 \end{equation}
 
 \begin{equation}
-N_{in\_acc,minq^{2}} = N_{in\_acc} \times \varepsilon_{minq^{2}}.
+N_{in\_acc,minq} = N_{in\_acc} \times \varepsilon_{minq}.
 \label{eq:number}
 \end{equation}
 
-In Equation ~\autoref{eq:number}, $\varepsilon_{minq^{2}}$ is obtained by dividing number of generated events in \textit{generator-level} simulation (mentioned in~\autoref{tab:MCPPass}) with minq$^2$ condition imposed, $N_{generated,minq^{2}}$, to total number of generated events, $N_{generated}$. $N_{in\_acc}$ is the number of events in \textit{generator-level+detector} simulation before reconstruction, $N_{REC,minq^{2}}$ is the number of events after reconstruction with minq$^2$ condition.
+In Equation ~\autoref{eq:number}, $\varepsilon_{minq}$ is obtained by dividing number of generated events in \textit{generator-level} simulation (mentioned in~\autoref{tab:MCPPass}) with $minq$ condition imposed, $N_{generated,minq}$, to total number of generated events, $N_{generated}$. $N_{in\_acc}$ is the number of events in \textit{generator-level+detector} simulation before reconstruction, $N_{REC,minq}$ is the number of events after reconstruction with $minq$ condition.
 \item Method \Rn{2} - Divide number of events that passed the selection by total number of events prior to this particular selection step.
 \item Method \Rn{3} - Data-driven approach using \texttt{PIDCalib} package explained in~\autoref{simulationchap} of determining PID efficiency is used.
 \end{itemize}
@@ -66,7 +66,13 @@ Having all the individual efficiencies the relative efficiency with no FCME spli
 
 %where NOFCME means one bin of fractional corrected mass error, lowFCME and highFCME fractional corrected mass error are two bins of fractional corrected mass error, see Section ~\ref{split} for more details. 
 
- where 21, 26 denote the stripping version for Run \Rn{1} and Run \Rn{2}.
+\noindent where 21, 26 denote the stripping version for Run \Rn{1} and Run \Rn{2}. With the FCME split this efficiency ratio becomes
+\begin{equation}
+	R^{\{21,26\}}_{\mathrm{\{lowFCME,highFCME\}}}(\varepsilon)=R_{\rm{NOFCME}}^{\{21,26\}}(\varepsilon)\times\frac{\varepsilon^{\mathrm{\{lowFCME,highFCME\}}}_{s}}{\varepsilon^{\mathrm{\{lowFCME,highFCME\}}}_{n}}.
+%=\frac{\varepsilon^{GEN}_{s}}{\varepsilon^{GEN}_{n}} \times \frac{\varepsilon^{REC}_{s}}{\varepsilon^{REC}_{n}} \times \frac{\varepsilon^{TRG}_{s}}{\varepsilon^{TRG}_{n}} \times \frac{\varepsilon^{OFF}_{s}}{\varepsilon^{OFF}_{n}} \times \frac{\varepsilon^{CombiBDT}_{s}}{\varepsilon^{CombiBDT}_{n}} \times \frac{\varepsilon^{MisidBDT}_{s}}{\varepsilon^{MisidBDT}_{n}} \times \frac{\varepsilon^{FR}_{s}}{\varepsilon^{FR}_{n}} \ \frac{\varepsilon^{FCME}_{s}}{\varepsilon^{FCME}_{n}} \times \frac{\varepsilon^{PID}_{s}}{\varepsilon^{PID}_{n}},
+\label{eq:splitted}
+\end{equation}
+
 %As seen in equations ~\ref{eq:notsplitted} and ~\ref{eq:splitted}, absolute selection efficiencies $\varepsilon^{s}$, $\varepsilon^{n}$ have several components.
 %\newline Overall selection efficiency includes contribution from the detector acceptance efficiency labelled (GEN);
 %the reconstruction selection efficiency (REC); the efficiency of the offline selection (OFF) comprising of trigger, $J/\psi$ and $\Psi(2S)$ veto, MVA based selection (CombiBDT and MisidBDT); fitting region selection (fitrange); the efficiency of the PID requirement (PID). Individual  
@@ -77,7 +83,7 @@ Having all the individual efficiencies the relative efficiency with no FCME spli
 \section{Summary of Efficiencies}
 \label{EfficiencySummary}
 
-The summary of individual efficiencies together with total efficiency, which is calculated for signal using nominator of~\autoref{eq:notsplitted} and for normalisation denominator of~\autoref{eq:notsplitted}, is given in~\autoref{tab:effsumarry}.
+The summary of individual efficiencies together with total efficiency for NOFCME, which is calculated for signal using nominator of~\autoref{eq:notsplitted} and for normalisation denominator of~\autoref{eq:notsplitted}, is given in~\autoref{tab:effsumarry}. 
 %taken from /vols/lhcb/ss4314/tablesforana/efficiencyratios/2016/SesFUMSB_NOTsimultaneous_full_Error/plot_interesting/bin/*OK*per*tex
 \begin{table}[H]
 \begin{center}
@@ -132,9 +138,7 @@ Hence resulting values for relative no fractional corrected mass split efficienc
 \end{aligned}
 \label{eq:nofcmeer}
 \end{equation}
-
-
-Including fractional corrected mass split efficiency ratios defined in~\autoref{eq:impsplit} are
+Including fractional corrected mass split efficiency ratios defined in~\autoref{eq:splitted} are
 
 \begin{equation}
 \begin{aligned}
@@ -157,8 +161,7 @@ As it can be noticed, different selections that were optimised for Run \Rn{1} an
 \label{fig:rateffsnofcme}
 \end{figure}
 
-
-More detailed discussion on individual efficiencies is covered in following subsections. 
+\noindent More detailed discussion on individual efficiencies is covered in following subsections. 
 
 
 \subsection{Detector Acceptance Efficiency (GEN)}
@@ -1449,7 +1452,7 @@ $N_{partreco_{high}}$ & 25.1 & 5.17 \\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Resulting yields for different components from the corrected mass fit with $\mathcal{B}(\Bmumumu) =-1.78\times 10^{-8}$.}
+	\caption{Resulting yields for different components from the corrected mass fit with $\mathcal{B}(\Bmumumu) =-1.78\times 10^{-8}$.\mybox{Sally need to still fix this}}
 \label{tab:yieldiatkos}
 \end{table}
 
