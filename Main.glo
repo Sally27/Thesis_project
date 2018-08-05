@@ -29,7 +29,7 @@
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{OT?\glossentry{OT}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{OT?\glossentry{OT}|setentrycounter[]{page}\glsnumberformat}{13}
-\glossaryentry{Cos$(\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{13}
+\glossaryentry{$\cos (\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{LHC?\glossentry{LHC}|setentrycounter[]{page}\glsnumberformat}{20}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{20}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{20}
@@ -38,7 +38,7 @@
 \glossaryentry{L0?\glossentry{L0}|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{26}
-\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{SM?\glossentry{SM}|setentrycounter[]{page}\glsnumberformat}{28}
 \glossaryentry{SM?\glossentry{SM}|setentrycounter[]{page}\glsnumberformat}{28}
 \glossaryentry{SM?\glossentry{SM}|setentrycounter[]{page}\glsnumberformat}{28}
@@ -67,14 +67,12 @@
 \glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{41}
 \glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{41}
 \glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{41}
-\glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{41}
-\glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{41}
 \glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{42}
+\glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{42}
+\glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{43}
 \glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{43}
 \glossaryentry{SM?\glossentry{SM}|setentrycounter[]{page}\glsnumberformat}{43}
 \glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{43}
-\glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{43}
-\glossaryentry{SM?\glossentry{SM}|setentrycounter[]{page}\glsnumberformat}{44}
 \glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{44}
 \glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{44}
 \glossaryentry{CKM?\glossentry{CKM}|setentrycounter[]{page}\glsnumberformat}{44}
@@ -289,9 +287,9 @@
 \glossaryentry{OT?\glossentry{OT}|setentrycounter[]{page}\glsnumberformat}{89}
 \glossaryentry{FD?\glossentry{FD}|setentrycounter[]{page}\glsnumberformat}{89}
 \glossaryentry{FD?\glossentry{FD}|setentrycounter[]{page}\glsnumberformat}{89}
-\glossaryentry{Cos$(\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{89}
-\glossaryentry{Cos$(\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{89}
-\glossaryentry{Cos$(\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{$\cos (\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{$\cos (\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{$\cos (\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{89}
 \glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{90}
 \glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{91}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{91}
@@ -327,11 +325,11 @@
 \glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{108}
 \glossaryentry{PV?\glossentry{PV}|setentrycounter[]{page}\glsnumberformat}{108}
 \glossaryentry{SV?\glossentry{SV}|setentrycounter[]{page}\glsnumberformat}{108}
-\glossaryentry{Cos$(\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{108}
+\glossaryentry{$\cos (\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{108}
 \glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{109}
 \glossaryentry{Track $\mathbold {\chisq /\rm {ndof}}$?\glossentry{trackchi2ndof}|setentrycounter[]{page}\glsnumberformat}{109}
 \glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{109}
-\glossaryentry{Cos$(\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{$\cos (\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{109}
 \glossaryentry{FD $\mathbold {\chisq }$?\glossentry{fdchi2}|setentrycounter[]{page}\glsnumberformat}{109}
 \glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{109}
 \glossaryentry{L0?\glossentry{L0}|setentrycounter[]{page}\glsnumberformat}{109}
@@ -344,7 +342,7 @@
 \glossaryentry{HLT2?\glossentry{HLT2}|setentrycounter[]{page}\glsnumberformat}{110}
 \glossaryentry{$\mathbold {\mathrm {IP}\chisq }$?\glossentry{ipchi2}|setentrycounter[]{page}\glsnumberformat}{110}
 \glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{114}
-\glossaryentry{Cos$(\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{114}
+\glossaryentry{$\cos (\mathbold {\theta _{B}})$?\glossentry{DIRA}|setentrycounter[]{page}\glsnumberformat}{114}
 \glossaryentry{FD $\mathbold {\chisq }$?\glossentry{fdchi2}|setentrycounter[]{page}\glsnumberformat}{114}
 \glossaryentry{Vertex $\mathbold {\chisq /\rm {ndof}}$?\glossentry{vertexchi2ndof}|setentrycounter[]{page}\glsnumberformat}{114}
 \glossaryentry{Min $\mathbold {\mathrm {IP}\chisq }$?\glossentry{minipchi2}|setentrycounter[]{page}\glsnumberformat}{114}

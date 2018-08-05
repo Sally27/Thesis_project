@@ -126,6 +126,16 @@ A.~Arbey, F.~Mahmoudi, O.~Stal, and T.~Stefaniak,
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Sibidanov:2017vph}
+Belle, A.~Sibidanov {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{Search for
+  $B^{-}\to\mu^{-}\bar\nu_\mu$ Decays at the Belle Experiment}},
+  }{}\href{http://arxiv.org/abs/1712.04123}{{\normalfont\ttfamily
+  arXiv:1712.04123}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{Adachi:2012mm}
 Belle, I.~Adachi {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Evidence for $B^- \to \tau^-
@@ -170,16 +180,6 @@ BaBar, B.~Aubert {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{A
   \textbf{D81} (2010) 051101},
   \href{http://arxiv.org/abs/0912.2453}{{\normalfont\ttfamily
   arXiv:0912.2453}}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem{Sibidanov:2017vph}
-Belle, A.~Sibidanov {\em et~al.},
-  \ifthenelse{\boolean{articletitles}}{\emph{{Search for
-  $B^{-}\to\mu^{-}\bar\nu_\mu$ Decays at the Belle Experiment}},
-  }{}\href{http://arxiv.org/abs/1712.04123}{{\normalfont\ttfamily
-  arXiv:1712.04123}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

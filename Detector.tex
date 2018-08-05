@@ -79,7 +79,7 @@ The detector subsystems, all marked in~\autoref{fig:dec}, can be outlined as fol
 \begin{description}
 \item [VELO] The Vertex Locator system (\Gls{VELO}) is a high precision tracking system which provides good resolution on the $pp$ interaction vertex, or primary vertex (\Gls{PV}), and flight distance (\Gls{FD}). The resolution of the flight distance (i.e. how far a particle flies before decaying) for particles produced at the PV (so-called \gls{prompt} decays) is a function of the PV and the Secondary Vertex (SV). The VELO is discussed in more detail in~\autoref{sec:velo}.
 \item [TT and T stations] The tracking system is completed by the Tracker Turicensis (TT) station and Tracking stations (T stations), which lie upstream and downstream of the magnet respectively. The tracking system is discussed in more detail in~\autoref{sec:Tst} %and is made up of silicon microstrips and the tracking stations (T stations), which lie after the magent and are made up of silicon mircostrips in the inner parts and Kapton/AI straws in the outparts. 
-\item [RICH 1,2] The two Ring Imaging Cherenkov detectors (\Gls{RICH}) provide identification of charged hadrons by using Cherenkov radiation. The RICH information is important in the \Lbpi analysis, to help distinguish pions and protons from kaons. The RICH is discussed in more detail in~\autoref{sec:rich}.
+\item [RICH 1,2] The two Ring Imaging \v{C}erenkov detectors (\Gls{RICH}) provide identification of charged hadrons by using \v{C}erenkov radiation. The RICH information is important in the \Lbpi analysis, to help distinguish pions and protons from kaons. The RICH is discussed in more detail in~\autoref{sec:rich}.
 \item [The ECAL, HCAL and SPD/PS] The calorimeter system provides identification of photons, electrons (\Gls{ECAL}) and hadrons (\Gls{HCAL}) as well as giving information on their position and energy. The pre-shower (\Gls{PS}) detectors and Scintillator Pad Detectors (\Gls{SPD}) are used to help electron identification. The information provided by the calorimetry system is less important to the \Lbpi analysis than other subdetectors and is not discussed further.
 \item [Muon Chambers]  The muon chambers identify muons by employing large amounts of iron, which stop most particles, but not muons. The process of muon identification is discussed in more detail in~\autoref{sec:muonID}.
 \end{description}
@@ -430,15 +430,15 @@ The main role of the \Gls{RICH} is to provide identification for the charged had
 
 The momentum of a particle is highly correlated to the polar angle $\theta$, with high momentum particles having a smaller angle. The RICH1 detector system is placed just after the VELO and provides identification for particles with a low momentum range of 2-40\gevc. The RICH2 detector system is placed between the T stations and the first \gls{muonstation}, M1, and covers a momentum range of 15--100\gevc. The RICH2 detector system is placed further downstream, as the higher momentum particles are less affected by the magnet.
 
-The RICH functions on the basis that if a particle travels faster than the speed of light in a medium it will emit Cherenkov radiation. The angle of this radiation is related to the speed of the particle and the refractive index of the medium.  By measuring the Cherenkov angle $\theta_{c}$, the particle mass can be deduced through the relation
+The RICH functions on the basis that if a particle travels faster than the speed of light in a medium it will emit \v{C}erenkov radiation. The angle of this radiation is related to the speed of the particle and the refractive index of the medium.  By measuring the \v{C}erenkov angle $\theta_{c}$, the particle mass can be deduced through the relation
 
 \begin{equation}
   \cos\theta_{c} = 1/\beta n  = E/pn =  \frac{\sqrt{m^{2} + p^{2}}}{pn}.
 \end{equation}
 
-The radiators used in RICH1 are silica aerogel and $C_{4}F_{10}$. The aerogel has a very low density and high refractive index which makes it ideal for very low momentum particles with momenta $\sim$ \gevc. The aerogel is placed just after the VELO and the rest of the RICH1 is filled with $C_{4}F_{10}$. The optical system in both RICH detectors is similar. A primary spherical tilted focusing mirror and a plane secondary mirror focus and direct the Cherenkov light on to a plane of hybrid photon detectors (HPDs), as shown in~\autoref{fig:rich1}.
+The radiators used in RICH1 are silica aerogel and $C_{4}F_{10}$. The aerogel has a very low density and high refractive index which makes it ideal for very low momentum particles with momenta $\sim$ \gevc. The aerogel is placed just after the VELO and the rest of the RICH1 is filled with $C_{4}F_{10}$. The optical system in both RICH detectors is similar. A primary spherical tilted focusing mirror and a plane secondary mirror focus and direct the \v{C}erenkov light on to a plane of hybrid photon detectors (HPDs), as shown in~\autoref{fig:rich1}.
 
-%These mirrors focus the Cherenkov radiation of a particle on to the hybrid photon detectors (HPD), as seen in~\autoref{fig:rich1}.
+%These mirrors focus the \v{C}erenkov radiation of a particle on to the hybrid photon detectors (HPD), as seen in~\autoref{fig:rich1}.
 
 \begin{figure}[h!]
   \centering
@@ -455,10 +455,10 @@ A good understanding of the performance of the Particle IDentification (\Gls{PID
 
 %applied which includes all of the tracks in an event and the information from both RICH detectors simultaneously.
 
-The likelihood minimisation procedure starts by assuming all particles are pions, as pions are the most abundant particle type. The overall event likelihood is calculated from the distribution of the photon hits (which will form rings referred to as Cherenkov rings) along with the event's associated tracks and their errors, assuming the pion mass hypothesis for every track. The mass hypothesis of each track is then changed, one track at a time, whilst leaving the hypothesis for every other track in the event unchanged. The mass hypotheses for $e$, $\mu$, $K$ and proton are applied and the change in mass hypothesis which gives the largest increase in the event likelihood is identified. This method is repeated until no improvement in the event likelihood can be found and thus each track has been set to its preferred hypothesis. Some modifications are made to the logic described above in order to reduce CPU time. The final output of this algorithm is a variable for each track in an event which shows the difference in the total event log-likelihood when the mass hypothesis of the track in question is changed from a pion to $e$, $\mu$, $K$ and proton. These variables are referred to as e.g. \gls{dllkpi}  = $\Delta \text{Log}(\kaon - \pi)$, \gls{dllppi} = $\Delta \text{Log}(\proton - \pi)$ and \gls{dllmupi} = $\Delta \text{Log}(\mu - \pi)$. % and \dllepi = $\Delta \text{Log}(e- \pi)$.
+The likelihood minimisation procedure starts by assuming all particles are pions, as pions are the most abundant particle type. The overall event likelihood is calculated from the distribution of the photon hits (which will form rings referred to as \v{C}erenkov rings) along with the event's associated tracks and their errors, assuming the pion mass hypothesis for every track. The mass hypothesis of each track is then changed, one track at a time, whilst leaving the hypothesis for every other track in the event unchanged. The mass hypotheses for $e$, $\mu$, $K$ and proton are applied and the change in mass hypothesis which gives the largest increase in the event likelihood is identified. This method is repeated until no improvement in the event likelihood can be found and thus each track has been set to its preferred hypothesis. Some modifications are made to the logic described above in order to reduce CPU time. The final output of this algorithm is a variable for each track in an event which shows the difference in the total event log-likelihood when the mass hypothesis of the track in question is changed from a pion to $e$, $\mu$, $K$ and proton. These variables are referred to as e.g. \gls{dllkpi}  = $\Delta \text{Log}(\kaon - \pi)$, \gls{dllppi} = $\Delta \text{Log}(\proton - \pi)$ and \gls{dllmupi} = $\Delta \text{Log}(\mu - \pi)$. % and \dllepi = $\Delta \text{Log}(e- \pi)$.
 \subsection{The PID performance}
 \label{sec:pidperf}
-%% The PID performance can be investigated with data, using decays with isolated tracks, whereby the Cherenkov ring from a track does not overlap with other rings. This allows the Cherenkov angle to be uniquely predicted.
+%% The PID performance can be investigated with data, using decays with isolated tracks, whereby the \v{C}erenkov ring from a track does not overlap with other rings. This allows the \v{C}erenkov angle to be uniquely predicted.
 
 The performance of the PID is assessed using data candidates which have been selected without using PID information. Thus decays are needed whereby the individual daughter states can be reconstructed with very little background, using kinematic information alone. The decays chosen include the channels $\PLambda^{0}\to\proton\pim$ and $D^{*+} \to D^{0}(\kaon^{-}\pip)\pip$. These decays have a high purity as can be seen~\autoref{fig:pidcalib}.
 \begin{figure}[h!]
@@ -486,11 +486,11 @@ Using these control samples, the $\text{DLL}_{X\pi}$ distributions are considere
   \label{fig:pid1}
 \end{figure}
 
-The Cherenkov angle as a function of momentum for tracks passing through the $C_{4}F_{10}$ radiator is shown in~\autoref{fig:cheren}
+The \v{C}erenkov angle as a function of momentum for tracks passing through the $C_{4}F_{10}$ radiator is shown in~\autoref{fig:cheren}
 \begin{figure}[h!]
   \centering
   \includegraphics[scale = 0.9]{figs/cherenkov_angle.png} 
-  \caption{Reconstructed Cherenkov angle as a function of track momentum in the $C_{4}F_{10}$ radiator \cite{LHCb-DP-2012-003}.
+  \caption{Reconstructed \v{C}erenkov angle as a function of track momentum in the $C_{4}F_{10}$ radiator \cite{LHCb-DP-2012-003}.
   }
   \label{fig:cheren}
 \end{figure}

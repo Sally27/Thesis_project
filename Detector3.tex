@@ -156,30 +156,30 @@ Mass uncertainty is one of the crucial parameters to minimize as it provides opp
 \end{figure}
 
 \section{Ring Imaging Detectors}
-Particle identification, \Gls{PID}, at \Gls{LHCb} relies heavily on two dedicated Ring Imaging subdetectors. These detectors take advantage of the phenomena, emission of Cerenkov light, which happens when a charged particle travels through a medium at a speed faster than the phase velocity of light in that medium. This cone of light is emitted at an angle $\theta$ with respect to the charged particle's trajectory. Using the knowlegde of refractive index of the medium, $n$, and momentum $p$ that is measured using tracking, mass $m$ of the particle can be obtained through:
+Particle identification, \Gls{PID}, at \Gls{LHCb} relies heavily on two dedicated Ring Imaging subdetectors. These detectors take advantage of the phenomena, emission of \v{C}erenkov light, which happens when a charged particle travels through a medium at a speed faster than the phase velocity of light in that medium. This cone of light is emitted at an angle $\theta$ with respect to the charged particle's trajectory. Using the knowlegde of refractive index of the medium, $n$, and momentum $p$ that is measured using tracking, mass $m$ of the particle can be obtained through:
 
 \begin{equation}
 	\cos\theta_{c} =  \frac{\sqrt{m^{2} + p^{2}}}{pn}.
 \end{equation}
 
-As the momentum and mass are intrinsic properties of passing particle, the momentum identification range is limited by the choice of medium, also known as radiator. For very low-momentum particle, as $\cos\theta_{c} \rightarrow 1$, the particle is not producing any Cerenkov light cone. At the very high momentum, as $\cos\theta_{c} \rightarrow 0$, there is saturation point as all species of particles will emit the light at the same Cherenkov angle, hence all the discriminating power will be lost.
+As the momentum and mass are intrinsic properties of passing particle, the momentum identification range is limited by the choice of medium, also known as radiator. For very low-momentum particle, as $\cos\theta_{c} \rightarrow 1$, the particle is not producing any \v{C}erenkov light cone. At the very high momentum, as $\cos\theta_{c} \rightarrow 0$, there is saturation point as all species of particles will emit the light at the same \v{C}erenkov angle, hence all the discriminating power will be lost.
 
 Low momentum (2-60 \gev) particles are identified in the upstream RICH1 detector and high momentum particles (15-100) \gev are analyzed downstream in RICH2. RICH1 covers $\pm$ 25-300 mrad in x-z plane, $\pm$ 250 mrad in the x-y plane, using either gaseous Aerogel ($n=1.03$) and $C_{4}F_{10}$ ($n = 1.0014$) as radiators. RICH2 has more limited acceptance of $\pm$15-120 mrad in x-y plane and $\pm$100 mrad in x-z plane and uses $CF_{4}$ as radiator, with lower $n=1.0005$. The discrimination power between different particles can be seen~\autoref{fig:richres}. 
 
 
-Both RICH1 and RICH2 use set of spherical primary mirrors to guide the photons onto the flat secondary mirrors which are then further focused into Cerenkov rings onto the surface of Hybrid Photon Multipliers, \Gls{HPD}. The schmematic view of a particle passing through RICH1 can be also be seen in~\autoref{fig:richres}. 
+Both RICH1 and RICH2 use set of spherical primary mirrors to guide the photons onto the flat secondary mirrors which are then further focused into \v{C}erenkov rings onto the surface of Hybrid Photon Multipliers, \Gls{HPD}. The schmematic view of a particle passing through RICH1 can be also be seen in~\autoref{fig:richres}. 
 
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width = 0.55\textwidth]{figs/detector/richres1.eps}%
 	\includegraphics[width = 0.4\textwidth]{figs/detector/mechrich.eps}%
-	\caption{Separation power for different species of particles in momentum-Cerenkov angle plane (left). Schematic diagram of RICH1 layout (right). Boths figures are taken from \cite{det_paper}.}
+	\caption{Separation power for different species of particles in momentum-\v{C}erenkov angle plane (left). Schematic diagram of RICH1 layout (right). Boths figures are taken from \cite{det_paper}.}
 	\label{fig:richres}
 \end{figure}
 
 \section{RICH Reconstruction and Performance}
-In order to establish species of particles for each track, the Cerenkov angle is combined with the track momentum measured by tracking. In practice, however, as \Gls{RICH} detectors operate in high track density environment, many Cerenkov rings will be overlapping and hence a complex pattern recognition algorithm is deployed \cite{Forty:1999sg}. 
+In order to establish species of particles for each track, the \v{C}erenkov angle is combined with the track momentum measured by tracking. In practice, however, as \Gls{RICH} detectors operate in high track density environment, many \v{C}erenkov rings will be overlapping and hence a complex pattern recognition algorithm is deployed \cite{Forty:1999sg}. 
 
 
 For each event, the \Gls{RICH} computes full event likelihood that is consistent with assigning pion mass hypothesis for all tracks given the observed hit distribution read out by \Gls{HPD}. The algorithm then iterates through all other possible particle species, ($e, \mu, \pi, K,$ proton, deuteron), assigning new full event likelihood for a given track, having all other hypotheses fixed. The mass hypothesis with the highest full event likelihood is assigned to the track and this process is repeated for all the tracks in the event, until no improvement is found. 
