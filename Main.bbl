@@ -522,6 +522,18 @@ L.~Anderlini {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{The
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{sPlot}
+M.~Pivk and F.~R. Le~Diberder,
+  \ifthenelse{\boolean{articletitles}}{\emph{{SPlot: A Statistical tool to
+  unfold data distributions}},
+  }{}\href{http://dx.doi.org/10.1016/j.nima.2005.08.106}{Nucl.\ Instrum.\
+  Meth.\  \textbf{A555} (2005) 356},
+  \href{http://arxiv.org/abs/physics/0402083}{{\normalfont\ttfamily
+  arXiv:physics/0402083}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{Santos:2013gra}
 D.~Martínez~Santos and F.~Dupertuis,
   \ifthenelse{\boolean{articletitles}}{\emph{{Mass distributions marginalized
@@ -537,18 +549,6 @@ D.~Martínez~Santos and F.~Dupertuis,
 \bibitem{Skwarnicki:1986xj}
 T.~Skwarnicki, {\em {A study of the radiative CASCADE transitions between the
   Upsilon-Prime and Upsilon resonances}}, PhD thesis, Cracow, INP, 1986\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem{sPlot}
-M.~Pivk and F.~R. Le~Diberder,
-  \ifthenelse{\boolean{articletitles}}{\emph{{SPlot: A Statistical tool to
-  unfold data distributions}},
-  }{}\href{http://dx.doi.org/10.1016/j.nima.2005.08.106}{Nucl.\ Instrum.\
-  Meth.\  \textbf{A555} (2005) 356},
-  \href{http://arxiv.org/abs/physics/0402083}{{\normalfont\ttfamily
-  arXiv:physics/0402083}}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
