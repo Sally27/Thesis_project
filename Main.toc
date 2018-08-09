@@ -21,7 +21,7 @@
 \contentsline {section}{\numberline {3.2}VErtex LOcator }{61}{section.3.2}
 \contentsline {section}{\numberline {3.3}Tracking System }{63}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Tracking Algorithms}{64}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Ring Imaging Detectors }{66}{section.3.4}
+\contentsline {section}{\numberline {3.4}Ring Imaging \v {C}erenkov Detectors}{66}{section.3.4}
 \contentsline {section}{\numberline {3.5}RICH Reconstruction and Performance }{68}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}RICH performance }{68}{subsection.3.5.1}
 \contentsline {section}{\numberline {3.6}Calorimetry }{69}{section.3.6}
@@ -32,7 +32,7 @@
 \contentsline {section}{\numberline {3.9}Simulation }{78}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}Differences in Simulation And Data \framebox {ULRIK}}{79}{subsection.3.9.1}
 \contentsline {chapter}{\numberline {4}Handling of trimuon correlations at LHCb}{81}{chapter.4}
-\contentsline {section}{\numberline {4.1}Muon PID variables }{81}{section.4.1}
+\contentsline {section}{\numberline {4.1}Muon PID variables}{81}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Binary Muon PID variables }{82}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Muon PID variables based on sharing hits }{82}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Muon PID variables based on regression techniques }{85}{subsection.4.1.3}
@@ -40,7 +40,7 @@
 \contentsline {section}{\numberline {4.3}Probability of \mb {K/\pi \rightarrow \mu } misidentification at LHCb }{90}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Specific control sample for \mb {K/\pi \rightarrow \mu } misID rates }{91}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Selection for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} }{91}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Fitting Strategy for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} decay }{92}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.3}Fitting Strategy for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} decay }{91}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Results of \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} control sample for \mb {K/\pi \rightarrow \mu } misID rates }{96}{subsection.4.3.4}
 \contentsline {chapter}{\numberline {5}Looking for \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } decays at LHCb}{101}{chapter.5}
 \contentsline {section}{\numberline {5.1}Topology of the \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } decay at LHCb}{101}{section.5.1}

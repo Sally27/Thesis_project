@@ -1,28 +1,29 @@
 \chapter{Handling of trimuon correlations at LHCb}
 \label{chap:trimuon}
 
-\color{red}\mybox{asked for more formal wording, is this ok?}
-\textit{This chapter discusses issues associated with three muons passing through the detector. Two collimated muons may traverse through the same parts of the detector if they bear the same charge, causing problems in resolving their individual tracks. Therefore, ghosts and clones are much more likely to occur. In LHCb, plethora of muon \Gls{PID} variables are used to suppress these types of spurious tracks. However, the usage of \gls{PID} variables in an analysis in \gls{LHCb} brings its own challenges. As the simulation is not able to estimate \gls{PID} efficiencies correctly, most of the \gls{PID} efficiencies are taken from control samples. New control samples for \Bmumumu are considered as the \Gls{PID} efficiencies depend strongly on number of muons in the detector and in standard misID control samples there are no other muons in the event.}
+
+\textit{This chapter discuss issues associated with three muons passing through the detector. Two collimated muons may traverse through the same parts of the detector if they have the same charge, causing problems in resolving their individual tracks. Therefore, ghosts and clones are much more likely to occur. In LHCb, a plethora of muon \Gls{PID} variables are used to suppress these types of spurious tracks. However, the usage of \gls{PID} variables in an analysis in \gls{LHCb} brings its own challenges. As the simulation is not able to estimate \gls{PID} efficiencies correctly, most of the \gls{PID} efficiencies are taken from control samples. New control samples for \Bmumumu are considered as the \Gls{PID} efficiencies depend strongly onthe number of muons in the detector and in the standard misID control samples there is just a single muon in each event.}
 
 \color{black}
 
-\section{Muon PID variables }
+\section{Muon PID variables}
+\label{otherpid}
 In addition to the muon identification variables mentioned in~\autoref{muonID}, there is a further set of criteria for selecting muons. In this section a summary of the variables used in the analysis of the \Bmumumu is discussed.
 
 \subsection{Binary Muon PID variables }
 Similar to \texttt{isMuon} shown in~\autoref{tab:ismuontab}, there are more binary variables, such as \texttt{isMuonTight}, that can help with classification of muons. As its name suggests, \texttt{isMuonTight} has stronger conditions to satisfy as compared to \texttt{isMuon}. 
 
-\color{red}{In each muon station (\gls{muonstation}) a field of interest, \gls{FOI} is defined as %a function of momentum $p$ in a following way:
+In each muon station (\gls{muonstation}) a field of interest, \gls{FOI} is defined as %a function of momentum $p$ in a following way:
 \begin{equation}
-	FOI_{x,y}=\rho0_{x,y}+\rho1_{x,y}\cdot \exp \left(\frac{\rho2_{x,y}\cdot p}{\gevc} \right),
+	FOI_{x,y}=\rho^{0}_{x,y}+\rho^{1}_{x,y}\cdot \exp \left(\frac{\rho^{2}_{x,y}\cdot p}{\gevc} \right),
 \end{equation}
-where $x,y$ are the dimensions perpendicular to the direction of the beam, $p$ is momentum of the muon, $\rho{i}_{x,y}$ are three dimension-dependent parameters tuned to give the best performance, by maximizing efficiency to misID rate.
+where $x,y$ are the dimensions perpendicular to the direction of the beam, $p$ is momentum of the muon, $\rho^{i}_{x,y}$ are three dimension-dependent parameters tuned to give the best performance, by maximizing efficiency to misID rate.
 
-When a muon passes through the detector, it leaves hits ($h_{x,y}$ coordinate) in pad with size $pad_{x,y}$ of each muon station. From the tracks formed in the tracking part of the detector, extrapolation coordinates $E_{x,y}$ are obtained by extrapolating the tracks into the muon stations. The hits are considered to be within the \gls{FOI} if they satisfy the condition that $|| h_{d} - E_{d} || < FOI_{d} \cdot pad_{d}$ for both d={x,y}.} 
+When a muon passes through the detector, it leaves hits ($h_{x,y}$ coordinate) in a pad with size $pad_{x,y}$ of each muon station. From the tracks formed in the tracking part of the detector, coordinates $E_{x,y}$ are obtained by extrapolating the tracks into the muon stations. The hits are considered to be within the \gls{FOI} if they satisfy the condition that $|| h_{d} - E_{d} || < FOI_{d} \cdot pad_{d}$ for both d={x,y}. 
 
 \color{black}
 
-The detector information is read out in the $x$ and $y$ direction separately. The pad slicing according to this read-out scheme is known as \textit{physical} slicing of pads. However, as seen in~\autoref{fig:pads}, the overlapping $x$ and $y$ \textit{physical} pads of can be grouped into \textit{logical} pads, which give information about $x$ and $y$ simultaneously. This leads to two groups of hits according to pad type: uncrossed hits - registered within \textit{physical} pads only, and crossed hits - given by \textit{logical} pads. Whereas \texttt{isMuon} only requires positive decision from uncrossed hits, \texttt{isMuonTight} requires positive decision based on crossed hits. 
+The detector information is read out in the $x$ and $y$ direction separately. The pad slicing according to this read-out scheme is known as \textit{physical} slicing of pads. However, as seen in~\autoref{fig:pads}, the overlapping $x$ and $y$ \textit{physical} pads can be grouped into \textit{logical} pads, which give information about $x$ and $y$ simultaneously. This leads to two groups of hits according to pad type: uncrossed hits - registered within \textit{physical} pads only, and crossed hits - given by \textit{logical} pads. Whereas \texttt{isMuon} only requires positive decision from uncrossed hits, \texttt{isMuonTight} requires positive decision based on crossed hits. 
 
 
 \begin{figure}[!h]
@@ -36,7 +37,7 @@ The detector information is read out in the $x$ and $y$ direction separately. Th
 \subsection{Muon PID variables based on sharing hits }
 \label{bugs}
 
-Another way of identifying muon tracks is based on the variable, \texttt{nShared}, which identifies the number of tracks with shared hits in the muon stations. For each hit within the \gls{FOI} of an extrapolated track, the \texttt{nShared} algorithm will check whether any other track was built using the given hit. In this case, the \texttt{nShared} variable of the muon track which has the bigger distance between the extrapolation coordinates and the hit coordinates is increased by 1. Hence this integer \gls{PID} variable helps supressing \textit{ghost} tracks and \textit{clones} if no tracks have hits in common with the owner of the track (\texttt{nShared=0}).
+Another way of identifying muon tracks is based on the variable, \texttt{nShared}, which identifies the number of tracks with shared hits in the muon stations. For each hit within the \gls{FOI} of an extrapolated track, the \texttt{nShared} algorithm will check whether any other track was built using the given hit. In this case, the \texttt{nShared} variable of the muon track which has the bigger distance between the extrapolation coordinates and the hit coordinates is increased by 1. Hence this integer \gls{PID} variable helps suppressing \textit{ghost} tracks and \textit{clones} if no tracks have hits in common with the owner of the track (\texttt{nShared=0}).
 
 %\subsection{Different \texttt{nShared} definitions for Run \Rn{1} and Run \Rn{2}
 %To make sure that muons for \Bmumumu are not coming from these spurious tracks,  \texttt{nShared==0} for all three muons is required. These three muon tracks will not to share hits in muon stations with any other downstream or long tracks. In analysing data, there were features in the Muon ID alghorithm, software that calculates most of muon \gls{PID} variables, which changed between Run \Rn{1} and Run \Rn{2} and will be discussed in greater detail, as it impacts the selection performed for \Bmumumu search.
@@ -46,15 +47,15 @@ The muon identification software algorithms evolved significantly between the pr
 The first feature that is different between Run \Rn{1} and Run \Rn{2} arises from the calculation of the distance between the extrapolation and the hit in \texttt{nShared} algorithm.
 In \textit{Stripping 21} used for 2012 and \textit{21r1} used for 2011 data, it was discovered that the distance between an extrapolated track and a hit was wrongly calculated. This mistake was corrected before \textit{Stripping 23}, used for analysing 2015 data. 
 
-Secondly, information from M1 station was used to calculate distances, even though M1 information is not usually used for Muon ID algorithms.  For analysts, this feature was present across all reconstruction software, meaning that simulation and data is affected in the same way.
+Secondly, information from the M1 station was used to calculate distances, even though M1 information is not usually used for the Muon ID algorithms.  For analysts, this feature was present across all reconstruction software, meaning that simulation and data is affected in the same way.
 
-In \textit{Stripping 23}, the Muon ID algorithm was rewritten to adapt for parallelisation that needs to be done in order to meet the criteria for the upgrade of \gls{LHCb}. There were two mistakes introduced prior to 2015 data taking.
+In \textit{Stripping 23}, the Muon ID algorithm was rewritten to adapt to the parallelisation that needs to be done in order to meet the criteria for the upgrade of \gls{LHCb}. There were two mistakes introduced prior to 2015 data taking.
 Firstly, an array was defined with 4-elements $[0,3]$ to store information about $x$ and $y$ coordinates of the hits. However, an iteration occurred by filling elements 1 to 4 of the array (M2-M5 station) resulting in a 5-element array where the 0-th element was not filled. Despite this, it turns out to be well-behaved and has no impact on physics.
 
 Further in the process, however, this information is used to calculate the sum and average of distances per station between the hits and extrapolations. This algorithm again iterates over $[0,3]$ arrays, meaning that no information is used from the M5 muon station. This obviously has an effect, but again it is consistent across the versions of the reconstruction software used for the processing of Run \Rn{2} data.
 
 %\newline Summary of these features can be found in \href{https://indico.cern.ch/event/612764/contributions/2567244/attachments/1449649/2234804/20170426\_nShared.pdf}{\color{blue} in this presentation} 
-The interplay between all these features for \bjpsimumuk decays, can be seen in Figure~\ref{fig:nSharedvar}, which see shift in distribution of \texttt{nShared} for 2016 data taking, making the muons less isolated.
+The interplay between all these features for \bjpsimumuk decays, can be seen in Figure~\ref{fig:nSharedvar}, which sees a shift in distribution of \texttt{nShared} for 2016 data taking, making the muons less isolated.
 
 \begin{figure}[h!]
 \centering
@@ -77,6 +78,7 @@ Using the same calibration channels as in~\autoref{muonperf}, misID and ID rates
 \end{figure}
 
 \subsection{Muon PID variables based on regression techniques }
+\label{muonPIDprobnn}
 Similar to the DLLmu variable in~\autoref{muonID}, which combines all the information from the detector into a global likelihood, it is possible to feed all the different variables to a neural network, which can then produce an output corresponding to the probability of a particle to be of a certain species. \texttt{Probnn${x}$}, where $x$ is the species of interest, is calculated and can be used also for muon identification. Compared to $\rm{DLL_{x}}$ variables, \texttt{Probnn${x}$} variables tend to have smaller correlation with the kinematics of the particle, and hence are more useful with decays where particles are soft, such as \Bmumumu. As with any machine learning algorithm, the selection of both the training sample and the input variables are important. In Run \Rn{1}, there were two tunings (trainings) introduced \texttt{V2} and \texttt{V3}, with more input variables in \texttt{V2}. Depending on the species of particles, \texttt{V2} or \texttt{V3} performed better. In the analysis of \Bmumumu, \texttt{Probnn${x}\_$V2} is used.
 
 
@@ -158,9 +160,9 @@ Hence, missing $p_{T}$ in the direction of the flight can be calculated using \g
 corrected mass $M_{corr} = \sqrt{{M}^{2} + |p^{2}_{T}|} + |p_{T}| = 4.2 \gevcc$, using missing $p_{T}$ from~\autoref{eq:mispt} and visible mass of \textit{clones} from~\autoref{eq:invmass}.
 
 
-In order to suppress these tracks in analysing \Bmumumu, where two muons have the same sign, any distinguishing features mentioned could be used. But the most powerful \gls{PID}-wise is requiring \texttt{nShared=0} in \Rn{1}, as this requirement removes all of the clones, as seen in~\autoref{fig:ClonesnShared}. 
-\color{red}For Run \Rn{2}, due to the introduced bugs, such strong requirement would harm signal efficiency too much so combination of \texttt{nShared<2} and \texttt{isMuonTight=1} is applied.
-\textit{this should remove them as well as nShared is increased for the non-owner track only- i assume that owner track will be that of nshared=0. I.e below nShared==3 for the clones, so for two muons nShared==2 so if there are two tracks, is ok}
+In order to suppress these tracks in analysing \Bmumumu, where two muons have the same sign, any distinguishing features mentioned could be used. But the most powerful \gls{PID}-wise is requiring \texttt{nShared=0} in Run \Rn{1}, as this requirement removes all of the clones, as seen in~\autoref{fig:ClonesnShared}. 
+For Run \Rn{2}, due to the introduced bugs, such strong requirement would harm signal efficiency too much so combination of \texttt{nShared<2} and \texttt{isMuonTight=1} is applied.
+%\textit{this should remove them as well as nShared is increased for the non-owner track only- i assume that owner track will be that of nshared=0. I.e below nShared==3 for the clones, so for two muons nShared==2 so if there are two tracks, is ok}
 \color{black}
 %\newline In order to keep the signal efficiency high in 2016 data, as shown in Table ~\ref{tab:Reason}, softer condition ,$\texttt{nShared}<2$, is applied.
 
@@ -175,7 +177,7 @@ In order to suppress these tracks in analysing \Bmumumu, where two muons have th
 
 \section{Probability of \mb{K/\pi \rightarrow \mu} misidentification at LHCb }
 
-Usually, in order to estimate background coming from misidentification of particles as muons in the detector, data samples with particles of known (non-muon) type are identified from the kinematics of decay chains. From these samples, probabilities of mis-identification are derived as discussed in~\autoref{RICHperf}. However, the three muon signature will induce problems for \gls{PID} variables that are correlated with the number of muons in the detector and specific data samples that incorporates this correlation have to be used for measuring the mis-identification probability.
+Usually, in order to estimate background coming from misidentification of particles as muons in the detector, data samples with particles of known (non-muon) type are identified from the kinematics of the decay chains. From these samples, probabilities of mis-identification are derived as discussed in~\autoref{RICHperf}. However, the three muon signature will induce problems for \gls{PID} variables that are correlated with the number of muons in the detector and specific data samples that incorporates this correlation have to be used for measuring the mis-identification probability.
 
 \subsection{Specific control sample for \mb{K/\pi \rightarrow \mu} misID rates }
 \label{extraction}
