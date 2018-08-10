@@ -305,39 +305,43 @@ for purposes of the \Bmumumu analysis the \textit{sWeight} values will be used. 
 
 \subsection{Results of \mb{B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}} control sample for \mb{K/\pi \rightarrow \mu} misID rates }
 \label{ratiatkos}
-\color{red} Using the \textit{sWeight} method, misID rates for kaons and pions can be obtained. In order to rule out that any disagreement of \gls{PID} performance is caused by the fraction of the real kaon and pions tracks within the muon fiducial area, following check is performed. For both control samples, kaon sample from the $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$ events and the kaon sample from the $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ events, the probability of correctly identifying kaon is computed, given that only extrapolated tracks that fall within muon acceptance are considered. This is achieved by requiring that given kaon track has \texttt{InMuonAcceptance==1.0}. It can be seen in ~\autoref{tab:ROE} that the ID performance is the same across nearly all of the momentum range for kaons, showing that the fraction of the kaons tracks within muon acceptance is very similar. The same check was performed for pions tracks as well. 
+%\color{red} Using the \textit{sWeight} method, misID rates for kaons and pions can be obtained. In order to rule out that any disagreement of \gls{PID} performance is caused by the fraction of the real kaon and pions tracks within the muon fiducial area, following check is performed. For both control samples, kaon sample from the $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$ events and the kaon sample from the $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ events, the probability of correctly identifying kaon is computed, given that only extrapolated tracks that fall within muon acceptance are considered. This is achieved by requiring that given kaon track has \texttt{InMuonAcceptance==1.0}. It can be seen in ~\autoref{tab:ROE} that the ID performance is the same across nearly all of the momentum range for kaons, showing that the fraction of the kaons tracks within muon acceptance is very similar. The same check was performed for pions tracks as well. 
 
-\color{black}
+%\color{black}
+%
+%\begin{table}[h!]
+%%\small
+%\begin{center}
+%\begin{tabular}{ l  H  H  c   }\toprule
+%	$p$ range [\mevc] & $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$  & $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}(\rightarrow \underline{K^{+} \pi^{-}})$  & $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}(\rightarrow \underline{K^{+} \pi^{-}})/D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$  \\	
+%\hline
+%3000 - 6000 &   0.77$\pm$0.0016 & 0.83$\pm$0.0047 & 1.1$\pm$0.0065 \\
+%6000 - 9300 &   0.93$\pm$0.00030 & 0.95$\pm$0.0019 & 1.0$\pm$0.0020 \\
+%9300 - 10000 &  0.96$\pm$0.00037 & 0.97$\pm$0.0031 & 1.0$\pm$0.0033 \\
+%10000 - 12600 &  0.97$\pm$0.00014 & 0.97$\pm$0.0017 & 1.0$\pm$0.0017 \\
+%12600 - 15600 &   0.98$\pm$0.00011 & 0.97$\pm$0.0017 & 0.99$\pm$0.0018 \\
+%15600 - 17500 &   0.98$\pm$0.00013 & 0.96$\pm$0.0024 & 0.98$\pm$0.0025 \\
+%17500 - 21500 &   0.98$\pm$8.9e-05 & 0.96$\pm$0.0018 & 0.98$\pm$0.0018 \\
+%21500 - 27000 &   0.98$\pm$7.8e-05 & 0.96$\pm$0.0018 & 0.98$\pm$0.0019 \\
+%27000 - 32000 &   0.98$\pm$8.8e-05 & 0.96$\pm$0.0024 & 0.98$\pm$0.0025 \\
+%32000 - 40000 &  0.98$\pm$8.0e-05 & 0.96$\pm$0.0022 & 0.98$\pm$0.0022 \\
+%40000 - 60000 &  0.97$\pm$7.5e-05 & 0.95$\pm$0.0021 & 1.0$\pm$0.0022 \\
+%60000 - 70000 &  0.96$\pm$0.00016 & 0.96$\pm$0.0043 & 1.0$\pm$0.0046 \\
+%70000 - 100000 &  0.95$\pm$0.00013 & 0.94$\pm$0.0044 & 0.99$\pm$0.0046 \\
+%\bottomrule
+%\end{tabular}
+%\end{center}
+%	\caption{\color{red} It is necesarry as this is unrelated to following figures  \color{black}\texttt{K$\_$InMuonAcc==1.0} shows the interpolation of $K$ tracks into muon chambers. It can be seen that both samples agree with each other very well, meaning that measured misID rate is done for the same fraction of considered tracks. This measurement is done in a pseudorapidity region $1.5<\eta<5.0$.}
+%\label{tab:ROE}
+%\end{table}
 
-\begin{table}[h!]
-%\small
-\begin{center}
-\begin{tabular}{ l  H  H  c   }\toprule
-	$p$ range [\mevc] & $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$  & $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}(\rightarrow \underline{K^{+} \pi^{-}})$  & $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}(\rightarrow \underline{K^{+} \pi^{-}})/D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$  \\	
-\hline
-3000 - 6000 &   0.77$\pm$0.0016 & 0.83$\pm$0.0047 & 1.1$\pm$0.0065 \\
-6000 - 9300 &   0.93$\pm$0.00030 & 0.95$\pm$0.0019 & 1.0$\pm$0.0020 \\
-9300 - 10000 &  0.96$\pm$0.00037 & 0.97$\pm$0.0031 & 1.0$\pm$0.0033 \\
-10000 - 12600 &  0.97$\pm$0.00014 & 0.97$\pm$0.0017 & 1.0$\pm$0.0017 \\
-12600 - 15600 &   0.98$\pm$0.00011 & 0.97$\pm$0.0017 & 0.99$\pm$0.0018 \\
-15600 - 17500 &   0.98$\pm$0.00013 & 0.96$\pm$0.0024 & 0.98$\pm$0.0025 \\
-17500 - 21500 &   0.98$\pm$8.9e-05 & 0.96$\pm$0.0018 & 0.98$\pm$0.0018 \\
-21500 - 27000 &   0.98$\pm$7.8e-05 & 0.96$\pm$0.0018 & 0.98$\pm$0.0019 \\
-27000 - 32000 &   0.98$\pm$8.8e-05 & 0.96$\pm$0.0024 & 0.98$\pm$0.0025 \\
-32000 - 40000 &  0.98$\pm$8.0e-05 & 0.96$\pm$0.0022 & 0.98$\pm$0.0022 \\
-40000 - 60000 &  0.97$\pm$7.5e-05 & 0.95$\pm$0.0021 & 1.0$\pm$0.0022 \\
-60000 - 70000 &  0.96$\pm$0.00016 & 0.96$\pm$0.0043 & 1.0$\pm$0.0046 \\
-70000 - 100000 &  0.95$\pm$0.00013 & 0.94$\pm$0.0044 & 0.99$\pm$0.0046 \\
-\bottomrule
-\end{tabular}
-\end{center}
-	\caption{\color{red} It is necesarry as this is unrelated to following figures  \color{black}\texttt{K$\_$InMuonAcc==1.0} shows the interpolation of $K$ tracks into muon chambers. It can be seen that both samples agree with each other very well, meaning that measured misID rate is done for the same fraction of considered tracks. This measurement is done in a pseudorapidity region $1.5<\eta<5.0$.}
-\label{tab:ROE}
-\end{table}
+Using the \textit{sWeight} method, misID rates for kaons and pions can be obtained. Two control samples that are analysed and compared are $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$ events (standard \texttt{PIDCalib} sample), where there are no other muons in the decay, and $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}(\rightarrow \underline{K^{+}\pi^{-}})$ events, where there are two real muons along with kaons or pions. Selecting only tracks that are within the muon fiducial region for both pion and kaon allows to perform study of the misID probabilities within the two calibration samples. In ~\autoref{fig:JpsiKnew}(a), the $\pi \rightarrow \mu$ misID probability for different \gls{PID} hypotheses from $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}(\rightarrow K^{+}\pi^{-})$ sample is studied. As it can be noticed, the more stringent the muon selection on the pion track, the lower the probability of misidentification.
+
+In general the agreement between the two samples is good in the low momentum regions as shown in ~\autoref{fig:JpsiKnew}(b). These pions are softer and hence they will spread out more in the magnetic field, causing less interference with two other real muons in decay. However, in the high momentum region, the pion will follow a path through the muon system that is more similar to the path of the muon of the same charge in the $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ decay. The influence of the two other real muons in a high momenta the region will lead to bigger disagreement as these two real muons leave hits in the muon chambers close to the collimated pion track, making the rate of \texttt{IsMuon==1.0} (pink) higher. 
 
 
-Hence using \texttt{InMuonAcc==1.0} tracks for both pion and kaon allows to perform study of the misID probabilities within the two calibration samples.
-In ~\autoref{fig:JpsiKnew}, the $\pi \rightarrow \mu$ misID probability for different \gls{PID} hypotheses are studied. As it can be noticed, the more stringent the muon selection on the pion track, the lower the probability of misidentification. 
+%By selection tracks within the muon fiducial region for both pion and kaon allows to perform study of the misID probabilities with the two calibration samples.
+%In ~\autoref{fig:JpsiKnew}, the $\pi \rightarrow \mu$ misID probability for different \gls{PID} hypotheses are studied. As it can be noticed, the more stringent the muon selection on the pion track, the lower the probability of misidentification. 
 
 %On the right, the ratio of the misID probabilities between two samples show particular trend. 
 
@@ -356,13 +360,14 @@ In ~\autoref{fig:JpsiKnew}, the $\pi \rightarrow \mu$ misID probability for diff
 		\label{fig:JpsiKnew}
 \end{figure}
 
-In general the agreement is good in the low momentum regions between the two samples as shown in ~\autoref{fig:JpsiKnew}. These pions are softer and hence they will spread out more in the magnetic field, causing less interference with other two real muons in decay. However, in high momentum region, the pion will follow a path through the muon system that is more similar to the path of the muon of the same charge in the $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ decay. The influence of other two real muons in high momenta region will lead to bigger disagreement as these two real muons leave hits in the muon chambers close to the collimated pion track, making the rate of \texttt{IsMuon==1.0} (pink) is higher. 
+%Using the \textit{sWeight} method, misID rates for kaons and pions can be obtained. Two control samples that are analysed are $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$ events and $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ events.
+%In general the agreement is good in the low momentum regions between the two samples as shown in ~\autoref{fig:JpsiKnew}. These pions are softer and hence they will spread out more in the magnetic field, causing less interference with other two real muons in decay. However, in high momentum region, the pion will follow a path through the muon system that is more similar to the path of the muon of the same charge in the $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ decay. The influence of other two real muons in high momenta region will lead to bigger disagreement as these two real muons leave hits in the muon chambers close to the collimated pion track, making the rate of \texttt{IsMuon==1.0} (pink) is higher. 
 
 This disagreement is decreased by requiring \texttt{nShared==0.0} (blue), as having two other collimated muons to share hits will be more likely. The effect of other \gls{PID} variables can also be seen, but it is harder to interpret as these depend on several variables.
 
-Even though this disagreement is decreased, it can still be noted that for the high momenta region $\pi \rightarrow \mu$ ~\autoref{fig:JpsiKnew} and $K \rightarrow \mu$~\autoref{fig:JpsiKaonnew} rate is 2 to 3 times higher with additional two real muon tracks, which is significant, as this means that if these misID rates are used to be parametrically applied on samples to estimate the background, the standard control sample would underestimate the misID component by the same factor.
+Even though this disagreement is decreased, for the high momenta region $\pi \rightarrow \mu$ ~\autoref{fig:JpsiKnew} and $K \rightarrow \mu$~\autoref{fig:JpsiKaonnew} rate is 2 to 3 times higher with additional two real muon tracks. Such disagreement is significant and if the misID rates from the standard control samples were to be used to be parametrically applied on samples to estimate the misID background, there would be an underestimate the misID component by the same factor.
 
-In conclusion, it was shown that the standard misID samples are not good proxy for estimating the misID probabilities as there is interference from two other muons in the event. Instead, the misID probabilities that are used in calculations for the misID background for \Bmumumu are obtained from \textit{Sweighted} $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$. Remaining effects of taking this sample for calibration are considered as a systematic uncertainty, with more details in~\autoref{misidfitstrat}.
+In conclusion, it was shown that the standard misID samples are not good proxies for estimating the misID probabilities as there is interference from two other muons in the event. Instead, the misID probabilities that are used in calculations for the misID background for \Bmumumu are obtained from \textit{Sweighted} $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$. Remaining effects of taking this sample for calibration are considered as a systematic uncertainty, with more details in~\autoref{misidfitstrat}.
 
 
 

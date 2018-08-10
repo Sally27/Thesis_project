@@ -42,74 +42,74 @@
 \contentsline {subsection}{\numberline {4.3.2}Selection for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} }{91}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Fitting Strategy for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} decay }{91}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Results of \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} control sample for \mb {K/\pi \rightarrow \mu } misID rates }{96}{subsection.4.3.4}
-\contentsline {chapter}{\numberline {5}Looking for \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } decays at LHCb}{101}{chapter.5}
-\contentsline {section}{\numberline {5.1}Topology of the \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } decay at LHCb}{101}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sources of Backgrounds}{104}{section.5.2}
-\contentsline {section}{\numberline {5.3}Analysis strategy}{105}{section.5.3}
-\contentsline {section}{\numberline {5.4}Signal Simulation Samples}{106}{section.5.4}
-\contentsline {section}{\numberline {5.5}Preselection}{107}{section.5.5}
-\contentsline {section}{\numberline {5.6}Trigger Selection}{109}{section.5.6}
-\contentsline {section}{\numberline {5.7}\mb {q^{2}} Selection}{111}{section.5.7}
-\contentsline {section}{\numberline {5.8}Further Selection}{112}{section.5.8}
-\contentsline {subsection}{\numberline {5.8.1}General Features of Multivariate Selections}{112}{subsection.5.8.1}
-\contentsline {subsection}{\numberline {5.8.2}The Isolation Boosted Decision Tree}{114}{subsection.5.8.2}
-\contentsline {subsection}{\numberline {5.8.3}The Combinatorial Boosted Decision Tree}{116}{subsection.5.8.3}
-\contentsline {subsection}{\numberline {5.8.4}The Misid Boosted Decision Tree}{118}{subsection.5.8.4}
-\contentsline {subsection}{\numberline {5.8.5}Fitting Region Selection}{121}{subsection.5.8.5}
-\contentsline {subsection}{\numberline {5.8.6}Further \gls {PID} Selection}{121}{subsection.5.8.6}
-\contentsline {section}{\numberline {5.9}Normalisation channel}{125}{section.5.9}
-\contentsline {section}{\numberline {5.10}Fractional Corrected Mass Error (FCME) Window Split}{126}{section.5.10}
-\contentsline {chapter}{\numberline {6}Background Studies}{129}{chapter.6}
-\contentsline {section}{\numberline {6.1}Combinatorial Background}{129}{section.6.1}
-\contentsline {section}{\numberline {6.2}MisID type background}{131}{section.6.2}
-\contentsline {section}{\numberline {6.3}Partially Reconstructed Background}{137}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Partially Reconstructed Backgrounds, where \mb {D^{0} \rightarrow \eta / \eta ' X}, and \mb {\eta / \eta ' \rightarrow \mu \mu \gamma }}{139}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Partially Reconstructed \mb {B \rightarrow \eta (') V} Backgrounds}{140}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Rare and resonant \mb {B^{+} \rightarrow \pi ^{+} / K^{+} \mu ^{-} \mu ^{+}} backgrounds}{141}{section.6.4}
-\contentsline {section}{\numberline {6.5}Summary}{142}{section.6.5}
-\contentsline {chapter}{\numberline {7}Mass fits and efficiencies}{143}{chapter.7}
-\contentsline {section}{\numberline {7.1}Efficiency Ratio}{143}{section.7.1}
-\contentsline {section}{\numberline {7.2}Summary of Efficiencies}{145}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Detector Acceptance Efficiency (GEN)}{148}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Reconstruction Efficiency (REC)}{148}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Trigger Efficiency (TRG)}{149}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}Offline Selection (OFF)}{152}{subsection.7.2.4}
-\contentsline {subsection}{\numberline {7.2.5}Combinatorial BDT and Misid BDT efficiency}{152}{subsection.7.2.5}
-\contentsline {subsection}{\numberline {7.2.6}Fitting Range Efficiency (FR)}{154}{subsection.7.2.6}
-\contentsline {subsection}{\numberline {7.2.7}\gls {PID} Efficiencies (PID)}{155}{subsection.7.2.7}
-\contentsline {section}{\numberline {7.3}Mass Fits}{158}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Normalisation Channel Parametrisation}{158}{subsection.7.3.1}
-\contentsline {subsubsection}{Signal}{158}{section*.95}
-\contentsline {subsubsection}{\mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {(\ensuremath {{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\psi }\xspace \mskip 2mu}}}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}}\xspace }\xspace ){\ensuremath {{\ensuremath {\ensuremath {\pi }\xspace }}\xspace ^+}}\xspace }}\xspace \xspace } Background}{158}{section*.96}
-\contentsline {subsubsection}{Combinatorial Background}{159}{section*.98}
-\contentsline {subsection}{\numberline {7.3.2}Normalisation Fit}{160}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Signal Channel Parametrisation}{163}{subsection.7.3.3}
-\contentsline {subsubsection}{Signal}{163}{section*.102}
-\contentsline {subsubsection}{Partially Reconstructed Background}{167}{section*.105}
-\contentsline {subsubsection}{MisID background}{170}{section*.108}
-\contentsline {subsubsection}{Combinatorial Background}{173}{section*.111}
-\contentsline {subsection}{\numberline {7.3.4}Signal Data Fits}{174}{subsection.7.3.4}
-\contentsline {subsubsection}{Signal fit models}{174}{section*.112}
-\contentsline {subsubsection}{Signal fit model hypotheses}{174}{section*.113}
-\contentsline {subsubsection}{Signal data types}{174}{section*.114}
-\contentsline {subsection}{\numberline {7.3.5}Signal Fit Systematics}{175}{subsection.7.3.5}
-\contentsline {subsubsection}{Signal Decay Model}{176}{section*.116}
-\contentsline {subsubsection}{Trigger}{176}{section*.117}
-\contentsline {subsubsection}{Kaon Interaction Probability}{177}{section*.118}
-\contentsline {subsubsection}{Kinematic Reweighting}{177}{section*.119}
-\contentsline {subsubsection}{Signal fit bias and coverage}{178}{section*.120}
-\contentsline {subsubsection}{Others}{179}{section*.123}
-\contentsline {subsection}{\numberline {7.3.6}Blinded Data Fits}{180}{subsection.7.3.6}
-\contentsline {subsection}{\numberline {7.3.7}Expected Sensitivity}{183}{subsection.7.3.7}
-\contentsline {subsection}{\numberline {7.3.8}Unblinded Data Fits}{184}{subsection.7.3.8}
-\contentsline {chapter}{\numberline {8}Results}{189}{chapter.8}
-\contentsline {section}{\numberline {8.1}Limit Setting}{189}{section.8.1}
-\contentsline {section}{\numberline {8.2}Conclusion}{190}{section.8.2}
-\contentsline {section}{\numberline {8.3}Outlook}{191}{section.8.3}
-\contentsline {chapter}{Bibliography}{193}{section.8.3}
-\contentsline {chapter}{Appendices}{200}{chapter*.135}
-\contentsline {chapter}{\numberline {A}Fitting functions}{200}{appendix.A}
-\contentsline {section}{\numberline {A.1}Crystal Ball function}{200}{section.A.1}
-\contentsline {section}{\numberline {A.2}Double-sided Ipatia function}{201}{section.A.2}
-\contentsline {section}{\numberline {A.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{201}{section.A.3}
-\contentsline {chapter}{\numberline {B}License}{202}{appendix.B}
+\contentsline {chapter}{\numberline {5}Looking for \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } decays at LHCb}{100}{chapter.5}
+\contentsline {section}{\numberline {5.1}Topology of the \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } decay at LHCb}{100}{section.5.1}
+\contentsline {section}{\numberline {5.2}Sources of Backgrounds}{103}{section.5.2}
+\contentsline {section}{\numberline {5.3}Analysis strategy}{104}{section.5.3}
+\contentsline {section}{\numberline {5.4}Signal Simulation Samples}{105}{section.5.4}
+\contentsline {section}{\numberline {5.5}Preselection}{106}{section.5.5}
+\contentsline {section}{\numberline {5.6}Trigger Selection}{108}{section.5.6}
+\contentsline {section}{\numberline {5.7}\mb {q^{2}} Selection}{110}{section.5.7}
+\contentsline {section}{\numberline {5.8}Further Selection}{111}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}General Features of Multivariate Selections}{111}{subsection.5.8.1}
+\contentsline {subsection}{\numberline {5.8.2}The Isolation Boosted Decision Tree}{113}{subsection.5.8.2}
+\contentsline {subsection}{\numberline {5.8.3}The Combinatorial Boosted Decision Tree}{115}{subsection.5.8.3}
+\contentsline {subsection}{\numberline {5.8.4}The Misid Boosted Decision Tree}{117}{subsection.5.8.4}
+\contentsline {subsection}{\numberline {5.8.5}Fitting Region Selection}{120}{subsection.5.8.5}
+\contentsline {subsection}{\numberline {5.8.6}Further \gls {PID} Selection}{120}{subsection.5.8.6}
+\contentsline {section}{\numberline {5.9}Normalisation channel}{124}{section.5.9}
+\contentsline {section}{\numberline {5.10}Fractional Corrected Mass Error (FCME) Window Split}{125}{section.5.10}
+\contentsline {chapter}{\numberline {6}Background Studies}{128}{chapter.6}
+\contentsline {section}{\numberline {6.1}Combinatorial Background}{128}{section.6.1}
+\contentsline {section}{\numberline {6.2}MisID type background}{130}{section.6.2}
+\contentsline {section}{\numberline {6.3}Partially Reconstructed Background}{136}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Partially Reconstructed Backgrounds, where \mb {D^{0} \rightarrow \eta / \eta ' X}, and \mb {\eta / \eta ' \rightarrow \mu \mu \gamma }}{138}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Partially Reconstructed \mb {B \rightarrow \eta (') V} Backgrounds}{139}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Rare and resonant \mb {B^{+} \rightarrow \pi ^{+} / K^{+} \mu ^{-} \mu ^{+}} backgrounds}{140}{section.6.4}
+\contentsline {section}{\numberline {6.5}Summary}{141}{section.6.5}
+\contentsline {chapter}{\numberline {7}Mass fits and efficiencies}{142}{chapter.7}
+\contentsline {section}{\numberline {7.1}Efficiency Ratio}{142}{section.7.1}
+\contentsline {section}{\numberline {7.2}Summary of Efficiencies}{144}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Detector Acceptance Efficiency (GEN)}{147}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Reconstruction Efficiency (REC)}{147}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Trigger Efficiency (TRG)}{148}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Offline Selection (OFF)}{151}{subsection.7.2.4}
+\contentsline {subsection}{\numberline {7.2.5}Combinatorial BDT and Misid BDT efficiency}{151}{subsection.7.2.5}
+\contentsline {subsection}{\numberline {7.2.6}Fitting Range Efficiency (FR)}{153}{subsection.7.2.6}
+\contentsline {subsection}{\numberline {7.2.7}\gls {PID} Efficiencies (PID)}{154}{subsection.7.2.7}
+\contentsline {section}{\numberline {7.3}Mass Fits}{157}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Normalisation Channel Parametrisation}{157}{subsection.7.3.1}
+\contentsline {subsubsection}{Signal}{157}{section*.94}
+\contentsline {subsubsection}{\mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace \ensuremath {(\ensuremath {{\ensuremath {{\ensuremath {J}\xspace \mskip -3mu/\mskip -2mu\ensuremath {\psi }\xspace \mskip 2mu}}}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-}}\xspace }\xspace ){\ensuremath {{\ensuremath {\ensuremath {\pi }\xspace }}\xspace ^+}}\xspace }}\xspace \xspace } Background}{157}{section*.95}
+\contentsline {subsubsection}{Combinatorial Background}{158}{section*.97}
+\contentsline {subsection}{\numberline {7.3.2}Normalisation Fit}{159}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Signal Channel Parametrisation}{162}{subsection.7.3.3}
+\contentsline {subsubsection}{Signal}{162}{section*.101}
+\contentsline {subsubsection}{Partially Reconstructed Background}{166}{section*.104}
+\contentsline {subsubsection}{MisID background}{169}{section*.107}
+\contentsline {subsubsection}{Combinatorial Background}{172}{section*.110}
+\contentsline {subsection}{\numberline {7.3.4}Signal Data Fits}{173}{subsection.7.3.4}
+\contentsline {subsubsection}{Signal fit models}{173}{section*.111}
+\contentsline {subsubsection}{Signal fit model hypotheses}{173}{section*.112}
+\contentsline {subsubsection}{Signal data types}{173}{section*.113}
+\contentsline {subsection}{\numberline {7.3.5}Signal Fit Systematics}{174}{subsection.7.3.5}
+\contentsline {subsubsection}{Signal Decay Model}{175}{section*.115}
+\contentsline {subsubsection}{Trigger}{175}{section*.116}
+\contentsline {subsubsection}{Kaon Interaction Probability}{176}{section*.117}
+\contentsline {subsubsection}{Kinematic Reweighting}{176}{section*.118}
+\contentsline {subsubsection}{Signal fit bias and coverage}{177}{section*.119}
+\contentsline {subsubsection}{Others}{178}{section*.122}
+\contentsline {subsection}{\numberline {7.3.6}Blinded Data Fits}{179}{subsection.7.3.6}
+\contentsline {subsection}{\numberline {7.3.7}Expected Sensitivity}{182}{subsection.7.3.7}
+\contentsline {subsection}{\numberline {7.3.8}Unblinded Data Fits}{183}{subsection.7.3.8}
+\contentsline {chapter}{\numberline {8}Results}{188}{chapter.8}
+\contentsline {section}{\numberline {8.1}Limit Setting}{188}{section.8.1}
+\contentsline {section}{\numberline {8.2}Conclusion}{189}{section.8.2}
+\contentsline {section}{\numberline {8.3}Outlook}{190}{section.8.3}
+\contentsline {chapter}{Bibliography}{192}{section.8.3}
+\contentsline {chapter}{Appendices}{199}{chapter*.134}
+\contentsline {chapter}{\numberline {A}Fitting functions}{199}{appendix.A}
+\contentsline {section}{\numberline {A.1}Crystal Ball function}{199}{section.A.1}
+\contentsline {section}{\numberline {A.2}Double-sided Ipatia function}{200}{section.A.2}
+\contentsline {section}{\numberline {A.3}\texttt {Rookeys} function from \texttt {ROOFIT} package}{200}{section.A.3}
+\contentsline {chapter}{\numberline {B}License}{201}{appendix.B}
