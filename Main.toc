@@ -44,7 +44,7 @@
 \contentsline {subsection}{\numberline {4.3.4}Results of \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} control sample for \mb {K/\pi \rightarrow \mu } misID rates }{96}{subsection.4.3.4}
 \contentsline {chapter}{\numberline {5}Looking for \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } decays at LHCb}{100}{chapter.5}
 \contentsline {section}{\numberline {5.1}Topology of the \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } decay at LHCb}{100}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sources of Backgrounds}{103}{section.5.2}
+\contentsline {section}{\numberline {5.2}Sources of Backgrounds}{102}{section.5.2}
 \contentsline {section}{\numberline {5.3}Analysis strategy}{104}{section.5.3}
 \contentsline {section}{\numberline {5.4}Signal Simulation Samples}{105}{section.5.4}
 \contentsline {section}{\numberline {5.5}Preselection}{106}{section.5.5}
