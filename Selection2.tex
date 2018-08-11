@@ -514,7 +514,7 @@ The misID background can proceed also through combination with a random muon and
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.9\linewidth]{./sel/CutEfficiency_Bplus_Corrected_MassMisid_nice.pdf}\put(-300,133){(a)}\put(-50,133){(b)}
-\caption{(a) The efficiency of applying 2016 combinatorial BDT at optimal working point on the 2016 SS misID sample. It can be seen that (b) combinatorial component of the misID sample has been significantly reduced, where red curve is the distribution after applying the cut.}
+	\caption{(a) The efficiency of applying 2016 combinatorial BDT at the optimal working point on the 2016 SS misID sample. It can be seen in (b) that the combinatorial component of the misID sample has been significantly reduced, where the red curve is the distribution after applying the cut.}
 \label{fig:combionmisid2016}
 \end{figure}
 
@@ -531,7 +531,7 @@ The most powerful variables that distinguish the signal from misID background ar
         \newline
 	\includegraphics[width=0.5\linewidth]{./sel/misid/plotvariablemu2_PTNICEDISMIX.pdf}%
 	\includegraphics[width=0.5\linewidth]{./sel/misid/plotvariablemu2_PNICEDISMIX.pdf}%
-	\caption{The variables with the most discriminative power for both misid Run \Rn{1} and \Rn{2} BDT, mostly kinematic properties of different muons.}
+	\caption{The variables with the most discriminative power for both misid Run \Rn{1} and Run \Rn{2} BDT. These are mostly kinematic properties of the different muons.}
 \label{fig:dismisif}
 \end{figure}
 
@@ -542,11 +542,11 @@ Because the signal mass distribution is expected to be in a more narrow window a
 
 \subsection{Further \gls{PID} Selection}
 \label{furtherpid}
-After classifiers to reduce combinatorial and misID backgrounds are trained and applied and the fitting region is defined, further \gls{PID} selection is performed. This can be done as the preselection had relatively loose $\rm{DLL}$ requirements and hence it is possible to improve the performance by using cuts on additional \gls{PID} variables. In the optimisation procedure, different hypotheses were tested, such as cuts on \texttt{Probnnmu}, \texttt{Probnnpi}, and \texttt{ProbnnK} variables and their combinations. The optimisation was performed in such a way as to optimize Punzi \texttt{FOM} with $\sigma=3$ in a blinded signal region, by performing the full blinded data fit (more information will be given in~\autoref{blindeddatafit}), but with fits to Run \Rn{1} and Run \Rn{2} data separately.
+After classifiers to reduce combinatorial and misID backgrounds are trained and applied and the fitting region is defined, further \gls{PID} selection is performed. This can be done as the preselection had relatively loose $\rm{DLL}$ requirements and hence it is possible to improve the performance by using cuts on additional \gls{PID} variables. In the optimisation procedure, different hypotheses were tested, such as cuts on \texttt{Probnnmu}, \texttt{Probnnpi}, and \texttt{ProbnnK} variables and their combinations. The optimisation was performed in such a way as to optimize the Punzi \texttt{FOM} with $n=3$ in a blinded signal region, by performing the full blinded data fit (more information will be given in~\autoref{blindeddatafit}), but with fits to Run \Rn{1} and Run \Rn{2} data separately.
 
 
 %In 2016, misID templates above 5800 \mevcc are not populated. Hence final 6 bins of corrected mass ($5800 \mevcc -7000 \mevcc$) are merged into 1. 
-For each PID hypothesis, the Punzi \texttt{FOM} was calculated. In both cases, in \Rn{1} and \Rn{2} \texttt{Probnnmu} $>$ 0.35 yielded the highest Punzi \texttt{FOM}.
+For each PID hypothesis, the Punzi \texttt{FOM} was calculated. In both cases, in Run \Rn{1} and \Rn{2} \texttt{Probnnmu} $>$ 0.35 yielded the highest Punzi \texttt{FOM}.
 
 
 
@@ -559,9 +559,9 @@ For each PID hypothesis, the Punzi \texttt{FOM} was calculated. In both cases, i
 \section{Normalisation channel}
 \label{nchannel}
 The normalisation channel used in this analysis is $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$
-as it is clean, well understood, and well-populated channel that is similar to signal. This means that many systematic uncertainties will cancel. Normalising the signal decay to this decay also means that absolute efficiencies, luminosity, the b-quark cross-section or fragmentation fractions will be cancelled. With the same number of tracks, it will also give a small uncertainty in the tracking efficiency. There are, however, a few differences in the selection that need to be underlined.
+as it is clean, well understood, and well-populated channel that is similar to the signal. This means that many systematic uncertainties will cancel. Normalising the signal decay to this decay also means that absolute efficiencies, luminosity, the b-quark cross-section and fragmentation fractions will cancel. With the same number of tracks, it will also give a reduced uncertainty from the tracking efficiency. There are, however, a few differences in the selection that need to be underlined.
 
-Firstly, the preselection stream from which this sample is taken has different requirements seen in~\autoref{tab:stripcutsBnorm}. As compared to preselection of the signal channel shown in~\autoref{tab:stripcutsB}, this preselection is less tight. To unify and impose same kind of preselection so that the tracks chosen are of a good quality and away from \gls{PV}, the preselection for signal channel is applied on the top of the original preselection.
+Firstly, the preselection stream from which this sample is taken has different requirements as seen in~\autoref{tab:stripcutsBnorm}. As compared to the preselection of the signal channel shown in~\autoref{tab:stripcutsB}, this preselection is less tight. To unify and impose the same kind of preselection so that the tracks chosen are of a good quality and away from \gls{PV}, the preselection for the signal channel is applied on the top of the original preselection.
 
 
 \begin{table}%[H]
@@ -595,9 +595,9 @@ Firstly, the preselection stream from which this sample is taken has different r
 \end{table}
 
 
-Secondly, this decay proceeds via the $J/\psi$ resonance and hence the $q^{2}$ veto for $J/\psi$ and $\Psi{(2S)}$, listed in~\autoref{tab:vetoes}, is not applied but rather reversed as seen in~\autoref{tab:stripcutsBnorm}. As the third particle is a kaon rather than muon, there is no explicit choice of $minq$ region.
+Secondly, this decay proceeds via the $J/\psi$ resonance and hence the $q^{2}$ veto for $J/\psi$ and $\Psi{(2S)}$, listed in~\autoref{tab:vetoes}, is not applied but rather reversed as seen in~\autoref{tab:stripcutsBnorm}. As the third particle is a kaon rather than a muon, there is no explicit choice of $minq$ region.
 
-And finally the kaon candidates are required to have \gls{PID} criteria consistent with being a kaon. In addition to the preselection already imposing $\rm{DLLK} > 0$,  $\rm{DLLp} - \rm{DLLK}< 5$ is required to make a distinction with protons. To assure that the kaon is not confused with the muon, \texttt{IsMuon==0.0} is imposed. But only kaon tracks, which have the properties that they could be within geometrical muon acceptance, \texttt{InMuonAcc==1.0}, are considered.  
+And finally, the kaon candidates are required to have \gls{PID} criteria consistent with being kaons. In addition to the preselection already imposing $\rm{DLLK} > 0$,  $\rm{DLLp} - \rm{DLLK}< 5$ is required to make a distinction with protons. To assure that the kaon is not confused with the muon, \texttt{IsMuon==0.0} is imposed. However, only kaon tracks which have the properties that they could be within geometrical muon acceptance, \texttt{InMuonAcc==1.0}, are considered.  
 %$\epsilon_{PID}$ is the efficiency of PID, that is taken from control data samples and then parametrically applied to simulation samples.
 
 
@@ -608,9 +608,7 @@ In order to increase sensitivity, but not to decrease statistics as all the prev
 	\sigma_{\rm{\{lowFCME,highFCME\}}} = \frac{\delta_\mathrm{{corr}}}{M_{\mathrm{B_{corr}}}},
 \label{eq:fraccormerr}
 \end{equation}
-
-
-where $\delta_\mathrm{{corr}}$ is the corrected mass error. Because the corrected mass error has clear dependence on resolution (see ~\autoref{fig:resolution}), this split will divide the data into two bins of resolution increasing the sensitivity for observation as shown in~\autoref{fig:resofit}.
+where $\delta_\mathrm{{corr}}$ is the estimate of the corrected mass error. Because the corrected mass error has clear dependence on resolution (see ~\autoref{fig:resolution}), this split will divide the data into two bins of resolution increasing the sensitivity for observation as shown in~\autoref{fig:resofit}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\linewidth]{sel/trial2012.pdf}\put(-100,133){(a)}
@@ -641,9 +639,9 @@ Numerically this corresponds to
           corrected mass corresponds to data with better mass
           resolution. The shape of the misidentification template is
           obtained from a control sample while the signal template is
-          obtained from simulation. These templates are constructed after all selection was applied.}
+          obtained from simulation. These templates are constructed after the full selection was applied.}
 \label{fig:resofit}
 \end{figure}
 
 
-However, in order to look at the consistency of this two bin strategy also one bin of fractional corrected mass error strategy is performed and will be denoted as $\sigma_{\rm{NOFCME}}$.
+However, in order to look at the consistency of this two bin strategy fits will also be performed with no binning in the fractional corrected mass error. These are denoted as $\sigma_{\rm{NOFCME}}$.

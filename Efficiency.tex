@@ -1,17 +1,17 @@
 \chapter{Mass fits and efficiencies}
 \label{chap:masandef}
 
-\textit{ To be able to translate observed signal events into branching fraction estimate,  the normalisation channel
+\textit{ To be able to translate observed signal events into a branching fraction estimate,  the normalisation channel
 of \bjpsimumuk is used. Both, for signal and normalisation
 channel the absolute efficiencies, luminosity, the b-quark cross-section or fragmentation fractions will
-cancel. There are, however, efficiencies that will not cancel and will be necessary for the final limit setting procedure. In this section, methods of obtaining efficiencies of selection for normalisation and signal channel are described. Later, fitting procedure is outlined.}
+cancel. There are, however, efficiencies that will not cancel and will be necessary for the final limit setting procedure. In this section, methods of obtaining efficiencies of selection for normalisation and signal channel are described. Later, the fitting procedure is outlined.}
 
 
 \section{Efficiency Ratio}
 \label{EfficiencyRatio}
 
 As this measurement is performed in a particular $minq$ region, discussed in ~\autoref{qsqchoice}, all signal efficiencies are calculated with the $minq$ selection imposed. 
-Overall selection efficiency for signal, $\varepsilon^{s}$, and normalisation, $\varepsilon^{n}$, includes contributions from the detector acceptance efficiency labelled (GEN); the reconstruction selection efficiency (REC); the offline selection efficiency comprising of trigger (TRG), $J/\psi$ and $\Psi(2S)$ veto (OFF), MVA based selection efficiency (CombiBDT and MisidBDT); fitting region selection efficiency (FR); the efficiency of the PID requirement (PID). The summary of method used to extract signal efficiency is shown in Table ~\autoref{tab:signaleffsummary}. For normalisation channel, there is no $minq$ region selection and hence full (\textit{generator-level+detector}) simulation is used everywhere apart from $\varepsilon_{GEN}$, \textit{generator-level}.
+Overall selection efficiency for signal, $\varepsilon^{s}$, and normalisation, $\varepsilon^{n}$, includes contributions from the detector acceptance efficiency labelled (GEN); the reconstruction selection efficiency (REC); the offline selection efficiency comprising of trigger (TRG), $J/\psi$ and $\Psi(2S)$ veto (OFF), MVA based selection efficiency (CombiBDT and MisidBDT); fitting region selection efficiency (FR); and the efficiency of the PID requirement (PID). A summary of the method used to extract the signal efficiency is shown in Table ~\autoref{tab:signaleffsummary}. For the normalisation channel, there is no $minq$ region selection and hence full the (\textit{generator-level+detector}) simulation is used everywhere apart from $\varepsilon_{GEN}$, \textit{generator-level}.
 
 \begin{table}[H]
 \centering
@@ -28,7 +28,8 @@ Component & Method  \\ \hline
 \label{tab:signaleffsummary}
 \end{table}
 
-The three methods for signal efficiency determination are listed:
+Three methods for signal efficiency determination
+are required for different parts of the selection chain.
 
 \begin{itemize}
 	\item Method \Rn{1} - The first two efficiencies, $\varepsilon_{GEN}$, $\varepsilon_{REC}$, for signal are obtained using privately generated simulation from~\autoref{tab:MCPPass} using
@@ -42,12 +43,12 @@ N_{in\_acc,minq} = N_{in\_acc} \times \varepsilon_{minq}.
 \label{eq:number}
 \end{equation}
 
-In Equation ~\autoref{eq:number}, $\varepsilon_{minq}$ is obtained by dividing number of generated events in \textit{generator-level} simulation (mentioned in~\autoref{tab:MCPPass}) with $minq$ condition imposed, $N_{generated,minq}$, to total number of generated events, $N_{generated}$. $N_{in\_acc}$ is the number of events in \textit{generator-level+detector} simulation before reconstruction, $N_{REC,minq}$ is the number of events after reconstruction with $minq$ condition.
-\item Method \Rn{2} - Divide number of events that passed the selection by total number of events prior to this particular selection step.
-\item Method \Rn{3} - Data-driven approach using \texttt{PIDCalib} package explained in~\autoref{simulationchap} of determining PID efficiency is used.
+In Equation ~\autoref{eq:number}, $\varepsilon_{minq}$ is obtained by dividing the number of generated events in the \textit{generator-level} simulation (mentioned in~\autoref{tab:MCPPass}) with $minq$ condition imposed, $N_{generated,minq}$, by the total number of generated events, $N_{generated}$. $N_{in\_acc}$ is the number of events in the \textit{generator-level+detector} simulation before reconstruction, $N_{REC,minq}$ is the number of events after reconstruction with the $minq$ condition.
+\item Method \Rn{2} - Divide number of events that passed the selection by the total number of events prior to this particular selection step.
+\item Method \Rn{3} - The data-driven approach using \texttt{PIDCalib} package explained in~\autoref{simulationchap} of determining PID efficiency is used.
 \end{itemize}
 
-Having all the individual efficiencies the relative efficiency with no FCME split, $R_{\rm{NOFCME}}^{\{21,26\}}(\varepsilon)$, can be calculated 
+Having all the individual efficiencies the relative efficiency with no FCME split, $R_{\rm{NOFCME}}^{\{21,26\}}(\varepsilon)$, can be calculated as 
 
 %\hspace*{-1.0cm}\begin{equation}
 %R^{\{21,26\}}_{\{NOFCME\}}(\varepsilon)=\frac{\varepsilon^{s}}{\varepsilon^{n}}=\frac{\varepsilon_{GEN}^{s}}{\varepsilon_{GEN}^{n}} \times \frac{\varepsilon_{REC}^{s}}{\varepsilon_{REC}^{n}} \times \frac{\varepsilon_{TRG}^{s}}{\varepsilon_{TRG}^{n}} \times \frac{\varepsilon_{OFF}^{s}}{\varepsilon_{OFF}^{n}} \times \frac{\varepsilon_{CombiBDT}^{s}}{\varepsilon_{CombiBDT}^{n}} \times \frac{\varepsilon_{MisidBDT}^{s}}{\varepsilon_{MisidBDT}^{n}} \times \frac{\varepsilon_{fitrange}^{s}}{\varepsilon_{fitrange}^{n}} \times \frac{\varepsilon_{PID}^{s}}{\varepsilon_{PID}^{n}},
@@ -83,7 +84,7 @@ Having all the individual efficiencies the relative efficiency with no FCME spli
 \section{Summary of Efficiencies}
 \label{EfficiencySummary}
 
-The summary of individual efficiencies together with total efficiency for NOFCME, which is calculated for signal using nominator of~\autoref{eq:notsplitted} and for normalisation denominator of~\autoref{eq:notsplitted}, is given in~\autoref{tab:effsumarry}. 
+The summary of individual efficiencies together with the total efficiency for $\sigma_{NOFCME}$, which is calculated for signal using the numerator of~\autoref{eq:notsplitted} and for normalisation the denominator of~\autoref{eq:notsplitted}, is given in~\autoref{tab:effsumarry}. 
 %taken from /vols/lhcb/ss4314/tablesforana/efficiencyratios/2016/SesFUMSB_NOTsimultaneous_full_Error/plot_interesting/bin/*OK*per*tex
 \begin{table}[H]
 \begin{center}
@@ -124,7 +125,7 @@ $\varepsilon_{total}$ & 0.1581& 0.0020 & 0.1182& 0.0008 & 0.3974& 0.0011 & 0.320
 %\bottomrule
 \end{tabular}
 \end{center}
-	\caption{Summary of individual simulation and/or data efficiencies in \% necessary for the relative efficiency between the signal and normalisation channel. Efficiency values for 2016 are TCK-weighted averaged efficiencies, which will be explained in~\autoref{trigef}. The errors considered are of statistical nature, computed using binomial error.}
+	\caption{Summary of individual simulation and/or data efficiencies in \% for the relative efficiency between the signal and normalisation channel. Efficiency values for 2016 are TCK-weighted averaged efficiencies, see~\autoref{trigef}. The errors considered are of statistical nature, computed using binomial errors.}
 \label{tab:effsumarry}
 \end{table}
 
@@ -133,25 +134,25 @@ Hence resulting values for relative no fractional corrected mass split efficienc
 
 \begin{equation}
 \begin{aligned}
-	R^{21}_{\rm{NOFCME}}(\varepsilon)=\frac{(1.58\pm0.02)\times 10 ^{-3 }}{(3.97\pm0.01)\times 10 ^{-3 }}=(3.98\pm0.05)\times 10 ^{-1 },\\
-	R^{26}_{\rm{NOFCME}}(\varepsilon)=\frac{(1.18\pm0.01)\times 10 ^{-3 }}{(3.20\pm0.00)\times 10 ^{-3 }}=(3.69\pm0.03)\times 10 ^{-1 }.
+	R^{21}_{\rm{NOFCME}}(\varepsilon)=\frac{(1.58\pm0.02)\times 10 ^{-3 }}{(3.97\pm0.01)\times 10 ^{-3 }}=0.398\pm0.005,\\
+	R^{26}_{\rm{NOFCME}}(\varepsilon)=\frac{(1.18\pm0.01)\times 10 ^{-3 }}{(3.20\pm0.00)\times 10 ^{-3 }}=0.369\pm0.003.
 \end{aligned}
 \label{eq:nofcmeer}
 \end{equation}
-Including fractional corrected mass split efficiency ratios defined in~\autoref{eq:splitted} are
+Including fractional corrected mass split defined in~\autoref{eq:splitted} the ratios are
 
 \begin{equation}
 \begin{aligned}
-	R^{21}_{\rm{lowFCME}}(\varepsilon)=\frac{(7.44\pm0.12)\times 10 ^{-4 }}{(2.33\pm0.01)\times 10 ^{-3 }}=(3.20\pm0.05)\times 10 ^{-1 },\\
-	R^{21}_{\rm{highFCME}}(\varepsilon)=\frac{(8.37\pm0.13)\times 10 ^{-4 }}{(1.65\pm0.01)\times 10 ^{-3 }}=(5.09\pm0.08)\times 10 ^{-1 },\\
-	R^{26}_{\rm{lowFCME}}(\varepsilon)=\frac{(6.51\pm0.05)\times 10 ^{-4 }}{(2.15\pm0.00)\times 10 ^{-3 }}=(3.03\pm0.02)\times 10 ^{-1 },\\
-	R^{26}_{\rm{highFCME}}(\varepsilon)=\frac{(5.33\pm0.05)\times 10 ^{-4 }}{(1.05\pm0.00)\times 10 ^{-3 }}=(5.06\pm0.04)\times 10 ^{-1 }.
+	R^{21}_{\rm{lowFCME}}(\varepsilon)=\frac{(7.44\pm0.12)\times 10 ^{-4 }}{(2.33\pm0.01)\times 10 ^{-3 }}= 0.320\pm0.005,\\
+	R^{21}_{\rm{highFCME}}(\varepsilon)=\frac{(8.37\pm0.13)\times 10 ^{-4 }}{(1.65\pm0.01)\times 10 ^{-3 }}=0.509\pm0.008,\\
+	R^{26}_{\rm{lowFCME}}(\varepsilon)=\frac{(6.51\pm0.05)\times 10 ^{-4 }}{(2.15\pm0.00)\times 10 ^{-3 }}=0.303\pm0.002,\\
+	R^{26}_{\rm{highFCME}}(\varepsilon)=\frac{(5.33\pm0.05)\times 10 ^{-4 }}{(1.05\pm0.00)\times 10 ^{-3 }}=0.506\pm0.004.
 \end{aligned}
 \label{eq:allfcmeer}
 \end{equation}
 	
 	
-As it can be noticed, different selections that were optimised for Run \Rn{1} and \Rn{2} yield different overall as well as individual efficiencies. This results in small differences in sensitivity between Run \Rn{1} and Run \Rn{2}. To better understand where does this difference come from, ratio of individual relative efficiencies as a function of stripping version is plotted in the~\autoref{fig:rateffsnofcme}. The difference can be attributed to different BDTs.
+As it can be noticed, different selections that were optimised for Run \Rn{1} and Run \Rn{2} yield different overall as well as individual efficiencies. This results in small differences in sensitivity between Run \Rn{1} and Run \Rn{2}. To better understand where this difference comes from, the ratios of individual relative efficiencies as a function of stripping version is plotted in the~\autoref{fig:rateffsnofcme}. The difference can be attributed to different BDTs.
 
 \begin{figure}[H]
 \centering
@@ -161,14 +162,14 @@ As it can be noticed, different selections that were optimised for Run \Rn{1} an
 \label{fig:rateffsnofcme}
 \end{figure}
 
-\noindent More detailed discussion on individual efficiencies is covered in following subsections. 
+%\noindent More detailed discussion on individual efficiencies is covered in following subsections. 
 
 
 \subsection{Detector Acceptance Efficiency (GEN)}
-For charged particles detector acceptance efficiency describes the fraction of decays contained in the polar angle region of [10, 400] mrad.  
-For 2012 and 2016 simulation samples, the overall detector acceptance efficiency will be the average for two possible magnetic polarity conditions: down, up. For 2012 this will be also averaged with two different simulation versions: Pythia 6.4\cite{pythia6} and Pythia 8.1\cite{pythia8}.
+For charged particles, detector acceptance efficiency describes the fraction of decays contained in the polar angle region of [10, 400] mrad.  
+For 2012 and 2016 simulation samples, the overall detector acceptance efficiency will be the average for two possible magnetic polarity conditions. For 2012 this will be also averaged with two different simulation versions: Pythia 6.4\cite{pythia6} and Pythia 8.1\cite{pythia8}.
 
-The hierarchy of generator level efficiencies $\varepsilon^{s}_{GEN} > \varepsilon^{n}_{GEN}$ is expected as the muon is lighter than kaon making kaon more likely to be softer and at larger angle, therefore outside of the acceptance. 
+The hierarchy of generator level efficiencies $\varepsilon^{s}_{GEN} > \varepsilon^{n}_{GEN}$ is expected as the muon is lighter than kaon, making the kaon more likely to be softer and at larger angle, therefore outside of the acceptance. 
 
 %
 %        \begin{table}[H]
@@ -205,9 +206,9 @@ The hierarchy of generator level efficiencies $\varepsilon^{s}_{GEN} > \varepsil
 %        \end{table}
 
 \subsection{Reconstruction Efficiency (REC)}
-The reconstruction efficiency is calculated on simulated events which have passed the detector acceptance. For signal, this efficiency consists of reconstruction and stripping, detailed in~\autoref{tab:stripcutsB}. For normalisation it consists from reconstruction, stripping, \textbf{and on the top} signal stripping is applied. This is done so that selections in normalisation and signal channel are kept as similar as possible and the fact that the signal selection has tighter cuts as explained in~\autoref{nchannel}. However, it should be noted that reconstruction efficiency reflects stripping selection \textbf{without the PID cuts} for both signal and normalisation. This is because \gls{PID} is badly modelled in simulation and hence will be accounted for separately and at the end of the selection chain.
+The reconstruction efficiency is calculated on simulated events which have passed the detector acceptance. For signal, this efficiency consists of reconstruction and stripping, detailed in~\autoref{tab:stripcutsB}. For normalisation it consists from reconstruction, stripping, \textbf{and on top} the signal stripping is applied. This is done so that selections in normalisation and signal channel are kept as similar as possible and the fact that the signal selection has tighter cuts as explained in~\autoref{nchannel}. However, it should be noted that reconstruction efficiency reflects stripping selection \textbf{without the PID cuts} for both signal and normalisation. This is because \gls{PID} is badly modelled in simulation and hence will be accounted for separately and at the end of the selection chain.
 
-The hierarchy of reconstruction level efficiencies $\varepsilon^{s}_{REC} < \varepsilon^{n}_{REC}$ is also expected as many variables in a signal stripping are based on alignment of the mother $B$ with its daughters. For fully reconstructed normalisation channel this is expected to be the case, whereas for not fully reconstructed decays alignment requirements make selection tighter. 
+The hierarchy of reconstruction level efficiencies $\varepsilon^{s}_{REC} < \varepsilon^{n}_{REC}$ is also expected as many variables in a signal stripping are based on alignment of the mother $B$ with its daughters. For fully reconstructed normalisation channel this is expected to be the case, whereas for not fully reconstructed decays the alignment requirement make the selection tighter. 
 
 %  \begin{table}[H]
 %                \begin{center}
@@ -231,17 +232,18 @@ The hierarchy of reconstruction level efficiencies $\varepsilon^{s}_{REC} < \var
 
 \subsection{Trigger Efficiency (TRG)}
 \label{trigef}
- The trigger efficiency is calculated on the top of (GEN) and (REC) efficiency. In order to extract the trigger efficiency, full simulation for both signal and normalisation is used. It should be noted though that at \gls{LHCb}, full simulation is produced based on a certain trigger configuration. Trigger configuration key, TCK, represents unique code for exact conditions the data have been triggered with at \texttt{L0}, \texttt{HLT1} and \texttt{HLT2}, notably thresholds of certain quantities such as $p$, $p_{T}$. 
+ The trigger efficiency is calculated on top of the (GEN) and (REC) efficiency. In order to extract the trigger efficiency, full simulation for both signal and normalisation is used. It should be noted though that at \gls{LHCb}, full simulation is produced based on a certain trigger configuration. The trigger configuration key, TCK, represents a unique code for exact conditions the data have been triggered with at \texttt{L0}, \texttt{HLT1} and \texttt{HLT2}, notably thresholds of certain quantities such as $p$ and $p_{T}$. 
  
-Therefore if default TCK for simulation is representative for the whole considered dataset then the efficiency can be extracted directly from the simulation produced, which is the case for the Run \Rn{1} data.
+Therefore, if default TCK for simulation is representative for the whole considered dataset, then the efficiency can be extracted directly from the simulation produced, which is the case for the Run \Rn{1} data.
 
-However in Run \Rn{2} the trigger thresholds have been changing often resulting in 16 different TCKs with very different $p$, $p_{T}$ thresholds, see Table ~\autoref{tab:2016MC} for full detail. In the third column, luminosity proportion for 2016 is given. It can be seen that the default simulation in 2016 (corresponding to TCK decimal key 288888335) only represents around 35\% of the data. For this reason, the trigger efficiencies for 2016 data have been obtained by emulation of the trigger on simulation for \texttt{L0} and \texttt{HLT1} level for each individual TCK, creating 16 TCK-based simulations.  This trigger emulation to extract efficiencies was tested with the default trigger configuration (TCK 288888335) to validate the emulation and the correct efficiencies have been recovered. It should be noted that small differences arise from difference between \textit{offline} and \texttt{HLT1} container for \gls{PV}s which stores the information about \gls{minipchi2} as the \gls{PV} finding-algorithm is different, but these have negligible effect. \mybox{mentioning this just for reproducibility, but maybe not necessary}.
+However in Run \Rn{2}, the trigger thresholds have been changing often resulting in 16 different TCKs with very different $p$ and $p_{T}$ thresholds, see Table ~\autoref{tab:2016MC} for full details. In the second column, luminosity proportion for 2016 is given. It can be seen that the default simulation in 2016 (corresponding to TCK decimal key 288888335) only represents around 35\% of the data. For this reason, the trigger efficiencies for 2016 data have been obtained by emulation of the trigger on simulation for \texttt{L0} and \texttt{HLT1} level for each individual TCK, creating 16 TCK-based simulations.  This trigger emulation to extract efficiencies was tested with the default trigger configuration (TCK 288888335) to validate the emulation and the correct efficiencies have been recovered. It should be noted that small differences arise from difference between \textit{offline} and \texttt{HLT1} container for \gls{PV}s which stores the information about \gls{minipchi2} as the \gls{PV} finding-algorithm is different, but these have negligible effect. %\mybox{mentioning this just for reproducibility, but maybe not necessary}.
 %Therefore the emulation will not be exact, however, the effect is very small as it seems to be only resolution that will slightly shift the distribution, see figure ~\autoref{fig:hlt1shortcoming} 
 
-In order to obtain the average efficiency for Run \Rn{2}, the 16 TCK efficiencies are weighted by the proportion of luminosity corresponding to the integrated luminosity for a given TCK over the full 2016 integrated luminosity. The integrated luminosity per TCK was extracted by looking at API version of the \gls{LHCb} run database. 
+In order to obtain the average efficiency for Run \Rn{2}, the 16 TCK efficiencies are weighted by the proportion of luminosity corresponding to the integrated luminosity for a given TCK over the full 2016 integrated luminosity.
+%The integrated luminosity per TCK was extracted by looking at API version of the \gls{LHCb} run database. 
 
-The full trigger luminosity for Run \Rn{2} is calculated by averaging the luminosity-weighted efficiencies, as seen in ~\autoref{tab:L0andHLT1Calib}. This averaged efficiency is going to be given as a final efficiency for 2016 from now on.  
-
+The full trigger efficiency for Run \Rn{2} is calculated by averaging the luminosity-weighted efficiencies, as seen in ~\autoref{tab:L0andHLT1Calib}. This TCK-dependant luminosity-weighted average efficiency is going to be given as a final efficiency for Run \Rn{2} from now on for all subsequent efficiencies unless stated otherwise.  
+%Given that trigger efficiencies for Run \Rn{2} are TCK-dependant, luminosity-weighted average are calculated from now on for all the efficiencies.
 
 \begin{table}
 	\begin{center}
@@ -268,7 +270,7 @@ The full trigger luminosity for Run \Rn{2} is calculated by averaging the lumino
       288888337 & 0x11381611 & $ 2.7$ &  $44.1$  &  0.2 & 6.0 & 1.1  & 35  & 450 & 31 \\% & $-$   \\
       288888338 & 0x11381612 & $5.4$ &  $89.8$  &  0.2 & 6.0 & 1.1  & 35  & 450 & 33 \\% & $-$    \\
       288888339 & 0x11381613 & $0.1$ &  $1.1$  &  0.2 & 6.0 & 1.1  & 35  & 450 & 27 \\ \hline% & 1000 \\
-      \multicolumn{10}{c}{\textbf{MC Default}} \\ \hline
+      \multicolumn{10}{c}{\textbf{Default Simulation}} \\ \hline
       1362630159 & 0x5138160f & $-$  & $-$   & 0.2 & 6.0 & 1.1  & 35 & 450 & 37\\% &  157\\
      \bottomrule
    \end{tabular}
@@ -277,7 +279,7 @@ The full trigger luminosity for Run \Rn{2} is calculated by averaging the lumino
 	\end{center}
 \end{table}
 
-For the \texttt{HLT2} level, there were no significant changes of thresholds and are hence efficiencies are obtained from full simulation regardless. The systematic effect of this assumption will be listed in~\autoref{systematics}.
+For the \texttt{HLT2} level, there were no significant changes of thresholds and hence efficiencies are obtained from full simulation regardless. The systematic effect of this assumption will be listed in~\autoref{systematics}.
 
 
 
@@ -322,7 +324,7 @@ Weighted efficiency & 0.876 & 0.967 & 0.884 & 0.849 & 0.953 & 0.978 \\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Efficiencies of 2016 trigger emulation on MC. Depending on TCK, the efficiencies vary up 10\% for \texttt{L0} level for signal MC and up to 5\% for normalisation TCK. This is important as \textit{single event sensitivity} is sensitive to the ratio of these two efficiencies. This configuration is describing correctly only 35\% data with high $p_{T}$ threshold.}
+\caption{Efficiencies of 2016 trigger emulation on simulation. Depending on TCK, the efficiencies vary up 10\% for \texttt{L0} level for signal simulation and up to 5\% for normalisation TCK. This is important as \textit{single event sensitivity} is sensitive to the ratio of these two efficiencies. This configuration is describing correctly only 35\% data with a high $p_{T}$ threshold.}
 \label{tab:L0andHLT1Calib}
 \end{table}
 
@@ -351,7 +353,9 @@ Run \Rn{1} trigger efficiency is determined directly by looking at default TCK a
 
 \subsection{Offline Selection (OFF)}
 
-In this section offline efficiencies are discussed. These include $J/\psi$ and $\Psi(2S)$ veto signal efficiency that were mentioned in~\autoref{tab:vetoes}, where 2946.0 $<$ $|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3176.0 for $J/\psi$ veto and 3586.0 $<|$ m($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3766.0 veto for $\Psi(2S)$ veto. For normalisation channel this is non applicable as the normalisation decay proceeds via $J/\psi$ resonance. As trigger efficiencies for Run \Rn{2} are TCK-dependant, luminosity-weighted average is used. Similarly for all 2016 efficiencies from now on that are calibrated from the simulation are weighted averages, unless stated otherwise.
+In this section offline efficiencies are discussed. These include the $J/\psi$ and $\Psi(2S)$ veto signal efficiency that were mentioned in~\autoref{tab:vetoes}, where 2946.0\mevcc $<$ $|$ M($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3176.0\mevcc and 3586.0\mevcc $<|$ M($\mu^{+}$ $\mu^{-}$) $|$ $<$ 3766.0\mevcc. For the normalisation channel this is not applicable as the normalisation decay proceeds via the $J/\psi$ resonance.
+%Given that trigger efficiencies for Run \Rn{2} are TCK-dependant, luminosity-weighted average are calculated from now on for all the efficiencies.
+%Similarly for all 2016 efficiencies from now on that are calibrated from the simulation are weighted averages, unless stated otherwise.
 
 %\begin{table}[H]
 %\begin{center}
@@ -367,9 +371,9 @@ In this section offline efficiencies are discussed. These include $J/\psi$ and $
 %\end{table}
 
 \subsection{Combinatorial BDT and Misid BDT efficiency}
- Efficiencies of MVA selection are also evaluated on simulation samples. These efficiencies are obtained using samples that passed (GEN), (REC), (TRG) and (OFF) cuts. Specific MVA for combinatorial background suppression (see ~\autoref{CombiBDTsel}) and misID background suppression (see ~\autoref{misidbdt}) are applied to the simulation samples. As the optimisation led to different BDTs depending on the data-taking period, these are then applied parametrically to relevant simulation samples. The efficency results were listed in~\autoref{tab:effsumarry}.
+ Efficiencies of the MVA selection are evaluated on simulation samples. These efficiencies are obtained using samples that passed (GEN), (REC), (TRG) and (OFF) cuts. The specific MVA for combinatorial background suppression (see ~\autoref{CombiBDTsel}) and misID background suppression (see ~\autoref{misidbdt}) are applied to the simulation samples. As the optimisation led to different BDTs depending on the data-taking period, these are then applied parametrically to the relevant simulation samples. The efficiency results are listed in~\autoref{tab:effsumarry}.
 
-For Misid and Combinatorial BDT selection, normalisation \bjpsimumuk channel retains more signal than the \Bmumumu channel. This is due to the kaon/muon $p$ and $p_{T}$ kinematics difference as seen in ~\autoref{fig:reason1} and ~\autoref{fig:reason2}, where the kaon track is generally harder than the muon track. Kaon reconstruction efficiency is worse than muon reconstruction efficiency because about 11\% of the kaons cannot be reconstructed due to hadronic interactions that occur before the last T station~\cite{LHCb-DP-2013-002}, implying that the $p_{T}$ of $B$ is on average harder for normalisation channel. As these two quantities are high in BDT importance ranking as mentioned in~\autoref{CombiBDTsel}, this makes normalisation MC more efficient. In Misid BDT selection, again the kinematics of $B$ and the \gls{minipchi2} of the oppositely charged muon to $B$ is more signal like than signal.
+For the Misid and Combinatorial BDT selection, the normalisation \bjpsimumuk channel retains more signal than the \Bmumumu channel. This is due to the kaon/muon $p$ and $p_{T}$ kinematics difference as seen in ~\autoref{fig:reason1} and ~\autoref{fig:reason2}, where the kaon track is generally harder than the muon track. Kaon reconstruction efficiency is worse than muon reconstruction efficiency because about 11\% of the kaons cannot be reconstructed due to hadronic interactions that occur before the last T station~\cite{LHCb-DP-2013-002}, implying that the $p_{T}$ of the $B$ meson is on average harder for the normalisation channel. As these two quantities are high in BDT importance ranking as mentioned in~\autoref{CombiBDTsel}, this makes  the normalisation simulation more efficient. In the Misid BDT selection, again the kinematics of the $B$ meson and the \gls{minipchi2} of the oppositely charged muon to $B$ has a better separation from background than the signal.
 
 %\begin{table}[H]
 %\begin{center}
@@ -396,7 +400,7 @@ For Misid and Combinatorial BDT selection, normalisation \bjpsimumuk channel ret
 \newline
 \includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_combibdt_forefficiency/plotvariablemu3_PTNICEFOREFF}\put(-110,133){(c)}%
 \includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_combibdt_forefficiency/plotvariablemu3_PNICEFOREFF}\put(-110,133){(d)}%
-\caption{(a) Combinatorial BDT response for signal MC and upper mass sideband as well as for normalisation channel MC for Stripping 21 and Stripping 26. The most discriminative variables are (b) $p_{T}$ of B, (c) muon/kaon $p_{T}$ and (d) muon/kaon $p$.}
+\caption{(a) Combinatorial BDT response for signal simultion and upper mass sideband as well as for normalisation channel simulation for Stripping 21 and Stripping 26. The most discriminative variables are (b) $p_{T}$ of the $B$ meson, (c) muon/kaon $p_{T}$ and (d) muon/kaon $p$.}
 \label{fig:reason1}
 \end{figure}
 
@@ -407,13 +411,14 @@ For Misid and Combinatorial BDT selection, normalisation \bjpsimumuk channel ret
 \newline
 \includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariablemu2_MINIPCHI2NICEFOREFF}\put(-110,133){(c)}%
 \includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_misidbdt_forefficiency/plotvariablemu3_PNICEFOREFF}\put(-110,133){(d)}%
-\caption{(a) Misid BDT response for signal MC and upper mass sideband as well as for normalisation channel MC for Stripping 21 and Stripping 26. The most discriminative variables are (b) $p_{T}$ of B, (c) muon IP $\chi^{2}$  and (d) muon/kaon $p$. Misid BDT responses are plotted with combinatorial BDT already applied.}
+\caption{(a) Misid BDT response for signal simulation and upper mass sideband as well as for normalisation channel simulation for Stripping 21 and Stripping 26. The most discriminative variables are (b) $p_{T}$ of B, (c) muon IP $\chi^{2}$  and (d) muon/kaon $p$. Misid BDT responses are plotted with combinatorial BDT already applied.}
 \label{fig:reason2}
 \end{figure}
 
 \subsection{Fitting Range Efficiency (FR)}
 
-As discussed in~\autoref{fittingsel} and in~\autoref{combiback}, fitting region was chosen firstly in order to avoid modelling combinatorial background drop in low corrected mass region (exclusion below $4000$ \mevcc) and secondly in order to not include region where there are very few/no events (exclusion above $7000$ \mevcc) in \textbf{corrected mass}. As seen in~\autoref{tab:effsumarry} normalisation channel does not loose many candidates compared to signal channel. This is expected as the \textbf{visible mass} is more constrained in normalisation channel from preselection stage (see ~\autoref{tab:stripcutsBnorm}, where $5150\ \mevcc\ <\ B$ Mass$\ <\ 5450\ \mevcc$) than in signal channel as seen in~\autoref{fig:reasonfitrange}). Hence, restricting region in \textbf{corrected mass} is does not affect normalisation channel much.
+As discussed in~\autoref{fittingsel} and in~\autoref{combiback}, the fitting region was chosen in order to avoid modelling a drop in low corrected mass region for the combinatorial background (exclusion below $4000$ \mevcc) and secondly in order to not include a region where there are very few/no events (exclusion above $7000$ \mevcc) in \textbf{corrected mass}. As seen in~\autoref{tab:effsumarry} and in~\autoref{fig:reasonfitrange} the normalisation channel does not loose many candidates compared to the signal channel.
+%This is expected as the \textbf{visible mass} is more constrained in normalisation channel from preselection stage (see ~\autoref{tab:stripcutsBnorm}, where $5150\ \mevcc\ <\ B$ Mass$\ <\ 5450\ \mevcc$) than in signal channel as seen in~\autoref{fig:reasonfitrange}). Hence, restricting region in \textbf{corrected mass} is does not affect normalisation channel much.
 
 \begin{figure}[H]
 \center
@@ -440,9 +445,9 @@ As discussed in~\autoref{fittingsel} and in~\autoref{combiback}, fitting region 
 
 \subsection{\gls{PID} Efficiencies (PID)}
 \label{PIDaff}
-As \gls{PID} variables are not correctly modelled in simulation, mentioned in~\autoref{simulationchap}, data-driven approach of extracting PID efficiency is taken. To not introduce any biases in previous steps, especially in multivariate selection, PID efficiencies are evaluated at the end of the selection chain with \texttt{PIDCalib} package data samples.
+As \gls{PID} variables are not correctly modelled in the simulation, mentioned in~\autoref{simulationchap}, a data-driven approach of extracting PID efficiency is taken. To avoid the introduction of any any biases in previous steps, especially in multivariate selection, PID efficiencies are evaluated at the end of the selection chain with the \texttt{PIDCalib} package data samples.
 
-The PID efficiency is higher for normalisation channel with all PID requirements given in~\autoref{tab:PIDselectionNorm} compared to signal provided in~\autoref{tab:PIDselection} due to weaker PID requirement on kaon as compared to muons.
+The PID efficiency is higher for the normalisation channel with all PID requirements given in~\autoref{tab:PIDselectionNorm} compared to signal provided in~\autoref{tab:PIDselection} due to weaker PID requirement on the kaon as compared to the muons.
 
 \begin{table}[H]
 \begin{center}
@@ -485,14 +490,14 @@ The PID efficiency is higher for normalisation channel with all PID requirements
       \end{tabular}
 
 \end{center}
-\caption{Normalisation MC efficiency using \texttt{PIDCalib} efficiencies.}
+\caption{Normalisation simulation efficiency using \texttt{PIDCalib} efficiencies.}
 \label{tab:PIDselectionNorm}
 \end{table}
 
 
 \newpage
 \section{Mass Fits}
-In this section, firstly parametrisation of the normalisation channel is shown in~\autoref{normparam}. The fit to normalisation channel using the full fit model is described in~\autoref{normfit}. This is followed by the signal fit parametrisation outlined in~\autoref{sigpara} resulting in blinded and non-blinded data fits described in~\autoref{fitsens}.
+In this section, firstly the parametrisation of the normalisation channel is shown in~\autoref{normparam}. The fit to the normalisation channel using the full fit model is described in~\autoref{normfit}. This is followed by the signal fit parametrisation outlined in~\autoref{sigpara} resulting in blinded and non-blinded data fits described in~\autoref{fitsens}.
 
 \subsection{Normalisation Channel Parametrisation}
 \label{normparam}
@@ -502,13 +507,13 @@ The obtain the \bjpsimumuk yield of Run \Rn{1} and Run \Rn{2}, an unbinned exten
 
 \subsubsection{Signal}
 
-The first component is the signal itself, which is modelled with PID-weighted simulation and can be best described by double-sided Ipatia function, detailed in~\autoref{IP}, where all the parameters apart from the mean $\mu^{IP}$ and width $\sigma^{IP}$ are fixed from the signal simulations. These simulations passed through the same selection process as the corresponding \bjpsimumuk data, described in~\autoref{nchannel}, with one exception. Instead of directly cutting on \gls{PID} variables, the simulations were reweighted with the relevant PID weights, because of known mismatch between simulation and data. More on this will be covered in~\autoref{PIDaff}. 
+	The first component is the signal itself, which is modelled with PID-weighted simulation and can be best described by a double-sided Ipatia function, detailed in~\autoref{IP}, where all the parameters apart from the mean $\mu^{IP}$ and width $\sigma^{IP}$ are fixed from the signal simulations. These simulations pass through the same selection process as the corresponding \bjpsimumuk data, described in~\autoref{nchannel}, with one exception. Instead of directly cutting on \gls{PID} variables, the simulations are reweighted with the relevant \gls{PID} weights, because of the known mismatch between simulation and data. More on this will be covered in~\autoref{PIDaff}. 
 
 
 \subsubsection{\mb{\bjpsimumupi} Background}
 
-Secondly, since the PID requirements on kaon are very loose, there will background contribution from $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$. This contribution is modelled by double-sided Crystal Ball function to $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$ simulation, where the pion track is given kaon mass hypothesis. Again, all the parameters apart from mean $\mu^{CB}$ and width $\sigma^{CB}$ are fixed from the fit of this simulation. In ~\autoref{fig:FitToPiMuMu}, fits to \bjpsimumuk simulation and \bjpsimumupi simulation from Stripping 21 are showed using different scales.
-For signal, Run \Rn{1} Stripping 21 simulation is used and for Run \Rn{2} (Stripping 26 - TCK 288888335) simulation sample is used, for \bjpsimumupi Stripping 21 is used for all samples.
+Since the PID requirements on the kaon are very loose, there will be a background contribution from $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$. This contribution is modelled by a double-sided Crystal Ball function to $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$ simulation, where the pion track is given the kaon mass hypothesis. Again, all the parameters apart from mean $\mu^{CB}$ and width $\sigma^{CB}$ are fixed from the fit of this simulation. In ~\autoref{fig:FitToPiMuMu}, fits to \bjpsimumuk simulation and \bjpsimumupi simulation from Stripping 21 are showed using different scales.
+For signal, Run \Rn{1} Stripping 21 simulation sample is used and for Run \Rn{2} the Stripping 26 - TCK 288888335 simulation sample is used. For the \bjpsimumupi Stripping 21 simulation sample is used for both Run \Rn{1} and \Rn{2}.
 
 \begin{figure}[ht]
 \centering
@@ -519,14 +524,14 @@ For signal, Run \Rn{1} Stripping 21 simulation is used and for Run \Rn{2} (Strip
 \includegraphics[width=0.45\linewidth]{./efficiency/controlchannelfits/controlpimumumcnofcmeRun1nolog.pdf}\put(-50,57){(c)}%
 \includegraphics[width=0.45\linewidth]{./efficiency/controlchannelfits/controlpimumumcnofcmeRun1log.pdf}\put(-50,57){(d)}
 	
-\caption{Fit to 2012 (a) \bjpsimumuk simulation and (c) \bjpsimumupi simulation under kaon mass hypothesis. On right, the same
+\caption{Fit to 2012 (a) \bjpsimumuk simulation and (c) \bjpsimumupi simulation under the kaon mass hypothesis. On right, the same
  plots but with logharitmic scale instead.}
 \label{fig:FitToPiMuMu}
 \end{figure}
 
 \subsubsection{Combinatorial Background}
 
-Lastly, combinatorial background is modelled by exponential function, where the exponential constant is let free.% The full fit model, containing description of the individual components as well as their constraints that are propagated to the extended maximum likelihood fit is given in~\autoref{tab:floatingparsummarynorm}. 
+Lastly, combinatorial background is modelled by an exponential function, where the exponential constant is let free.% The full fit model, containing description of the individual components as well as their constraints that are propagated to the extended maximum likelihood fit is given in~\autoref{tab:floatingparsummarynorm}. 
 
 
 %\begin{table}[h]
@@ -563,7 +568,7 @@ Lastly, combinatorial background is modelled by exponential function, where the 
 
 \subsection{Normalisation Fit}
 \label{normfit}
-The full fit model for the normalisation data fit containing description of the individual components as well as their constraints is given in~\autoref{tab:floatingparsummarynorm}. 
+The full fit model for the normalisation data fit containing the description of the individual components as well as their constraints is given in~\autoref{tab:floatingparsummarynorm}. 
 
 
 \begin{table}[h]
@@ -572,32 +577,32 @@ The full fit model for the normalisation data fit containing description of the 
 \toprule
 Fit Parameter & Status  \\ \midrule
 \multicolumn{2}{c}{Yields} \\ \midrule
-N$_{\bjpsimumuk}$ (Signal)  &  free \\
-N$_{\bjpsimumupi}$ & free\\
-N$_{Combinatorial}$ & free\\
+$N_{\bjpsimumuk}$ (Signal)  &  Free \\
+$N_{\bjpsimumupi}$ & Free\\
+$N_{Combinatorial}$ & Free\\
 \midrule
 	\multicolumn{2}{c}{Signal Shape Parameters (double-sided Ipatia)} \\
 \midrule
-	$\mu^{IP}_{\bjpsimumuk}$ & constrained from signal MC\\
-	$\sigma^{IP}_{\bjpsimumuk}$ & constrained from signal MC\\
-Others & Fixed from MC\\
+	$\mu^{IP}_{\bjpsimumuk}$ & constrained from signal simulation\\
+	$\sigma^{IP}_{\bjpsimumuk}$ & constrained from signal simulation\\
+Others & Fixed from simulation\\
 \midrule
      \multicolumn{2}{c}{\bjpsimumupi Shape Parameters (double-sided Crystal Ball)} \\
 \midrule
-	$\mu^{CB}_{\bjpsimumupi}$ & constrained from signal MC\\
-	$\sigma^{CB}_{\bjpsimumupi}$ & constrained from signal MC\\
-Others & Fixed from MC \\
+	$\mu^{CB}_{\bjpsimumupi}$ & constrained from signal simulation\\
+	$\sigma^{CB}_{\bjpsimumupi}$ & constrained from signal simulation\\
+Others & Fixed from simulation\\
 \midrule
 	\multicolumn{2}{c}{Combinatorial Shape Parameters}  \\
 \midrule
 exponential par.  & Free\\
 \bottomrule
 \end{tabular}
-\caption{Summary of the fit parameters and individual component constraints for the fit to \bjpsimumuk decays.}
+\caption{Summary of the fit parameters and individual component constraints for the fit to the \bjpsimumuk decays.}
 \label{tab:floatingparsummarynorm}
 \end{table}
 
-The $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ signal yield is extracted by performing an unbinned extended maximum likelihood fit with the full fit model to the invariant $\mu^{+} \mu^{-} K^{+}$ distribution in $5150<M_{B^{+}}<5450$. Fits to the $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ for Run \Rn{1} and \Rn{2} are shown in~\autoref{fig:run1jpsikfitnofcme}. Yields from fit to \bjpsimumuk are obtained and summarized in~\autoref{tab:normchannelyields}.
+The $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ signal yield is extracted by performing an unbinned extended maximum likelihood fit with the full fit model to the invariant $\mu^{+} \mu^{-} K^{+}$ distribution in $5150\mevcc<M_{B^{+}}<5450\mevcc$. Fits to the $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ for Run \Rn{1} and Run \Rn{2} are shown in~\autoref{fig:run1jpsikfitnofcme}. Yields from the fit to \bjpsimumuk are obtained and summarized in~\autoref{tab:normchannelyields}.
 
 \begin{figure}[H]
 \centering
@@ -622,14 +627,14 @@ The $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ signal yield 
 \toprule
 Sample & Stripping & Split  &Yields \\
 \midrule
-$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & NOFCME & 173422$\pm$446  \\
-$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & NOFCME &94491$\pm$313  \\
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & $\sigma_{NOFCME}$ & 173422$\pm$446  \\
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & $\sigma_{NOFCME}$ &94491$\pm$313  \\
 \midrule
-$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & lowFCME & 109224$\pm$337  \\
-$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & lowFCME & 64723$\pm$259  \\
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & $\sigma_{lowFCME}$ & 109224$\pm$337  \\
+$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & $\sigma_{lowFCME}$ & 64723$\pm$259  \\
 \midrule
-$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & highFCME &64078$\pm$257  \\
-$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & highFCME & 29760$\pm$176  \\
+$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & $\sigma_{highFCME}$ &64078$\pm$257  \\
+$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & $\sigma_{highFCME}$ & 29760$\pm$176  \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -639,13 +644,13 @@ $N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & highFCME & 29760$\pm$176  \
 
 \subsection{Signal Channel Parametrisation}
 \label{sigpara}
-To fit the signal data the default fitting strategy is to use a simultaneous unbinned maximum likelihood fit to the $\mu^{+} \mu^{-} \mu^{+}$ corrected mass spectrum to combined Run \Rn{1} and \Rn{2} dataset after the full selection in two bins of fractional corrected mass error, which is denoted as simultaneous fit. As a cross-check non-simultaneous fit, where no splitting in bins of corrected mass is done, is denoted as non-simultaneous fit. The parametrisation of all the components for the full signal model fit is described below.
+To fit the signal data, the default fitting strategy is to use a simultaneous unbinned maximum likelihood fit to the $\mu^{+} \mu^{-} \mu^{+}$ corrected mass spectrum to combined Run \Rn{1} and \Rn{2} dataset after the full selection in two bins of fractional corrected mass error, which is denoted as the simultaneous fit. As a cross-check a non-simultaneous fit, where no splitting in bins of corrected mass is done, is denoted as non-simultaneous fit. The parametrisation of all the components for the full signal model fit is described below.
 
 
 \subsubsection{Signal}
-The full fit to Run \Rn{1} and Run \Rn{2} data requires the signal shape knowledge for combined dataset. This is obtained from Run \Rn{1} and Run \Rn{2} signal simulation \textit{cocktail}. The cocktail is created after full selection by assigning event-by-event weights, \textit{$w^{i}$}, which capture the differences between Run \Rn{1} and Run \Rn{2} simulation, that ware not considered by full selection.
+The full fit to Run \Rn{1} and Run \Rn{2} data requires the signal shape knowledge for the combined dataset. This is obtained from a Run \Rn{1} and Run \Rn{2} signal simulation \textit{cocktail}. The cocktail is created after full selection by assigning event-by-event weights, \textit{$w^{i}$}, which capture the differences between Run \Rn{1} and Run \Rn{2} simulation, that ware not considered by the full selection.
 
-Firstly, weights that reflect the expected difference due to increased luminosity are computed. To obtain these signal weights, following conditions must be satisfied
+Firstly, weights that reflect the expected difference due to increased luminosity are computed. To obtain these signal weights, the following conditions must be satisfied
 
 %Signal shape for Run \Rn{1} and Run \Rn{2} is described by probability density function (P.D.F) in corrected mass taken from $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_\mu$ 2012 MC and 2016 MC cocktail. After all respective
 %selection, this cocktail is created by assigning event-by-event weights. Signal event-by-event weights, \textit{$w^{i}$}, to create cocktail come from differences between 2012 MC and 2016 MC. To obtain signal weights, following conditions must be satisfied,
@@ -665,7 +670,7 @@ w^{2012} \times N^{2012} + w^{2016} \times N^{2016} = N^{2012} + N^{2016},
 \frac{w^{2012} \times N^{2012}}{w^{2016} \times N^{2016}} = \frac{n^{2012}}{n^{2016}}.
 \end{equation}
 
-These constraints yield following value for event-by-event (or rather yearly) weights
+These constraints yield the following value for event-by-event (or rather yearly) weights
 
 
 \begin{equation}
@@ -679,7 +684,7 @@ w^{2016}= \frac{N^{2016}+N^{2012}}{N^{2016}\times(1.0+ \frac{n^{2012}}{n^{2016}}
 
 
 
-where $N^{2012},N^{2016}$ number of events at \textit{generator level}, $\mathcal{L}^{2012},\mathcal{L}^{2016}$ are integrated luminosities, and $\sigma^{2012}_{pp \rightarrow b \overline{b}}, \sigma^{2016}_{pp \rightarrow b \overline{b}}$ are cross-sections in a given year. $N^{2012},N^{2016}$ number of events at \textit{generator level} is obtained by dividing number of reconstructed events $N_{REC}$ by the reconstruction efficiency $\varepsilon_{REC}$ (see~\autoref{tab:effsumarry}). Values for these variables are summarized in ~\autoref{tab:MCweightNOFCME}.
+where $N^{2012},N^{2016}$ number of events at \textit{generator level}, $\mathcal{L}^{2012},\mathcal{L}^{2016}$ are integrated luminosities, and $\sigma^{2012}_{pp \rightarrow b \overline{b}}, \sigma^{2016}_{pp \rightarrow b \overline{b}}$ are cross-sections in a given year. $N^{2012},N^{2016}$ number of events at \textit{generator level} is obtained by dividing the number of reconstructed events $N_{REC}$ by the reconstruction efficiency $\varepsilon_{REC}$ (see~\autoref{tab:effsumarry}). Values for these variables are summarized in ~\autoref{tab:MCweightNOFCME}.
 
 
 \begin{table}[h]
@@ -697,11 +702,11 @@ $\mathcal{L}$ & 2968 $\rm{pb^{-1}}$ & 1612 $\rm{pb^{-1}}$ \\
 $\sigma_{pp \rightarrow b \overline{b}}$ & 1 & 2  \\
 \bottomrule
 \end{tabular}
-	\caption{Signal simulation weights used to create cocktail of mixed Run \Rn{1} (2012) and Run \Rn{2} (2016) cocktail. The cross-sections listed here are not absolute numbers, but rather relative as only its ratio matters.}
+	\caption{Signal simulation weights used to create cocktail of mixed Run \Rn{1} (2012) and Run \Rn{2} (2016) cocktail. The cross-sections listed here are not absolute numbers, but rather relative as only their ratio matters.}
 \label{tab:MCweightNOFCME}
 \end{table}
 
-Secondly, event-by-event weight which differs between Run \Rn{1} and \Rn{2} that need to be accounted is PID efficiency $\varepsilon_{PID}$ (see~\autoref{tab:effsumarry}), which depends on the kinematics of the final state particles. It is denoted as $w^{i\varepsilon\{2012,2016\}}_{\varepsilon^{i}_{PID}}$. 
+Secondly, event-by-event weight which differs between Run \Rn{1} and \Rn{2} that need to be accounted is the PID efficiency $\varepsilon_{PID}$ (see~\autoref{tab:effsumarry}), which depends on the kinematics of the final state particles. It is denoted as $w^{i\varepsilon\{2012,2016\}}_{\varepsilon^{i}_{PID}}$. 
 
 The final weight of an event depending on Run \Rn{1} and Run \Rn{2} is calculated 
 
@@ -709,7 +714,7 @@ The final weight of an event depending on Run \Rn{1} and Run \Rn{2} is calculate
 	w^{i\varepsilon\{2012,2016\}}_{total}=  w^{i\varepsilon\{2012,2016\}} \times w^{i\varepsilon\{2012,2016\}}_{\varepsilon^{i}_{PID}}.
 \end{equation}
 
-After obtaining combined Run \Rn{1} and \Rn{2} signal \textit{cocktail}, fit to this weighted simulation is done with \textbf{the shape} in the corrected mass modelled by double-sided Crystal Ball function~\autoref{IP}. Fit and its parameters can be seen in~\autoref{fig:MCSignalFit}. The function describing this shape is denoted as $f^{sig}$ and hence is a function 6 parameters for non-simultaneous fit and 12 parameters for simultaneous fit.
+After obtaining combined Run \Rn{1} and \Rn{2} signal \textit{cocktail}, fit to this weighted simulation is done with \textbf{the shape} in the corrected mass modelled by a double-sided Crystal Ball function~\autoref{IP}. The fit and its parameters can be seen in~\autoref{fig:MCSignalFit}. The function describing this shape is denoted as $f^{sig}$ and hence is a function of 6 parameters for the non-simultaneous fit and 12 parameters for the simultaneous fit.
 
 \begin{figure}[H]
 \centering
@@ -722,7 +727,7 @@ After obtaining combined Run \Rn{1} and \Rn{2} signal \textit{cocktail}, fit to 
 \label{fig:MCSignalFit}
 \end{figure}
 
-\textbf{The signal yield} that is observed in the fit, $N^{sig}=N(\Bmumumu)$, is related to the branching fraction using normalisation channel in a following way:
+\textbf{The signal yield} that is observed in the fit, $N^{sig}=N(\Bmumumu)$, is related to the branching fraction using the normalisation channel in the following way:
 \begin{equation}
 \begin{split}
 \mathcal{B}(\Bmumumu)&=\alpha \times N(\Bmumumu)\\
@@ -731,15 +736,17 @@ After obtaining combined Run \Rn{1} and \Rn{2} signal \textit{cocktail}, fit to 
 \end{split}
 \label{eq:sigeq}
 \end{equation}
-where  $\varepsilon^{x}$ is total selection efficiency of $x$ channel, $N_{x}$ is number of $x$ decays, $\mathcal{B}(x)$ is the branching fraction of decay $x$, $R_{FCME}$ is the relevant efficiency ratio between two decays detailed in~\autoref{EfficiencySummary} and finally $\alpha$ is the \textit{single event sensitivity}, variable which describes the sensitivity for the search. Hence for Run \Rn{1} and Run \Rn{2} altogether for non-simultaneous fit $N^{sig}$ is a function of six parameters $N^{sig}(R^{21}_{FCME},R^{26}_{FCME},N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\Bmumumu))$. In simultaneous case $R^{21}_{FCME}$,$R^{26}_{FCME}$, $N^{Run\ \Rn{1}}(\bjpsimumuk)$ and $N^{Run\ \Rn{2}}(\bjpsimumuk) K^{+})$ is further split into $\sigma_{lowFCME}$ and $\sigma_{highFCME}$ bins, resulting in 10 parameters for $N^{sig}$ in the fit.
+where  $\varepsilon^{x}$ is the total selection efficiency of the channel $x$, $N_{x}$ is number of $x$ decays, $\mathcal{B}(x)$ is the branching fraction of decay $x$, $R_{FCME}$ is the relevant efficiency ratio between the two decays detailed in~\autoref{EfficiencySummary} and finally $\alpha$ is the \textit{single event sensitivity}, variable which describes the sensitivity for the search. Hence, for Run \Rn{1} and Run \Rn{2} the non-simultaneous fit $N^{sig}$ is a function of six parameters $N^{sig}(R^{21}_{FCME},R^{26}_{FCME},N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\Bmumumu))$. In the simultaneous case $R^{21}_{FCME}$,$R^{26}_{FCME}$, $N^{Run\ \Rn{1}}(\bjpsimumuk)$ and $N^{Run\ \Rn{2}}(\bjpsimumuk) K^{+})$ is further split into $\sigma_{lowFCME}$ and $\sigma_{highFCME}$ bins, resulting in 10 parameters for $N^{sig}$ in the fit.
 
 
 
 \subsubsection{Partially Reconstructed Background}
 \label{finfitpr}
-Partially reconstructed backgrounds are still non-negligible after full selection chain. In order to account for the contribution of the partially reconstructed backgrounds in the final signal fit, contaminating yield needs to be estimated and shape needs to be modelled. Simulation sample for partially reconstructed background that originates through $D^{0}$ was described in~\autoref{partrecobak} is used for both the yield estimate and shape modelling.
+Partially reconstructed backgrounds are still non-negligible after the full selection chain. 
+%In order to account for the contribution of the partially reconstructed backgrounds in the final signal fit, contaminating yield needs to be estimated and shape needs to be modelled. 
+ The simulation sample for partially reconstructed background that originates through $D^{0}$ decays(~\autoref{partrecobak}) is used for both the yield estimate and shape modelling.
 
-In order to get estimate for \textbf{the yield} of these partially reconstructed decays, $N^{PR}$, \bjpsimumuk decays are again used as normalisation. Normalising to \bjpsimumuk decay channel following relationship must hold 
+In order to get an estimate for \textbf{the yield} of these partially reconstructed decays, $N^{PR}$, \bjpsimumuk decays are again used as normalisation. Normalising to the \bjpsimumuk decay channel, the following relationship must hold: 
 %This sample passed all of the selection and total selection efficiency $\varepsilon_{total}$ is listed in ~\autoref{tab:prsum}. \label{partdetailed} The Table~\ref{tab:partrecotabapp} in Appendix~\ref{partdetailed} details the efficiencies in individual steps of selection. 
 %Normalising to \bjpsimumuk decay channel following relationship must hold
 
@@ -749,7 +756,7 @@ In order to get estimate for \textbf{the yield} of these partially reconstructed
 &=\frac{\mathcal{B}(\pr)}{\mathcal{B}(\bjpsimumuk)} \times R_{FCME},
 \end{split}
 \end{equation}
-	where $\varepsilon^{x}$ is total selection efficiency of $x$ channel and $R_{FCME}$ is hence the efficiency ratio between the two channels, $N_{x}$ is number of $x$ decays, $\mathcal{B}(x)$ is the branching fraction of decay $x$. The quantity of interest, $N_{\pr}$, can be therefore calculated given the knowledge of all other terms. $N_{\bjpsimumuk}$ is was obtained from~\autoref{tab:normchannelyields}. $\mathcal{B}(\pr)$ is obtained by amalgamating $\mathcal{B}(D^{0} \rightarrow K^+ \pi^- \mu^+ \mu^{-}) = (4.17\pm0.12\pm0.40)\times 10^{-6}$\cite{Aaij:2015hva} and $\mathcal{B}(B^{+} \rightarrow D l^{+} \nu X) = (9.8 \pm 0.7)\times 10^{-2}$ \cite{Patrignani:2016xqp} yielding $\mathcal{B}(\pr) \approx (4.10\pm0.50)\times 10 ^{-7 }$. $B^+ \rightarrow (J/\psi \rightarrow \mu^+ \mu^{-}) K^{+}$ branching fraction is obtained with the same approach: multiplying $\mathcal{B}(B^{+} \rightarrow J/\psi K^{+})$ = (1.026$\pm 0.031)\times 10^{-3}$\cite{Patrignani:2016xqp} and $\mathcal{B}(J/\psi \rightarrow \mu^{-} \mu^{+})$ = (5.961 $\pm0.0033) \times 10^{-2}$\cite{Patrignani:2016xqp} yielding 
+	where $\varepsilon^{x}$ is total selection efficiency of the channel $x$ and $R_{FCME}$ is hence the efficiency ratio between the two channels, $N_{x}$ is number of $x$ decays and $\mathcal{B}(x)$ is the branching fraction of decay $x$. The quantity of interest, $N_{\pr}$, can therefore be calculated given the knowledge of all other terms. $N_{\bjpsimumuk}$ is obtained from~\autoref{tab:normchannelyields}. $\mathcal{B}(\pr)$ is obtained by multiplying $\mathcal{B}(D^{0} \rightarrow K^+ \pi^- \mu^+ \mu^{-}) = (4.17\pm0.12\pm0.40)\times 10^{-6}$\cite{Aaij:2015hva} and $\mathcal{B}(B^{+} \rightarrow D l^{+} \nu X) = (9.8 \pm 0.7)\times 10^{-2}$ \cite{Patrignani:2016xqp} yielding $\mathcal{B}(\pr) \approx (4.1\pm0.5)\times 10 ^{-7 }$. The $B^+ \rightarrow (J/\psi \rightarrow \mu^+ \mu^{-}) K^{+}$ branching fraction is obtained with the same approach: multiplying $\mathcal{B}(B^{+} \rightarrow J/\psi K^{+})$ = (1.026$\pm 0.031)\times 10^{-3}$\cite{Patrignani:2016xqp} and $\mathcal{B}(J/\psi \rightarrow \mu^{-} \mu^{+})$ = (5.961 $\pm0.0033) \times 10^{-2}$\cite{Patrignani:2016xqp} yielding 
 	
 \begin{equation}
 \mathcal{B}(\bjpsimumuk)=(6.12\pm0.19)\times 10^{-5}.
@@ -758,13 +765,13 @@ In order to get estimate for \textbf{the yield} of these partially reconstructed
 
 
 %This simulation sample all of the selection and total selection efficiency $\varepsilon_{total}$ is listed in ~\autoref{tab:prsum}. 
-All the relevant total selection efficiencies are obtained from the full simulation sample and are shown in~\autoref{tab:prsum}. Due to the usage of a proxy simulation for this partially reconstructed decays (using a pion rather than a muon in one case), as discussed in~\autoref{partrecobak}, trigger efficiency $\varepsilon_{TRG}$ cannot be obtained from simulation for partially reconstructed decays, because the \texttt{HLT2} trigger (see~\autoref{tab:triggersel}) would make positive decision only either because of finding dimuon pair or two or three-body decays, hence the trigger ratio $\frac{\varepsilon^{\pr}_{TRG}}{\varepsilon^{\bjpsimumuk}_{TRG}}$ 
-is assumed to be 1, which is rather a conservative estimate (overestimate) but makes sure that other partially reconstructed backgrounds are accounted for. Other efficiency that was not accounted for because of the same reason is PID efficiency, $\varepsilon_{PID}$.
+All the relevant total selection efficiencies are obtained from the full simulation sample and are shown in~\autoref{tab:prsum}. Due to the usage of a proxy simulation for this partially reconstructed decays (using a pion rather than a muon in one case), as discussed in~\autoref{partrecobak}, the trigger efficiency $\varepsilon_{TRG}$ cannot be obtained from simulation for partially reconstructed decays, because the \texttt{HLT2} trigger (see~\autoref{tab:triggersel}) would make positive decision only either because of finding dimuon pair or two or three-body decays, hence the trigger ratio $\frac{\varepsilon^{\pr}_{TRG}}{\varepsilon^{\bjpsimumuk}_{TRG}}$ 
+is assumed to be 1, which is rather a conservative estimate (overestimate) but makes sure that other partially reconstructed backgrounds are accounted for. Another efficiency that was not accounted for because of the same reason is PID efficiency, $\varepsilon_{PID}$.
 Moreover as this proxy simulation was not accesible for Run \Rn{2}, the same ratio of efficiencies as in Run \Rn{1} is used.
 
 
 %$\frac{\varepsilon^{2012}_{\pr}}{\varepsilon^{2012}_{\bjpsimumuk}}=\frac{\varepsilon^{2016}_{\pr}}{\varepsilon^{2016}_{\bjpsimumuk}}$.
-The summary of expected yield is summarized in~\autoref{tab:prsum}. For the non-simultaneous final fit there are hence 5 parameters $N^{PR}(R^{21}_{FCME}(\pr),N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\pr))$ and for simultaneous data fit with FCME splitting 8 parameters.  The total yield expected for this type of background is very low compared to other expected backgrounds.
+The summary of the expected yield is summarized in~\autoref{tab:prsum}. For the non-simultaneous final fit there are hence 5 parameters $N^{PR}(R^{21}_{FCME}(\pr),N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\pr))$ and for the simultaneous data fit with FCME splitting 8 parameters. The total yield expected for this type of background is very low compared to the other expected backgrounds.
 %Therefore to obtain number of partially reconstructed background events, $N_{\pr}$ after all selection following relationship is used: 
 
 %\begin{equation}
@@ -781,7 +788,7 @@ The summary of expected yield is summarized in~\autoref{tab:prsum}. For the non-
 \toprule
 Properties & Run \Rn{1} & Run \Rn{2}  \\
 \midrule
-$\mathcal{B}(\pr)$ & $(4.10\pm0.50)\times 10 ^{-7 }$ &$(4.10\pm0.50)\times 10 ^{-7 }$ \\
+$\mathcal{B}(\pr)$ & $(4.1\pm0.5)\times 10 ^{-7 }$ &$(4.1\pm0.5)\times 10 ^{-7 }$ \\
 $\mathcal{B}(\bjpsimumuk)$ &$(6.12\pm0.19)\times 10 ^{-5 }$ & $(6.12\pm0.19)\times 10 ^{-5 }$ \\
 $\varepsilon^{\pr}_{total}$ &  $(1.87\pm0.04)\times 10 ^{-4 }$ & Using 2012  \\
 $\varepsilon^{\bjpsimumuk}_{total}$ & $(5.80\pm0.01)\times 10 ^{-3 }$ &  Using 2012 \\
@@ -803,7 +810,7 @@ $N_{\pr}$ & $37.3\pm4.8$ & $20.3\pm2.6$ \\
 \end{table}
 
 \textbf{The shape} for partially reconstructed backgrounds, $f^{PR}$, is also obtained from the simulation proxy after all the selection.
-The shape is best described with sum of two Crystal Ball functions, more in~\autoref{CB}, with free means $\mu^{1},\mu^{2}$ and widths $\sigma^{1},\sigma^{2}$ as seen in~\autoref{fig:PRFit}. Because the shape of this background suggests that the majority contamination is below $5000\mevcc$, it is one of the least dangerous backgrounds. In the non-simultaneous fit $f^{PR}$ is a function of 9 parameters and for simultaneous fit 18 parameters coming from sum of two Crystal Ball functions. %This shape can very well describe the fit to MC with no fit range and that is why it is used here, Figure  ~\ref{fig:PartRecoFit}.
+The shape is best described with the sum of two Crystal Ball functions, more in~\autoref{CB}, with free means $\mu^{1},\mu^{2}$ and widths $\sigma^{1},\sigma^{2}$ as seen in~\autoref{fig:PRFit}. Because the shape of this background suggests that the majority of the contamination is below $5000\mevcc$, it is one of the least dangerous backgrounds. In the non-simultaneous fit, $f^{PR}$ is a function of 9 parameters and for the simultaneous fit 18 parameters coming from the sum of two Crystal Ball functions. %This shape can very well describe the fit to MC with no fit range and that is why it is used here, Figure  ~\ref{fig:PartRecoFit}.
 
 
 \begin{figure}[H]
@@ -819,15 +826,16 @@ The shape is best described with sum of two Crystal Ball functions, more in~\aut
 
 \subsubsection{MisID background}
 \label{misidfitstrat}
-The level and the shape of misID background is determined by fitting the misID data samples obtained using the method described in~\autoref{misidprocedure}. A binned $\chi^{2}$ fit is used to extract the shape and yields parameters. The reason for usage of the binned $\chi^{2}$ fit is that the misID samples are low-statistics weighted samples and the shape and yield needs be propagated to the final data fit while preserving the fit parameter correlations. Since there is prescale factor of 1\% at stripping level, to obtain the correct yield, the final number needs to be multiplied by to counteract the prescale.
+The level and the shape of misID background is determined by fitting the misID data samples obtained using the method described in~\autoref{misidprocedure}. A binned $\chi^{2}$ fit is used to extract the shape and yields parameters. The reason for usage of the binned $\chi^{2}$ fit is that the misID samples are low-statistics weighted samples and the shape and yield needs to be propagated to the final data fit while preserving the fit parameter correlations. Since there is a prescale factor of 1\% at stripping level, to obtain the correct yield, the final number needs to be multiplied by 100 to counteract the prescale.
 
-The misID weights obtained from kinematically binned \bjpsikst samples (see ~\autoref{extraction}) have uncertainties associated with them as shown in ~\autoref{fig:JpsiKnew},~\autoref{fig:JpsiKaonnew},~\autoref{fig:JpsiPionnew2016},~\autoref{fig:JpsiKaonnew2016}. These uncertainties are accounted for in the fit by Gaussian variation of the weights within the uncertainty in a given kinematic bin of $p,\eta$ for each particle species and then folded in to the misID calculation. In this case 100 variations were used. Each variation results in different template for misID shape. This misID template is then subsequently binned in 15 bins of corrected mass. From each corrected mass bin, mean $\mu_{var}$ and error $\sigma_{var}$ from gaussianly distributed number of misID events is obtained. 
+The misID weights obtained from kinematically binned \bjpsikst samples (see ~\autoref{extraction}) have uncertainties associated with them as shown in Figures~\ref{fig:JpsiKnew},~\ref{fig:JpsiKaonnew},~\ref{fig:JpsiPionnew2016},~\ref{fig:JpsiKaonnew2016}. These uncertainties are accounted for in the fit by Gaussian variation of the weights within the uncertainty in a given kinematic bin of $p,\eta$ for each particle species and then folded in to the misID calculation. In this case 100 variations were used. Each variation results in a different template for the misID shape. This misID template is then subsequently binned in 15 bins of corrected mass. From each corrected mass bin, mean $\mu_{var}$ and error $\sigma_{var}$ from gaussianly distributed number of misID events is obtained. 
 
-The total uncertainty due to the weight, $\sigma_{tot}$, for given bin of corrected mass is calculated using $\sqrt{\sigma_{var}^2 +\sqrt{\sum{w^{2}_{i}}}^{2}}$, where $\sigma_{par}=\sqrt{\sum{w^{2}_{i}}}$ is the associated error per bin and $\sigma_{var}$ is the standard deviation obtained from variation of misID weights. Finally, The binned $\chi^{2}$ fit is made to the misID samples with the total uncertainty. \textbf{The number of misID events}, $N^{MisID}$, for different species-regions after all selections are seen in~\autoref{tab:misidtabcummu}. Hence for non-simultaneous fit this just add 1 parameter and for simultaneous fit there will be two parameters describing the total yield of misID.
+The total uncertainty due to the weight, $\sigma_{tot}$, for a given bin of corrected mass is calculated using $\sqrt{\sigma_{var}^2 +\sqrt{\sum{w^{2}_{i}}}^{2}}$, where $\sigma_{par}=\sqrt{\sum{w^{2}_{i}}}$ is the associated error per bin and $\sigma_{var}$ is the standard deviation obtained from variation of misID weights. Finally, The binned $\chi^{2}$ fit is made to the misID samples with the total uncertainty. \textbf{The number of misID events}, $N^{MisID}$, for different species-regions after all selections are seen in~\autoref{tab:misidtabcummu}. Hence for the non-simultaneous fit this just add 1 parameter and for the simultaneous fit there will be two parameters describing the total yield of misID.
 
-Also it can be seen in~\autoref{tab:misidtabcummu}, crossfeedweight is only considered for kaon-like and pion-like \textit{SS misID} samples. This arises as a consequence of two characteristics of the misID crossfeedweight procedure. First the convergence criteria makes unbalanced samples (one sample very high in misID events and other sample very small in number of misID events) hard to satisfy (case for most of \textit{OS misID} samples). Secondly, proton-like region samples are very sparse and hence it is not necessary to account for crossfeed. %, see Figure ~\ref{fig:ProtonPIDHeatMap}.
+Also it can be seen in~\autoref{tab:misidtabcummu}, crossfeedweight is only considered for kaon-like and pion-like \textit{SS misID} samples.
+\mybox{\color{red} ulrik does not fully understand this try to correct or remove }This arises as a consequence of two characteristics of the misID crossfeedweight procedure. First the convergence criteria makes unbalanced samples (one sample very high in misID events and other sample very small in number of misID events) hard to satisfy (case for most of \textit{OS misID} samples). Secondly, proton-like region samples are very sparse and hence it is not necessary to account for crossfeed. %, see Figure ~\ref{fig:ProtonPIDHeatMap}.
 
-The binned $\chi^{2}$ fits using Crystal Ball function to different bins of FCME is performed as seen in~\autoref{fig:MisidFinalFit}. This means that \textbf{the shape} of this background, $f^{MisID}$, is a function of 4 parameters in non-simultaneous case and a function of 8 parameters in simultaneous case. Both full weight error $\sigma_{tot}$ and partial weight error $\sigma_{par}$ are plotted. The difference between the two is the error due to uncertainty on the weight $\sigma_{var}$.  Results of the fits are propagated into the signal data fits preserving correlations between parameters, which are hence set as multidimensional gaussian constraints in the signal data fits. This means that all uncertainties due to misID will be directly accounted for in the signal data fits.
+The binned $\chi^{2}$ fits using a Crystal Ball function to different bins of FCME is performed as seen in~\autoref{fig:MisidFinalFit}. This means that \textbf{the shape} of this background, $f^{MisID}$, is a function of 4 parameters in the non-simultaneous case and a function of 8 parameters in the simultaneous case. Both full weight error $\sigma_{tot}$ and partial weight error $\sigma_{par}$ are plotted. The difference between the two, is the error due to uncertainty on the weight $\sigma_{var}$.  Results of the fits are propagated into the signal data fits preserving correlations between parameters, which are hence a set if multidimensional gaussian constraints in the signal data fits. This means that all uncertainties due to misID will be directly accounted for in the signal data fits.
 
 
 \begin{table}[H]
@@ -835,25 +843,26 @@ The binned $\chi^{2}$ fits using Crystal Ball function to different bins of FCME
 \begin{center}
 \begin{tabular}{ l  l  l  l  l  }
 \toprule
-Sample & Region & PID & weight & Cumulative  \\
- &  &  &  & misID count \\
+Sample & Region & PID & weight & misID count  \\
+% &  &  &  & misID count \\
 \midrule
 Run \Rn{1} \textit{SS misID} & Kaon-region & Run \Rn{1} PID & crossfeedweight & 198 \\
-Run \Rn{1} \textit{SS misID} & Pion-region  &  & crossfeedweight & 301 \\
-Run \Rn{1} \textit{SS misID} & Proton-region &  & no-crossfeedweight & 307 \\
-Run \Rn{1} \textit{OS misID} & Kaon-region &  & no-crossfeedweight & 310 \\
-Run \Rn{1} \textit{OS misID} & Pion-region &  & no-crossfeedweight & 352 \\
-Run \Rn{1} \textit{OS misID} & Proton-region &  & no-crossfeedweight & 353 \\
-Run \Rn{2} \textit{SS misID} & Kaon-region & Run \Rn{2} PID  & crossfeedweight & 489 \\
-Run \Rn{2} \textit{SS misID} & Pion-region &  & crossfeedweight & 565 \\
-Run \Rn{2} \textit{SS misID} & Proton-region &  & no-crossfeedweight & 565 \\
-Run \Rn{2} \textit{OS misID} & Kaon-region &  & no-crossfeedweight & 573 \\
-Run \Rn{2} \textit{OS misID} & Pion-region &  & no-crossfeedweight & 618 \\
-Run \Rn{2} \textit{OS misID} & Proton-region &  & no-crossfeedweight & 619 \\
+Run \Rn{1} \textit{SS misID} & Pion-region  &  & crossfeedweight & 103 \\
+Run \Rn{1} \textit{SS misID} & Proton-region &  & no-crossfeedweight & 6 \\
+Run \Rn{1} \textit{OS misID} & Kaon-region &  & no-crossfeedweight & 3 \\
+Run \Rn{1} \textit{OS misID} & Pion-region &  & no-crossfeedweight & 42 \\
+Run \Rn{1} \textit{OS misID} & Proton-region &  & no-crossfeedweight & 1 \\
+Run \Rn{2} \textit{SS misID} & Kaon-region & Run \Rn{2} PID  & crossfeedweight & 136 \\
+Run \Rn{2} \textit{SS misID} & Pion-region &  & crossfeedweight & 76 \\
+Run \Rn{2} \textit{SS misID} & Proton-region &  & no-crossfeedweight & 0 \\
+Run \Rn{2} \textit{OS misID} & Kaon-region &  & no-crossfeedweight & 8 \\
+Run \Rn{2} \textit{OS misID} & Pion-region &  & no-crossfeedweight & 45 \\
+Run \Rn{2} \textit{OS misID} & Proton-region &  & no-crossfeedweight & 1 \\\hline
+	Sum & & & & 619\\
 \bottomrule
 \end{tabular}
 \end{center}
-	\caption{The final misid template is constructed by summing the contribution from Run \Rn{1} and \Rn{2} kaon, pion and proton-like regions for both \textit{SS} and \textit{OS misID} contributions. The last column adds cumulatively the contributions with respect to the previous row. }
+	\caption{The final misid template is constructed by summing the contribution from Run \Rn{1} and \Rn{2} kaon, pion and proton-like regions for both \textit{SS} and \textit{OS misID} contributions. }%The last column adds cumulatively the contributions with respect to the previous row. }
 \label{tab:misidtabcummu}
 \end{table}
 
@@ -869,7 +878,7 @@ Run \Rn{2} \textit{OS misID} & Proton-region &  & no-crossfeedweight & 619 \\
 \end{figure}
 
 \subsubsection{Combinatorial Background}
-Signal data fit so far includes components for signal component, partially reconstructed background component, and misID background component. The only component left to estimate is the contamination of combinatorial background. To model the combinatorial component exponential function is left floating and fit to data, which was motivated in~\autoref{combiback}. Hence \textbf{the shape}, $f^{Combi}$, has one(two) parameter(s) for non-simultaneous(simultaneous) fit, which is the exponential constant. And \textbf{the yield}, $N^{Combi}$, is also parametrised just with one (two) parameter(s) for non-simultaneous (simultaneous) fit.
+The signal data fit so far includes components for signal component, partially reconstructed background component, and misID background component. The only component left to estimate is the combinatorial background. To model the combinatorial component, the exponential function is left floating and fit to data, which was motivated in~\autoref{combiback}. Hence \textbf{the shape}, $f^{Combi}$, has one(two) parameter(s) for the non-simultaneous(simultaneous) fit, which is the exponential constant. And \textbf{the yield}, $N^{Combi}$, is also parametrised just with one (two) parameter(s) for non-simultaneous (simultaneous) fit.
 
 %\subsection{Signal Data Fit}
 %\label{fitsens}
@@ -1114,7 +1123,7 @@ Signal data fit so far includes components for signal component, partially recon
 
 
 \subsubsection{Signal fit models}
-The full signal fit model described by probability density function (PDF) consists of all the mentioned components. As mentioned in~\autoref{sigpara} there are two fit models that are used to fit data: non-simultaneous, $f^{NS}(x,y^{i})$, and simultaneous fit model, $f^{S}(x,{z^{k}})$, where the latter is the one which is used for limit setting. In this case $x$ is the corrected mass, and $y^{i}(z^{k})$ are all the parameters for non-simultaneous (simultaneous) fit. The total fit models hence can be written 
+The full signal fit model consists of all the mentioned components. As mentioned in~\autoref{sigpara} there are two fit models that are used to fit data: non-simultaneous, $f^{NS}(x,y^{i})$, and simultaneous fit model, $f^{S}(x,{z^{k}})$, where the latter is the one which is used for the limit setting. In this case $x$ is the corrected mass, and $y^{i}(z^{k})$ are all the parameters for the non-simultaneous (simultaneous) fit. The total fit models hence can be written 
 \begin{equation}
 f^{NS}(x,y^{i})=N^{sig}\times f^{sig} + N^{MisID}f^{MisID} + N^{PR}f^{PR} + N^{Combi} \times f^{Combi},
 \label{eq:fullhypo}
@@ -1129,7 +1138,7 @@ where $\sigma$ is the bin of fractional corrected mass. The shared parameters in
 %sim 56 param.
 
 \subsubsection{Signal fit model hypotheses}
-As the strength of the signal is not a priori known there are two types of hypotheses that are established: one where there is a presence of signal, also known as signal+background hypothesis model which takes exactly form of~\autoref{eq:fullhypo} and then background only hypothesis, where $\mathcal{B}(\Bmumumu)=0 \rightarrow N^{sig}=0$.
+As the strength of the signal is not a priori known, there are two types of hypotheses that are established: one where there is a presence of signal, also known as signal+background hypothesis model which takes exactly form of~\autoref{eq:fullhypo} and then a background only hypothesis, where $\mathcal{B}(\Bmumumu)=0 \rightarrow N^{sig}=0$.
 
 \subsubsection{Signal data types}
 
