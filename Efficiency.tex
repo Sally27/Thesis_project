@@ -1142,11 +1142,11 @@ As the strength of the signal is not a priori known, there are two types of hypo
 
 \subsubsection{Signal data types}
 
-There are two types of signal datasets as mentioned in~\autoref{Strategy}. Firstly, there is \textbf{blinded signal data} to which the simultaneous and non-simultaneous fits are performed in order to evaluate the expected sensitivity. Since these datasets are blinded only mass regions $4000{\mevcc}<M_{\rm{B_{corr}}}<{4500\mevcc}$ and $5500{\mevcc}<M_{\rm{B_{corr}}}<{7000\mevcc}$ are visible in the fits. These fits are shown in~\autoref{blindeddatafit}. Secondly fits to \textbf{full signal data} are performed and these are used in order to set the limit on the $\mathcal{B}(\Bmumumu)$. In these fits full mass spectrum is visible.
+There are two types of signal datasets as mentioned in~\autoref{Strategy}. Firstly, there is \textbf{blinded signal data} to which the simultaneous and non-simultaneous fits are performed in order to evaluate the expected sensitivity. Since these datasets are blinded only the mass regions $4000{\mevcc}<M_{\rm{B_{corr}}}<{4500\mevcc}$ and $5500{\mevcc}<M_{\rm{B_{corr}}}<{7000\mevcc}$ are used in the fits. These fits are shown in~\autoref{blindeddatafit}. Secondly fits to \textbf{full signal data} are performed and these are used in order to set the limit on the $\mathcal{B}(\Bmumumu)$. In these fits the full mass spectrum is used.
 
 \subsection{Signal Fit Systematics}
 \label{systematics}
-Systematics studies are performed in order to account for possible shortcomings of the methods used in order to measure $\mathcal{B}(\Bmumumu)$. The summary of systematic uncertainties is provided in~\autoref{tab:systematicsummary}. Most of this systematic uncertainties directly affect efficiency ratio between signal and normalisation channel. In that case, fits account for this uncertainty directly by incorporating the uncertainty into efficiency ratios by adding them in quadrature to the statistical error. For the simultaneous fit these uncertainties are assumed to be $100\%$ correlated between the bins of FCME.
+Systematics studies are performed in order to account for possible shortcomings of the methods used in order to measure $\mathcal{B}(\Bmumumu)$. The summary of systematic uncertainties is provided in~\autoref{tab:systematicsummary}. Most of this systematic uncertainties directly affect the efficiency ratio between signal and normalisation channel. In that case, fits account for this uncertainty directly by incorporating the uncertainty into efficiency ratios by adding them in quadrature to the statistical error. For the simultaneous fit these uncertainties are assumed to be $100\%$ correlated between the bins of FCME.
 
 
 \begin{table}[H]
@@ -1181,15 +1181,15 @@ Error on $B^{+} \rightarrow J/\psi K^{+}$ yield & 0.3 & 0.3 & 0.2\\
 
 
 \subsubsection{Signal Decay Model}
-Then the largest systematic uncertainty arises due to the choice of decay model for the signal channel.
+The largest systematic uncertainty arise due to the choice of decay model for the signal channel.
 The nominal signal model creates a photon pole, increasing the branching fraction in the low invariant dimuon mass region.
 The associated systematic uncertainty is estimated by replacing this decay model with one determined purely by phase-space and by comparing the selection efficiencies, resulting in $4.6\%$ systematic uncertainty on the efficiency ratio. % In the data fits this uncertainty directly incorporated into efficiency ratios, $R_{FCME}$, by adding it in quadrature to the statistical error. 
 
 \subsubsection{Trigger}
-The second most important systematic effect affecting the efficiency ratio is due to incorrect modelling of the trigger in simulation. This can be split into two effects:
- the efficiency difference between used simulation and data and incorrect emulation of \texttt{HLT2} on the simulation in 2016 as only one \texttt{TCK} was considered for this trigger selection. This uncertainty is assigned by comparing the difference between the trigger efficiency of \bjpsimumuk decays in simulation and data using \texttt{TISTOS method}.
+The second most important systematic effect is due to incorrect modelling of the trigger in the simulation. This can be split into two effects:
+ the efficiency difference between used simulation and data and incorrect emulation of \texttt{HLT2} in the simulation in 2016 as only one \texttt{TCK} was considered for this trigger selection. This uncertainty is assigned by comparing the difference between the trigger efficiency of \bjpsimumuk decays in simulation and data using the \texttt{TISTOS method}.
 
-\texttt{TISTOS method} allows measuring the trigger efficiency, whereby the events that are \gls{TIS} and \gls{TOS} are assumed to be independent. Hence, the efficiency
+The \texttt{TISTOS method} allows measuring the trigger efficiency, whereby the events that are \gls{TIS} and \gls{TOS} are assumed to be independent. Hence, the efficiency
 for selection of \gls{TOS} candidates can be calculated by
 
 \begin{equation}
@@ -1198,7 +1198,7 @@ for selection of \gls{TOS} candidates can be calculated by
 \end{equation}
 In~\autoref{eq:tistos} $N_{TIS\&TOS}$ is the number of \gls{TIS} and \gls{TOS} events passing the trigger requirement and $N_{TIS}$ is the number of \gls{TIS} events which passed the trigger requirement.
 
-The efficiency difference of the full trigger chain between \bjpsik decays in used simulation and \textit{Sweighted} data is $3.2\%$. Incorrect emulation of \texttt{HLT2}, which is calculated by comparing \texttt{HLT2} trigger efficiency of the chosen TCK simulation and all the \textit{Sweighted} data, yields $1.5\%$. Altogether the incorrect modelling of the trigger in simulation results in $3.5\%$ systematic uncertainty.
+The efficiency difference of the full trigger chain between \bjpsik decays in used simulation and \textit{Sweighted} data is $3.2\%$. Incorrect emulation of \texttt{HLT2}, which is calculated by comparing \texttt{HLT2} trigger efficiency of the chosen TCK simulation and all the \textit{Sweighted} data, yields $1.5\%$. Altogether the incorrect modelling of the trigger in simulation results in a $3.5\%$ systematic uncertainty.
 
 \subsubsection{Kaon Interaction Probability}
 One difference between the signal and the normalisation channels that can have effect on the efficiencies is that the kaon in the decay \bjpsimumuk can interact with the detector at a probability proportional to the amount of material traversed. The uncertainty on this amount of material leads to a 2\% systematic
@@ -1209,31 +1209,32 @@ Another source of systematic uncertainty is caused by differences in the $B^{+}$
 \begin{equation}
 w_{(bin)} =  \frac{w_{\bjpsimumuk data,bin}}{w_{\bjpsimumuk simulation,bin}}.
 \end{equation}
-Obtained correction weights are then applied to correct both \bjpsimumuk, \Bmumumu simulation. The difference between uncorrected and kinematically corrected efficiency ratios is assigned as a systematic uncertainty yielding $1.5\%$ systematic uncertainty on the efficiency ratios.
+Obtained correction weights are then applied to correct both the \bjpsimumuk and \Bmumumu simulation. The difference between uncorrected and kinematically corrected efficiency ratios is assigned as a systematic uncertainty yielding $1.5\%$ systematic uncertainty on the efficiency ratios.
 
-\subsubsection{Signal fit bias and coverage}
+\subsubsection{Signal Fit Bias and Coverage}
 In this section systematic uncertainty due to signal bias is evaluated. The pull is calculated using pseudo-experiments where the data is generated for signal branching fraction $\mathcal{B}= 1.0\times 10^{-8}$ corresponding to $\approx$ 17 signal events for Run \Rn{1} and \Rn{2} data.
 These pseudo-datasets are then re-fitted with floating $\mathcal{B}$ and corresponding number of fitted signal events is obtained. The pull is defined as the difference between number of fitted signal events and the number events that pseudo-experiment was created with, divided by the error on the number of signal events given by the fit:
 \begin{equation}
 \frac{N^{orig}_{sig}-N^{fit}_{sig}}{\sigma^{fit}}.
 \end{equation}
 
-The pull distributions then can be fitted with gaussian function and the fit bias is calculated as a shift of the mean from the 0. The overcoverage/undecoverage of the fit is established by shift of the standard deviation of the gaussian function from 1.
+The pull distributions can be fitted with a gaussian function and the fit bias is calculated as a shift of the mean from 0. The overcoverage/undecoverage of the fit is established by shift of the standard deviation of the gaussian function from 1.
 
-For this study 10000 pseudo-experiments were created testing the bias and coverage of both the extended non-simultaneous fit and extended simultaneous fit and the pull distributions can be seen in ~\autoref{fig:SignalBias}.
+For this study 10000 pseudo-experiments were created testing the bias and coverage of both the extended non-simultaneous fit and extended simultaneous fit. The pull distributions for the non-simultaneous fit can be seen in ~\autoref{fig:SignalBias}.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\linewidth]{./efficiency/systematics/signalbias/notsim.pdf}\put(-50,60){(a)}
-\includegraphics[width=0.5\linewidth]{./efficiency/systematics/signalbias/sim.pdf}\put(-50,60){(b)}
+\includegraphics[width=0.5\linewidth]{./efficiency/systematics/signalbias/notsim.pdf}
+%\includegraphics[width=0.5\linewidth]{./efficiency/systematics/signalbias/sim.pdf}\put(-50,60){(b)}
 %\newline
 %\includegraphics[width=0.5\linewidth]{./systematics/signalbias/SignalError_signal_numoftoys_10000_injectsig1e-08.pdf}\put(-50,60){(c)}
-\caption{(a) Non-simultaneous fit, (b) simultaneous fit pulls.}
+\caption{Non-simultaneous fit pulls from 10000 pseudo-experiments.}
 %\vspace*{-1.0cm}
+%\caption{(a) Non-simultaneous fit, (b) simultaneous fit pulls.}
 \label{fig:SignalBias}
 \end{figure}
 
 As it can be seen, for non-simultaneous fit there is overcoverage of 4 $\%$ but since the statistical error is of the order of 100$\%$ this is insignificant.
-The bias shows 8$\%$ preference for lower signal yields, and hence this will be added as a systematic uncertainty.
+The bias shows 8$\%$ preference for lower signal yields, and hence this will be added as a systematic uncertainty. The same process was repeated for simultaneous fit and results can be seen in~\autoref{tab:biassum}. 
 
 \begin{table}[H]
 \begin{center}
@@ -1258,11 +1259,11 @@ Other smaller systematic uncertainties are assigned due to the finite size of th
 
 \subsection{Blinded Data Fits}
 \label{blindeddatafit}
-In order to be able to get the expected sensitivity for this search a simultaneous unbinned maximum likelihood extended fit to the blinded data of corrected mass after the full selection in two bins of FCME is performed. As a crosscheck, also non-simultaneous fit with no FCME split is done. The summary of all the components adding to the total PDF for the blinded signal data fit, their modelling and constraints are shown in~\autoref{tab:floatingparsummary}.
+In order to be able to get the expected sensitivity for this search a simultaneous unbinned maximum likelihood extended fit to the blinded data of corrected mass after the full selection in two bins of FCME is performed. As a crosscheck, also the non-simultaneous fit with no FCME split is done. The summary of all the components adding to the total PDF for the blinded signal data fit, their modelling and constraints are shown in~\autoref{tab:floatingparsummary}.
 
-Most of the parameters in these fits are fixed and if their are not fixed they are constrained with their range allowed to be within $\pm5\sigma$ of the constraint. Error propagation from the parametrisations of different components is dealt with by using two types of constraints: gaussian constraints and multivariate gaussian constraints. The gaussian constraint, \textit{gaussian}, when imposed has central value of the fitted parameter and as width the error of the fitted parameter. Multivariate gaussian constraint, \textit{mvg\_gaussian}, is generalisation of gaussian constraint to higher dimensions and is used for misID parametrisation as the correlations between parameters' errors need to be propagated to the signal fit.
+Most of the parameters in these fits are fixed and if they are not fixed they are constrained with their range allowed to be within $\pm5\sigma$ of the constraint. Error propagation from the parametrisations of different components is dealt with by using two types of constraints: gaussian constraints and multivariate gaussian constraints. The gaussian constraint, \textit{gaussian}, when imposed has central value of the fitted parameter and as width the error of the fitted parameter. Multivariate gaussian constraint, \textit{mvg\_gaussian}, is generalisation of gaussian constraint to higher dimensions and is used for misID parametrisation as the correlations between different parameters need to be propagated to the signal fit.
 
-The maximum unbinned likelihood fit to blinded signal data after all selection is shown in~\autoref{fig:sigfitpretty} for all categories of FCME. As the signal region is blinded in this case the fit model uses background-only hypothesis. The total number of expected background events, $N_b$, can be then obtained by integrating the total PDF in the signal region.
+The maximum unbinned likelihood fit to blinded signal data after all selection is shown in~\autoref{fig:sigfitpretty} for all categories of FCME. As the signal region is blinded in this case the fit model uses the background-only hypothesis. The total number of expected background events, $N_b$, can be then obtained by integrating the total PDF in the signal region.
 
 \begin{figure}[H]
 \centering
@@ -1318,9 +1319,9 @@ The maximum unbinned likelihood fit to blinded signal data after all selection i
 
 \subsection{Expected Sensitivity}
 \label{sensitivity}
-The $CL_{s}$ method\cite{Read:2002hq} is used to produce expected upper limits from the blinded data fits. This is possible thanks to the fact that this method is based on generation of the pseudo-datasets with different signal hypothesis. Therefore it only requires the resulting PDFs of the blinded fits (simultaneous and non-simultaneous) with which pseudo-datasets can be produced.
+The $CL_{s}$ method\cite{Read:2002hq} is used to produce an expected upper limits from the blinded data fits. This is possible thanks to the fact that this method is based on generation of pseudo-datasets with different signal hypothesis. Therefore, it only requires the resulting PDFs of the blinded fits (simultaneous and non-simultaneous) with which pseudo-datasets can be produced.
 
-Systematic uncertainties directly influence the relative efficiencies between signal and normalisation channel. They can be therefore added as gaussian constraints on the relevant efficiency ratio. The expected exclusion limits are then computed and summarized in~\autoref{tab:explimits}. Partial systematics only include systematics related to branching fractions, whereas full systematics include all the effects from~\autoref{tab:systematicsummary}. In simultaneous fit these effects are assumed to be 100\% correlated between the two bins of fractional corrected mass, but uncorrelated between themselves. As expected, the limit weakens with addition of systematics. On the other hand there is an increase in expected limit by $20\%$ obtained with the use of the simultaneous fit compared to the non-simultaneous fit with the full systematics included. Addition of Run \Rn{2} data also improved the expected sensitivity of the search. 
+Systematic uncertainties directly influence the relative efficiencies between signal and normalisation channel. They can therefore be added as gaussian constraints on the relevant efficiency ratio. The expected exclusion limits are then computed and summarized in~\autoref{tab:explimits}. Partial systematics only include systematics related to branching fractions, whereas full systematics include all the effects from~\autoref{tab:systematicsummary}. In simultaneous fit these effects are assumed to be 100\% correlated between the two bins of fractional corrected mass, but uncorrelated between themselves. As expected, the limit weakens with the addition of systematics. On the other hand there is an increase in expected limit by $20\%$ obtained with the use of the simultaneous fit compared to the non-simultaneous fit with the full systematics included. Addition of Run \Rn{2} data also improved the expected sensitivity of the search. 
 %are used to generate two types of pseudo-datasets: background-only pseudo-datasets, and signal+background pseudo-datasets at different assumptions of the branching fractions. After this both types of pseudo-datasets are fitted with signal+background hypothesis and background hypothesis. Ratio of likelihoods, where the test statistics, ratio of likelihoods, for both bacgkround pseudo-datasets and signal ps
 
 %This means that for a given branching fraction assumption $\mathcal{B}$:
@@ -1358,9 +1359,10 @@ Systematic uncertainties directly influence the relative efficiencies between si
 \begin{table}[H]
 \centering
 %\small
-\begin{tabular}{ l  l  l  l  l  }
+\begin{tabular}{ c  l  l  l  l  }
 \toprule
-CI & Data & Systematics & Fit Type & Value  \\ \hline
+Confidence & Data & Systematics & Fit Type & Value  \\ 
+Interval & & & & \\ \hline
 Expected $95\%$ CL & Run \Rn{1} & Partial & Simultaneous & $ 3.3\times 10^{-8}$ \\
 Expected $95\%$ CL & Run \Rn{1} & Full & Simultaneous &$ 3.5\times 10^{-8}$ \\
 Expected $95\%$ CL & Run \Rn{1} and \Rn{2} & Partial & Non-simultaneous & $ 3.0\times 10^{-8}$ \\
@@ -1369,8 +1371,7 @@ Expected $95\%$ CL & Run \Rn{1} and \Rn{2} & Partial & Simultaneous & $ 2.5\time
 Expected $95\%$ CL & Run \Rn{1} and \Rn{2} &  Full & Simultaneous &$ 2.8\times 10^{-8}$ \\
 \bottomrule
 \end{tabular}
-\caption{Resulting exclusion limits with simultaneous fit.}
-\label{tab:explimits}
+\caption{Resulting expected exclusion limits with both non-simultaneous and simultaneous fits. CL stands for confidence level.}
 \end{table}
 
 
@@ -1378,7 +1379,7 @@ Expected $95\%$ CL & Run \Rn{1} and \Rn{2} &  Full & Simultaneous &$ 2.8\times 1
 
 \subsection{Unblinded Data Fits}
 \label{unblindeddatafit}
-After full strategy was reviewed the signal datasets were unblinded, observing no significant signal. The simultaneous unbinned extended maximum likelihood fit to all the data was performed. As expected with no excess signal, background-only hypothesis fit described the data very well, which can be seen in~\autoref{fig:sigfit_unblinded_bkgonly}.
+After the full analysis strategy was reviewed the signal datasets were unblinded, observing no significant signal. The simultaneous unbinned extended maximum likelihood fit to all the data was performed. As expected with no excess signal, the background-only hypothesis fit described the data very well, which can be seen in~\autoref{fig:sigfit_unblinded_bkgonly}.
 
 \begin{figure}[H]
 \centering
@@ -1388,7 +1389,7 @@ After full strategy was reviewed the signal datasets were unblinded, observing n
 \label{fig:sigfit_unblinded_bkgonly}
 \end{figure}
 
-In order to perform fit with signal and background hypothesis good range of the $\mathcal{B}$ needs to be established in order to aid the fit convergence. This is done the maximizing the log likelihood values for different values of $\mathcal{B}$, also known as profiling the $\mathcal{B}$. The results of the profiling can be seen in~\autoref{fig:prof}. This shows that the minimum is at $\mathcal{B}\sim-2.0\times10^{-8}$, hence the fit prefers negative values of $\mathcal{B}$. 
+In order to perform fit with signal and background hypothesis a good range of the $\mathcal{B}$ needs to be established in order to aid the fit convergence. This is done the maximizing the log likelihood values for different values of $\mathcal{B}$, also known as profiling the $\mathcal{B}$. The results of the profiling can be seen in~\autoref{fig:prof}. This shows that the minimum is at $\mathcal{B}\sim-2.0\times10^{-8}$, hence the fit prefers a negative value of $\mathcal{B}$. 
 
 
 \begin{figure}[H]
@@ -1398,13 +1399,13 @@ In order to perform fit with signal and background hypothesis good range of the 
 \label{fig:prof}
 \end{figure}
 
-The simultaneous unbinned extended maximum likelihood fit to all the data with signal+background hypothesis is given in~\autoref{fig:sigfit_unblinded}, converging at value of $\mathcal{B}=-1.78\times10^{-8}$. This hence represents negative yield fluctuation. The full list of all free and constrained parameters' values obtained in this fit is shown in~\autoref{tab:floatingparsummary_fit}. This fit results then can be translated into yields in all the fitting range and specifically blinded region by integrating the resulting PDF in a relevant region as shown in~\autoref{tab:yieldiatkos}.
+The simultaneous unbinned extended maximum likelihood fit to all the data with signal+background hypothesis is given in~\autoref{fig:sigfit_unblinded}, converging at value of $\mathcal{B}=-1.8\times10^{-8}$. This hence represents a negative yield fluctuation. The full list of all free and constrained parameters' values obtained in this fit is shown in~\autoref{tab:floatingparsummary_fit}. This fit result then can be translated into yields in all the fitting range and specifically blinded region by integrating the resulting PDF in a relevant region as shown in~\autoref{tab:yieldiatkos}.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\linewidth]{./efficiency/unblindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf}\put(-30,100){(a)}%
 \includegraphics[width=0.5\linewidth]{./efficiency/unblindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf}\put(-30,100){(b)}%
-\caption{Simultaneous unbinned maximum likelihood fit to unblinded data after full selection chain in two bins of FCME, with (b) fit to $\sigma_{low}$ bin, (c) $\sigma_{high}$ bin.}
+	\caption{Simultaneous unbinned maximum likelihood fit to unblinded data after full selection chain in two bins of FCME, with (b) fit to $\sigma_{low}$ bin, (c) $\sigma_{high}$ bin. The signal component is visible as negative fluctuation.}
 \label{fig:sigfit_unblinded}
 \end{figure}
 
@@ -1414,7 +1415,7 @@ The simultaneous unbinned extended maximum likelihood fit to all the data with s
 \begin{tabular}{ l  l  }
 \toprule
 Fit Parameter & Value  \\ \hline
-$ \mathcal{B}(\Bmumumu) $ & $-(1.78 \pm 0.936)\times 10^{-8}$ \\
+$ \mathcal{B}(\Bmumumu) $ & $-1.8 \pm 0.9\times 10^{-8}$ \\
 $ \mathcal{B}(\bjpsimumuk) $ & $(6.11 \pm 0.185)\times 10^{-5}$ \\
 $ \mathcal{B}(\pr) $ & $(4.12 \pm 0.5)\times 10^{-7}$ \\
 $ \mu_{misID_{high}} $ & $4100 \pm 123$ \\
@@ -1439,7 +1440,7 @@ $ N_{combi_{high}} $ & $620 \pm 34.3$ \\
 $ N_{combi_{low}} $ & $531 \pm 35.4$ \\
 \bottomrule
 \end{tabular}
-\caption{Fit results for all floating variables in the unblinded data fit. The $\mathcal{B}(\Bmumumu) =-1.78\times 10^{-8}$. Variables $R^{S}_{K}$ are the efficiency ratios obtained by normalising the decays to \bjpsimumuk decays where $S$ stands for stripping and $K$ for the FCME. $N^{scaled}_{misID_{K}}$ is the number of misID events, $N_{combi_{K}}$ is the number of combinatorial events, $\beta_{K}$ is the exponential constant, $\mu_{misID_{K}}$ and $\sigma_{misID_{K}}$ are the mean and the $\sigma$ of the CB function.}
+\caption{Fit results for all floating variables in the unblinded data fit. The $\mathcal{B}(\Bmumumu) =-1.8\times 10^{-8}$. Variables $R^{S}_{K}$ are the efficiency ratios obtained by normalising the decays to \bjpsimumuk decays where $S$ stands for stripping and $K$ for the FCME. $N^{scaled}_{misID_{K}}$ is the number of misID events, $N_{combi_{K}}$ is the number of combinatorial events, $\beta_{K}$ is the exponential constant, $\mu_{misID_{K}}$ and $\sigma_{misID_{K}}$ are the mean and the $\sigma$ of the CB function.}
 \label{tab:floatingparsummary_fit}
 \end{table}
 
@@ -1461,7 +1462,7 @@ $N_{partreco_{high}}$ & 25.1 & 5.17 \\
 \bottomrule
 \end{tabular}
 \end{center}
-	\caption{Resulting yields for different components from the corrected mass fit with $\mathcal{B}(\Bmumumu) =-1.78\times 10^{-8}$.\mybox{Sally need to still fix this}}
+	\caption{Resulting yields for different components from the corrected mass fit with $\mathcal{B}(\Bmumumu) =-1.8\times 10^{-8}$.\mybox{Sally need to still fix this}}
 \label{tab:yieldiatkos}
 \end{table}
 

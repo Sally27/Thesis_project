@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  11 AUG 2018 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  12 AUG 2018 00:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2483,7 +2483,7 @@ Overfull \hbox (1.01994pt too wide) detected at line 107
 
 
 Overfull \hbox (1.01994pt too wide) detected at line 108
- []\T1/jkp/m/n/12 189
+ []\T1/jkp/m/n/12 190
  []
 
 
@@ -6252,15 +6252,6 @@ Package pdftex.def Info: ./figs/./efficiency/systematics/signalbias/notsim.pdf
 used on input line 1226.
 (pdftex.def)             Requested size: 227.62204pt x 220.7958pt.
 
-<./figs/./efficiency/systematics/signalbias/sim.pdf, id=8198, 569.12625pt x 552
-.0625pt>
-File: ./figs/./efficiency/systematics/signalbias/sim.pdf Graphic file (type pdf
-)
- <use ./figs/./efficiency/systematics/signalbias/sim.pdf>
-Package pdftex.def Info: ./figs/./efficiency/systematics/signalbias/sim.pdf use
-d on input line 1227.
-(pdftex.def)             Requested size: 227.62204pt x 220.7958pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -6275,39 +6266,38 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [177 <./figs/./efficiency/systematics/signalbias/notsim.pdf, page is rotated 90
- degrees> <./figs/./efficiency/systematics/signalbias/sim.pdf, page is rotated 
-90 degrees>]
+ degrees>]
 <./figs/./efficiency/blindedfits/probnnmu035probmu35plotB23MuNuFitPretty_chi2_r
-eallynice.pdf, id=8300, 569.12625pt x 546.04pt>
+eallynice.pdf, id=8257, 569.12625pt x 546.04pt>
 File: ./figs/./efficiency/blindedfits/probnnmu035probmu35plotB23MuNuFitPretty_c
 hi2_reallynice.pdf Graphic file (type pdf)
 
 <use ./figs/./efficiency/blindedfits/probnnmu035probmu35plotB23MuNuFitPretty_ch
 i2_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/blindedfits/probnnmu035probmu35plo
-tB23MuNuFitPretty_chi2_reallynice.pdf used on input line 1269.
+tB23MuNuFitPretty_chi2_reallynice.pdf used on input line 1270.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <./figs/./efficiency/blindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitPretty
-_chi2_reallynice.pdf, id=8301, 569.12625pt x 546.04pt>
+_chi2_reallynice.pdf, id=8258, 569.12625pt x 546.04pt>
 File: ./figs/./efficiency/blindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitP
 retty_chi2_reallynice.pdf Graphic file (type pdf)
 
 <use ./figs/./efficiency/blindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitPr
 etty_chi2_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/blindedfits/LowFCMEprobnnmu035prob
-mu35plotB23MuNuFitPretty_chi2_reallynice.pdf used on input line 1271.
+mu35plotB23MuNuFitPretty_chi2_reallynice.pdf used on input line 1272.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <./figs/./efficiency/blindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPrett
-y_chi2_reallynice.pdf, id=8302, 569.12625pt x 546.04pt>
+y_chi2_reallynice.pdf, id=8259, 569.12625pt x 546.04pt>
 File: ./figs/./efficiency/blindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFit
 Pretty_chi2_reallynice.pdf Graphic file (type pdf)
 
 <use ./figs/./efficiency/blindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitP
 retty_chi2_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/blindedfits/HighFCMEprobnnmu035pro
-bmu35plotB23MuNuFitPretty_chi2_reallynice.pdf used on input line 1272.
+bmu35plotB23MuNuFitPretty_chi2_reallynice.pdf used on input line 1273.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 
@@ -6317,17 +6307,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [178]
-Overfull \hbox (22.85805pt too wide) in paragraph at lines 1288--1288
+Overfull \hbox (22.85805pt too wide) in paragraph at lines 1289--1289
 []|$[]$|  
  []
 
 
-Overfull \hbox (11.53111pt too wide) in paragraph at lines 1295--1295
+Overfull \hbox (11.53111pt too wide) in paragraph at lines 1296--1296
 []|$[]$|  
  []
 
 
-Overfull \vbox (1.17548pt too high) detected at line 1295
+Overfull \vbox (1.17548pt too high) detected at line 1296
  []
 
 
@@ -6352,6 +6342,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [180]
 
+LaTeX Warning: Reference `tab:explimits' on page 181 undefined on input line 13
+24.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -6359,7 +6353,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [181]
 <./figs/./efficiency/unblindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitPret
-ty_chi2_simPdfsig_with_0_reallynice.pdf, id=8471, 569.12625pt x 546.04pt>
+ty_chi2_simPdfsig_with_0_reallynice.pdf, id=8426, 569.12625pt x 546.04pt>
 File: ./figs/./efficiency/unblindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFi
 tPretty_chi2_simPdfsig_with_0_reallynice.pdf Graphic file (type pdf)
 
@@ -6367,11 +6361,11 @@ tPretty_chi2_simPdfsig_with_0_reallynice.pdf Graphic file (type pdf)
 Pretty_chi2_simPdfsig_with_0_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/unblindedfits/LowFCMEprobnnmu035pr
 obmu35plotB23MuNuFitPretty_chi2_simPdfsig_with_0_reallynice.pdf used on input l
-ine 1385.
+ine 1386.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <./figs/./efficiency/unblindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPre
-tty_chi2_simPdfsig_with_0_reallynice.pdf, id=8472, 569.12625pt x 546.04pt>
+tty_chi2_simPdfsig_with_0_reallynice.pdf, id=8427, 569.12625pt x 546.04pt>
 File: ./figs/./efficiency/unblindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuF
 itPretty_chi2_simPdfsig_with_0_reallynice.pdf Graphic file (type pdf)
 
@@ -6379,16 +6373,16 @@ itPretty_chi2_simPdfsig_with_0_reallynice.pdf Graphic file (type pdf)
 tPretty_chi2_simPdfsig_with_0_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/unblindedfits/HighFCMEprobnnmu035p
 robmu35plotB23MuNuFitPretty_chi2_simPdfsig_with_0_reallynice.pdf used on input 
-line 1386.
+line 1387.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
-<./figs/./efficiency/unblindedfits/MyOwnProfileLL.pdf, id=8474, 569.12625pt x 3
+<./figs/./efficiency/unblindedfits/MyOwnProfileLL.pdf, id=8429, 569.12625pt x 3
 85.44pt>
 File: ./figs/./efficiency/unblindedfits/MyOwnProfileLL.pdf Graphic file (type p
 df)
  <use ./figs/./efficiency/unblindedfits/MyOwnProfileLL.pdf>
 Package pdftex.def Info: ./figs/./efficiency/unblindedfits/MyOwnProfileLL.pdf u
-sed on input line 1396.
+sed on input line 1397.
 (pdftex.def)             Requested size: 273.14922pt x 184.99733pt.
 
 
@@ -6402,7 +6396,7 @@ tPretty_chi2_simPdfsig_with_0_reallynice.pdf, page is rotated 90 degrees> <./fi
 gs/./efficiency/unblindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPretty_c
 hi2_simPdfsig_with_0_reallynice.pdf, page is rotated 90 degrees>]
 <./figs/./efficiency/unblindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitPret
-ty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf, id=8568, 569.12625pt x 546.
+ty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf, id=8524, 569.12625pt x 546.
 04pt>
 File: ./figs/./efficiency/unblindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFi
 tPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf Graphic file (type pdf)
@@ -6412,11 +6406,11 @@ tPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf Graphic file (type pdf)
 Pretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/unblindedfits/LowFCMEprobnnmu035pr
 obmu35plotB23MuNuFitPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf used
- on input line 1405.
+ on input line 1406.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <./figs/./efficiency/unblindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPre
-tty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf, id=8569, 569.12625pt x 546
+tty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf, id=8525, 569.12625pt x 546
 .04pt>
 File: ./figs/./efficiency/unblindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuF
 itPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf Graphic file (type pdf
@@ -6426,7 +6420,7 @@ itPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf Graphic file (type pdf
 tPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/unblindedfits/HighFCMEprobnnmu035p
 robmu35plotB23MuNuFitPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf use
-d on input line 1406.
+d on input line 1407.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 
@@ -6467,21 +6461,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [186]
 Chapter 8.
 
-<./figs/./results/ClsExclusion_new_picked_final.pdf, id=8720, 569.12625pt x 385
+<./figs/./results/ClsExclusion_new_picked_final.pdf, id=8676, 569.12625pt x 385
 .44pt>
 File: ./figs/./results/ClsExclusion_new_picked_final.pdf Graphic file (type pdf
 )
  <use ./figs/./results/ClsExclusion_new_picked_final.pdf>
 Package pdftex.def Info: ./figs/./results/ClsExclusion_new_picked_final.pdf use
-d on input line 10.
+d on input line 11.
 (pdftex.def)             Requested size: 227.62204pt x 154.15562pt.
 
-<./figs/./results/ClsExclusion_new_Log_picked.pdf, id=8721, 569.12625pt x 385.4
+<./figs/./results/ClsExclusion_new_Log_picked.pdf, id=8677, 569.12625pt x 385.4
 4pt>
 File: ./figs/./results/ClsExclusion_new_Log_picked.pdf Graphic file (type pdf)
  <use ./figs/./results/ClsExclusion_new_Log_picked.pdf>
 Package pdftex.def Info: ./figs/./results/ClsExclusion_new_Log_picked.pdf used 
-on input line 11.
+on input line 12.
 (pdftex.def)             Requested size: 227.62204pt x 154.15562pt.
  [187
 
@@ -6498,11 +6492,11 @@ grees>]
 
 pdfTeX warning: pdflatex (file ./figs/results/fit.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<./figs/results/fit.pdf, id=8819, 569.12625pt x 363.3575pt>
+<./figs/results/fit.pdf, id=8775, 569.12625pt x 363.3575pt>
 File: ./figs/results/fit.pdf Graphic file (type pdf)
 
 <use ./figs/results/fit.pdf>
-Package pdftex.def Info: ./figs/results/fit.pdf used on input line 41.
+Package pdftex.def Info: ./figs/results/fit.pdf used on input line 43.
 (pdftex.def)             Requested size: 364.19664pt x 232.53136pt.
 
 
@@ -6551,7 +6545,7 @@ Appendix A.
 ]) [199]
 Appendix B.
 (./Appendix_License.tex
-<figs/detector/license/LicenseProbCrop.pdf, id=9025, 564.48293pt x 539.1603pt>
+<figs/detector/license/LicenseProbCrop.pdf, id=8980, 564.48293pt x 539.1603pt>
 File: figs/detector/license/LicenseProbCrop.pdf Graphic file (type pdf)
 
 <use figs/detector/license/LicenseProbCrop.pdf>
@@ -6571,7 +6565,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 423.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 423.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 423.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: DBC20CD55FDE0E021582C123EA932FA1;7228.
+(rerunfilecheck)             Checksum: 844D2D487EEB85E8A0625FA71C073DA2;7242.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -6579,11 +6576,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 423.
  ) 
 Here is how much of TeX's memory you used:
- 43407 strings out of 494946
- 835200 string characters out of 6180981
- 977451 words of memory out of 5000000
- 44606 multiletter control sequences out of 15000+600000
- 221759 words of font info for 646 fonts, out of 8000000 for 9000
+ 43399 strings out of 494946
+ 834938 string characters out of 6180981
+ 977485 words of memory out of 5000000
+ 44602 multiletter control sequences out of 15000+600000
+ 221397 words of font info for 643 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,26n,77p,10372b,1023s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
@@ -6613,10 +6610,10 @@ fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/texlive/texmf-dist/fonts/type1
 fonts/jkpttbn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/j
 kpttmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb>
-Output written on Main.pdf (202 pages, 6266380 bytes).
+Output written on Main.pdf (202 pages, 6252633 bytes).
 PDF statistics:
- 9276 PDF objects out of 10688 (max. 8388607)
- 5592 compressed objects within 56 object streams
+ 9232 PDF objects out of 10688 (max. 8388607)
+ 5574 compressed objects within 56 object streams
  641 named destinations out of 1000 (max. 500000)
- 70700 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 70695 words of extra memory for PDF output out of 74296 (max. 10000000)
 

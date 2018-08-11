@@ -97,15 +97,15 @@
 \contentsline {subsubsection}{Trigger}{174}{section*.116}
 \contentsline {subsubsection}{Kaon Interaction Probability}{175}{section*.117}
 \contentsline {subsubsection}{Kinematic Reweighting}{175}{section*.118}
-\contentsline {subsubsection}{Signal fit bias and coverage}{176}{section*.119}
+\contentsline {subsubsection}{Signal Fit Bias and Coverage}{176}{section*.119}
 \contentsline {subsubsection}{Others}{177}{section*.122}
 \contentsline {subsection}{\numberline {7.3.6}Blinded Data Fits}{178}{subsection.7.3.6}
 \contentsline {subsection}{\numberline {7.3.7}Expected Sensitivity}{181}{subsection.7.3.7}
 \contentsline {subsection}{\numberline {7.3.8}Unblinded Data Fits}{182}{subsection.7.3.8}
-\contentsline {chapter}{\numberline {8}Results}{187}{chapter.8}
+\contentsline {chapter}{\numberline {8}Result and Conclusion}{187}{chapter.8}
 \contentsline {section}{\numberline {8.1}Limit Setting}{187}{section.8.1}
 \contentsline {section}{\numberline {8.2}Conclusion}{188}{section.8.2}
-\contentsline {section}{\numberline {8.3}Outlook}{189}{section.8.3}
+\contentsline {section}{\numberline {8.3}Outlook}{190}{section.8.3}
 \contentsline {chapter}{Bibliography}{191}{section.8.3}
 \contentsline {chapter}{Appendices}{198}{chapter*.134}
 \contentsline {chapter}{\numberline {A}Fitting functions}{198}{appendix.A}
