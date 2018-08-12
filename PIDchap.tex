@@ -1,4 +1,4 @@
-\chapter{Handling of trimuon correlations at LHCb}
+\chapter{Handling of Trimuon Correlations at LHCb}
 \label{chap:trimuon}
 
 
@@ -6,11 +6,11 @@
 
 \color{black}
 
-\section{Muon PID variables}
+\section{Muon PID Variables}
 \label{otherpid}
 In addition to the muon identification variables mentioned in~\autoref{muonID}, there is a further set of criteria for selecting muons. In this section a summary of the variables used in the analysis of the \Bmumumu is discussed.
 
-\subsection{Binary Muon PID variables }
+\subsection{Binary Muon PID Variables }
 Similar to \texttt{isMuon} shown in~\autoref{tab:ismuontab}, there are more binary variables, such as \texttt{isMuonTight}, that can help with classification of muons. As its name suggests, \texttt{isMuonTight} has stronger conditions to satisfy as compared to \texttt{isMuon}. 
 
 In each muon station (\gls{muonstation}) a field of interest, \gls{FOI} is defined as %a function of momentum $p$ in a following way:
@@ -34,7 +34,7 @@ The detector information is read out in the $x$ and $y$ direction separately. Th
         \label{fig:pads}
 \end{figure}
 
-\subsection{Muon PID variables based on sharing hits }
+\subsection{Muon PID Variables Based on Sharing Hits }
 \label{bugs}
 
 Another way of identifying muon tracks is based on the variable, \texttt{nShared}, which identifies the number of tracks with shared hits in the muon stations. For each hit within the \gls{FOI} of an extrapolated track, the \texttt{nShared} algorithm will check whether any other track was built using the given hit. In this case, the \texttt{nShared} variable of the muon track which has the bigger distance between the extrapolation coordinates and the hit coordinates is increased by 1. Hence this integer \gls{PID} variable helps suppressing \textit{ghost} tracks and \textit{clones} if no tracks have hits in common with the owner of the track (\texttt{nShared=0}).
@@ -77,7 +77,7 @@ Using the same calibration channels as in~\autoref{muonperf}, misID and ID rates
 %\vspace*{-1.0cm}
 \end{figure}
 
-\subsection{Muon PID variables based on regression techniques }
+\subsection{Muon PID Variables Based on Regression Techniques }
 \label{muonPIDprobnn}
 Similar to the DLLmu variable in~\autoref{muonID}, which combines all the information from the detector into a global likelihood, it is possible to feed all the different variables to a neural network, which can then produce an output corresponding to the probability of a particle to be of a certain species. \texttt{Probnn${x}$}, where $x$ is the species of interest, is calculated and can be used also for muon identification. Compared to $\rm{DLL_{x}}$ variables, \texttt{Probnn${x}$} variables tend to have smaller correlation with the kinematics of the particle, and hence are more useful with decays where particles are soft, such as \Bmumumu. As with any machine learning algorithm, the selection of both the training sample and the input variables are important. In Run \Rn{1}, there were two tunings (trainings) introduced \texttt{V2} and \texttt{V3}, with more input variables in \texttt{V2}. Depending on the species of particles, \texttt{V2} or \texttt{V3} performed better. In the analysis of \Bmumumu, \texttt{Probnn${x}\_$V2} is used.
 
@@ -175,11 +175,11 @@ For Run \Rn{2}, due to the introduced bugs, such strong requirement would harm s
 %\vspace*{-1.0cm}
 \end{figure}
 
-\section{Probability of \mb{K/\pi \rightarrow \mu} misidentification at LHCb }
+\section{Probability of \mb{K/\pi \rightarrow \mu} Misidentification at LHCb }
 
 Usually, in order to estimate background coming from misidentification of particles as muons in the detector, data samples with particles of known (non-muon) type are identified from the kinematics of the decay chains. From these samples, probabilities of mis-identification are derived as discussed in~\autoref{RICHperf}. However, the three muon signature will induce problems for \gls{PID} variables that are correlated with the number of muons in the detector and specific data samples that incorporates this correlation have to be used for measuring the mis-identification probability.
 
-\subsection{Specific control sample for \mb{K/\pi \rightarrow \mu} misID rates }
+\subsection{Specific Control Sample for \mb{K/\pi \rightarrow \mu} MisID Rates }
 \label{extraction}
 A platform that \gls{LHCb} analysts usually use to extract the misID and id efficiencies, as described in~\autoref{RICHperf}, is known as the \texttt{PIDCalib} package \cite{Anderlini:2202412}. It contains samples where the identity of the particle is know purely from kinematics.  In this \texttt{PIDCalib} package, such a control same for $K/\pi$ is obtained from $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$. These statistically populated background-free \textit{sWeighted} samples\cite{sPlot}, for which it is possible to extract misID and ID rates as a function of kinematics given certain \gls{PID} criteria, do not have other muons in the final state. 
 
@@ -221,7 +221,7 @@ ID kaon & DLLK $>$ 0 and DLLK-DLLp $>$ 0 and \texttt{IsMuon==0} \\
 \end{table}
 
 
-\subsection{Fitting Strategy for \mb{B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}} decay }
+\subsection{Fitting Strategy for \mb{B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}}}
 After the selection, the residual background needs to be modelled. The signal component, $B^{0} \rightarrow J/\psi K^{*}$, is obtained by fixing the shape from simulation apart from the mean $\mu$ and the width $\sigma$. It is fitted with a double-sided Hypatia function \cite{Santos:2013gra} (more in~\autoref{IP}).
 
 Background that peaks in the upper mass sideband, coming from heavier $B^{0}_{s}$, $\bar{B}^{0}_{s} \rightarrow J/\psi (\rightarrow \mu^{+} \mu^{-}) K^*(\rightarrow \underline{K^{+} \pi^{-}})$ is also modelled using simulation, using the same function as signal but with $\mu$ offset by the difference between the known $B^{0}_{s}$ and $B^{0}$.
@@ -303,7 +303,7 @@ for purposes of the \Bmumumu analysis the \textit{sWeight} values will be used. 
 \label{fig:JpsiKst}
 \end{figure}
 
-\subsection{Results of \mb{B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}} control sample for \mb{K/\pi \rightarrow \mu} misID rates }
+\subsection{Results of \mb{B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}} Control Sample for \mb{K/\pi \rightarrow \mu} MisID Rates }
 \label{ratiatkos}
 %\color{red} Using the \textit{sWeight} method, misID rates for kaons and pions can be obtained. In order to rule out that any disagreement of \gls{PID} performance is caused by the fraction of the real kaon and pions tracks within the muon fiducial area, following check is performed. For both control samples, kaon sample from the $D^{*+}(\rightarrow D^{0}(\rightarrow \underline{K^{+} \pi^{-}}) \pi^{+})$ events and the kaon sample from the $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ events, the probability of correctly identifying kaon is computed, given that only extrapolated tracks that fall within muon acceptance are considered. This is achieved by requiring that given kaon track has \texttt{InMuonAcceptance==1.0}. It can be seen in ~\autoref{tab:ROE} that the ID performance is the same across nearly all of the momentum range for kaons, showing that the fraction of the kaons tracks within muon acceptance is very similar. The same check was performed for pions tracks as well. 
 

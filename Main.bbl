@@ -82,8 +82,8 @@ W.~J. Marciano and A.~Sirlin,
 \EndOfBibitem
 \bibitem{Hou:1992sy}
 W.-S. Hou, \ifthenelse{\boolean{articletitles}}{\emph{{Enhanced charged Higgs
-  boson effects in B- ---> tau anti-neutrino, mu anti-neutrino and b ---> tau
-  anti-neutrino + X}},
+  boson effects in $B^{-} \rightarrow \tau \bar\nu, \mu \bar{\nu}$ and $b
+  \rightarrow \tau\bar{\nu}+X$}},
   }{}\href{http://dx.doi.org/10.1103/PhysRevD.48.2342}{Phys.\ Rev.\
   \textbf{D48} (1993) 2342}\relax
 \mciteBstWouldAddEndPuncttrue
@@ -127,7 +127,7 @@ A.~Arbey, F.~Mahmoudi, O.~Stal, and T.~Stefaniak,
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{Sibidanov:2017vph}
-Belle, A.~Sibidanov {\em et~al.},
+Belle collaboration, A.~Sibidanov {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Search for
   $B^{-}\to\mu^{-}\bar\nu_\mu$ Decays at the Belle Experiment}},
   }{}\href{http://arxiv.org/abs/1712.04123}{{\normalfont\ttfamily
@@ -137,7 +137,7 @@ Belle, A.~Sibidanov {\em et~al.},
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{Adachi:2012mm}
-Belle, I.~Adachi {\em et~al.},
+Belle collaboration, I.~Adachi {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Evidence for $B^- \to \tau^-
   \bar{\nu}_\tau$ with a Hadronic Tagging Method Using the Full Data Sample of
   Belle}}, }{}\href{http://dx.doi.org/10.1103/PhysRevLett.110.131801}{Phys.\
@@ -149,7 +149,7 @@ Belle, I.~Adachi {\em et~al.},
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{Kronenbitter:2015kls}
-Belle, B.~Kronenbitter {\em et~al.},
+Belle collaboration, B.~Kronenbitter {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Measurement of the branching
   fraction of $B^+ \tau^+ \nu_\tau$ decays with the semileptonic tagging
   method}}, }{}\href{http://dx.doi.org/10.1103/PhysRevD.92.051102}{Phys.\ Rev.\
@@ -161,7 +161,7 @@ Belle, B.~Kronenbitter {\em et~al.},
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{Lees:2012ju}
-BaBar, J.~P. Lees {\em et~al.},
+BaBar collaboration, J.~P. Lees {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Evidence of $B^+ \to \tau^+\nu$
   decays with hadronic B tags}},
   }{}\href{http://dx.doi.org/10.1103/PhysRevD.88.031102}{Phys.\ Rev.\
@@ -173,9 +173,9 @@ BaBar, J.~P. Lees {\em et~al.},
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{Aubert:2009wt}
-BaBar, B.~Aubert {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{A
-  Search for $B^+ \to \ell^+ \nu_{\ell}$ Recoiling Against $B^{-}\to D^{0}
-  \ell^{-}\bar{\nu} X$}},
+BaBar collaboration, B.~Aubert {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{A Search for $B^+ \to \ell^+
+  \nu_{\ell}$ Recoiling Against $B^{-}\to D^{0} \ell^{-}\bar{\nu} X$}},
   }{}\href{http://dx.doi.org/10.1103/PhysRevD.81.051101}{Phys.\ Rev.\
   \textbf{D81} (2010) 051101},
   \href{http://arxiv.org/abs/0912.2453}{{\normalfont\ttfamily
@@ -218,7 +218,7 @@ Y.-M. Wang, \ifthenelse{\boolean{articletitles}}{\emph{{Subleading power
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{Heller:2015vvm}
-Belle, A.~Heller {\em et~al.},
+Belle collaboration, A.~Heller {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Search for $B^+ →
   ℓ^+ν_ℓγ$ decays with hadronic tagging using the full Belle data
   sample}}, }{}\href{http://dx.doi.org/10.1103/PhysRevD.91.112009}{Phys.\ Rev.\
@@ -260,7 +260,7 @@ A.~Ali, P.~Ball, L.~T. Handoko, and G.~Hiller,
 G.~Raven, \ifthenelse{\boolean{articletitles}}{\emph{{LHCb: Status and
   prospects}},
   }{}\href{http://dx.doi.org/10.1016/j.nuclphysbps.2006.09.019}{Nucl.\ Phys.\
-  Proc.\ Suppl.\  \textbf{163} (2007) 153}, [,153(2007)]\relax
+  Proc.\ Suppl.\  \textbf{163} (2007) 153}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -331,7 +331,7 @@ LHCb collaboration, R.~Aaij {\em et~al.},
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{det_paper}
-The LHCb collaboration, A.~A. Alves, Jr.\ {\em et~al.},
+LHCb collaboration, A.~A. Alves, Jr.\ {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{The LHCb Detector at the LHC}},
   }{}\href{http://dx.doi.org/10.1088/1748-0221/3/08/S08005}{JINST \textbf{3}
   (2008) S08005}\relax
@@ -382,8 +382,8 @@ M.~Adinolfi {\em et~al.},
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{Forty:1999sg}
-LHCb, R.~Forty, \ifthenelse{\boolean{articletitles}}{\emph{{RICH pattern
-  recognition for LHCb}},
+LHCb collaboration, R.~Forty, \ifthenelse{\boolean{articletitles}}{\emph{{RICH
+  pattern recognition for LHCb}},
   }{}\href{http://dx.doi.org/10.1016/S0168-9002(99)00310-1}{Nucl.\ Instrum.\
   Meth.\  \textbf{A433} (1999) 257}\relax
 \mciteBstWouldAddEndPuncttrue
@@ -391,7 +391,7 @@ LHCb, R.~Forty, \ifthenelse{\boolean{articletitles}}{\emph{{RICH pattern
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{Aaij:2017vad}
-LHCb, R.~Aaij {\em et~al.},
+LHCb collaboration, R.~Aaij {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Measurement of the
   $B^0_s\to\mu^+\mu^-$ branching fraction and effective lifetime and search for
   $B^0\to\mu^+\mu^-$ decays}},
@@ -447,7 +447,7 @@ LHCb HLT project, J.~Albrecht, V.~V. Gligorov, G.~Raven, and S.~Tolk,
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{Belyaev:2011zza}
-LHCb, I.~Belyaev {\em et~al.},
+LHCb collaboration, I.~Belyaev {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Handling of the generation of
   primary events in Gauss, the LHCb simulation framework}},
   }{}\href{http://dx.doi.org/10.1088/1742-6596/331/3/032047}{J.\ Phys.\ Conf.\
@@ -505,7 +505,7 @@ Geant4 collaboration, S.~Agostinelli {\em et~al.},
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{Clemencic:2011zza}
-LHCb, M.~Clemencic {\em et~al.},
+LHCb collaboration, M.~Clemencic {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{The LHCb simulation application,
   Gauss: Design, evolution and experience}},
   }{}\href{http://dx.doi.org/10.1088/1742-6596/331/3/032023}{J.\ Phys.\ Conf.\
@@ -535,7 +535,7 @@ M.~Pivk and F.~R. Le~Diberder,
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{Santos:2013gra}
-D.~Martínez~Santos and F.~Dupertuis,
+D.~Mart\'inez~Santos and F.~Dupertuis,
   \ifthenelse{\boolean{articletitles}}{\emph{{Mass distributions marginalized
   over per-event errors}},
   }{}\href{http://dx.doi.org/10.1016/j.nima.2014.06.081}{Nucl.\ Instrum.\
@@ -556,7 +556,8 @@ T.~Skwarnicki, {\em {A study of the radiative CASCADE transitions between the
 \bibitem{Egede:1694339}
 U.~Egede, P.~Owen, and W.~Sutcliffe,
   \ifthenelse{\boolean{articletitles}}{\emph{{Determination of the quark
-  coupling strength $|V_{ub}|$ using baryonic decays}}, }{}\relax
+  coupling strength $|V_{ub}|$ using baryonic decays}}, }{} Tech. Rep.
+  LHCb-ANA-2014-048, CERN-LHCb-ANA-2014-048, Apr, 2014\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -591,7 +592,7 @@ A.~Blum {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{Beating the
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{Aaij:2015bfa}
-LHCb, R.~Aaij {\em et~al.},
+LHCb collaboration, R.~Aaij {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Determination of the quark
   coupling strength $|V_{ub}|$ using baryonic decays}},
   }{}\href{http://dx.doi.org/10.1038/nphys3415}{Nature Phys.\  \textbf{11}
@@ -611,9 +612,10 @@ G.~Punzi, \ifthenelse{\boolean{articletitles}}{\emph{{Sensitivity of searches
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem{Aaij:2015hva}
-LHCb, R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{First
-  observation of the decay $D^{0}\rightarrow K^{-}\pi^{+}\mu^{+}\mu^{-}$ in the
-  $\rho^{0}$-$\omega$ region of the dimuon mass spectrum}},
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{\emph{{First observation of the decay
+  $D^{0}\rightarrow K^{-}\pi^{+}\mu^{+}\mu^{-}$ in the $\rho^{0}$-$\omega$
+  region of the dimuon mass spectrum}},
   }{}\href{http://dx.doi.org/10.1016/j.physletb.2016.04.029}{Phys.\ Lett.\
   \textbf{B757} (2016) 558},
   \href{http://arxiv.org/abs/1510.08367}{{\normalfont\ttfamily
@@ -626,7 +628,7 @@ LHCb, R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{First
 A.~L. Read, \ifthenelse{\boolean{articletitles}}{\emph{{Presentation of search
   results: The CL(s) technique}},
   }{}\href{http://dx.doi.org/10.1088/0954-3899/28/10/313}{J.\ Phys.\
-  \textbf{G28} (2002) 2693}, [,11(2002)]\relax
+  \textbf{G28} (2002) 2693}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
