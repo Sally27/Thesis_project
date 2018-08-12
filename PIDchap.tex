@@ -55,7 +55,7 @@ Firstly, an array was defined with 4-elements $[0,3]$ to store information about
 Further in the process, however, this information is used to calculate the sum and average of distances per station between the hits and extrapolations. This algorithm again iterates over $[0,3]$ arrays, meaning that no information is used from the M5 muon station. This obviously has an effect, but again it is consistent across the versions of the reconstruction software used for the processing of Run \Rn{2} data.
 
 %\newline Summary of these features can be found in \href{https://indico.cern.ch/event/612764/contributions/2567244/attachments/1449649/2234804/20170426\_nShared.pdf}{\color{blue} in this presentation} 
-The interplay between all these features for \bjpsimumuk decays, can be seen in Figure~\ref{fig:nSharedvar}, which sees a shift in distribution of \texttt{nShared} for 2016 data taking, making the muons less isolated.
+The interplay between all these features for \bjpsimumuk decays, can be seen in~\autoref{fig:nSharedvar}, which sees a shift in distribution of \texttt{nShared} for 2016 data taking, making the muons less isolated.
 
 \begin{figure}[h!]
 \centering
@@ -66,7 +66,7 @@ The interplay between all these features for \bjpsimumuk decays, can be seen in 
 %\vspace*{-1.0cm}
 \end{figure}
 
-Using the same calibration channels as in~\autoref{muonperf}, misID and ID rates can be seen in Figure~\ref{fig:nSharedRun1andRun2}. As the tracks tend to be less isolated in \textit{Stripping 26}, typical of non-signal like events, the misID rate is expected to be higher for the same working point (ID efficiency). While the issues highlighted here can be fixed with a reprocessing of the data, this is not expected to happen before 2019 or 2020.
+Using the same calibration channels as in~\autoref{muonperf}, misID and ID rates can be seen in~\autoref{fig:nSharedRun1andRun2}. As the tracks tend to be less isolated in \textit{Stripping 26}, typical of non-signal like events, the misID rate is expected to be higher for the same working point (ID efficiency). While the issues highlighted here can be fixed with a reprocessing of the data, this is not expected to happen before 2019 or 2020.
 
 \begin{figure}[h!]
 \centering
@@ -365,7 +365,7 @@ In general the agreement between the two samples is good in the low momentum reg
 
 This disagreement is decreased by requiring \texttt{nShared==0.0} (blue), as having two other collimated muons to share hits will be more likely. The effect of other \gls{PID} variables can also be seen, but it is harder to interpret as these depend on several variables.
 
-Even though this disagreement is decreased, for the high momenta region $\pi \rightarrow \mu$ ~\autoref{fig:JpsiKnew} and $K \rightarrow \mu$~\autoref{fig:JpsiKaonnew} rate is 2 to 3 times higher with additional two real muon tracks. Such disagreement is significant and if the misID rates from the standard control samples were to be used to be parametrically applied on samples to estimate the misID background, there would be an underestimate the misID component by the same factor.
+Even though this disagreement is decreased, for the high momenta region $\pi \rightarrow \mu$ (~\autoref{fig:JpsiKnew}) and $K \rightarrow \mu$ (~\autoref{fig:JpsiKaonnew}) rate is 2 to 3 times higher with additional two real muon tracks. Such disagreement is significant and if the misID rates from the standard control samples were to be used to be parametrically applied on samples to estimate the misID background, there would be an underestimate the misID component by the same factor.
 
 In conclusion, it was shown that the standard misID samples are not good proxies for estimating the misID probabilities as there is interference from two other muons in the event. Instead, the misID probabilities that are used in calculations for the misID background for \Bmumumu are obtained from \textit{Sweighted} $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$. Remaining effects of taking this sample for calibration are considered as a systematic uncertainty, with more details in~\autoref{misidfitstrat}.
 

@@ -248,7 +248,7 @@ A requirement that \Bp direction points in the same direction as the line from \
      \end{tabular}
 
 \end{center}
-	\caption{Selection of events based on muon and the $B^{+}$ candidate requirements. \textit{Stripping selection} for the signal decay $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_\mu$ is the same for both Run1 and 2016 data.}
+	\caption{Selection of events based on muon and the $B^{+}$ candidate requirements. \textit{Stripping selection} for the signal decay $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_\mu$ is the same for both Run \Rn{1} and 2016 data.}
 \label{tab:stripcutsB}
 \end{table}
 
@@ -426,7 +426,7 @@ In this case, the significance 3$\sigma$ is used, but it was checked that there 
 \centering
 	\includegraphics[width=0.5\linewidth]{./sel/Scaled_nice_FOM_Run1.pdf}%
 	\includegraphics[width=0.5\linewidth]{./sel/Scaled_nice_FOM_2016.pdf}%
-	\caption{ Punzi \texttt{FOM} shows the optimum working point at 0.47 for Run \Rn{1} and 0.54 for Run \Rn{2} as seen in both figures with a violet line for $\sigma=3$ and $\sigma=5$. This \texttt{FOM} is for Combinatorial BDTs.}
+	\caption{ Punzi \texttt{FOM} shows the optimum working point at 0.47 for Run \Rn{1} and 0.54 for Run \Rn{2} as seen in both figures with a violet line for $n=3$ and $n=5$. This \texttt{FOM} is for Combinatorial BDTs.}
 \label{fig:punzifom}
 \end{figure}
 
@@ -438,7 +438,7 @@ In order to accommodate different selections between Run \Rn{1} and Run \Rn{2}, 
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.8\linewidth]{./sel/final_comparison_from_root_combi_2.pdf}
+\includegraphics[width=0.8\linewidth]{./sel/true_Combi_CompareTrainOnBothRun1and2016__COMPAREroccurvesDIFFERENTtrainings_ONEminusBKGRej.pdf}
 	\caption{Comparison of separate and combined training samples and performance on different datasets. Two vertical violet lines represent optimal points in the signal efficiency, for Run \Rn{1} (0.47) and for 2016 (0.34) where the working point of the two BDTs are chosen. Separate training provides greater rejection power in 2016. In Run \Rn{1} training on both datasets provides comparable performance for a given optimal signal efficiency. Taking into the account the fact that selection slightly differs for 2016, it is advantageous to keep the BDTs separate.}
 %\vspace*{-1.0cm}
 \label{fig:separatetraining}
@@ -491,7 +491,7 @@ The optimisation metric for this classifier was again Punzi \texttt{FOM} in a bl
 \centering
 	\includegraphics[width=0.5\linewidth]{./sel/misid/Scaled_nice_FOM_Run1.pdf}%
 	\includegraphics[width=0.5\linewidth]{./sel/misid/Scaled_nice_FOM_2016.pdf}%
-	\caption{ Punzi \texttt{FOM} have the optimum working point at 0.21 for Run \Rn{1} and 0.27 for Run \Rn{2} as seen in both figures with a violet line for $\sigma=3$ and $\sigma=5$. These \texttt{FOM} values are for misid BDTs.}
+	\caption{ Punzi \texttt{FOM} have the optimum working point at 0.21 for Run \Rn{1} and 0.27 for Run \Rn{2} as seen in both figures with a violet line for $n=3$ and $n=5$. These \texttt{FOM} values are for misid BDTs.}
 \label{fig:punzifommisid}
 \end{figure}
 
@@ -500,9 +500,9 @@ To obtain the number of background events, the default fitting strategy for misI
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.5\linewidth]{./sel/plotMisidFitPretty_Run1.pdf}\put(-50,133){(a)}
-\includegraphics[width=0.5\linewidth]{./sel/plotMisidFitPretty_2016.pdf}\put(-50,133){(b)}
-\caption{(a) Run1 (b) 2016 binned $\chi^{2}$ fit to misID sample yielding estimates for the number of background events.}
+\includegraphics[width=0.5\linewidth]{./sel/plotMisidFitPretty_Run1_np.pdf}\put(-50,133){(a)}
+\includegraphics[width=0.5\linewidth]{./sel/plotMisidFitPretty_2016_np.pdf}\put(-50,133){(b)}
+	\caption{(a) Run \Rn{1} (b) 2016 binned $\chi^{2}$ fit to misID sample yielding estimates for the number of background events.}
 %\vspace*{-1.0cm}
 \label{fig:beforemisiddatafit}
 \end{figure}
@@ -513,7 +513,7 @@ The misID background can proceed also through combination with a random muon and
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.9\linewidth]{./sel/CutEfficiency_Bplus_Corrected_MassMisid_nice.pdf}\put(-300,133){(a)}\put(-50,133){(b)}
+\includegraphics[width=0.9\linewidth]{./sel/CutEfficiency_Bplus_Corrected_MassMisid_nice.pdf}\put(-300,143){(a)}\put(-50,143){(b)}
 	\caption{(a) The efficiency of applying 2016 combinatorial BDT at the optimal working point on the 2016 SS misID sample. It can be seen in (b) that the combinatorial component of the misID sample has been significantly reduced, where the red curve is the distribution after applying the cut.}
 \label{fig:combionmisid2016}
 \end{figure}

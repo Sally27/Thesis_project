@@ -311,14 +311,6 @@ LHCb collaboration, R.~Aaij {\em et~al.},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem{lumiover}
-\ifthenelse{\boolean{articletitles}}{\emph{Image of the luminosty overview from
-  \rm{\texttt{https://lbgroups.cern.ch/online/operationsplots/index$\_$files/integratedlumilhcbtime$\_$yearlycumul.png}}},
-  }{} Accessed in 2017\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
 \bibitem{LHCb-DP-2014-002}
 LHCb collaboration, R.~Aaij {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{LHCb detector performance}},
