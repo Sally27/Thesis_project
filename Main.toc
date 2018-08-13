@@ -13,9 +13,9 @@
 \contentsline {section}{\numberline {2.5}The Higgs Mechanism}{40}{section.2.5}
 \contentsline {section}{\numberline {2.6}Fermion Mass Generation}{41}{section.2.6}
 \contentsline {section}{\numberline {2.7}The Quark Mixing Matrix}{43}{section.2.7}
-\contentsline {section}{\numberline {2.8}Fully Leptonic \mb {P^{+}\rightarrow l^{+} \nu _{l}} Decays}{48}{section.2.8}
-\contentsline {section}{\numberline {2.9}Fully Leptonic \mb {B^{+}\rightarrow l^{+} \nu _{l} \gamma } Decays}{51}{section.2.9}
-\contentsline {section}{\numberline {2.10}Fully Leptonic \mb {B^{+}\rightarrow l^{+} l^{-} l^{+} \nu _{l}} Decays}{52}{section.2.10}
+\contentsline {section}{\numberline {2.8}Fully Leptonic \mb {P^{+}\rightarrow l^{+} \nu } Decays}{48}{section.2.8}
+\contentsline {section}{\numberline {2.9}Fully Leptonic \mb {B^{+}\rightarrow l^{+} \nu \gamma } Decays}{51}{section.2.9}
+\contentsline {section}{\numberline {2.10}Fully Leptonic \mb {B^{+}\rightarrow l^{+} l^{-} l^{+} \nu } Decays}{52}{section.2.10}
 \contentsline {section}{\numberline {2.11}The \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } Decay Model}{54}{section.2.11}
 \contentsline {chapter}{\numberline {3}The LHCb Detector}{57}{chapter.3}
 \contentsline {section}{\numberline {3.1}LHCb Layout }{58}{section.3.1}
