@@ -18,6 +18,35 @@ A.~V. Danilina and N.~V. Nikitin,
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Griffiths:111880}
+D.~J. Griffiths, {\em {Introduction to elementary particles; 2nd rev.
+  version}}, Physics textbook, Wiley, New York, NY, 2008\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Novaes:1999yn}
+S.~F. Novaes, \ifthenelse{\boolean{articletitles}}{\emph{{Standard model: An
+  Introduction}}, }{} in {\em {Particles and fields. Proceedings, 10th Jorge
+  Andre Swieca Summer School, Sao Paulo, Brazil, February 6-12, 1999}},
+  pp.~5--102, 1999.
+\newblock \href{http://arxiv.org/abs/hep-ph/0001283}{{\normalfont\ttfamily
+  arXiv:hep-ph/0001283}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Pich:2012sx}
+A.~Pich, \ifthenelse{\boolean{articletitles}}{\emph{{The Standard Model of
+  Electroweak Interactions}}, }{} in {\em {High-energy Physics. Proceedings,
+  18th European School (ESHEP 2010): Raseborg, Finland, June 20 - July 3,
+  2010}}, pp.~1--50, 2012.
+\newblock \href{http://arxiv.org/abs/1201.0537}{{\normalfont\ttfamily
+  arXiv:1201.0537}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{Patrignani:2016xqp}
 Particle Data Group, C.~Patrignani {\em et~al.},
   \ifthenelse{\boolean{articletitles}}{\emph{{Review of Particle Physics}},

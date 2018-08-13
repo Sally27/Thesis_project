@@ -84,7 +84,7 @@ Having all the individual efficiencies the relative efficiency with no FCME spli
 \section{Summary of Efficiencies}
 \label{EfficiencySummary}
 
-The summary of individual efficiencies together with the total efficiency for $\sigma_{NOFCME}$, which is calculated for signal using the numerator of~\autoref{eq:notsplitted} and for normalisation the denominator of~\autoref{eq:notsplitted}, is given in~\autoref{tab:effsumarry}. 
+The summary of individual efficiencies together with the total efficiency for $\sigma_{\mathrm{NOFCME}}$, which is calculated for signal using the numerator of~\autoref{eq:notsplitted} and for normalisation the denominator of~\autoref{eq:notsplitted}, is given in~\autoref{tab:effsumarry}. 
 %taken from /vols/lhcb/ss4314/tablesforana/efficiencyratios/2016/SesFUMSB_NOTsimultaneous_full_Error/plot_interesting/bin/*OK*per*tex
 \begin{table}[H]
 \begin{center}
@@ -455,8 +455,8 @@ The PID efficiency is higher for the normalisation channel with all PID requirem
 
 %    \begin{tabular}{ | l | c | } %p{7cm}|}
     Species  & 2012 PID Simulation & 2016 PID Simulation\\ \hline
-    muon &  $\Delta LL(\mu - \pi) > 0$ & $\Delta LL(\mu - \pi) > 0$ \\
-    muon &  $\Delta LL(\mu - K) > 0$ & $\Delta LL(\mu - K) > 0$ \\
+    muon &  DLLmu $ > 0$ & DLLmu $ > 0$ \\
+    muon &  (DLLmu - DLLK) $ > 0$ & (DLLmu - DLLK) $ > 0$ \\
     muon &   - & \texttt{IsMuonTight==1.0}\\
     muon &  \texttt{Nshared==0} & \texttt{Nshared<2} \\
 	muon &  \texttt{Probnnmu}$>0.35$ & \texttt{Probnnmu}$>0.35$ \\
@@ -476,13 +476,15 @@ The PID efficiency is higher for the normalisation channel with all PID requirem
 
 %    \begin{tabular}{ | l | c | } %p{7cm}|}
     Species  &2012 PID Simulation & 2016 PID Simulation\\ \hline
-    muon &  $\Delta LL(\mu - \pi) > 0$ & $\Delta LL(\mu - \pi) > 0$ \\
-    muon & $\Delta LL(\mu - K) > 0$ & $\Delta LL(\mu - K) > 0$ \\
+    muon &  DLLmu $ > 0$ & DLLmu $ > 0$ \\
+    muon &  (DLLmu - DLLK) $ > 0$ & (DLLmu - DLLK) $ > 0$ \\
     muon &  - & \texttt{IsMuonTight==1.0}\\
     muon & \texttt{Nshared==0} & \texttt{Nshared<2} \\
     muon & \texttt{Probnnmu}$>0.35$ & \texttt{Probnnmu}$>0.35$ \\
-    kaon &  $\Delta LL(K - \pi) > 0$ & $\Delta LL(K - \pi) > 0$ \\
-    kaon &  $\Delta LL(p - K) < 5$ & $\Delta LL(p - K) < 5$ \\
+    kaon &  DLLK $ > 0$ & DLLK $ > 0$ \\
+    kaon &  (DLLp - DLLK) $ < 5$ & (DLLp - DLLK) $< 5$ \\
+%    kaon &  $\Delta LL(K - \pi) > 0$ & $\Delta LL(K - \pi) > 0$ \\
+%    kaon &  $\Delta LL(p - K) < 5$ & $\Delta LL(p - K) < 5$ \\
      \hline
     $\varepsilon_{PID}$ &0.685$\pm$ 0.001 & 0.656$\pm$0.001  \\
 
@@ -627,14 +629,14 @@ The $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ signal yield 
 \toprule
 Sample & Stripping & Split  &Yields \\
 \midrule
-	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & $\sigma_{NOFCME}$ & 173422$\pm$446  \\
-	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & $\sigma_{NOFCME}$ &94491$\pm$313  \\
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & $\sigma_{\mathrm{NOFCME}}$ & 173422$\pm$446  \\
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & $\sigma_{\mathrm{NOFCME}}$ &94491$\pm$313  \\
 \midrule
-	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & $\sigma_{lowFCME}$ & 109224$\pm$337  \\
-$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & $\sigma_{lowFCME}$ & 64723$\pm$259  \\
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & $\sigma_{\mathrm{lowFCME}}$ & 109224$\pm$337  \\
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & $\sigma_{\mathrm{lowFCME}}$ & 64723$\pm$259  \\
 \midrule
-$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & $\sigma_{highFCME}$ &64078$\pm$257  \\
-$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & $\sigma_{highFCME}$ & 29760$\pm$176  \\
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & $\sigma_{\mathrm{highFCME}}$ &64078$\pm$257  \\
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & $\sigma_{\mathrm{highFCME}}$ & 29760$\pm$176  \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -732,11 +734,11 @@ After obtaining combined Run \Rn{1} and \Rn{2} signal \textit{cocktail}, fit to 
 \begin{split}
 \mathcal{B}(\Bmumumu)&=\alpha \times N(\Bmumumu)\\
 &=\underbrace{\frac{\mathcal{B}(\bjpsimumuk) \times \varepsilon_{\bjpsimumuk}}{N(\bjpsimumuk) \times \varepsilon_{\Bmumumu}}}_{\text{$\alpha$}} \times N(\Bmumumu),\\
-&=\underbrace{\frac{\mathcal{B}(\bjpsimumuk)}{N(\bjpsimumuk) \times  R_{FCME}}}_{\text{$\alpha$}} \times N(\Bmumumu),\\
+&=\underbrace{\frac{\mathcal{B}(\bjpsimumuk)}{N(\bjpsimumuk) \times  R_{\mathrm{FCME}}}}_{\text{$\alpha$}} \times N(\Bmumumu),\\
 \end{split}
 \label{eq:sigeq}
 \end{equation}
-where  $\varepsilon^{x}$ is the total selection efficiency of the channel $x$, $N_{x}$ is number of $x$ decays, $\mathcal{B}(x)$ is the branching fraction of decay $x$, $R_{FCME}$ is the relevant efficiency ratio between the two decays detailed in~\autoref{EfficiencySummary} and finally $\alpha$ is the \textit{single event sensitivity}, variable which describes the sensitivity for the search. Hence, for Run \Rn{1} and Run \Rn{2} the non-simultaneous fit $N^{sig}$ is a function of six parameters $N^{sig}(R^{21}_{FCME},R^{26}_{FCME},N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\Bmumumu))$. In the simultaneous case $R^{21}_{FCME}$,$R^{26}_{FCME}$, $N^{Run\ \Rn{1}}(\bjpsimumuk)$ and $N^{Run\ \Rn{2}}(\bjpsimumuk) K^{+})$ is further split into $\sigma_{lowFCME}$ and $\sigma_{highFCME}$ bins, resulting in 10 parameters for $N^{sig}$ in the fit.
+where  $\varepsilon^{x}$ is the total selection efficiency of the channel $x$, $N_{x}$ is number of $x$ decays, $\mathcal{B}(x)$ is the branching fraction of decay $x$, $R_{\mathrm{FCME}}$ is the relevant efficiency ratio between the two decays detailed in~\autoref{EfficiencySummary} and finally $\alpha$ is the \textit{single event sensitivity}, variable which describes the sensitivity for the search. Hence, for Run \Rn{1} and Run \Rn{2} the non-simultaneous fit $N^{sig}$ is a function of six parameters $N^{sig}(R^{21}_{\mathrm{FCME}},R^{26}_{\mathrm{FCME}},N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\Bmumumu))$. In the simultaneous case $R^{21}_{\mathrm{FCME}}$,$R^{26}_{\mathrm{FCME}}$, $N^{Run\ \Rn{1}}(\bjpsimumuk)$ and $N^{Run\ \Rn{2}}(\bjpsimumuk) K^{+})$ is further split into $\sigma_{\mathrm{lowFCME}}$ and $\sigma_{\mathrm{highFCME}}$ bins, resulting in 10 parameters for $N^{sig}$ in the fit.
 
 
 
@@ -753,10 +755,10 @@ In order to get an estimate for \textbf{the yield} of these partially reconstruc
 \begin{equation}
 \begin{split}
 \frac{N_{\pr}}{N_{\bjpsimumuk}}&= \frac{\mathcal{B}(\pr)}{\mathcal{B}(\bjpsimumuk)} \times \frac{\varepsilon^{\pr}}{\varepsilon^{\bjpsimumuk}} \\
-&=\frac{\mathcal{B}(\pr)}{\mathcal{B}(\bjpsimumuk)} \times R_{FCME},
+&=\frac{\mathcal{B}(\pr)}{\mathcal{B}(\bjpsimumuk)} \times R_{\mathrm{FCME}},
 \end{split}
 \end{equation}
-	where $\varepsilon^{x}$ is total selection efficiency of the channel $x$ and $R_{FCME}$ is hence the efficiency ratio between the two channels, $N_{x}$ is number of $x$ decays and $\mathcal{B}(x)$ is the branching fraction of decay $x$. The quantity of interest, $N_{\pr}$, can therefore be calculated given the knowledge of all other terms. $N_{\bjpsimumuk}$ is obtained from~\autoref{tab:normchannelyields}. $\mathcal{B}(\pr)$ is obtained by multiplying $\mathcal{B}(D^{0} \rightarrow K^+ \pi^- \mu^+ \mu^{-}) = (4.17\pm0.12\pm0.40)\times 10^{-6}$\cite{Aaij:2015hva} and $\mathcal{B}(B^{+} \rightarrow D l^{+} \nu X) = (9.8 \pm 0.7)\times 10^{-2}$ \cite{Patrignani:2016xqp} yielding $\mathcal{B}(\pr) \approx (4.1\pm0.5)\times 10 ^{-7 }$. The $B^+ \rightarrow (J/\psi \rightarrow \mu^+ \mu^{-}) K^{+}$ branching fraction is obtained with the same approach: multiplying $\mathcal{B}(B^{+} \rightarrow J/\psi K^{+})$ = (1.026$\pm 0.031)\times 10^{-3}$\cite{Patrignani:2016xqp} and $\mathcal{B}(J/\psi \rightarrow \mu^{-} \mu^{+})$ = (5.961 $\pm0.0033) \times 10^{-2}$\cite{Patrignani:2016xqp} yielding 
+	where $\varepsilon^{x}$ is total selection efficiency of the channel $x$ and $R_{\mathrm{FCME}}$ is hence the efficiency ratio between the two channels, $N_{x}$ is number of $x$ decays and $\mathcal{B}(x)$ is the branching fraction of decay $x$. The quantity of interest, $N_{\pr}$, can therefore be calculated given the knowledge of all other terms. $N_{\bjpsimumuk}$ is obtained from~\autoref{tab:normchannelyields}. $\mathcal{B}(\pr)$ is obtained by multiplying $\mathcal{B}(D^{0} \rightarrow K^+ \pi^- \mu^+ \mu^{-}) = (4.17\pm0.12\pm0.40)\times 10^{-6}$\cite{Aaij:2015hva} and $\mathcal{B}(B^{+} \rightarrow D l^{+} \nu X) = (9.8 \pm 0.7)\times 10^{-2}$ \cite{Patrignani:2016xqp} yielding $\mathcal{B}(\pr) \approx (4.1\pm0.5)\times 10 ^{-7 }$. The $B^+ \rightarrow (J/\psi \rightarrow \mu^+ \mu^{-}) K^{+}$ branching fraction is obtained with the same approach: multiplying $\mathcal{B}(B^{+} \rightarrow J/\psi K^{+})$ = (1.026$\pm 0.031)\times 10^{-3}$\cite{Patrignani:2016xqp} and $\mathcal{B}(J/\psi \rightarrow \mu^{-} \mu^{+})$ = (5.961 $\pm0.0033) \times 10^{-2}$\cite{Patrignani:2016xqp} yielding 
 	
 \begin{equation}
 \mathcal{B}(\bjpsimumuk)=(6.12\pm0.19)\times 10^{-5}.
@@ -771,7 +773,7 @@ Moreover as this proxy simulation was not accesible for Run \Rn{2}, the same rat
 
 
 %$\frac{\varepsilon^{2012}_{\pr}}{\varepsilon^{2012}_{\bjpsimumuk}}=\frac{\varepsilon^{2016}_{\pr}}{\varepsilon^{2016}_{\bjpsimumuk}}$.
-The summary of the expected yield is summarized in~\autoref{tab:prsum}. For the non-simultaneous final fit there are hence 5 parameters $N^{PR}(R^{21}_{FCME}(\pr),N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\pr))$ and for the simultaneous data fit with FCME splitting 8 parameters. The total yield expected for this type of background is very low compared to the other expected backgrounds.
+The summary of the expected yield is summarized in~\autoref{tab:prsum}. For the non-simultaneous final fit there are hence 5 parameters $N^{PR}(R^{21}_{\mathrm{FCME}}(\pr),N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\pr))$ and for the simultaneous data fit with FCME splitting 8 parameters. The total yield expected for this type of background is very low compared to the other expected backgrounds.
 %Therefore to obtain number of partially reconstructed background events, $N_{\pr}$ after all selection following relationship is used: 
 
 %\begin{equation}
@@ -792,15 +794,15 @@ $\mathcal{B}(\pr)$ & $(4.1\pm0.5)\times 10 ^{-7 }$ &$(4.1\pm0.5)\times 10 ^{-7 }
 $\mathcal{B}(\bjpsimumuk)$ &$(6.12\pm0.19)\times 10 ^{-5 }$ & $(6.12\pm0.19)\times 10 ^{-5 }$ \\
 $\varepsilon^{\pr}_{total}$ &  $(1.87\pm0.04)\times 10 ^{-4 }$ & Using 2012  \\
 $\varepsilon^{\bjpsimumuk}_{total}$ & $(5.80\pm0.01)\times 10 ^{-3 }$ &  Using 2012 \\
-$R_{FCME}^{21}(\pr)$ & $(3.22\pm0.07)\times 10 ^{-2 }$ &  Using 2012 \\
+$R_{\mathrm{FCME}}^{21}(\pr)$ & $(3.22\pm0.07)\times 10 ^{-2 }$ &  Using 2012 \\
 \midrule
-\multicolumn{3}{c}{{$\sigma_{lowFCME}$}}  \\
+	\multicolumn{3}{c}{{$\sigma_{\mathrm{lowFCME}}$}}  \\
 $N_{\pr}$ & $19.8\pm2.6$ & $11.7\pm1.5$ \\
 \midrule
-\multicolumn{3}{c}{{$\sigma_{highFCME}$}}  \\
+	\multicolumn{3}{c}{{$\sigma_{\mathrm{highFCME}}$}}  \\
 $N_{\pr}$  & $17.0\pm2.2$ & $7.9\pm1.0$ \\
 \midrule
-\multicolumn{3}{c}{{$\sigma_{NOFCME}$}}  \\
+	\multicolumn{3}{c}{{$\sigma_{\mathrm{NOFCME}}$}}  \\
 $N_{\pr}$ & $37.3\pm4.8$ & $20.3\pm2.6$ \\
 \bottomrule
 \end{tabular}
@@ -980,9 +982,9 @@ The signal data fit so far includes components for signal component, partially r
 %	=\underbrace{\frac{\mathcal{B}(\bjpsimumuk) \times \varepsilon_{\bjpsimumuk}}{N(\bjpsimumuk) \times \varepsilon_{\Bmumumu}}}_{\text{$\alpha$}} \times N(\Bmumumu),
 %\end{equation}
 %\begin{equation}
-%	=\underbrace{\frac{\mathcal{B}(\bjpsimumuk)}{N(\bjpsimumuk) \times  R_{FCME}}}_{\text{$\alpha$}} \times N(\Bmumumu),
+%	=\underbrace{\frac{\mathcal{B}(\bjpsimumuk)}{N(\bjpsimumuk) \times  R_{\mathrm{FCME}}}}_{\text{$\alpha$}} \times N(\Bmumumu),
 %\end{equation}
-%where  $\varepsilon^{x}$ is total selection efficiency of $x$ channel, $N_{x}$ is number of $x$ decays, $\mathcal{B}(x)$ is the branching fraction of decay $x$, $R_{FCME}$ is the relevant efficiency ratio between two decays detailed in~\autoref{EfficiencySummary} and finally $\alpha$ is the \textit{single event sensitivity}, variable which desribes the sensitivity for the search. Hence for Run \Rn{1} and Run \Rn{2} altogether for non-simultaneous fit $N^{sig}$ is a function of six parameters $N^{sig}(R^{21}_{FCME},R^{26}_{FCME},N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\Bmumumu))$. In  simultaneous case $R^{21}_{FCME}$,$R^{26}_{FCME}$, $N^{Run\ \Rn{1}}(\bjpsimumuk)$ and $N^{Run\ \Rn{2}}(\bjpsimumuk) K^{+})$ is further split into $\sigma_{lowFCME}$ and $\sigma_{highFCME}$ bins, resulting in 10 parameters for $N^{sig}$ in the fit.
+%where  $\varepsilon^{x}$ is total selection efficiency of $x$ channel, $N_{x}$ is number of $x$ decays, $\mathcal{B}(x)$ is the branching fraction of decay $x$, $R_{\mathrm{FCME}}$ is the relevant efficiency ratio between two decays detailed in~\autoref{EfficiencySummary} and finally $\alpha$ is the \textit{single event sensitivity}, variable which desribes the sensitivity for the search. Hence for Run \Rn{1} and Run \Rn{2} altogether for non-simultaneous fit $N^{sig}$ is a function of six parameters $N^{sig}(R^{21}_{\mathrm{FCME}},R^{26}_{\mathrm{FCME}},N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\Bmumumu))$. In  simultaneous case $R^{21}_{\mathrm{FCME}}$,$R^{26}_{\mathrm{FCME}}$, $N^{Run\ \Rn{1}}(\bjpsimumuk)$ and $N^{Run\ \Rn{2}}(\bjpsimumuk) K^{+})$ is further split into $\sigma_{lowFCME}$ and $\sigma_{highFCME}$ bins, resulting in 10 parameters for $N^{sig}$ in the fit.
 %
 %
 %
@@ -997,10 +999,10 @@ The signal data fit so far includes components for signal component, partially r
 %\begin{equation}
 %\begin{split}
 %\frac{N_{\pr}}{N_{\bjpsimumuk}}&= \frac{\mathcal{B}(\pr)}{\mathcal{B}(\bjpsimumuk)} \times \frac{\varepsilon^{\pr}}{\varepsilon^{\bjpsimumuk}} \\
-%&=\frac{\mathcal{B}(\pr)}{\mathcal{B}(\bjpsimumuk)} \times R_{FCME},
+%&=\frac{\mathcal{B}(\pr)}{\mathcal{B}(\bjpsimumuk)} \times R_{\mathrm{FCME}},
 %\end{split}
 %\end{equation}
-%	where $\varepsilon^{x}$ is total selection efficiency of $x$ channel and $R_{FCME}$ is hence the efficiency ratio between the two channels, $N_{x}$ is number of $x$ decays, $\mathcal{B}(x)$ is the branching fraction of decay $x$. The quantity of interest, $N_{\pr}$, can be therefore calculated given the knowledge of all other terms. $N_{\bjpsimumuk}$ is was obtained from~\autoref{tab:normchannelyields}. $\mathcal{B}(\pr)$ is obtained by amalgamating $\mathcal{B}(D^{0} \rightarrow K^+ \pi^- \mu^+ \mu^{-}) = (4.17\pm0.12\pm0.40)\times 10^{-6}$\cite{Aaij:2015hva} and $\mathcal{B}(B^{+} \rightarrow D l^{+} \nu X) = (9.8 \pm 0.7)\times 10^{-2}$ \cite{Patrignani:2016xqp} yielding $\mathcal{B}(\pr) \approx (4.10\pm0.50)\times 10 ^{-7 }$. $B^+ \rightarrow (J/\psi \rightarrow \mu^+ \mu^{-}) K^{+}$ branching fraction is obtained with the same approach: multiplying $\mathcal{B}(B^{+} \rightarrow J/\psi K^{+})$ = (1.026$\pm 0.031)\times 10^{-3}$\cite{Patrignani:2016xqp} and $\mathcal{B}(J/\psi \rightarrow \mu^{-} \mu^{+})$ = (5.961 $\pm0.0033) \times 10^{-2}$\cite{Patrignani:2016xqp} yielding $\mathcal{B}(\bjpsimumuk)=(6.12\pm0.19)\times 10^{-5}$.
+%	where $\varepsilon^{x}$ is total selection efficiency of $x$ channel and $R_{\mathrm{FCME}}$ is hence the efficiency ratio between the two channels, $N_{x}$ is number of $x$ decays, $\mathcal{B}(x)$ is the branching fraction of decay $x$. The quantity of interest, $N_{\pr}$, can be therefore calculated given the knowledge of all other terms. $N_{\bjpsimumuk}$ is was obtained from~\autoref{tab:normchannelyields}. $\mathcal{B}(\pr)$ is obtained by amalgamating $\mathcal{B}(D^{0} \rightarrow K^+ \pi^- \mu^+ \mu^{-}) = (4.17\pm0.12\pm0.40)\times 10^{-6}$\cite{Aaij:2015hva} and $\mathcal{B}(B^{+} \rightarrow D l^{+} \nu X) = (9.8 \pm 0.7)\times 10^{-2}$ \cite{Patrignani:2016xqp} yielding $\mathcal{B}(\pr) \approx (4.10\pm0.50)\times 10 ^{-7 }$. $B^+ \rightarrow (J/\psi \rightarrow \mu^+ \mu^{-}) K^{+}$ branching fraction is obtained with the same approach: multiplying $\mathcal{B}(B^{+} \rightarrow J/\psi K^{+})$ = (1.026$\pm 0.031)\times 10^{-3}$\cite{Patrignani:2016xqp} and $\mathcal{B}(J/\psi \rightarrow \mu^{-} \mu^{+})$ = (5.961 $\pm0.0033) \times 10^{-2}$\cite{Patrignani:2016xqp} yielding $\mathcal{B}(\bjpsimumuk)=(6.12\pm0.19)\times 10^{-5}$.
 %
 %
 %
@@ -1183,7 +1185,7 @@ Error on $B^{+} \rightarrow J/\psi K^{+}$ yield & 0.3 & 0.3 & 0.2\\
 \subsubsection{Signal Decay Model}
 The largest systematic uncertainty arise due to the choice of decay model for the signal channel.
 The nominal signal model creates a photon pole, increasing the branching fraction in the low invariant dimuon mass region.
-The associated systematic uncertainty is estimated by replacing this decay model with one determined purely by phase-space and by comparing the selection efficiencies, resulting in $4.6\%$ systematic uncertainty on the efficiency ratio. % In the data fits this uncertainty directly incorporated into efficiency ratios, $R_{FCME}$, by adding it in quadrature to the statistical error. 
+The associated systematic uncertainty is estimated by replacing this decay model with one determined purely by phase-space and by comparing the selection efficiencies, resulting in $4.6\%$ systematic uncertainty on the efficiency ratio. % In the data fits this uncertainty directly incorporated into efficiency ratios, $R_{\mathrm{FCME}}$, by adding it in quadrature to the statistical error. 
 
 \subsubsection{Trigger}
 The second most important systematic effect is due to incorrect modelling of the trigger in the simulation. This can be split into two effects:
@@ -1271,7 +1273,7 @@ The maximum unbinned likelihood fit to blinded signal data after all selection i
 \newline
 \includegraphics[width=0.5\linewidth]{./efficiency/blindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_reallynice.pdf}\put(-30,100){(b)}%
 \includegraphics[width=0.5\linewidth]{./efficiency/blindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_reallynice.pdf}\put(-30,100){(c)}%
-\caption{(a) Unbinned maximum likelihood fit to the blinded data in one bin of FCME. Simultaneous unbinned maximum likelihood fit to blinded data after full selection chain in two bins of FCME, with (b) fit to $\sigma_{low}$ bin, (c) $\sigma_{high}$ bin.}
+\caption{(a) Unbinned maximum likelihood fit to the blinded data in one bin of FCME. Simultaneous unbinned maximum likelihood fit to blinded data after full selection chain in two bins of FCME, with (b) fit to $\sigma_{\mathrm{lowFCME}}$ bin, (c) $\sigma_{\mathrm{highFCME}}$ bin.}
 \label{fig:sigfitpretty}
 \end{figure}
 
@@ -1288,16 +1290,16 @@ The maximum unbinned likelihood fit to blinded signal data after all selection i
 %	& $N^{sig}$& Free & depend $\mathcal{B}$ & depend $\mathcal{B}$  & depend $\mathcal{B}$ & - & ~\autoref{eq:sigeq} \\ \midrule
         \ldelim\{{6}{0.3cm}[$N^{sig}$]& $ \mathcal{B}(\Bmumumu)$ & Free & & & & - & This Fit  \\  
 	&	$ \mathcal{B}(\bjpsimumuk) $ & Cnstr. & & & & gaus. & ~\autoref{eq:normeq} \\  
-	&	$ R^{21}_{FCME}(\Bmumumu) $ & Cnstr. & & & & gaus. & ~\autoref{eq:nofcmeer}\\%/~\autoref{eq:allfcmeer} \\  
-	&	$ R^{26}_{FCME}(\Bmumumu) $ & Cnstr. & & & & gaus. & ~\autoref{eq:nofcmeer}\\%/~\autoref{eq:allfcmeer}  \\  
-	&	$ N(\bjpsimumuk)^{Run \Rn{1}}_{FCME} $ & Cnstr. & & & &  gaus. & ~\autoref{tab:normchannelyields} \\  
-	&	$ N(\bjpsimumuk)^{Run \Rn{2}}_{FCME} $ & Cnstr. & & & &  gaus. & ~\autoref{tab:normchannelyields} \\ \midrule 
+	&	$ R^{21}_{\mathrm{FCME}}(\Bmumumu) $ & Cnstr. & & & & gaus. & ~\autoref{eq:nofcmeer}\\%/~\autoref{eq:allfcmeer} \\  
+	&	$ R^{26}_{\mathrm{FCME}}(\Bmumumu) $ & Cnstr. & & & & gaus. & ~\autoref{eq:nofcmeer}\\%/~\autoref{eq:allfcmeer}  \\  
+	&	$ N(\bjpsimumuk)^{Run \Rn{1}}_{\mathrm{FCME}} $ & Cnstr. & & & &  gaus. & ~\autoref{tab:normchannelyields} \\  
+	&	$ N(\bjpsimumuk)^{2016}_{\mathrm{FCME}} $ & Cnstr. & & & &  gaus. & ~\autoref{tab:normchannelyields} \\ \midrule 
 %	&	$N^{PR}$ & Cnstr. & 58.6$\pm$5.56& 32$\pm$3.05 & 25.3$\pm$2.49 &  gaus. &  ~\autoref{tab:prsum} \\ \midrule
 	\ldelim\{{5}{0.7cm}[$N^{PR}$]&	$ \mathcal{B}(\pr) $ & Cnstr. & & & & gaus. & ~\autoref{tab:prsum} \\  
 	&	$ \mathcal{B}(\bjpsimumuk) $ & Cnstr. & & & & gaus. & ~\autoref{eq:normeq} \\  
-	&	$ R^{21}_{FCME}(\pr) $ & Cnstr. & & & & gaus. & ~\autoref{tab:prsum} \\  
-	&	$ N(\bjpsimumuk)^{Run \Rn{1}}_{FCME} $ & Cnstr. & & & Cnstr. & gaus. & ~\autoref{tab:normchannelyields} \\  
-	&	$ N(\bjpsimumuk)^{Run \Rn{2}}_{FCME} $ & Cnstr. & & & Cnstr. & gaus. & ~\autoref{tab:normchannelyields} \\ \midrule 
+	&	$ R^{21}_{\mathrm{FCME}}(\pr) $ & Cnstr. & & & & gaus. & ~\autoref{tab:prsum} \\  
+	&	$ N(\bjpsimumuk)^{Run \Rn{1}}_{\mathrm{FCME}} $ & Cnstr. & & & Cnstr. & gaus. & ~\autoref{tab:normchannelyields} \\  
+	&	$ N(\bjpsimumuk)^{2016}_{\mathrm{FCME}} $ & Cnstr. & & & Cnstr. & gaus. & ~\autoref{tab:normchannelyields} \\ \midrule 
 	&	$N^{Misid}$ & Cnstr. & 606 $\pm$26.8& 322 $\pm$16.9&  277 $\pm$15.5 & mvg$\_$gaus.  & ~\autoref{fig:MisidFinalFit}\\
 	&	$N^{Combi}$ & Free & - & - & - & - &  This fit  \\ \hline
 	&	\multicolumn{7}{c}{MisID Shape Parameters (Crystal Ball function)} \\ \midrule
@@ -1311,7 +1313,7 @@ The maximum unbinned likelihood fit to blinded signal data after all selection i
 	&	\multicolumn{7}{c}{Combinatorial Shape Parameters (exponential function)} \\ \midrule 
 	&	$\beta$ & Free & - & -& - & - & This fit \\ \bottomrule
 \end{tabular}
-\caption{For all constrained variables the range is set to be within $\pm 5 \sigma$. Cnstr. stands for constrained variables, gaus. for gaussian constraint and mvg\_gaus. multivariate gaussian constraint. }
+	\caption{For all constrained variables the range is set to be within $\pm 5 \sigma$. Cnstr. stands for constrained variables, gaus. for \textit{gaussian} constraint and mvg\_gaus. \textit{multivariate gaussian} constraint. }
 \label{tab:floatingparsummary}
 \end{table}
 
@@ -1372,6 +1374,7 @@ Expected $95\%$ CL & Run \Rn{1} and \Rn{2} &  Full & Simultaneous &$ 2.8\times 1
 \bottomrule
 \end{tabular}
 \caption{Resulting expected exclusion limits with both non-simultaneous and simultaneous fits. CL stands for confidence level.}
+\label{tab:explimits}
 \end{table}
 
 
@@ -1385,7 +1388,7 @@ After the full analysis strategy was reviewed the signal datasets were unblinded
 \centering
 \includegraphics[width=0.5\linewidth]{./efficiency/unblindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_simPdfsig_with_0_reallynice.pdf}\put(-30,100){(a)}%
 \includegraphics[width=0.5\linewidth]{./efficiency/unblindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_simPdfsig_with_0_reallynice.pdf}\put(-30,100){(b)}%
-\caption{Simultaneous unbinned extended maximum likelihood fit to unblinded data after full selection chain in two bins of FCME and with $\mathcal{B}=0$, with (b) fit to $\sigma_{low}$ bin, (c) $\sigma_{high}$ bin.}
+\caption{Simultaneous unbinned extended maximum likelihood fit to unblinded data after full selection chain in two bins of FCME and with $\mathcal{B}=0$, with (b) fit to $\sigma_{\mathrm{lowFCME}}$ bin, (c) $\sigma_{\mathrm{highFCME}}$ bin.}
 \label{fig:sigfit_unblinded_bkgonly}
 \end{figure}
 
@@ -1405,7 +1408,7 @@ The simultaneous unbinned extended maximum likelihood fit to all the data with s
 \centering
 \includegraphics[width=0.5\linewidth]{./efficiency/unblindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf}\put(-30,100){(a)}%
 \includegraphics[width=0.5\linewidth]{./efficiency/unblindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf}\put(-30,100){(b)}%
-	\caption{Simultaneous unbinned maximum likelihood fit to unblinded data after full selection chain in two bins of FCME, with (b) fit to $\sigma_{low}$ bin, (c) $\sigma_{high}$ bin. The signal component is visible as negative fluctuation.}
+	\caption{Simultaneous unbinned maximum likelihood fit to unblinded data after full selection chain in two bins of FCME, with (b) fit to $\sigma_{\mathrm{lowFCME}}$ bin, (c) $\sigma_{\mathrm{highFCME}}$ bin. The signal component is visible as negative fluctuation.}
 \label{fig:sigfit_unblinded}
 \end{figure}
 
@@ -1418,26 +1421,26 @@ Fit Parameter & Value  \\ \hline
 $ \mathcal{B}(\Bmumumu) $ & $-1.8 \pm 0.9\times 10^{-8}$ \\
 $ \mathcal{B}(\bjpsimumuk) $ & $(6.11 \pm 0.185)\times 10^{-5}$ \\
 $ \mathcal{B}(\pr) $ & $(4.12 \pm 0.5)\times 10^{-7}$ \\
-$ \mu_{misID_{high}} $ & $4100 \pm 123$ \\
-$ \mu_{misID_{low}} $ & $4330 \pm 56$ \\
-$ \sigma_{misID_{high}} $ & $619 \pm 56$ \\
-$ \sigma_{misID_{low}} $ & $401 \pm 29.9$ \\
-$ R^{26}_{high}(\Bmumumu) $ & $1.97 \pm 0.0788$ \\
-$ R^{26}_{low}(\Bmumumu) $ & $3.31 \pm 0.1$ \\
-$ R^{21}_{high}(\pr) $ & $0.0397 \pm 0.00116$ \\
-$ R^{21}_{low}(\pr) $ & $0.0271 \pm 0.000794$ \\
-$ R^{21}_{high}(\Bmumumu) $ & $1.96 \pm 0.131$ \\
-$ R^{21}_{low}(\Bmumumu) $ & $3.15 \pm 0.233$ \\
-$ N(\bjpsimumuk)^{2016}_{high} $ & $29800 \pm 173$ \\
-$ N(\bjpsimumuk)^{2016}_{low} $ & $64700 \pm 254$ \\
-$ N(\bjpsimumuk)^{Run 1}_{high} $ & $64100 \pm 253$ \\
-$ N(\bjpsimumuk)^{Run 1}_{low} $ & $109000 \pm 331$ \\
-$ N^{scaled}_{misID_{high}} $ & $278 \pm 15.2$ \\
-$ N^{scaled}_{misID_{low}} $ & $331 \pm 16.3$ \\
-$ \beta_{high} $ & $-0.00183 \pm 9.19\times 10^{-5}$ \\
-$ \beta_{low} $ & $-0.00226 \pm 0.000129$ \\
-$ N_{combi_{high}} $ & $620 \pm 34.3$ \\
-$ N_{combi_{low}} $ & $531 \pm 35.4$ \\
+$ \mu_{misID_{\mathrm{highFCME}}} $ & $4100 \pm 123$ \\
+$ \mu_{misID_{\mathrm{lowFCME}}} $ & $4330 \pm 56$ \\
+$ \sigma_{misID_{\mathrm{highFCME}}} $ & $619 \pm 56$ \\
+$ \sigma_{misID_{\mathrm{lowFCME}}} $ & $401 \pm 29.9$ \\
+$ R^{26}_{\mathrm{highFCME}}(\Bmumumu) $ & $1.97 \pm 0.0788$ \\
+$ R^{26}_{\mathrm{lowFCME}}(\Bmumumu) $ & $3.31 \pm 0.1$ \\
+$ R^{21}_{\mathrm{highFCME}}(\pr) $ & $0.0397 \pm 0.00116$ \\
+$ R^{21}_{\mathrm{lowFCME}}(\pr) $ & $0.0271 \pm 0.000794$ \\
+$ R^{21}_{\mathrm{highFCME}}(\Bmumumu) $ & $1.96 \pm 0.131$ \\
+$ R^{21}_{\mathrm{lowFCME}}(\Bmumumu) $ & $3.15 \pm 0.233$ \\
+$ N(\bjpsimumuk)^{2016}_{\mathrm{highFCME}} $ & $29800 \pm 173$ \\
+$ N(\bjpsimumuk)^{2016}_{\mathrm{lowFCME}} $ & $64700 \pm 254$ \\
+$ N(\bjpsimumuk)^{Run 1}_{\mathrm{highFCME}} $ & $64100 \pm 253$ \\
+$ N(\bjpsimumuk)^{Run 1}_{\mathrm{lowFCME}} $ & $109000 \pm 331$ \\
+$ N^{scaled}_{misID_{\mathrm{highFCME}}} $ & $278 \pm 15.2$ \\
+$ N^{scaled}_{misID_{\mathrm{lowFCME}}} $ & $331 \pm 16.3$ \\
+$ \beta_{\mathrm{highFCME}} $ & $-0.00183 \pm 9.19\times 10^{-5}$ \\
+$ \beta_{\mathrm{lowFCME}} $ & $-0.00226 \pm 0.000129$ \\
+$ N_{combi_{\mathrm{highFCME}}} $ & $620 \pm 34.3$ \\
+$ N_{combi_{\mathrm{lowFCME}}} $ & $531 \pm 35.4$ \\
 \bottomrule
 \end{tabular}
 \caption{Fit results for all floating variables in the unblinded data fit. The $\mathcal{B}(\Bmumumu) =-1.8\times 10^{-8}$. Variables $R^{S}_{K}$ are the efficiency ratios obtained by normalising the decays to \bjpsimumuk decays where $S$ stands for stripping and $K$ for the FCME. $N^{scaled}_{misID_{K}}$ is the number of misID events, $N_{combi_{K}}$ is the number of combinatorial events, $\beta_{K}$ is the exponential constant, $\mu_{misID_{K}}$ and $\sigma_{misID_{K}}$ are the mean and the $\sigma$ of the CB function.}
@@ -1450,15 +1453,15 @@ $ N_{combi_{low}} $ & $531 \pm 35.4$ \\
 \toprule
 Component &  All ($4-7 \gevcc$) & Signal region ($4.5-5.5\gevcc$)  \\
 \hline
-$N_{misID_{low}}$  &  331 & 139 \\
-$N_{sig_{low}}$  & -15.8  & -14.4 \\
-$N_{combi_{low}}$  & 531 & 154 \\
-$N_{partreco_{low}}$  & 31.8 & 6.39 \\
+$N_{misID_{\mathrm{lowFCME}}}$  &  331 & 139 \\
+$N_{sig_{\mathrm{lowFCME}}}$  & -15.8  & -14.4 \\
+$N_{combi_{\mathrm{lowFCME}}}$  & 531 & 154 \\
+$N_{partreco_{\mathrm{lowFCME}}}$  & 31.8 & 6.39 \\
 \hline
-$N_{misID_{high}}$  &  279 & 122 \\
-$N_{sig_{high}}$  &-14.0 & -11.0  \\
-$N_{combi_{high}}$  & 620 & 209 \\
-$N_{partreco_{high}}$ & 25.1 & 5.17 \\
+$N_{misID_{\mathrm{highFCME}}}$  &  279 & 122 \\
+$N_{sig_{\mathrm{highFCME}}}$  &-14.0 & -11.0  \\
+$N_{combi_{\mathrm{highFCME}}}$  & 620 & 209 \\
+$N_{partreco_{\mathrm{highFCME}}}$ & 25.1 & 5.17 \\
 \bottomrule
 \end{tabular}
 \end{center}
