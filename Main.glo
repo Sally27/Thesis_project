@@ -6,6 +6,8 @@
 \glossaryentry{ATLAS?\glossentry{ATLAS}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{CMS?\glossentry{CMS}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{ATLAS?\glossentry{ATLAS}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{CMS?\glossentry{CMS}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{VELO?\glossentry{VELO}|setentrycounter[]{page}\glsnumberformat}{12}
@@ -16,6 +18,7 @@
 \glossaryentry{long track?\glossentry{longtrack}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{RICH1?\glossentry{RICH1}|setentrycounter[]{page}\glsnumberformat}{13}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{ECAL?\glossentry{ECAL}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{HCAL?\glossentry{HCAL}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{TOS?\glossentry{TOS}|setentrycounter[]{page}\glsnumberformat}{13}
@@ -120,8 +123,8 @@
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{61}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{61}
 \glossaryentry{LHC?\glossentry{LHC}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{61}
 \glossaryentry{LHC?\glossentry{LHC}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{62}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{62}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{62}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{62}
@@ -129,6 +132,8 @@
 \glossaryentry{ATLAS?\glossentry{ATLAS}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{CMS?\glossentry{CMS}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{ATLAS?\glossentry{ATLAS}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{CMS?\glossentry{CMS}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{VELO?\glossentry{VELO}|setentrycounter[]{page}\glsnumberformat}{63}
@@ -180,6 +185,7 @@
 \glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{70}
 \glossaryentry{ID?\glossentry{ID}|setentrycounter[]{page}\glsnumberformat}{70}
 \glossaryentry{misID?\glossentry{misID}|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{71}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{71}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{71}
 \glossaryentry{SPD?\glossentry{SPD}|setentrycounter[]{page}\glsnumberformat}{72}
@@ -200,6 +206,7 @@
 \glossaryentry{HCAL?\glossentry{HCAL}|setentrycounter[]{page}\glsnumberformat}{73}
 \glossaryentry{MWPCs?\glossentry{MWPCs}|setentrycounter[]{page}\glsnumberformat}{73}
 \glossaryentry{MWPCs?\glossentry{MWPCs}|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{74}
 \glossaryentry{FOI?\glossentry{FOI}|setentrycounter[]{page}\glsnumberformat}{74}
 \glossaryentry{HCAL?\glossentry{HCAL}|setentrycounter[]{page}\glsnumberformat}{75}
 \glossaryentry{RICH?\glossentry{RICH}|setentrycounter[]{page}\glsnumberformat}{75}
@@ -260,6 +267,8 @@
 \glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{81}
 \glossaryentry{IP?\glossentry{IP}|setentrycounter[]{page}\glsnumberformat}{82}
 \glossaryentry{IP?\glossentry{IP}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{82}
 \glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{83}
 \glossaryentry{PID?\glossentry{PID}|setentrycounter[]{page}\glsnumberformat}{83}
 \glossaryentry{LHCb?\glossentry{LHCb}|setentrycounter[]{page}\glsnumberformat}{83}

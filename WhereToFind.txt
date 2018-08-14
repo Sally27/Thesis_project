@@ -3,6 +3,7 @@ glos.tex - define new abbreviations
 lhcb-symbols-list.tex - summary of lhcb symbol list.
 preamble.tex - define the body of main text with header staff
 styles.tex define all the abbreviations for decays
+sed -i -- 's/foo/bar/g' *.baz
 
 to look for anything do : grep -rnw . -e 'Bmumumu'
 

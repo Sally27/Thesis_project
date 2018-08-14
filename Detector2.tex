@@ -37,7 +37,7 @@ The disadvantage of not having an overall constraint on collision information is
 	\centering
 	\includegraphics[width=0.45\linewidth]{figs/detector/license/croped.pdf}%
 	\includegraphics[width=0.5\linewidth]{figs/detector/Acceptance.pdf}\put(-10,170){(b)}
-	\caption{(a) Probability of interaction per bunch crossing as a function of instantaneous luminosity. Figure from \cite{Raven:2007zi}. (b) Angular production and acceptance of the $b$ (x-axis) $\bar{b}$ (y-axis) pair produced from $pp$ collision at the LHC. The acceptance of the LHCb detector is the red box and the acceptance of the General Purpose Detector is shown in the yellow box. \Gls{LHCb} covers the region with highest production cross-section at 8 \tev. These plots were produced using a PYTHIA8 \cite{pythia8} simulation. Figure from \cite{acceptance}.}
+	\caption{(a) Probability of interaction per bunch crossing as a function of instantaneous luminosity. Figure from \cite{Raven:2007zi}. (b) Angular production and acceptance of the $b$ (x-axis) $\bar{b}$ (y-axis) pair produced from $pp$ collision at the LHC. The acceptance of the LHCb detector is the red box and the acceptance of the General Purpose Detector is shown in the yellow box. \Gls{LHCb} covers the region with highest production cross-section at 8 \tev. These plots were produced using a Pythia 8.1 \cite{pythia8} simulation. Figure from \cite{acceptance}.}
 	\label{fig:Acceptance}
 \end{figure}
 
@@ -46,10 +46,10 @@ The angular coverage of \Gls{LHCb} is formally defined using pseudorapidity $\et
 \begin{equation}
 	\eta = -\ln \Big(\tan\frac{\theta}{2}\Big)
 \end{equation}	
-where $\theta$ is the polar angle measured from the beam axis. The \Gls{LHCb} detector was built to cover the region $2<\eta<5$. The production cross-section of the fundamental process of $pp\rightarrow b\bar{b}X$ was measured in this region yielding, $\sigma (pp\rightarrow b\bar{b}X)$= 75.3$\pm$5.4$\pm$13.0 $\mub$ at 7 \tev \cite{LHCb-PAPER-2010-002} and 144$\pm$1$\pm$21 $\mub$ at 13 \tev \cite{LHCb-PAPER-2016-031}, which shows that the production cross-sections scales roughly linearly with the centre-of-mass energy. Assuming design conditions of \gls{LHCb}, listed in~\autoref{tab:runcond}, 2$\fb^{-1}$ of data (eqvivalent to 2012 dataset) would correspond to $10^{12}$ of $b\bar{b}$ pairs being produced in a full 4$\pi$ region with 27\% of these $b\bar{b}$ pairs produced in the \gls{LHCb} acceptance. The summary of \gls{LHCb} running conditions is also provided in~\autoref{tab:runcond}.
+where $\theta$ is the polar angle measured from the beam axis. The \Gls{LHCb} detector was built to cover the region $2<\eta<5$. The production cross-section of the fundamental process of $pp\rightarrow b\bar{b}X$ was measured in this region yielding, $\sigma (pp\rightarrow b\bar{b}X)$= 75.3$\pm$5.4$\pm$13.0 $\mub$ at 7 \tev \cite{LHCb-PAPER-2010-002} and 144$\pm$1$\pm$21 $\mub$ at 13 \tev \cite{LHCb-PAPER-2016-031}, which shows that the production cross-sections scales roughly linearly with the centre-of-mass energy. Assuming design conditions of \gls{LHCb}, listed in~\autoref{tab:runcond}, 2$\fb^{-1}$ of data (eqvivalent to 2012 dataset) would correspond to $10^{12}$ of $b\bar{b}$ pairs being produced in a full 4$\pi$ region with 27\% of these $b\bar{b}$ pairs produced in the \gls{LHCb} acceptance. The summary of \gls{LHCb} running conditions is also provided in~\autoref{tab:runcond}. The analysis of \Bmumumu is done with Run \Rn{1} and 2016 dataset. 
 
 Despite the impressive statistics of $b\bar{b}$ pairs available to \Gls{LHCb}, the bottleneck in terms of data collection arises from the much more copious inelastic background. That mostly originates from soft \gls{QCD} processes which are related to the amount of pile-up, the visible number of $pp$ interaction in the visible events. By looking at the probability of the number of $pp$ interaction per bunch crossing as a function of luminosity, shown in~\autoref{fig:Acceptance}(a), it can be noted that the maximum probability for only one $pp$ interaction (and hence minimizing the background) is found to be at $\sim 2 \times10^{32} \mathrm{cm^{-2} s^{-1}}$.  This was the reason behind \gls{LHCb} design luminosity. Subsequently it has been found that it is more optimal to run at a higher luminosity of $\sim 4 \times10^{32} \mathrm{cm^{-2} s^{-1}}$ but then implement a set of global event cuts (GEC). Only events with 600 (in 7,8 \tev) and 450 (in 13 \tev) hits and less, corresponding to the track density in the particular part of the detector, are allowed to be processed.
-As the majority of the branching fractions measurements at \gls{LHCb} are measured with respect to other branching fractions, there is no bias being introduced by the GECs. 
+As the majority of the branching fractions at \gls{LHCb} are measured with respect to other branching fractions, there is no bias being introduced by the GECs. 
 
 As \Gls{LHCb} requires much lower luminosity compared to other \gls{LHC} detectors, there is an LHCb-specific control of luminosity known as \textit{luminosity levelling}, shown in~\autoref{fig:lhcbintlumi}. This procedure achieves stable instantaneous luminosity by controlling that the two beams do not collide straight head-on at collision point, but are moved with respect to each other. It limits the effects of luminosity decay, which can lead to trigger alterations during specific data taking run, resulting in systematic uncertainties.
 
@@ -70,18 +70,19 @@ As \Gls{LHCb} requires much lower luminosity compared to other \gls{LHC} detecto
 
 \begin{table}[!h]
 	\centering
-	\hspace*{-0.8cm}
+%	\hspace*{-0.8cm}
 	\begin{tabular}{l c c c }
 		\toprule
-		Year & $\sqrt{s}$ [\tev] & $\mathcal{L}$ [$\times10^{32} \rm{cm^{-2}s^{-1}}$] & Integrated Recorded Luminosity [$\rm{fb}^{-1}$] \\ \hline
+		Year & $\sqrt{s}$ & $\mathcal{L}$  & Integrated Recorded Luminosity \\ 
+		 & [\tev] & [$\times10^{32} \rm{cm^{-2}s^{-1}}$] & [$\rm{fb}^{-1}$] \\ \hline
 		Design & Up to 14 & 2 & - \\
-		2011 & 7 & $\sim$ 3.0-3.5 & 1.1 \\
+		2011  \rdelim\}{2}{1.5cm}[Run \Rn{1}] & 7 & $\sim$ 3.0-3.5 & 1.1 \\
 		2012 & 8 & $\sim$ 4.0 & 2.1 \\
-		2015 & 13 & $\sim$ 0.5-4.5 & 0.3 \\      
+		2015 \rdelim\}{3}{1.5cm}[Run \Rn{2}] & 13 & $\sim$ 0.5-4.5 & 0.3 \\      
 		2016 & 13 & $\sim$ 4.0 & 1.7  \\      
 		2017 & 13 & $\sim$4.0-6.0 & 1.7 \\\bottomrule      
 	\end{tabular}
-	\caption{Running conditions of \gls{LHC} and \Gls{LHCb} in different years of data-taking. The statistics of \gls{LHCb}'s instantaneous luminosity, $\mathcal{L}$ is extracted using run database information.}
+	\caption{Running conditions of \gls{LHC} and \Gls{LHCb} in different years of data-taking. The statistics of \gls{LHCb}'s instantaneous luminosity, $\mathcal{L}$ is extracted using run database information. Run \Rn{2} data-taking finishes in 2018.}
 	\label{tab:runcond}
 \end{table}   
 
@@ -91,11 +92,11 @@ As \Gls{LHCb} requires much lower luminosity compared to other \gls{LHC} detecto
         \includegraphics[width = 0.65\textwidth]{figs/detector/lumicompare.png}%\put(-15,100){(b)}
 	%\caption{(a) Integrated luminosity collected in different years of data-taking. This plot is taken from \cite{lumiover}. (b)
 	\caption{Development of the instantaneous luminosity for \Gls{ATLAS}, \Gls{CMS} and \Gls{LHCb} during LHC fill 2651. After ramping to the desired value of $4\times10^{32}\mathrm{cm^{-2}s^{-1}}$
-for LHCb, the luminosity is kept stable in a range of 5$\%$ for about 15 hours by adjusting the transversal beam overlap. The difference in luminosity towards the end of the fill between ATLAS, \Gls{CMS} and \Gls{LHCb} is due to the difference in the final focusing at the collision points, commonly referred to as the beta function, $\beta^{*}$. This plot was obtained from \cite{LHCb-DP-2014-002}.}
+	for \Gls{LHCb}, the luminosity is kept stable in a range of 5$\%$ for about 15 hours by adjusting the transversal beam overlap. The difference in luminosity towards the end of the fill between \Gls{ATLAS}, \Gls{CMS} and \Gls{LHCb} is due to the difference in the final focusing at the collision points, commonly referred to as the beta function, $\beta^{*}$. This plot was obtained from \cite{LHCb-DP-2014-002}.}
 	\label{fig:lhcbintlumi}
 \end{figure}
 
-In the following sections, a brief discussion of the different subdetectors, shown in~\autoref{fig:LHCbDetector}, is presented. The vertexing at \gls{LHCb} is performed with the vertex locator system, also known as the VELO, is described in~\autoref{velosys}. The tracking system at \gls{LHCb} consisting of trackers before magnet (TT), and three tracking stations behind the magnet (T1, T2, T3) is highlighted in~\autoref{tracksys}. The particle identification is provided by two Ring Imaging Cherencov counters (RICH1 and RICH2), which are detailed in~\autoref{richsec}. No particle physics experiment is complete without a calorimeter system, discussed in~\autoref{calosys}, which consists of a Scintillator Pad Detector (SPD), Preshower (PS), an electromagnetic calorimeter (ECAL) and finally a hadronic calorimeter (HCAL). The muon system positioned at the end of the detector, consisting of five muon chambers is described in~\autoref{muonsys}. The trigger chain as well as the simulation chain are discussed in~\autoref{triggerchap} and~\autoref{simulationchap}. Particular emphasis is given to the muon detectors and the simulation of \gls{LHCb}.
+In the following sections, a brief discussion of the different subdetectors, shown in~\autoref{fig:LHCbDetector}, is presented. The vertexing at \gls{LHCb} is performed with the vertex locator system, also known as the VELO, is described in~\autoref{velosys}. The tracking system at \gls{LHCb} consisting of trackers before magnet (TT), and three tracking stations behind the magnet (T1, T2, T3) is highlighted in~\autoref{tracksys}. The particle identification is provided by two Ring Imaging \v{C}erenkov counters (RICH1 and RICH2), which are detailed in~\autoref{richsec}. No particle physics experiment is complete without a calorimeter system, discussed in~\autoref{calosys}, which consists of a Scintillator Pad Detector (SPD), Preshower (PS), an electromagnetic calorimeter (ECAL) and finally a hadronic calorimeter (HCAL). The muon system positioned at the end of the detector, consisting of five muon chambers is described in~\autoref{muonsys}. The trigger chain as well as the simulation chain are discussed in~\autoref{triggerchap} and~\autoref{simulationchap}. Particular emphasis is given to the muon detectors and the simulation of \gls{LHCb}.
 
 %\color{red}{ \mybox{Sally} corrected until now} \color{black}.
 
@@ -136,10 +137,10 @@ In addition to tracking information provided by the \Gls{VELO}, the trajectories
 % 10 m of charged trakcs
 %with $p$ of 200 $\gev/c^{2}$.      
 
- Two different detection technologies are used in these trackers reflecting the nature of track occupancy as a function of polar angle. The tracker's part at small polar angles, \Gls{TT} station together with central region of \Gls{Tstation}, also known as Inner Tracker (\Gls{IT}), expects higher occupancy and makes use of the silicon microstrip detection mechanism. The outer part of \Gls{Tstation} stations, also known as the Outer Tracker (\Gls{OT}), is made of straw-tube detectors. Straw tubes measure the trajectory of the track by measuring the drift-time of ionized electrons. Use of the two technologies is illustrated in~\autoref{fig:tracktype}. 
+ Two different detection technologies are used in these trackers reflecting the nature of track occupancy as a function of polar angle. The tracker's part at small polar angles, \Gls{TT} station together with central region of \Gls{Tstation}, also known as Inner Tracker (\Gls{IT}), expects higher occupancy and makes use of the silicon microstrip detection mechanism. The outer part of \Gls{Tstation} stations, also known as the Outer Tracker (\Gls{OT}), is made of straw-tube detectors. Straw tubes measure the trajectory of the track by measuring the drift-time of ionized electrons. Use of the two technologies is illustrated in~\autoref{fig:tracktype}(a). 
 
 \subsection{Tracking Algorithms} 
-Different types of particles will leave different footprints in the detector. Charged particles will form tracks. Depending on the presence of hits in individual subdetectors, they are grouped into several categories, visualized in~\autoref{fig:tracktype}.
+Different types of particles will leave different footprints in the detector. Charged particles will form tracks. Depending on the presence of hits in individual subdetectors, they are grouped into several categories, visualized in~\autoref{fig:tracktype}(b).
 
 \begin{figure}[!h]
 	\centering
@@ -220,25 +221,25 @@ In order to measure the performance of the \Gls{PID} computed by a \gls{RICH}, p
 	\centering
 	\includegraphics[width = 0.525\textwidth]{figs/detector/D0_Mass.eps}\put(-50,80){(a)}%
 	\includegraphics[width = 0.5\textwidth]{figs/detector/KandPi_2_K.eps}\put(-50,80){(b)}%
-	\caption{ (a) Invariant mass distribution of $D^{0}$ data sample (in black) overlaid with fit to both background and signal (in blue). (b) An example of kaon ID (red) and misID (black) efficiency as a function of momentum under two PID hypotheses, $\textrm{DLL{K}} > 0$ (empty)  and $\textrm{DLL{K}} > 5$ (filled). Both Figures from \cite{LHCb-DP-2012-003}.}
+	\caption{ (a) Invariant mass distribution of $D^{0}$ data sample (in black) overlaid with fit to both background and signal (in blue). (b) An example of kaon ID (red) and misID (black) efficiency as a function of momentum under two \gls{PID} hypotheses, $\textrm{DLL{K}} > 0$ (empty)  and $\textrm{DLL{K}} > 5$ (filled). Both Figures from \cite{LHCb-DP-2012-003}.}
 	\label{fig:richperf}
 \end{figure}
 
-%In search for $B^{0}$ and $B^{0}_{s}$ decaying to $h^{+}h^{-}$, where $h\in K, \pi$, $\pi^{+} \pi^{-}$ invariant mass spectra with and without PID $\textrm{DLL{x}}$ requirements can be seen in~\autoref{fig:richnice}. These plots clearly demonstrate increase in sensitivity searching for $B^{0} \rightarrow \pi^{+} \pi^{-}$ signal amongst other components. 
+%In search for $B^{0}$ and $B^{0}_{s}$ decaying to $h^{+}h^{-}$, where $h\in K, \pi$, $\pi^{+} \pi^{-}$ invariant mass spectra with and without \gls{PID} $\textrm{DLL{x}}$ requirements can be seen in~\autoref{fig:richnice}. These plots clearly demonstrate increase in sensitivity searching for $B^{0} \rightarrow \pi^{+} \pi^{-}$ signal amongst other components. 
 
 %\begin{figure}[!h]
 %	\centering
 %	\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhnopid.png}%
 %	\includegraphics[width = 0.5\textwidth]{figs/detector/b2hhpid.png}%
-%	\caption{ $\pi^{+} \pi^{-}$ invariant mass distributions obtained using kinematic constraints only (left) and also using PID constraints (right) in order to isolate $B^{0} \rightarrow \pi^{+} \pi^{-}$ peak. This figure is taken from \cite{LHCb-PAPER-2012-002}. }  
+%	\caption{ $\pi^{+} \pi^{-}$ invariant mass distributions obtained using kinematic constraints only (left) and also using \gls{PID} constraints (right) in order to isolate $B^{0} \rightarrow \pi^{+} \pi^{-}$ peak. This figure is taken from \cite{LHCb-PAPER-2012-002}. }  
 %	\label{fig:richnice}
 %\end{figure}
 
 
 \section{Calorimetry }
 \label{calosys}
-As many other particle physics detectors, \Gls{LHCb} is equipped with series of subdetectors providing separation between electrons, pions and photons. This separation is achieved because different particles interact at differently with the material, producing differently shaped showers. This part of the detector is not only integral to the way the \Gls{LHCb} trigger system works but it also provides a measurement of energies of these objects.
-All the subcomponents discussed here operate on the same principle. Passing particles through the material emit light. The light from the scintillating material, which is created by absorbing the energy of the passing particle and re-emititing it in form of light, is guided to photomultiplier tubes by wavelength shifting fibres.
+As many other particle physics detectors, \Gls{LHCb} is equipped with series of subdetectors providing separation between electrons, pions and photons. This separation is achieved because different particles interact differently with the material, producing differently shaped showers. This part of the detector is not only integral to the way the \Gls{LHCb} trigger system works but it also provides a measurement of energies of these objects.
+All the subcomponents discussed here operate on the same principle. Passing particles through the material emit light. The light from the scintillating material, which is created by absorbing the energy of the passing particle and re-emitted it in form of light, is guided to photomultiplier tubes by wavelength shifting fibres.
 
 Electrons, pions and photons firstly encounter two planes of scintillating tiles: the Scintillating Pad Detector (\Gls{SPD}), and the Preshower Detector (\Gls{PRS}) intersected by a wall of lead. The \Gls{SPD} senses the passage of charged particles as they emit light whereas neutral particles do not, making this subdetector distinguish between electrons and photons. The wall of lead initiates the electromagnetic shower, where photons are converted into electron-positron pairs, depositing sizable energy in the \Gls{PRS} allowing electron/pion separation. 
 
@@ -285,7 +286,7 @@ Both GEM and \Gls{MWPCs} operate on a same principle. In each station, the posit
 
 \subsection{Muon Identification }
 \label{muonID}
-Apart from triggering events with high enough $p_{T}$ muons, the muon stations provide necessary PID information for muon analyses. Offline variables mostly used for muon ID by analysts are
+Apart from triggering events with high enough $p_{T}$ muons, the muon stations provide necessary \gls{PID} information for muon analyses. Offline variables mostly used for muon ID by analysts are
 \begin{itemize}
 	\item{\textbf{IsMuon}: Boolean decision of muon candidates with momentum-dependent categorisation. Long tracks with $p>3$\gev/c are extrapolated to muon stations yielding $x-y$ coordinates in M2-M5, considering only tracks within acceptance. For each station, a search for hit information within an elliptical area defined by momentum, a field of interest (\Gls{FOI}), is performed. The hit requirements are summarized in~\autoref{tab:ismuontab}.}
 	\item{\textbf{muDLL}: Difference in log likelihoods computed using muon and non-muon hypothesis. These hypotheses are based on the proximity/distance $D^{2}$ of the track extrapolation into the muon stations and corresponding closest sensed hits in those stations. Muon-like particle will tend to have sharper distribution in $D^{2}$ as compared to other species. Protons were chosen to be the other species for the calibration purposes. They give a broader distribution as they originate either as punch-through protons (protons coming from showers not fully contained in the \gls{HCAL}), protons having coincident hit position to a true muon, or random hits.}
@@ -293,7 +294,7 @@ Apart from triggering events with high enough $p_{T}$ muons, the muon stations p
 
 \end{itemize}
 
-\noindent Other variables which are extensively used for muon particle idenditfication in search for \Bmumumu are described in~\autoref{otherpid}. 
+\noindent Other variables which are extensively used for muon particle identification in search for \Bmumumu are described in~\autoref{otherpid}. 
 
 \begin{table}[!h]
 	\centering
@@ -343,7 +344,7 @@ In the end, selected events have their trigger decisions categorized. An event w
 \end{figure}
 
 
- The software-based \Gls{HLT} then further reduces the rate from 1 \mhz down to $5$ \khz which can be recorded to long-term storage. The first stage of the \Gls{HLT}, (\Gls{HLT1}), performs limited track reconstruction and hence makes a decision based on the presence of charged particles in the event. \Gls{HLT1} uses \Gls{VELO} hits to reconstruct \Gls{PV}s and \Gls{VELO} tracks by using 3D pattern recognition. As \Gls{LHCb}'s primary mission is to study decays of hadrons containing $b$ and $c$ quark, \Gls{HLT1} will make decision based on the track being displaced (having high \Gls{IP}) with respect to the \Gls{PV}. For events selected by the $L0Muon$, an attempt is made to match the \Gls{VELO} tracks to hits observed in the vertical plane in the muon chambers, where the magnetic field of the dipole will not make them bend. By computing the track $\chi^2$, the potential muon track candidates are selected. Finally, the \Gls{VELO} tracks and muon tracks are extrapolated into the \Gls{OT} or \Gls{IT} trackers, allowing for so called \textit{forward tracking}, whereby $p$ and $p_{T}$ requirements are imposed to reduce processing time. Each track is then fitted with  a fast Kalman filter providing the $\chi^2$ of the fit. The corresponding performance of \Gls{HLT1} trigger lines are shown in~\autoref{fig:Hlt1Perf}(a)(b).
+ The software-based \Gls{HLT} then further reduces the rate from 1 \mhz down to $5$ \khz which can be recorded to long-term storage. The first stage of the \Gls{HLT}, (\Gls{HLT1}), performs limited track reconstruction and hence makes a decision based on the presence of charged particles in the event. \Gls{HLT1} uses \Gls{VELO} hits to reconstruct \Gls{PV}s and \Gls{VELO} tracks by using 3D pattern recognition. As \Gls{LHCb}'s primary mission is to study decays of hadrons containing $b$ and $c$ quark, \Gls{HLT1} will make decision based on the track being displaced (having high \Gls{IP}) with respect to the \Gls{PV}. For events selected by the \texttt{L0Muon}, an attempt is made to match the \Gls{VELO} tracks to hits observed in the vertical plane in the muon chambers, where the magnetic field of the dipole will not make them bend. By computing the track $\chi^2$, the potential muon track candidates are selected. Finally, the \Gls{VELO} tracks and muon tracks are extrapolated into the \Gls{OT} or \Gls{IT} trackers, allowing for so called \textit{forward tracking}, whereby $p$ and $p_{T}$ requirements are imposed to reduce processing time. Each track is then fitted with  a fast Kalman filter providing the $\chi^2$ of the fit. The corresponding performance of \Gls{HLT1} trigger lines are shown in~\autoref{fig:Hlt1Perf}(a)(b).
 
 
 \begin{figure}[!h]
@@ -388,7 +389,7 @@ In the next phase, \textit{detector simulation}, the interactions of the all the
 Despite the complexity and best intention of the \Gls{LHCb} simulation, there are several shortcomings that require corrections.
 The most affected variables necessary for physics analyses that one needs to consider are \Gls{IP} resolution, track reconstruction efficiencies, \Gls{PID} variables and track occupancy.
 
-The \Gls{IP} resolution shows a better trend in the simulation then in the data due to the mismodelling of the material description of the \Gls{VELO} simulation. As shown in~\autoref{fig:IPRES}(a)(b)  the \Gls{IP} resolution does greatly differ depending the variation of material density of \Gls{VELO}. Around $\phi=\pm\pi/2$, where the two \Gls{VELO} parts overlap, the material difference causes the discrepancy. It can be corrected either by reweighting to data or by smearing the resolution witha Gaussian distribution.
+The \Gls{IP} resolution shows a better trend in the simulation then in the data due to the mismodelling of the material description of the \Gls{VELO} simulation. As shown in~\autoref{fig:IPRES}(a)(b)  the \Gls{IP} resolution does greatly differ depending the variation of material density of \Gls{VELO}. Around $\phi=\pm\pi/2$, where the two \Gls{VELO} parts overlap, the material difference causes the discrepancy. It can be corrected either by reweighting to data or by smearing the resolution with a Gaussian distribution.
 
 \begin{figure}[!h]
 	\centering
@@ -403,6 +404,6 @@ Track reconstruction efficiency is also not reproduced very well in certain kine
 
 The most critical problem that needs to be addressed in the presented analysis are the inaccuracies of the \Gls{PID} variables, which are mismodelled in the simulation. The origin of this problem arises as a consequence of much lower estimate of low momentum tracks in the detector making the photoelectron background underestimated. This results in better performance of separation power in simulation and is corrected using data calibration. 
 
-Therefore the PID efficiency is usually obtained from data. More specifically, by using high-yield and relatively background-free calibration channels, where the species of the particle can be deduced from kinematics of the decay. Standard set of these channels are "housed" in a \texttt{PIDCalib} package \cite{Anderlini:2202412}. In this package, PID efficiency can be computed in a given kinematic region of interest. 
+Therefore the \gls{PID} efficiency is usually obtained from data. More specifically, this is done by using high-yield and relatively background-free calibration channels, where the species of the particle can be deduced from kinematics of the decay. Standard set of these channels are "housed" in a \texttt{PIDCalib} package \cite{Anderlini:2202412}. In this package, \gls{PID} efficiency can be computed in a given kinematic region of interest. 
 
 
