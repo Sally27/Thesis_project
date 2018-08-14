@@ -215,7 +215,7 @@ In order to fit within the LHCb computing model, an initial set of selection cri
 
 Firstly, all three muon tracks are required to have a significant \gls{IP} with respect to the primary vertex. Minimum Impact Parameter $\chi^{2}$, \gls{minipchi2}, gives the minimum significance of a particles's trajectory to the primary vertex. Hence by requiring \gls{minipchi2}$>9$ for muons is consistent with the hypothesis that the muon is $3\sigma$ away from the primary vertex and hence can be well differentiated. In addition, the change in the $\chisq$ if \gls{PV} and \gls{SV} vertices are fitted separately as opposed to common vertex fit, \gls{fdchi2}, suppresses prompt backgrounds. 
 
-Each muon track is required to have good track $\chi^{2}$ per number of degrees of freedom of the fit (\texttt{ndof}), \gls{trackchi2ndof}, as well as low \gls{pgh2}. This removes spurious tracks as well as tracks with low quality.
+Each muon track is required to have good track $\chi^{2}$ per number of degrees of freedom of the fit, \gls{trackchi2ndof}, as well as low \gls{pgh2}. This removes spurious tracks as well as tracks with low quality.
 
 Each muon candidate is also identified with initial basic \gls{PID} variables. Firstly muons are chosen due to their signature in the muons stations with the binary \texttt{isMuon} decision. Secondly, muon candidates are chosen such that it is more likely that the candidate is a muon than a pion or kaon using global DLLmu variables defined in~\autoref{muonID}. This reduces the background from misidentified muons.
 
@@ -431,7 +431,7 @@ In this case, the significance 3$\sigma$ is used, but it was checked that there 
 \end{figure}
 
 
-The \texttt{FOM} is computed in the blinded mass region, $4.5\gevcc <M_{\mathrm{B_{corr}}} <5.5$ \gevcc. To estimate the number of background candidates in the blinded region, the final fit strategy described in~\autoref{fitsens} is used to fit the data, yielding around $10000$ in Run \Rn{1}, and $9000$ combinatorial candidates in Run \Rn{2}. The yields are extracted from blinded fits to data by integrating the combinatorial part of the total background probability density function (PDF) in the blinded region.
+The \texttt{FOM} is computed in the blinded mass region, $4.5\gevcc <M_{\mathrm{B_{corr}}} <5.5$ \gevcc. To estimate the number of background candidates in the blinded region, the final fit strategy described in~\autoref{fitsens} is used to fit the data, yielding around $10000$ in Run \Rn{1}, and $9000$ combinatorial candidates in Run \Rn{2}. The yields are extracted from blinded fits to data by integrating the combinatorial part of the total background PDF in the blinded region.
 
 In order to accommodate different selections between Run \Rn{1} and Run \Rn{2}, separate BDTs are trained for these periods. Combined training of all of the datasets was also performed but it does not lead to any improvement in background rejection. Results of the comparison between separate and combined training can be seen in ~\autoref{fig:separatetraining}. Different intrinsic properties (such as the number of trees used) and variables (such as two-particle vertices) have been explored but no improvement in discrimination of the BDT was achieved.
 

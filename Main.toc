@@ -41,7 +41,7 @@
 \contentsline {section}{\numberline {4.3}Probability of \mb {K/\pi \rightarrow \mu } Misidentification at LHCb }{92}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Specific Control Sample for \mb {K/\pi \rightarrow \mu } MisID Rates }{93}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Selection for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} }{93}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Fitting Strategy for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}}}{93}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.3}Fitting Strategy for \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}}}{94}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Results of \mb {B^{0} \rightarrow J/\psi (\rightarrow \mu ^{+} \mu ^{-}) K^{*}} Control Sample for \mb {K/\pi \rightarrow \mu } MisID Rates }{98}{subsection.4.3.4}
 \contentsline {chapter}{\numberline {5}Looking for \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } Decays at LHCb}{102}{chapter.5}
 \contentsline {section}{\numberline {5.1}Topology of the \mb {\ensuremath {{\ensuremath {{\ensuremath {{\ensuremath {\ensuremath {B}\xspace }}\xspace ^+}}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {\ensuremath {\mu }\xspace ^+\ensuremath {\mu }\xspace ^-\ensuremath {\mu }\xspace ^+}}\xspace \nu }\xspace } Decay at LHCb}{102}{section.5.1}
