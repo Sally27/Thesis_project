@@ -400,7 +400,7 @@ For the Misid and Combinatorial BDT selection, the normalisation \bjpsimumuk cha
 \newline
 \includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_combibdt_forefficiency/plotvariablemu3_PTNICEFOREFF}\put(-110,133){(c)}%
 \includegraphics[width = 0.45\textwidth]{efficiency/plot_shapes_before_combibdt_forefficiency/plotvariablemu3_PNICEFOREFF}\put(-110,133){(d)}%
-\caption{(a) Combinatorial BDT response for signal simultion and upper mass sideband as well as for normalisation channel simulation for Stripping 21 and Stripping 26. The most discriminative variables are (b) $p_{T}$ of the $B$ meson, (c) muon/kaon $p_{T}$ and (d) muon/kaon $p$.}
+\caption{(a) Combinatorial BDT response for signal simulation and upper mass sideband as well as for normalisation channel simulation for Stripping 21 and Stripping 26. The most discriminative variables are (b) $p_{T}$ of the $B$ meson, (c) muon/kaon $p_{T}$ and (d) muon/kaon $p$.}
 \label{fig:reason1}
 \end{figure}
 
@@ -515,7 +515,7 @@ The obtain the \bjpsimumuk yield of Run \Rn{1} and Run \Rn{2}, an unbinned exten
 \subsubsection{\mb{\bjpsimumupi} Background}
 
 Since the PID requirements on the kaon are very loose, there will be a background contribution from $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$. This contribution is modelled by a double-sided Crystal Ball function to $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$ simulation, where the pion track is given the kaon mass hypothesis. Again, all the parameters apart from mean $\mu^{CB}$ and width $\sigma^{CB}$ are fixed from the fit of this simulation. In ~\autoref{fig:FitToPiMuMu}, fits to \bjpsimumuk simulation and \bjpsimumupi simulation from Stripping 21 are showed using different scales.
-For signal, Run \Rn{1} Stripping 21 simulation sample is used and for Run \Rn{2} the Stripping 26 - TCK 288888335 simulation sample is used. For the \bjpsimumupi Stripping 21 simulation sample is used for both Run \Rn{1} and \Rn{2}.
+For signal, Run \Rn{1} Stripping 21 simulation sample is used and for Run \Rn{2} the Stripping 26 - TCK 288888335 simulation sample is used. For the \bjpsimumupi Stripping 21 simulation sample is used for both Run \Rn{1} and Run \Rn{2}.
 
 \begin{figure}[ht]
 \centering
@@ -527,7 +527,7 @@ For signal, Run \Rn{1} Stripping 21 simulation sample is used and for Run \Rn{2}
 \includegraphics[width=0.45\linewidth]{./efficiency/controlchannelfits/controlpimumumcnofcmeRun1log.pdf}\put(-50,57){(d)}
 	
 \caption{Fit to 2012 (a) \bjpsimumuk simulation and (c) \bjpsimumupi simulation under the kaon mass hypothesis. On right, the same
- plots but with logharitmic scale instead.}
+ plots but with logarithmic scale instead.}
 \label{fig:FitToPiMuMu}
 \end{figure}
 
@@ -769,7 +769,7 @@ In order to get an estimate for \textbf{the yield} of these partially reconstruc
 %This simulation sample all of the selection and total selection efficiency $\varepsilon_{total}$ is listed in ~\autoref{tab:prsum}. 
 All the relevant total selection efficiencies are obtained from the full simulation sample and are shown in~\autoref{tab:prsum}. Due to the usage of a proxy simulation for this partially reconstructed decays (using a pion rather than a muon in one case), as discussed in~\autoref{partrecobak}, the trigger efficiency $\varepsilon_{TRG}$ cannot be obtained from simulation for partially reconstructed decays, because the \texttt{HLT2} trigger (see~\autoref{tab:triggersel}) would make positive decision only either because of finding dimuon pair or two or three-body decays, hence the trigger ratio $\frac{\varepsilon^{\pr}_{TRG}}{\varepsilon^{\bjpsimumuk}_{TRG}}$ 
 is assumed to be 1, which is rather a conservative estimate (overestimate) but makes sure that other partially reconstructed backgrounds are accounted for. Another efficiency that was not accounted for because of the same reason is PID efficiency, $\varepsilon_{PID}$.
-Moreover as this proxy simulation was not accesible for Run \Rn{2}, the same ratio of efficiencies as in Run \Rn{1} is used.
+Moreover as this proxy simulation was not accessible for Run \Rn{2}, the same ratio of efficiencies as in Run \Rn{1} is used.
 
 
 %$\frac{\varepsilon^{2012}_{\pr}}{\varepsilon^{2012}_{\bjpsimumuk}}=\frac{\varepsilon^{2016}_{\pr}}{\varepsilon^{2016}_{\bjpsimumuk}}$.
@@ -834,8 +834,7 @@ The misID weights obtained from kinematically binned \bjpsikst samples (see ~\au
 
 The total uncertainty due to the weight, $\sigma_{tot}$, for a given bin of corrected mass is calculated using $\sqrt{\sigma_{var}^2 +\sqrt{\sum{w^{2}_{i}}}^{2}}$, where $\sigma_{par}=\sqrt{\sum{w^{2}_{i}}}$ is the associated error per bin and $\sigma_{var}$ is the standard deviation obtained from variation of misID weights. Finally, The binned $\chi^{2}$ fit is made to the misID samples with the total uncertainty. \textbf{The number of misID events}, $N^{MisID}$, for different species-regions after all selections are seen in~\autoref{tab:misidtabcummu}. Hence for the non-simultaneous fit this just add 1 parameter and for the simultaneous fit there will be two parameters describing the total yield of misID.
 
-Also it can be seen in~\autoref{tab:misidtabcummu}, crossfeedweight is only considered for kaon-like and pion-like \textit{SS misID} samples.
-\mybox{\color{red} ulrik does not fully understand this try to correct or remove }This arises as a consequence of two characteristics of the misID crossfeedweight procedure. First the convergence criteria makes unbalanced samples (one sample very high in misID events and other sample very small in number of misID events) hard to satisfy (case for most of \textit{OS misID} samples). Secondly, proton-like region samples are very sparse and hence it is not necessary to account for crossfeed. %, see Figure ~\ref{fig:ProtonPIDHeatMap}.
+Also it can be seen in~\autoref{tab:misidtabcummu}, crossfeedweight is only considered for kaon-like and pion-like \textit{SS misID} samples. This arises as a consequence of two characteristics of the misID crossfeedweight procedure. First the convergence criteria makes unbalanced samples (one sample very high in misID events and other sample very small in number of misID events) hard to satisfy (case for most of \textit{OS misID} samples). Secondly, proton-like region samples are very sparse and hence it is not necessary to account for crossfeed. %, see Figure ~\ref{fig:ProtonPIDHeatMap}.
 
 The binned $\chi^{2}$ fits using a Crystal Ball function to different bins of FCME is performed as seen in~\autoref{fig:MisidFinalFit}. This means that \textbf{the shape} of this background, $f^{MisID}$, is a function of 4 parameters in the non-simultaneous case and a function of 8 parameters in the simultaneous case. Both full weight error $\sigma_{tot}$ and partial weight error $\sigma_{par}$ are plotted. The difference between the two, is the error due to uncertainty on the weight $\sigma_{var}$.  Results of the fits are propagated into the signal data fits preserving correlations between parameters, which are hence a set if multidimensional gaussian constraints in the signal data fits. This means that all uncertainties due to misID will be directly accounted for in the signal data fits.
 
@@ -864,7 +863,7 @@ Run \Rn{2} \textit{OS misID} & Proton-region &  & no-crossfeedweight & 1 \\\hlin
 \bottomrule
 \end{tabular}
 \end{center}
-	\caption{The final misid template is constructed by summing the contribution from Run \Rn{1} and \Rn{2} kaon, pion and proton-like regions for both \textit{SS} and \textit{OS misID} contributions. }%The last column adds cumulatively the contributions with respect to the previous row. }
+	\caption{The final misID template is constructed by summing the contribution from Run \Rn{1} and \Rn{2} kaon, pion and proton-like regions for both \textit{SS} and \textit{OS misID} contributions. }%The last column adds cumulatively the contributions with respect to the previous row. }
 \label{tab:misidtabcummu}
 \end{table}
 
@@ -1465,7 +1464,7 @@ $N_{partreco_{\mathrm{highFCME}}}$ & 25.1 & 5.17 \\
 \bottomrule
 \end{tabular}
 \end{center}
-	\caption{Resulting yields for different components from the corrected mass fit with $\mathcal{B}(\Bmumumu) =-1.8\times 10^{-8}$.\mybox{Sally need to still fix this}}
+	\caption{Resulting yields for different components from the corrected mass fit with $\mathcal{B}(\Bmumumu) =-1.8\times 10^{-8}$.}
 \label{tab:yieldiatkos}
 \end{table}
 

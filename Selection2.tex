@@ -17,7 +17,7 @@ the neutrino is assigned all missing momentum transverse to the direction of the
 	\label{fig:sigtopolog}
 \end{figure}
 
-Combining all information allows for reconstruction of the \emph{corrected mass} that plays a similar role to invariant mass in fully reconstructed decays. It is defined as
+Combining all information allows for reconstruction of the corrected mass that plays a similar role to invariant mass in fully reconstructed decays. It is defined as
 %Invariant mass is usually used in \gls{LHCb} as the distribution from which the yield of a signal decay is determined through a fit. This particular quantity is used as it distinguishes well signal and background shapes with minimal modelling assumptions.
 % defined as
 
@@ -30,7 +30,7 @@ where the $M^{2}$ is the invariant visible mass squared and $p^{2}_{T}$ is the m
 %M_rm{{B_{corr}}} = \sqrt{M_{\mu^{+} \mu^{-} \mu^{+}}^{2} + |p_{T}|} + |p_{T}|,
 %\end{equation}	
 
-$M_{\mathrm{corr}}$ can be thought of as the minimal correction to the visible mass to account for the missing neutrino information. The resolution on the \textit{corrected mass} (the uncertainty of this quantity) hence becomes a critical quantity that needs to be understood. As the method of reconstruction of corrected mass relies heavily on the knowledge of the \Bpm meson flight direction, the resolution of \gls{PV} position and \gls{SV} vertex is crucial. Let $\vec{{x}}_{PV}=\{x_{PV},y_{PV},z_{PV}\}$, $\vec{{x}}_{SV}=\{x_{SV},y_{SV},z_{SV}\} $ be \gls{PV} and \gls{SV} vertex position and $\vec{p}=\{p_{x},p_{y},p_{z}\}$ be the visible trimuon momentum. Then the missing transverse momentum to the direction of the flight $p_{T}$ (momentum of the neutrino) as shown in~\cite{Egede:1694339} is
+$M_{\mathrm{corr}}$ can be thought of as the minimal correction to the visible mass to account for the missing neutrino information. The resolution on the corrected mass (the uncertainty of this quantity) hence becomes a critical quantity that needs to be understood. As the method of reconstruction of corrected mass relies heavily on the knowledge of the \Bpm meson flight direction, the resolution of \gls{PV} position and \gls{SV} vertex is crucial. Let $\vec{{x}}_{PV}=\{x_{PV},y_{PV},z_{PV}\}$, $\vec{{x}}_{SV}=\{x_{SV},y_{SV},z_{SV}\} $ be \gls{PV} and \gls{SV} vertex position and $\vec{p}=\{p_{x},p_{y},p_{z}\}$ be the visible trimuon momentum. Then the missing transverse momentum to the direction of the flight $p_{T}$ (momentum of the neutrino) as shown in~\cite{Egede:1694339} is
 
 
 \begin{equation}
@@ -66,9 +66,9 @@ Using a first order Taylor expansion of variance and rewriting it into matrix fo
        \end{bmatrix}
 \end{aligned}
 \end{equation}
-In this formalism $f$ is the \emph{corrected mass} and $x,y,z$ are variables on which \emph{corrected mass} depends. Using~\autoref{eq:corrm}, these independent variables are visible mass four-vector, $p_{3\mu}=\{E,p_{x},p_{y},p_{z}\}$, and missing $p_{T}$ (defined in~\autoref{eq:ptmis}), which in turn depends on $\vec{p}$, $\vec{x_{PV}}$ and $\vec{x_{SV}}$.
+In this formalism $f$ is the corrected mass and $x,y,z$ are variables on which corrected mass depends. Using~\autoref{eq:corrm}, these independent variables are visible mass four-vector, $p_{3\mu}=\{E,p_{x},p_{y},p_{z}\}$, and missing $p_{T}$ (defined in~\autoref{eq:ptmis}), which in turn depends on $\vec{p}$, $\vec{x_{PV}}$ and $\vec{x_{SV}}$.
 
-With $x=\vec{{x}}_{PV}$, $y=\vec{{x}}_{SV}$, $z=p_{3\mu}$ and \rm{COV} being the covariance matrix, the error (square root of variance) on the \emph{corrected mass}, $\delta_\mathrm{{corr}}$ is
+With $x=\vec{{x}}_{PV}$, $y=\vec{{x}}_{SV}$, $z=p_{3\mu}$ and \rm{COV} being the covariance matrix, the error (square root of variance) on the corrected mass, $\delta_\mathrm{{corr}}$ is
 %\begin{equation}
 %\begin{aligned}
 %       \nabla^{T}_{x_{PV}} \rm{C_{x_{PV}}} \nabla_{x_{PV}} + \nabla^{T}_{x_{SV}} \rm{C_{x_{SV}}} \nabla_{x_{SV}} + \nabla^{T}_{p} \rm{C_{p}} \nabla_{p}
@@ -213,7 +213,7 @@ In order to fit within the LHCb computing model, an initial set of selection cri
 
 %Set of initial identification for signal \Bmumumu summarized in~\autoref{tab:stripcutsB}, also known as \textit{stripping} selection was develloped in order to improve signal to background ratio. 
 
-Firstly, all three muon tracks are required to have a significant \gls{IP} with respect to the primary vertex. Minimum Impact Parameter $\chi^{2}$, \gls{minipchi2}, gives the minimum significance of a particles's trajectory to the primary vertex. Hence by requiring \gls{minipchi2}$>9$ for muons is consistent with the hypothesis that the muon is $3\sigma$ away from the primary vertex and hence can be well differentiated. In addition, the change in the $\chisq$ if \gls{PV} and \gls{SV} vertices are fitted separately as opposed to common vertex fit, \gls{fdchi2}, suppresses prompt backgrounds. 
+Firstly, all three muon tracks are required to have a significant \gls{IP} with respect to the primary vertex. Minimum Impact Parameter $\chi^{2}$, \gls{minipchi2}, gives the minimum significance of a particle's trajectory to the primary vertex. Hence by requiring \gls{minipchi2}$>9$ for muons is consistent with the hypothesis that the muon is $3\sigma$ away from the primary vertex and hence can be well differentiated. In addition, the change in the $\chisq$ if \gls{PV} and \gls{SV} vertices are fitted separately as opposed to common vertex fit, \gls{fdchi2}, suppresses prompt backgrounds. 
 
 Each muon track is required to have good track $\chi^{2}$ per number of degrees of freedom of the fit, \gls{trackchi2ndof}, as well as low \gls{pgh2}. This removes spurious tracks as well as tracks with low quality.
 
@@ -221,7 +221,7 @@ Each muon candidate is also identified with initial basic \gls{PID} variables. F
 
 In order to only select events which are compatible with the three muons originating from the same point in the space, \gls{vertexchi2ndof}, the $\chi^{2}$ of the trimuon vertex per degree of freedom fit is required to be small. This decreases the contamination from \textit{cascade decays} where the particle with the $c$ quark content from $b \rightarrow \underline{c} \rightarrow s$, such as $D$, would have non-negligible lifetime leading to higher \gls{vertexchi2ndof}. 
 
-A requirement that \Bp direction points in the same direction as the line from \gls{PV} to \gls{SV} is done by making sure that \gls{DIRA}, angle between the two vectors, is close to unity. This translates into a well reconstructed event, which minimizes combinatorial background, where the random track makes this pointing worse. \mybox{\color{red} The missing neutrino} Putting bounds on the mass window, whether it is \textit{visible} or \textit{corrected} mass, also suppresses combinatorial events. % This is because of on average higher momentum combinatorial muon.  
+A requirement that \Bp direction points in the same direction as the line from \gls{PV} to \gls{SV} is done by making sure that \gls{DIRA}, angle between the two vectors, is close to unity. This translates into a well reconstructed event, which minimizes combinatorial background, where the random track makes this pointing worse. Putting bounds on the mass window, whether it is \textit{visible} or \textit{corrected} mass, also suppresses combinatorial events. % This is because of on average higher momentum combinatorial muon.  
 
 
 \begin{table}[H]
@@ -280,7 +280,7 @@ As discussed in~\autoref{triggerchap} \texttt{L0MuonDecision} decides on whether
 
 \texttt{Hlt1TrackMuonDecision} accepts events where at least one identified muon has to pass thresholds on \gls{ipchi2}, $p_{T}$ and $p$. This favours muons arising from $b$- and $c$-hadron decays. There has to be at least one muon (\texttt{isMuon==true}) in its final state with certain kinematic thresholds on $p$ and $p_{T}$. For example, in 2011 the identified muons that triggered positive decision had to have $p$ above 8 \gevc \cite{Aaij:2012me}.
 
-At \gls{HLT2} level, the candidates are required to pass through at least one of the four decisions. \texttt{Hlt2TopoMu[2,3]BodyBBDTDecision} belong to the \textit{topological triggers} category with an extra requirement of a particle in a candidate being idendified by the \texttt{isMuon} decision. \texttt{Hlt2DiMuonDetachedDecision} and \texttt{Hlt2DiMuonDetachedHeavyDecision} reconstruct decays with two muons in the final state. The two lines differ in that they are optimised for heavy and light dimuon pairs respectively. For example, \texttt{Hlt2DiMuonDetachedDecision} accepts events with dimuon $p_{T}$ above 1.5 \gevc and with mass above 1 \gevcc, whereas  \texttt{Hlt2DiMuonDetachedHeavyDecision} accepts dimuon pairs with any $p_{T}$ but above 2.95 \gevcc in mass. The reason why these lines are called detached are because individual muons are required to have high \gls{ipchi2}.
+At \gls{HLT2} level, the candidates are required to pass through at least one of the four decisions. \texttt{Hlt2TopoMu[2,3]BodyBBDTDecision} belong to the \textit{topological triggers} category with an extra requirement of a particle in a candidate being identified by the \texttt{isMuon} decision. \texttt{Hlt2DiMuonDetachedDecision} and \texttt{Hlt2DiMuonDetachedHeavyDecision} reconstruct decays with two muons in the final state. The two lines differ in that they are optimised for heavy and light dimuon pairs respectively. For example, \texttt{Hlt2DiMuonDetachedDecision} accepts events with dimuon $p_{T}$ above 1.5 \gevc and with mass above 1 \gevcc, whereas  \texttt{Hlt2DiMuonDetachedHeavyDecision} accepts dimuon pairs with any $p_{T}$ but above 2.95 \gevcc in mass. The reason why these lines are called detached are because individual muons are required to have high \gls{ipchi2}.
 
 \section{\mb{q^{2}} Selection}
 \label{qsqchoice}

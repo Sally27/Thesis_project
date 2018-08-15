@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  14 AUG 2018 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.6.28)  15 AUG 2018 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6124,22 +6124,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 is rotated 90 degrees> <./figs/./efficiency/signalfits/partrecomc/simprlowfcmeR
 un1nolog.pdf, page is rotated 90 degrees> <./figs/./efficiency/signalfits/partr
 ecomc/simprhighfcmeRun1nolog.pdf, page is rotated 90 degrees>]
-Underfull \hbox (badness 10000) in paragraph at lines 837--839
-[]\T1/jkp/m/n/12 (+20) Also it can be seen in [][]Ta-ble 7.11[][][], cross-feed
--weight is
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 837--839
-\T1/jkp/m/n/12 (+20) only con-sid-ered for kaon-like and pion-like \T1/jkp/m/it
-/12 (+20) SS misID \T1/jkp/m/n/12 (+20) sam-ples.
- []
-
-
-Underfull \hbox (badness 2689) in paragraph at lines 837--839
-[]\T1/jkp/m/n/12 (+20) This arises as a con-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -6161,7 +6145,7 @@ phic file (type pdf)
 
 <use ./figs/./efficiency/signalfits/misiddata/misiddatanofcmeRun1nolog.pdf>
 Package pdftex.def Info: ./figs/./efficiency/signalfits/misiddata/misiddatanofc
-meRun1nolog.pdf used on input line 873.
+meRun1nolog.pdf used on input line 872.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
 <./figs/./efficiency/signalfits/misiddata/misiddatalowfcmeRun1nolog.pdf, id=804
@@ -6171,7 +6155,7 @@ aphic file (type pdf)
 
 <use ./figs/./efficiency/signalfits/misiddata/misiddatalowfcmeRun1nolog.pdf>
 Package pdftex.def Info: ./figs/./efficiency/signalfits/misiddata/misiddatalowf
-cmeRun1nolog.pdf used on input line 875.
+cmeRun1nolog.pdf used on input line 874.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
 <./figs/./efficiency/signalfits/misiddata/misiddatahighfcmeRun1nolog.pdf, id=80
@@ -6181,7 +6165,7 @@ raphic file (type pdf)
 
 <use ./figs/./efficiency/signalfits/misiddata/misiddatahighfcmeRun1nolog.pdf>
 Package pdftex.def Info: ./figs/./efficiency/signalfits/misiddata/misiddatahigh
-fcmeRun1nolog.pdf used on input line 876.
+fcmeRun1nolog.pdf used on input line 875.
 (pdftex.def)             Requested size: 227.62204pt x 163.3889pt.
 
 
@@ -6235,7 +6219,7 @@ File: ./figs/./efficiency/systematics/signalbias/notsim.pdf Graphic file (type
 pdf)
  <use ./figs/./efficiency/systematics/signalbias/notsim.pdf>
 Package pdftex.def Info: ./figs/./efficiency/systematics/signalbias/notsim.pdf 
-used on input line 1228.
+used on input line 1227.
 (pdftex.def)             Requested size: 227.62204pt x 220.7958pt.
 
 
@@ -6261,7 +6245,7 @@ hi2_reallynice.pdf Graphic file (type pdf)
 <use ./figs/./efficiency/blindedfits/probnnmu035probmu35plotB23MuNuFitPretty_ch
 i2_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/blindedfits/probnnmu035probmu35plo
-tB23MuNuFitPretty_chi2_reallynice.pdf used on input line 1272.
+tB23MuNuFitPretty_chi2_reallynice.pdf used on input line 1271.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <./figs/./efficiency/blindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitPretty
@@ -6272,7 +6256,7 @@ retty_chi2_reallynice.pdf Graphic file (type pdf)
 <use ./figs/./efficiency/blindedfits/LowFCMEprobnnmu035probmu35plotB23MuNuFitPr
 etty_chi2_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/blindedfits/LowFCMEprobnnmu035prob
-mu35plotB23MuNuFitPretty_chi2_reallynice.pdf used on input line 1274.
+mu35plotB23MuNuFitPretty_chi2_reallynice.pdf used on input line 1273.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <./figs/./efficiency/blindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPrett
@@ -6283,7 +6267,7 @@ Pretty_chi2_reallynice.pdf Graphic file (type pdf)
 <use ./figs/./efficiency/blindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitP
 retty_chi2_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/blindedfits/HighFCMEprobnnmu035pro
-bmu35plotB23MuNuFitPretty_chi2_reallynice.pdf used on input line 1275.
+bmu35plotB23MuNuFitPretty_chi2_reallynice.pdf used on input line 1274.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 
@@ -6293,17 +6277,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [180]
-Overfull \hbox (22.85805pt too wide) in paragraph at lines 1291--1291
+Overfull \hbox (22.85805pt too wide) in paragraph at lines 1290--1290
 []|$[]$|  
  []
 
 
-Overfull \hbox (11.53111pt too wide) in paragraph at lines 1298--1298
+Overfull \hbox (11.53111pt too wide) in paragraph at lines 1297--1297
 []|$[]$|  
  []
 
 
-Overfull \vbox (1.17548pt too high) detected at line 1298
+Overfull \vbox (1.17548pt too high) detected at line 1297
  []
 
 
@@ -6343,7 +6327,7 @@ tPretty_chi2_simPdfsig_with_0_reallynice.pdf Graphic file (type pdf)
 Pretty_chi2_simPdfsig_with_0_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/unblindedfits/LowFCMEprobnnmu035pr
 obmu35plotB23MuNuFitPretty_chi2_simPdfsig_with_0_reallynice.pdf used on input l
-ine 1389.
+ine 1388.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <./figs/./efficiency/unblindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPre
@@ -6355,7 +6339,7 @@ itPretty_chi2_simPdfsig_with_0_reallynice.pdf Graphic file (type pdf)
 tPretty_chi2_simPdfsig_with_0_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/unblindedfits/HighFCMEprobnnmu035p
 robmu35plotB23MuNuFitPretty_chi2_simPdfsig_with_0_reallynice.pdf used on input 
-line 1390.
+line 1389.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <./figs/./efficiency/unblindedfits/MyOwnProfileLL.pdf, id=8460, 569.12625pt x 3
@@ -6364,7 +6348,7 @@ File: ./figs/./efficiency/unblindedfits/MyOwnProfileLL.pdf Graphic file (type p
 df)
  <use ./figs/./efficiency/unblindedfits/MyOwnProfileLL.pdf>
 Package pdftex.def Info: ./figs/./efficiency/unblindedfits/MyOwnProfileLL.pdf u
-sed on input line 1400.
+sed on input line 1399.
 (pdftex.def)             Requested size: 273.14922pt x 184.99733pt.
 
 
@@ -6388,7 +6372,7 @@ tPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf Graphic file (type pdf)
 Pretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/unblindedfits/LowFCMEprobnnmu035pr
 obmu35plotB23MuNuFitPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf used
- on input line 1409.
+ on input line 1408.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 <./figs/./efficiency/unblindedfits/HighFCMEprobnnmu035probmu35plotB23MuNuFitPre
@@ -6402,7 +6386,7 @@ itPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf Graphic file (type pdf
 tPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf>
 Package pdftex.def Info: ./figs/./efficiency/unblindedfits/HighFCMEprobnnmu035p
 robmu35plotB23MuNuFitPretty_chi2_simPdfsig_with__1_78461e_08_reallynice.pdf use
-d on input line 1410.
+d on input line 1409.
 (pdftex.def)             Requested size: 227.62204pt x 218.38713pt.
 
 
@@ -6550,7 +6534,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 423.
 Here is how much of TeX's memory you used:
  43413 strings out of 494946
  835397 string characters out of 6180981
- 977387 words of memory out of 5000000
+ 977360 words of memory out of 5000000
  44602 multiletter control sequences out of 15000+600000
  222303 words of font info for 649 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -6582,7 +6566,7 @@ fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/texlive/texmf-dist/fonts/type1
 fonts/jkpttbn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/j
 kpttmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb>
-Output written on Main.pdf (204 pages, 6231586 bytes).
+Output written on Main.pdf (204 pages, 6231071 bytes).
 PDF statistics:
  9268 PDF objects out of 10688 (max. 8388607)
  5606 compressed objects within 57 object streams
