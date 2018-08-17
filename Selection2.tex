@@ -276,7 +276,7 @@ Trigger Selection  \\ %& 2011 & 2012 & 2016 \\
 	\label{tab:triggersel}
 \end{table}
 
-As discussed in~\autoref{triggerchap} \texttt{L0MuonDecision} decides on whether an event is accepted depending on the $p_{T}$ of a muon and the number of hits in the \gls{SPD}. Run \Rn{1} can be split into 2011 and 2012 conditions where, in 2011 the most used threshold for positive decision is 1.48 \gevc \cite{Aaij:2012me} and 1.76 \gevc \cite{Albrecht:2013fba}. Run \Rn{1} \gls{SPD} rate only accepts events below 600. In Run \Rn{2}, the trigger thresholds varied more but the most representative acceptance for muon $p_{T}$ was above 1.85 \gevc with \gls{SPD} multiplicity below 450.
+As discussed in~\autoref{triggerchap} \texttt{L0MuonDecision} decides on whether an event is accepted depending on the $p_{T}$ of a muon and the number of hits in the \gls{SPD}. Run \Rn{1} can be split into 2011 and 2012 conditions where, in 2011 the most used threshold for positive decision is 1.48 \gevc \cite{Aaij:2012me} and 1.76 \gevc \cite{Albrecht:2013fba}. Run \Rn{1} \gls{SPD} rate only accepts events below 600. In 2016, the trigger thresholds varied more but the most representative acceptance for muon $p_{T}$ was above 1.85 \gevc with \gls{SPD} multiplicity below 450.
 
 \texttt{Hlt1TrackMuonDecision} accepts events where at least one identified muon has to pass thresholds on \gls{ipchi2}, $p_{T}$ and $p$. This favours muons arising from $b$- and $c$-hadron decays. There has to be at least one muon (\texttt{isMuon==true}) in its final state with certain kinematic thresholds on $p$ and $p_{T}$. For example, in 2011 the identified muons that triggered positive decision had to have $p$ above 8 \gevc \cite{Aaij:2012me}.
 
@@ -315,7 +315,7 @@ In order to remove backgrounds that proceed via resonant $J/\psi$ and $\Psi(2S)$
 
 \section{Further Selection}
 
-Further selection is performed with the executive summary in~\autoref{tab:OfflineSelection}. This selection aims to further suppress backgrounds with different treatment in Run \Rn{1} and Run \Rn{2} due to the different definitions of variables, as shown in~\autoref{bugs}. The sections below comment on the more exact features of this further selection. 
+Further selection is performed with the executive summary in~\autoref{tab:OfflineSelection}. This selection aims to further suppress backgrounds with different treatment in Run \Rn{1} and 2016 due to the different definitions of variables, as shown in~\autoref{bugs}. The sections below comment on the more exact features of this further selection. 
 
 \begin{table}[h!]
 %\small
@@ -323,7 +323,7 @@ Further selection is performed with the executive summary in~\autoref{tab:Offlin
 \begin{tabular}{l c c c}\toprule
 
 %    \begin{tabular}{ | l | c |  } %p{7cm}|}
-      Idea & Object & Run \Rn{1} Selection & Run \Rn{2} Selection \\ \hline
+      Idea & Object & Run \Rn{1} Selection & 2016 Selection \\ \hline
       Clean & Muon & - & \texttt{IsMuonTight==1.0}\\
       Clone and ghost & Muon & \texttt{Nshared==0} & \texttt{Nshared<2} \\
        & & in~\autoref{bugs} & \\
@@ -342,7 +342,7 @@ Further selection is performed with the executive summary in~\autoref{tab:Offlin
 %      Clean & Min Dimuon & min $q^{2}(\mu^{+},\mu^{-})$ $<$ 960400 MeV$^{2}$/c$^{4}$  & min $q^{2}(\mu^{+},\mu^{-})$ $<$ 960400 MeV$^{2}$/c$^{4}$ \\ \hline
       \end{tabular}
 \end{center}
-	\caption{Offline selection performed after \textit{stripping}. Differences can be seen between Run \Rn{1} and Run \Rn{2} datasets. \texttt{FOM} is defined int~\autoref{eq:punzifom}.}
+	\caption{Offline selection performed after \textit{stripping}. Differences can be seen between Run \Rn{1} and 2016 datasets. \texttt{FOM} is defined int~\autoref{eq:punzifom}.}
 \label{tab:OfflineSelection}
 \end{table}
 
@@ -367,7 +367,7 @@ $B^{+}$ \gls{vertexchi2ndof} & \gls{minipchi2} of all three muons  & Isolation v
 	$B^{+}$ lifetime &  & (~\autoref{isolationvar}) \\ \hline
 \end{tabular}
 \end{center}
-\caption{BDT variables used in both combinatorial and misID Run \Rn{1} and Run \Rn{2} BDTs.}
+\caption{BDT variables used in both combinatorial and misID Run \Rn{1} and 2016 BDTs.}
 \label{tab:vars}
 \end{table}
 
@@ -404,7 +404,7 @@ The Isolation BDT response peaks between -1 and 0 for isolated tracks (signal-li
 \centering
 	\includegraphics[width=0.5\linewidth]{./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22012.pdf}{\put(-50,133){(a)}}%
 	\includegraphics[width=0.5\linewidth]{./sel/Thesis_variableBplus_pmu_ISOLATION_BDT1_weightsbeforeq22016.pdf}{\put(-50,133){(b)}}
-	\caption{Isolation score for signal and backgrounds using (a) Run \Rn{1} (b) Run \Rn{2} samples. If isolation fails to find any other track than $p \mu^{-}$ tracks in the event, by default it gives the value -2.}
+	\caption{Isolation score for signal and backgrounds using (a) Run \Rn{1} (b) 2016 samples. If isolation fails to find any other track than $p \mu^{-}$ tracks in the event, by default it gives the value -2.}
 \label{fig:isolation}
 \end{figure}
 
@@ -426,14 +426,14 @@ In this case, the significance 3$\sigma$ is used, but it was checked that there 
 \centering
 	\includegraphics[width=0.5\linewidth]{./sel/Scaled_nice_FOM_Run1.pdf}%
 	\includegraphics[width=0.5\linewidth]{./sel/Scaled_nice_FOM_2016.pdf}%
-	\caption{ Punzi \texttt{FOM} shows the optimum working point at 0.47 for Run \Rn{1} and 0.54 for Run \Rn{2} as seen in both figures with a violet line for $n=3$ and $n=5$. This \texttt{FOM} is for Combinatorial BDTs.}
+	\caption{ Punzi \texttt{FOM} shows the optimum working point at 0.47 for Run \Rn{1} and 0.54 for 2016 as seen in both figures with a violet line for $n=3$ and $n=5$. This \texttt{FOM} is for Combinatorial BDTs.}
 \label{fig:punzifom}
 \end{figure}
 
 
-The \texttt{FOM} is computed in the blinded mass region, $4.5\gevcc <M_{\mathrm{B_{corr}}} <5.5$ \gevcc. To estimate the number of background candidates in the blinded region, the final fit strategy described in~\autoref{fitsens} is used to fit the data, yielding around $10000$ in Run \Rn{1}, and $9000$ combinatorial candidates in Run \Rn{2}. The yields are extracted from blinded fits to data by integrating the combinatorial part of the total background PDF in the blinded region.
+The \texttt{FOM} is computed in the blinded mass region, $4.5\gevcc <M_{\mathrm{B_{corr}}} <5.5$ \gevcc. To estimate the number of background candidates in the blinded region, the final fit strategy described in~\autoref{fitsens} is used to fit the data, yielding around $10000$ in Run \Rn{1}, and $9000$ combinatorial candidates in 2016. The yields are extracted from blinded fits to data by integrating the combinatorial part of the total background PDF in the blinded region.
 
-In order to accommodate different selections between Run \Rn{1} and Run \Rn{2}, separate BDTs are trained for these periods. Combined training of all of the datasets was also performed but it does not lead to any improvement in background rejection. Results of the comparison between separate and combined training can be seen in ~\autoref{fig:separatetraining}. Different intrinsic properties (such as the number of trees used) and variables (such as two-particle vertices) have been explored but no improvement in discrimination of the BDT was achieved.
+In order to accommodate different selections between Run \Rn{1} and 2016, separate BDTs are trained for these periods. Combined training of all of the datasets was also performed but it does not lead to any improvement in background rejection. Results of the comparison between separate and combined training can be seen in ~\autoref{fig:separatetraining}. Different intrinsic properties (such as the number of trees used) and variables (such as two-particle vertices) have been explored but no improvement in discrimination of the BDT was achieved.
 
 
 \begin{figure}[ht]
@@ -457,12 +457,12 @@ In both Combinatorial BDTs, the most discriminating variables are the isolation 
 	\newline
 	\includegraphics[width=0.5\linewidth]{./sel/combi/plotvariableB_PTNICEDISMIX.pdf}%
 	\includegraphics[width=0.5\linewidth]{./sel/combi/plotvariablemu1_MINIPCHI2NICEDISMIX.pdf}%
-	\caption{The variables with the most discriminative power for both Run \Rn{1} and 2016 Combinatorial BDTs.}
+	\caption{The variables with the most discriminative power for both Run \Rn{1} and 2016 Combinatorial BDTs. In these plots $\mu^{1}$ is one of the muon with the charge that agrees with mother $B$, so if the mother is $B^{+}$ then $\mu^{1}$ is one of the positively charged muon ($\mu^{+}$).}
 \label{fig:discombi}
 \end{figure}
 
 
-It is also important that there is no skewing of the mass distribution for the background as this could lead later to modelling issues with these different background components. This was checked by looking at the behaviour of the BDT output in different bins of $M_{\mathrm{B_{corr}}}$. If the BDT value stays flat then the background will not be skewed, which is the case for Run \Rn{2} as seen in~\autoref{fig:flatnessofcombibdt}. This is also the case for Run \Rn{1}. 
+It is also important that there is no skewing of the mass distribution for the background as this could lead later to modelling issues with these different background components. This was checked by looking at the behaviour of the BDT output in different bins of $M_{\mathrm{B_{corr}}}$. If the BDT value stays flat then the background will not be skewed, which is the case for 2016 as seen in~\autoref{fig:flatnessofcombibdt}. This is also the case for Run \Rn{1}. 
 
 
 \begin{figure}[ht]
@@ -474,7 +474,7 @@ It is also important that there is no skewing of the mass distribution for the b
 
 \subsection{The Misid Boosted Decision Tree}
 \label{misidbdt}
-In the same way, the classifier that distinguishes between signal and misID background was developed. The misID sample, that is used for training and testing, was obtained the same way as the signal but with one of the muons not identified as the muon. Rather, this third particle will be identified either as a proton, pion or kaon. More about the parametrisation of this background can be found in~\autoref{misidprocedure}. These samples went through all the previous selection including the application of Combinatorial BDTs. As before, Run \Rn{1} and Run \Rn{2} are trained and used separately on the relevant datasets, as shown in~\autoref{fig:separatetrainingmis}. 
+In the same way, the classifier that distinguishes between signal and misID background was developed. The misID sample, that is used for training and testing, was obtained the same way as the signal but with one of the muons not identified as the muon. Rather, this third particle will be identified either as a proton, pion or kaon. More about the parametrisation of this background can be found in~\autoref{misidprocedure}. These samples went through all the previous selection including the application of Combinatorial BDTs. As before, Run \Rn{1} and 2016 are trained and used separately on the relevant datasets, as shown in~\autoref{fig:separatetrainingmis}. 
 
 
 \begin{figure}[ht]
@@ -485,18 +485,18 @@ In the same way, the classifier that distinguishes between signal and misID back
 \label{fig:separatetrainingmis}
 \end{figure}
 
-The optimisation metric for this classifier was again Punzi \texttt{FOM} in a blinded region. The Punzi \texttt{FOM} for Run \Rn{1} and Run \Rn{2} as a function of BDT cut can be seen in~\autoref{fig:punzifommisid} for both significances of $n=\{3,5\}$.
+The optimisation metric for this classifier was again Punzi \texttt{FOM} in a blinded region. The Punzi \texttt{FOM} for Run \Rn{1} and 2016 as a function of BDT cut can be seen in~\autoref{fig:punzifommisid} for both significances of $n=\{3,5\}$.
 
 \begin{figure}[ht]
 \centering
 	\includegraphics[width=0.5\linewidth]{./sel/misid/Scaled_nice_FOM_Run1.pdf}%
 	\includegraphics[width=0.5\linewidth]{./sel/misid/Scaled_nice_FOM_2016.pdf}%
-	\caption{ Punzi \texttt{FOM} have the optimum working point at 0.21 for Run \Rn{1} and 0.27 for Run \Rn{2} as seen in both figures with a violet line for $n=3$ and $n=5$. These \texttt{FOM} values are for misid BDTs.}
+	\caption{ Punzi \texttt{FOM} have the optimum working point at 0.21 for Run \Rn{1} and 0.27 for 2016 as seen in both figures with a violet line for $n=3$ and $n=5$. These \texttt{FOM} values are for misid BDTs.}
 \label{fig:punzifommisid}
 \end{figure}
 
 
-To obtain the number of background events, the default fitting strategy for misID is used in~\autoref{misidfitstrat}, where the total yield need to be multiplied by 100 in order to counter balance the prescale used at the pre-selection stage. To obtain the yield, a binned $\chi^{2}$ fit is performed. The binned $\chi^{2}$ fits to the misID templates are shown in~\autoref{fig:beforemisiddatafit} yielding 2400 unparametrized misID candidates in Run \Rn{1} polluting the signal window in the prescaled sample, and 2200 in Run \Rn{2}. 
+To obtain the number of background events, the default fitting strategy for misID is used in~\autoref{misidfitstrat}, where the total yield need to be multiplied by 100 in order to counter balance the prescale used at the pre-selection stage. To obtain the yield, a binned $\chi^{2}$ fit is performed. The binned $\chi^{2}$ fits to the misID templates are shown in~\autoref{fig:beforemisiddatafit} yielding 2400 unparametrized misID candidates in Run \Rn{1} polluting the signal window in the prescaled sample, and 2200 in 2016. 
 
 \begin{figure}[ht]
 \centering
@@ -523,15 +523,15 @@ The most powerful variables that distinguish the signal from misID background ar
 
 \begin{figure}[ht]
 \centering
-	\includegraphics[width=0.5\linewidth]{./sel/misid/plotvariablemu3_PTNICEDISMIX.pdf}%
-	\includegraphics[width=0.5\linewidth]{./sel/misid/plotvariablemu3_PNICEDISMIX.pdf}%
+	\includegraphics[width=0.45\linewidth]{./sel/misid/plotvariablemu3_PTNICEDISMIX.pdf}%
+	\includegraphics[width=0.45\linewidth]{./sel/misid/plotvariablemu3_PNICEDISMIX.pdf}%
 	\newline
-	\includegraphics[width=0.5\linewidth]{./sel/misid/plotvariablemu3_MINIPCHI2NICEDISMIX.pdf}%
-	\includegraphics[width=0.5\linewidth]{./sel/misid/plotvariablemu1_PTNICEDISMIX.pdf}%
+	\includegraphics[width=0.45\linewidth]{./sel/misid/plotvariablemu3_MINIPCHI2NICEDISMIX.pdf}%
+	\includegraphics[width=0.45\linewidth]{./sel/misid/plotvariablemu1_PTNICEDISMIX.pdf}%
         \newline
-	\includegraphics[width=0.5\linewidth]{./sel/misid/plotvariablemu2_PTNICEDISMIX.pdf}%
-	\includegraphics[width=0.5\linewidth]{./sel/misid/plotvariablemu2_PNICEDISMIX.pdf}%
-	\caption{The variables with the most discriminative power for both misid Run \Rn{1} and Run \Rn{2} BDT. These are mostly kinematic properties of the different muons.}
+	\includegraphics[width=0.45\linewidth]{./sel/misid/plotvariablemu2_PTNICEDISMIX.pdf}%
+	\includegraphics[width=0.45\linewidth]{./sel/misid/plotvariablemu2_PNICEDISMIX.pdf}%
+	\caption{The variables with the most discriminative power for both misid Run \Rn{1} and 2016 BDT. In these plots, for signal samples $\mu^{1}$ and $\mu^{3}$ are the muons with the charge that agrees with mother $B$, so if the mother is $B^{+}$ then $\mu^{1}$ and $\mu^{3}$ are the positively charged muons ($\mu^{+}$), and $\mu^{2}$ is negatively charged muon ($\mu^{-}$). For misID data samples, $\mu^{1}$ is true muon with the charge that agrees with the charge of mother $B$, $\mu^{2}$ is true muon with the charge that does not agree with the charge mother $B$ and finally $\mu^{3}$ is the misidentified particle whose charge agrees with the charge of mother $B$.}
 \label{fig:dismisif}
 \end{figure}
 
@@ -542,11 +542,11 @@ Because the signal mass distribution is expected to be in a more narrow window a
 
 \subsection{Further \gls{PID} Selection}
 \label{furtherpid}
-After classifiers to reduce combinatorial and misID backgrounds are trained and applied and the fitting region is defined, further \gls{PID} selection is performed. This can be done as the preselection had relatively loose $\rm{DLL}$ requirements and hence it is possible to improve the performance by using cuts on additional \gls{PID} variables. In the optimisation procedure, different hypotheses were tested, such as cuts on \texttt{Probnnmu}, \texttt{Probnnpi}, and \texttt{ProbnnK} variables and their combinations. The optimisation was performed in such a way as to optimize the Punzi \texttt{FOM} with $n=3$ in a blinded signal region, by performing the full blinded data fit (more information will be given in~\autoref{blindeddatafit}), but with fits to Run \Rn{1} and Run \Rn{2} data separately.
+After classifiers to reduce combinatorial and misID backgrounds are trained and applied and the fitting region is defined, further \gls{PID} selection is performed. This can be done as the preselection had relatively loose $\rm{DLL}$ requirements and hence it is possible to improve the performance by using cuts on additional \gls{PID} variables. In the optimisation procedure, different hypotheses were tested, such as cuts on \texttt{Probnnmu}, \texttt{Probnnpi}, and \texttt{ProbnnK} variables and their combinations. The optimisation was performed in such a way as to optimize the Punzi \texttt{FOM} with $n=3$ in a blinded signal region, by performing the full blinded data fit (more information will be given in~\autoref{blindeddatafit}), but with fits to Run \Rn{1} and 2016 data separately.
 
 
 %In 2016, misID templates above 5800 \mevcc are not populated. Hence final 6 bins of corrected mass ($5800 \mevcc -7000 \mevcc$) are merged into 1. 
-For each PID hypothesis, the Punzi \texttt{FOM} was calculated. In both cases, in Run \Rn{1} and \Rn{2} \texttt{Probnnmu} $>$ 0.35 yielded the highest Punzi \texttt{FOM}.
+For each PID hypothesis, the Punzi \texttt{FOM} was calculated. In both cases, in Run \Rn{1} and 2016 \texttt{Probnnmu} $>$ 0.35 yielded the highest Punzi \texttt{FOM}.
 
 
 
@@ -590,7 +590,7 @@ Firstly, the preselection stream from which this sample is taken has different r
      \end{tabular}
 
 \end{center}
-	\caption{Original preselection of events for normalisation channel for $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ for Run \Rn{1} and Run \Rn{2}. }
+	\caption{Original preselection of events for normalisation channel for $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ for Run \Rn{1} and 2016. }
 \label{tab:stripcutsBnorm}
 \end{table}
 

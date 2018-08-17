@@ -67,7 +67,7 @@ Having all the individual efficiencies the relative efficiency with no FCME spli
 
 %where NOFCME means one bin of fractional corrected mass error, lowFCME and highFCME fractional corrected mass error are two bins of fractional corrected mass error, see Section ~\ref{split} for more details. 
 
-\noindent where 21, 26 denote the stripping version for Run \Rn{1} and Run \Rn{2}. With the FCME split this efficiency ratio becomes
+\noindent where 21, 26 denote the stripping version for Run \Rn{1} and 2016. With the FCME split this efficiency ratio becomes
 \begin{equation}
 	R^{\{21,26\}}_{\mathrm{\{lowFCME,highFCME\}}}(\varepsilon)=R_{\rm{NOFCME}}^{\{21,26\}}(\varepsilon)\times\frac{\varepsilon^{\mathrm{\{lowFCME,highFCME\}}}_{s}}{\varepsilon^{\mathrm{\{lowFCME,highFCME\}}}_{n}}.
 %=\frac{\varepsilon^{GEN}_{s}}{\varepsilon^{GEN}_{n}} \times \frac{\varepsilon^{REC}_{s}}{\varepsilon^{REC}_{n}} \times \frac{\varepsilon^{TRG}_{s}}{\varepsilon^{TRG}_{n}} \times \frac{\varepsilon^{OFF}_{s}}{\varepsilon^{OFF}_{n}} \times \frac{\varepsilon^{CombiBDT}_{s}}{\varepsilon^{CombiBDT}_{n}} \times \frac{\varepsilon^{MisidBDT}_{s}}{\varepsilon^{MisidBDT}_{n}} \times \frac{\varepsilon^{FR}_{s}}{\varepsilon^{FR}_{n}} \ \frac{\varepsilon^{FCME}_{s}}{\varepsilon^{FCME}_{n}} \times \frac{\varepsilon^{PID}_{s}}{\varepsilon^{PID}_{n}},
@@ -152,7 +152,7 @@ Including fractional corrected mass split defined in~\autoref{eq:splitted} the r
 \end{equation}
 	
 	
-As it can be noticed, different selections that were optimised for Run \Rn{1} and Run \Rn{2} yield different overall as well as individual efficiencies. This results in small differences in sensitivity between Run \Rn{1} and Run \Rn{2}. To better understand where this difference comes from, the ratios of individual relative efficiencies as a function of stripping version is plotted in the~\autoref{fig:rateffsnofcme}. The difference can be attributed to different BDTs.
+As it can be noticed, different selections that were optimised for Run \Rn{1} and 2016 yield different overall as well as individual efficiencies. This results in small differences in sensitivity between Run \Rn{1} and 2016. To better understand where this difference comes from, the ratios of individual relative efficiencies as a function of stripping version is plotted in the~\autoref{fig:rateffsnofcme}. The difference can be attributed to different BDTs.
 
 \begin{figure}[H]
 \centering
@@ -236,13 +236,13 @@ The hierarchy of reconstruction level efficiencies $\varepsilon^{s}_{REC} < \var
  
 Therefore, if default TCK for simulation is representative for the whole considered dataset, then the efficiency can be extracted directly from the simulation produced, which is the case for the Run \Rn{1} data.
 
-However in Run \Rn{2}, the trigger thresholds have been changing often resulting in 16 different TCKs with very different $p$ and $p_{T}$ thresholds, see Table ~\autoref{tab:2016MC} for full details. In the second column, luminosity proportion for 2016 is given. It can be seen that the default simulation in 2016 (corresponding to TCK decimal key 288888335) only represents around 35\% of the data. For this reason, the trigger efficiencies for 2016 data have been obtained by emulation of the trigger on simulation for \texttt{L0} and \texttt{HLT1} level for each individual TCK, creating 16 TCK-based simulations.  This trigger emulation to extract efficiencies was tested with the default trigger configuration (TCK 288888335) to validate the emulation and the correct efficiencies have been recovered. It should be noted that small differences arise from difference between \textit{offline} and \texttt{HLT1} container for \gls{PV}s which stores the information about \gls{minipchi2} as the \gls{PV} finding-algorithm is different, but these have negligible effect. %\mybox{mentioning this just for reproducibility, but maybe not necessary}.
+However in 2016, the trigger thresholds have been changing often resulting in 16 different TCKs with very different $p$ and $p_{T}$ thresholds, see Table ~\autoref{tab:2016MC} for full details. In the second column, luminosity proportion for 2016 is given. It can be seen that the default simulation in 2016 (corresponding to TCK decimal key 288888335) only represents around 35\% of the data. For this reason, the trigger efficiencies for 2016 data have been obtained by emulation of the trigger on simulation for \texttt{L0} and \texttt{HLT1} level for each individual TCK, creating 16 TCK-based simulations.  This trigger emulation to extract efficiencies was tested with the default trigger configuration (TCK 288888335) to validate the emulation and the correct efficiencies have been recovered. It should be noted that small differences arise from difference between \textit{offline} and \texttt{HLT1} container for \gls{PV}s which stores the information about \gls{minipchi2} as the \gls{PV} finding-algorithm is different, but these have negligible effect. %\mybox{mentioning this just for reproducibility, but maybe not necessary}.
 %Therefore the emulation will not be exact, however, the effect is very small as it seems to be only resolution that will slightly shift the distribution, see figure ~\autoref{fig:hlt1shortcoming} 
 
-In order to obtain the average efficiency for Run \Rn{2}, the 16 TCK efficiencies are weighted by the proportion of luminosity corresponding to the integrated luminosity for a given TCK over the full 2016 integrated luminosity.
+In order to obtain the average efficiency for 2016, the 16 TCK efficiencies are weighted by the proportion of luminosity corresponding to the integrated luminosity for a given TCK over the full 2016 integrated luminosity.
 %The integrated luminosity per TCK was extracted by looking at API version of the \gls{LHCb} run database. 
 
-The full trigger efficiency for Run \Rn{2} is calculated by averaging the luminosity-weighted efficiencies, as seen in ~\autoref{tab:L0andHLT1Calib}. This TCK-dependant luminosity-weighted average efficiency is going to be given as a final efficiency for Run \Rn{2} from now on for all subsequent efficiencies unless stated otherwise.  
+The full trigger efficiency for 2016 is calculated by averaging the luminosity-weighted efficiencies, as seen in ~\autoref{tab:L0andHLT1Calib}. This TCK-dependant luminosity-weighted average efficiency is going to be given as a final efficiency for 2016 from now on for all subsequent efficiencies unless stated otherwise.  
 %Given that trigger efficiencies for Run \Rn{2} are TCK-dependant, luminosity-weighted average are calculated from now on for all the efficiencies.
 
 \begin{table}
@@ -504,7 +504,7 @@ In this section, firstly the parametrisation of the normalisation channel is sho
 \subsection{Normalisation Channel Parametrisation}
 \label{normparam}
 
-The obtain the \bjpsimumuk yield of Run \Rn{1} and Run \Rn{2}, an unbinned extended maximum likelihood fit to the invariant $\mu^{+} \mu^{-} K^{+}$ data distribution in each respective Run is performed. In this section contributions to the normalisation fit model are considered. 
+The obtain the \bjpsimumuk yield of Run \Rn{1} and 2016, an unbinned extended maximum likelihood fit to the invariant $\mu^{+} \mu^{-} K^{+}$ data distribution in each respective Run dataset is performed. In this section contributions to the normalisation fit model are considered. 
 %The \bjpsimumuk decays are very often studies at LHCb and in this particular case, there will be three components to the fit.
 
 \subsubsection{Signal}
@@ -515,7 +515,7 @@ The obtain the \bjpsimumuk yield of Run \Rn{1} and Run \Rn{2}, an unbinned exten
 \subsubsection{\mb{\bjpsimumupi} Background}
 
 Since the PID requirements on the kaon are very loose, there will be a background contribution from $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$. This contribution is modelled by a double-sided Crystal Ball function to $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) \pi^{+}$ simulation, where the pion track is given the kaon mass hypothesis. Again, all the parameters apart from mean $\mu^{CB}$ and width $\sigma^{CB}$ are fixed from the fit of this simulation. In ~\autoref{fig:FitToPiMuMu}, fits to \bjpsimumuk simulation and \bjpsimumupi simulation from Stripping 21 are showed using different scales.
-For signal, Run \Rn{1} Stripping 21 simulation sample is used and for Run \Rn{2} the Stripping 26 - TCK 288888335 simulation sample is used. For the \bjpsimumupi Stripping 21 simulation sample is used for both Run \Rn{1} and Run \Rn{2}.
+For signal, Run \Rn{1} Stripping 21 simulation sample is used and for 2016 the Stripping 26 - TCK 288888335 simulation sample is used. For the \bjpsimumupi Stripping 21 simulation sample is used for both Run \Rn{1} and 2016.
 
 \begin{figure}[ht]
 \centering
@@ -585,14 +585,14 @@ $N_{Combinatorial}$ & Free\\
 \midrule
 	\multicolumn{2}{c}{Signal Shape Parameters (double-sided Ipatia)} \\
 \midrule
-	$\mu^{IP}_{\bjpsimumuk}$ & constrained from signal simulation\\
-	$\sigma^{IP}_{\bjpsimumuk}$ & constrained from signal simulation\\
+	$\mu^{IP}_{\bjpsimumuk}$ & Constrained from signal simulation\\
+	$\sigma^{IP}_{\bjpsimumuk}$ & Constrained from signal simulation\\
 Others & Fixed from simulation\\
 \midrule
      \multicolumn{2}{c}{\bjpsimumupi Shape Parameters (double-sided Crystal Ball)} \\
 \midrule
-	$\mu^{CB}_{\bjpsimumupi}$ & constrained from signal simulation\\
-	$\sigma^{CB}_{\bjpsimumupi}$ & constrained from signal simulation\\
+	$\mu^{CB}_{\bjpsimumupi}$ & Constrained from signal simulation\\
+	$\sigma^{CB}_{\bjpsimumupi}$ & Constrained from signal simulation\\
 Others & Fixed from simulation\\
 \midrule
 	\multicolumn{2}{c}{Combinatorial Shape Parameters}  \\
@@ -604,7 +604,7 @@ exponential par.  & Free\\
 \label{tab:floatingparsummarynorm}
 \end{table}
 
-The $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ signal yield is extracted by performing an unbinned extended maximum likelihood fit with the full fit model to the invariant $\mu^{+} \mu^{-} K^{+}$ distribution in $5150\mevcc<M_{B^{+}}<5450\mevcc$. Fits to the $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ for Run \Rn{1} and Run \Rn{2} are shown in~\autoref{fig:run1jpsikfitnofcme}. Yields from the fit to \bjpsimumuk are obtained and summarized in~\autoref{tab:normchannelyields}.
+The $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ signal yield is extracted by performing an unbinned extended maximum likelihood fit with the full fit model to the invariant $\mu^{+} \mu^{-} K^{+}$ distribution in $5150\mevcc<M_{B^{+}}<5450\mevcc$. Fits to the $ B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ for Run \Rn{1} and 2016 are shown in~\autoref{fig:run1jpsikfitnofcme}. Yields from the fit to \bjpsimumuk are obtained and summarized in~\autoref{tab:normchannelyields}.
 
 \begin{figure}[H]
 \centering
@@ -616,7 +616,7 @@ The $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ signal yield 
 \newline
 \includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlhighfcmeRun1.pdf}\put(-50,133){(e)}%
 \includegraphics[width=0.5\linewidth]{./efficiency/controlchannelfits/controlhighfcme2016.pdf}\put(-50,133){(f)}
-\caption{Fit results in logarithmic scale to (a) Run \Rn{1} (b) Run \Rn{2} $\mu^{+} \mu^{-} K^{+}$ mass spectrum with no fractional corrected mass split, (c)(d) low FCME bin, (e)(f)high FCME bin.}
+\caption{Fit results in logarithmic scale to (a) Run \Rn{1} (b) 2016 $\mu^{+} \mu^{-} K^{+}$ mass spectrum with no fractional corrected mass split, (c)(d) low FCME bin, (e)(f)high FCME bin.}
 \label{fig:run1jpsikfitnofcme}
 \end{figure}
 
@@ -630,13 +630,13 @@ The $B^{+} \rightarrow (J/\psi \rightarrow \mu^{+} \mu^{-}) K^{+}$ signal yield 
 Sample & Stripping & Split  &Yields \\
 \midrule
 	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & $\sigma_{\mathrm{NOFCME}}$ & 173422$\pm$446  \\
-	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & $\sigma_{\mathrm{NOFCME}}$ &94491$\pm$313  \\
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & 2016 & $\sigma_{\mathrm{NOFCME}}$ &94491$\pm$313  \\
 \midrule
 	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & $\sigma_{\mathrm{lowFCME}}$ & 109224$\pm$337  \\
-	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & $\sigma_{\mathrm{lowFCME}}$ & 64723$\pm$259  \\
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & 2016 & $\sigma_{\mathrm{lowFCME}}$ & 64723$\pm$259  \\
 \midrule
 	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{1} & $\sigma_{\mathrm{highFCME}}$ &64078$\pm$257  \\
-	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & Run \Rn{2} & $\sigma_{\mathrm{highFCME}}$ & 29760$\pm$176  \\
+	$N_{B^{+} \rightarrow J/\psi K^{+}}$  & 2016 & $\sigma_{\mathrm{highFCME}}$ & 29760$\pm$176  \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -646,11 +646,11 @@ Sample & Stripping & Split  &Yields \\
 
 \subsection{Signal Channel Parametrisation}
 \label{sigpara}
-To fit the signal data, the default fitting strategy is to use a simultaneous unbinned maximum likelihood fit to the $\mu^{+} \mu^{-} \mu^{+}$ corrected mass spectrum to combined Run \Rn{1} and \Rn{2} dataset after the full selection in two bins of fractional corrected mass error, which is denoted as the simultaneous fit. As a cross-check a non-simultaneous fit, where no splitting in bins of corrected mass is done, is denoted as non-simultaneous fit. The parametrisation of all the components for the full signal model fit is described below.
+To fit the signal data, the default fitting strategy is to use a simultaneous unbinned maximum likelihood fit to the $\mu^{+} \mu^{-} \mu^{+}$ corrected mass spectrum to combined Run \Rn{1} and 2016 dataset after the full selection in two bins of fractional corrected mass error, which is denoted as the simultaneous fit. As a cross-check a non-simultaneous fit, where no splitting in bins of corrected mass is done, is denoted as non-simultaneous fit. The parametrisation of all the components for the full signal model fit is described below.
 
 
 \subsubsection{Signal}
-The full fit to Run \Rn{1} and Run \Rn{2} data requires the signal shape knowledge for the combined dataset. This is obtained from a Run \Rn{1} and Run \Rn{2} signal simulation \textit{cocktail}. The cocktail is created after full selection by assigning event-by-event weights, \textit{$w^{i}$}, which capture the differences between Run \Rn{1} and Run \Rn{2} simulation, that ware not considered by the full selection.
+The full fit to Run \Rn{1} and 2016 data requires the signal shape knowledge for the combined dataset. This is obtained from a Run \Rn{1} and 2016 signal simulation \textit{cocktail}. The cocktail is created after full selection by assigning event-by-event weights, \textit{$w^{i}$}, which capture the differences between Run \Rn{1} and 2016 simulation, that ware not considered by the full selection.
 
 Firstly, weights that reflect the expected difference due to increased luminosity are computed. To obtain these signal weights, the following conditions must be satisfied
 
@@ -704,19 +704,19 @@ $\mathcal{L}$ & 2968 $\rm{pb^{-1}}$ & 1612 $\rm{pb^{-1}}$ \\
 $\sigma_{pp \rightarrow b \overline{b}}$ & 1 & 2  \\
 \bottomrule
 \end{tabular}
-	\caption{Signal simulation weights used to create cocktail of mixed Run \Rn{1} (2012) and Run \Rn{2} (2016) cocktail. The cross-sections listed here are not absolute numbers, but rather relative as only their ratio matters.}
+	\caption{Signal simulation weights used to create cocktail of mixed Run \Rn{1} (2012) and 2016 cocktail. The cross-sections listed here are not absolute numbers, but rather relative as only their ratio matters.}
 \label{tab:MCweightNOFCME}
 \end{table}
 
-Secondly, event-by-event weight which differs between Run \Rn{1} and \Rn{2} that need to be accounted is the PID efficiency $\varepsilon_{PID}$ (see~\autoref{tab:effsumarry}), which depends on the kinematics of the final state particles. It is denoted as $w^{i\varepsilon\{2012,2016\}}_{\varepsilon^{i}_{PID}}$. 
+Secondly, event-by-event weight which differs between Run \Rn{1} and 2016 that need to be accounted is the PID efficiency $\varepsilon_{PID}$ (see~\autoref{tab:effsumarry}), which depends on the kinematics of the final state particles. It is denoted as $w^{i\varepsilon\{2012,2016\}}_{\varepsilon^{i}_{PID}}$. 
 
-The final weight of an event depending on Run \Rn{1} and Run \Rn{2} is calculated 
+The final weight of an event depending on Run \Rn{1} and 2016 is calculated 
 
 \begin{equation}
 	w^{i\varepsilon\{2012,2016\}}_{total}=  w^{i\varepsilon\{2012,2016\}} \times w^{i\varepsilon\{2012,2016\}}_{\varepsilon^{i}_{PID}}.
 \end{equation}
 
-After obtaining combined Run \Rn{1} and \Rn{2} signal \textit{cocktail}, fit to this weighted simulation is done with \textbf{the shape} in the corrected mass modelled by a double-sided Crystal Ball function~\autoref{IP}. The fit and its parameters can be seen in~\autoref{fig:MCSignalFit}. The function describing this shape is denoted as $f^{sig}$ and hence is a function of 6 parameters for the non-simultaneous fit and 12 parameters for the simultaneous fit.
+After obtaining combined Run \Rn{1} and 2016 signal \textit{cocktail}, fit to this weighted simulation is done with \textbf{the shape} in the corrected mass modelled by a double-sided Crystal Ball function~\autoref{IP}. The fit and its parameters can be seen in~\autoref{fig:MCSignalFit}. The function describing this shape is denoted as $f^{sig}$ and hence is a function of 6 parameters for the non-simultaneous fit and 12 parameters for the simultaneous fit.
 
 \begin{figure}[H]
 \centering
@@ -738,7 +738,7 @@ After obtaining combined Run \Rn{1} and \Rn{2} signal \textit{cocktail}, fit to 
 \end{split}
 \label{eq:sigeq}
 \end{equation}
-where  $\varepsilon^{x}$ is the total selection efficiency of the channel $x$, $N_{x}$ is number of $x$ decays, $\mathcal{B}(x)$ is the branching fraction of decay $x$, $R_{\mathrm{FCME}}$ is the relevant efficiency ratio between the two decays detailed in~\autoref{EfficiencySummary} and finally $\alpha$ is the \textit{single event sensitivity}, variable which describes the sensitivity for the search. Hence, for Run \Rn{1} and Run \Rn{2} the non-simultaneous fit $N^{sig}$ is a function of six parameters $N^{sig}(R^{21}_{\mathrm{FCME}},R^{26}_{\mathrm{FCME}},N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\Bmumumu))$. In the simultaneous case $R^{21}_{\mathrm{FCME}}$,$R^{26}_{\mathrm{FCME}}$, $N^{Run\ \Rn{1}}(\bjpsimumuk)$ and $N^{Run\ \Rn{2}}(\bjpsimumuk) K^{+})$ is further split into $\sigma_{\mathrm{lowFCME}}$ and $\sigma_{\mathrm{highFCME}}$ bins, resulting in 10 parameters for $N^{sig}$ in the fit.
+where  $\varepsilon^{x}$ is the total selection efficiency of the channel $x$, $N_{x}$ is number of $x$ decays, $\mathcal{B}(x)$ is the branching fraction of decay $x$, $R_{\mathrm{FCME}}$ is the relevant efficiency ratio between the two decays detailed in~\autoref{EfficiencySummary} and finally $\alpha$ is the \textit{single event sensitivity}, variable which describes the sensitivity for the search. Hence, for Run \Rn{1} and 2016 the non-simultaneous fit $N^{sig}$ is a function of six parameters $N^{sig}(R^{21}_{\mathrm{FCME}},R^{26}_{\mathrm{FCME}},N^{Run\ \Rn{1}}(\bjpsimumuk),N^{2016}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\Bmumumu))$. In the simultaneous case $R^{21}_{\mathrm{FCME}}$,$R^{26}_{\mathrm{FCME}}$, $N^{Run\ \Rn{1}}(\bjpsimumuk)$ and $N^{2016}(\bjpsimumuk) K^{+})$ is further split into $\sigma_{\mathrm{lowFCME}}$ and $\sigma_{\mathrm{highFCME}}$ bins, resulting in 10 parameters for $N^{sig}$ in the fit.
 
 
 
@@ -769,11 +769,11 @@ In order to get an estimate for \textbf{the yield} of these partially reconstruc
 %This simulation sample all of the selection and total selection efficiency $\varepsilon_{total}$ is listed in ~\autoref{tab:prsum}. 
 All the relevant total selection efficiencies are obtained from the full simulation sample and are shown in~\autoref{tab:prsum}. Due to the usage of a proxy simulation for this partially reconstructed decays (using a pion rather than a muon in one case), as discussed in~\autoref{partrecobak}, the trigger efficiency $\varepsilon_{TRG}$ cannot be obtained from simulation for partially reconstructed decays, because the \texttt{HLT2} trigger (see~\autoref{tab:triggersel}) would make positive decision only either because of finding dimuon pair or two or three-body decays, hence the trigger ratio $\frac{\varepsilon^{\pr}_{TRG}}{\varepsilon^{\bjpsimumuk}_{TRG}}$ 
 is assumed to be 1, which is rather a conservative estimate (overestimate) but makes sure that other partially reconstructed backgrounds are accounted for. Another efficiency that was not accounted for because of the same reason is PID efficiency, $\varepsilon_{PID}$.
-Moreover as this proxy simulation was not accessible for Run \Rn{2}, the same ratio of efficiencies as in Run \Rn{1} is used.
+Moreover as this proxy simulation was not accessible for 2016, the same ratio of efficiencies as in Run \Rn{1} is used.
 
 
 %$\frac{\varepsilon^{2012}_{\pr}}{\varepsilon^{2012}_{\bjpsimumuk}}=\frac{\varepsilon^{2016}_{\pr}}{\varepsilon^{2016}_{\bjpsimumuk}}$.
-The summary of the expected yield is summarized in~\autoref{tab:prsum}. For the non-simultaneous final fit there are hence 5 parameters $N^{PR}(R^{21}_{\mathrm{FCME}}(\pr),N^{Run\ \Rn{1}}(\bjpsimumuk),N^{Run\ \Rn{2}}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\pr))$ and for the simultaneous data fit with FCME splitting 8 parameters. The total yield expected for this type of background is very low compared to the other expected backgrounds.
+The summary of the expected yield is summarized in~\autoref{tab:prsum}. For the non-simultaneous final fit there are hence 5 parameters $N^{PR}(R^{21}_{\mathrm{FCME}}(\pr),N^{Run\ \Rn{1}}(\bjpsimumuk),N^{2016}(\bjpsimumuk), \mathcal{B}(\bjpsimumuk),\mathcal{B}(\pr))$ and for the simultaneous data fit with FCME splitting 8 parameters. The total yield expected for this type of background is very low compared to the other expected backgrounds.
 %Therefore to obtain number of partially reconstructed background events, $N_{\pr}$ after all selection following relationship is used: 
 
 %\begin{equation}
@@ -788,7 +788,7 @@ The summary of the expected yield is summarized in~\autoref{tab:prsum}. For the 
 \begin{center}
 \begin{tabular}{ l  l  l }
 \toprule
-Properties & Run \Rn{1} & Run \Rn{2}  \\
+Properties & Run \Rn{1} & 2016  \\
 \midrule
 $\mathcal{B}(\pr)$ & $(4.1\pm0.5)\times 10 ^{-7 }$ &$(4.1\pm0.5)\times 10 ^{-7 }$ \\
 $\mathcal{B}(\bjpsimumuk)$ &$(6.12\pm0.19)\times 10 ^{-5 }$ & $(6.12\pm0.19)\times 10 ^{-5 }$ \\
@@ -853,17 +853,17 @@ Run \Rn{1} \textit{SS misID} & Proton-region &  & no-crossfeedweight & 6 \\
 Run \Rn{1} \textit{OS misID} & Kaon-region &  & no-crossfeedweight & 3 \\
 Run \Rn{1} \textit{OS misID} & Pion-region &  & no-crossfeedweight & 42 \\
 Run \Rn{1} \textit{OS misID} & Proton-region &  & no-crossfeedweight & 1 \\
-Run \Rn{2} \textit{SS misID} & Kaon-region & Run \Rn{2} PID  & crossfeedweight & 136 \\
-Run \Rn{2} \textit{SS misID} & Pion-region &  & crossfeedweight & 76 \\
-Run \Rn{2} \textit{SS misID} & Proton-region &  & no-crossfeedweight & 0 \\
-Run \Rn{2} \textit{OS misID} & Kaon-region &  & no-crossfeedweight & 8 \\
-Run \Rn{2} \textit{OS misID} & Pion-region &  & no-crossfeedweight & 45 \\
-Run \Rn{2} \textit{OS misID} & Proton-region &  & no-crossfeedweight & 1 \\\hline
+2016 \textit{SS misID} & Kaon-region & 2016 PID  & crossfeedweight & 136 \\
+2016 \textit{SS misID} & Pion-region &  & crossfeedweight & 76 \\
+2016 \textit{SS misID} & Proton-region &  & no-crossfeedweight & 0 \\
+2016 \textit{OS misID} & Kaon-region &  & no-crossfeedweight & 8 \\
+2016 \textit{OS misID} & Pion-region &  & no-crossfeedweight & 45 \\
+2016 \textit{OS misID} & Proton-region &  & no-crossfeedweight & 1 \\\hline
 	Sum & & & & 619\\
 \bottomrule
 \end{tabular}
 \end{center}
-	\caption{The final misID template is constructed by summing the contribution from Run \Rn{1} and \Rn{2} kaon, pion and proton-like regions for both \textit{SS} and \textit{OS misID} contributions. }%The last column adds cumulatively the contributions with respect to the previous row. }
+	\caption{The final misID template is constructed by summing the contribution from Run \Rn{1} and 2016 kaon, pion and proton-like regions for both \textit{SS} and \textit{OS misID} contributions. }%The last column adds cumulatively the contributions with respect to the previous row. }
 \label{tab:misidtabcummu}
 \end{table}
 
@@ -1155,7 +1155,7 @@ Systematics studies are performed in order to account for possible shortcomings 
 %\small
 \begin{tabular}{ l  c  c  c  }
 \toprule
-Systematic source & Run \Rn{1}/\% &  Run \Rn{2}/\% & Error Overall \\ \hline
+Systematic source & Run \Rn{1}/\% &  2016/\% & Error Overall \\ \hline
 
 $\mathcal{B}(J/\psi \rightarrow \mu^{+} \mu^{-})$ & 0.6 & 0.6 & 0.6\\
 $\mathcal{B}(B^{+} \rightarrow  J/\psi K^{+})$ & 3.0 & 3.0 & 3.0\\
@@ -1213,7 +1213,7 @@ w_{(bin)} =  \frac{w_{\bjpsimumuk data,bin}}{w_{\bjpsimumuk simulation,bin}}.
 Obtained correction weights are then applied to correct both the \bjpsimumuk and \Bmumumu simulation. The difference between uncorrected and kinematically corrected efficiency ratios is assigned as a systematic uncertainty yielding $1.5\%$ systematic uncertainty on the efficiency ratios.
 
 \subsubsection{Signal Fit Bias and Coverage}
-In this section systematic uncertainty due to signal bias is evaluated. The pull is calculated using pseudo-experiments where the data is generated for signal branching fraction $\mathcal{B}= 1.0\times 10^{-8}$ corresponding to $\approx$ 17 signal events for Run \Rn{1} and \Rn{2} data.
+In this section systematic uncertainty due to signal bias is evaluated. The pull is calculated using pseudo-experiments where the data is generated for signal branching fraction $\mathcal{B}= 1.0\times 10^{-8}$ corresponding to $\approx$ 17 signal events for Run \Rn{1} and 2016 data.
 These pseudo-datasets are then re-fitted with floating $\mathcal{B}$ and corresponding number of fitted signal events is obtained. The pull is defined as the difference between number of fitted signal events and the number events that pseudo-experiment was created with, divided by the error on the number of signal events given by the fit:
 \begin{equation}
 \frac{N^{orig}_{sig}-N^{fit}_{sig}}{\sigma^{fit}}.
@@ -1322,7 +1322,7 @@ The maximum unbinned likelihood fit to blinded signal data after all selection i
 \label{sensitivity}
 The $CL_{s}$ method\cite{Read:2002hq} is used to produce an expected upper limits from the blinded data fits. This is possible thanks to the fact that this method is based on generation of pseudo-datasets with different signal hypothesis. Therefore, it only requires the resulting PDFs of the blinded fits (simultaneous and non-simultaneous) with which pseudo-datasets can be produced.
 
-Systematic uncertainties directly influence the relative efficiencies between signal and normalisation channel. They can therefore be added as gaussian constraints on the relevant efficiency ratio. The expected exclusion limits are then computed and summarized in~\autoref{tab:explimits}. Partial systematics only include systematics related to branching fractions, whereas full systematics include all the effects from~\autoref{tab:systematicsummary}. In simultaneous fit these effects are assumed to be 100\% correlated between the two bins of fractional corrected mass, but uncorrelated between themselves. As expected, the limit weakens with the addition of systematics. On the other hand there is an increase in expected limit by $20\%$ obtained with the use of the simultaneous fit compared to the non-simultaneous fit with the full systematics included. Addition of Run \Rn{2} data also improved the expected sensitivity of the search. 
+Systematic uncertainties directly influence the relative efficiencies between signal and normalisation channel. They can therefore be added as gaussian constraints on the relevant efficiency ratio. The expected exclusion limits are then computed and summarized in~\autoref{tab:explimits}. Partial systematics only include systematics related to branching fractions, whereas full systematics include all the effects from~\autoref{tab:systematicsummary}. In simultaneous fit these effects are assumed to be 100\% correlated between the two bins of fractional corrected mass, but uncorrelated between themselves. As expected, the limit weakens with the addition of systematics. On the other hand there is an increase in expected limit by $20\%$ obtained with the use of the simultaneous fit compared to the non-simultaneous fit with the full systematics included. Addition of 2016 data also improved the expected sensitivity of the search. 
 %are used to generate two types of pseudo-datasets: background-only pseudo-datasets, and signal+background pseudo-datasets at different assumptions of the branching fractions. After this both types of pseudo-datasets are fitted with signal+background hypothesis and background hypothesis. Ratio of likelihoods, where the test statistics, ratio of likelihoods, for both bacgkround pseudo-datasets and signal ps
 
 %This means that for a given branching fraction assumption $\mathcal{B}$:
@@ -1366,10 +1366,10 @@ Confidence & Data & Systematics & Fit Type & Value  \\
 Interval & & & & \\ \hline
 Expected $95\%$ CL & Run \Rn{1} & Partial & Simultaneous & $ 3.3\times 10^{-8}$ \\
 Expected $95\%$ CL & Run \Rn{1} & Full & Simultaneous &$ 3.5\times 10^{-8}$ \\
-Expected $95\%$ CL & Run \Rn{1} and \Rn{2} & Partial & Non-simultaneous & $ 3.0\times 10^{-8}$ \\
-Expected $95\%$ CL & Run \Rn{1} and \Rn{2} &  Full & Non-simultaneous &$ 3.3\times 10^{-8}$ \\
-Expected $95\%$ CL & Run \Rn{1} and \Rn{2} & Partial & Simultaneous & $ 2.5\times 10^{-8}$ \\
-Expected $95\%$ CL & Run \Rn{1} and \Rn{2} &  Full & Simultaneous &$ 2.8\times 10^{-8}$ \\
+Expected $95\%$ CL & Run \Rn{1} and 2016 & Partial & Non-simultaneous & $ 3.0\times 10^{-8}$ \\
+Expected $95\%$ CL & Run \Rn{1} and 2016 &  Full & Non-simultaneous &$ 3.3\times 10^{-8}$ \\
+Expected $95\%$ CL & Run \Rn{1} and 2016 & Partial & Simultaneous & $ 2.5\times 10^{-8}$ \\
+Expected $95\%$ CL & Run \Rn{1} and 2016 &  Full & Simultaneous &$ 2.8\times 10^{-8}$ \\
 \bottomrule
 \end{tabular}
 \caption{Resulting expected exclusion limits with both non-simultaneous and simultaneous fits. CL stands for confidence level.}
@@ -1432,8 +1432,8 @@ $ R^{21}_{\mathrm{highFCME}}(\Bmumumu) $ & $1.96 \pm 0.131$ \\
 $ R^{21}_{\mathrm{lowFCME}}(\Bmumumu) $ & $3.15 \pm 0.233$ \\
 $ N(\bjpsimumuk)^{2016}_{\mathrm{highFCME}} $ & $29800 \pm 173$ \\
 $ N(\bjpsimumuk)^{2016}_{\mathrm{lowFCME}} $ & $64700 \pm 254$ \\
-$ N(\bjpsimumuk)^{Run 1}_{\mathrm{highFCME}} $ & $64100 \pm 253$ \\
-$ N(\bjpsimumuk)^{Run 1}_{\mathrm{lowFCME}} $ & $109000 \pm 331$ \\
+$ N(\bjpsimumuk)^{Run\ \Rn{1}}_{\mathrm{highFCME}} $ & $64100 \pm 253$ \\
+$ N(\bjpsimumuk)^{Run\ \Rn{1}}_{\mathrm{lowFCME}} $ & $109000 \pm 331$ \\
 $ N^{scaled}_{misID_{\mathrm{highFCME}}} $ & $278 \pm 15.2$ \\
 $ N^{scaled}_{misID_{\mathrm{lowFCME}}} $ & $331 \pm 16.3$ \\
 $ \beta_{\mathrm{highFCME}} $ & $-0.00183 \pm 9.19\times 10^{-5}$ \\
