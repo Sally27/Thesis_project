@@ -1,0 +1,423 @@
+%slide 7 - cancel out - contasin out line of theoires - whihc?? - muon pature
+\documentclass[12pt,a4paper]{report}
+
+%\usepackage{fancyhdr}
+
+%\pagestyle{fancy}
+
+%\rhead{Share\LaTeX}
+%\lhead{Guides and tutorials}
+%\rfoot{Page \thepage}
+\usepackage[T1]{fontenc}
+\usepackage{kpfonts}
+
+
+\usepackage{amsmath}
+\newcommand{\Rn}[1]{%make roman
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+\newcommand*{\mybox}[1]{\framebox{#1}}
+%\newcommand{\myboxcol}[2]{{\color{#1}\fbox{\normalcolor#2}}}
+\newcommand*{\colorboxed}{}
+\def\colorboxed#1#{%
+  \colorboxedAux{#1}%
+}
+\newcommand*{\colorboxedAux}[3]{%
+  % #1: optional argument for color model
+  % #2: color specification
+  % #3: formula
+  \begingroup
+    \colorlet{cb@saved}{.}%
+    \color#1{#2}%
+    \boxed{%
+      \color{cb@saved}%
+      #3%
+    }%
+  \endgroup
+}
+
+\usepackage{float}
+%\usepackage{fancyhdr}
+%\fancyhead[LE,RO]{foo}
+%\fancyhead[LO,RE]{bar}
+%\pagestyle{fancy}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{bm}
+\usepackage{fixmath}
+%\usepackage{bm}
+\usepackage{ifthen} % for conditional statements
+\usepackage{subfig} %  Allows for subfigures
+%\usepackage{subcaption} %  Allows for subfigures
+\usepackage{dcolumn}
+\usepackage{columntypes}
+%\usepackage[a-3a]{pdfx}
+\usepackage{upgreek}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{semigreen}{HTML}{1b9e77}
+\definecolor{orangy}{HTML}{d95f02}
+\definecolor{bluey}{HTML}{7570b3}
+\usepackage[colorlinks = true, linkcolor = semigreen, citecolor = orangy]{hyperref}
+\usepackage{gensymb}
+%\usepackage{glossaries}
+\newboolean{pdflatex}
+\setboolean{pdflatex}{true} % False for eps figures 
+\usepackage[section]{placeins}
+
+\newboolean{articletitles}
+\setboolean{articletitles}{true} % False removes titles in references
+
+\newboolean{uprightparticles}
+\setboolean{uprightparticles}{false} %True for upright particle symbols
+\usepackage{mciteplus}
+\newboolean{inbibliography}
+\setboolean{inbibliography}{false} %
+\usepackage{multirow}
+%\usepackage{tocloft}
+\linespread{1.5}
+\newcommand{\mb}[1]{\mbox{\boldmath{$#1$}}}
+\DeclareRobustCommand{\mb}[1]{\boldmath$#1$\unboldmath}
+\usepackage{multirow,bigdelim}
+%\usepackage{physics}
+\usepackage{tikz}
+\newcommand*\circledss[1]{\tikz[baseline=(math.base)]{\node[shape=circle,draw=green,text width=0.5cm] (math) {};}}
+\newcommand*\circledsst[1]{\tikz[baseline=(math.base)]{\node[shape=circle,draw=red,text width=0.5cm] (math) {$#1$};}}
+\newcommand*\circleds[1]{\tikz[baseline=(math.base)]{\node[shape=circle,draw=red,text width=1.0cm] (math) {$#1$};}}
+\newcommand*\circledm[1]{\tikz[baseline=(math.base)]{\node[shape=circle,draw=yellow,text width=1.5cm] (math) {$#1$};}}
+\newcommand*\circledb[1]{\tikz[baseline=(math.base)]{\node[shape=circle,draw=violet,text width=2cm] (math) {$#1$};}}
+
+\newcommand*\circledimp[1]{\tikz[baseline=(math.base)]{\node[shape=circle,draw=green,text width=2cm] (math) {$#1$};}}
+\newcommand*{\bfrac}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+%\usepackage{mathtools}
+%\newcommand\mathcircled[1]{%
+%  \mathpalette\@mathcircled{#1}%
+%}
+%\newcommand\@mathcircled[2]{%
+%  \tikz[baseline=(math.base)] \node[draw,circle,inner sep=1pt] (math) {$\m@th#1#2$};%
+%}
+
+
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage[version=4]{mhchem}
+\usepackage{collcell}
+
+\newcolumntype{H}{@{}>{\lrbox0}l<{\endlrbox}}
+
+
+%\usepackage[version=4]{mhchem}
+%\renewcommand\cftchapfont{\boldfont}
+%\renewcommand\cftchappagefont{\boldfont}
+%% \usepackage{etoolbox}
+%% \makeatletter
+%% \patchcmd{\@dottedtocline}{\leavevmode}{\leavevmode\bfseries\boldmath}{}{}
+%% \patchcmd{\@dottedtocline}{\normalfont}{\normalfont\bfseries\boldmath}{}{}
+%% \patchcmd{\l@part}{\bfseries}{\bfseries\boldmath}{}{}
+%% % \patchcmd{\l@chapter}{\bfseries}{\bfseries\boldmath}{}{}% report/book
+%% \patchcmd{\l@section}{\bfseries}{\bfseries\boldmath}{}{}% article
+
+%% \patchcmd{\@part}{\bfseries}{\bfseries\boldmath}{}{}
+%% \patchcmd{\@spart}{\bfseries}{\bfseries\boldmath}{}{}
+%% % \patchcmd{\@makechapterhead}{\bfseries}{\bfseries\boldmath}{}{}% report/book
+%% % \patchcmd{\@makeschapterhead}{\bfseries}{\bfseries\boldmath}{}{}% % report/book
+%% \patchcmd{\section}{\bfseries}{\bfseries\boldmath}{}{}
+%% \patchcmd{\subsection}{\bfseries}{\bfseries\boldmath}{}{}
+%% \patchcmd{\subsubsection}{\bfseries}{\bfseries\boldmath}{}{}
+%% \patchcmd{\paragraph}{\bfseries}{\bfseries\boldmath}{}{}
+%% \patchcmd{\subparagraph}{\bfseries}{\bfseries\boldmath}{}{}
+%% \makeatother
+
+%%\bfseries{\boldmath} 
+
+\input{preamble}
+\input{styles}
+
+\usepackage[toc, nonumberlist, acronym]{glossaries}
+\usepackage[titletoc, title]{appendix}
+%\renewcommand*{\glstextformat}[1]{\textcolor{Mulberry}{#1}}
+\renewcommand*{\glstextformat}[1]{\textcolor{bluey}{#1}}
+\makeglossaries
+\input{glos}
+\makeglossaries
+
+
+%\newcommand*{\Appendixautorefname}{appendix}
+%\pagestyle{headings}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Title     %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\setcounter{footnote}{1}
+\setcounter{page}{1}
+
+
+% %%%%%%% CHOOSE TITLE PAGE--------
+%\onecolumn
+\input{title-LHCb-ANA}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\setcounter{footnote}{0}
+\pagenumbering{arabic}
+
+\pagestyle{plain} % restore page numbers for the main text
+%%%% Uncomment next 2 lines if desired
+\input{abstract_sally}
+%SALLY\clearpage
+\tableofcontents
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Declaration of originality}
+\input{declaration}
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\input{ackn}
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+%% \input{declaration}
+%% \addcontentsline{toc}{chapter}{declaration}
+%% \addcontentsline{toc}{chapter}{ackn}
+
+
+
+%\pagenumbering{roman}
+
+%%\input{abstract_sally}
+%% \input{declaration}
+%% \input{ackn}
+\clearpage
+% \input{title-LHCb-CONF}
+% \input{title-LHCb-PAPER}
+%\twocolumn
+% %%%%%%%%%%%%% ---------
+
+%% \renewcommand{\thefootnote}{\arabic{footnote}}
+%% \setcounter{footnote}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  Table of Content   %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \pagestyle{plain} % restore page numbers for the main text
+%% %%%% Uncomment next 2 lines if desired
+%% \tableofcontents
+%% \cleardoublepage
+%% \input{changes}
+%% \cleardoublepage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Main text %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\pagestyle{plain} % restore page numbers for the main text
+%\setcounter{page}{1}
+%\pagenumbering{arabic}
+
+% %%%%%%% CHOOSE --------
+%% ----------------------------------
+%% Line numbering on the left margin 
+%% ----------------------------------
+%% Uncomment during review phase. 
+%% Comment it out before a final submission.
+
+
+
+%\linenumbers
+
+
+
+
+
+
+
+
+%% --------------------------------
+% %%%%%%%%%%%%% ---------
+
+
+% You can include short sections directly in the main tex file.
+% However, for larger papers it is desirable to split the text into
+% several semiautonomous files, which can be revised independently.
+% This is especially useful when developing a document in
+% collaboration with several people, since then different parts can be
+% edited independently.  This type of file organization is shown here.
+%
+%\cleardoublepage
+%\printglossaries
+\printglossary[title=List of abbreviations and definitions, toctitle=List of abbreviations and definitions]
+\clearpage
+%\clearpage
+%\emph{To Nain, on behalf of all four of us}
+%\clearpage
+
+%\addcontentsline{toc}{chapter}{\listfigurename}
+%\clearpage
+%\addcontentsline{toc}{chapter}{\listtablename}
+
+\pagestyle{fancy}
+\cleardoublepage
+\input{introduction_sally}
+%% \cleardoublepage
+\input{Theory_Sally}
+\input{Detector2}
+%%\input{Appendix_BDT}
+\input{PIDchap}
+\input{Selection2}
+\input{Background}
+\input{Efficiency}
+%% \input{BDT}
+%% \input{MassFits}
+ \input{Results2}
+%% \input{Conclusions}
+%% \cleardoublepage
+%\newpage
+%\autoref{App}
+%\section{\\Boosted Decision Trees} \label{App:AppendixBDT}
+% the \\ insures the section title is centered below the phrase: AppendixA
+
+%Text of Appendix A is Here
+%% \begin{appendices}
+
+%%   The contents...
+%%   \end{appendices}
+
+\pagestyle{plain}
+%asdasdasd
+%% \renewcommand{\thechapter}{A}
+%% \section*{Appendices}
+%% \addcontentsline{toc}{section}{Appendices}
+%% \renewcommand{\thesubsection}{\Alph{subsection}}
+
+%% \subsection{Appendix BDT}
+%% 
+%% \subsection{Another appendix Subsection}
+
+
+%% \cleardoublepage
+%% \section{\\The \sPlot  technique} \label{App:AppendixsPlot}
+%% 
+%% \cleardoublepage
+%% \section{\\The error calculations for the \KS tracking work} \label{App:error}
+
+%% \cleardoublepage
+
+%%  \input{anaysis_strat}
+%%  \cleardoublepage
+%%  \input{method}
+%%  \cleardoublepage
+%%  \input{Backgrounds}
+%%  \cleardoublepage
+%% \input{BDT}
+%% \cleardoublepage
+%% \input{optimise}
+%% \cleardoublepage
+%% \input{MassFit}
+%% \cleardoublepage
+%% \input{efficiencies}
+%% \cleardoublepage
+%% \input{MCefficienciesandweight}
+%% \cleardoublepage
+%% \input{systematics}
+%% \cleardoublepage
+%% \input{NextSteps}
+%% \chapter{Efficiency calculation for the downstream tracking efficiencies}
+%% \label{app:error}
+%% \input{Appendix_KSerr.tex}
+
+\clearpage
+\addcontentsline{toc}{chapter}{Bibliography}
+\setboolean{inbibliography}{true}
+\bibliographystyle{LHCb}
+\bibliography{Main,LHCb-PAPER,LHCb-CONF,LHCb-DP,LHCb-TDR}
+%\bibliography{LHCb-PAPER,LHCb-CONF,LHCb-DP,LHCb-TDR}
+
+\appendix
+\appendixpage
+\addappheadtotoc
+
+
+\appendix
+%\chapter{Boosted Decision Trees}
+%\input{Appendix_BDT}
+%\chapter{The \sPlot technique}
+%\input{Appendix_splot}
+\chapter{Fitting functions}
+\input{Appendix_PDFs}
+\chapter{License}
+\input{Appendix_License}
+%% \clearpage
+%% \phantomsection
+%%\addcontentsline{toc}{chapter}{List of Figures}
+%%\listoffigures
+%% \clearpage
+%% \phantomsection
+%% \addcontentsline{toc}{chapter}{List of Tables}
+%% \listoftables
+
+
+
+
+
+
+%% \addcontentsline{toc}{section}{References}
+%% \bibliographystyle{LHCb}
+%% \bibliography{main,LHCb-CONF,LHCb-PAPER,LHCb-DP,AllBibs}
+
+
+%% \input{mcweighting}
+%% \cleardoublepage
+%% \input{NN}
+%% \cleardoublepage
+%% \input{backgrounds}
+%% \cleardoublepage
+%% \input{massfit}
+%% \cleardoublepage
+%% \input{pi_mcweighting}
+%% \cleardoublepage
+%% \input{trigger}
+%% %\cleardoublepage
+%% %\input{systematics}
+%% \cleardoublepage
+%% \input{stability}
+%% \cleardoublepage
+%% \input{dalitz}
+%% \cleardoublepage
+%% \input{cp}
+%% \cleardoublepage
+%% \input{results}
+%% \cleardoublepage
+%% \input{conclusion}
+%% \cleardoublepage
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \appendix
+%% \input{cheatsheet}
+%% \input{NNAll}
+%% \cleardoublepage
+%% \input{variables}
+%% %\cleardoublepage
+%% %\input{triggerQ}
+%% \cleardoublepage
+%% \input{unblindedplots}
+%% %\cleardoublepage
+%% %\input{nonoptimalfits}
+%% \cleardoublepage
+%% \input{xib}
+%% \cleardoublepage
+%% \input{replies}
+%% \cleardoublepage
+%\input{resonances}
+%\cleardoublepage
+
+%
+
+
+\end{document}

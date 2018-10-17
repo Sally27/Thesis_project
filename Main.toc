@@ -108,9 +108,9 @@
 \contentsline {section}{\numberline {8.2}Conclusion}{190}{section.8.2}
 \contentsline {section}{\numberline {8.3}Outlook}{192}{section.8.3}
 \contentsline {chapter}{Bibliography}{193}{section.8.3}
-\contentsline {chapter}{Appendices}{200}{chapter*.135}
-\contentsline {chapter}{\numberline {A}Fitting functions}{200}{appendix.A}
-\contentsline {section}{\numberline {A.1}Crystal Ball Function}{200}{section.A.1}
-\contentsline {section}{\numberline {A.2}Double-sided Ipatia Function}{201}{section.A.2}
-\contentsline {section}{\numberline {A.3}\texttt {Rookeys} Function from \texttt {ROOFIT} Package}{201}{section.A.3}
-\contentsline {chapter}{\numberline {B}License}{202}{appendix.B}
+\contentsline {chapter}{Appendices}{201}{chapter*.135}
+\contentsline {chapter}{\numberline {A}Fitting functions}{201}{appendix.A}
+\contentsline {section}{\numberline {A.1}Crystal Ball Function}{201}{section.A.1}
+\contentsline {section}{\numberline {A.2}Double-sided Ipatia Function}{202}{section.A.2}
+\contentsline {section}{\numberline {A.3}\texttt {Rookeys} Function from \texttt {ROOFIT} Package}{202}{section.A.3}
+\contentsline {chapter}{\numberline {B}License}{203}{appendix.B}

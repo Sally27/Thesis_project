@@ -56,6 +56,24 @@ Particle Data Group, C.~Patrignani {\em et~al.},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Cabibbo:1963yz}
+N.~Cabibbo, \ifthenelse{\boolean{articletitles}}{\emph{{Unitary Symmetry and
+  Leptonic Decays}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.10.531}{Phys.\ Rev.\ Lett.\
+  \textbf{10} (1963) 531}, [,648(1963)]\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Kobayashi:1973fv}
+M.~Kobayashi and T.~Maskawa, \ifthenelse{\boolean{articletitles}}{\emph{{CP
+  Violation in the Renormalizable Theory of Weak Interaction}},
+  }{}\href{http://dx.doi.org/10.1143/PTP.49.652}{Prog.\ Theor.\ Phys.\
+  \textbf{49} (1973) 652}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{wolf}
 Y.~H. Ahn, H.-Y. Cheng, and S.~Oh,
   \ifthenelse{\boolean{articletitles}}{\emph{{Wolfenstein parametrization at
