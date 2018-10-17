@@ -1,0 +1,99 @@
+all4.tex
+
+Words in text: 24062
+Words in headers: 372
+Words outside text (captions, etc.): 3393
+Number of headers: 104
+Number of floats/tables/figures: 104
+Number of math inlines: 987
+Number of math displayed: 94
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+191+1+0 (1/0/8/0) Chapter: Abstract
+326+1+0 (1/0/0/0) Chapter: Introduction
+76+1+0 (1/0/0/0) Chapter: Theory
+401+5+33 (1/1/2/0) Section: Review of the Standard Model
+354+6+0 (1/0/29/8) Section: The Principle of Standard Model Building
+375+2+0 (1/0/21/4) Section: Quantum Chromodynamics
+567+2+0 (1/0/40/12) Section: Electroweak Unification
+230+3+0 (1/0/19/4) Section: The Higgs Mechanism
+385+3+0 (1/0/20/7) Section: Fermion Mass Generation
+476+4+52 (1/2/26/8) Section: The Quark Mixing Matrix
+727+6+25 (1/1/49/4) Section: Fully Leptonic \mb{P^{+}\rightarrow l^{+} \nu} Decays
+191+6+0 (1/0/21/3) Section: Fully Leptonic \mb{B^{+}\rightarrow l^{+} \nu \gamma} Decays
+323+8+58 (1/1/20/0) Section: Fully Leptonic \mb{B^{+}\rightarrow l^{+} l^{-} l^{+} \nu} Decays
+263+3+20 (1/1/14/0) Section: The \mb{\Bmumumu} Decay Model
+278+3+9 (1/1/2/0) Chapter: The LHCb Detector
+784+2+228 (1/4/45/1) Section: LHCb Layout
+356+2+66 (1/2/13/0) Section: VErtex LOcator
+184+2+0 (1/0/1/0) Section: Tracking System
+328+2+73 (1/2/4/0) Subsection: Tracking Algorithms
+277+4+25 (1/1/12/1) Section: Ring Imaging \v{C}erenkov Detectors
+170+4+0 (1/0/3/1) Section: RICH Reconstruction and Performance
+124+2+45 (1/1/9/0) Subsection: RICH Performance
+324+1+28 (1/1/3/0) Section: Calorimetry
+314+2+14 (1/1/6/0) Section: Muon Stations
+247+2+4 (1/1/5/0) Subsection: Muon Identification
+126+3+39 (1/1/6/0) Subsection: Muon Identification Performance
+722+1+50 (1/3/16/0) Section: Trigger
+200+1+0 (1/0/7/0) Section: Simulation
+268+5+37 (1/1/2/0) Subsection: Differences in Simulation and Data
+137+6+0 (1/0/0/0) Chapter: Handling of Trimuon Correlations at LHCb
+36+3+0 (1/0/0/0) Section: Muon PID Variables
+235+4+52 (1/1/13/1) Subsection: Binary Muon PID Variables
+530+7+151 (1/2/9/0) Subsection: Muon PID Variables Based on Sharing Hits
+153+7+0 (1/0/5/0) Subsection: Muon PID Variables Based on Regression Techniques
+564+1+167 (1/5/9/4) Section: Clones
+84+8+0 (1/0/0/0) Section: Probability of \mb{K/\pi \rightarrow \mu} Misidentification at LHCb
+168+9+0 (1/0/5/0) Subsection: Specific Control Sample for \mb{K/\pi \rightarrow \mu} MisID Rates
+80+9+4 (1/1/3/0) Subsection: Selection for \mb{B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}} 
+489+10+51 (1/2/21/0) Subsection: Fitting Strategy for \mb{B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}}
+461+17+84 (1/4/22/0) Subsection: Results of \mb{B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}} Control Sample for \mb{K/\pi \rightarrow \mu} MisID Rates
+83+5+0 (1/0/0/0) Chapter: Looking for \mb{\Bmumumu} Decays at LHCb
+400+6+48 (1/1/29/5) Section: Topology of the \mb{\Bmumumu} Decay at LHCb
+309+3+0 (1/0/12/0) Section: Sources of Backgrounds
+458+2+0 (1/0/16/0) Section: Analysis Strategy
+59+3+42 (1/1/0/0) Section: Signal Simulation Samples
+353+1+26 (1/1/11/0) Section: Preselection}% for \Bmumumu
+314+2+9 (1/1/15/0) Section: Trigger Selection
+87+3+53 (1/2/17/0) Section: \mb{q^{2}} Selection
+50+2+21 (1/1/0/0) Section: Further Selection
+303+5+13 (1/1/5/0) Subsection: General Features of Multivariate Selections
+303+5+44 (1/2/10/0) Subsection: The Isolation Boosted Decision Tree
+484+5+209 (1/4/28/1) Subsection: The Combinatorial Boosted Decision Tree
+394+5+259 (1/5/28/0) Subsection: The Misid Boosted Decision Tree
+49+3+0 (1/0/5/0) Subsection: Fitting Region Selection
+138+3+0 (1/0/3/0) Subsection: Further \gls{PID} Selection
+268+2+13 (1/1/9/0) Section: Normalisation Channel
+143+7+92 (1/2/8/2) Section: Fractional Corrected Mass Error (FCME) Window Split
+36+2+0 (1/0/0/0) Chapter: Background Studies
+310+2+36 (1/1/11/0) Section: Combinatorial Background
+806+3+233 (1/4/24/7) Section: MisID Type Background
+375+3+37 (1/1/17/0) Section: Partially Reconstructed Background
+161+13+29 (1/1/10/0) Subsection: Partially Reconstructed Backgrounds, where \mb{D^{0} \rightarrow \eta / \eta' X}, and \mb{\eta / \eta' \rightarrow \mu \mu \gamma}
+61+6+12 (1/1/7/0) Subsection: Partially Reconstructed \mb{B \rightarrow \eta (') V} Backgrounds
+200+9+0 (1/0/8/0) Section: Rare and Resonant \mb{B^{+} \rightarrow \pi^{+} / K^{+} \mu^{-} \mu^{+}} Backgrounds
+45+1+0 (1/0/0/0) Section: Summary
+77+4+0 (1/0/0/0) Chapter: Mass Fits and Efficiencies
+273+2+25 (1/1/18/4) Section: Efficiency Ratio
+133+3+63 (1/2/1/2) Section: Summary of Efficiencies
+91+4+0 (1/0/1/0) Subsection: Detector Acceptance Efficiency (GEN)
+168+3+0 (1/0/2/0) Subsection: Reconstruction Efficiency (REC)
+393+3+91 (1/2/5/0) Subsection: Trigger Efficiency (TRG)
+44+3+0 (1/0/14/0) Subsection: Offline Selection (OFF)
+213+6+89 (1/2/13/0) Subsection: Combinatorial BDT and Misid BDT Efficiency
+73+4+38 (1/1/3/0) Subsection: Fitting Range Efficiency (FR)
+91+3+12 (1/2/0/0) Subsection: \gls{PID} Efficiencies (PID)
+50+2+0 (1/0/0/0) Section: Mass Fits
+255+7+23 (4/1/7/0) Subsection: Normalisation Channel Parametrisation
+74+2+56 (1/3/6/0) Subsection: Normalisation Fit
+1447+11+167 (5/6/79/10) Subsection: Signal Channel Parametrisation
+229+13+0 (4/0/10/2) Subsection: Signal Data Fits
+730+18+24 (7/3/21/3) Subsection: Signal Fit Systematics
+241+3+64 (1/2/5/0) Subsection: Blinded Data Fits
+186+2+15 (1/1/2/0) Subsection: Expected Sensitivity
+207+3+134 (1/5/23/0) Subsection: Unblinded Data Fits
+0+3+0 (1/0/0/0) Chapter: Result and Conclusion
+125+2+40 (1/2/7/0) Section: Limit Setting
+153+1+61 (1/1/4/0) Section: Conclusion
+96+1+0 (1/0/3/0) Section: Outlook
