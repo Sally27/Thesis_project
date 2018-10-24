@@ -42,7 +42,7 @@ In the rest of the chapter, the \gls{SM} formulation is introduced starting with
 
 \section{The Principle of Standard Model Building}
 \label{build}
-In more mathematical terminology, the \gls{SM} is a theory that respects SU(3)$\otimes$SU(2)$\otimes$U(1) symmetries. In this section, the form of the Lagrangian density of the \gls{SM} is motivated. Throughout it is assumed that $\hbar=1$, $c=1$. The Dirac Lagrangian for a spin-$\frac{1}{2}$ non-interacting or free field $\psi$ (spinor field) for a particle with mass $m$ can be written as 
+In more mathematical terminology, the \gls{SM} is a theory that respects SU(3)$\otimes$SU(2)$\otimes$U(1) symmetries. In this section, the form of the Lagrangian density of the \gls{SM} is motivated. Throughout \DIFaddbegin \DIFadd{the theory chapter }\DIFaddend it is assumed that $\hbar=1$, $c=1$. The Dirac Lagrangian for a spin-$\frac{1}{2}$ non-interacting or free field $\psi$ (spinor field) for a particle with mass $m$ can be written as 
 \begin{equation}
 \mathcal{L} = i\overline{\psi}\gamma^{\mu}\partial_{\mu}\psi - m\overline{\psi}\psi,
 \label{eq:lag_first}
@@ -364,18 +364,36 @@ $\sum_{k} |V_{ik}|^2 = \sum_{i} |V_{ik}|^2 = 1$ for all $i$ generations and $\su
 \begin{equation}
   V_{ud}V^*_{ub} + V_{cd}V^*_{cb} + V_{td}V^*_{tb} = 0 \, .
 \end{equation}
-Dividing this constraint by $V_{cd}V^*_{cb}$ and using the relations 
+Dividing this constraint by $V_{cd}V^*_{cb}$
+\DIFdelbegin \DIFdel{and using the relations 
+}\DIFdelend \DIFaddbegin 
+
 \begin{equation}
-   {\rho} + i {\eta} = \frac{\sqrt{A^{4}\lambda^{4}}(\bar{\rho} + i \bar{\eta})}{\sqrt{1-\lambda^2}[A^{4}\lambda^{4}(\bar{\rho} + i \bar{\eta})]}
-\end{equation}
- where $\bar{\rho}$ and $\bar{\eta}$ are defined
-\begin{equation}
-\bar{\rho} \approx \rho - \frac{\rho\lambda^{2}}{2},
-\end{equation}
-\begin{equation}
-\bar{\eta} \approx \eta - \frac{\eta\lambda^{2}}{2},
-\end{equation}
-the constraint can be pictorially represented in the $\bar{\rho}$ and $\bar{\eta}$ plane as \DIFdelbegin \DIFdel{a }\DIFdelend \DIFaddbegin \DIFadd{the }\DIFaddend triangle shown in~\autoref{fig:unitr}.
+	\DIFadd{\frac{V_{ud}V^*_{ub}}{V_{cd}V^*_{cb}} + 1 + \frac{V_{td}V^*_{tb}}{V_{cd}V^*_{cb}} = 0.
+}\end{equation}
+
+\DIFadd{Use the following relation 
+}\DIFaddend \begin{equation}
+	\DIFdelbegin %DIFDELCMD < {%%%
+\DIFdel{\rho}%DIFDELCMD < } %%%
+\DIFdelend \DIFaddbegin \DIFadd{V^{*}_{ub}= A\lambda^{3}{\rho} }\DIFaddend + i {\eta} = \DIFdelbegin \DIFdel{\frac{\sqrt{A^{4}\lambda^{4}}(\bar{\rho} + i \bar{\eta})}{\sqrt{1-\lambda^2}[A^{4}\lambda^{4}(\bar{\rho} + i \bar{\eta})]}
+}\DIFdelend \DIFaddbegin \DIFadd{\frac{A\lambda^{3}(\bar{\rho} + i \bar{\eta})\sqrt{1-A^{2}\lambda^{4}}}{\sqrt{1-\lambda^2}[1-A^{2}\lambda^{4}(\bar{\rho} + i \bar{\eta})]}
+}\DIFaddend \end{equation}
+\DIFdelbegin \DIFdel{where $\bar{\rho}$ and $\bar{\eta}$ are defined
+}\DIFdelend \DIFaddbegin 
+
+\DIFadd{ensures that
+}
+
+\DIFaddend \begin{equation}
+\bar{\rho} \DIFdelbegin \DIFdel{\approx \rho }\DIFdelend \DIFaddbegin \DIFadd{+ i }\bar{\eta}\DIFadd{= }\DIFaddend -\DIFdelbegin \DIFdel{\frac{\rho\lambda^{2}}{2},
+}\DIFdelend \DIFaddbegin \DIFadd{\frac{V_{ud}V^*_{ub}}{V_{cd}V^*_{cb}}.	
+}\DIFaddend \end{equation}
+\DIFdelbegin \begin{displaymath}
+\DIFdel{\bar{\eta} \approx \eta - \frac{\eta\lambda^{2}}{2},
+}\end{displaymath}
+%DIFAUXCMD
+\DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{The }\DIFaddend constraint can be pictorially represented in the $\bar{\rho}$ and $\bar{\eta}$ plane as \DIFdelbegin \DIFdel{a }\DIFdelend \DIFaddbegin \DIFadd{the }\DIFaddend triangle shown in~\autoref{fig:unitr}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{theory/unitarity.eps}
@@ -465,14 +483,14 @@ where
 \begin{equation}
 	r_H=[1-\tan^2\beta(m^{2}_{B^{+}}/m^{2}_{H^{+}})]^2.
 \end{equation}
-Here $\tan\beta = \frac{v_{2}}{v_{1}}$, where $v_{i}$ are the vacuum expectation values for the Higgs doublets. In order to have an enhancing effect for the rate of the $B^{+}\rightarrow l^{+}\nu$ decay (to have $r_{H}>1$), $\tan\beta/m_{H^{\pm}}> 0.27 \gev^{-1}$. The experimental limit presents already a strong lower bound on the charged Higgs mass $m_{H^{\pm}}>600\gev$\cite{Arbey:2017gmh}. This makes the most of the parameter space in $\tan\beta$ and $m_{H^{\pm}}$ satisfy enhancing condition of $\tan\beta/m_{H^{\pm}}>0.27 \gev^{-1}$.
+Here $\tan\beta = \frac{v_{2}}{v_{1}}$, where $v_{i}$ are the vacuum expectation values for the Higgs doublets. In order to have an enhancing effect for the rate of the $B^{+}\rightarrow l^{+}\nu$ decay (to have $r_{H}>1$), $\tan\beta/m_{H^{\pm}}> 0.27 \gev^{-1}$. The experimental limit presents already a strong lower bound on the charged Higgs mass $m_{H^{\pm}}>600\gev$\cite{Arbey:2017gmh}. This makes \DIFdelbegin \DIFdel{the }\DIFdelend most of the parameter space in $\tan\beta$ and $m_{H^{\pm}}$ satisfy \DIFdelbegin \DIFdel{enhancing }\DIFdelend \DIFaddbegin \DIFadd{the }\DIFaddend condition of $\tan\beta/m_{H^{\pm}}>0.27 \gev^{-1}$.
 
 The ratio of rates between $P\rightarrow\tau\nu$, $P\rightarrow\mu\nu$ and $P\rightarrow e\nu$ decays could also be of an interest. In the ratios the decay constant $f_{P}$ cancels out making such measurements a good tool for lepton universality tests.
 
 As seen in~\autoref{eqn:dw}, a purely leptonic final state going through $P\rightarrow W^{*}\rightarrow l \nu$ is suppressed by $\frac{m^{2}_{l}}{m^{2}_{p}}$, also known as helicity suppression. This suppression occurs as a result of angular momentum conservation. In case of $B^{+}\rightarrow l^{+} \nu$, the $B^{+}$ is a spin-0 particle and hence its decay products should have spin 0 combined, or in other words, be anti-aligned. Neutrinos in the \gls{SM} are always produced left-handed. As the spin of the antilepton and the neutrino should be anti-aligned, the antilepton also needs to be left-handed (to have negative helicity). However, the weak current only couples to right-handed antiparticles. Therefore, the antilepton has to be boosted in order to have different helicity. For massless particles such a helicity flip is not possible making this decay impossible. The lighter the lepton, the larger the velocity and hence higher boost is necessary, making decays to lighter leptons rarer even though they have bigger kinematic phase space available.
 
 %https://www.physicsforums.com/threads/helicity-and-suppression.804600/
-Concentrating on the decays $B^{\pm}$ meson, the latest experimental measurements for rates of $B^{+}\rightarrow l^{+} \nu$ decays have been performed by $B$ factories, finding evidence for $B^{+}\rightarrow \tau^{+}\nu$ and first sign of $B^{+}\rightarrow \mu^{+}\nu$ as seen in~\autoref{tab:sum}. These results are to be compared with the \gls{SM} predictions $\mathcal{B}(B^{+}\rightarrow \tau^{+}\nu) = (0.82+0.03-0.02)\times10^{-4}$\cite{Charles:2004jd} and $\mathcal{B}(B^{+}\rightarrow \mu^{+}\nu) = (3.80\pm0.31)\times10^{-7}$\cite{Sibidanov:2017vph}, which are obtained by using $|V_{ub}|$ value resulting from other measurements and lattice calculations of $f_{B}$. %Quite substantial statistical as well as systematical errors show the difficulty of this type of measurements. 
+Concentrating on the decays \DIFaddbegin \DIFadd{of }\DIFaddend $B^{\pm}$ \DIFdelbegin \DIFdel{meson}\DIFdelend \DIFaddbegin \DIFadd{mesons}\DIFaddend , the latest experimental measurements for rates of $B^{+}\rightarrow l^{+} \nu$ decays have been performed by $B$ factories, finding evidence for $B^{+}\rightarrow \tau^{+}\nu$ and \DIFaddbegin \DIFadd{a }\DIFaddend first sign of $B^{+}\rightarrow \mu^{+}\nu$ as seen in~\autoref{tab:sum}. These results are to be compared with the \gls{SM} predictions $\mathcal{B}(B^{+}\rightarrow \tau^{+}\nu) = (0.82+0.03-0.02)\times10^{-4}$\cite{Charles:2004jd} and $\mathcal{B}(B^{+}\rightarrow \mu^{+}\nu) = (3.80\pm0.31)\times10^{-7}$\cite{Sibidanov:2017vph}, which are obtained by using \DIFaddbegin \DIFadd{a }\DIFaddend $|V_{ub}|$ value resulting from other measurements and lattice calculations of $f_{B}$. %Quite substantial statistical as well as systematical errors show the difficulty of this type of measurements. 
 
 
 
@@ -500,7 +518,8 @@ $B^{+}\rightarrow \mu^{+}\nu$ & Belle~\cite{Sibidanov:2017vph} & Untagged& $(6.4
 
 
 
-With helicity suppressed rates and very limited signatures in the detector (one charged track for muons and electron, more charged tracks for taus, but also more missing energy depending on the reconstruction channel) searching for such decays is very challenging. In order to make measurements of the same kind (CKM precision measurements, decay constants measurements, new physics searches), fully leptonic decays with photons can be considered.   
+With helicity suppressed rates and very limited signatures in the detector (one charged track for muons and \DIFdelbegin \DIFdel{electron}\DIFdelend \DIFaddbegin \DIFadd{electrons}\DIFaddend , more charged tracks for taus, but also more missing energy depending on the reconstruction channel) searching for such decays is very challenging. In order to make measurements of the same kind (CKM precision measurements, decay constants measurements, new physics searches), fully leptonic decays with photons can be considered. \DIFaddbegin \DIFadd{This is because the rates for these processes are higher due to no helicity supression.   
+}\DIFaddend 
 
 \section{Fully Leptonic \mb{B^{+}\rightarrow l^{+} \nu \gamma} Decays}
 \label{lnugamma}
@@ -532,19 +551,19 @@ is the same for the vector and axial form factor. The second terms are $\frac{1}
 
 
 
-Recent measurement of the radiative $B^{+} \rightarrow l^{+} \nu \gamma$, where $l^{+}$ is either $e^{+}$ or $\mu^{+}$ was performed by Belle using hadronic tagging on their full data sample\cite{Heller:2015vvm}. The search yielded $\mathcal{B}(B^{+}\rightarrow \mu^{+} \nu \gamma) < 3.4\times 10^{-6}$ and $\mathcal{B}(B^{+}\rightarrow e^{+} \nu \gamma) < 6.1\times 10^{-6}$.
+\DIFdelbegin \DIFdel{Recent }\DIFdelend \DIFaddbegin \DIFadd{A recent }\DIFaddend measurement of the radiative $B^{+} \rightarrow l^{+} \nu \gamma$ \DIFaddbegin \DIFadd{decay}\DIFaddend , where $l^{+}$ is either $e^{+}$ or $\mu^{+}$ was performed by Belle using hadronic tagging on their full data sample\cite{Heller:2015vvm}. The search yielded $\mathcal{B}(B^{+}\rightarrow \mu^{+} \nu \gamma) < 3.4\times 10^{-6}$ and $\mathcal{B}(B^{+}\rightarrow e^{+} \nu \gamma) < 6.1\times 10^{-6}$.
 
 
 
 \section{Fully Leptonic \mb{B^{+}\rightarrow l^{+} l^{-} l^{+} \nu} Decays}
 \label{mydecay}
 
-In LHCb, the most optimal approach due to the detector capabilities is to measure this kind of decay by converting the photon into a pair of muons, see~\autoref{fig:myfeyn}(a). If the naive expectation of only taking into account photon conversion into two muons is adopted, then the expected branching fraction for this analysis is $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu) \approx 1.0\times 10^{-8}$. However, such estimate is not correct because there are other contributions to the total decay rate as shown in the first theoretical prediction for $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$ in \cite{Danilina:2018uzr} based on the Vector Meson Dominance (VMD) model. This theoretical prediction yields $\mathcal{B}(B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu) \approx 1.3\times 10^{-7}$.% and the rest of this section is a short summary of this publication.
+In LHCb, the most optimal approach due to the detector capabilities is to measure this kind of decay by converting the photon into a pair of muons, see~\autoref{fig:myfeyn}(a). If the naive expectation of only taking into account photon conversion into two muons is adopted, then the expected branching fraction for this analysis is $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu) \approx 1.0\times 10^{-8}$. However, such \DIFaddbegin \DIFadd{an }\DIFaddend estimate is not correct because there are other contributions to the total decay rate as shown in the first theoretical prediction for $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$ in \cite{Danilina:2018uzr} based on the Vector Meson Dominance (VMD) model. This theoretical prediction yields $\mathcal{B}(B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu) \approx 1.3\times 10^{-7}$.% and the rest of this section is a short summary of this publication.
 
- The VMD model was formulated to describe the interaction between photons and hadrons before \gls{QCD} was formulated. It is an approximative model where the photon is treated to be made of a purely electromagnetic component and a vector meson component. This idea originates in the fact that both photon and vector mesons have the same quantum numbers $J^{PC} = 1^{-\ -}$ and if two particles have the same quantum numbers then they mix. %(the state which commutes with the Hamiltonian is a superposition of all such states). 
+ The VMD model was formulated to describe the interaction between photons and hadrons before \gls{QCD} was formulated. It is an approximative model where the photon is treated \DIFdelbegin \DIFdel{to be }\DIFdelend \DIFaddbegin \DIFadd{being }\DIFaddend made of a purely electromagnetic component and a vector meson component. This idea originates in the fact that both photon and vector mesons have the same quantum numbers $J^{PC} = 1^{-\ -}$ and if two particles have the same quantum numbers then they mix. %(the state which commutes with the Hamiltonian is a superposition of all such states). 
 % Therefore, there is mixing between photons and vector mesons.
 
-As mentioned previously, there are different contributions to the amplitude of the $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$. Using the VMD model, it is not surprising that the biggest contribution arises from the photon emission from the valence $u$-quark of the $B$ meson. In this case, the contribution from the $\rho(770)$ and $\omega(782)$ resonances are included in the calculation. Secondly, the contribution of photon emission from the $b$-quark is studied, effectively creating excited $B^{+}$, $B^{+*}$ intermediate resonance state. Thirdly, the photon can be emitted from the final-state lepton, a process known as Bremsstrahlung. All these different contributions to the decay amplitude are shown in~\autoref{fig:myfeyn}. To obtain the total amplitude, the sum of the matrix elements of the three contributions is calculated in the limit where $m_{l}$ is set to zero.
+As mentioned previously, there are different contributions to the amplitude of the $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$. Using the VMD model, it is not surprising that the biggest contribution arises from \DIFdelbegin \DIFdel{the }\DIFdelend photon emission from the valence $u$-quark of the $B$ meson. In this case, the contribution from the $\rho(770)$ and $\omega(782)$ resonances are included in the calculation. Secondly, the contribution of photon emission from the $b$-quark is studied, effectively creating excited $B^{+}$, $B^{+*}$ intermediate resonance state. Thirdly, the photon can be emitted from the final-state lepton, a process known as Bremsstrahlung. All these different contributions to the decay amplitude are shown in~\autoref{fig:myfeyn}. To obtain the total amplitude, the sum of the matrix elements of the three contributions is calculated in the limit where $m_{l}$ is set to zero.
 
 
 \begin{figure}[ht]
@@ -559,7 +578,7 @@ As mentioned previously, there are different contributions to the amplitude of t
 \end{figure}
 
 
-In this publication the amplitude of $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$ is estimated by calculating $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} e^{+} \nu)$ amplitude first and then adding a negative interference term that arises due to the identical fermions in the final state doubling the number of possible diagrams. The numerical calculation yields $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} e^{+} \nu) \approx 1.3 \times 10^{-7}$ and $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu) \approx 1.3 \times 10^{-7}$. 
+In this publication the amplitude of $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu)$ is estimated by calculating \DIFaddbegin \DIFadd{the }\DIFaddend $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} e^{+} \nu)$ amplitude first and then adding a negative interference term that arises due to the identical fermions in the final state doubling the number of possible diagrams. The numerical calculation yields $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} e^{+} \nu) \approx 1.3 \times 10^{-7}$ and $\mathcal{B}(B^{+}\rightarrow \mu^{+} \mu^{-} \mu^{+} \nu) \approx 1.3 \times 10^{-7}$. 
 
 \section{The \mb{\Bmumumu} Decay Model}
 \label{simulation}
@@ -567,7 +586,7 @@ As the search for the \Bmumumu decay is the first of its kind, a simulation that
 
 For any decay, it is possible to use a phase space model, \textit{PHSP}, which only takes into account the kinematic constraints of the decay without taking into account any input from theoretical considerations as the matrix element is constant. This is not satisfactory for decays where there are intermediate virtual photons or vector meson resonances.
 
-The following decay model is developed to reflect the expected behaviour of decays shown in~\autoref{fig:myfeyn}. The decay proceeds through a virtual $W$ decaying to $\mu^{+} \nu$ and a virtual photon decaying to a muon pair. This has similar structure to $\B^{+} \rightarrow (K^{*+}) \mu^{+} \mu^{-}$ decay, where the $K^{*+}$ can take the role of the virtual $W$ decay. By using the \textit{BTOSLLBALL} model\cite{Ali:1999mm}, traditionally used for $B^{+} \rightarrow (K^{*+}) l^{+} l^{-}$ decays, but modifying the properties of the $K^{*+}$ to those of virtual $W$ (having mass of 0.1 \gevcc and width 50 \gev), it is possible to obtain a good approximation to the correct features of the decay. This is visible in~\autoref{fig:mcgeneration}, where there is a characteristic photon pole for low $q(\mu^{+},\mu^{-})$, invariant mass of the opposite muon pair, and flat distribution for $K^{*}(\mu^{+}, \nu) $, invariant mass of the muon and neutrino pair. This decay model will be further referred to as \textit{INSP} model. 
+The following decay model is developed to reflect the expected behaviour of decays shown in~\autoref{fig:myfeyn}. The decay proceeds through a virtual $W$ decaying to $\mu^{+} \nu$ and a virtual photon decaying to a muon pair. This has similar structure to \DIFaddbegin \DIFadd{the }\DIFaddend $\B^{+} \rightarrow (K^{*+}) \mu^{+} \mu^{-}$ decay, where the $K^{*+}$ can take the role of the virtual $W$ decay. By using the \textit{BTOSLLBALL} model\cite{Ali:1999mm}, traditionally used for $B^{+} \rightarrow (K^{*+}) l^{+} l^{-}$ decays, but modifying the properties of the $K^{*+}$ to those of \DIFaddbegin \DIFadd{a }\DIFaddend virtual $W$ (having mass of 0.1 \gevcc and width 50 \gev), it is possible to obtain a good approximation to the correct features of the decay. This is visible in~\autoref{fig:mcgeneration}, where there is a characteristic photon pole for low $q(\mu^{+},\mu^{-})$, \DIFaddbegin \DIFadd{the }\DIFaddend invariant mass of the opposite muon pair, and flat distribution for $K^{*}(\mu^{+}, \nu) $, \DIFaddbegin \DIFadd{the }\DIFaddend invariant mass of the muon and neutrino pair. This decay model will be further referred to \DIFdelbegin \DIFdel{as }\DIFdelend \DIFaddbegin \DIFadd{asthe }\DIFaddend \textit{INSP} model. 
 
 
 
@@ -582,5 +601,5 @@ The following decay model is developed to reflect the expected behaviour of deca
 %\vspace*{-1.0cm}
 \end{figure}
 
-Finally, there is a decay model based on calculations from VMD model, which was written by authors of \cite{Danilina:2018uzr}. This model denoted as \textit{NIKI}.
+Finally, there is a decay model based on calculations from \DIFaddbegin \DIFadd{the }\DIFaddend VMD model, which was written by authors of \cite{Danilina:2018uzr}. This model \DIFaddbegin \DIFadd{is }\DIFaddend denoted as \textit{NIKI}.
 
