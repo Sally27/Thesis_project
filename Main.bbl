@@ -561,6 +561,14 @@ L.~Anderlini {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{The
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Dungs:2015mml}
+K.~Dungs, \ifthenelse{\boolean{articletitles}}{\emph{{Optimisation of the
+  software-based muon identification at the LHCb experiment}}, }{} Master's
+  thesis, Tech. U., Dortmund (main), 2015-09-18\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{sPlot}
 M.~Pivk and F.~R. Le~Diberder,
   \ifthenelse{\boolean{articletitles}}{\emph{{SPlot: A Statistical tool to
