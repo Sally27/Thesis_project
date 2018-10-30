@@ -44,9 +44,9 @@
 \BOOKMARK [2][-]{subsection.4.3.3}{Fitting Strategy for B0 J/\(+ -\) K*}{section.4.3}% 44
 \BOOKMARK [2][-]{subsection.4.3.4}{Results of B0 J/\(+ -\) K* Control Sample for K/ MisID Rates }{section.4.3}% 45
 \BOOKMARK [0][-]{chapter.5}{Looking for B + \040+- + \040Decays at LHCb}{}% 46
-\BOOKMARK [1][-]{section.5.1}{Topology of the B + \040+- + \040Decay at LHCb}{chapter.5}% 47
-\BOOKMARK [1][-]{section.5.2}{Sources of Backgrounds}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.3}{Analysis Strategy}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.1}{Analysis Strategy}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.2}{Topology of the B + \040+- + \040Decay at LHCb}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.3}{Sources of Backgrounds}{chapter.5}% 49
 \BOOKMARK [1][-]{section.5.4}{Signal Simulation Samples}{chapter.5}% 50
 \BOOKMARK [1][-]{section.5.5}{Preselection}{chapter.5}% 51
 \BOOKMARK [1][-]{section.5.6}{Trigger Selection}{chapter.5}% 52
@@ -92,9 +92,11 @@
 \BOOKMARK [1][-]{section.8.2}{Conclusion}{chapter.8}% 92
 \BOOKMARK [1][-]{section.8.3}{Outlook}{chapter.8}% 93
 \BOOKMARK [0][-]{section.8.3}{Bibliography}{}% 94
-\BOOKMARK [0][-]{chapter*.136}{Appendices}{}% 95
+\BOOKMARK [0][-]{chapter*.137}{Appendices}{}% 95
 \BOOKMARK [0][-]{appendix.A}{Fitting functions}{}% 96
 \BOOKMARK [1][-]{section.A.1}{Double-sided Ipatia Function}{appendix.A}% 97
 \BOOKMARK [1][-]{section.A.2}{Crystal Ball Function}{appendix.A}% 98
 \BOOKMARK [1][-]{section.A.3}{Rookeys Function from ROOFIT Package}{appendix.A}% 99
-\BOOKMARK [0][-]{appendix.B}{License}{}% 100
+\BOOKMARK [0][-]{appendix.B}{Correlation Matrices}{}% 100
+\BOOKMARK [1][-]{section.B.1}{Correlation Matrices for backgrounds in BDTs}{appendix.B}% 101
+\BOOKMARK [0][-]{appendix.C}{License}{}% 102

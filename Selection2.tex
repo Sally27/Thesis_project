@@ -3,6 +3,31 @@
 
 \textit{In this chapter, the selection for the search of \Bmumumu decays at LHCb is presented. This search is challenging because of the rareness of its occurrence as well as the different backgrounds that can mimic its signature in the detector. Moreover, presence of of the invisible neutrino in the decay induces uncertainties into the reconstruction. This chapter concentrates on data selection which reduces background contamination. Normalisation channel along with its selection is also discussed. In the end, a method to improve sensitivity is introduced.}
 
+\section{Analysis Strategy}
+\label{Strategy}
+
+The analysis of the $\Bmumumu$ decay is divided into several different parts; signal selection, optimisation, normalisation, fitting and limit setting. Throughout this document, charge conjugates of the decays are assumed unless stated otherwise. Results presented are based on the analysis of the full 3 fb$^{-1}$ Run \Rn{1} dataset as well $\approx$ 1.7 fb$^{-1}$ Run \Rn{2} data from 2016. Data from 2015 is not used due to the very high $p_{T}$ threshold for the muon triggers used during that year, resulting in a very low signal efficiency. Additionally the search will be conducted in a particular $minq$ = $\sqrt{min(q^{2}(\mu_{1}^{+},\mu^{-}), q^2(\mu^{-},\mu_{2}^{+}))}$ region, described in~\autoref{qsqchoice}.  
+
+
+To perform the search for $\Bmumumu$, a specific preselection was applied to form potential signal candidates as described in~\autoref{preselection}. A simulation sample that mimics the decay of the $\Bmumumu$ was created, as mentioned in~\autoref{simulation}. This simulation together with the background proxies discussed in~\autoref{chap:back} are used to further develop a discriminating selection that would maximise the separation between signal and background. Most of the rest of this chapter is dedicated to this discriminating selection. For more details about the signal simulation samples see~\autoref{SimulationSamples}.
+
+
+After the selection, the $\Bmumumu$ decays are normalised to the $\bjpsimumuk$ decays, where the selection for the normalisation channel, detailed in~\autoref{nchannel}, is kept as similar as possible to that of the signal channel to minimize the amount of systematics on the resulting relative efficiencies between these two channels. The relative efficencies are computed in~\autoref{EfficiencyRatio}. The fit to $\bjpsimumuk$ data is described in~\autoref{normfit}. The relative efficiencies, results of the normalisation channel fit and the branching fraction of \bjpsimumuk are used to parametrise the expected signal yield, as described in~\autoref{sigpara}.
+
+
+
+Throughout the analysis there was a blinding procedure put in place for this search in order not to bias the result. The signal region $4500{\mevcc}<M_{\rm{B_{corr}}}<{5500\mevcc}$ was blinded until the full strategy and sensitivity was evaluated. The signal dataset corresponding to this selection is known as \textbf{blinded signal dataset}. After unblinding, data with the full mass spectrum was obtained and is known as \textbf{full signal dataset}.%  Hence in all blinded fits only data in regions $4000{\mevcc}<M_{\rm{B_{corr}}}<{4500\mevcc}$ and $5500{\mevcc}<M_{\rm{B_{corr}}}<{7000\mevcc}$ are used.
+
+
+
+In~\autoref{fitsens}, two fitting strategies for the signal data are described. One is more sensitive than another, where the fitting strategy that provides the best sensitivity makes use of simultaneous fit to two bins of resolution, increasing signal separation from background. More information about this split can be found in~\autoref{split}. Both fitting strategies were applied on blinded signal datasets in order to compute the expected exclusion limit on the branching fraction, shown in~\autoref{sensitivity}. Systematic uncertainties that are affecting this measurement are presented in~\autoref{systematics}.
+
+
+Upon unblinding, no significant signal was observed and a stringent limit $\mathcal{B}(\Bmumumu) < 1.4\times 10^{-8}$ at $95\%$ confidence level was set using the $CL_{s}$ method with a simultaneous fit. All information about the result as well as the implication can be found in~\autoref{chap:Results}.% This result does not confirm the prediction for the decay branching fraction\cite{Danilina:2017bcn}\cite{Danilina:2018uzr}, where $\mathcal{B}(\Bmumumu) \approx 1.3\times 10^{-7}$.
+
+
+%In summary, the aim of the analysis is to fit corrected mass of $B^{+}$ in bins of fractional corrected mass error. This is the fitting strategy that provides the best sensitivity (described in detail in~\autoref{split}) but the motivation for this particular strategy is that the signal data is split into two bins of resolution, increasing signal separation from background.
+
 
 
 \section{Topology of the \mb{\Bmumumu} Decay at LHCb}
@@ -102,30 +127,30 @@ Decays that proceed via hadronic resonances such as $B^{+} \rightarrow \rho/\ome
 
 Detailed information concerning these types of backgrounds are discussed in~\autoref{chap:back}.
 
-\section{Analysis Strategy}
-\label{Strategy}
-
-The analysis of the $\Bmumumu$ decay is divided into several different parts; signal selection, optimisation, normalisation, fitting and limit setting. Throughout this document, charge conjugates of the decays are assumed unless stated otherwise. Results presented are based on the analysis of the full 3 fb$^{-1}$ Run \Rn{1} dataset as well $\approx$ 1.7 fb$^{-1}$ Run \Rn{2} data from 2016. Data from 2015 is not used due to the very high $p_{T}$ threshold for the muon triggers used during that year, resulting in a very low signal efficiency. Additionally the search will be conducted in a particular $minq$ = $\sqrt{min(q^{2}(\mu_{1}^{+},\mu^{-}), q^2(\mu^{-},\mu_{2}^{+}))}$ region, described in~\autoref{qsqchoice}.  
-
-
-To perform the search for $\Bmumumu$, a specific preselection was applied to form potential signal candidates as described in~\autoref{preselection}. A simulation sample that mimics the decay of the $\Bmumumu$ was created, as mentioned in~\autoref{simulation}. This simulation together with the background proxies discussed in~\autoref{chap:back} are used to further develop a discriminating selection that would maximise the separation between signal and background. Most of the rest of this chapter is dedicated to this discriminating selection. For more details about the signal simulation samples see~\autoref{SimulationSamples}.
-
-
-After the selection, the $\Bmumumu$ decays are normalised to the $\bjpsimumuk$ decays, where the selection for the normalisation channel, detailed in~\autoref{nchannel}, is kept as similar as possible to that of the signal channel to minimize the amount of systematics on the resulting relative efficiencies between these two channels. The relative efficencies are computed in~\autoref{EfficiencyRatio}. The fit to $\bjpsimumuk$ data is described in~\autoref{normfit}. The relative efficiencies, results of the normalisation channel fit and the branching fraction of \bjpsimumuk are used to parametrise the expected signal yield, as described in~\autoref{sigpara}.
-
-
-
-Throughout the analysis there was a blinding procedure put in place for this search in order not to bias the result. The signal region $4500{\mevcc}<M_{\rm{B_{corr}}}<{5500\mevcc}$ was blinded until the full strategy and sensitivity was evaluated. The signal dataset corresponding to this selection is known as \textbf{blinded signal dataset}. After unblinding, data with the full mass spectrum was obtained and is known as \textbf{full signal dataset}.%  Hence in all blinded fits only data in regions $4000{\mevcc}<M_{\rm{B_{corr}}}<{4500\mevcc}$ and $5500{\mevcc}<M_{\rm{B_{corr}}}<{7000\mevcc}$ are used.
-
-
-
-In~\autoref{fitsens}, two fitting strategies for the signal data are described. One is more sensitive than another, where the fitting strategy that provides the best sensitivity makes use of simultaneous fit to two bins of resolution, increasing signal separation from background. More information about this split can be found in~\autoref{split}. Both fitting strategies were applied on blinded signal datasets in order to compute the expected exclusion limit on the branching fraction, shown in~\autoref{sensitivity}. Systematic uncertainties that are affecting this measurement are presented in~\autoref{systematics}.
-
-
-Upon unblinding, no significant signal was observed and a stringent limit $\mathcal{B}(\Bmumumu) < 1.4\times 10^{-8}$ at $95\%$ confidence level was set using the $CL_{s}$ method with a simultaneous fit. All information about the result as well as the implication can be found in~\autoref{chap:Results}.% This result does not confirm the prediction for the decay branching fraction\cite{Danilina:2017bcn}\cite{Danilina:2018uzr}, where $\mathcal{B}(\Bmumumu) \approx 1.3\times 10^{-7}$.
-
-
-%In summary, the aim of the analysis is to fit corrected mass of $B^{+}$ in bins of fractional corrected mass error. This is the fitting strategy that provides the best sensitivity (described in detail in~\autoref{split}) but the motivation for this particular strategy is that the signal data is split into two bins of resolution, increasing signal separation from background.
+%%\section{Analysis Strategy}
+%%\label{Strategy}
+%%
+%%The analysis of the $\Bmumumu$ decay is divided into several different parts; signal selection, optimisation, normalisation, fitting and limit setting. Throughout this document, charge conjugates of the decays are assumed unless stated otherwise. Results presented are based on the analysis of the full 3 fb$^{-1}$ Run \Rn{1} dataset as well $\approx$ 1.7 fb$^{-1}$ Run \Rn{2} data from 2016. Data from 2015 is not used due to the very high $p_{T}$ threshold for the muon triggers used during that year, resulting in a very low signal efficiency. Additionally the search will be conducted in a particular $minq$ = $\sqrt{min(q^{2}(\mu_{1}^{+},\mu^{-}), q^2(\mu^{-},\mu_{2}^{+}))}$ region, described in~\autoref{qsqchoice}.  
+%%
+%%
+%%To perform the search for $\Bmumumu$, a specific preselection was applied to form potential signal candidates as described in~\autoref{preselection}. A simulation sample that mimics the decay of the $\Bmumumu$ was created, as mentioned in~\autoref{simulation}. This simulation together with the background proxies discussed in~\autoref{chap:back} are used to further develop a discriminating selection that would maximise the separation between signal and background. Most of the rest of this chapter is dedicated to this discriminating selection. For more details about the signal simulation samples see~\autoref{SimulationSamples}.
+%%
+%%
+%%After the selection, the $\Bmumumu$ decays are normalised to the $\bjpsimumuk$ decays, where the selection for the normalisation channel, detailed in~\autoref{nchannel}, is kept as similar as possible to that of the signal channel to minimize the amount of systematics on the resulting relative efficiencies between these two channels. The relative efficencies are computed in~\autoref{EfficiencyRatio}. The fit to $\bjpsimumuk$ data is described in~\autoref{normfit}. The relative efficiencies, results of the normalisation channel fit and the branching fraction of \bjpsimumuk are used to parametrise the expected signal yield, as described in~\autoref{sigpara}.
+%%
+%%
+%%
+%%Throughout the analysis there was a blinding procedure put in place for this search in order not to bias the result. The signal region $4500{\mevcc}<M_{\rm{B_{corr}}}<{5500\mevcc}$ was blinded until the full strategy and sensitivity was evaluated. The signal dataset corresponding to this selection is known as \textbf{blinded signal dataset}. After unblinding, data with the full mass spectrum was obtained and is known as \textbf{full signal dataset}.%  Hence in all blinded fits only data in regions $4000{\mevcc}<M_{\rm{B_{corr}}}<{4500\mevcc}$ and $5500{\mevcc}<M_{\rm{B_{corr}}}<{7000\mevcc}$ are used.
+%%
+%%
+%%
+%%In~\autoref{fitsens}, two fitting strategies for the signal data are described. One is more sensitive than another, where the fitting strategy that provides the best sensitivity makes use of simultaneous fit to two bins of resolution, increasing signal separation from background. More information about this split can be found in~\autoref{split}. Both fitting strategies were applied on blinded signal datasets in order to compute the expected exclusion limit on the branching fraction, shown in~\autoref{sensitivity}. Systematic uncertainties that are affecting this measurement are presented in~\autoref{systematics}.
+%%
+%%
+%%Upon unblinding, no significant signal was observed and a stringent limit $\mathcal{B}(\Bmumumu) < 1.4\times 10^{-8}$ at $95\%$ confidence level was set using the $CL_{s}$ method with a simultaneous fit. All information about the result as well as the implication can be found in~\autoref{chap:Results}.% This result does not confirm the prediction for the decay branching fraction\cite{Danilina:2017bcn}\cite{Danilina:2018uzr}, where $\mathcal{B}(\Bmumumu) \approx 1.3\times 10^{-7}$.
+%%
+%%
+%%%In summary, the aim of the analysis is to fit corrected mass of $B^{+}$ in bins of fractional corrected mass error. This is the fitting strategy that provides the best sensitivity (described in detail in~\autoref{split}) but the motivation for this particular strategy is that the signal data is split into two bins of resolution, increasing signal separation from background.
 
 
 
