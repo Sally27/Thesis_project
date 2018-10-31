@@ -1431,7 +1431,7 @@ After the full analysis strategy was reviewed the signal datasets were unblinded
 \label{fig:sigfit_unblinded_bkgonly}
 \end{figure}
 
-In order to perform \DIFaddbegin \DIFadd{the }\DIFaddend fit with signal and background \DIFdelbegin \DIFdel{hypothesis }\DIFdelend \DIFaddbegin \DIFadd{hypotheses }\DIFaddend a good range \DIFdelbegin \DIFdel{of the }\DIFdelend \DIFaddbegin \DIFadd{for }\DIFaddend $\mathcal{B}$ needs to be established in order to aid the fit convergence. This is done the maximizing the log likelihood values for different values of $\mathcal{B}$, also known as profiling the $\mathcal{B}$. The results of the profiling can be seen in~\autoref{fig:prof}. This shows that the minimum is at $\mathcal{B}\sim-2.0\times10^{-8}$, hence the fit prefers a negative value of $\mathcal{B}$. 
+In order to perform \DIFaddbegin \DIFadd{the }\DIFaddend fit with signal and background \DIFdelbegin \DIFdel{hypothesis }\DIFdelend \DIFaddbegin \DIFadd{hypotheses }\DIFaddend a good range \DIFdelbegin \DIFdel{of the }\DIFdelend \DIFaddbegin \DIFadd{for }\DIFaddend $\mathcal{B}$ needs to be established in order to aid the fit convergence. This is done the maximizing the log likelihood values for different values of $\mathcal{B}$, also known as profiling \DIFdelbegin \DIFdel{the }\DIFdelend $\mathcal{B}$. The results of the profiling can be seen in~\autoref{fig:prof}. This shows that the minimum is at $\mathcal{B}\sim-2.0\times10^{-8}$, hence the fit prefers a negative value of $\mathcal{B}$. 
 
 
 \begin{figure}[H]
@@ -1441,7 +1441,7 @@ In order to perform \DIFaddbegin \DIFadd{the }\DIFaddend fit with signal and bac
 \label{fig:prof}
 \end{figure}
 
-The simultaneous unbinned extended maximum likelihood fit to all the data with signal+background hypothesis is given in~\autoref{fig:sigfit_unblinded}, converging at value of $\mathcal{B}=-1.8\times10^{-8}$. This hence represents a negative yield fluctuation. The full list of all free and constrained parameters' values obtained in this fit is shown in~\autoref{tab:floatingparsummary_fit}. This fit result then can be translated into yields in all the fitting range and specifically blinded region by integrating the resulting PDF in a relevant region as shown in~\autoref{tab:yieldiatkos}.
+The simultaneous unbinned extended maximum likelihood fit to all the data with signal+background hypothesis is given in~\autoref{fig:sigfit_unblinded}, converging at value of $\mathcal{B}=-1.8\times10^{-8}$. This hence represents a negative yield fluctuation. The full list of all free and constrained \DIFdelbegin \DIFdel{parameters' }\DIFdelend \DIFaddbegin \DIFadd{parameter }\DIFaddend values obtained in this fit is shown in~\autoref{tab:floatingparsummary_fit}. This fit result then can be translated into yields in all the fitting range and specifically \DIFaddbegin \DIFadd{the }\DIFaddend blinded region by integrating the resulting PDF in a relevant region as shown in~\autoref{tab:yieldiatkos}.
 
 \begin{figure}[H]
 \centering
@@ -1453,36 +1453,39 @@ The simultaneous unbinned extended maximum likelihood fit to all the data with s
 
 \begin{table}[H]
 \centering
-%\small
-\begin{tabular}{ l  l  }
-\toprule
-Fit Parameter & Value  \\ \hline
-$ \mathcal{B}(\Bmumumu) $ & $-1.8 \pm 0.9\times 10^{-8}$ \\
-$ \mathcal{B}(\bjpsimumuk) $ & $(6.11 \pm 0.185)\times 10^{-5}$ \\
-$ \mathcal{B}(\pr) $ & $(4.12 \pm 0.5)\times 10^{-7}$ \\
-$ \mu_{misID_{\mathrm{highFCME}}} $ & $4100 \pm 123$ \\
-$ \mu_{misID_{\mathrm{lowFCME}}} $ & $4330 \pm 56$ \\
-$ \sigma_{misID_{\mathrm{highFCME}}} $ & $619 \pm 56$ \\
-$ \sigma_{misID_{\mathrm{lowFCME}}} $ & $401 \pm 29.9$ \\
-$ R^{26}_{\mathrm{highFCME}}(\Bmumumu) $ & $1.97 \pm 0.0788$ \\
-$ R^{26}_{\mathrm{lowFCME}}(\Bmumumu) $ & $3.31 \pm 0.1$ \\
-$ R^{21}_{\mathrm{highFCME}}(\pr) $ & $0.0397 \pm 0.00116$ \\
-$ R^{21}_{\mathrm{lowFCME}}(\pr) $ & $0.0271 \pm 0.000794$ \\
-$ R^{21}_{\mathrm{highFCME}}(\Bmumumu) $ & $1.96 \pm 0.131$ \\
-$ R^{21}_{\mathrm{lowFCME}}(\Bmumumu) $ & $3.15 \pm 0.233$ \\
-$ N(\bjpsimumuk)^{2016}_{\mathrm{highFCME}} $ & $29800 \pm 173$ \\
-$ N(\bjpsimumuk)^{2016}_{\mathrm{lowFCME}} $ & $64700 \pm 254$ \\
-$ N(\bjpsimumuk)^{Run\ \Rn{1}}_{\mathrm{highFCME}} $ & $64100 \pm 253$ \\
-$ N(\bjpsimumuk)^{Run\ \Rn{1}}_{\mathrm{lowFCME}} $ & $109000 \pm 331$ \\
-$ N^{scaled}_{misID_{\mathrm{highFCME}}} $ & $278 \pm 15.2$ \\
-$ N^{scaled}_{misID_{\mathrm{lowFCME}}} $ & $331 \pm 16.3$ \\
-$ \beta_{\mathrm{highFCME}} $ & $-0.00183 \pm 9.19\times 10^{-5}$ \\
-$ \beta_{\mathrm{lowFCME}} $ & $-0.00226 \pm 0.000129$ \\
-$ N_{combi_{\mathrm{highFCME}}} $ & $620 \pm 34.3$ \\
-$ N_{combi_{\mathrm{lowFCME}}} $ & $531 \pm 35.4$ \\
+%DIF < \small
+\DIFdelbeginFL %DIFDELCMD < \begin{tabular}{ l  l  }
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \small
+\begin{tabular}{ l  l  l l  }
+\DIFaddendFL \toprule
+	Fit Parameter & \DIFdelbeginFL \DIFdelFL{Value  }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Constraint  }& \DIFaddFL{Fitted Value  }& \DIFaddFL{Pull }\DIFaddendFL \\ \hline
+	$ \mathcal{B}(\Bmumumu) $ & \DIFaddbeginFL \DIFaddFL{free }& \DIFaddendFL $-1.8 \pm 0.9\times 10^{-8}$ \DIFaddbeginFL & \DIFaddFL{- }\DIFaddendFL \\
+	$ \mathcal{B}(\bjpsimumuk) $ & \DIFaddbeginFL \DIFaddFL{$(6.12 \pm 0.188) \times 10^{-5}$ }& \DIFaddendFL $(6.11 \pm 0.185)\times 10^{-5}$ \DIFaddbeginFL & \DIFaddFL{$0.1\sigma$ }\DIFaddendFL \\
+	$ \mathcal{B}(\pr) $ &  \DIFaddbeginFL \DIFaddFL{$(4.09 \pm 0.5)\times 10^{-7}$ }& \DIFaddendFL $(4.12 \pm 0.5)\times 10^{-7}$ \DIFaddbeginFL & \DIFaddFL{$-0.1\sigma$ }\DIFaddendFL \\
+	$ \mu_{misID_{\mathrm{highFCME}}} $ & \DIFaddbeginFL \DIFaddFL{$4090 \pm 143$ }& \DIFaddendFL $4100 \pm 123$ \DIFaddbeginFL & \DIFaddFL{$-0.1\sigma$  }\DIFaddendFL \\
+	$ \mu_{misID_{\mathrm{lowFCME}}} $ & \DIFaddbeginFL \DIFaddFL{$4240 \pm 75$ }& \DIFaddendFL $4330 \pm 56$ \DIFaddbeginFL & \DIFaddFL{$-1.6\sigma$ }\DIFaddendFL \\
+	$ \sigma_{misID_{\mathrm{highFCME}}} $ & \DIFaddbeginFL \DIFaddFL{$637 \pm 62$ }& \DIFaddendFL $619 \pm 56$ \DIFaddbeginFL & \DIFaddFL{$0.3\sigma$ }\DIFaddendFL \\
+	$ \sigma_{misID_{\mathrm{lowFCME}}} $ & \DIFaddbeginFL \DIFaddFL{$447 \pm 35.9$ }& \DIFaddendFL $401 \pm 29.9$ \DIFaddbeginFL & \DIFaddFL{$0.5\sigma$ }\DIFaddendFL \\
+	$ R^{26}_{\mathrm{highFCME}}(\Bmumumu) $ & \DIFaddbeginFL \DIFaddFL{$1.98 \pm 0.0189$ }& \DIFaddendFL $1.97 \pm 0.0788$ \DIFaddbeginFL & \DIFaddFL{$0.1\sigma$ }\DIFaddendFL \\
+	$ R^{26}_{\mathrm{lowFCME}}(\Bmumumu) $ & \DIFaddbeginFL \DIFaddFL{$3.30 \pm 0.0$  }& \DIFaddendFL $3.31 \pm 0.1$ \DIFaddbeginFL & \DIFaddFL{$-0.1\sigma$  }\DIFaddendFL \\
+	$ R^{21}_{\mathrm{highFCME}}(\pr) $ & \DIFaddbeginFL \DIFaddFL{$0.0397 \pm 0.00118$  }& \DIFaddendFL $0.0397 \pm 0.00116$ \DIFaddbeginFL & \DIFaddFL{$0.0\sigma$ }\DIFaddendFL \\
+	$ R^{21}_{\mathrm{lowFCME}}(\pr) $ & \DIFaddbeginFL \DIFaddFL{$0.0271 \pm  0.000809$ }& \DIFaddendFL $0.0271 \pm 0.000794$ \DIFaddbeginFL & \DIFaddFL{$0.0\sigma$ }\DIFaddendFL \\
+	$ R^{21}_{\mathrm{highFCME}}(\Bmumumu) $ &\DIFaddbeginFL \DIFaddFL{$1.97 \pm 0.0305$ }& \DIFaddendFL $1.96 \pm 0.131$ \DIFaddbeginFL & \DIFaddFL{$0.1\sigma$ }\DIFaddendFL \\
+	$ R^{21}_{\mathrm{lowFCME}}(\Bmumumu) $ & \DIFaddbeginFL \DIFaddFL{$3.13 \pm 0.0498$ }& \DIFaddendFL $3.15 \pm 0.233$ \DIFaddbeginFL & \DIFaddFL{$-0.1\sigma$  }\DIFaddendFL \\
+	$ N(\bjpsimumuk)^{2016}_{\mathrm{highFCME}} $ & \DIFaddbeginFL \DIFaddFL{$29800 \pm 176$ }& \DIFaddendFL $29800 \pm 173$ \DIFaddbeginFL & \DIFaddFL{$0.0\sigma$ }\DIFaddendFL \\
+	$ N(\bjpsimumuk)^{2016}_{\mathrm{lowFCME}} $ & \DIFaddbeginFL \DIFaddFL{$64700 \pm 259$ }& \DIFaddendFL $64700 \pm 254$ \DIFaddbeginFL & \DIFaddFL{$0.0\sigma$ }\DIFaddendFL \\
+	$ N(\bjpsimumuk)^{Run\ \Rn{1}}_{\mathrm{highFCME}} $ &  \DIFaddbeginFL \DIFaddFL{$64100 \pm 257 $ }& \DIFaddendFL $64100 \pm 253$ \DIFaddbeginFL & \DIFaddFL{$0.0\sigma$ }\DIFaddendFL \\
+	$ N(\bjpsimumuk)^{Run\ \Rn{1}}_{\mathrm{lowFCME}} $ & \DIFaddbeginFL \DIFaddFL{$109000 \pm 337$ }& \DIFaddendFL $109000 \pm 331$ \DIFaddbeginFL & \DIFaddFL{$0.0\sigma$ }\DIFaddendFL \\
+	$ N^{scaled}_{misID_{\mathrm{highFCME}}} $ & \DIFaddbeginFL \DIFaddFL{$277 \pm 15.5$  }& \DIFaddendFL $278 \pm 15.2$ \DIFaddbeginFL & \DIFaddFL{$-0.1\sigma$ }\DIFaddendFL \\
+	$ N^{scaled}_{misID_{\mathrm{lowFCME}}} $ & \DIFaddbeginFL \DIFaddFL{$322 \pm 16.9$ }& \DIFaddendFL $331 \pm 16.3$ \DIFaddbeginFL & \DIFaddFL{$-0.6\sigma$ }\DIFaddendFL \\
+	$ \beta_{\mathrm{highFCME}} $ & \DIFaddbeginFL \DIFaddFL{free }& \DIFaddendFL $-0.00183 \pm 9.19\times 10^{-5}$ \DIFaddbeginFL & \DIFaddFL{- }\DIFaddendFL \\
+	$ \beta_{\mathrm{lowFCME}} $ & \DIFaddbeginFL \DIFaddFL{free }& \DIFaddendFL $-0.00226 \pm 0.000129$ \DIFaddbeginFL & \DIFaddFL{- }\DIFaddendFL \\
+	$ N_{combi_{\mathrm{highFCME}}} $ & \DIFaddbeginFL \DIFaddFL{free }&   \DIFaddendFL $620 \pm 34.3$ \DIFaddbeginFL & \DIFaddFL{- }\DIFaddendFL \\
+	$ N_{combi_{\mathrm{lowFCME}}} $ & \DIFaddbeginFL \DIFaddFL{free }& \DIFaddendFL $531 \pm 35.4$ \DIFaddbeginFL & \DIFaddFL{- }\DIFaddendFL \\
 \bottomrule
 \end{tabular}
-\caption{Fit results for all floating variables in the unblinded data fit. The $\mathcal{B}(\Bmumumu) =-1.8\times 10^{-8}$. Variables $R^{S}_{K}$ are the efficiency ratios obtained by normalising the decays to \bjpsimumuk decays where $S$ stands for stripping and $K$ for the FCME. $N^{scaled}_{misID_{K}}$ is the number of misID events, $N_{combi_{K}}$ is the number of combinatorial events, $\beta_{K}$ is the exponential constant, $\mu_{misID_{K}}$ and $\sigma_{misID_{K}}$ are the mean and the $\sigma$ of the CB function.}
+	\caption{Fit results for all floating \DIFaddbeginFL \DIFaddFL{(free and constrained) }\DIFaddendFL variables in the unblinded data fit. The $\mathcal{B}(\Bmumumu) =-1.8\times 10^{-8}$. Variables $R^{S}_{K}$ are the efficiency ratios obtained by normalising the decays to \bjpsimumuk decays where $S$ stands for stripping and $K$ for the FCME. $N^{scaled}_{misID_{K}}$ is the number of misID events, $N_{combi_{K}}$ is the number of combinatorial events, $\beta_{K}$ is the exponential constant, $\mu_{misID_{K}}$ and $\sigma_{misID_{K}}$ are the mean and the $\sigma$ of the CB function.}
 \label{tab:floatingparsummary_fit}
 \end{table}
 

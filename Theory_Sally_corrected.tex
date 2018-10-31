@@ -6,7 +6,9 @@
 
 
 \section{Review of the Standard Model}
-The \gls{SM} of particle physics is currently the most accurate model describing the buildings blocks of matter, particles, and their interactions via forces. In particular the \gls{SM} describes all the fundamental forces but gravity. It is a quantum field theory (\gls{QFT}) whereby the dynamics of the system is captured by the most general renormalisable Lagrangian density that is invariant under gauge symmetry. \gls{QFT} considers particles to be excited states of an underlying field, also known as quanta. In the \gls{SM}, particles and forces are the results of interactions between scalar, vector and spinor fields. In general there are two sets of particles. The first set are force-carrying particles also known as bosons, which have integer spin and are quanta of the scalar and vector fields. More specifically, there is the Higgs boson, the only elementary scalar boson in the \gls{SM}, and vector bosons: gluons, $W^{\pm}$, Z and $\gamma$. Secondly, there are the non-force carrying particles, which are fermions, quanta of spinor fields. Unlike bosons they carry half-integer spin. These can be further classified into two elementary families of particles: quarks, which cannot be observed alone and leptons which can be detected on their own. Out of all of these fundamental particles, those that have mass acquire it by the Higgs mechanism.
+The \gls{SM} of particle physics \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\cite{Glashow:1961tr,Weinberg:1967tq,Salam:1968rm,Higgs:1966ev,Kibble:1967sv} }%DIFAUXCMD
+}\DIFaddend is currently the most accurate model describing the buildings blocks of matter, particles, and their interactions via forces. In particular the \gls{SM} describes all the fundamental forces but gravity. It is a quantum field theory (\gls{QFT}) whereby the dynamics of the system is captured by the most general renormalisable Lagrangian density that is invariant under gauge symmetry. \gls{QFT} considers particles to be excited states of an underlying field, also known as quanta. In the \gls{SM}, particles and forces are the results of interactions between scalar, vector and spinor fields. In general there are two sets of particles. The first set are force-carrying particles also known as bosons, which have integer spin and are quanta of the scalar and vector fields. More specifically, there is the Higgs boson, the only elementary scalar boson in the \gls{SM}, and vector bosons: gluons, $W^{\pm}$, Z and $\gamma$. Secondly, there are the non-force carrying particles, which are fermions, quanta of spinor fields. Unlike bosons they carry half-integer spin. These can be further classified into two elementary families of particles: quarks, which cannot be observed alone and leptons which can be detected on their own. Out of all of these fundamental particles, those that have mass acquire it by the Higgs mechanism.
 
 %Quarks are affected by all three fundamental forces. They come in six different \textit{flavours} and they carry fractional charge as seen in~\autoref{nonlin}.
 
@@ -329,7 +331,9 @@ In this equation there is a new term $V_{ij}=V_{CKM}= U_{uL} U_{dL}^\dag$ which 
 
 \section{The Quark Mixing Matrix}
 \label{ckm}
-As mentioned above, from the transformation of the mass matrix using two unitary matrices one obtains the \gls{CKM} matrix which exhibits a strong hierarchy in the size of the matrix elements. From the previous discussion the quark mixing matrix is a $3 \times 3$ complex unitary matrix yielding 18 parameters to start with. Unitarity of the \gls{CKM} matrix implies that matrix elements are orthonormal, reducing the count of free parameters to 9. Further, 5 out of 6 quark phases can be absorbed into the redefinition of the quark field, cutting the number of parameters down to 4 parameters, three quark mixing angles and one CP (charge-parity) violating phase. There are many different parametrisations \DIFdelbegin \DIFdel{which are all mathematically equivalent to }\DIFdelend \DIFaddbegin \DIFadd{of }\DIFaddend the \gls{CKM} matrix, but the standard parametrisation of the \gls{CKM} matrix for flavour mixing is
+As mentioned above, from the transformation of the mass matrix using two unitary matrices one obtains the \gls{CKM} matrix which exhibits a strong hierarchy in the size of the matrix elements. From the previous discussion the quark mixing matrix is a $3 \times 3$ complex unitary matrix yielding 18 parameters to start with. Unitarity of the \gls{CKM} matrix implies that matrix elements are orthonormal, reducing the count of free parameters to 9. Further, 5 out of 6 quark phases can be absorbed into the redefinition of the quark field, cutting the number of parameters down to 4 parameters, three quark mixing angles and one CP (charge-parity) violating phase. There are many different parametrisations \DIFdelbegin \DIFdel{which are all mathematically equivalent to }\DIFdelend \DIFaddbegin \DIFadd{of }\DIFaddend the \gls{CKM} matrix, but the standard parametrisation of the \gls{CKM} matrix\DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\cite{Chau:1984fp} }%DIFAUXCMD
+}\DIFaddend for flavour mixing is
 
 \begin{align}
 V_{\rm CKM} &=  \begin{pmatrix}   V_{ud} & V_{us} & V_{ub} \cr
@@ -601,5 +605,19 @@ The following decay model is developed to reflect the expected behaviour of deca
 %\vspace*{-1.0cm}
 \end{figure}
 
-Finally, there is a decay model based on calculations from \DIFaddbegin \DIFadd{the }\DIFaddend VMD model, which was written by authors of \cite{Danilina:2018uzr}. This model \DIFaddbegin \DIFadd{is }\DIFaddend denoted as \textit{NIKI}.
+Finally, there is a decay model based on calculations from \DIFaddbegin \DIFadd{the }\DIFaddend VMD model, which was written by authors of \cite{Danilina:2018uzr}. This model \DIFaddbegin \DIFadd{is }\DIFaddend denoted as \textit{NIKI}. \DIFaddbegin \DIFadd{Distribution for $q^{2}(\mu^{+},\mu^{-})$ can be seen in ~}\autoref{fig:nikmodq2}\DIFadd{. 
+}
+
+
+\begin{figure}[H]
+\center
+\includegraphics[width = 0.5\textwidth]{./sel/q2_NNmodel.pdf}
+\caption{\DIFaddFL{$q^{2}(\mu^{+},\mu^{-})$ distribution using model the VDM model. The contribution from photon pole, $\rho$ and $\omega$ can be seen. This Figure was produced by a collaborator.}}
+\label{fig:nikmodq2}
+\end{figure}
+\DIFaddend 
+
+
+
+
 

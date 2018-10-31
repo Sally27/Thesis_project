@@ -9,45 +9,45 @@ Database file #3: LHCb-CONF.bib
 Database file #4: LHCb-DP.bib
 Database file #5: LHCb-TDR.bib
 Warning--empty institution in Egede:1694339
-You've used 65 entries,
+You've used 71 entries,
             2909 wiz_defined-function locations,
-            1162 strings with 18144 characters,
-and the built_in function-call counts, 283800 in all, are:
-= -- 31010
-> -- 515
+            1209 strings with 18958 characters,
+and the built_in function-call counts, 294762 in all, are:
+= -- 32184
+> -- 544
 < -- 3
-+ -- 1917
-- -- 123
-* -- 28840
-:= -- 34975
-add.period$ -- 67
-call.type$ -- 65
-change.case$ -- 63
++ -- 2036
+- -- 130
+* -- 29850
+:= -- 36457
+add.period$ -- 73
+call.type$ -- 71
+change.case$ -- 69
 chr.to.int$ -- 0
-cite$ -- 66
-duplicate$ -- 4635
-empty$ -- 29926
-format.name$ -- 123
-if$ -- 61933
+cite$ -- 72
+duplicate$ -- 4966
+empty$ -- 31048
+format.name$ -- 130
+if$ -- 64307
 int.to.chr$ -- 0
-int.to.str$ -- 65
-missing$ -- 296
-newline$ -- 403
-num.names$ -- 61
-pop$ -- 1113
+int.to.str$ -- 71
+missing$ -- 324
+newline$ -- 439
+num.names$ -- 67
+pop$ -- 1201
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 472
+skip$ -- 503
 stack$ -- 0
-substring$ -- 84239
+substring$ -- 87101
 swap$ -- 15
-text.length$ -- 133
+text.length$ -- 145
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 1653
-width$ -- 67
-write$ -- 1020
+while$ -- 1771
+width$ -- 73
+write$ -- 1110
 (There was 1 warning)
