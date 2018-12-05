@@ -10,7 +10,7 @@
 MAIN = Main
 
 # name of the target - change that to something descriptive, like paper-v0, Bs2PhiPhi-ANA-v1, etc...
-TARGET = thesis_corrected
+TARGET = Stefkova-S-2018-PhD-Thesis
 
 # name of command to perform Latex (either pdflatex or latex)
 LATEX = pdflatex

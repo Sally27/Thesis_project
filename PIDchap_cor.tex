@@ -17,7 +17,7 @@ In each muon station (\gls{muonstation}) a field of interest, \gls{FOI} is defin
 \begin{equation}
 	FOI_{x,y}=\rho^{0}_{x,y}+\rho^{1}_{x,y}\cdot \exp \left(\frac{\rho^{2}_{x,y}\cdot p}{\gevc} \right),
 \end{equation}
-where $x,y$ are the dimensions perpendicular to the direction of the beam, $p$ is the momentum of the muon, $\rho^{i}_{x,y}$ are three dimensional parameters tuned to give the best performance, by maximizing efficiency versus misID rate. This \gls{FOI} can be thought of as cone whose radius depends on the $p$.
+where $x,y$ are the dimensions perpendicular to the direction of the beam, $p$ is the momentum of the muon, $\rho^{i}_{x,y}$ are three dimensional parameters tuned to give the best performance, by maximizing efficiency versus misID rate. This \gls{FOI} can be thought of as a cone whose radius depends on the $p$.
 
 When a muon passes through the detector, it leaves hits ($h_{x,y}$ coordinate) in a pad with size $pad_{x,y}$ of each muon station. From the tracks formed in the tracking part of the detector, coordinates $E_{x,y}$ are obtained by extrapolated the tracks into the muon stations. The hits are considered to be within the \gls{FOI} if they satisfy the condition that $|| h_{d} - E_{d} || < FOI_{d} \cdot pad_{d}$ for both d={x,y}. 
 
@@ -238,7 +238,8 @@ ID kaon & DLLK $>$ 0 and DLLK-DLLp $>$ 0 and \texttt{IsMuon==0} \\
 
 
 \subsection{Fitting Strategy for \mb{B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}}}
-In order to obtain misID and ID rates using $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ channel number of signal events $N_{B^{0} \rightarrow J/\psi K^{*}}$ needs to be obtained. The shape for the signal component, $B^{0} \rightarrow J/\psi K^{*}$, is obtained by fixing the shape from simulation apart from the mean $\mu$ and the width $\sigma$. It is fitted with a double-sided Ipatia function \cite{Santos:2013gra} (more in~\autoref{IP}). In addition, residual background after selection also needs to be modelled.
+In order to obtain misID and ID rates using the $B^{0} \rightarrow J/\psi(\rightarrow \mu^{+} \mu^{-}) K^{*}$ channel, the number of signal events $N$ needs to be obtained. The shape for the signal component, $B^{0} \rightarrow J/\psi K^{*}$, is obtained by fixing the shape from simulation apart from the mean $\mu$ and the width $\sigma$. It is fitted with a double-sided Ipatia function \cite{Santos:2013gra} (more in~\autoref{IP}). In addition, the residual background after selection needs to be modelled. 
+
 
 Background that peaks in the upper mass sideband, coming from heavier $B^{0}_{s}$, $\bar{B}^{0}_{s} \rightarrow J/\psi (\rightarrow \mu^{+} \mu^{-}) K^*(\rightarrow \underline{K^{+} \pi^{-}})$ is also modelled using simulation, using the same function as signal but with $\mu$ offset by the difference between the known $B^{0}_{s}$ and $B^{0}$ masses.
 

@@ -28,7 +28,7 @@
 \contentsline {section}{\numberline {3.6}Calorimetry }{72}{section.3.6}
 \contentsline {section}{\numberline {3.7}Muon Stations }{74}{section.3.7}
 \contentsline {subsection}{\numberline {3.7.1}Muon Identification }{75}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Muon Identification Performance}{77}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.2}Muon Identification Performance}{76}{subsection.3.7.2}
 \contentsline {section}{\numberline {3.8}Trigger }{78}{section.3.8}
 \contentsline {section}{\numberline {3.9}Simulation }{82}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}Differences in Simulation and Data}{83}{subsection.3.9.1}
@@ -62,11 +62,11 @@
 \contentsline {section}{\numberline {5.10}Fractional Corrected Mass Error (FCME) Window Split}{131}{section.5.10}
 \contentsline {chapter}{\numberline {6}Background Studies}{134}{chapter.6}
 \contentsline {section}{\numberline {6.1}Combinatorial Background}{134}{section.6.1}
-\contentsline {section}{\numberline {6.2}MisID Type Background}{135}{section.6.2}
+\contentsline {section}{\numberline {6.2}MisID Type Background}{136}{section.6.2}
 \contentsline {section}{\numberline {6.3}Partially Reconstructed Background}{141}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Partially Reconstructed Backgrounds, where \mb {D^{0} \rightarrow \eta / \eta ' X}, and \mb {\eta / \eta ' \rightarrow \mu \mu \gamma }}{143}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Partially Reconstructed \mb {B \rightarrow \eta (') V} Backgrounds}{145}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Rare and Resonant \mb {B^{+} \rightarrow \pi ^{+} / K^{+} \mu ^{-} \mu ^{+}} Backgrounds}{146}{section.6.4}
+\contentsline {subsection}{\numberline {6.3.2}Partially Reconstructed \mb {B \rightarrow \eta (') V} Backgrounds}{144}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Rare and Resonant \mb {B^{+} \rightarrow \pi ^{+} / K^{+} \mu ^{-} \mu ^{+}} Backgrounds}{145}{section.6.4}
 \contentsline {section}{\numberline {6.5}Summary}{146}{section.6.5}
 \contentsline {chapter}{\numberline {7}Mass Fits and Efficiencies}{147}{chapter.7}
 \contentsline {section}{\numberline {7.1}Efficiency Ratio}{147}{section.7.1}

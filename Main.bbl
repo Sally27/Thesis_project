@@ -56,17 +56,30 @@ S.~L. Glashow, \ifthenelse{\boolean{articletitles}}{\emph{{Partial Symmetries
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem{Weinberg:1967tq}
-S.~Weinberg, \ifthenelse{\boolean{articletitles}}{\emph{{A Model of Leptons}},
-  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.19.1264}{Phys.\ Rev.\ Lett.\
-  \textbf{19} (1967) 1264}\relax
+\bibitem{Englert:1964et}
+F.~Englert and R.~Brout, \ifthenelse{\boolean{articletitles}}{\emph{{Broken
+  Symmetry and the Mass of Gauge Vector Mesons}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.13.321}{Phys.\ Rev.\ Lett.\
+  \textbf{13} (1964) 321}, [,157(1964)]\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem{Salam:1968rm}
-A.~Salam, \ifthenelse{\boolean{articletitles}}{\emph{{Weak and Electromagnetic
-  Interactions}}, }{}Conf.\ Proc.\  \textbf{C680519} (1968) 367\relax
+\bibitem{Higgs:1964ia}
+P.~W. Higgs, \ifthenelse{\boolean{articletitles}}{\emph{{Broken symmetries,
+  massless particles and gauge fields}},
+  }{}\href{http://dx.doi.org/10.1016/0031-9163(64)91136-9}{Phys.\ Lett.\
+  \textbf{12} (1964) 132}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Guralnik:1964eu}
+G.~S. Guralnik, C.~R. Hagen, and T.~W.~B. Kibble,
+  \ifthenelse{\boolean{articletitles}}{\emph{{Global Conservation Laws and
+  Massless Particles}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.13.585}{Phys.\ Rev.\ Lett.\
+  \textbf{13} (1964) 585}, [,162(1964)]\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -80,11 +93,26 @@ P.~W. Higgs, \ifthenelse{\boolean{articletitles}}{\emph{{Spontaneous Symmetry
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{Weinberg:1967tq}
+S.~Weinberg, \ifthenelse{\boolean{articletitles}}{\emph{{A Model of Leptons}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.19.1264}{Phys.\ Rev.\ Lett.\
+  \textbf{19} (1967) 1264}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem{Kibble:1967sv}
 T.~W.~B. Kibble, \ifthenelse{\boolean{articletitles}}{\emph{{Symmetry breaking
   in nonAbelian gauge theories}},
   }{}\href{http://dx.doi.org/10.1103/PhysRev.155.1554}{Phys.\ Rev.\
   \textbf{155} (1967) 1554}, [,165(1967)]\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Salam:1968rm}
+A.~Salam, \ifthenelse{\boolean{articletitles}}{\emph{{Weak and Electromagnetic
+  Interactions}}, }{}Conf.\ Proc.\  \textbf{C680519} (1968) 367\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

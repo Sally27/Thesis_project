@@ -48,8 +48,12 @@ In\DIFdelbegin \DIFdel{Equation }\DIFdelend ~\autoref{eq:number}, $\varepsilon_{
 \item Method \Rn{3} - The data-driven approach using \texttt{PIDCalib} package explained in~\autoref{simulationchap} of determining \DIFaddbegin \DIFadd{the }\DIFaddend PID efficiency is used.
  \end{itemize} 
 
-\DIFaddbegin \DIFadd{All of these efficiencies will have systematic uncertainty associated with them. These systematic uncertaintied are combined into one systematics which cumulatively taken into account in~}\autoref{systematics} \DIFadd{in Signal Decay Model section. 
+\DIFaddbegin \DIFadd{All of these efficiencies will have a systematic uncertainty associated with them.
+These systematic uncertainties are combined into one cumulative systematic which is
+taken into account in~}\autoref{systematics} \DIFadd{in the Signal Decay Model section.
 }
+
+%DIF > All of these efficiencies will have systematic uncertainty associated with them. These systematic uncertaintied are combined into one systematics which cumulatively taken into account in~\autoref{systematics} in Signal Decay Model section. 
 
 \DIFaddend Having all the individual efficiencies the relative efficiency with no FCME split, $R_{\rm{NOFCME}}^{\{21,26\}}(\varepsilon)$, can be calculated as 
 
@@ -142,7 +146,7 @@ Hence resulting values for \DIFaddbegin \DIFadd{the }\DIFaddend relative no frac
 \end{aligned}
 \label{eq:nofcmeer}
 \end{equation}
-\DIFdelbegin \DIFdel{Including }\DIFdelend \DIFaddbegin \DIFadd{Upon obtaining the efficiencies with }\DIFaddend fractional corrected mass split\DIFaddbegin \DIFadd{, which }\DIFaddend defined in~\autoref{eq:splitted}\DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{, the efficiency }\DIFaddend ratios are
+\DIFdelbegin \DIFdel{Including }\DIFdelend \DIFaddbegin \DIFadd{Upon obtaining the efficiencies with the }\DIFaddend fractional corrected mass split\DIFaddbegin \DIFadd{, which }\DIFaddend defined in~\autoref{eq:splitted}\DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{, the efficiency }\DIFaddend ratios are
 
 \begin{equation}
 \begin{aligned}
@@ -243,7 +247,7 @@ However in 2016, the trigger thresholds have been changing often resulting in 16
 \DIFdel{as the }\DIFdelend \DIFaddbegin \DIFadd{. This is because the }\DIFaddend \gls{PV} finding-algorithm is different \DIFdelbegin \DIFdel{, but these have }\DIFdelend \DIFaddbegin \DIFadd{hence the containers store different }\gls{minipchi2} \DIFadd{but this has }\DIFaddend negligible effect. %\mybox{mentioning this just for reproducibility, but maybe not necessary}.
 %Therefore the emulation will not be exact, however, the effect is very small as it seems to be only resolution that will slightly shift the distribution, see figure ~\autoref{fig:hlt1shortcoming} 
 
-In order to obtain the average efficiency for 2016, the 16 TCK efficiencies are weighted by the proportion of \DIFdelbegin \DIFdel{luminosity corresponding to }\DIFdelend the integrated luminosity \DIFdelbegin \DIFdel{for a given TCK over the full 2016 integrated luminosity}\DIFdelend \DIFaddbegin \DIFadd{taken the given TCK setting}\DIFaddend .
+In order to obtain the average efficiency for 2016, the 16 TCK efficiencies are weighted by the proportion of \DIFdelbegin \DIFdel{luminosity corresponding to }\DIFdelend the integrated luminosity \DIFdelbegin \DIFdel{for a given TCK over the full 2016 integrated luminosity}\DIFdelend \DIFaddbegin \DIFadd{taken with the given TCK setting}\DIFaddend .
 %The integrated luminosity per TCK was extracted by looking at API version of the \gls{LHCb} run database. 
 
 The full trigger efficiency for 2016 is calculated by averaging the luminosity-weighted efficiencies, as seen in ~\autoref{tab:L0andHLT1Calib}. This TCK-dependant luminosity-weighted average efficiency is going to be given as a final efficiency for 2016 from now on for all subsequent efficiencies unless stated otherwise.  
@@ -650,14 +654,14 @@ Sample & Stripping & Split  &Yields \\
 
 \subsection{Signal Channel Parametrisation}
 \label{sigpara}
-To fit the signal data, the default fitting strategy is to use a simultaneous unbinned maximum likelihood fit to the $\mu^{+} \mu^{-} \mu^{+}$ corrected mass spectrum \DIFdelbegin \DIFdel{to combined }\DIFdelend \DIFaddbegin \DIFadd{for the  }\DIFaddend Run \Rn{1} and 2016 dataset after the full selection in two bins of fractional corrected mass error, which is denoted as the simultaneous fit. \DIFaddbegin \DIFadd{In this fit, branching fraction for $\Bmumumu$  is directly fitted as the parameter of interest. }\DIFaddend As a cross-check a non-simultaneous fit, where no splitting in bins of corrected mass is done, is denoted as \DIFaddbegin \DIFadd{the }\DIFaddend non-simultaneous fit. The parametrisation of all the components for the full signal model fit is described below.
+To fit the signal data, the default fitting strategy is to use a simultaneous unbinned maximum likelihood fit to the $\mu^{+} \mu^{-} \mu^{+}$ corrected mass spectrum \DIFdelbegin \DIFdel{to combined }\DIFdelend \DIFaddbegin \DIFadd{for the  }\DIFaddend Run \Rn{1} and 2016 dataset after the full selection in two bins of fractional corrected mass error, which is denoted as the simultaneous fit. \DIFaddbegin \DIFadd{In this fit, the branching fraction for $\Bmumumu$  is directly fitted as the parameter of interest. }\DIFaddend As a cross-check a non-simultaneous fit, where no splitting in bins of corrected mass is done, is denoted as \DIFaddbegin \DIFadd{the }\DIFaddend non-simultaneous fit. The parametrisation of all the components for the full signal model fit is described below.
 
 
 \subsubsection{Signal}
 The full fit to Run \Rn{1} and 2016 data requires the \DIFdelbegin \DIFdel{signal shape knowledge }\DIFdelend \DIFaddbegin \DIFadd{knowledge of the signal shape }\DIFaddend for the combined dataset. This is obtained from a Run \Rn{1} and 2016 signal simulation \textit{cocktail}. The cocktail is created after full selection by assigning event-by-event weights, \textit{$w^{i}$}, which capture the differences between \DIFaddbegin \DIFadd{the }\DIFaddend Run \Rn{1} and 2016 simulation, that \DIFdelbegin \DIFdel{ware }\DIFdelend \DIFaddbegin \DIFadd{were }\DIFaddend not considered by the full selection.
 
 Firstly, weights that reflect the expected difference due to \DIFaddbegin \DIFadd{the }\DIFaddend increased luminosity are computed. \DIFdelbegin \DIFdel{To obtain these signal weights, the following conditions must be satisfied
-}\DIFdelend \DIFaddbegin \DIFadd{Defining $\mathcal{L}^{2012},\mathcal{L}^{2016}$ to be the integrated luminosities and $\sigma^{2012}_{pp \rightarrow b \overline{b}}, \sigma^{2016}_{pp \rightarrow b \overline{b}}$ to be the cross-sections in a given year the following defitions are provided
+}\DIFdelend \DIFaddbegin \DIFadd{Defining $\mathcal{L}^{2012},\mathcal{L}^{2016}$ to be the integrated luminosities and $\sigma^{2012}_{pp \rightarrow b \overline{b}}, \sigma^{2016}_{pp \rightarrow b \overline{b}}$ to be the cross-sections in a given year the following definitions are provided
 }\DIFaddend 
 
 %Signal shape for Run \Rn{1} and Run \Rn{2} is described by probability density function (P.D.F) in corrected mass taken from $B^{+} \rightarrow \mu^{+} \mu^{-} \mu^{+} \nu_\mu$ 2012 MC and 2016 MC cocktail. After all respective
@@ -670,7 +674,7 @@ n^{2012}=\mathcal{L}^{2012} \times \sigma^{2012}_{pp \rightarrow b \overline{b}}
 n^{2016}=\mathcal{L}^{2016} \times \sigma^{2016}_{pp \rightarrow b \overline{b}}\DIFdelbegin \DIFdel{,
 }\DIFdelend \DIFaddbegin \DIFadd{.
 }\DIFaddend \end{equation}
-\DIFaddbegin \DIFadd{The signal weights can be obtained by solving the following system of the two equations
+\DIFaddbegin \DIFadd{The signal weights can be obtained by solving the following system of two equations
 }\DIFaddend 
 
 \DIFdelbegin \begin{displaymath}
@@ -742,7 +746,7 @@ $\sigma_{pp \rightarrow b \overline{b}}$ & 1 & 2  \\
 \label{tab:MCweightNOFCME}
 \end{table}
 
-Secondly, \DIFaddbegin \DIFadd{a }\DIFaddend event-by-event weight which differs between Run \Rn{1} and 2016 that \DIFdelbegin \DIFdel{need }\DIFdelend \DIFaddbegin \DIFadd{needs }\DIFaddend to be accounted \DIFaddbegin \DIFadd{for  }\DIFaddend is the PID efficiency $\varepsilon_{PID}$ (see~\autoref{tab:effsumarry}), which depends on the kinematics of the final state particles. It is denoted as \DIFdelbegin \DIFdel{$w^{i\varepsilon\{2012,2016\}}_{\varepsilon^{i}_{PID}}$}\DIFdelend \DIFaddbegin \DIFadd{$w^{i\in\{2012,2016\}}_{\varepsilon^{i}_{PID}}$}\DIFaddend . 
+Secondly, \DIFaddbegin \DIFadd{an }\DIFaddend event-by-event weight which differs between Run \Rn{1} and 2016 that \DIFdelbegin \DIFdel{need }\DIFdelend \DIFaddbegin \DIFadd{needs }\DIFaddend to be accounted \DIFaddbegin \DIFadd{for  }\DIFaddend is the PID efficiency $\varepsilon_{PID}$ (see~\autoref{tab:effsumarry}), which depends on the kinematics of the final state particles. It is denoted as \DIFdelbegin \DIFdel{$w^{i\varepsilon\{2012,2016\}}_{\varepsilon^{i}_{PID}}$}\DIFdelend \DIFaddbegin \DIFadd{$w^{i\in\{2012,2016\}}_{\varepsilon^{i}_{PID}}$}\DIFaddend . 
 
 The final weight of an event depending on Run \Rn{1} and 2016 is calculated \DIFaddbegin \DIFadd{a
 }\DIFaddend 
@@ -765,7 +769,7 @@ After obtaining \DIFaddbegin \DIFadd{a }\DIFaddend combined Run \Rn{1} and 2016 
 \label{fig:MCSignalFit}
 \end{figure}
 
-\textbf{The signal yield}\DIFdelbegin \DIFdel{that is observed in the fit}\DIFdelend , $N^{sig}=N(\Bmumumu)$, \DIFaddbegin \DIFadd{can be obtained by combining the fit result values from other parameters. It }\DIFaddend is related to the branching fraction using the normalisation channel in the following way:
+\textbf{The signal yield}\DIFdelbegin \DIFdel{that is observed in the fit}\DIFdelend , $N^{sig}=N(\Bmumumu)$, is \DIFaddbegin \DIFadd{calculated using several parameters. More specifically, it is }\DIFaddend related to the branching fraction using the normalisation channel in the following way:
 \begin{equation}
 \begin{split}
 \mathcal{B}(\Bmumumu)&=\alpha \times N(\Bmumumu)\\
@@ -866,7 +870,7 @@ The shape is best described with the sum of two Crystal Ball functions, more in~
 
 \subsubsection{MisID background}
 \label{misidfitstrat}
-The level and the shape of misID background is determined by fitting the misID data samples obtained using the method described in~\autoref{misidprocedure}. A binned $\chi^{2}$ fit is used to extract the shape and yields parameters. The reason for usage of the binned $\chi^{2}$ fit is that the misID samples are \DIFdelbegin \DIFdel{low-statistics }\DIFdelend \DIFaddbegin \DIFadd{little populated }\DIFaddend weighted samples and the shape and yield needs to be propagated to the final data fit while preserving the fit parameter correlations. Since there is a prescale factor of 1\% at stripping level, to obtain the correct yield, the final number \DIFdelbegin \DIFdel{needs }\DIFdelend \DIFaddbegin \DIFadd{need }\DIFaddend to be multiplied by 100 to counteract the prescale.
+The level and the shape of misID background is determined by fitting the misID data samples obtained using the method described in~\autoref{misidprocedure}. A binned $\chi^{2}$ fit is used to extract the shape and yields parameters. The reason for usage of the binned $\chi^{2}$ fit is that the misID samples are \DIFdelbegin \DIFdel{low-statistics }\DIFdelend \DIFaddbegin \DIFadd{little populated }\DIFaddend weighted samples and the shape and yield needs to be propagated to the final data fit while preserving the fit parameter correlations. Since there is a prescale factor of 1\% at stripping level, to obtain the correct yield, the final number needs to be multiplied by 100 to counteract the prescale.
 
 The misID weights obtained from kinematically binned \bjpsikst samples (see ~\autoref{extraction}) have uncertainties associated with them as shown in Figures~\ref{fig:JpsiKnew}\DIFaddbegin \DIFadd{(a)}\DIFaddend ,~\ref{fig:JpsiKaonnew}\DIFaddbegin \DIFadd{(a)}\DIFaddend ,~\ref{fig:JpsiPionnew2016}\DIFaddbegin \DIFadd{(a)}\DIFaddend ,~\ref{fig:JpsiKaonnew2016}\DIFaddbegin \DIFadd{(a)}\DIFaddend . These uncertainties are accounted for in the fit by Gaussian variation of the weights within the uncertainty in a given kinematic bin of $p,\eta$ for each particle species and then folded in to the misID calculation. In this case 100 variations were used. Each variation results in a different template for the misID shape. This misID template is then subsequently binned in 15 bins of corrected mass. From each corrected mass bin, mean $\mu_{var}$ and error $\sigma_{var}$ from gaussianly distributed number of misID events is obtained. 
 
@@ -1259,9 +1263,9 @@ These pseudo-datasets are then re-fitted with floating $\mathcal{B}$ and \DIFadd
 \frac{N^{orig}_{sig}-N^{fit}_{sig}}{\sigma^{fit}}.
 \end{equation}
 
-The pull distributions can be fitted with a gaussian function and the fit bias is calculated as a shift of the mean from 0. The \DIFdelbegin \DIFdel{overcoverage/undecoverage }\DIFdelend \DIFaddbegin \DIFadd{coverage }\DIFaddend of the fit is established by shift of the standard deviation of the gaussian function from 1.
+The pull distributions can be fitted with a gaussian function and the fit bias is calculated as a shift of the mean from 0. The \DIFdelbegin \DIFdel{overcoverage/undecoverage of the fit }\DIFdelend \DIFaddbegin \DIFadd{pull distribution quality of the fits }\DIFaddend is established by shift of the standard deviation of the gaussian function from 1.
 
-For this study 10000 pseudo-experiments were created testing the bias and coverage of both the extended non-simultaneous fit and extended simultaneous fit. The pull distributions for the non-simultaneous fit can be seen in ~\autoref{fig:SignalBias}.
+For this study 10000 pseudo-experiments were created testing the bias \DIFdelbegin \DIFdel{and coverage }\DIFdelend of both the extended non-simultaneous fit and extended simultaneous fit. The pull distributions for the non-simultaneous fit can be seen in ~\autoref{fig:SignalBias}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\linewidth]{./efficiency/systematics/signalbias/notsim.pdf}
@@ -1274,14 +1278,14 @@ For this study 10000 pseudo-experiments were created testing the bias and covera
 \label{fig:SignalBias}
 \end{figure}
 
-As it can be seen, for \DIFaddbegin \DIFadd{the }\DIFaddend non-simultaneous fit \DIFdelbegin \DIFdel{there is overcoverage of 4 $\%$ but }\DIFdelend \DIFaddbegin \DIFadd{the value of the standard deviation is $0.961\pm0.007$ which means that the coverage is reasonably good but not perfect. But }\DIFaddend since the statistical error is of the order of 100$\%$ this is \DIFdelbegin \DIFdel{insignificant}\DIFdelend \DIFaddbegin \DIFadd{not so significant}\DIFaddend .
+As it can be seen, for \DIFaddbegin \DIFadd{the }\DIFaddend non-simultaneous fit \DIFdelbegin \DIFdel{there is overcoverage of 4 $\%$ but }\DIFdelend \DIFaddbegin \DIFadd{the pull distribution follows Gaussian distribution with the value of the standard deviation of $0.961\pm0.007$ which is reasonably good but not perfect. But }\DIFaddend since the statistical error is of the order of 100$\%$ this is \DIFdelbegin \DIFdel{insignificant}\DIFdelend \DIFaddbegin \DIFadd{not so significant}\DIFaddend .
 The bias shows 8$\%$ preference for lower signal yields, and hence this will be added as a systematic uncertainty. The same process was repeated for \DIFaddbegin \DIFadd{the }\DIFaddend simultaneous fit and results can be seen in~\autoref{tab:biassum}. 
 
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{ l  l  l  l  l }
 \toprule
-        Fit & $\mathcal{B}$ & Statistical Error & \DIFdelbeginFL \DIFdelFL{Overcoverage }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Coverage }\DIFaddendFL & Bias \\
+        Fit & $\mathcal{B}$ & Statistical Error & \DIFdelbeginFL \DIFdelFL{Overcoverage }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Distribution Quality }\DIFaddendFL & Bias \\
 \hline
         \DIFdelbeginFL \DIFdelFL{Not Simultaneous  }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Non-simultaneous  }\DIFaddendFL & $1.0\times 10^{-8}$ & $\approx$ 100\% & 4\% & 8\%   \\
         Simultaneous  & $1.0\times 10^{-8}$ & $\approx$ 100\% & 6\% & 1\%   \\

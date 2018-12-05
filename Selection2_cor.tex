@@ -17,7 +17,7 @@ After the selection, the $\Bmumumu$ decays are normalised to the $\bjpsimumuk$ d
 
 
 
-Throughout the analysis there was a blinding procedure put in place for this search in order not to bias the result. The corrected mass of $B^{\pm}$ $M_{\rm{B_{corr}}}$, which is detailed in~\autoref{eq:corrm}, is the fit variable for this search. The signal region $4500{\mevcc}<M_{\rm{B_{corr}}}<{5500\mevcc}$ was blinded until the full strategy and sensitivity was evaluated. The signal dataset corresponding to this selection is known as \textbf{blinded signal dataset}. After unblinding, data with the full mass spectrum was obtained and is known as \textbf{full signal dataset}.%  Hence in all blinded fits only data in regions $4000{\mevcc}<M_{\rm{B_{corr}}}<{4500\mevcc}$ and $5500{\mevcc}<M_{\rm{B_{corr}}}<{7000\mevcc}$ are used.
+Throughout the analysis there was a blinding procedure put in place for this search in order not to bias the result. The corrected mass of the $B^{\pm}$ ($M_{\rm{B_{corr}}}$), detailed in~\autoref{eq:corrm}, is the fit variable for this search. The signal region $4500{\mevcc}<M_{\rm{B_{corr}}}<{5500\mevcc}$ was blinded until the full strategy and sensitivity was evaluated. The signal dataset corresponding to this selection is known as \textbf{blinded signal dataset}. After unblinding, data with the full mass spectrum was obtained and is known as \textbf{full signal dataset}.%  Hence in all blinded fits only data in regions $4000{\mevcc}<M_{\rm{B_{corr}}}<{4500\mevcc}$ and $5500{\mevcc}<M_{\rm{B_{corr}}}<{7000\mevcc}$ are used.
 
 
 
@@ -121,7 +121,7 @@ All background sources that contain at least one misidentified particle are cate
 
 As the hadronisation of a $b\bar{b}$ pair leads to the creation of two $b$ hadrons, each with their own decay chain, it is possible to mix up the decay products of the two to create a single fake signal candidate. This type of background is known as combinatorial background.
 
-Presence of a neutrino in a final state introduces uncertainty regarding the information of the fourth decay product. If some of the tracks of the decays are not reconstructed, either because they are neutral, or they are charged but with too low momentum to be found by the tracking algorithm, it means that the missing information may be attributed to the neutrino. \textit{Missing tracks} will hence create partially reconstructed background. Some of the most dangerous are ${B^{+} \rightarrow D \mu^{+} \nu}$ type partially reconstructed backgrounds, where $D^0 \rightarrow K^- \pi^+ \mu^{+} \mu^{-}$.
+The presence of a neutrino in a final state introduces uncertainty regarding the information of the fourth decay product. If some of the tracks of the decays are not reconstructed, either because they are neutral, or they are charged but with too low momentum to be found by the tracking algorithm, it means that the missing information may be attributed to the neutrino. \textit{Missing tracks} will hence create partially reconstructed background. Some of the most dangerous are ${B^{+} \rightarrow D \mu^{+} \nu}$ type partially reconstructed backgrounds, where $D^0 \rightarrow K^- \pi^+ \mu^{+} \mu^{-}$.
 
 Decays that proceed via hadronic resonances such as $B^{+} \rightarrow \rho/\omega \mu^{+} \nu$, followed by $\rho/\omega \rightarrow \mu^{+} \mu^{-}$ are part of the signal as mentioned in~\autoref{mydecay} and thus not a background.
 
@@ -301,7 +301,7 @@ Trigger Selection  \\ %& 2011 & 2012 & 2016 \\
 	\label{tab:triggersel}
 \end{table}
 
-As discussed in~\autoref{triggerchap} \texttt{L0MuonDecision} decides on whether an event is accepted depending on the $p_{T}$ of a muon and the number of hits in the \gls{SPD}. Run \Rn{1} can be split into 2011 and 2012 conditions where, in 2011 the most used thresholds for positive decision are 1.48 \gevc \cite{Aaij:2012me} and 1.76 \gevc \cite{Albrecht:2013fba}. Run \Rn{1} \gls{SPD} rate only accepts events below 600 hits. In 2016, the trigger thresholds varied more but the most representative acceptance for muon $p_{T}$ was above 1.85 \gevc with \gls{SPD} multiplicity below 450 hits.
+As discussed in~\autoref{triggerchap} \texttt{L0MuonDecision} decides on whether an event is accepted depending on the $p_{T}$ of a muon and the number of hits in the \gls{SPD}. Run \Rn{1} can be split into 2011 and 2012 conditions where, in 2011 the most used thresholds for positive decisions are 1.48 \gevc \cite{Aaij:2012me} and 1.76 \gevc \cite{Albrecht:2013fba}. Run \Rn{1} \gls{SPD} rate only accepts events below 600 hits. In 2016, the trigger thresholds varied more but the most representative acceptance for muon $p_{T}$ was above 1.85 \gevc with \gls{SPD} multiplicity below 450 hits.
 
 \texttt{Hlt1TrackMuonDecision} accepts events where at least one identified muon has to pass thresholds on \gls{ipchi2}, $p_{T}$ and $p$. This favours muons arising from $b$- and $c$-hadron decays. There has to be at least one muon (\texttt{isMuon==true}) with certain kinematic thresholds on $p$ and $p_{T}$. For example, in 2011 the identified muons that triggered a positive decision had to have $p$ above 8 \gevc \cite{Aaij:2012me}.
 
@@ -574,7 +574,7 @@ After classifiers to reduce combinatorial and misID backgrounds are trained and 
 For each PID hypothesis, the Punzi \texttt{FOM} was calculated. In both cases, in Run \Rn{1} and 2016 \texttt{Probnnmu} $>$ 0.35 yielded the highest Punzi \texttt{FOM}.
 This is the final step in selection.
 
-The overall selection results in 1198 candidates when signal region is blinded. There are no events with multiple candidates. The total efficiency for selecting the signal is about 0.1\%. The blinded data can be seen in~\autoref{fig:blsel}. 
+The overall selection results in 1198 candidates when the signal region is blinded. There are no events with multiple candidates. The total efficiency for selecting the signal is about 0.1\%. The blinded data can be seen in~\autoref{fig:blsel}. 
 
 
 \begin{figure}[ht]
@@ -630,7 +630,7 @@ Firstly, the preselection stream from which this sample is taken has different r
 \end{table}
 
 
-Secondly, also all the signal offline selection cuts listed in~\autoref{tab:OfflineSelection} are also applied apart from few exceptions. As this decay proceeds via the $J/\psi$ resonance and hence the $q^{2}$ veto for $J/\psi$ and $\Psi{(2S)}$, listed in~\autoref{tab:vetoes}, is not applied but rather reversed as seen in~\autoref{tab:stripcutsBnorm}. As the third particle is a kaon rather than a muon, there is no explicit choice of $minq$ region.
+Secondly, all the offline signal selection cuts listed in~\autoref{tab:OfflineSelection} are also applied apart from a few exceptions. As this decay proceeds via the $J/\psi$ resonance and hence the $q^{2}$ veto for $J/\psi$ and $\Psi{(2S)}$, listed in~\autoref{tab:vetoes}, is not applied but rather reversed as seen in~\autoref{tab:stripcutsBnorm}. As the third particle is a kaon rather than a muon, there is no explicit choice of $minq$ region.
 
 And finally, the kaon candidates are required to have \gls{PID} criteria consistent with being kaons. In addition to the preselection already imposing $\rm{DLLK} > 0$,  $\rm{DLLp} - \rm{DLLK}< 5$ is required to make a distinction with protons. To assure that the kaon is not confused with the muon, \texttt{IsMuon==0.0} is imposed. However, only kaon tracks within the geometrical muon acceptance, \texttt{InMuonAcc==1.0}, are considered.  
 %$\epsilon_{PID}$ is the efficiency of PID, that is taken from control data samples and then parametrically applied to simulation samples.
